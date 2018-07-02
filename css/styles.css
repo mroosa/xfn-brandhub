@@ -1,0 +1,210 @@
+html, html * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  font-family: "XfinityStandard", "Helvetica", "Arial", sans-serif;
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+}
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+header ul a {
+  color: #989393;
+  text-decoration: none;
+}
+header .upper-head {
+  border-bottom: 1px solid #000;
+}
+header .upper-head ul {
+  text-align: right;
+  font-size: 13px;
+}
+header .upper-head .icon-search {
+  font-size: 22px;
+  color: #000;
+  display: block;
+  transform: translateY(20%);
+}
+header .lower-head ul li,
+header .upper-head ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+header .lower-head ul a,
+header .upper-head ul a {
+  display: block;
+  padding: 15px 8px 9px 8px;
+  transition: .25s;
+  border-bottom: 6px solid transparent;
+}
+header .lower-head ul a:hover,
+header .upper-head ul a:hover {
+  border-color: #989393;
+}
+header .lower-head ul li.active a,
+header .upper-head ul li.active a {
+  border-color: #000;
+}
+
+header .lower-head ul {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+header .lower-head ul a {
+  padding: 32px 16px 17px 16px;
+}
+
+header .logo {
+  float: left;
+  margin: 15px 5%;
+}
+header .logo img {
+}
+
+/* footer */
+footer {
+  align-items: center;
+  font-size: 15px;
+  font-weight: 200;
+  padding: 60px 0 30px 0;
+}
+footer .inner {
+  display: flex;
+}
+footer .logo {
+  padding: 0 5%;
+}
+
+footer p a {
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+}
+footer p a:hover {
+  text-decoration: underline;
+}
+
+/* main */
+
+main {
+  background: #F2F4F5;
+  display: flex;
+  clear: both;
+}
+main .inner {
+  display: flex;
+}
+
+/* Layout */
+#subnav {
+  width: 25%;
+  padding: 100px 2% 30px 5%;
+}
+.content {
+  width: 75%;
+}
+
+/* Subnav */
+#subnav {
+}
+#subnav ul,
+#subnav ul li  {
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+  font-size: 14px;
+}
+#subnav ul li .menu {
+  padding: 0;
+}
+#subnav ul li a {
+  display: block;
+  margin: 0 -10px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #000;
+  transition: .25s;
+}
+#subnav ul li.active > a {
+  font-weight: bold;
+}
+#subnav ul li a:hover {
+  background: #666;
+  color: #fff;
+}
+#subnav ul li li {
+  font-size: 13px;
+}
+#subnav ul li li a {
+  padding: 5px 10px 5px 25px;
+}
+
+/* Content Area */
+.content {
+  margin: 20px 140px 20px 20px;
+}
+.content h1 {
+  font-size: 58px;
+}
+.content h2 {
+  font-size: 30px;
+}
+.content h3 {
+  font-size: 22px;
+}
+.content p {
+  font-size: 16px;
+  line-height: 150%;
+}
+.content p.caption {
+  font-size: 14px;
+  color: #999;
+}
+.content a.button {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 1px solid #000;
+  transition: .25s;
+  border-radius: 3ex;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.content a.button:hover {
+  background: #000;
+  color: #fff;
+}
+
+.content .img {
+  margin: 20px 0;
+}
+
+.content img {
+  max-width: 100%;
+}
+/* Intro slide */
+.intro .caption {
+  font-size: 48px;
+  color: #fff;
+}
+/* General */
+
+.ah {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

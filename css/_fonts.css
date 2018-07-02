@@ -1,0 +1,186 @@
+/* Fonts */
+@charset "UTF-8";
+
+/* XFINITY Sans Downloaded 04/07/2017 */
+/* XFINITY Sans Thin */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-Thin.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-Thin.woff") format("woff"),
+       url("../fonts/XfinityStandard-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+/* XFINITY Sans Thin Italic */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-ThinItalic.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-ThinItalic.woff") format("woff"),
+       url("../fonts/XfinityStandard-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+/* XFINITY Sans Extra Light */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-ExtraLight.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-ExtraLight.woff") format("woff"),
+       url("../fonts/XfinityStandard-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+/* XFINITY Sans Extra Light Italic */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-ExtraLightItalic.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-ExtraLightItalic.woff") format("woff"),
+       url("../fonts/XfinityStandard-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+/* XFINITY Sans Light */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-Light.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-Light.woff") format("woff"),
+       url("../fonts/XfinityStandard-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* XFINITY Sans Light Italic */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-LightItalic.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-LightItalic.woff") format("woff"),
+       url("../fonts/XfinityStandard-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* XFINITY Sans Regular */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-Regular.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-Regular.woff") format("woff"),
+       url("../fonts/XfinityStandard-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* XFINITY Sans Regular Italic */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-RegularItalic.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-RegularItalic.woff") format("woff"),
+       url("../fonts/XfinityStandard-RegularItalic.ttf") format("truetype");
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* XFINITY Sans Medium */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-Medium.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-Medium.woff") format("woff"),
+       url("../fonts/XfinityStandard-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* XFINITY Sans Medium Italic */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-MediumItalic.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-MediumItalic.woff") format("woff"),
+       url("../fonts/XfinityStandard-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* XFINITY Sans Bold */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-Bold.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-Bold.woff") format("woff"),
+       url("../fonts/XfinityStandard-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* XFINITY Sans Bold Italic */
+@font-face {
+  font-family: 'XfinityStandard';
+  src: url("../fonts/XfinityStandard-BoldItalic.woff2") format("woff2"),
+       url("../fonts/XfinityStandard-BoldItalic.woff") format("woff"),
+       url("../fonts/XfinityStandard-BoldItalic.ttf") format("truetype");
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* XFINITY Sans Condensed Medium */
+@font-face {
+  font-family: 'XfinityStandardCondensed';
+  src: url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard_Condensed/XfinityStandardCondensed-Medium.woff2") format("woff2"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard_Condensed/XfinityStandardCondensed-Medium.woff") format("woff"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard_Condensed/XfinityStandardCondensed-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* XFINITY Sans Condensed Bold */
+@font-face {
+  font-family: 'XfinityStandardCondensed';
+  src: url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard_Condensed/XfinityStandardCondensed-Bold.woff2") format("woff2"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard_Condensed/XfinityStandardCondensed-Bold.woff") format("woff"),
+       url("https://edge.static-assets.top.comcast.net/staticsites/fonts/latest/Xfinity_Standard_Condensed/XfinityStandardCondensed-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* Xfinity Brand Hub specific fonts/glyphs */
+@font-face {
+  font-family: "cst-brand-hub";
+  src:url("../fonts/cst-brand-hub.eot");
+  src:url("../fonts/cst-brand-hub.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/cst-brand-hub.woff") format("woff"),
+    url("../fonts/cst-brand-hub.ttf") format("truetype"),
+    url("../fonts/cst-brand-hub.svg#cst-brand-hub") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "cst-brand-hub" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "cst-brand-hub" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-search:before {
+  content: "\62";
+}

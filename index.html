@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Xfinity Brand Hub</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="js/lightbox-min.js"></script>
+
+  <link rel="stylesheet" href="css/_fonts.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/lightbox.css" />
+
+  <script>
+    $(document).ready(function() {
+      // Create subnav based on sections (.section)
+      if ($("main .section").length > 0) {
+        var numSections = $("main .section").length;
+        var actNav = $("#subnav li.active");
+        actNav.append('<ul class="menu" />');
+        var actMenu = actNav.find(".menu");
+
+        $("main .section").each(function(index) {
+          var thisId = $(this).attr("id");
+          var thisTtl = $(this).find("h2.section-title").html();
+          actMenu.append('<li><a href="#' + thisId + '">' + thisTtl + '</a></li>');
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <div class="contain">
+    <header>
+      <div class="upper-head">
+        <div class="inner">
+          <ul>
+            <li><a href="#"><span class="icon-search"></span><span class="ah">Search</span></a></li>
+            <li><a href="#">What's New</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Downloads</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="lower-head">
+        <div class="inner">
+          <div class="logo">
+            <img src="gfx/xfn-logo.png" alt="Xfinity" />
+          </div>
+          <nav id="primary-nav">
+            <ul>
+              <li class="active"><a href="#">Our Brand</a></li>
+              <li><a href="#">Design</a></li>
+              <li><a href="#">Voice & Messaging</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="inner">
+        <div id="subnav">
+          <ul class="nav menu">
+            <li class="active"><a href="#">List Item</a></li>
+            <li><a href="#">List Item</a></li>
+            <li><a href="#">List Item</a></li>
+            <li><a href="#">List Item</a></li>
+            <li><a href="#">List Item</a></li>
+            <li><a href="#">List Item</a></li>
+            <li><a href="#">List Item</a></li>
+            <li><a href="#">List Item</a></li>
+          </ul>
+        </div>
+        <div class="content">
+          <h1>Main Title</h1>
+          <div class="section" id="section-1">
+            <h2 class="section-title">The first section</h2>
+            <p>Body Copy. <strong>Bold text.</strong> <em>Italicized text.</em> Through our products and services, we make experiences more vivid, more meaningful and more memorable. We offer unparalleled content, connectivity and experience design that work simply and easily to deliver meaningful experiences across every interaction so people can do more and enjoy more of what they love. </p>
+            <h3>Sub-Section Title</h3>
+            <div class="img img-w-caption">
+              <a data-lightbox="ex-1" href="images/ex-brand-image.png"><img src="images/ex-brand-image.png" /></a>
+              <a data-lightbox="ex-1" href="images/ex-brand-image.png"></a>
+              <p class="caption">Here is a caption for something.</p>
+            </div>
+          </div><!-- /.secton -->
+          <div class="section" id="section-2">
+            <h2 class="section-title">Sed do eiusmod tempor</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Sub-Section Title</h3>
+            <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <a class="button" href="#">Download something</a>
+          </div><!-- /.secton -->
+          <div class="section" id="section-3">
+            <h2 class="section-title">Labore et dolore</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div><!-- /.secton -->
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="inner">
+        <div class="logo">
+          <img src="gfx/xfn-logo.png" alt="Xfinity" />
+        </div>
+        <div class="info">
+          <p>Copyright 2018  |  All materials subject to <a href="#">Terms and Conditions</a>  |   Questions? Contact someone@xfinity.com</p>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

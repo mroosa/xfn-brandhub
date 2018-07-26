@@ -109,13 +109,65 @@ main .inner {
   display: flex;
 }
 
+/* Footer Nav */
+.page-nav {
+  background: #666;
+  background-size: cover;
+  color: #fff;
+  padding: 20px 0;
+}
+.page-nav .inner {
+  background: url(../images/bg_btm-nav.png) center center no-repeat transparent;
+  padding: 20px 80px;
+}
+.page-nav .pager {
+  position: relative;
+  width: 50%;
+  display: block;
+  float: left;
+}
+.page-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+.page-nav .page-prv {
+  padding-left: 70px;
+  background: url(../images/arw_lt.png) left center no-repeat transparent;
+  background-size: contain;
+}
+.page-nav .page-prv .glyph {
+  left: 0;
+}
+.page-nav .page-nxt {
+  padding-right: 70px;
+  text-align: right;
+  background: url(../images/arw_gt.png) right center no-repeat transparent;
+  background-size: contain;
+}
+.page-nav .page-nxt .glyph {
+  right: 0;
+}
+.page-nav .pager .lil-ttl {
+  font-size: 14px;
+  font-weight: 300;
+  display: block;
+}
+.page-nav .pager .ttl {
+  font-size: 24px;
+  font-weight: 500;
+}
+
 /* Layout */
-#subnav {
+.two-col #subnav {
   width: 25%;
   padding: 100px 2% 30px 5%;
 }
-.content {
+.two-col .content {
   width: 75%;
+  margin: 20px 140px 20px 20px;
+}
+.one-col .content {
+  width: 100%;
 }
 
 /* Subnav */
@@ -155,7 +207,7 @@ main .inner {
 
 /* Content Area */
 .content {
-  margin: 20px 140px 20px 20px;
+  overflow: hidden;
 }
 .content h1 {
   font-size: 58px;
@@ -196,6 +248,68 @@ main .inner {
 .content img {
   max-width: 100%;
 }
+
+/* Brand page */
+.brand .content {
+  background: #fff;
+}
+.brand section {
+  position: relative;
+}
+.brand section .info {
+  padding: 90px 168px;
+}
+.brand section .info p {
+  width: 75%;
+}
+.brand section .info.half {
+  margin-left: 50%;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.brand section .info.half p {
+  width: 100%;
+}
+.brand section.bg-img .info {
+  position: absolute;
+  z-index: 2;
+}
+.brand section img {
+  max-width: 100%;
+}
+.brand section.bg-img img {
+  position: relative;
+  z-index: 1;
+}
+.brand section:not(.header) h1 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.brand section .separator {
+  width: 64px;
+  background: #c6c6c6;
+  height: 2px;
+  margin: 20px 0;
+}
+.brand section h2 {
+  font-size: 30px;
+  margin-top: 20px;
+}
+.brand section.header {
+  position: relative;
+}
+.brand section.header h1 {
+  font-size: 48px;
+  padding: 200px 40px 150px 50%;
+  margin: 0;
+}
+.brand section.header h1.light {color: #fff;}
+.brand section.header h1.dark {color: #000;}
+
+
+
+
 /* Intro slide */
 .intro .caption {
   font-size: 48px;
@@ -207,4 +321,10 @@ main .inner {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }

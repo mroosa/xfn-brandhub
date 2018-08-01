@@ -184,3 +184,9 @@
 .icon-search:before {
   content: "\62";
 }
+.icon-play:before {
+  content: "\61";
+}
+.icon-pause:before {
+  content: "\63";
+}

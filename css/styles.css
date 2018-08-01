@@ -280,6 +280,7 @@ main .inner {
 }
 .brand section.vid {
   background: #000;
+  margin-bottom: 0;
 }
 .brand section .info {
   padding: 90px 168px;

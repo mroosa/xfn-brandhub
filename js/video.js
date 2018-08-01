@@ -3,15 +3,13 @@ $(document).ready(function() {
     if ($(this).attr("controls") == undefined) {
       var playBtn;
       var $thisVid = $(this);
-      if ($thisVid.attr("autoplay") == "autoplay") {
-        playBtn = "Pause";
-        dataPlay = true;
-      } else {
-        playBtn = "Play";
-        dataPlay = false;
-      }
+      var dataPlay = ($thisVid.attr("autoplay") == "autoplay") ? true : false;
 
-      $thisVid.parent().append('<div class="video-controls"><a class="play playing" data-playing="' + dataPlay + '" href="#">' + playBtn + ' video</a></div>')
+      var output = '<div class="video-controls"><a class="play playing" data-playing="' + dataPlay + '" href="#">';
+      var output = output + '<span class="icon-play"><span>Play video</span></span>';
+      var output = output + '<span class="icon-pause"><span>Pause video</span></span>';
+      var output = output + '</a></div>';
+      $thisVid.parent().append(output);
 
       var controls = $thisVid.parent().find(".video-controls");
       $(controls).find(".play").click(function() {

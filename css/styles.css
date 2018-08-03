@@ -279,6 +279,13 @@ main .inner {
 .content .flex-3col div.double {
   width: calc(66.666% - 10px);
 }
+.content .flex-column ul {
+  margin: 10px 20px;
+  padding: 0;
+}
+.content .flex-column.bottom {
+  align-items: baseline;
+}
 
 /* Brand page */
 .brand .content {

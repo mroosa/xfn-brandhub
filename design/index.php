@@ -9,14 +9,14 @@
   <div class="contain">
     <?php include_once($dir . "_templates/_structure/header.php"); ?>
     <main>
-      <?php
-        if (file_exists("_subnav.php")):
-          print "<div id=\"subnav\">\n";
-          include_once("_subnav.php");
-          print "</div>\n";
-        endif;
-      ?>
       <div class="inner">
+        <?php
+          if (file_exists("_subnav.php")):
+            print "<div id=\"subnav\">\n";
+            include_once("_subnav.php");
+            print "</div>\n";
+          endif;
+        ?>
         <div class="content">
           <h1>Overview</h1>
           <div class="section" id="section-1">

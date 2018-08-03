@@ -9,14 +9,14 @@
   <div class="contain">
     <?php include_once($dir . "_templates/_structure/header.php"); ?>
     <main>
-      <?php
-        if (file_exists("_subnav.php")):
-          print "<div id=\"subnav\">\n";
-          include_once("_subnav.php");
-          print "</div>\n";
-        endif;
-      ?>
       <div class="inner">
+        <?php
+          if (file_exists("_subnav.php")):
+            print "<div id=\"subnav\">\n";
+            include_once("_subnav.php");
+            print "</div>\n";
+          endif;
+        ?>
         <div class="content">
           <h1>Logo</h1>
           <section class="section" id="top">
@@ -45,17 +45,24 @@
             <h2 class="section-title">Clearspace &amp; Minimum Size</h2>
             <p>To ensure prominence and legibility, all wordmark versions are surrounded by an area of minimum clear space 50% of the character height “n” which should remain free of any type or graphic elements.</p>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-logo-5.png" alt="" />
+              <img src="<?php print $dir; ?>images/design-logo-5.jpg" alt="" />
             </div>
             <h3>Extreme Horizontal Use</h3>
             <p>In exceptional extreme horizontal applications cases; digital web banners, web navigation and sports perimeter advertising the clearspace may be reduced by half.</p>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-logo-6.png" alt="" />
+              <img src="<?php print $dir; ?>images/design-logo-6.jpg" alt="" />
             </div>
             <h3>Minimum Size</h3>
             <p>The Xfinity wordmark should always be used at a size that is legible.</p>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-logo-7.png" alt="" />
+            <div class="flex-column flex-2col">
+              <div class="img img-w-caption">
+                <img src="<?php print $dir; ?>images/design-logo-7-1.jpg" alt="" />
+                <p class="caption">A total height of 0.25“, (7mm), or 18px on Desktop</p>
+              </div>
+              <div class="img img-w-caption">
+                <img src="<?php print $dir; ?>images/design-logo-7-2.jpg" alt="" />
+                <p class="caption">A total height of 0.25“, (7mm), or 18px on Desktop</p>
+              </div>
             </div>
           </section>
 
@@ -63,12 +70,13 @@
             <h2 class="section-title">Wordmark Placement &amp; Usage</h2>
             <p>The Xfinity wordmark should always go in the branded space of a communication. Our framework offers left, right and centered justification for flexibility based on the layout and format.</p>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-logo-8.jpg" alt="" />
+              <img src="<?php print $dir; ?>images/design-logo-8-500.jpg" alt="" />
             </div>
           </section>
 
           <section class="section">
             <h2 class="section-title">Logo in Use</h2>
+            <h1 style="color: #ff00ff">Need examples</h1>
           </section>
 
           <section class="section">

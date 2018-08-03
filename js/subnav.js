@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     $("main .section").each(function(index) {
       if ($(this).find("h2.section-title").length > 0) {
-        var thisTtl = $(this).find("h2.section-title").html();
+        var thisTtl = ($(this).find("h2.section-title").attr("data-title") != undefined) ? $(this).find("h2.section-title").attr("data-title") : $(this).find("h2.section-title").html();
         if ($(this).attr("id") != undefined) {
           var thisId = $(this).attr("id");
         } else {

@@ -251,6 +251,9 @@ main .inner {
 .content .img {
   margin: 20px 0;
 }
+.content .img img {
+  display: block;
+}
 
 .content img {
   max-width: 100%;
@@ -262,13 +265,19 @@ main .inner {
 }
 /* 8% between each column */
 .content .flex-2col div {
-  width: 46%;
+  width: calc(50% - 10px);
 }
 .content .flex-3col div {
-  width: 30%;
+  width: calc(33.333% - 10px);
 }
 .content .flex-column .img {
   margin: 10px 0;
+}
+.content .flex-column div.extend {
+  width: 100%;
+}
+.content .flex-3col div.double {
+  width: calc(66.666% - 10px);
 }
 
 /* Brand page */

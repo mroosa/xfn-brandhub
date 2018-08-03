@@ -7,7 +7,7 @@ $linkAry = [
 ];
 print "\t<ul>\n";
 for ($i = 0; $i < count($linkAry); $i++) {
-	$navClassTop = ($i==$activeTop) ? " active" : "";
+	$navClassTop = ($i === $activeTop) ? " active" : "";
 	print "\t\t<li class=\"tn" . $i . $navClassTop . "\"><a href=\"" . $linkAry[$i] -> link . "\"><span class=\"item-wrap\">" . $linkAry[$i] -> getTtl() . "</span></a></li>\n";
 }
 print "\t</ul>\n";

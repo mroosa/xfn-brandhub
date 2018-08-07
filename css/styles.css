@@ -309,6 +309,7 @@ main .inner {
   font-weight: 500;
   margin: 45px 0 15px 0;
 }
+.content li,
 .content p {
   font-size: 16px;
   line-height: 150%;
@@ -496,9 +497,6 @@ main .inner {
   transition: .25s;
   opacity: .5;
 }
-
-
-
 
 /* Intro slide */
 .intro .caption {

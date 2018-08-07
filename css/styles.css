@@ -80,6 +80,9 @@ header .logo.mobile {
   display: none;
   margin: 10px 5% 7px 5%;
 }
+header .logo a {
+  border: 0;
+}
 @media (max-width: 768px) {
   header .logo.desktop {
     display: none;
@@ -391,6 +394,23 @@ main .inner {
   }
 }
 
+/* Home page */
+.home .content .header {
+  background: url(../images/bg-home.jpg) center center no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 175px 50% 250px 40px;
+  margin: 0;
+}
+.home .content .header a,
+.home .content .header a.button {
+  color: #fff;
+  border-color: #fff;
+}
+.home .content .header a.button:hover {
+  background: #fff;
+  color: #000;
+}
 /* Brand page */
 .brand .content {
   background: #fff;

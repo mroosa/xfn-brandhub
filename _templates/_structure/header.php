@@ -3,7 +3,7 @@
   <div class="upper-head clearfix">
     <div class="inner">
       <div class="logo mobile">
-        <img src="<?php print $dir; ?>gfx/xfn-logo.png" alt="Xfinity" />
+        <a href="#"><img src="<?php print $dir; ?>gfx/xfn-logo.png" alt="Xfinity" /></a>
       </div>
       <?php include_once($dir . "_templates/_nav/top.php"); ?>
     </div>
@@ -12,7 +12,7 @@
   <div class="lower-head">
     <div class="inner">
       <div class="logo desktop">
-        <img src="<?php print $dir; ?>gfx/xfn-logo.png" alt="Xfinity" />
+        <a href="<?php print $dir; ?>index"><img src="<?php print $dir; ?>gfx/xfn-logo.png" alt="Xfinity" /></a>
       </div>
       <nav id="primary-nav">
         <?php include_once($dir . "_templates/_nav/main.php"); ?>

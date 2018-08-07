@@ -19,7 +19,7 @@
         ?>
         <div class="content">
           <h1>Sub-brands</h1>
-          <section class="section" id="top">
+          <section class="section">
             <p>Our brand hierarchy reflects our strategic priorities, with design treatments reserved for flagship experiences.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/design-subbrand-1.png" alt="" />

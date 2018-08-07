@@ -11,6 +11,7 @@ body {
 
 .inner {
   max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -70,9 +71,37 @@ header .lower-head ul a {
 
 header .logo {
   float: left;
+}
+header .logo.desktop {
+  display: block;
   margin: 15px 5%;
 }
-header .logo img {
+header .logo.mobile {
+  display: none;
+  margin: 10px 5% 7px 5%;
+}
+@media (max-width: 768px) {
+  header .logo.desktop {
+    display: none;
+    text-align: center;
+  }
+  header .logo.mobile {
+    display: block;
+  }
+  header .lower-head ul {
+    font-size: 16px;
+  }
+  header .lower-head ul li {
+    margin: 0; padding: 0;
+  }
+  header .lower-head ul a {
+    padding: 16px 12px 9px 12px;
+  }
+  header .upper-head ul li,
+  header .upper-head ul a {
+    padding-left: 3px;
+    padding-right: 3px;
+  }
 }
 
 /* footer */
@@ -157,6 +186,39 @@ main .inner {
   font-weight: 500;
 }
 
+@media (max-width: 768px) {
+  .page-nav .inner {
+    padding: 10px 20px;
+  }
+  .page-nav .pager .lil-ttl {
+    font-size: 12px;
+  }
+  .page-nav .pager .ttl {
+    font-size: 18px;
+  }
+  .page-nav .page-prv {
+    padding-left: 55px;
+  }
+  .page-nav .page-nxt {
+    padding-right: 55px;
+  }
+}
+
+@media (max-width: 550px) {
+  .page-nav .pager .lil-ttl {
+    font-size: 10px;
+  }
+  .page-nav .pager .ttl {
+    font-size: 16px;
+  }
+  .page-nav .page-prv {
+    padding-left: 40px;
+  }
+  .page-nav .page-nxt {
+    padding-right: 40px;
+  }
+}
+
 /* Layout */
 .two-col #subnav {
   width: 25%;
@@ -168,6 +230,15 @@ main .inner {
 }
 .one-col .content {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .two-col #subnav {
+    padding: 30px 2.5% 30px 2.5%;
+  }
+  .two-col .content {
+    margin: 20px;
+  }
 }
 
 /* Subnav */
@@ -205,6 +276,12 @@ main .inner {
   padding: 5px 10px 5px 25px;
 }
 
+@media (max-width: 768px) {
+  #subnav ul li .menu {
+    display: none;
+  }
+}
+
 /* Content Area */
 .content {
   overflow: hidden;
@@ -214,6 +291,15 @@ main .inner {
 }
 .content h2 {
   font-size: 30px;
+}
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 42px;
+    margin-top: 15px;
+  }
+  .content h2 {
+    font-size: 24px;
+  }
 }
 .content h3 {
   font-size: 22px;
@@ -270,6 +356,9 @@ main .inner {
 .content .flex-3col div {
   width: calc(33.333% - 10px);
 }
+.content .flex-4col div {
+  width: calc(25% - 10px);
+}
 .content .flex-column .img {
   margin: 10px 0;
 }
@@ -285,6 +374,21 @@ main .inner {
 }
 .content .flex-column.bottom {
   align-items: baseline;
+}
+@media (max-width: 768px) {
+  .content .flex-2col div,
+  .content .flex-3col div {
+    width: 100%;
+  }
+  .content .flex-3col div.double {
+    width: 100%;
+  }
+  .content .flex-4col div {
+    width: calc(50% - 10px);
+  }
+  .content .flex-column .no-mobile {
+    display: none;
+  }
 }
 
 /* Brand page */

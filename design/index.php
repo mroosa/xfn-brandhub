@@ -19,7 +19,7 @@
         ?>
         <div class="content">
           <h1>Overview</h1>
-          <div class="section" id="section-1">
+          <div class="section">
             <h2 class="section-title">Design Principles</h2>
             <p>Our design principles are based in our brand purpose and are a lens to inspire and evaluate all creative.</p>
             <div class="flex-column flex-3col">

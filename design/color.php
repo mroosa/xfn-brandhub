@@ -19,9 +19,31 @@
         ?>
         <div class="content">
           <h1>Color</h1>
-          <section class="section" id="top">
+          <section class="section">
             <h2 class="section-title">Color Palette</h2>
             <p>Xfinity embraces a neutral color palette, which allows our products and photography to shine. To stay true to our roots, we’ll occasionally use a pop of red to show our personality and highlight important information.</p>
+            <div class="flex-column flex-4col">
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-color-1-1.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-color-1-2.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-color-1-3.jpg" alt="" />
+              </div>
+              <div class="spacer no-mobile"></div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-color-1-4.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-color-1-5.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-color-1-6.jpg" alt="" />
+              </div>
+              <div class="spacer no-mobile"></div>
+            </div>
 
             <a class="button" href="#">Download Color Palette</a>
           </section>

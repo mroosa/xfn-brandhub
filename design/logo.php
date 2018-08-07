@@ -19,7 +19,7 @@
         ?>
         <div class="content">
           <h1>Logo</h1>
-          <section class="section" id="top">
+          <section class="section">
             <p>The Xfinity logo has been designed to further connect our brand to our parent company Comcast and our product experiences.  The combination of curved and sharp edges with rounded letterforms reinforces a more modern and distinctive aesthetic. It is our primary logo to be used in Xfinity communicationns and experiences.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/design-logo-1.jpg" alt="" />

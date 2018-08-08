@@ -40,12 +40,12 @@
             <h2 class="section-title">Clearspace &amp; Minimum Size</h2>
             <p>To ensure prominence and legibility, all sub-brand versions are surrounded by an area of minimum clear space 50% of the character height “n” which should remain free of any type or graphic elements.</p>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-subbrand-3.png" alt="" />
+              <img src="<?php print $dir; ?>images/design-subbrand-3.jpg" alt="" />
             </div>
             <h3>Extreme Horizontal Use</h3>
             <p>In exceptional extreme horizontal applications cases; digital web banners, web navigation and sports perimeter advertising the clearspace may be reduced by half.</p>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-subbrand-4.png" alt="" />
+              <img src="<?php print $dir; ?>images/design-subbrand-4.jpg" alt="" />
             </div>
             <h3>Minimum Size</h3>
             <p>The sub-brand wordmark should always be used at a size that is legible.</p>

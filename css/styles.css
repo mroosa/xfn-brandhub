@@ -32,6 +32,7 @@ header .upper-head {
 header .upper-head ul {
   text-align: right;
   font-size: 13px;
+  font-weight: 500;
 }
 header .upper-head .icon-search {
   font-size: 22px;
@@ -229,7 +230,7 @@ main .inner {
 }
 .two-col .content {
   width: 75%;
-  margin: 20px 140px 20px 20px;
+  margin: 20px 140px 40px 20px;
 }
 .one-col .content {
   width: 100%;
@@ -307,15 +308,19 @@ main .inner {
 .content h3 {
   font-size: 22px;
   font-weight: 500;
-  margin: 45px 0 15px 0;
+  margin: 45px 0 10px 0;
 }
 .content li,
 .content p {
   font-size: 16px;
   line-height: 150%;
 }
+.content p {
+  margin-top: 10px;
+}
 .content p.caption {
   font-size: 14px;
+  font-weight: 400;
   color: #999;
 }
 .content a.button {
@@ -328,6 +333,13 @@ main .inner {
   font-size: 14px;
   font-weight: 500;
   color: #000;
+  margin:15px 15px 15px 0;
+}
+@media (max-width: 550px) {
+  .content a.button {
+    display: block;
+    text-align: center;
+  }
 }
 .content a.button:hover {
   background: #000;
@@ -335,7 +347,17 @@ main .inner {
 }
 
 .content section {
-  margin-bottom: 75px;
+  margin-bottom: 125px;
+}
+@media (min-width:768px) {
+  .content section {
+    margin-bottom: 75px;
+  }
+}
+@media (min-width:550px) {
+  .content section {
+    margin-bottom: 50px;
+  }
 }
 
 .content .img {

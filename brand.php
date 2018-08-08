@@ -2,7 +2,6 @@
   $scriptList = ['video.js'];
   $styleList = ['video.css'];
   $activeMain = 0; // Our Brand
-  //$nxtLink = new NavLink($dir . "design", "Design", null);
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 <body class="one-col brand">
@@ -56,5 +55,6 @@
         </div><!-- /.content -->
       </div><!-- /.inner -->
     </main>
+    <?php  $nxtLink = new NavLink($dir . "design", "Design", null); ?>
     <?php include_once($dir . "_templates/_structure/page-nav.php"); ?>
 <?php include_once($dir . "_templates/_structure/html-foot.php"); ?>

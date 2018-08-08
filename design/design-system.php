@@ -93,24 +93,24 @@
             <p>Layouts should be clear and concise. Angles should be used deliberately and in ways that highlight our products and services.</p>
             <div class="flex-column flex-2col">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system-6-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system-6-1.png" alt="" />
                 <p class="caption">Don’t use multiple random angles that slice through creative.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system-6-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system-6-2.png" alt="" />
                 <p class="caption">Don’t create new angles.</p>
               </div>
             </div>
             <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system-7.jpg" alt="" />
+              <img src="<?php print $dir; ?>images/design-system-7.png" alt="" />
               <p class="caption">Do not use rounded edges on angles, only use straight edges.</p>
             </div>
             <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system-8.jpg" alt="" />
+              <img src="<?php print $dir; ?>images/design-system-8.png" alt="" />
               <p class="caption">Angles should go edge to edge and should not stop midway through creative. Do not create additional holding bars for wordmark. Angle should be used to create space to hold copy and wordmarks.</p>
             </div>
             <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system-9.jpg" alt="" />
+              <img src="<?php print $dir; ?>images/design-system-9.png" alt="" />
               <p class="caption">Don’t use contrasting angle colors that repeat, angles should be a soft step in the creative.</p>
             </div>
           </section>

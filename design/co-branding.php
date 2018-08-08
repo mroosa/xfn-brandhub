@@ -52,16 +52,28 @@
             <h2 class="section-title">Partner Lock-up Misuses</h2>
             <div class="flex-column flex-2col">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-cobranding-4-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-cobranding-4-1.png" alt="" />
                 <p class="caption">Do not us Xfinity Future of Awesome wordmark with partner logos.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-cobranding-4-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-cobranding-4-2.png" alt="" />
                 <p class="caption">Do not create new logos with wordmark and partner logo.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-cobranding-5.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-cobranding-5.png" alt="" />
                 <p class="caption">Do not use sub-brands with partner logo lockups.</p>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">Co-branding in Use</h2>
+            <div class="flex-column flex-2col">
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-cobranding-5-1.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-cobranding-5-2.jpg" alt="" />
               </div>
             </div>
           </section>

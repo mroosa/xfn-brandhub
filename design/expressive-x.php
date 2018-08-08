@@ -186,35 +186,35 @@
             <p>The Expressive X allows for creative exploration. This approach should be used sparingly or for special circumstances.</p>
             <div class="flex-column flex-3col">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-x-6-1.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-6-1.png" alt-"" />
                 <p class="caption">Do not make the X high contrast against the backgound. Also, make sure there’s enough contrast between the X and the subject.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-x-6-2.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-6-2.png" alt-"" />
                 <p class="caption">Do not make the X loud colors that make it shout.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-x-6-3.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-6-3.png" alt-"" />
                 <p class="caption">Do not make the X dimensional –  through 3D, bevels or embossing.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-x-6-4.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-6-4.png" alt-"" />
                 <p class="caption">Do not make the X appear as a foreground object.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-x-6-5.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-6-5.png" alt-"" />
                 <p class="caption">Do not extend, manipulate or alter the official X brand symbol.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-x-6-6.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-6-6.png" alt-"" />
                 <p class="caption">Make sure the subject’s movement propels them out of the X, not into it.</p>
               </div>
               <div class="img img-w-caption extend">
-                <img src="<?php print $dir; ?>images/design-x-6-7.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-6-7.png" alt-"" />
                 <p class="caption">Do not place words or logos in the X.</p>
               </div>
               <div class="img img-w-caption extend">
-                <img src="<?php print $dir; ?>images/design-x-6-8.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-6-8.png" alt-"" />
                 <p class="caption">Do not create an Expressive X within the full Xfinity word mark.</p>
               </div>
           </section>

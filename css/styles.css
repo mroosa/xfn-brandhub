@@ -308,12 +308,15 @@ main .inner {
 .content h3 {
   font-size: 22px;
   font-weight: 500;
-  margin: 45px 0 15px 0;
+  margin: 45px 0 10px 0;
 }
 .content li,
 .content p {
   font-size: 16px;
   line-height: 150%;
+}
+.content p {
+  margin-top: 10px;
 }
 .content p.caption {
   font-size: 14px;

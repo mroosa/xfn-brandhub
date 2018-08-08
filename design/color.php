@@ -87,8 +87,11 @@
               <img src="<?php print $dir; ?>images/design-color-4-2.jpg" alt="" />
               <p class="caption">Dark background, light text, action blue button.</p>
             </div>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-color-5-1.jpg" alt="" />
+            </div>
             <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-color-5-temp.jpg" alt="" />
+              <img src="<?php print $dir; ?>images/design-color-5-2.jpg" alt="" />
               <p class="caption">Light background, dark text, action blue button.</p>
             </div>
           </section>
@@ -97,20 +100,20 @@
             <h2 class="section-title">Color Misuses</h2>
             <div class="flex-column flex-2col">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-color-6-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-color-6-1.png" alt="" />
                 <p class="caption">Do not use floods of red or blue as a background or over images.</p>
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-color-6-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-color-6-2.png" alt="" />
               </div>
             </div>
             <div class="flex-column flex-2col">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-color-7-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-color-7-1.png" alt="" />
                 <p class="caption">Do not use red or blue for headlines or body copy.</p>
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-color-7-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-color-7-2.png" alt="" />
               </div>
             </div>
           </section>

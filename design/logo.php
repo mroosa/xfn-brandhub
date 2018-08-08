@@ -76,7 +76,9 @@
 
           <section class="section">
             <h2 class="section-title">Logo in Use</h2>
-            <h1 style="color: #ff00ff">Need examples</h1>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-logo-8half.jpg" alt="" />
+            </div>
           </section>
 
           <section class="section">

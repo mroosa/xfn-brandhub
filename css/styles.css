@@ -229,7 +229,7 @@ main .inner {
 }
 .two-col .content {
   width: 75%;
-  margin: 20px 140px 20px 20px;
+  margin: 20px 140px 40px 20px;
 }
 .one-col .content {
   width: 100%;
@@ -328,12 +328,11 @@ main .inner {
   font-size: 14px;
   font-weight: 500;
   color: #000;
-  margin:0 15px 15px 0;
+  margin:15px 15px 15px 0;
 }
 @media (max-width: 550px) {
   .content a.button {
     display: block;
-    margin: 0 0 15px 0;
     text-align: center;
   }
 }

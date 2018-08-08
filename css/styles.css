@@ -349,6 +349,16 @@ main .inner {
 .content section {
   margin-bottom: 125px;
 }
+@media (min-width:768px) {
+  .content section {
+    margin-bottom: 75px;
+  }
+}
+@media (min-width:550px) {
+  .content section {
+    margin-bottom: 50px;
+  }
+}
 
 .content .img {
   margin: 20px 0;

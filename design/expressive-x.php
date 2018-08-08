@@ -1,6 +1,7 @@
 <?php
   $dir = "../";
-  $scriptList = ['subnav.js'];
+  $scriptList = ['subnav.js','gallery.js'];
+  $styleList = ['gallery.css'];
   $activeMain = 1; // Design
   $activeSub = 2;
 ?>
@@ -61,15 +62,66 @@
             <h2 class="section-title">Rules of the X</h2>
             <h3>Completed Expressive X</h3>
             <p>The final expressive X art will bring together all important elements - subject, background and X guidelines. Go through the carousel to see the rules of the X.</p>
-            <h1 style="color: #ff00ff;">Gallery</h1>
-            <p>Images 2-1 » 2-12</p>
+            <div class="gallery">
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-00.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-01.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-02.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-03.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-04.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-05.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-06.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-07.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-08.jpeg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-rules-3-09.jpeg" alt="" />
+              </div>
+            </div>
           </section>
 
           <section class="section">
             <h2 class="section-title">Building the X</h2>
             <p>Here's a simple list of steps to help you create consistent expressive X artwork.</p>
-            <h1 style="color: #ff00ff;">Gallery</h1>
-            <p>Images 3-1 » 3-8</p>
+            <div class="gallery">
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-building-4-01.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-building-4-02.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-building-4-03.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-building-4-04.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-building-4-05.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-building-4-06.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-building-4-07.jpg" alt="" />
+              </div>
+            </div>
           </section>
 
           <section class="section">

@@ -1,0 +1,30 @@
+.gallery {
+  display: flex;
+  transition: margin .5s;
+}
+.gallery-wrap .gallery-nav {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  list-style: none;
+}
+.gallery-wrap .gallery-nav li {
+  display: inline-block;
+}
+.gallery-wrap .gallery-nav a {
+  text-indent: -9999px;
+  display: block;
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid #707070;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  margin: 5px;
+  transition: background .5s;
+}
+.gallery-wrap .gallery-nav li a:hover,
+.gallery-wrap .gallery-nav li a.active {
+  background: #C6C6C6;
+}

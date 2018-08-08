@@ -32,6 +32,7 @@ header .upper-head {
 header .upper-head ul {
   text-align: right;
   font-size: 13px;
+  font-weight: 500;
 }
 header .upper-head .icon-search {
   font-size: 22px;
@@ -316,6 +317,7 @@ main .inner {
 }
 .content p.caption {
   font-size: 14px;
+  font-weight: 400;
   color: #999;
 }
 .content a.button {

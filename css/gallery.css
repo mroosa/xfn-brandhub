@@ -1,3 +1,10 @@
+.gallery-wrap {
+  position: relative;
+}
+.gallery-inner {
+  margin: 0 65px;
+  overflow: hidden;
+}
 .gallery {
   display: flex;
   transition: margin .5s;
@@ -13,18 +20,41 @@
   display: inline-block;
 }
 .gallery-wrap .gallery-nav a {
-  text-indent: -9999px;
   display: block;
   overflow: hidden;
-  background: #fff;
+  text-decoration: none;
+  transition: background .5s;
+}
+.gallery-wrap .gallery-nav a:not(.nav) {
   border: 1px solid #707070;
-  height: 20px;
-  width: 20px;
   border-radius: 50%;
   margin: 5px;
-  transition: background .5s;
+  height: 20px;
+  width: 20px;
+  background: #fff;
+  text-indent: -9999px;
 }
 .gallery-wrap .gallery-nav li a:hover,
 .gallery-wrap .gallery-nav li a.active {
   background: #C6C6C6;
+}
+
+.gallery-wrap .gallery-nav a.nav {
+  color: #666;
+  height: 45px;
+  width: 45px;
+  font-size: 42px;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.gallery-wrap .gallery-nav a.nxt {
+  right: 10px;
+}
+.gallery-wrap .gallery-nav a.prv {
+  left: 10px;
+}
+.gallery-wrap .gallery-nav li a.nav:hover {
+  background: transparent;
+  color: #000;
 }

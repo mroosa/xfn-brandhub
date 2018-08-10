@@ -190,3 +190,9 @@
 .icon-pause:before {
   content: "\63";
 }
+.icon-prv:before {
+  content: "\64";
+}
+.icon-nxt:before {
+  content: "\65";
+}

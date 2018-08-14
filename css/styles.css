@@ -236,12 +236,29 @@ main .inner {
   width: 100%;
 }
 
+@media (max-width: 960px) {
+  .two-col .content {
+    margin: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .two-col #subnav {
     padding: 30px 2.5% 30px 2.5%;
   }
+}
+
+@media (max-width: 550px) {
+  .two-col main > .inner {
+    display: block;
+  }
+  .two-col .content,
+  .two-col #subnav {
+    width: 100%;
+    margin: 0;
+  }
   .two-col .content {
-    margin: 20px;
+    padding: 20px;
   }
 }
 
@@ -283,6 +300,32 @@ main .inner {
 @media (max-width: 768px) {
   #subnav ul li .menu {
     display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .two-col #subnav {
+    background: #666;
+    color: #fff;
+    padding: 0;
+  }
+  #subnav ul {
+    overflow: auto;
+    white-space: nowrap;
+    padding: 0;
+  }
+  #subnav ul li {
+    display: inline-block;
+    margin: 10px 0;
+  }
+  #subnav ul li a {
+    color: #fff;
+    margin: 0;
+    padding: 5px 20px;
+    border-right: 1px solid #999;
+  }
+  #subnav ul li.active > a {
+    text-decoration: underline;
   }
 }
 

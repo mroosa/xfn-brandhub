@@ -2,12 +2,19 @@
   position: relative;
 }
 .gallery-inner {
-  margin: 0 65px;
+  /* margin: 0 65px; */
   overflow: hidden;
 }
 .gallery {
   display: flex;
   transition: margin .5s;
+}
+.gallery > div {
+  width: 100%;
+  padding: 0 65px;
+}
+.gallery .img {
+  margin: 0;
 }
 .gallery-wrap .gallery-nav {
   display: block;

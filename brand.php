@@ -42,7 +42,7 @@
             </div><!-- /.info -->
             <img src="<?php print $dir; ?>images/bg_section-2.jpg" alt="" />
           </section>
-          <section class="section" style="z-index: 3; margin-top: -175px;">
+          <section class="section tuck-up">
             <div class="info">
               <h1>Brand Tagline</h1>
               <div class="separator"></div>

@@ -657,6 +657,10 @@ main .inner {
   .brand section.header h1 {
     font-size: 32px;
   }
+  .brand section.bg-img .info.half,
+  .brand section .info {
+    padding: 30px;
+  }
 }
 
 /* Intro slide */

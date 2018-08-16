@@ -635,6 +635,9 @@ main .inner {
   .brand .content section {
     margin: 0;
   }
+  .brand section .info p {
+    width: 100%;
+  }
   .brand section.bg-img .info {
     position: relative;
     background: #eee;

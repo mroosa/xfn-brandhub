@@ -14,7 +14,7 @@ $subLinkAry = [
 
 print "\t<ul class=\"nav menu\">\n";
 for ($i = 0; $i < count($subLinkAry); $i++) {
-  $navClass = ($i==$activeSub) ? " active" : "";
+  $navClass = ($i===$activeSub) ? " active" : "";
 	print "\t\t<li class=\"sn" . $i . $navClass . "\"><a href=\"" . $subLinkAry[$i] -> link . "\"><span class=\"item-wrap\">" . $subLinkAry[$i] -> getTtl() . "</span></a></li>\n";
 }
 print "\t</ul>\n";

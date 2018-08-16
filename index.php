@@ -12,7 +12,7 @@
       <div class="inner">
         <div class="content">
           <section class="section header">
-            <h1 class="light">Welcome to the Xfinity Style Guide</h1>
+            <h1 class="light">Welcome to the <br class="mobile550" />Xfinity Style Guide</h1>
             <!-- <video id="brand-bg" autoplay loop muted>
               <source src="<?php print $div; ?>video/design-overview.mp4" type="video/mp4">
             </video> -->

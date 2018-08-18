@@ -1,7 +1,5 @@
 <?php
-  $scriptList = ['video.js'];
-  $styleList = ['video.css'];
-  //$nxtLink = new NavLink($dir . "design", "Design", null);
+  // Homepage, no variables
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 <body class="one-col home">
@@ -11,11 +9,11 @@
       <div class="inner">
         <div class="content">
           <section class="section header">
-            <h1 class="light">Welcome to the <br class="mobile550" />Xfinity Style Guide</h1>
-            <!-- <video id="brand-bg" autoplay loop muted>
-              <source src="<?php print $div; ?>video/design-overview.mp4" type="video/mp4">
-            </video> -->
-            <a href="brand" class="button">Let's Get Started</a>
+            <a href="brand">
+              <img class="lrg" src="images/homepage_lrg.jpg" alt="Welcome to the Xfinity Style Guide - Let's get started" />
+              <img class="mid" src="images/homepage_mid.jpg" alt="Welcome to the Xfinity Style Guide - Let's get started" />
+              <img class="sml" src="images/homepage_sml.jpg" alt="Welcome to the Xfinity Style Guide - Let's get started" />
+            </a>
           </section>
 
         </div><!-- /.content -->

@@ -494,11 +494,17 @@ main .inner {
 
 /* Home page */
 .home .content .header {
+  /*
   background: url(../images/bg-home.jpg) center center no-repeat;
   background-size: cover;
   color: #fff;
   padding: 175px 50% 250px 40px;
+  */
   margin: 0;
+}
+.home .content .header img.lrg,
+.home .content .header img.mid {
+  display: none;
 }
 .home .content .header a,
 .home .content .header a.button {
@@ -509,7 +515,23 @@ main .inner {
   background: #fff;
   color: #000;
 }
-
+@media (min-width:550px) {
+  .home .content .header img.mid {
+    display: block;
+  }
+  .home .content .header img.sml {
+    display: none;
+  }
+}
+@media (min-width:768px) {
+  .home .content .header img.lrg {
+    display: block;
+  }
+  .home .content .header img.mid {
+    display: none;
+  }
+}
+/*
 @media (max-width: 768px) {
   .home .content .header {
     padding: 175px 50% 250px 40px;
@@ -528,6 +550,7 @@ main .inner {
     margin:0;
   }
 }
+*/
 /* Brand page */
 .brand .content {
   background: #fff;

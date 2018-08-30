@@ -604,10 +604,23 @@ main .inner {
 }
 .brand section.header {
   position: relative;
+  color: #fff;
+}
+.brand section.header a {
+  color: #fff;
+}
+.brand section.header a.button {
+  border-color: #fff;
+}
+.brand section.header a:hover {
+  background: #fff;
+  color: #000;
+}
+.brand section.header .info {
+  padding: 0 35% 0 168px;
 }
 .brand section.header h1 {
   font-size: 48px;
-  padding: 0 35% 0 168px;
   margin: 0;
 }
 .brand section.header h1.light {color: #fff;}
@@ -640,7 +653,9 @@ main .inner {
 }
 
 .brand section.tuck-up {
-  z-index: 3; margin-top: -175px;
+  z-index: 3;
+  margin-top: -175px;
+  margin-bottom: 0;
 }
 @media (max-width: 960px) {
   .brand section.header h1 {

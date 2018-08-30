@@ -10,9 +10,9 @@
         <div class="content">
           <section class="section header">
             <a href="brand">
-              <img class="lrg" src="images/homepage_lrg.jpg" alt="Welcome to the Xfinity Style Guide - Let's get started" />
-              <img class="mid" src="images/homepage_mid.jpg" alt="Welcome to the Xfinity Style Guide - Let's get started" />
-              <img class="sml" src="images/homepage_sml.jpg" alt="Welcome to the Xfinity Style Guide - Let's get started" />
+              <img class="lrg" src="images/homepage_lrg.jpg" alt="Welcome to the Xfinity Brand Site - Let's get started" />
+              <img class="mid" src="images/homepage_mid.jpg" alt="Welcome to the Xfinity Brand Site - Let's get started" />
+              <img class="sml" src="images/homepage_sml.jpg" alt="Welcome to the Xfinity Brand Site - Let's get started" />
             </a>
           </section>
 

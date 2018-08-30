@@ -1,8 +1,8 @@
 <?php
 $linkAry = [
-	new NavLink($dir . 'brand','Our Brand', null),
-	new NavLink($dir . 'design','Design', null),
-	new NavLink($dir . 'voice-and-messaging','Voice & Messaging', null)
+	new NavLink($dir . 'brand','Who We Are', null),
+	new NavLink($dir . 'design','How We Look', null),
+	new NavLink($dir . 'voice-and-messaging','How We Sound', null)
 ];
 print "\t<ul>\n";
 for ($i = 0; $i < count($linkAry); $i++) {

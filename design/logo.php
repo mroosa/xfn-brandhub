@@ -21,10 +21,6 @@
           <h1>Logo</h1>
           <section class="section">
             <p>The Xfinity logo has been designed to further connect our brand to our parent company Comcast and our product experiences.  The combination of curved and sharp edges with rounded letterforms reinforces a more modern and distinctive aesthetic. It is our primary logo to be used in Xfinity communicationns and experiences.</p>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-logo-1.jpg" alt="" />
-            </div>
-            <a class="button" href="#">Download Xfinity Logos</a>
             <h3>Primary Use</h3>
             <p>Black and reverse white are the primary variants of the Xfinity wordmark to be used in Xfinity communications and product experiences. These help maintain legibility and allow the content to be the hero of the communication.</p>
             <div class="img">
@@ -39,6 +35,7 @@
             <div class="img">
               <img src="<?php print $dir; ?>images/design-logo-4.jpg" alt="" />
             </div>
+            <a class="button" href="#">Download Xfinity Logos</a>
           </section>
 
           <section class="section">

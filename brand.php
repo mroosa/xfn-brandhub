@@ -11,9 +11,14 @@
       <div class="inner">
         <div class="content">
           <section class="section header vid">
-            <h1 class="light">We’re on a journey to become an admired lifestyle brand.</h1>
+            <div class="info">
+              <h1 class="light">We’re on a journey to become an admired lifestyle brand.</h1>
+              <br />
+              <br />
+              <a class="button" href="#">Launch Video</a>
+            </div>
             <video id="brand-bg" autoplay loop muted>
-              <source src="<?php print $div; ?>video/design-overview.mp4" type="video/mp4">
+              <source src="<?php print $div; ?>video/brand-overview-bg.mp4" type="video/mp4">
             </video>
           </section>
           <section class="section">
@@ -46,15 +51,14 @@
             <div class="info">
               <h1>Brand Tagline</h1>
               <div class="separator"></div>
-              <h2>Together, we’re creating the Future of Awesome.</h2>
-              <p>It’s about looking beyond the horizon and connecting people to what they can’t see today. We will never settle and will keep innovating to deliver experiences – big and small – that people love. </p>
+              <h2>The Future of Awesome</h2>
+              <p>Together we're creating a new vision beyond the horizon, connecting people to what they can't see today. We will never settle and will keep innovating to deliver experiences – big and small – that people love.</p>
               <p>Here, you’ll find the tools to bring the Xfinity brand to life and live into our brand purpose every day. Let’s get started.</p>
-              <a class="button" href="#">Get Inspired</a>
             </div><!-- /.info -->
           </section>
         </div><!-- /.content -->
       </div><!-- /.inner -->
     </main>
-    <?php  $nxtLink = new NavLink($dir . "design", "Design", null); ?>
+    <?php  $nxtLink = new NavLink($dir . "design", "How We Look", null); ?>
     <?php include_once($dir . "_templates/_structure/page-nav.php"); ?>
 <?php include_once($dir . "_templates/_structure/html-foot.php"); ?>

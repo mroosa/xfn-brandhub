@@ -1,6 +1,6 @@
 <?php
-  $scriptList = ['video.js'];
-  $styleList = ['video.css'];
+  $scriptList = ['video.js', 'featherlight.js'];
+  $styleList = ['video.css', 'featherlight.css'];
   $activeMain = 0; // Our Brand
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
@@ -13,9 +13,12 @@
           <section class="section header vid">
             <div class="info">
               <h1 class="light">We’re on a journey to become an admired lifestyle brand.</h1>
-              <br />
-              <br />
-              <a class="button" href="#">Launch Video</a>
+              <a class="button" data-featherlight="#brand-video" href="#">Launch Video</a>
+            </div>
+            <div class="featherlight-ajax" style="display: none;">
+              <div id="brand-video">
+                <iframe src="https://player.vimeo.com/video/288220044" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+              </div>
             </div>
             <video id="brand-bg" autoplay loop muted>
               <source src="<?php print $div; ?>video/brand-overview-bg.mp4" type="video/mp4">

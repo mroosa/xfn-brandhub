@@ -617,19 +617,62 @@ main .inner {
   color: #000;
 }
 .brand section.header .info {
-  padding: 0 35% 0 168px;
+  padding: 40px 20px;
 }
 .brand section.header h1 {
-  font-size: 48px;
-  margin: 0;
+  font-size: 32px;
+}
+
+@media (min-width: 550px) {
+  .brand section.header .info {
+    padding: 0 25% 0 50px;
+  }
+  .brand section.header h1 {
+    font-size: 32px;
+  }
+}
+@media (min-width: 768px) {
+  .brand section.header .info {
+    padding: 0 25% 0 128px;
+  }
+  .brand section.header h1 {
+    font-size: 42px;
+  }
+}
+@media (min-width: 960px) {
+  .brand section.header .info {
+    padding: 0 25% 0 168px;
+  }
+  .brand section.header h1 {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1080px) {
+  .brand section.header .info {
+    padding: 0 35% 0 168px;
+  }
 }
 .brand section.header h1.light {color: #fff;}
 .brand section.header h1.dark {color: #000;}
 .brand section.vid {
-  height: 488px;
   display: flex;
   align-items: center;
   overflow: hidden;
+}
+@media (min-width: 550px) {
+  .brand section.vid {
+    height: 350px;
+  }
+}
+@media (min-width: 768px) {
+  .brand section.vid {
+    height: 400px;
+  }
+}
+@media (min-width: 960px) {
+  .brand section.vid {
+    height: 488px;
+  }
 }
 .brand section.vid h1 {
   display: block;
@@ -658,9 +701,6 @@ main .inner {
   margin-bottom: 0;
 }
 @media (max-width: 960px) {
-  .brand section.header h1 {
-    padding: 30px;
-  }
   .brand section.bg-img .info.half {
     margin: 0;
     padding: 45px 168px;
@@ -689,18 +729,6 @@ main .inner {
   }
   .brand section.tuck-up {
     z-index: 3; margin:0;
-  }
-}
-@media (max-width: 550px) {
-  .brand section.vid {
-    height: 250px;
-  }
-  .brand section.header h1 {
-    font-size: 32px;
-  }
-  .brand section.bg-img .info.half,
-  .brand section .info {
-    padding: 30px;
   }
 }
 

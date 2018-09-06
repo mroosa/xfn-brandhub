@@ -35,7 +35,7 @@ header .upper-head ul {
   font-weight: 400;
 }
 header .upper-head .icon-search {
-  font-size: 22px;
+  font-size: 18px;
   color: #000;
   display: block;
   transform: translateY(20%);
@@ -43,14 +43,18 @@ header .upper-head .icon-search {
 header .lower-head ul li,
 header .upper-head ul li {
   display: inline-block;
-  padding: 0 5px;
+  padding: 0 11px;
 }
 header .lower-head ul a,
 header .upper-head ul a {
   display: block;
-  padding: 15px 8px 9px 8px;
+  padding: 4px 0 3px 0;
   transition: .25s;
-  border-bottom: 4px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+header .upper-head ul a {
+  color: #000;
+  border-bottom-width: 2px;
 }
 header .lower-head ul a:hover,
 header .upper-head ul a:hover {
@@ -64,18 +68,30 @@ header .upper-head ul li.active a {
 header .lower-head ul {
   text-align: center;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 400;
+}
+header .lower-head ul li {
+  padding: 0 16px;
 }
 header .lower-head ul a {
-  padding: 32px 16px 17px 16px;
+  padding: 16px 0 9px 0;
 }
 
-header .logo {
-  float: left;
+header .lower-head .inner {
+  display: flex;
+  max-width: 1200px;
 }
+header .logo {
+  width: 25%;
+}
+header nav {
+  width: 75%;
+  /* margin-left: 70px; */
+}
+
 header .logo.desktop {
   display: block;
-  margin: 15px 5%;
+  padding: 10px 5% 6px 5%;
 }
 header .logo.mobile {
   display: none;
@@ -84,6 +100,7 @@ header .logo.mobile {
 header .logo a {
   border: 0;
   display: block;
+  width: 90px;
 }
 header .logo a img {
   max-width: 100%;
@@ -146,6 +163,13 @@ footer .inner {
 }
 footer .logo {
   padding: 0 5%;
+}
+footer .logo a {
+  display: block;
+  width: 90px;
+}
+footer .logo a img {
+  max-width: 100%;
 }
 
 footer p a {
@@ -428,7 +452,7 @@ main .inner {
 }
 
 .content section {
-  margin-bottom: 125px;
+  margin-bottom: 60px;
 }
 @media (max-width: 768px) {
   .content section {
@@ -563,13 +587,14 @@ main .inner {
 }
 .brand section {
   position: relative;
+  margin-bottom: 0;
 }
 .brand section.vid {
   background: #000;
   margin-bottom: 0;
 }
 .brand section .info {
-  padding: 90px 168px;
+  padding: 60px 168px;
 }
 .brand section .info p {
   width: 75%;
@@ -577,7 +602,7 @@ main .inner {
 .brand section .info.half {
   margin-left: 50%;
   padding-left: 8%;
-  padding-right: 100px;
+  padding-right: 20%;
 }
 .brand section .info.half p {
   width: 100%;
@@ -655,7 +680,7 @@ main .inner {
 }
 @media (min-width: 1080px) {
   .brand section.header .info {
-    padding: 0 35% 0 168px;
+    padding: 0 45% 0 168px;
   }
 }
 .brand section.header h1.light {color: #fff;}
@@ -703,7 +728,7 @@ main .inner {
 
 .brand section.tuck-up {
   z-index: 3;
-  margin-top: -175px;
+  margin-top: -135px;
   margin-bottom: 0;
 }
 @media (max-width: 960px) {

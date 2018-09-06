@@ -32,7 +32,7 @@ header .upper-head {
 header .upper-head ul {
   text-align: right;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 400;
 }
 header .upper-head .icon-search {
   font-size: 22px;
@@ -50,7 +50,7 @@ header .upper-head ul a {
   display: block;
   padding: 15px 8px 9px 8px;
   transition: .25s;
-  border-bottom: 6px solid transparent;
+  border-bottom: 4px solid transparent;
 }
 header .lower-head ul a:hover,
 header .upper-head ul a:hover {
@@ -64,7 +64,7 @@ header .upper-head ul li.active a {
 header .lower-head ul {
   text-align: center;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
 }
 header .lower-head ul a {
   padding: 32px 16px 17px 16px;
@@ -261,7 +261,7 @@ main .inner {
 /* Layout */
 .two-col #subnav {
   width: 25%;
-  padding: 100px 2% 30px 5%;
+  padding: 50px 2% 30px 5%;
 }
 .two-col .content {
   width: 75%;
@@ -370,9 +370,12 @@ main .inner {
 }
 .content h1 {
   font-size: 58px;
+  font-weight: 400;
+  margin: .5em 0;
 }
 .content h2 {
   font-size: 30px;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .content h1 {
@@ -385,8 +388,8 @@ main .inner {
 }
 .content h3 {
   font-size: 22px;
-  font-weight: 500;
-  margin: 45px 0 10px 0;
+  font-weight: 400;
+  margin: 20px 0 10px 0;
 }
 .content li,
 .content p {

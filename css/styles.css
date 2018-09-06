@@ -105,6 +105,9 @@ header .logo a img {
   header .lower-head ul a {
     padding: 16px 12px 9px 12px;
   }
+  header .upper-head {
+    padding-right: 20px;
+  }
   header .upper-head ul li,
   header .upper-head ul a {
     padding-left: 3px;
@@ -424,7 +427,7 @@ main .inner {
 .content section {
   margin-bottom: 125px;
 }
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .content section {
     margin-bottom: 75px;
   }
@@ -523,7 +526,7 @@ main .inner {
     display: none;
   }
 }
-@media (min-width:768px) {
+@media (min-width: 769px) {
   .home .content .header img.lrg {
     display: block;
   }
@@ -631,7 +634,7 @@ main .inner {
     font-size: 32px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .brand section.header .info {
     padding: 0 25% 0 128px;
   }
@@ -664,7 +667,7 @@ main .inner {
     height: 350px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .brand section.vid {
     height: 400px;
   }

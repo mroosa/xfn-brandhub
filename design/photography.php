@@ -20,7 +20,6 @@
         <div class="content">
           <h1>Photography</h1>
           <section class="section">
-            <h2 class="section-title">Overview</h2>
             <p>Our photography reinforces our design principles.</p>
             <div class="flex-column flex-3col">
               <div>

@@ -20,7 +20,6 @@
         <div class="content">
           <h1>Typography</h1>
           <section class="section">
-            <h2 class="section-title" data-title="Xfinity Standard">Hi! I’m Xfinity Standard</h2>
             <p>Xfinity Standard is our proprietary typeface to be used across all Xfinity communications.</p>
             <p>It was designed to support a wide range of applications across digital and print experiences as it embodies simplicity yet still maintains a touch of personality and sophistication.</p>
             <a class="button" href="#">Download Xfinity Standard</a>

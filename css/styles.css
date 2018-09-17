@@ -9,6 +9,10 @@ body {
   font-family: "XfinityStandard", "Helvetica", "Arial", sans-serif;
 }
 
+a {
+  color: #999;
+}
+
 .inner {
   max-width: 1200px;
   width: 100%;
@@ -50,25 +54,26 @@ header .upper-head ul a {
   display: block;
   padding: 4px 0 3px 0;
   transition: .25s;
-  border-bottom: 3px solid transparent;
+  border-bottom: 2px solid transparent;
 }
 header .upper-head ul a {
   color: #000;
   border-bottom-width: 2px;
 }
-header .lower-head ul a:hover,
-header .upper-head ul a:hover {
+header .lower-head ul a:hover {
   border-color: #989393;
 }
 header .lower-head ul li.active a,
-header .upper-head ul li.active a {
+header .upper-head ul li.active a,
+header .upper-head ul a:hover {
+  color: #000;
   border-color: #000;
 }
 
 header .lower-head ul {
-  text-align: center;
   font-size: 18px;
   font-weight: 400;
+  padding: 0 4px;
 }
 header .lower-head ul li {
   padding: 0 16px;
@@ -77,9 +82,17 @@ header .lower-head ul a {
   padding: 16px 0 9px 0;
 }
 
-header .lower-head .inner {
+header .lower-head .inner,
+header .upper-head .inner {
   display: flex;
   max-width: 1200px;
+  align-items: flex-end;
+}
+header .upper-head .inner {
+  justify-content: flex-end;
+}
+header .lower-head .inner {
+  height: 70px;
 }
 header .logo {
   width: 25%;
@@ -91,7 +104,8 @@ header nav {
 
 header .logo.desktop {
   display: block;
-  padding: 10px 5% 6px 5%;
+  padding: 5px 0 0 5%;
+  align-self: center;
 }
 header .logo.mobile {
   display: none;
@@ -100,7 +114,7 @@ header .logo.mobile {
 header .logo a {
   border: 0;
   display: block;
-  width: 90px;
+  width: 125px;
 }
 header .logo a img {
   max-width: 100%;
@@ -166,7 +180,7 @@ footer .logo {
 }
 footer .logo a {
   display: block;
-  width: 90px;
+  width: 125px;
 }
 footer .logo a img {
   max-width: 100%;
@@ -289,7 +303,7 @@ main .inner {
 }
 .two-col .content {
   width: 75%;
-  margin: 20px 140px 40px 20px;
+  padding: 20px 140px 40px 20px;
 }
 .one-col .content {
   width: 100%;
@@ -393,19 +407,18 @@ main .inner {
   overflow: hidden;
 }
 .content h1 {
-  font-size: 58px;
-  font-weight: 400;
   margin: .5em 0;
 }
+.content h1,
 .content h2 {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 800;
 }
 @media (max-width: 768px) {
   .content h1 {
-    font-size: 42px;
     margin-top: 15px;
   }
+  .content h1,
   .content h2 {
     font-size: 24px;
   }
@@ -481,22 +494,22 @@ main .inner {
   flex-wrap: wrap;
 }
 /* 8% between each column */
-.content .flex-2col div {
+.content .flex-2col > div {
   width: calc(50% - 10px);
 }
-.content .flex-3col div {
+.content .flex-3col > div {
   width: calc(33.333% - 10px);
 }
-.content .flex-4col div {
+.content .flex-4col > div {
   width: calc(25% - 10px);
 }
 .content .flex-column .img {
   margin: 10px 0;
 }
-.content .flex-column div.extend {
+.content .flex-column > div.extend {
   width: 100%;
 }
-.content .flex-3col div.double {
+.content .flex-3col > div.double {
   width: calc(66.666% - 10px);
 }
 .content .flex-column ul {
@@ -507,14 +520,14 @@ main .inner {
   align-items: baseline;
 }
 @media (max-width: 768px) {
-  .content .flex-2col div,
-  .content .flex-3col div {
+  .content .flex-2col > div,
+  .content .flex-3col > div {
     width: 100%;
   }
-  .content .flex-3col div.double {
+  .content .flex-3col > div.double {
     width: 100%;
   }
-  .content .flex-4col div {
+  .content .flex-4col > div {
     width: calc(50% - 10px);
   }
   .content .flex-column .no-mobile {

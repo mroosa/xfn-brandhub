@@ -21,7 +21,6 @@
         <div class="content">
           <h1>Expressive X</h1>
           <section class="section" id="top">
-            <h2 class="section-title">Introduction</h2>
             <div class="flex-column flex-2col">
               <div>
                 <p>Our X is the most differentiating and distinctive feature of our brand name and identity, it’s what makes us, us. </p>

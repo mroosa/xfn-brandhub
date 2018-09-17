@@ -20,7 +20,6 @@
         <div class="content">
           <h1>Design System</h1>
           <section class="section">
-            <h2 class="section-title">Using the Grid</h2>
             <p>Designing with a grid allows for structure and visual balance. It also allows for consistency in brand creative. When creating print or digital layouts follow a grid, splitting the space into thirds or quarters.</p>
             <div class="img img-w-caption">
               <img src="<?php print $dir; ?>images/design-system-1.jpg" alt="" />

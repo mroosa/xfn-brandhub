@@ -20,7 +20,6 @@
         <div class="content">
           <h1>Co-Branding</h1>
           <section class="section">
-            <h2 class="section-title">Overview</h2>
             <p>Xfinity supports a variety of partners and experiences to reinforce our brand purpose and passions.</p>
             <p>For key partnerships, please follow best practices for co-branded lock ups, ensuring appropriate distance and 1:1 size relationship between wordmarks.</p>
             <p>For relationships where Xfinity is endorsing a partnership or experience, you may use a descriptive approach using the Xfinity wordmark. While endorsement line and sizing may vary, please ensure the Xfinity wordmark is legible and has impact.</p>

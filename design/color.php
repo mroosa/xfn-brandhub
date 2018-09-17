@@ -20,7 +20,6 @@
         <div class="content">
           <h1>Color</h1>
           <section class="section">
-            <h2 class="section-title">Color Palette</h2>
             <p>Xfinity embraces a neutral color palette, which allows our products and photography to shine. To stay true to our roots, we’ll occasionally use a pop of red to show our personality and highlight important information.</p>
             <div class="flex-column flex-4col">
               <div class="img">

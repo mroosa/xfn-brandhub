@@ -20,11 +20,11 @@
         <div class="content">
           <h1>Our Devices</h1>
           <section class="section">
-            <p>XFINITY devices blend physical interaction with digital interfaces to deliver premium styling, modern finishes, and an intuitive experience.</p>
+            <p>Xfinity devices blend physical interaction with digital interfaces to deliver premium styling, modern finishes, and an intuitive experience.</p>
           </section>
           <section class="section">
             <h2 class="section-title">Visual Language</h2>
-            <p>Plus/Minus is paramount to maintaining the XFINITY brand by linking these premium design styles to our digital experiences.</p>
+            <p>Plus/Minus is paramount to maintaining the Xfinity brand by linking these premium design styles to our digital experiences.</p>
             <div class="flex-column flex-2col">
               <div>
                 <h3>Plus</h3>
@@ -75,7 +75,7 @@
             </div>
 
             <h3>Remotes</h3>
-            <p>As TV Boxes become smaller, the remote interface continues to be the most common interaction with XFINITY, but it must also be comfortable for many different types of users. Furthermore, as voice becomes a more popular way for users to control their XFINITY experience, the number and types of buttons and controls will change.</p>
+            <p>As TV Boxes become smaller, the remote interface continues to be the most common interaction with Xfinity, but it must also be comfortable for many different types of users. Furthermore, as voice becomes a more popular way for users to control their Xfinity experience, the number and types of buttons and controls will change.</p>
             <div class="flex-column flex-2col">
               <div class="img">
                 <img src="<?php print $dir; ?>images/design-hardware-05-1.jpg" alt="" />
@@ -100,8 +100,8 @@
             </div>
 
             <h3>Home</h3>
-            <p>XFINITY Home devices serve to meet the needs of both a traditional home security system and an "Internet of Things" connected home.</p>
-            <p>Customers use keypads, touchscreens, mobile devices, PCs, or their TV to control and monitor their connected homes. Because of this, XFINITY Home devices have varying levels of design interactions.</p>
+            <p>Xfinity Home devices serve to meet the needs of both a traditional home security system and an "Internet of Things" connected home.</p>
+            <p>Customers use keypads, touchscreens, mobile devices, PCs, or their TV to control and monitor their connected homes. Because of this, Xfinity Home devices have varying levels of design interactions.</p>
             <div class="flex-column flex-2col">
               <div class="img">
                 <img src="<?php print $dir; ?>images/design-hardware-09-1.jpg" alt="" />

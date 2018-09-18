@@ -2,7 +2,7 @@
   $dir = "../";
   $scriptList = ['subnav.js'];
   $activeMain = 1; // Design
-  $activeSub = 8;
+  $activeSub = 10;
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 <body class="two-col design">
@@ -18,7 +18,7 @@
           endif;
         ?>
         <div class="content">
-          <h1>Hardware</h1>
+          <h1>Our Devices</h1>
           <section class="section">
             <p>XFINITY devices blend physical interaction with digital interfaces to deliver premium styling, modern finishes, and an intuitive experience.</p>
           </section>

@@ -39,3 +39,15 @@ function smoothScrolling() {
   }
 }
 smoothScrolling();
+
+
+$(document).ready(function() {
+  $("input, textarea, select").wrap('<div class="form-item-wrap">')
+  $(".form-item-wrap").find("input, textarea, select").focus(function() {
+    $(this).parent(".form-item-wrap").addClass("focus");
+  });
+  $(".form-item-wrap").find("input, textarea, select").blur(function() {
+    $(this).parent(".form-item-wrap").removeClass("focus");
+  });
+
+});

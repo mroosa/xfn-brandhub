@@ -2,7 +2,7 @@
 $linkAry = [
 	new NavLink($dir . 'search','<span class="icon-search"></span>', 'Search'),
 	new NavLink($dir . 'whats-new','What\'s New', null),
-	new NavLink($dir . 'inspirations','Inspiration', null),
+	new NavLink($dir . 'inspiration','Inspiration', null),
 	new NavLink($dir . 'downloads','Downloads', null)
 ];
 print "\t<ul>\n";

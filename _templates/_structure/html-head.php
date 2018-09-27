@@ -7,6 +7,7 @@
   <title>Xfinity Brand Hub</title>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="<?php print $dir; ?>js/jquery.min.js"></script>
   <script src="<?php print $dir; ?>js/global.js"></script>
   <?php
   if (isset($scriptList) && $scriptList != 'undefined') {

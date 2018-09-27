@@ -10,6 +10,7 @@ $activeTop = 2;
     <main>
       <div class="inner">
         <div class="content">
+          <h1>Inspiration Gallery</h1>
           <section class="section form">
             <div class="selection">
               <label for="product">Product</label>

@@ -10,7 +10,7 @@ $subLinkAry = [
   new NavLink($dir . 'design/design-system','Design System', null),
 	new NavLink($dir . 'design/co-branding','Co-Branding', null),
 	new NavLink($dir . 'design/secondary-graphics','Secondary Graphics', null),
-	new NavLink($dir . 'design/hardware','Our Devices', null)
+	new NavLink($dir . 'design/our-devices','Our Devices', null)
 ];
 
 print "\t<ul class=\"nav menu\">\n";

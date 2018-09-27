@@ -21,34 +21,6 @@
           <h1>Our Devices</h1>
           <section class="section">
             <p>Xfinity devices blend physical interaction with digital interfaces to deliver premium styling, modern finishes, and an intuitive experience.</p>
-          </section>
-          <section class="section">
-            <h2 class="section-title">Visual Language</h2>
-            <p>Plus/Minus is paramount to maintaining the Xfinity brand by linking these premium design styles to our digital experiences.</p>
-            <div class="flex-column flex-2col">
-              <div>
-                <h3>Plus</h3>
-                <div class="img">
-                  <img src="<?php print $dir; ?>images/design-hardware-00-1.jpg" alt="" />
-                </div>
-                <p>Dark devices embody a luxurious, premium look and feel. They are meant to recede and not compete with the TV. Materials include matte, plasticized coatings and metal reveals, highlighted by LED lighting and fabrics.</p>
-                <p><strong>Usage:</strong> Consumer-facing entertainment and whole home services.</p>
-                <p><strong>Applicable Products:</strong> TV, Internet, Phone, Voice</p>
-              </div>
-              <div>
-                <h3>Minus</h3>
-                <div class="img">
-                  <img src="<?php print $dir; ?>images/design-hardware-00-2.jpg" alt="" />
-                </div>
-                <p>Light devices blend with surroundings without compromising on style or function.</p>
-                <p><strong>Usage:</strong> Consumer and employee-facing tools, such as customer support, file management, and account settings.</p>
-                <p><strong>Applicable Products:</strong> Security, Connect</p>
-              </div>
-            </div>
-          </section>
-          <section class="section">
-            <h2 class="section-title">Devices</h2>
-            <p>All platforms deliver a premium, high-end experience matched only by the quality and craftsmanship of our devices.</p>
             <a class="button" href="http://xfinity.com/" target="_blank">Download Device Portfolio</a>
             <div class="img img-w-caption">
               <img src="<?php print $dir; ?>images/design-hardware-01.jpg" alt="" />

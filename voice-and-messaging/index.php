@@ -20,6 +20,8 @@
         <div class="content">
           <h1>More to come in 2019!</h1>
           <section class="section">
+            <p>Intentional messaging with a clear brand voice and personality allows us to be meaningful and relevant while staying true to the brand. Our voice shapes how we talk and our messages guide what we say.  To learn more about the ins and outs of our products and services, click here to access our brand voice and messaging guidelines.</p>
+            <p>We’re actively working to incorporate our brand voice and messaging guidelines into this site. Please check back soon for updates! In the meantime, if you have questions or issues accessing the guidelines through the link above, please feel free to reach out to the brand team.</p>
             <p><a class="button" href="#">Full messaging guidelines</a></p>
           </section>
         </div><!-- /.content -->

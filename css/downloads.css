@@ -1,6 +1,9 @@
-body.download h1 {
+.downloads h1 {
   text-align: center;
   padding: 60px 60px 15px 60px;
+}
+.download {
+  margin-bottom: 50px;
 }
 .download-gallery {
   padding: 15px 60px 30px 60px;
@@ -26,6 +29,9 @@ body.download h1 {
 }
 .download-intro * {
   align-self: center;
+}
+.download-intro img {
+  max-height: 65px;
 }
 .download-contents ul {
   list-style: none;

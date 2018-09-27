@@ -25,6 +25,7 @@
               <div>
                 <p>Our X is the most differentiating and distinctive feature of our brand name and identity, it’s what makes us, us. </p>
                 <p>It’s a dynamic, ownable brand storytelling device that visually represents our brand purpose – fueling discovery for everyday enjoyment – through passions, partnerships, and differentiating product experience.</p>
+                <p>For any questions and for approval for use of the Expressive X, please reach out to the Xfinity Brand Team.</p>
               </div>
               <div class="img">
                 <img style="width: 220px; margin: 0 auto;" src="<?php print $dir; ?>images/design-expressive-x.png" alt-"" />
@@ -56,7 +57,7 @@
               </div>
             </div>
           </section>
-
+<!--
           <section class="section">
             <h2 class="section-title">Rules of the X</h2>
             <div class="gallery">
@@ -106,7 +107,8 @@
               </div>
             </div>
           </section>
-
+-->
+<!--
           <section class="section">
             <h2 class="section-title">Building the X</h2>
             <div class="gallery">
@@ -144,12 +146,13 @@
               </div>
             </div>
           </section>
+-->
 
           <section class="section">
             <h2 class="section-title">The X in Use</h2>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-x-4-1.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-4-4.jpg" alt-"" />
               </div>
               <div class="img">
                 <img src="<?php print $dir; ?>images/design-x-4-2.jpg" alt-"" />
@@ -157,20 +160,11 @@
               <div class="img extend">
                 <img src="<?php print $dir; ?>images/design-x-4-3.jpg" alt-"" />
               </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-x-4-4.jpg" alt-"" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-x-4-5.jpg" alt-"" />
-              </div>
               <div class="img extend">
                 <img src="<?php print $dir; ?>images/design-x-4-6.jpg" alt-"" />
               </div>
               <div class="img extend">
                 <img src="<?php print $dir; ?>images/design-x-4-7.jpg" alt-"" />
-              </div>
-              <div class="img extend">
-                <img src="<?php print $dir; ?>images/design-x-4-8.jpg" alt-"" />
               </div>
           </section>
 
@@ -182,26 +176,11 @@
                 <img src="<?php print $dir; ?>images/design-x-5-1.jpg" alt-"" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-x-5-2.jpg" alt-"" />
-              </div>
-              <div class="img">
                 <img src="<?php print $dir; ?>images/design-x-5-3.jpg" alt-"" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-x-5-4.jpg" alt-"" />
-              </div>
-              <div class="img extend">
-                <img src="<?php print $dir; ?>images/design-x-5-5.jpg" alt-"" />
-              </div>
-              <div class="img extend">
-                <img src="<?php print $dir; ?>images/design-x-5-6.jpg" alt-"" />
-              </div>
-              <div class="img extend">
-                <img src="<?php print $dir; ?>images/design-x-5-7.jpg" alt-"" />
               </div>
             </div>
           </section>
-
+<!--
           <section class="section">
             <h2 class="section-title">X Misuses</h2>
             <p>The Expressive X allows for creative exploration. This approach should be used sparingly or for special circumstances.</p>
@@ -239,7 +218,19 @@
                 <p class="caption">Do not create an Expressive X within the full Xfinity word mark.</p>
               </div>
           </section>
-
+-->
+          <section class="section">
+            <h2 class="section-title">Additional Examples</h2>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-x-additional-1-2.png" alt-"" />
+            </div>
+            <div class="img extend">
+              <img src="<?php print $dir; ?>images/design-x-additional-3.jpg" alt-"" />
+            </div>
+            <div class="img extend">
+              <img src="<?php print $dir; ?>images/design-x-additional-4.jpg" alt-"" />
+            </div>
+          </section>
         </div><!-- /.content -->
       </div><!-- /.inner -->
     </main>

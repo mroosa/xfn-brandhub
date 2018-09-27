@@ -12,7 +12,7 @@ $(document).ready(function() {
     var newTag = $(this).val();
     var thisCat = $(this).attr("id");
     TagList[thisCat] = newTag;
-    console.log(TagList);
+    // console.log(TagList);
     $(".grid-item").each(function() {
       if ($(this).attr("data-tags")) {
         var itemTags = $(this).attr("data-tags").split(",");
@@ -37,7 +37,12 @@ $(document).ready(function() {
         }
       }
     });
-    $(".grid-item[data]");
+    $(".inspiration-gallery").addClass("modified");
+    var $grid = $('.grid').masonry();
+    $grid.imagesLoaded().progress(function() {
+      $grid.masonry('layout');
+    });
+
   });
   $(".grid-item").hover(function() {
     if ($(this).attr("data-tags")) {

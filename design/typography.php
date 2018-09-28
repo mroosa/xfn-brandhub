@@ -20,21 +20,45 @@
         <div class="content">
           <h1>Typography</h1>
           <section class="section">
-            <p>Xfinity Standard is our proprietary typeface to be used across all Xfinity communications.</p>
-            <p>It was designed to support a wide range of applications across digital and print experiences as it embodies simplicity yet still maintains a touch of personality and sophistication.</p>
-            <a class="button" href="#">Download Xfinity Standard</a>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/typography-1.png" alt="Xfinity Brown and Standard comparison image">
+            </div>
           </section>
 
           <section class="section">
-            <h2 class="section-title">Type Scale &amp; Leading</h2>
-            <p>Our brand follows a general typescale that meets both aesthetic impression and legibility requirements.</p>
+            <h2 class="section-title">Our Typefaces</h2>
+            <p>We maintain 2 typefaces to express our personality and meet accessibility requirements in product experiences:</p>
+            <ul>
+              <li><p><strong>Xfinity Brown</strong> is our primary brand font for use in marketing communications.</p></li>
+              <li><p><strong>Xfinity Standard</strong> is our secondary brand font for functional use in long-form body, product, dotcom and legal.</p></li>
+            </ul>
+            <div class="flex-column flex-2col">
+              <div><a class="button" href="#">Download Xfinity Brown</a></div>
+              <div><a class="button" href="#">Download Xfinity Standard</a></div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">Licenses</h2>
+            <p>Xfinity Brown licenses include usage in brand marketing tactics only.</p>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-typography-1-1.jpg" alt="PRIMARY HEADLINE: Medium headlines are set in Xfinity Standard Bold, with 1.25x leading. This is the default setting for headlines." />
-              <img src="<?php print $dir; ?>images/design-typography-1-2.jpg" alt="SUBHEAD: Subheads which require emphasis are set in Xfinity Standard Bold with 1.5 - 1.75x leading and 0 points of tracking." />
-              <img src="<?php print $dir; ?>images/design-typography-1-3.jpg" alt="BODY: Body copy is set in Xfinity Standard Regular, 1.25 - 1.5x leading. Typical body copy should be two to four sentences in length. Body copy should be brief and concise." />
-              <img src="<?php print $dir; ?>images/design-typography-1-4.jpg" alt="SMALL HEADLINE: Small headlines are set in Xfinity Standard Bold with 1.25 - 1.5x leading." />
-              <img src="<?php print $dir; ?>images/design-typography-1-5.jpg" alt="SMALL BODY: Smaller body copy is set in Xfinity Standard Medium, auto leading." />
-              <img src="<?php print $dir; ?>images/design-typography-1-6.jpg" alt="LEGAL: Legal copy is set in Xfinity Standard Regular with auto leading." />
+              <img src="<?php print $dir; ?>images/typography-2.png" alt="Xfinity Brown Rules. Use in print advertising, TV advertising, digital banner ads, social, email, retail marketing, and event/experiential marketing." />
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">Usage</h2>
+            <h3>Primary Type Styles</h3>
+            <p><strong>Xfinity Brown</strong> is our primary and most expressive typeface and should be used for headlines and other elements deserving emphasis, like subheads and price points.</p>
+            <p><strong>Xfinity Standard</strong> should be used for product and dotcom experiences, long-form body copy and functional legal copy to minimize length and legibility at small scales.</p>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/typography-3.png" alt="Xfinity Brown Rules graphic." />
+            </div>
+            <div class="flex-column"></div>
+            <h3>Secondary Type Styles</h3>
+            <p>In addition, here are some best practices for a few commonly used elements and lock-ups in communications. Please note, voice command guidance is for usage in standalone X1 Voice Remote marketing tactics only – the product experience and user interface screens for marketing will continue to use Xfinity Standard Light.</p>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/typography-4.png" alt="Xfinity Brown Rules graphic." />
             </div>
           </section>
 

@@ -29,8 +29,8 @@
             <h2 class="section-title">Our Typefaces</h2>
             <p>We maintain 2 typefaces to express our personality and meet accessibility requirements in product experiences:</p>
             <ul>
-              <li><p><strong>Xfinity Brown</strong> is our primary brand font for use in marketing communications.</p></li>
-              <li><p><strong>Xfinity Standard</strong> is our secondary brand font for functional use in long-form body, product, dotcom and legal.</p></li>
+              <li><strong>Xfinity Brown</strong> is our primary brand font for use in marketing communications.</li>
+              <li><strong>Xfinity Standard</strong> is our secondary brand font for functional use in long-form body, product, dotcom and legal.</li>
             </ul>
             <a class="button" href="#">Download Xfinity Brown</a>
             <a class="button" href="#">Download Xfinity Standard</a>

@@ -430,11 +430,11 @@ main .inner {
 }
 .content li,
 .content p {
+  margin-top: 10px;
   font-size: 16px;
   line-height: 150%;
 }
 .content p {
-  margin-top: 10px;
 }
 .content p.caption {
   font-size: 14px;

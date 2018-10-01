@@ -55,7 +55,7 @@ $(document).ready(function() {
             // validate this prop
           }
         }
-        // If all propr validate
+        // If all props validate
         if (propCount==4) {
           $(this).addClass("show");
         }

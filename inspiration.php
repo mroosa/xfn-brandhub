@@ -65,10 +65,10 @@ $activeTop = 2;
           </section>
           <section class="section inspiration-gallery">
             <div class="grid">
-              <div class="grid-item">
+              <div class="grid-item" data-tags="digital">
                 <a href="images/inspirations/thumbnail/inspo-01.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-01.png" alt="" /></a>
               </div>
-              <div class="grid-item">
+              <div class="grid-item" data-tags="digital">
                 <a href="images/inspirations/thumbnail/inspo-02.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-02.png" alt="" /></a>
               </div>
               <div class="grid-item" data-tags="brochure, acquisition">
@@ -77,13 +77,13 @@ $activeTop = 2;
               <div class="grid-item" data-tags="digital">
                 <a href="images/inspirations/thumbnail/inspo-04.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-04.png" alt="" /></a>
               </div>
-              <div class="grid-item">
+              <div class="grid-item" data-tags="digital">
                 <a href="images/inspirations/thumbnail/inspo-06.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-06.png" alt="" /></a>
               </div>
-              <div class="grid-item">
+              <div class="grid-item" data-tags="digital">
                 <a href="images/inspirations/thumbnail/inspo-07.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-07.png" alt="" /></a>
               </div>
-              <div class="grid-item">
+              <div class="grid-item" data-tags="digital">
                 <a href="images/inspirations/thumbnail/inspo-10.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-10.png" alt="" /></a>
               </div>
               <div class="grid-item">

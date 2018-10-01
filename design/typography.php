@@ -32,10 +32,8 @@
               <li><p><strong>Xfinity Brown</strong> is our primary brand font for use in marketing communications.</p></li>
               <li><p><strong>Xfinity Standard</strong> is our secondary brand font for functional use in long-form body, product, dotcom and legal.</p></li>
             </ul>
-            <div class="flex-column flex-2col">
-              <div><a class="button" href="#">Download Xfinity Brown</a></div>
-              <div><a class="button" href="#">Download Xfinity Standard</a></div>
-            </div>
+            <a class="button" href="#">Download Xfinity Brown</a>
+            <a class="button" href="#">Download Xfinity Standard</a>
           </section>
 
           <section class="section">

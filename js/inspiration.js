@@ -67,7 +67,7 @@ $(document).ready(function() {
   $(".grid-item").hover(function() {
     if ($(this).attr("data-tags")) {
       var ary = $(this).attr("data-tags").split(", ");
-      console.log(ary);
+      // console.log(ary);
     }
   });
 });

@@ -68,8 +68,8 @@ $activeTop = 2;
               <div class="grid-item" data-tags="digital">
                 <a href="images/inspirations/thumbnail/inspo-01.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-01.png" alt="" /></a>
               </div>
-              <div class="grid-item" data-tags="digital">
-                <a href="images/inspirations/thumbnail/inspo-02.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-02.png" alt="" /></a>
+              <div class="grid-item" data-tags="digital, tv">
+                <a href="https://player.vimeo.com/video/291734888" data-featherlight="iframe" data-featherlight-iframe-width="640" data-featherlight-iframe-height="360" data-featherlight-style="padding:25px;"><img src="images/inspirations/thumbnail/inspo-02.png" alt="" /></a>
               </div>
               <div class="grid-item" data-tags="brochure, acquisition">
                 <a href="images/inspirations/thumbnail/inspo-03.png" data-featherlight="image"><img src="images/inspirations/thumbnail/inspo-03.png" alt="" /></a>

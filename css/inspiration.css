@@ -29,6 +29,9 @@
 .grid-item a img {
   display: block;
 }
+.grid-item .grid-item-big {
+  display: none;
+}
 .section.form .selection label {
   display: block;
   font-weight: 500;

@@ -19,18 +19,19 @@
           endif;
         ?>
         <div class="content">
-          <h1>Expressive X</h1>
-          <section class="section" id="top">
-            <div class="flex-column flex-2col">
-              <div>
-                <p>Our X is the most differentiating and distinctive feature of our brand name and identity, it’s what makes us, us. </p>
-                <p>It’s a dynamic, ownable brand storytelling device that visually represents our brand purpose – fueling discovery for everyday enjoyment – through passions, partnerships, and differentiating product experience.</p>
-                <p>For any questions and for approval for use of the Expressive X, please reach out to the Xfinity Brand Team.</p>
-              </div>
-              <div class="img">
-                <img style="width: 220px; margin: 0 auto;" src="<?php print $dir; ?>images/design-expressive-x.png" alt-"" />
-              </div>
+          <h1>Brand Symbol</h1>
+          <section class="section" id="top" data-title="Overview">
+            <p>Our brand symbol is the most differentiating and distinctive feature of our brand name and identity, it's what makes us, us.</p>
+            <p>It’s a dynamic, ownable brand storytelling device that visually represents our brand purpose – fueling discovery for everyday enjoyment – through passions, partnerships, and differentiating product experience.</p>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-brand-symbol-1.jpg" alt-"" />
             </div>
+            <p>Our brand symbol has two roles:</p>
+            <ul>
+              <li><strong>Functional:</strong> The X can be a shorthand for Xfinity in Xfinity-branded environments where the brand has already been established</li>
+              <li><strong>Expressive:</strong> The X is an expressive device for storytelling around our passions and products.</li>
+            </ul>
+            <p class="caption">For any questions and for approval for use of the Expressive X, please reach out to the Xfinity Brand Team.</p>
           </section>
 
           <section class="section">
@@ -46,7 +47,7 @@
                 </ul>
               </div>
               <div>
-                <h3>The X should not be used for:</h3>
+                <h3>The X <u>should not</u> be used for:</h3>
                 <ul>
                   <li>BAU marketing and customer communications</li>
                   <li>Sales/promos</li>
@@ -149,13 +150,31 @@
 -->
 
           <section class="section">
-            <h2 class="section-title">The X in Use</h2>
+            <h2>The Brand Symbol in Use</h2>
+
+            <h3>Functional</h3>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-x-4-4.jpg" alt-"" />
+                <img src="<?php print $dir; ?>images/design-x-additional-1.jpg" alt-"" />
               </div>
               <div class="img">
+                <img src="<?php print $dir; ?>images/design-x-additional-2.jpg" alt-"" />
+              </div>
+            </div>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-x-additional-4.jpg" alt-"" />
+            </div>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-x-additional-5.jpg" alt-"" />
+            </div>
+
+            <h3>Expressive</h3>
+            <div class="flex-column flex-2col">
+              <div class="img">
                 <img src="<?php print $dir; ?>images/design-x-4-2.jpg" alt-"" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-x-4-4.jpg" alt-"" />
               </div>
               <div class="img extend">
                 <img src="<?php print $dir; ?>images/design-x-4-3.jpg" alt-"" />
@@ -168,8 +187,9 @@
               </div>
           </section>
 
+<!--
           <section class="section">
-            <h2 class="section-title">Creative Discovery</h2>
+            <h2>Creative Discovery</h2>
             <p>The Expressive X allows for creative exploration. This approach should be used sparingly or for special circumstances.</p>
             <div class="flex-column flex-2col">
               <div class="img">
@@ -180,7 +200,7 @@
               </div>
             </div>
           </section>
-<!--
+
           <section class="section">
             <h2 class="section-title">X Misuses</h2>
             <p>The Expressive X allows for creative exploration. This approach should be used sparingly or for special circumstances.</p>
@@ -219,18 +239,6 @@
               </div>
           </section>
 -->
-          <section class="section">
-            <h2 class="section-title">Additional Examples</h2>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-x-additional-1-2.png" alt-"" />
-            </div>
-            <div class="img extend">
-              <img src="<?php print $dir; ?>images/design-x-additional-3.jpg" alt-"" />
-            </div>
-            <div class="img extend">
-              <img src="<?php print $dir; ?>images/design-x-additional-4.jpg" alt-"" />
-            </div>
-          </section>
         </div><!-- /.content -->
       </div><!-- /.inner -->
     </main>

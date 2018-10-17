@@ -19,15 +19,15 @@
         ?>
         <div class="content">
           <h1>Sub-brands</h1>
-          <section class="section">
+          <!-- <section class="section">
             <p>Our brand hierarchy reflects our strategic priorities, with design treatments reserved for flagship experiences.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/design-subbrand-1.png" alt="" />
             </div>
-          </section>
+          </section> -->
 
           <section class="section">
-            <h2 class="section-title">Logos</h2>
+            <!-- <h2 class="section-title">Logos</h2> -->
             <p>Our system of sub-brands focus on these five product experiences: Xfinity X1, Xfinity xFi, Xfinity Home, Xfinity Stream, and Xfinity Mobile. The sub-brand logos are available in black and white, with black used on white or light backgrounds and white used on black or dark backgrounds.</p>
             <p>The primary use for Xfinity sub-brand logos are for dedicated product experiences, such as apps.  In the majority of communications, the masterbrand Xfinity logo should be used.  For questions, please contact the Brand team. </p>
             <div class="img">

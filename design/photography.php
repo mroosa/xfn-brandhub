@@ -52,7 +52,29 @@
           </section>
 
           <section class="section">
-            <h2 class="section-title">Photography in Use</h2>
+            <h2 class="section-title">Strategic Use of Red</h2>
+            <p>Deliberate and subtle pops of red for vibrancy in wardrobe or accessories can reinforce our brand color.</p>
+            <div class="flex-column flex-2col">
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-photography-9-1.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-photography-9-2.jpg" alt="" />
+              </div>
+            </div>
+            <p>Not red as only color, red backgrounds, too much red.</p>
+            <div class="flex-column flex-2col">
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-photography-10-1.jpg" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/design-photography-10-2.jpg" alt="" />
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">Best Practices</h2>
 
             <div class="flex-column flex-2col bottom">
               <div class="img img-w-caption">
@@ -115,28 +137,6 @@
           </section>
 
           <section class="section">
-            <h2 class="section-title">Strategic Use of Red</h2>
-            <p>Deliberate and subtle pops of red for vibrancy in wardrobe or accessories can reinforce our brand color.</p>
-            <div class="flex-column flex-2col">
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-9-1.jpg" alt="" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-9-2.jpg" alt="" />
-              </div>
-            </div>
-            <p>Not red as only color, red backgrounds, too much red.</p>
-            <div class="flex-column flex-2col">
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-10-1.jpg" alt="" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-10-2.jpg" alt="" />
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
             <h2 class="section-title">Settings</h2>
             <p>Settings should uncluttered but lived in to allow the subject matter to be the focus. Aspirational, yet attainable. Clean, bright palette to allow subject to pop. Current, location agnostic.</p>
             <div class="flex-column flex-2col">
@@ -158,7 +158,7 @@
             </div>
           </section>
 
-          <section class="section">
+          <!-- <section class="section">
             <h2 class="section-title">Talent</h2>
             <p>Embody the Curious Minded – able to convey broad range of emotion to spark curiousity.</p>
             <div class="flex-column flex-2col">
@@ -187,7 +187,7 @@
                 <img src="<?php print $dir; ?>images/design-photography-15-2.jpg" alt="" />
               </div>
             </div>
-          </section>
+          </section> -->
 
         </div><!-- /.content -->
       </div><!-- /.inner -->

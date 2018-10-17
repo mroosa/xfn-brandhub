@@ -78,14 +78,14 @@
             </div>
           </section>
 
-          <section class="section">
+          <!-- <section class="section">
             <h2 class="section-title">Our End Card</h2>
             <div class="img img-w-caption">
               <img src="<?php print $dir; ?>images/design-logo-9.jpg" alt="" />
               <p class="caption">CTA and “the future is awesome” end card</p>
             </div>
             <a class="button" href="#">Download End Card Guidelines</a>
-          </section>
+          </section> -->
 
           <section class="section">
             <h2 class="section-title">Logo Misuses</h2>

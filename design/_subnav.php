@@ -2,7 +2,7 @@
 $subLinkAry = [
 	new NavLink($dir . 'design','Overview', null),
 	new NavLink($dir . 'design/logo','Logo', null),
-	new NavLink($dir . 'design/expressive-x','Expressive X', null),
+	new NavLink($dir . 'design/brand-symbol','Brand Symbol', null),
 	new NavLink($dir . 'design/sub-brands','Sub-Brands', null),
 	new NavLink($dir . 'design/color','Color', null),
   new NavLink($dir . 'design/typography','Typography', null),

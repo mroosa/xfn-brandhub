@@ -36,12 +36,12 @@
               </div>
             </div>
             <p>Our design principles ensure we create distinctively Xfinity experiences that consistently reflect our brand across every interaction.</p>
+            <p>Following the spirit of this site is essential to ensuring the Xfinity Brand is consistently represented across all touchpoints.</p>
+            <a class="button" href="#">Download all assets</a>
+            <a class="button" href="../inspiration">View Inspiration Gallery</a>
             <div class="img img-w-caption">
               <a data-lightbox="ex-1" href="<?php print $dir; ?>images/design-overview-1.jpg"><img src="<?php print $dir; ?>images/design-overview-1.jpg" /></a>
             </div>
-            <h3>Following the spirit of this site is essential to ensuring the Xfinity Brand is consistently represented across all touchpoints.</h3>
-            <a class="button" href="#">Download all assets</a>
-            <a class="button" href="../inspiration">View Inspiration Gallery</a>
           </div><!-- /.secton -->
         </div><!-- /.content -->
       </div><!-- /.inner -->

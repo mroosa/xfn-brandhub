@@ -20,18 +20,15 @@
         <div class="content">
           <h1>Typography</h1>
           <section class="section">
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-typography-1.png" alt="Xfinity Brown and Standard comparison image">
-            </div>
-          </section>
-
-          <section class="section">
-            <h2 class="section-title">Our Typefaces</h2>
             <p>We maintain 2 typefaces to express our personality and meet accessibility requirements in product experiences:</p>
-            <ul>
-              <li><strong>Xfinity Brown</strong> is our primary brand font for use in marketing communications.</li>
-              <li><strong>Xfinity Standard</strong> is our secondary brand font for functional use in long-form body, product, dotcom and legal.</li>
-            </ul>
+            <div class="img-w-caption" style="width: 75%;">
+              <img src="<?php print $dir; ?>images/design-typography-1-1.jpg" alt="Xfinity Brown">
+              <p class="caption"><strong>Xfinity Brown</strong> is our primary brand font for use in marketing communications.</p>
+            </div>
+            <div class="img-w-caption" style="width: 75%;">
+              <img src="<?php print $dir; ?>images/design-typography-1-2.jpg" alt="Xfinity Standard">
+              <p class="caption"><strong>Xfinity Standard</strong> is our secondary brand font for functional use in long-form body, product, dotcom and legal.</p>
+            </div>
             <a class="button" href="#">Download Xfinity Brown</a>
             <a class="button" href="#">Download Xfinity Standard</a>
           </section>
@@ -39,8 +36,31 @@
           <section class="section">
             <h2 class="section-title">Licenses</h2>
             <p>Xfinity Brown licenses include usage in brand marketing tactics only.</p>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-typography-2.png" alt="Xfinity Brown Rules. Use in print advertising, TV advertising, digital banner ads, social, email, retail marketing, and event/experiential marketing." />
+            <div class="flex-column flex-2col">
+              <div class="white-bg">
+                <h3>Do use Xfinity Brown in:</h3>
+                <ul>
+                  <li>Print advertising</li>
+                  <li>TV advertising</li>
+                  <li>Digital banner ads</li>
+                  <li>Social</li>
+                  <li>Email</li>
+                  <li>Retail marketing</li>
+                  <li>Event/experiential marketing</li>
+                </ul>
+              </div>
+              <div class="white-bg">
+                <h3><u>Do not</u> use Xfinity Brown in:</h3>
+                <ul>
+                  <li>Product (mobile apps, X1, etc)</li>
+                  <li>Dotcom (e.g., xfinity.com)</li>
+                  <li>Commercial merchandising (e.g., packaging)</li>
+                  <li>Hardware</li>
+                </ul>
+              </div>
+              <!-- <div class="img">
+                <img src="<?php print $dir; ?>images/design-typography-2.png" alt="Xfinity Brown Rules. Use in print advertising, TV advertising, digital banner ads, social, email, retail marketing, and event/experiential marketing." />
+              </div> -->
             </div>
           </section>
 

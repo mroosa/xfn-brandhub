@@ -10,7 +10,7 @@ $activeTop = 3;
     <main>
       <div class="inner">
         <div class="content">
-          <h1>Download Library</h1>
+          <h1>Resources</h1>
           <section class="section download-gallery">
             <div class="download" id="xfinity-logo">
               <h3>Xfinity Logo</h3>
@@ -82,19 +82,6 @@ $activeTop = 3;
               </div>
             </div><!-- /.download -->
 
-            <div class="download" id="typography">
-              <h3>Typography</h3>
-              <div class="download-intro">
-                <div class="flex-col flex-col-1">
-                  <img src="<?php print $dir; ?>images/downloads/typography-intro.png" alt="" />
-                </div>
-                <div class="flex-col flex-col-2">
-                  <a class="button" data-action="view" href="#">Choose Items</a>
-                  <a class="button" href="#">Download All</a>
-                </div>
-              </div>
-            </div><!-- /.download -->
-
             <div class="download" id="color">
               <h3>Color</h3>
               <div class="download-intro">
@@ -107,50 +94,11 @@ $activeTop = 3;
               </div>
             </div><!-- /.download -->
 
-            <div class="download" id="icons">
-              <h3>Icons</h3>
+            <div class="download" id="typography">
+              <h3>Typography</h3>
               <div class="download-intro">
                 <div class="flex-col flex-col-1">
-                  <img src="<?php print $dir; ?>images/downloads/icons-intro.png" alt="" />
-                </div>
-                <div class="flex-col flex-col-2">
-                  <a class="button" data-action="view" href="#">Choose Items</a>
-                  <a class="button" href="#">Download All</a>
-                </div>
-              </div>
-            </div><!-- /.download -->
-
-            <div class="download" id="mobile-app-icons">
-              <h3>Mobile App Icons</h3>
-              <div class="download-intro">
-                <div class="flex-col flex-col-1">
-                  <img src="<?php print $dir; ?>images/downloads/mobile-app-icons-intro.png" alt="" />
-                </div>
-                <div class="flex-col flex-col-2">
-                  <a class="button" data-action="view" href="#">Choose Items</a>
-                  <a class="button" href="#">Download All</a>
-                </div>
-              </div>
-            </div><!-- /.download -->
-
-            <div class="download" id="generic-devices">
-              <h3>Generic Devices</h3>
-              <div class="download-intro">
-                <div class="flex-col flex-col-1">
-                  <img src="<?php print $dir; ?>images/downloads/generic-devices-intro.png" alt="" />
-                </div>
-                <div class="flex-col flex-col-2">
-                  <a class="button" data-action="view" href="#">Choose Items</a>
-                  <a class="button" href="#">Download All</a>
-                </div>
-              </div>
-            </div><!-- /.download -->
-
-            <div class="download" id="xfinity-devices">
-              <h3>Xfinity Devices</h3>
-              <div class="download-intro">
-                <div class="flex-col flex-col-1">
-                  <img src="<?php print $dir; ?>images/downloads/xfinity-devices-intro.png" alt="" />
+                  <img src="<?php print $dir; ?>images/downloads/typography-intro.png" alt="" />
                 </div>
                 <div class="flex-col flex-col-2">
                   <a class="button" data-action="view" href="#">Choose Items</a>
@@ -172,11 +120,50 @@ $activeTop = 3;
               </div>
             </div><!-- /.download -->
 
-            <div class="download" id="powerpoint">
-              <h3>Powerpoint Templates</h3>
+            <div class="download" id="xfinity-devices">
+              <h3>Xfinity Devices</h3>
               <div class="download-intro">
                 <div class="flex-col flex-col-1">
-                  <img src="<?php print $dir; ?>images/downloads/powerpoint-intro.png" alt="" />
+                  <img src="<?php print $dir; ?>images/downloads/xfinity-devices-intro.png" alt="" />
+                </div>
+                <div class="flex-col flex-col-2">
+                  <a class="button" data-action="view" href="#">Choose Items</a>
+                  <a class="button" href="#">Download All</a>
+                </div>
+              </div>
+            </div><!-- /.download -->
+
+            <div class="download" id="generic-devices">
+              <h3>Generic Devices</h3>
+              <div class="download-intro">
+                <div class="flex-col flex-col-1">
+                  <img src="<?php print $dir; ?>images/downloads/generic-devices-intro.png" alt="" />
+                </div>
+                <div class="flex-col flex-col-2">
+                  <a class="button" data-action="view" href="#">Choose Items</a>
+                  <a class="button" href="#">Download All</a>
+                </div>
+              </div>
+            </div><!-- /.download -->
+
+            <div class="download" id="mobile-app-icons">
+              <h3>Mobile App Icons</h3>
+              <div class="download-intro">
+                <div class="flex-col flex-col-1">
+                  <img src="<?php print $dir; ?>images/downloads/mobile-app-icons-intro.png" alt="" />
+                </div>
+                <div class="flex-col flex-col-2">
+                  <a class="button" data-action="view" href="#">Choose Items</a>
+                  <a class="button" href="#">Download All</a>
+                </div>
+              </div>
+            </div><!-- /.download -->
+
+            <div class="download" id="icons">
+              <h3>Icons</h3>
+              <div class="download-intro">
+                <div class="flex-col flex-col-1">
+                  <img src="<?php print $dir; ?>images/downloads/icons-intro.png" alt="" />
                 </div>
                 <div class="flex-col flex-col-2">
                   <a class="button" data-action="view" href="#">Choose Items</a>
@@ -190,6 +177,19 @@ $activeTop = 3;
               <div class="download-intro">
                 <div class="flex-col flex-col-1">
                   <img src="<?php print $dir; ?>images/downloads/end-card-intro.png" alt="" />
+                </div>
+                <div class="flex-col flex-col-2">
+                  <a class="button" data-action="view" href="#">Choose Items</a>
+                  <a class="button" href="#">Download All</a>
+                </div>
+              </div>
+            </div><!-- /.download -->
+
+            <div class="download" id="powerpoint">
+              <h3>Powerpoint Templates</h3>
+              <div class="download-intro">
+                <div class="flex-col flex-col-1">
+                  <img src="<?php print $dir; ?>images/downloads/powerpoint-intro.png" alt="" />
                 </div>
                 <div class="flex-col flex-col-2">
                   <a class="button" data-action="view" href="#">Choose Items</a>

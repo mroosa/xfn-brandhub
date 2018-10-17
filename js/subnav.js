@@ -11,7 +11,16 @@ $(document).ready(function() {
     var actMenu = actNav.find(".menu");
 
     $("main .section").each(function(index) {
-      if ($(this).find("h2.section-title").length > 0) {
+      if ($(this).attr("data-title") != undefined) {
+        var thisTtl = $(this).attr("data-title");
+        if ($(this).attr("id") != undefined) {
+          var thisId = $(this).attr("id");
+        } else {
+          var thisId = stripChars(thisTtl);
+          $(this).attr("id", thisId);
+        }
+        actMenu.append('<li><a href="#' + thisId + '">' + thisTtl + '</a></li>');
+      } else if ($(this).find("h2.section-title").length > 0) {
         var thisTtl = ($(this).find("h2.section-title").attr("data-title") != undefined) ? $(this).find("h2.section-title").attr("data-title") : $(this).find("h2.section-title").html();
         if ($(this).attr("id") != undefined) {
           var thisId = $(this).attr("id");

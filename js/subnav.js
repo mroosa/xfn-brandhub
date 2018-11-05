@@ -32,4 +32,23 @@ $(document).ready(function() {
       }
     });
   }
+
+  // Sticky Nav
+  var stickyNavTop = $('#subnav .nav').offset().top;
+ 	var stickyNav = function(){
+    var scrollTop = $(window).scrollTop();
+    if (scrollTop > stickyNavTop) {
+        $('#subnav .nav').addClass('sticky');
+    } else {
+        $('#subnav .nav').removeClass('sticky');
+    }
+	};
+	stickyNav();
+	$(window).scroll(function() {
+		stickyNav();
+	});
+
+  // Active sub nav items
+  
+
 });

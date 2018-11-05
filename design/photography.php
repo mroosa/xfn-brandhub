@@ -133,28 +133,13 @@
                 <img src="<?php print $dir; ?>images/photography/08-2.jpg" alt="" />
                 <p class="caption">Not dull, pastel, or treated</p>
               </div>
-            </div>
-          </section>
-
-          <section class="section">
-            <h2 class="section-title">Settings</h2>
-            <p>Settings should uncluttered but lived in to allow the subject matter to be the focus. Aspirational, yet attainable. Clean, bright palette to allow subject to pop. Current, location agnostic.</p>
-            <div class="flex-column flex-2col">
               <div class="img">
                 <img src="<?php print $dir; ?>images/photography/11-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/photography/11-2.jpg" alt="" />
-              </div>
-            </div>
-            <p>Not cluttered, over styled or stark. Not grand or expensive. Not dark, small or crowded. Not niche, dated, or trendy.</p>
-            <div class="flex-column flex-2col">
-              <div class="img">
                 <img src="<?php print $dir; ?>images/photography/12-1.jpg" alt="" />
               </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/photography/12-2.jpg" alt="" />
-              </div>
+              <p class="caption">Not cluttered, over styled or stark. Not grand or expensive. Not dark, small or crowded. Not niche, dated, or trendy.</p>
             </div>
           </section>
 

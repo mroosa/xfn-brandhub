@@ -22,7 +22,7 @@
           <section class="section">
             <p>Designing with a grid allows for structure and visual balance. It also allows for consistency in brand creative. When creating print or digital layouts follow a grid, splitting the space into thirds or quarters.</p>
             <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system-1.jpg" alt="" />
+              <img src="<?php print $dir; ?>images/design-system/01.jpg" alt="" />
               <p class="caption">Example of how to split grid in quarters or thirds for vertical and horizontal layouts.</p>
             </div>
           </section>
@@ -32,21 +32,21 @@
             <p>Dynamic angles can be used to divide up layouts and organize content but  are not mandatory in communications and should be used purposefully in layouts.  Overuse of dynamic angles will add unnecessary complexity and dilute the impact they have across our brand communications.</p>
             <div class="flex-column flex-3col">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system-2-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/02-1.jpg" alt="" />
                 <p class="caption">Angle cutting through 2/3 of page at 10°</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system-2-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/02-2.jpg" alt="" />
                 <p class="caption">Angle cutting through 1/2 of page at 170°</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system-2-3.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/02-3.jpg" alt="" />
                 <p class="caption">Angle cutting corner to corner</p>
               </div>
             </div>
             <div class="flex-column flex-2col">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system-3.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/03.jpg" alt="" />
                 <p class="caption">Angle cutting through 1/2 of page at 36.5°</p>
               </div>
             </div>
@@ -59,31 +59,31 @@
             <p>Assets created for promotional purposes should utilize dynamic angles to house promotional copy. When multiple offers are available, boxes can be utilized to highlight the promotional information. Light gray backgrounds with white offer cards are preferred for promotional print communications.</p>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-system-4-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/04-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-system-4-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/04-2.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-system-4-3.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/04-3.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-system-4-4.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/04-4.jpg" alt="" />
               </div>
               <div class="img extend">
-                <img src="<?php print $dir; ?>images/design-system-4-5.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/04-5.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-system-4-6.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/04-6.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-system-4-7.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/04-7.jpg" alt="" />
               </div>
             </div>
             <h3>Lifestyle Focus</h3>
             <p>Dynamic angles are not necessary in all creative. When focusing more on the aspirational side of the brand, lifestyle imagery can be used to create impactful creative that is clean and neutral.</p>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-system-5.jpg" alt="" />
+              <img src="<?php print $dir; ?>images/design-system/05.jpg" alt="" />
             </div>
           </section>
 
@@ -92,24 +92,24 @@
             <p>Layouts should be clear and concise. Angles should be used deliberately and in ways that highlight our products and services.</p>
             <div class="flex-column flex-2col">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system-6-1.png" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/06-1.png" alt="" />
                 <p class="caption">Don’t use multiple random angles that slice through creative.</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system-6-2.png" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/06-2.png" alt="" />
                 <p class="caption">Don’t create new angles.</p>
               </div>
             </div>
             <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system-7.png" alt="" />
+              <img src="<?php print $dir; ?>images/design-system/07.png" alt="" />
               <p class="caption">Do not use rounded edges on angles, only use straight edges.</p>
             </div>
             <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system-8.png" alt="" />
+              <img src="<?php print $dir; ?>images/design-system/08.png" alt="" />
               <p class="caption">Angles should go edge to edge and should not stop midway through creative. Do not create additional holding bars for wordmark. Angle should be used to create space to hold copy and wordmarks.</p>
             </div>
             <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system-9.png" alt="" />
+              <img src="<?php print $dir; ?>images/design-system/09.png" alt="" />
               <p class="caption">Don’t use contrasting angle colors that repeat, angles should be a soft step in the creative.</p>
             </div>
           </section>

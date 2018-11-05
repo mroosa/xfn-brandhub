@@ -1,0 +1,440 @@
+{
+  "tagslist" : [
+    {
+      "title" : "Product",
+      "id" : "product",
+      "all": "All Products",
+      "options": [
+        {
+				  "value": "gig",
+				  "title": "Gig"
+				},
+        {
+				  "value": "double",
+				  "title": "Double Play"
+				},
+        {
+				  "value": "triple",
+				  "title": "Triple Play"
+				},
+        {
+				  "value": "account",
+				  "title": "My Account"
+				},
+        {
+				  "value": "apps",
+				  "title": "Apps"
+				},
+        {
+				  "value": "wifi",
+				  "title": "WiFi"
+				},
+        {
+				  "value": "stream",
+				  "title": "Stream"
+				},
+        {
+				  "value": "x1",
+				  "title": "X1"
+				},
+        {
+				  "value": "home",
+				  "title": "Xfinity Home"
+				},
+        {
+				  "value": "mobile",
+				  "title": "Xfinity Mobile"
+				},
+        {
+				  "value": "internet",
+				  "title": "Xfinity Internet"
+				}
+      ]
+    },
+    {
+      "title" : "Tactic",
+      "id" : "tactic",
+      "all": "All Tactics",
+      "options": [
+        {
+				  "value": "brochure",
+				  "title": "Brochure"
+				},
+        {
+				  "value": "collateral",
+				  "title": "Collateral"
+				},
+        {
+				  "value": "digital-banners",
+				  "title": "Digital Banners"
+				},
+        {
+				  "value": "dm",
+				  "title": "Direct Mail"
+				},
+        {
+				  "value": "email",
+				  "title": "Email"
+				},
+        {
+				  "value": "video",
+				  "title": "Online Video"
+				},
+        {
+				  "value": "ooh",
+				  "title": "Out-of-Home"
+				},
+        {
+				  "value": "print",
+				  "title": "Print"
+				},
+        {
+				  "value": "social",
+				  "title": "Social"
+				},
+        {
+				  "value": "tv",
+				  "title": "TV"
+				}
+      ]
+    },
+    {
+      "title" : "Channel",
+      "id" : "",
+      "all": "All Channels",
+      "options": [
+        {
+				  "value": "acquisition",
+				  "title": "Acquisition"
+				},
+        {
+				  "value": "brand",
+				  "title": "Brand"
+				},
+        {
+				  "value": "engagement",
+				  "title": "Customer Engagement"
+				},
+        {
+				  "value": "multicultural",
+				  "title": "Multiculural"
+				}
+      ]
+    },
+    {
+      "title" : "Campaigns &amp; Programs",
+      "id" : "",
+      "all": "All",
+      "options": [
+        {
+				  "value": "olympics",
+				  "title": "Olympics"
+				},
+        {
+				  "value": "black-history",
+				  "title": "Black History Month"
+				},
+        {
+				  "value": "world-cup",
+				  "title": "World Cup"
+				}
+      ]
+    }
+  ],
+  "items": [
+    {
+      "title": "",
+      "tags": "brochure, account, apps, engagement",
+      "type": "image",
+    	"link": "inspo-01-A.png",
+      "thumb": "inspo-01.jpg"
+    },
+    {
+      "title": "",
+      "tags": "brochure, acquisition, brand",
+      "type": "iframe",
+      "link": "inspo-02.png",
+      "thumb": "inspo-02.jpg"
+    },
+    {
+      "title": "",
+      "tags": "print, engagement",
+      "type": "image",
+    	"link": "inspo-03.png",
+      "thumb": "inspo-03.jpg"
+    },
+    {
+      "title": "",
+      "tags": "dm, acquisition",
+      "type": "image",
+    	"link": "inspo-04.png",
+      "thumb": "inspo-04.jpg"
+    },
+    {
+      "title": "",
+      "tags": "print, x1, acquisition, black-history",
+      "type": "image",
+    	"link": "inspo-05.png",
+      "thumb": "inspo-05.jpg"
+    },
+    {
+      "title": "",
+      "tags": "print, x1, acquisition, olympics",
+      "type": "image",
+    	"link": "inspo-06.png",
+      "thumb": "inspo-06.jpg"
+    },
+    {
+      "title": "",
+      "tags": "print, internet, acquisition",
+      "type": "image",
+    	"link": "inspo-07.png",
+      "thumb": "inspo-07.jpg"
+    },
+    {
+      "title": "",
+      "tags": "print, acquisition",
+      "type": "image",
+    	"link": "inspo-08.png",
+      "thumb": "inspo-08.jpg"
+    },
+    {
+      "title": "",
+      "tags": "dm, internet, acquisition",
+      "type": "image",
+    	"link": "inspo-09.png",
+      "thumb": "inspo-09.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, x1, double, acquisition, world-cup",
+      "type": "image",
+    	"link": "inspo-10.png",
+      "thumb": "inspo-10.jpg"
+    },
+    {
+      "title": "",
+      "tags": "print, acquisition, world-cup",
+      "type": "image",
+    	"link": "inspo-11.png",
+      "thumb": "inspo-11.jpg"
+    },
+    {
+      "title": "",
+      "tags": "tv, acquisition, world-cup",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+      "link": "https://player.vimeo.com/video/291734888",
+      "thumb": "inspo-12.jpg"
+    },
+    {
+      "title": "",
+      "tags": "tv, double, acquisition, world-cup",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+      "link": "https://player.vimeo.com/video/291734888",
+      "thumb": "inspo-13.jpg"
+    },
+    {
+      "title": "",
+      "tags": "internet",
+      "type": "image",
+    	"link": "inspo-14.png",
+      "thumb": "inspo-14.jpg"
+    },
+    {
+      "title": "",
+      "tags": "internet",
+      "type": "image",
+    	"link": "inspo-15.png",
+      "thumb": "inspo-15.jpg"
+    },
+    {
+      "title": "",
+      "tags": "internet",
+      "type": "image",
+    	"link": "inspo-16.png",
+      "thumb": "inspo-16.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, internet, acquisition",
+      "type": "image",
+    	"link": "inspo-17.png",
+      "thumb": "inspo-17.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, internet",
+      "type": "image",
+    	"link": "inspo-18.png",
+      "thumb": "inspo-18.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, internet",
+      "type": "image",
+    	"link": "inspo-19.png",
+      "thumb": "inspo-19.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, internet",
+      "type": "image",
+    	"link": "inspo-20.png",
+      "thumb": "inspo-20.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, internet",
+      "type": "image",
+    	"link": "inspo-21.png",
+      "thumb": "inspo-21.jpg"
+    },
+    {
+      "title": "",
+      "tags": "digital-banners, triple, acquisition",
+      "type": "image",
+    	"link": "inspo-22.png",
+      "thumb": "inspo-22.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, internet, brand",
+      "type": "image",
+    	"link": "inspo-23.png",
+      "thumb": "inspo-23.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, internet, brand",
+      "type": "image",
+    	"link": "inspo-24.png",
+      "thumb": "inspo-24.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, stream, brand",
+      "type": "image",
+    	"link": "inspo-25.png",
+      "thumb": "inspo-25.jpg"
+    },
+    {
+      "title": "",
+      "tags": "digital-banners, x1, multicultural, black-history",
+      "type": "image",
+    	"link": "inspo-26.png",
+      "thumb": "inspo-26.jpg"
+    },
+    {
+      "title": "",
+      "tags": "tv, brand",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+      "link": "https://player.vimeo.com/video/291734888",
+      "thumb": "inspo-27.jpg"
+    },
+    {
+      "title": "",
+      "tags": "tv, mobile, acquisition",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+      "link": "https://player.vimeo.com/video/291734888",
+      "thumb": "inspo-28.jpg"
+    },
+    {
+      "title": "",
+      "tags": "tv, x1, engagement, olympics",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+      "link": "https://player.vimeo.com/video/291734888",
+      "thumb": "inspo-29.jpg"
+    },
+    {
+      "title": "",
+      "tags": "tv, brand, olympics",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+      "link": "https://player.vimeo.com/video/291734888",
+      "thumb": "inspo-30.jpg"
+    },
+    {
+      "title": "",
+      "tags": "tv, brand, olympics",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+      "link": "https://player.vimeo.com/video/291734888",
+      "thumb": "inspo-31.jpg"
+    },
+    {
+      "title": "",
+      "tags": "tv, home, acquisition",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+      "link": "https://player.vimeo.com/video/291734888",
+      "thumb": "inspo-32.jpg"
+    },
+    {
+      "title": "",
+      "tags": "ooh, x1, acquisition",
+      "type": "iframe",
+      "data": [
+        {
+          "featherlight-iframe-width": "640",
+          "featherlight-iframe-height": "360",
+          "featherlight-iframe-style": "padding:25px;"
+        }
+      ],
+    	"link": "inspo-33.png",
+      "thumb": "inspo-33.jpg"
+    }
+  ]
+}

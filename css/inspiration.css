@@ -1,35 +1,89 @@
 .inspiration h1 {
   text-align: center;
-  padding: 60px 60px 15px 60px;
+  padding: 30px 60px 0 60px;
 }
 .inspiration .content {
-  padding: 15px 60px 30px 60px;
+  padding: 15px 10px 10px 10px;
+}
+@media (min-width: 550px) {
+  .inspiration .content {
+    padding: 15px 25px 30px 25px;
+  }
+}
+@media (min-width: 960px) {
+  .inspiration .content {
+    padding: 15px 60px 30px 60px;
+  }
 }
 
 .section.form {
   display: flex;
-  padding: 40px 0;
+  flex-wrap: wrap;
+  padding: 5px 0;
   border-bottom: 1px solid #333;
+  margin-bottom: 15px;
 }
-.grid-item,
-.section.form .selection {
-  width: 25%;
+@media (min-width: 550px) {
+  .section.form {
+    padding: 20px 0;
+    margin-bottom: 25px;
+  }
+}
+@media (min-width: 768px) {
+  .section.form {
+    padding: 40px 0;
+    margin-bottom: 50px;
+  }
+}
+@media (min-width: 960px) {
+  .section.form {
+    margin-bottom: 75px;
+  }
+}
+
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.grid li {
+  width: 50%;
   padding: 8px;
 }
-.grid-item.extend {
+
+.section.form .selection {
+  width: 100%;
+  padding: 8px;
+}
+@media (min-width:550px) {
+  .grid li,
+  .section.form .selection {
+    width: 50%;
+  }
+}
+@media (min-width:768px) {
+  .grid li,
+  .section.form .selection {
+    width: 25%;
+    padding: 8px;
+  }
+}
+.grid li.extend {
   width: 50%;
 }
-.grid-item.extend-2 {
+.grid li.extend-2 {
   width: 75%;
 }
-.grid-item.extend-3 {
+.grid li.extend-3 {
   width: 100%;
 }
-.grid-item a,
-.grid-item a img {
+.grid li a,
+.grid li a img {
   display: block;
+  margin: 0 auto;
 }
-.grid-item .grid-item-big {
+.grid li .grid li-big {
   display: none;
 }
 .section.form .selection label {
@@ -60,9 +114,9 @@
   color: #000;
 }
 
-.modified .grid-item {
+.modified .grid li {
   display: none;
 }
-.modified .grid-item.show {
+.modified .grid li.show {
   display: block;
 }

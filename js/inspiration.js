@@ -32,7 +32,7 @@ $(document).ready(function() {
       $(".inspiration-gallery").addClass("modified");
     }
 
-    $(".grid-item").each(function() {
+    $(".grid li").each(function() {
       var propCount = 0;
       if ($(this).attr("data-tags")) {
         var itemTags = $(this).attr("data-tags").split(", ");
@@ -64,7 +64,7 @@ $(document).ready(function() {
     $grid.masonry('layout');
 
   });
-  $(".grid-item").hover(function() {
+  $(".grid li").hover(function() {
     if ($(this).attr("data-tags")) {
       var ary = $(this).attr("data-tags").split(", ");
       // console.log(ary);

@@ -46,7 +46,7 @@
               </div>
             </div>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-photography-1.jpg" alt="" />
+              <img src="<?php print $dir; ?>images/photography/01.jpg" alt="" />
             </div>
             <a class="button" href="#">View Photography Assets</a>
           </section>
@@ -56,19 +56,19 @@
             <p>Deliberate and subtle pops of red for vibrancy in wardrobe or accessories can reinforce our brand color.</p>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-9-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/09-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-9-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/09-2.jpg" alt="" />
               </div>
             </div>
             <p>Not red as only color, red backgrounds, too much red.</p>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-10-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/10-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-10-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/10-2.jpg" alt="" />
               </div>
             </div>
           </section>
@@ -78,59 +78,59 @@
 
             <div class="flex-column flex-2col bottom">
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-2-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/02-1.jpg" alt="" />
                 <p class="caption">Easy going and everyday</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-2-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/02-2.jpg" alt="" />
                 <p class="caption">Never exaggerated or over-the-top</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-3-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/03-1.jpg" alt="" />
                 <p class="caption">Caught in the moment, authentic</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-3-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/03-2.jpg" alt="" />
                 <p class="caption">Not posed or staged</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-4-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/04-1.jpg" alt="" />
                 <p class="caption">Inviting, curious, genuinely emotive</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-4-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/04-2.jpg" alt="" />
                 <p class="caption">Not mysterious or abstracted</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-5-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/05-1.jpg" alt="" />
                 <p class="caption">Simple and focused</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-5-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/05-2.jpg" alt="" />
                 <p class="caption">Not cluttered or intricate</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-6-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/06-1.jpg" alt="" />
                 <p class="caption">Unique with unexpected perspectives</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-6-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/06-2.jpg" alt="" />
                 <p class="caption">Not overly-styled, irrelevant or disambiguated</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-7-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/07-1.jpg" alt="" />
                 <p class="caption">Naturally lit, unfiltered</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-7-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/07-2.jpg" alt="" />
                 <p class="caption">Not filtered, overexposed, or oversaturated</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-8-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/08-1.jpg" alt="" />
                 <p class="caption">A clean palette with vibrant pops of color</p>
               </div>
               <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-photography-8-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/08-2.jpg" alt="" />
                 <p class="caption">Not dull, pastel, or treated</p>
               </div>
             </div>
@@ -141,19 +141,19 @@
             <p>Settings should uncluttered but lived in to allow the subject matter to be the focus. Aspirational, yet attainable. Clean, bright palette to allow subject to pop. Current, location agnostic.</p>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-11-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/11-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-11-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/11-2.jpg" alt="" />
               </div>
             </div>
             <p>Not cluttered, over styled or stark. Not grand or expensive. Not dark, small or crowded. Not niche, dated, or trendy.</p>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-12-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/12-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-12-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/12-2.jpg" alt="" />
               </div>
             </div>
           </section>
@@ -163,28 +163,28 @@
             <p>Embody the Curious Minded – able to convey broad range of emotion to spark curiousity.</p>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-13-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/13-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-13-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/13-2.jpg" alt="" />
               </div>
             </div>
             <p>Represent range of target generational segments – established millenials, families with kids, boomers.</p>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-14-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/14-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-14-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/14-2.jpg" alt="" />
               </div>
             </div>
             <p>Diverse. Represent a wide range of ethnicities and bakcgrounds. Real, authentic; not stock or model.</p>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-15-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/15-1.jpg" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-photography-15-2.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/photography/15-2.jpg" alt="" />
               </div>
             </div>
           </section> -->

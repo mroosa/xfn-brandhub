@@ -1,7 +1,8 @@
 <?php
-$scriptList = ['downloads.js'];
-$styleList = ['downloads.css'];
-$activeTop = 3;
+  $scriptList = ['downloads.js'];
+  $styleList = ['downloads.css'];
+  $activeTop = 3; // Resources
+  $dir = "";
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 <body class="one-col downloads">

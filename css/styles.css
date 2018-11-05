@@ -223,7 +223,7 @@ main .inner {
   padding: 20px 0;
 }
 .page-nav .inner {
-  background: url(../images/bg_btm-nav.png) center center no-repeat transparent;
+  background: url(../gfx/bg_btm-nav.png) center center no-repeat transparent;
   padding: 20px 80px;
   display: flex;
 }
@@ -238,7 +238,7 @@ main .inner {
 }
 .page-nav .page-prv {
   padding-left: 70px;
-  background: url(../images/arw_lt.png) left center no-repeat transparent;
+  background: url(../gfx/arw_lt.png) left center no-repeat transparent;
   background-size: contain;
 }
 .page-nav .page-prv .glyph {
@@ -247,7 +247,7 @@ main .inner {
 .page-nav .page-nxt {
   padding-right: 70px;
   text-align: right;
-  background: url(../images/arw_gt.png) right center no-repeat transparent;
+  background: url(../gfx/arw_gt.png) right center no-repeat transparent;
   background-size: contain;
 }
 .page-nav .page-nxt .glyph {
@@ -390,6 +390,7 @@ main .inner {
   #subnav ul li {
     display: inline-block;
     margin: 10px 0;
+    font-weight: 300;
   }
   #subnav ul li a {
     color: #fff;
@@ -409,30 +410,41 @@ main .inner {
 .content h1 {
   margin: .5em 0;
 }
-.content h1,
-.content h2 {
+.content h1 {
   font-size: 30px;
   font-weight: 800;
 }
 @media (max-width: 768px) {
   .content h1 {
     margin-top: 15px;
-  }
-  .content h1,
-  .content h2 {
     font-size: 24px;
   }
 }
-.content h3 {
+.content h2 {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 800;
+}
+.content h3 {
+  font-size: 16px;
+  font-weight: 800;
   margin: 20px 0 10px 0;
 }
 .content li,
 .content p {
   margin-top: 10px;
   font-size: 16px;
+  font-weight: 300;
   line-height: 150%;
+}
+.content li strong,
+.content p strong {
+  font-weight: 500;
+}
+.content .flex-column ul.none,
+.content .flex-column ul.none li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .content p.caption {
   font-size: 14px;
@@ -481,6 +493,26 @@ main .inner {
 }
 .content .img img {
   display: block;
+}
+@media (min-width: 768px) {
+  .content .img.width-60 img {
+    max-width: 60%;
+  }
+  .content .img.width-65 img {
+    max-width: 65%;
+  }
+  .content .img.width-70 img {
+    max-width: 75%;
+  }
+  .content .img.width-75 img {
+    max-width: 75%;
+  }
+  .content .img.width-80 img {
+    max-width: 80%;
+  }
+  .content .img.width-85 img {
+    max-width: 85%;
+  }
 }
 
 .content img {

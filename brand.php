@@ -2,6 +2,7 @@
   $scriptList = ['video.js', 'featherlight.js'];
   $styleList = ['video.css', 'featherlight.css'];
   $activeMain = 0; // Our Brand
+  $dir = "";
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 <body class="one-col brand">

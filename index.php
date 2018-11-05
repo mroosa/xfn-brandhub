@@ -1,4 +1,5 @@
 <?php
+  $dir = "";
   // Homepage, no variables
   $bgColAry = ['#000','#000','#ccc'];
   $imgAry = ['homepage_lrg_1.jpg','homepage_lrg_2.jpg','homepage_lrg_4.jpg'];

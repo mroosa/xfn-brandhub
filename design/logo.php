@@ -83,8 +83,19 @@
 
           <section class="section">
             <h2 class="section-title">Logo in Use</h2>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-logo-8half.jpg" alt="" />
+            <div class="flex-column flex-2col">
+              <div class="img extend">
+                <img src="<?php print $dir; ?>images/logo/example-04.png" alt="" />
+              </div>
+              <div class="img extend">
+                <img src="<?php print $dir; ?>images/logo/example-02.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/logo/example-03.png" alt="" />
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/logo/example-01.png" alt="" />
+              </div>
             </div>
           </section>
 

@@ -52,31 +52,17 @@
           </section>
 
           <section class="section">
-            <h2 class="section-title">Strategic Use of Red</h2>
-            <p>Deliberate and subtle pops of red for vibrancy in wardrobe or accessories can reinforce our brand color.</p>
-            <div class="flex-column flex-2col">
-              <div class="img">
-                <img src="<?php print $dir; ?>images/photography/09-1.jpg" alt="" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/photography/09-2.jpg" alt="" />
-              </div>
-            </div>
-            <p>Not red as only color, red backgrounds, too much red.</p>
-            <div class="flex-column flex-2col">
-              <div class="img">
-                <img src="<?php print $dir; ?>images/photography/10-1.jpg" alt="" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/photography/10-2.jpg" alt="" />
-              </div>
-            </div>
-          </section>
-
-          <section class="section">
             <h2 class="section-title">Best Practices</h2>
 
             <div class="flex-column flex-2col bottom">
+              <div class="img img-w-caption">
+                <img src="<?php print $dir; ?>images/photography/09-1.jpg" alt="" />
+                <p class="caption">Deliberate and subtle pops of red for vibrancy in wardrobe or accessories can reinforce our brand color.</p>
+              </div>
+              <div class="img img-w-caption">
+                <img src="<?php print $dir; ?>images/photography/10-1.jpg" alt="" />
+                <p class="caption">Not red as only color, red backgrounds, too much red.</p>
+              </div>
               <div class="img img-w-caption">
                 <img src="<?php print $dir; ?>images/photography/02-1.jpg" alt="" />
                 <p class="caption">Easy going and everyday</p>

@@ -31,7 +31,8 @@ header ul a {
   text-decoration: none;
 }
 header .upper-head {
-  border-bottom: 1px solid #000;
+  background: #000;
+  color: #fff;
 }
 header .upper-head ul {
   text-align: right;
@@ -40,9 +41,10 @@ header .upper-head ul {
 }
 header .upper-head .icon-search {
   font-size: 18px;
-  color: #000;
+  color: #fff;
   display: block;
   transform: translateY(20%);
+  transition: color .25s, background .25s;
 }
 header .lower-head ul li,
 header .upper-head ul li {
@@ -57,15 +59,21 @@ header .upper-head ul a {
   border-bottom: 2px solid transparent;
 }
 header .upper-head ul a {
-  color: #000;
+  color: #fff;
   border-bottom-width: 2px;
+}
+header .upper-head ul li.active a,
+header .upper-head ul a:hover {
+  color: #ccc;
+  border-bottom-color: #ccc;
+}
+header .upper-head ul a:hover span {
+  color: #ccc;
 }
 header .lower-head ul a:hover {
   border-color: #989393;
 }
-header .lower-head ul li.active a,
-header .upper-head ul li.active a,
-header .upper-head ul a:hover {
+header .lower-head ul li.active a {
   color: #000;
   border-color: #000;
 }
@@ -366,9 +374,10 @@ main .inner {
 }
 #subnav ul li li {
   font-size: 13px;
+  padding: 0;
 }
 #subnav ul li li a {
-  padding: 5px 10px 5px 25px;
+  padding: 6px 10px 6px 25px;
 }
 
 @media (max-width: 768px) {

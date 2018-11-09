@@ -29,13 +29,6 @@
             </div>
             <a class="button" href="#">Download</a>
 
-            <h3>Speed Test Flag</h3>
-            <p>Xfinity is the best internet in America, according to speedtest.net. Use this flag when using that claim if design and layout allow.</p>
-            <div class="img width-75">
-              <img src="<?php print $dir; ?>images/secondary-graphics/02.svg" alt="" />
-            </div>
-            <a class="button" href="#">Download</a>
-
             <h3>X1 Channels and Experiences</h3>
             <p>Special design treatments have been developed for the Xfinity X1 interface. They should only be used within the X1 experience, and never in marketing collateral or communications.</p>
             <div class="img">
@@ -77,6 +70,14 @@
               <img src="<?php print $dir; ?>images/secondary-graphics/08.svg" alt="" />
             </div>
             <a class="button" href="#">Download</a>
+
+            <h3>Speed Test Flag</h3>
+            <p>Xfinity is the best internet in America, according to speedtest.net. Use this flag when using that claim if design and layout allow.</p>
+            <div class="img width-75">
+              <img src="<?php print $dir; ?>images/secondary-graphics/02.svg" alt="" />
+            </div>
+            <a class="button" href="#">Download</a>
+
           </section>
 
         </div><!-- /.content -->

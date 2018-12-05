@@ -18,7 +18,8 @@
           endif;
         ?>
         <div class="content">
-          <h1>We are the host: friendly, welcoming and fun.</h1>
+          <h1>We are The Host</h1>
+          <h2>Helpful, captivating, approachable, passionate and fresh</h2>
           <section class="section">
             <p>Our brand voice and personality allow us to be meaningful and relevant while staying true to the Xfinity brand. Our voice shapes how we talk and our message guides what we say. To learn more about the ins and outs of products and services, take a look at our brand voice and messaging guidelines.</p>
             <p>We’re actively working to incorporate our brand voice and messaging guidelines into this site. Please check back soon for updates. There’s more to come in 2019!</p>

@@ -822,6 +822,11 @@ main .inner {
   }
 }
 
+/*Voice & Messaging*/
+.voice h2 {
+  margin-top: -5px;
+}
+
 /* Intro slide */
 .intro .caption {
   font-size: 48px;

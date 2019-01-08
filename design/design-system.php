@@ -19,11 +19,29 @@
         ?>
         <div class="content">
           <h1>Design System</h1>
+
           <section class="section">
-            <p>Designing with a grid allows for structure and visual balance. It also allows for consistency in brand creative. When creating print or digital layouts follow a grid, splitting the space into thirds or quarters.</p>
-            <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system/01.jpg" alt="" />
-              <p class="caption">Example of how to split grid in quarters or thirds for vertical and horizontal layouts.</p>
+            <h2 class="section-title">Layouts</h2>
+            <p>layouts should combine key brand elements with creative ideas to thoughtfully tell our brand and product stories.</p>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-system/01.png" alt="" />
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">Using a Grid</h2>
+            <p>Each layout should start with a grid. Designing with a grid allows for structure and visual balance, and determines the size and placement for your brand assets and typography. Dividing layouts by either thirds or quarters is recommended for optimal organization and simplicity.</p>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-system/02.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-system/03.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-system/04.png" alt="" />
+            </div>
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-system/05.png" alt="" />
             </div>
           </section>
 
@@ -53,64 +71,20 @@
           </section>
 
           <section class="section">
-            <h2 class="section-title">Dynamic Angles in Use</h2>
-            <p>Dynamic angles can be used in print and digital layouts. Angles can be created to hold copy, imagery and to create visual depth.</p>
-            <p>Product focus layouts can be a product on its own or paired with a lifestyle image. When showing product imagery with lifestyle imagery, a dynamic angle should be used to highlight the product and break up the visual space.</p>
-            <p>Assets created for promotional purposes should utilize dynamic angles to house promotional copy. When multiple offers are available, boxes can be utilized to highlight the promotional information. Light gray backgrounds with white offer cards are preferred for promotional print communications.</p>
+            <h2 class="section-title">Layout Best Practices</h2>
             <div class="flex-column flex-2col">
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-system/04-1.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/06.png" alt="" />
               </div>
               <div class="img">
-                <img src="<?php print $dir; ?>images/design-system/04-2.jpg" alt="" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-system/04-3.jpg" alt="" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-system/04-4.jpg" alt="" />
-              </div>
-              <div class="img extend">
-                <img src="<?php print $dir; ?>images/design-system/04-5.jpg" alt="" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-system/04-6.jpg" alt="" />
-              </div>
-              <div class="img">
-                <img src="<?php print $dir; ?>images/design-system/04-7.jpg" alt="" />
+                <img src="<?php print $dir; ?>images/design-system/07.png" alt="" />
               </div>
             </div>
-            <h3>Lifestyle Focus</h3>
-            <p>Dynamic angles are not necessary in all creative. When focusing more on the aspirational side of the brand, lifestyle imagery can be used to create impactful creative that is clean and neutral.</p>
             <div class="img">
-              <img src="<?php print $dir; ?>images/design-system/05.jpg" alt="" />
-            </div>
-          </section>
-
-          <section class="section">
-            <h2 class="section-title">Dynamic Angle Misuses</h2>
-            <p>Layouts should be clear and concise. Angles should be used deliberately and in ways that highlight our products and services.</p>
-            <div class="flex-column flex-2col">
-              <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system/06-1.png" alt="" />
-                <p class="caption">Don’t use multiple random angles that slice through creative.</p>
-              </div>
-              <div class="img img-w-caption">
-                <img src="<?php print $dir; ?>images/design-system/06-2.png" alt="" />
-                <p class="caption">Don’t create new angles.</p>
-              </div>
-            </div>
-            <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/design-system/07.png" alt="" />
-              <p class="caption">Do not use rounded edges on angles, only use straight edges.</p>
-            </div>
-            <div class="img img-w-caption">
               <img src="<?php print $dir; ?>images/design-system/08.png" alt="" />
-              <p class="caption">Angles should go edge to edge and should not stop midway through creative. Do not create additional holding bars for wordmark. Angle should be used to create space to hold copy and wordmarks.</p>
             </div>
-            <div class="img img-w-caption">
+            <div class="img">
               <img src="<?php print $dir; ?>images/design-system/09.png" alt="" />
-              <p class="caption">Don’t use contrasting angle colors that repeat, angles should be a soft step in the creative.</p>
             </div>
           </section>
 

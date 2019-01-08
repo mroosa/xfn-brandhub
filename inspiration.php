@@ -30,15 +30,15 @@
             // Output tags
             $output = "";
             foreach($taglist as $tag) {
-              $output .= "<div class=\"selection\">\r";
-              $output .= "\t<label for=\"" . $tag -> id . "\">" . $tag -> title . "</label>\r";
-              $output .= "\t<select id=\"" . $tag -> id . "\" name=\"" . $tag -> id . "\">\r";
-              $output .= "\t\t<option value=\"all\">" . $tag -> all ."</option>\r";
+              $output .= "<div class=\"selection\">\n";
+              $output .= "\t<label for=\"" . $tag -> id . "\">" . $tag -> title . "</label>\n";
+              $output .= "\t<select id=\"" . $tag -> id . "\" name=\"" . $tag -> id . "\">\n";
+              $output .= "\t\t<option value=\"all\">" . $tag -> all ."</option>\n";
               foreach($tag -> options as $option) {
-                $output .= "\t\t<option value=\"" . $option -> value ."\">" . $option -> title ."</option>\r";
+                $output .= "\t\t<option value=\"" . $option -> value ."\">" . $option -> title ."</option>\n";
               }
-              $output .= "\t</select>\r";
-              $output .= "</div><!-- /.selection -->\r";
+              $output .= "\t</select>\n";
+              $output .= "</div><!-- /.selection -->\n";
             }
             echo $output;
           ?>
@@ -47,9 +47,9 @@
             <?php
               // grid items
               $output = "";
-              $output .= "<ul class=\"grid\">\r";
+              $output .= "<ul class=\"grid\">\n";
               foreach($itmAry as $item) {
-                $output .= "\t<li data-tags=\"" . $item -> tags . "\">\r";
+                $output .= "\t<li data-tags=\"" . $item -> tags . "\">\n";
                 // If data values are present
                 $dataSet = '';
                 if (isset($item -> data)) {
@@ -61,12 +61,12 @@
                 }
                 $linkPreUrl = ($item -> type == 'image') ? "images/inspirations/" : "";
                 $dataType = " data-featherlight=\"" . $item -> type . "\"";
-                $output .= "\t\t<a href=\"" . $linkPreUrl . $item -> link . "\"" . $dataType . $dataSet . ">\r";
-                $output .= "\t\t\t<img src=\"images/inspirations/thumbnail/" . $item -> thumb . "\" alt=\"" . $item -> title . "\" />\r";
-                $output .= "\t\t</a>\r";
-                $output .= "\t</li>\r";
+                $output .= "\t\t<a href=\"" . $linkPreUrl . $item -> link . "\"" . $dataType . $dataSet . ">\n";
+                $output .= "\t\t\t<img src=\"images/inspirations/thumbnail/" . $item -> thumb . "\" alt=\"" . $item -> title . "\" />\n";
+                $output .= "\t\t</a>\n";
+                $output .= "\t</li>\n";
               }
-              $output .= "</ul>\r";
+              $output .= "</ul>\n";
               echo $output;
             ?>
           </section>

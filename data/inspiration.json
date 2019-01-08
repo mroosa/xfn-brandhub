@@ -100,7 +100,7 @@
     },
     {
       "title" : "Channel",
-      "id" : "",
+      "id" : "channel",
       "all": "All Channels",
       "options": [
         {
@@ -123,7 +123,7 @@
     },
     {
       "title" : "Campaigns &amp; Programs",
-      "id" : "",
+      "id" : "campaign",
       "all": "All",
       "options": [
         {

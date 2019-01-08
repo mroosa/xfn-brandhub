@@ -19,7 +19,9 @@ $(document).ready(function() {
   $(".selection").find("select").change(function() {
     var newTag = $(this).val();
     var thisCat = $(this).attr("id");
+    console.log(TagList);
     TagList[thisCat] = newTag;
+    console.log(TagList);
     var listCount = 0;
     $(".inspiration-gallery").removeClass("modified");
     for (var prop in TagList) {
@@ -56,6 +58,7 @@ $(document).ready(function() {
           }
         }
         // If all props validate
+        // console.log($(this).attr("data-tags") + " " + propCount);
         if (propCount==4) {
           $(this).addClass("show");
         }

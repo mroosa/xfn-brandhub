@@ -22,7 +22,7 @@
 
           <section class="section">
             <h2 class="section-title">Layouts</h2>
-            <p>layouts should combine key brand elements with creative ideas to thoughtfully tell our brand and product stories.</p>
+            <p>Layouts should combine key brand elements with creative ideas to thoughtfully tell our brand and product stories.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/design-system/01.png" alt="" />
             </div>

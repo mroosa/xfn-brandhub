@@ -74,7 +74,6 @@
               <img src="<?php print $dir; ?>images/typography/03-4.png" alt="Small Body: Smaller body copy is set in Xfinity Standard Medium, auto leading." />
               <img src="<?php print $dir; ?>images/typography/03-5.png" alt="Legal: Legal copy is set in Xfinity Condensed Medium 8pt with auto leading. An alst option for legal copy is set in Helvetica Condensed Regular 8pt with auto leading." />
             </div>
-            <div class="flex-column"></div>
             <h3>Secondary Type Styles</h3>
             <p>In addition, here are some best practices for a few commonly used elements and lock-ups in communications. Please note, voice command guidance is for usage in standalone X1 Voice Remote marketing tactics only – the product experience and user interface screens for marketing will continue to use Xfinity Standard Light.</p>
             <div class="img">

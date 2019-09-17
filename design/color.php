@@ -92,19 +92,21 @@
           <section class="section">
             <h2 class="section-title">Action Blue</h2>
             <p>Blue should only be used in the digital space. It can be used for buttons or hyperlinks.</p>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/color/04-1.jpg" alt="" />
-            </div>
-            <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/color/04-2.jpg" alt="" />
-              <p class="caption">Dark background, light text, action blue button.</p>
-            </div>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/color/05-1.jpg" alt="" />
-            </div>
-            <div class="img img-w-caption">
-              <img src="<?php print $dir; ?>images/color/05-2.jpg" alt="" />
-              <p class="caption">Light background, dark text, action blue button.</p>
+            <div class="flex-column">
+              <div class="img">
+                <img src="<?php print $dir; ?>images/color/04-1.jpg" alt="" />
+              </div>
+              <div class="img img-w-caption">
+                <img src="<?php print $dir; ?>images/color/04-2.jpg" alt="" />
+                <p class="caption">Dark background, light text, action blue button.</p>
+              </div>
+              <div class="img">
+                <img src="<?php print $dir; ?>images/color/05-1.jpg" alt="" />
+              </div>
+              <div class="img img-w-caption">
+                <img src="<?php print $dir; ?>images/color/05-2.jpg" alt="" />
+                <p class="caption">Light background, dark text, action blue button.</p>
+              </div>
             </div>
           </section>
 

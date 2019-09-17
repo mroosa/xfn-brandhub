@@ -505,7 +505,7 @@ main .inner {
 }
 
 .content .img {
-  margin: 20px 0;
+  margin: 20px 0 40px 0;
 }
 .content .img img {
   display: block;

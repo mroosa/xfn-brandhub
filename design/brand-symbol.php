@@ -26,7 +26,7 @@
             <div class="img">
               <img src="<?php print $dir; ?>images/brand-symbol/01.svg" alt-"" />
             </div>
-            <p>Our brand symbol has two roles:</p>
+            <p><strong>Our brand symbol has two roles:</strong></p>
             <ul>
               <li><strong>Functional:</strong> The X can be a shorthand for Xfinity in Xfinity-branded environments where the brand has already been established</li>
               <li><strong>Expressive:</strong> The X is an expressive device for storytelling around our passions and products.</li>

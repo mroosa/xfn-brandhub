@@ -79,12 +79,12 @@
               <div class="img">
                 <img src="<?php print $dir; ?>images/design-system/07.png" alt="" />
               </div>
-            </div>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-system/08.png" alt="" />
-            </div>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-system/09.png" alt="" />
+              <div class="img extend">
+                <img src="<?php print $dir; ?>images/design-system/08.png" alt="" />
+              </div>
+              <div class="img extend">
+                <img src="<?php print $dir; ?>images/design-system/09.png" alt="" />
+              </div>
             </div>
           </section>
 

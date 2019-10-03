@@ -2,7 +2,9 @@
 $linkAry = [
 	new NavLink($dir . 'brand','Who We Are', null),
 	new NavLink($dir . 'design','How We Look', null),
-	new NavLink($dir . 'voice-and-messaging','How We Sound', null)
+	new NavLink($dir . 'design','Downloads', null),
+	new NavLink($dir . 'design','Inspiration', null),
+	new NavLink($dir . 'search','<span class="icon-search"></span>', 'Search')
 ];
 print "\t<ul>\n";
 for ($i = 0; $i < count($linkAry); $i++) {

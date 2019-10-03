@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=$("#subnav .nav").offset().top,n=function(){var n;$(window).scrollTop()>a?$("#subnav .nav").addClass("sticky"):$("#subnav .nav").removeClass("sticky")};n(),$(window).scroll(function(){n()}),$(".weight").on("change mousemove",function(){var a=$(this).parents(".slider").attr("data-for");$("."+a).attr("data-weight",$(this).val())})});

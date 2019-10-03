@@ -1,0 +1,67 @@
+@mixin bp-max($point) {
+  @media (max-width: $point) { @content;}
+}
+
+@mixin bp-min($point) {
+  @media (min-width: $point) { @content;}
+}
+
+// Vendor prefixes
+@mixin transition($value) {
+	-webkit-transition: $value;
+	        transition: $value;
+}
+
+@mixin transform($value) {
+	-webkit-transform: $value;
+	    -ms-transform: $value;
+			    transform: $value;
+}
+
+@mixin transform-origin($value) {
+	-webkit-transform-origin: $value;
+      -ms-transform-origin: $value;
+			    transform-origin: $value;
+}
+
+// Font-size (REM)
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+@mixin line-height($size) {
+  line-height: $size;
+  line-height: calculateRem($size);
+}
+
+@mixin Brown($size:-1, $wt:400) {
+  font-family: "XfinityBrown", sans-serif;
+  letter-spacing: -.04ex;
+  line-height: 125%;
+  @if $size!=-1 {
+    @include font-size($size);
+  }
+  @if $wt!=400 {
+    font-weight: $wt;
+  }
+}
+
+/*
+@mixin Avenir($size:-1, $line:-1) {
+  font-family: "AvenirLT", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  @if $size!=-1 {
+    @include font-size($size);
+  }
+  @if $line!=-1 {
+    @include line-height($line);
+  }
+}
+*/

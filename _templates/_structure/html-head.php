@@ -17,7 +17,6 @@
   }
   ?>
 
-  <link rel="stylesheet" href="<?php print $dir; ?>css/_fonts.css" />
   <link rel="stylesheet" href="<?php print $dir; ?>css/styles.css" />
   <link rel="stylesheet" href="<?php print $dir; ?>css/lightbox.css" />
   <?php

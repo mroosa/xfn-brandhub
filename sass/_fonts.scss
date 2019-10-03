@@ -142,6 +142,79 @@
   font-style: normal;
 }
 
+/*
+ * Legal Disclaimer
+ *
+ * for usage in HTML online banners and digital ads under the Xfinity Brand
+ *
+ * While the @font-face statements below may be modified by the client, this
+ * disclaimer may not be removed.
+ *
+ * Lineto.com, 2018
+ */
+
+/* Xfinity Brown 20180-09-10 */
+@font-face {
+	font-family: "XfinityBrown";
+	src: url("../fonts/XfinityBrownWeb-Bold.eot");
+	src: url("../fonts/XfinityBrownWeb-Bold.woff") format("woff"),
+		 url("../fonts/XfinityBrownWeb-Bold.woff2") format("woff2");
+  font-weight: 800;
+}
+
+@font-face {
+	font-family: "XfinityBrown";
+	src: url("../fonts/XfinityBrownWeb-BoldItalic.eot");
+	src: url("../fonts/XfinityBrownWeb-BoldItalic.woff") format("woff"),
+		 url("../fonts/XfinityBrownWeb-BoldItalic.woff2") format("woff2");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+	font-family: "XfinityBrown";
+	src: url("../fonts/XfinityBrownWeb-Regular.eot");
+	src: url("../fonts/XfinityBrownWeb-Regular.woff") format("woff"),
+		 url("../fonts/XfinityBrownWeb-Regular.woff2") format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+	font-family: "XfinityBrown";
+	src: url("../fonts/XfinityBrownWeb-Italic.eot");
+	src: url("../fonts/XfinityBrownWeb-Italic.woff") format("woff"),
+		 url("../fonts/XfinityBrownWeb-Italic.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+	font-family: "XfinityBrown";
+	src: url("../fonts/XfinityBrownWeb-Light.eot");
+	src: url("../fonts/XfinityBrownWeb-Light.woff") format("woff"),
+		 url("../fonts/XfinityBrownWeb-Light.woff2") format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+	font-family: "XfinityBrown";
+	src: url("../fonts/XfinityBrownWeb-LightItalic.eot");
+	src: url("../fonts/XfinityBrownWeb-LightItalic.woff") format("woff"),
+		 url("../fonts/XfinityBrownWeb-LightItalic.woff2") format("woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* Helvetica Neue Condensed */
+@font-face {
+    font-family: 'HelveticaNeueCondensed';
+    src: url('../fonts/HelveticaNeueLTStd-Cn.woff2') format('woff2'),
+        url('../fonts/HelveticaNeueLTStd-Cn.woff') format('woff'),
+        url('../fonts/HelveticaNeueLTStd-Cn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Xfinity Brand Hub specific fonts/glyphs */
 @font-face {
   font-family: "cst-brand-hub";

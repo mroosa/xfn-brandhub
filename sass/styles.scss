@@ -125,7 +125,6 @@ header {
   }
 
   nav {
-    width: 75%;
     @include bp-min($xlg) {
       width: calc(100% - 300px);
     }
@@ -365,16 +364,17 @@ main {
   #subnav {
     width: 25%;
     padding: 0 2% 30px 5%;
+    @include bp-min($xlg) {
+      width: 300px;
+    }
   }
   .content {
     width: 75%;
-    padding: 20px 140px 40px 20px;
-  }
-  @include bp-min($xlg) {
-    #subnav {
-      width: 300px;
+    padding: 0 20px 0 0;
+    @include bp-min ($sml) {
+      padding: 20px 140px 40px 20px;
     }
-    .content {
+    @include bp-min($xlg) {
       width: calc(100% - 300px);
     }
   }
@@ -472,7 +472,7 @@ main {
     color: #fff;
     padding: 0;
   }
-  #subnav ul {
+  #subnav ul.nav {
     overflow: auto;
     white-space: nowrap;
     padding: 0;
@@ -493,13 +493,15 @@ main {
   }
 }
 
-#subnav .nav.sticky {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  width: 18%;
-  @include bp-min($xlg) {
-    width: calc(300px - 7%);
+@include bp-min($xsm + 1) {
+  #subnav .nav.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 18%;
+    @include bp-min($xlg) {
+      width: calc(300px - 7%);
+    }
   }
 }
 
@@ -509,22 +511,22 @@ main {
 
   h1 {
     margin: .5em 0;
-    @include font-size(30px);
+    @include font-size(72px);
     font-weight: 800;
 
     @include bp-max($sml) {
       margin-top: 15px;
-      @include font-size(24px);
+      @include font-size(48px);
     }
   }
 
   h2 {
-    @include font-size(22px);
+    @include font-size(36px);
     font-weight: 800;
   }
 
   h3 {
-    @include font-size(16px);
+    @include font-size(24px);
     font-weight: 800;
     margin: 20px 0 10px 0;
   }
@@ -532,7 +534,7 @@ main {
   li,
   p {
     margin-top: 10px;
-    @include font-size(16px);
+    @include font-size(18px);
     font-weight: 300;
     line-height: 150%;
 
@@ -582,7 +584,7 @@ main {
   }
 
   section {
-    margin-bottom: 60px;
+    margin-bottom: 120px;
     @include bp-max($sml) {
       margin-bottom: 75px;
     }
@@ -930,7 +932,7 @@ main {
 }
 
 /* Typography page */
-.typography {
+#typography {
   blockquote {
     background: #fff;
     margin: 0;
@@ -992,7 +994,7 @@ main {
       cursor: pointer;
       background: #dedede;
     }
-}
+  }
 
   .usage {
     span {

@@ -1,34 +1,14 @@
-<?php
-  $dir = "../";
-  $scriptList = ['subnav.js'];
-  $activeMain = 1; // Design
-  $activeSub = 7;
-?>
-<?php include_once($dir . "_templates/_structure/html-head.php"); ?>
-<body class="two-col design">
-  <div class="contain">
-    <?php include_once($dir . "_templates/_structure/header.php"); ?>
-    <main>
-      <div class="inner">
-        <?php
-          if (file_exists("_subnav.php")):
-            print "<div id=\"subnav\">\n";
-            include_once("_subnav.php");
-            print "</div>\n";
-          endif;
-        ?>
-        <div class="content">
           <h1>Design System</h1>
 
-          <section class="section">
+          <div class="section">
             <h2 class="section-title">Layouts</h2>
             <p>Layouts should combine key brand elements with creative ideas to thoughtfully tell our brand and product stories.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/design-system/01.png" alt="" />
             </div>
-          </section>
+          </div>
 
-          <section class="section">
+          <div class="section">
             <h2 class="section-title">Using a Grid</h2>
             <p>Each layout should start with a grid. Designing with a grid allows for structure and visual balance, and determines the size and placement for your brand assets and typography. Dividing layouts by either thirds or quarters is recommended for optimal organization and simplicity.</p>
             <div class="img">
@@ -43,9 +23,9 @@
             <div class="img">
               <img src="<?php print $dir; ?>images/design-system/05.png" alt="" />
             </div>
-          </section>
+          </div>
 
-          <section class="section">
+          <div class="section">
             <h2 class="section-title">Dynamic Angles</h2>
             <p>Dynamic angles can be used to divide up layouts and organize content but  are not mandatory in communications and should be used purposefully in layouts.  Overuse of dynamic angles will add unnecessary complexity and dilute the impact they have across our brand communications.</p>
             <div class="flex-column flex-3col">
@@ -68,9 +48,9 @@
                 <p class="caption">Angle cutting through 1/2 of page at 36.5°</p>
               </div>
             </div>
-          </section>
+          </div>
 
-          <section class="section">
+          <div class="section">
             <h2 class="section-title">Layout Best Practices</h2>
             <div class="flex-column flex-2col">
               <div class="img">
@@ -86,10 +66,4 @@
                 <img src="<?php print $dir; ?>images/design-system/09.png" alt="" />
               </div>
             </div>
-          </section>
-
-        </div><!-- /.content -->
-      </div><!-- /.inner -->
-    </main>
-    <?php include_once($dir . "_templates/_structure/page-nav.php"); ?>
-<?php include_once($dir . "_templates/_structure/html-foot.php"); ?>
+          </div>

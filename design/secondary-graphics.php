@@ -1,25 +1,5 @@
-<?php
-  $dir = "../";
-  $scriptList = ['subnav.js'];
-  $activeMain = 1; // Design
-  $activeSub = 9;
-?>
-<?php include_once($dir . "_templates/_structure/html-head.php"); ?>
-<body class="two-col design">
-  <div class="contain">
-    <?php include_once($dir . "_templates/_structure/header.php"); ?>
-    <main>
-      <div class="inner">
-        <?php
-          if (file_exists("_subnav.php")):
-            print "<div id=\"subnav\">\n";
-            include_once("_subnav.php");
-            print "</div>\n";
-          endif;
-        ?>
-        <div class="content">
           <h1>Secondary Graphics</h1>
-          <section class="section">
+          <div class="section">
             <p>Our secondary graphic system includes key programs, channels, and offerings that support the Xfinity Masterbrand within our brand hierarchy.</p>
 
             <h3>Xfinity Customer Commitment</h3>
@@ -78,10 +58,4 @@
             </div>
             <a class="button" href="#">Download</a>
 
-          </section>
-
-        </div><!-- /.content -->
-      </div><!-- /.inner -->
-    </main>
-    <?php include_once($dir . "_templates/_structure/page-nav.php"); ?>
-<?php include_once($dir . "_templates/_structure/html-foot.php"); ?>
+          </div>

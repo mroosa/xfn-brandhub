@@ -1,6 +1,7 @@
 <?php
   $dir = "../";
-  $scriptList = ['subnav.js'];
+  $scriptList = ['subnav.js','gallery.js'];
+  $styleList = ['gallery.css'];
   $activeMain = 1; // Design
   $activeSub = 0;
 ?>
@@ -18,32 +19,32 @@
           endif;
         ?>
         <div class="content">
-          <h1>Design Principles</h1>
-          <div class="section">
-            <p>Our design principles are based in our brand purpose and are a lens to inspire and evaluate all creative.</p>
-            <div class="flex-column flex-3col">
-              <div>
-                <h3>Bold</h3>
-                <p>Our design is daring, dynamic <span style="white-space: nowrap;">and unexpected.</span></p>
-              </div>
-              <div>
-                <h3>Human</h3>
-                <p>Our design is authentic, unrestrained and connected.</p>
-              </div>
-              <div>
-                <h3>Vibrant</h3>
-                <p>Our design is optimistic, energetic and alive.</p>
-              </div>
-            </div>
-            <p>Our design principles ensure we create distinctively Xfinity experiences that consistently reflect our brand across every interaction. Following the spirit of this site is essential to ensuring the Xfinity Brand is consistently represented across all touchpoints.</p>
-            <a class="button" href="#">Download all assets</a>
-            <a class="button" href="../inspiration">View Inspiration Gallery</a>
-            <div class="img img-w-caption">
-              <a data-lightbox="ex-1" href="<?php print $dir; ?>images/design-overview-1.jpg"><img src="<?php print $dir; ?>images/design-overview-1.jpg" /></a>
-            </div>
-          </div><!-- /.secton -->
+          <section id="overview">
+            <?php include_once("overview.php"); ?>
+          </section>
+          <section id="logo">
+            <?php include_once("logo.php"); ?>
+          </section>
+          <section id="color">
+            <?php include_once("color.php"); ?>
+          </section>
+          <section id="typography">
+            <?php include_once("typography.php"); ?>
+          </section>
+          <section id="photography">
+            <?php include_once("photography.php"); ?>
+          </section>
+          <section id="secondary-graphics">
+            <?php include_once("secondary-graphics.php"); ?>
+          </section>
+          <section id="design-system">
+            <?php include_once("design-system.php"); ?>
+          </section>
+          <section id="co-branding">
+            <?php include_once("co-branding.php"); ?>
+          </section>
         </div><!-- /.content -->
       </div><!-- /.inner -->
     </main>
-    <?php include_once($dir . "_templates/_structure/page-nav.php"); ?>
+    <?php # include_once($dir . "_templates/_structure/page-nav.php"); ?>
 <?php include_once($dir . "_templates/_structure/html-foot.php"); ?>

@@ -5,7 +5,6 @@
       <div class="logo mobile">
         <a href="#"><img src="<?php print $dir; ?>gfx/xfn-logo-wht.svg" alt="Xfinity" /></a>
       </div>
-      <?php #include_once($dir . "_templates/_nav/top.php"); ?>
     </div>
   </div>
 

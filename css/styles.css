@@ -307,7 +307,6 @@ header .lower-head .inner {
   height: 70px; }
 
 header nav {
-  width: 75%;
   /* margin-left: 70px; */ }
   @media (min-width: 1200px) {
     header nav {
@@ -481,16 +480,19 @@ main {
 .two-col #subnav {
   width: 25%;
   padding: 0 2% 30px 5%; }
+  @media (min-width: 1200px) {
+    .two-col #subnav {
+      width: 300px; } }
 
 .two-col .content {
   width: 75%;
-  padding: 20px 140px 40px 20px; }
-
-@media (min-width: 1200px) {
-  .two-col #subnav {
-    width: 300px; }
-  .two-col .content {
-    width: calc(100% - 300px); } }
+  padding: 0 20px 0 0; }
+  @media (min-width: 768px) {
+    .two-col .content {
+      padding: 20px 140px 40px 20px; } }
+  @media (min-width: 1200px) {
+    .two-col .content {
+      width: calc(100% - 300px); } }
 
 .one-col .content {
   width: 100%; }
@@ -556,7 +558,7 @@ main {
     background: #666;
     color: #fff;
     padding: 0; }
-  #subnav ul {
+  #subnav ul.nav {
     overflow: auto;
     white-space: nowrap;
     padding: 0; }
@@ -572,12 +574,13 @@ main {
   #subnav ul li.active > a {
     text-decoration: underline; } }
 
-#subnav .nav.sticky {
-  position: fixed;
-  top: 0;
-  z-index: 2;
-  width: 18%; }
-  @media (min-width: 1200px) {
+@media (min-width: 551px) {
+  #subnav .nav.sticky {
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 18%; } }
+  @media (min-width: 551px) and (min-width: 1200px) {
     #subnav .nav.sticky {
       width: calc(300px - 7%); } }
 
@@ -587,28 +590,28 @@ main {
   /* 8% between each column */ }
   .content h1 {
     margin: .5em 0;
-    font-size: 30px;
-    font-size: 1.875rem;
+    font-size: 72px;
+    font-size: 4.5rem;
     font-weight: 800; }
     @media (max-width: 768px) {
       .content h1 {
         margin-top: 15px;
-        font-size: 24px;
-        font-size: 1.5rem; } }
+        font-size: 48px;
+        font-size: 3rem; } }
   .content h2 {
-    font-size: 22px;
-    font-size: 1.375rem;
+    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 800; }
   .content h3 {
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 800;
     margin: 20px 0 10px 0; }
   .content li,
   .content p {
     margin-top: 10px;
-    font-size: 16px;
-    font-size: 1rem;
+    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 300;
     line-height: 150%; }
     .content li strong,
@@ -644,7 +647,7 @@ main {
     padding: 0;
     margin: 0; }
   .content section {
-    margin-bottom: 60px; }
+    margin-bottom: 120px; }
     @media (max-width: 768px) {
       .content section {
         margin-bottom: 75px; } }
@@ -880,46 +883,46 @@ main {
       padding: 40px 75px; } }
 
 /* Typography page */
-.typography blockquote {
+#typography blockquote {
   background: #fff;
   margin: 0;
   padding: 30px 40px;
   color: #000; }
 
-.typography .live-type {
+#typography .live-type {
   text-align: center; }
-  .typography .live-type.font-xfb {
+  #typography .live-type.font-xfb {
     font-family: "XfinityBrown", sans-serif;
     letter-spacing: -.04ex;
     line-height: 125%;
     font-size: 72px;
     font-size: 4.5rem;
     font-weight: 800; }
-    .typography .live-type.font-xfb[data-weight="1"] {
+    #typography .live-type.font-xfb[data-weight="1"] {
       font-weight: 300; }
-    .typography .live-type.font-xfb[data-weight="2"] {
+    #typography .live-type.font-xfb[data-weight="2"] {
       font-weight: 400; }
-    .typography .live-type.font-xfb[data-weight="3"] {
+    #typography .live-type.font-xfb[data-weight="3"] {
       font-weight: 800; }
-  .typography .live-type.font-xfs {
+  #typography .live-type.font-xfs {
     font-size: 72px;
     font-size: 4.5rem;
     font-family: "XfinityStandard";
     font-weight: 400; }
-    .typography .live-type.font-xfs[data-weight="1"] {
+    #typography .live-type.font-xfs[data-weight="1"] {
       font-weight: 100; }
-    .typography .live-type.font-xfs[data-weight="2"] {
+    #typography .live-type.font-xfs[data-weight="2"] {
       font-weight: 200; }
-    .typography .live-type.font-xfs[data-weight="3"] {
+    #typography .live-type.font-xfs[data-weight="3"] {
       font-weight: 300; }
-    .typography .live-type.font-xfs[data-weight="4"] {
+    #typography .live-type.font-xfs[data-weight="4"] {
       font-weight: 400; }
-    .typography .live-type.font-xfs[data-weight="5"] {
+    #typography .live-type.font-xfs[data-weight="5"] {
       font-weight: 500; }
-    .typography .live-type.font-xfs[data-weight="6"] {
+    #typography .live-type.font-xfs[data-weight="6"] {
       font-weight: 700; }
 
-.typography .weight {
+#typography .weight {
   -webkit-appearance: none;
   appearance: none;
   height: 25px;
@@ -929,7 +932,7 @@ main {
   outline: none;
   border: 0;
   margin: 0; }
-  .typography .weight::-webkit-slider-thumb {
+  #typography .weight::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: 1px solid #999;
     height: 20px;
@@ -939,22 +942,22 @@ main {
     cursor: pointer;
     margin-top: -8px;
     /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
-    .typography .weight::-webkit-slider-thumb:focus {
+    #typography .weight::-webkit-slider-thumb:focus {
       color: #333; }
-  .typography .weight::-webkit-slider-runnable-track {
+  #typography .weight::-webkit-slider-runnable-track {
     width: 95%;
     height: 4px;
     cursor: pointer;
     background: #dedede; }
 
-.typography .usage span {
+#typography .usage span {
   -webkit-transition: 0.25s color;
   transition: 0.25s color; }
 
-.typography .usage:hover span {
+#typography .usage:hover span {
   color: rgba(0, 0, 0, 0.15); }
 
-.typography .usage.usage-1 {
+#typography .usage.usage-1 {
   font-family: "XfinityBrown", sans-serif;
   letter-spacing: -.04ex;
   line-height: 125%;
@@ -962,7 +965,7 @@ main {
   font-size: 2.25rem;
   font-weight: 800; }
 
-.typography .usage.usage-2 {
+#typography .usage.usage-2 {
   font-family: "XfinityBrown", sans-serif;
   letter-spacing: -.04ex;
   line-height: 125%;
@@ -970,17 +973,17 @@ main {
   font-size: 1.5rem;
   font-weight: 800; }
 
-.typography .usage.usage-3 {
+#typography .usage.usage-3 {
   font-family: "XfinityBrown", sans-serif;
   letter-spacing: -.04ex;
   line-height: 125%;
   font-size: 18px;
   font-size: 1.125rem; }
 
-.typography .usage.usage-4 {
+#typography .usage.usage-4 {
   font-family: "XfinityStandard"; }
 
-.typography .usage.usage-5 {
+#typography .usage.usage-5 {
   font-family: "HelveticaNeueCondensed";
   font-size: 12px;
   font-size: 0.75rem; }

@@ -1,10 +1,10 @@
 <?php
 $linkAry = [
-	new NavLink($dir . 'brand','Who We Are', null),
-	new NavLink($dir . 'design','How We Look', null),
+	new NavLink($dir . 'home','Who We Are', null),
+	new NavLink($dir . 'design','Core Elements', null),
 	new NavLink($dir . 'resources','Downloads', null),
-	new NavLink($dir . 'inspiration','Inspiration', null),
-	new NavLink($dir . 'search','<span class="icon-search"></span>', 'Search')
+	new NavLink($dir . 'inspiration','Inspiration', null)
+	// new NavLink($dir . 'search','<span class="icon-search"></span>', 'Search')
 ];
 print "\t<ul>\n";
 for ($i = 0; $i < count($linkAry); $i++) {

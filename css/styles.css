@@ -430,19 +430,25 @@ main {
       font-weight: 500; }
   .page-nav a {
     color: #fff;
-    text-decoration: none; }
-    .page-nav a .page-prv {
+    text-decoration: none;
+    -webkit-transition: 0.25s;
+    transition: 0.25s; }
+    .page-nav a.page-prv {
       padding-left: 70px;
       background: url(../gfx/arw_lt.png) left center no-repeat transparent;
       background-size: contain; }
-      .page-nav a .page-prv .glyph {
+      .page-nav a.page-prv:hover {
+        padding-left: 65px; }
+      .page-nav a.page-prv .glyph {
         left: 0; }
-    .page-nav a .page-nxt {
+    .page-nav a.page-nxt {
       padding-right: 70px;
       text-align: right;
       background: url(../gfx/arw_gt.png) right center no-repeat transparent;
       background-size: contain; }
-      .page-nav a .page-nxt .glyph {
+      .page-nav a.page-nxt:hover {
+        padding-right: 65px; }
+      .page-nav a.page-nxt .glyph {
         right: 0; }
 
 @media (max-width: 768px) {

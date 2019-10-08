@@ -295,23 +295,31 @@ main {
   a {
     color: #fff;
     text-decoration: none;
+    @include transition(.25s);
 
-    .page-prv {
+    &.page-prv {
       padding-left: 70px;
       background: url(../gfx/arw_lt.png) left center no-repeat transparent;
       background-size: contain;
+
+      &:hover {
+        padding-left: 65px;
+      }
 
       .glyph {
         left: 0;
       }
     }
 
-    .page-nxt {
+    &.page-nxt {
       padding-right: 70px;
       text-align: right;
       background: url(../gfx/arw_gt.png) right center no-repeat transparent;
       background-size: contain;
 
+      &:hover {
+        padding-right: 65px;
+      }
       .glyph {
         right: 0;
       }

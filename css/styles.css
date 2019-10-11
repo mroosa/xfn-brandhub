@@ -493,6 +493,8 @@ main {
   @media (min-width: 1200px) {
     .two-col .content {
       width: calc(100% - 300px); } }
+  .two-col .content p {
+    max-width: 1020px; }
 
 .one-col .content {
   width: 100%; }
@@ -590,6 +592,9 @@ main {
   /* 8% between each column */ }
   .content h1 {
     margin: .5em 0;
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
     font-size: 72px;
     font-size: 4.5rem;
     font-weight: 800; }
@@ -599,10 +604,16 @@ main {
         font-size: 48px;
         font-size: 3rem; } }
   .content h2 {
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
     font-size: 36px;
     font-size: 2.25rem;
     font-weight: 800; }
   .content h3 {
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
     font-size: 24px;
     font-size: 1.5rem;
     font-weight: 800;
@@ -654,6 +665,8 @@ main {
     @media (max-width: 550px) {
       .content section {
         margin-bottom: 50px; } }
+    .content section:focus {
+      outline: none; }
   .content .img {
     margin: 20px 0 40px 0; }
     .content .img img {
@@ -942,6 +955,8 @@ main {
     cursor: pointer;
     margin-top: -8px;
     /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
+    #typography .weight::-webkit-slider-thumb:after {
+      content: "x"; }
     #typography .weight::-webkit-slider-thumb:focus {
       color: #333; }
   #typography .weight::-webkit-slider-runnable-track {

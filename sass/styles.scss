@@ -377,6 +377,10 @@ main {
     @include bp-min($xlg) {
       width: calc(100% - 300px);
     }
+
+    p {
+      max-width: 1020px;
+    }
   }
 }
 .one-col {
@@ -511,8 +515,7 @@ main {
 
   h1 {
     margin: .5em 0;
-    @include font-size(72px);
-    font-weight: 800;
+    @include Brown(72px, 800);
 
     @include bp-max($sml) {
       margin-top: 15px;
@@ -521,13 +524,11 @@ main {
   }
 
   h2 {
-    @include font-size(36px);
-    font-weight: 800;
+    @include Brown(36px, 800);
   }
 
   h3 {
-    @include font-size(24px);
-    font-weight: 800;
+    @include Brown(24px, 800);
     margin: 20px 0 10px 0;
   }
 
@@ -590,6 +591,10 @@ main {
     }
     @include bp-max($xsm) {
       margin-bottom: 50px;
+    }
+
+    &:focus {
+      outline: none;
     }
   }
 
@@ -982,6 +987,10 @@ main {
       background: #ffffff;
       cursor: pointer;
       margin-top: -8px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+
+      &:after {
+        content: "x";
+      }
 
       &:focus {
         color: #333;

@@ -12,7 +12,7 @@ function tempExpand() {
 }
 
 function toolTip(info) {
-  
+
 }
 
 function smoothScrolling() {

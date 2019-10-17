@@ -477,6 +477,30 @@ main {
     padding-right: 40px; } }
 
 /* Layout */
+.section p.intro {
+  font-family: "XfinityBrown", sans-serif;
+  letter-spacing: -.04ex;
+  line-height: 125%;
+  font-size: 24px;
+  font-size: 1.5rem; }
+
+.section .section-thumbs {
+  display: flex; }
+
+.section .section-thumb {
+  width: 32%;
+  border: 1px solid #333;
+  padding: 5px;
+  margin: 1% 0;
+  position: relative; }
+  .section .section-thumb h3 {
+    font-size: 14px;
+    font-size: 0.875rem;
+    left: 5px;
+    top: 5px;
+    margin: 0;
+    padding: 0; }
+
 .two-col #subnav {
   width: 25%;
   padding: 0 2% 30px 5%; }
@@ -753,147 +777,10 @@ main {
     color: #000; }
 
 /* Brand page */
-.brand .content {
-  background: #fff; }
-
-.brand section {
-  position: relative;
-  margin-bottom: 0; }
-  .brand section.vid {
-    background: #000;
-    margin-bottom: 0;
-    display: flex;
-    align-items: center;
-    overflow: hidden; }
-    .brand section.vid h1 {
-      display: block; }
-    .brand section.vid *:not(video) {
-      position: relative;
-      z-index: 2; }
-    @media (min-width: 550px) {
-      .brand section.vid {
-        height: 350px; } }
-    @media (min-width: 769px) {
-      .brand section.vid {
-        height: 400px; } }
-    @media (min-width: 960px) {
-      .brand section.vid {
-        height: 488px; } }
-    .brand section.vid video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      height: auto;
-      z-index: 1;
-      transform-origin: center;
-      transform: translate(-50%, -50%);
-      transition: .25s;
-      opacity: .5; }
-  .brand section.tuck-up {
-    z-index: 3;
-    margin-top: -135px;
-    margin-bottom: 0; }
-  .brand section .info {
-    padding: 60px 168px; }
-    .brand section .info p {
-      width: 75%; }
-  .brand section .info.half {
-    margin-left: 50%;
-    padding-left: 8%;
-    padding-right: 20%; }
-    .brand section .info.half p {
-      width: 100%; }
-  .brand section img {
-    max-width: 100%; }
-  .brand section.bg-img .info {
-    position: absolute;
-    z-index: 2; }
-  .brand section.bg-img img {
-    position: relative;
-    z-index: 1; }
-  .brand section:not(.header) h1 {
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin-bottom: 20px; }
-  .brand section .separator {
-    width: 64px;
-    background: #c6c6c6;
-    height: 2px;
-    margin: 20px 0; }
-  .brand section h2 {
-    font-size: 30px;
-    font-size: 1.875rem;
-    margin-top: 20px; }
-  .brand section.header {
-    position: relative;
-    color: #fff; }
-    .brand section.header a {
-      color: #fff; }
-      .brand section.header a.button {
-        border-color: #fff; }
-      .brand section.header a:hover {
-        background: #fff;
-        color: #000; }
-    .brand section.header .info {
-      padding: 40px 20px; }
-      @media (min-width: 550px) {
-        .brand section.header .info {
-          padding: 0 25% 0 50px; } }
-      @media (min-width: 769px) {
-        .brand section.header .info {
-          padding: 0 25% 0 128px; } }
-      @media (min-width: 960px) {
-        .brand section.header .info {
-          padding: 0 25% 0 168px; } }
-      @media (min-width: 1080px) {
-        .brand section.header .info {
-          padding: 0 45% 0 168px; } }
-    .brand section.header h1 {
-      font-size: 32px;
-      font-size: 2rem; }
-      .brand section.header h1.light {
-        color: #fff; }
-      .brand section.header h1.dark {
-        color: #000; }
-      @media (min-width: 550px) {
-        .brand section.header h1 {
-          font-size: 32px;
-          font-size: 2rem; } }
-      @media (min-width: 769px) {
-        .brand section.header h1 {
-          font-size: 42px;
-          font-size: 2.625rem; } }
-      @media (min-width: 960px) {
-        .brand section.header h1 {
-          font-size: 48px;
-          font-size: 3rem; } }
-
-@media (max-width: 960px) {
-  .brand section.bg-img .info.half {
-    margin: 0;
-    padding: 45px 168px; }
-  .brand section.bg-img img {
-    opacity: .3; } }
-
-@media (max-width: 768px) {
-  .brand .content section {
-    margin: 0; }
-    .brand .content section .info p {
-      width: 100%; }
-    .brand .content section.bg-img .info {
-      position: relative;
-      background: #eee; }
-    .brand .content section.bg-img img {
-      display: none; }
-    .brand .content section.tuck-up {
-      z-index: 3;
-      margin: 0; }
-    .brand .content section.bg-img .info.half,
-    .brand .content section .info {
-      padding: 40px 75px; } }
+/* Color */
+#color .color-palette h4 span {
+  font-weight: 400;
+  font-size: 75%; }
 
 /* Typography page */
 #typography blockquote {

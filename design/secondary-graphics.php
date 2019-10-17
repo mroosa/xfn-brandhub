@@ -1,61 +1,60 @@
           <h1>Secondary Graphics</h1>
           <div class="section">
-            <p>Our secondary graphic system includes key programs, channels, and offerings that support the Xfinity Masterbrand within our brand hierarchy.</p>
 
-            <h3>Xfinity Customer Commitment</h3>
-            <p>Our Customer Commitment seal represents our commitment  to making our customer experience our best product, and should be used on all tactics that reference our customer guarantee or a customer experience innovation related to a key pillar.</p>
+            <p class="intro">We have a robust library of secondary graphics that help with storytelling about our brand. Secondary graphics should not replace the Xfinity logo in communications.</p>
+
+            <h2>Mobile App Icons</h2>
+            <p>Our mobile app icons can be used sparingly in creative to drive further awareness about our mobile experiences.</p>
+            <p>All of our apps can be downloaded in the Apple App Store or Google Play.</p>
+
+            <h3>Mobile App Icon Library</h3>
+            <ul>
+              <li>My Account app</li>
+              <li>Xfinity Home app</li>
+              <li>WiFi Hotspot app *coming soon*</li>
+              <li>Xfinity Mobile app</li>
+              <li>Xfinity xFi app</li>
+              <li>Connect app</li>
+              <li>Xfinity Stream app</li>
+              <li>X1 Remote app</li>
+            </ul>
+
+            <h3>App Store Badges</h3>
+            <ul>
+              <li>Apple App Store *alternative versions available</li>
+              <li>Google Play *alternative versions available</li>
+            </ul>
+
+          </div>
+
+          <div class="section">
+            <h2>Secondary Graphics In Use</h2>
+          </div>
+
+          <div class="temp-expand">
             <div class="img width-75">
               <img src="<?php print $dir; ?>images/secondary-graphics/01.svg" alt="" />
             </div>
-            <a class="button" href="#">Download</a>
-
-            <h3>X1 Channels and Experiences</h3>
-            <p>Special design treatments have been developed for the Xfinity X1 interface. They should only be used within the X1 experience, and never in marketing collateral or communications.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/secondary-graphics/03.svg" alt="" />
             </div>
-            <a class="button" href="#">Download</a>
-
-            <h3>Xfinity on Campus</h3>
-            <p>Xfinity on Campus makes our products and services available to colleges in our region, helping win the loyalty of a new generation of customers. Use this only on program-related communications.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/secondary-graphics/04.svg" alt="" />
             </div>
-            <a class="button" href="#">Download</a>
-
-            <h3>Xfinity Communities</h3>
-            <p>Xfinity Communities is our Multi Dwelling Unit (MDU) segment of Xfinity that focuses on individual properties such as apartments, condos, healthcare facilities and more. Please only use this logo in those communications.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/secondary-graphics/05.svg" alt="" />
             </div>
-            <a class="button" href="#">Download</a>
-
-            <h3>Authorized Retailer and Authorized Dealer</h3>
-            <p>The Xfinity Authorized Retailer and Dealer logos are for use expressly by Xfinity third-party agents and eTail environments. These logos should only be used in third-party communications by Authorized Representatives and Dealers.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/secondary-graphics/06.svg" alt="" />
             </div>
-            <a class="button" href="#">Download</a>
-
-            <h3>Xfinity on the Fly</h3>
-            <p>Xfinity on the Fly is our in-airport lounge-like experience offering customers fast WiFi connections  while on the go. This mark should only be used within Xfinity on the Fly destinations.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/secondary-graphics/07.svg" alt="" />
             </div>
-            <a class="button" href="#">Download</a>
-
-            <h3>Xfinity Thanks You</h3>
-            <p>Xfinity Thanks You is to be used in select surprise-and-delight loyalty communications to foster commitment, cultivate relationships and build value with our customers.</p>
             <div class="img">
               <img src="<?php print $dir; ?>images/secondary-graphics/08.svg" alt="" />
             </div>
-            <a class="button" href="#">Download</a>
-
-            <h3>Speed Test Flag</h3>
-            <p>Xfinity is the best internet in America, according to speedtest.net. Use this flag when using that claim if design and layout allow.</p>
             <div class="img width-75">
               <img src="<?php print $dir; ?>images/secondary-graphics/02.svg" alt="" />
             </div>
-            <a class="button" href="#">Download</a>
 
           </div>

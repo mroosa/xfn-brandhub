@@ -1,5 +1,18 @@
-function toolTip(info) {
+function tempExpand() {
+  $(".temp-expand")
+    .css({
+      "background": "#f90",
+      "padding"   : "10px"
+    })
+    .wrapInner("<div class=\"temp-expand-inner\">")
+    .click(function() {
+      $(this).find(".temp-expand-inner").toggle();
+  });
+  $(".temp-expand-inner").hide();
+}
 
+function toolTip(info) {
+  
 }
 
 function smoothScrolling() {
@@ -59,5 +72,6 @@ $(document).ready(function() {
     $("." + thisId).attr("data-weight",$(this).val());
     // console.log($(this).val());
   });
+  tempExpand();
 
 });

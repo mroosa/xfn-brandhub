@@ -1,16 +1,78 @@
-          <h1>Design System</h1>
+          <h1>Key Design Elements</h1>
 
           <div class="section">
-            <h2 class="section-title">Layouts</h2>
-            <p>Layouts should combine key brand elements with creative ideas to thoughtfully tell our brand and product stories.</p>
-            <div class="img">
-              <img src="<?php print $dir; ?>images/design-system/01.png" alt="" />
-            </div>
+            <ul>
+              <li>Design Layout Grid</li>
+              <li>Copy<ul>
+                <li>Headline</li>
+                <li>Sub-Head</li>
+                <li>Body Copy</li>
+                <li>Package / Price Point</li>
+                <li>Call-Out</li>
+                <li>Voice Command</li>
+                <li>CTA / Button (Digital Only)</li>
+              </ul></li>
+              <li>Imagery<ul>
+                <li>Lifestyle Imagery</li>
+                <li>Xfinity Hardware Imagery</li>
+                <li>Generic Device Imagery</li>
+              </ul></li>
+              <li>Additional Elements<ul>
+                <li>Dynamic Angle / Blocking</li>
+                <li>Xfinity / Sub-Brand Logo</li>
+              </ul></li>
+            </ul>
           </div>
 
           <div class="section">
-            <h2 class="section-title">Using a Grid</h2>
-            <p>Each layout should start with a grid. Designing with a grid allows for structure and visual balance, and determines the size and placement for your brand assets and typography. Dividing layouts by either thirds or quarters is recommended for optimal organization and simplicity.</p>
+            <h2>Using a Grid</h2>
+            <p>Using a grid balances graphic elements, photography, and typography within a communication. Ideally, the grid should be divided by thirds or quarters.</p>
+            <p>When using blocking and the dynamic angle, the grid should be used as guidance. Blocking and the dynamic angle should be created by using equal increments of the grid. For example, if your layout is divided into thirds you can then divide those thirds into smaller, equal divisions. The angle should always be aligned with these equally divided space.</p>
+
+            <h4>Example Grids</h4>
+            <ul>
+              <li>Section divided into equal divisions (green lines)</li>
+              <li>Angle created by connected two points of equally divided sections</li>
+              <li>Page divided by thirds</li>
+              <li>Dynamic angle created by connected two points of equally divided sections</li>
+              <li>Page divided by thirds</li>
+            </ul>
+          </div>
+
+          <div class="section">
+            <h2>Blocking & Dynamic Angle</h2>
+            <p>Proper use of our grid, fields of color, and photography can help create clean, simple layouts that help organize key information.</p>
+            <p>Angles should be used in a purposeful manner, such as creating depth and a plain for devices and images to lay on. Don’t use more than one angle on a page or spread.</p>
+            <p>Blocking and dynamic angles should line up to the grid.</p>
+          </div>
+
+          <div class="section">
+            <h2>Digital Layout Hierarchy</h2>
+            <p>When possible, we recommend the following hierarchy of information for digital assets:</p>
+            <ul>
+              <li>Headline</li>
+              <li>Price Point (when applicable)</li>
+              <li>CTA / Button</li>
+              <li>Logo</li>
+            </ul>
+
+            <p>Text alignment on each asset should all be the same. Do not mix alignments on individual assets. Logo can be aligned to either the bottom left or right corner depending on content and design layout. If text is center aligned, logo should be centered as well.</p>
+          </div>
+
+          <div class="section">
+            <h2>OOH</h2>
+            <p>We have a specific style for our out- of-home creative that should be used consistently in all Xfinity placements. This template should be used for billboards, bus shelters, wallscapes and posters.</p>
+          </div>
+
+          <div class="section">
+            <h2>Design System Examples</h2>
+            <p>[ examples from gallery ]</p>
+          </div>
+
+          <div class="temp-expand">
+            <div class="img">
+              <img src="<?php print $dir; ?>images/design-system/01.png" alt="" />
+            </div>
             <div class="img">
               <img src="<?php print $dir; ?>images/design-system/02.png" alt="" />
             </div>
@@ -23,35 +85,22 @@
             <div class="img">
               <img src="<?php print $dir; ?>images/design-system/05.png" alt="" />
             </div>
-          </div>
-
-          <div class="section">
-            <h2 class="section-title">Dynamic Angles</h2>
-            <p>Dynamic angles can be used to divide up layouts and organize content but  are not mandatory in communications and should be used purposefully in layouts.  Overuse of dynamic angles will add unnecessary complexity and dilute the impact they have across our brand communications.</p>
             <div class="flex-column flex-3col">
-              <div class="img img-w-caption">
+              <div class="img">
                 <img src="<?php print $dir; ?>images/design-system/02-1.jpg" alt="" />
-                <p class="caption">Angle cutting through 2/3 of page at 10°</p>
               </div>
-              <div class="img img-w-caption">
+              <div class="img">
                 <img src="<?php print $dir; ?>images/design-system/02-2.jpg" alt="" />
-                <p class="caption">Angle cutting through 1/2 of page at 170°</p>
               </div>
-              <div class="img img-w-caption">
+              <div class="img">
                 <img src="<?php print $dir; ?>images/design-system/02-3.jpg" alt="" />
-                <p class="caption">Angle cutting corner to corner</p>
               </div>
             </div>
             <div class="flex-column flex-2col">
-              <div class="img img-w-caption">
+              <div class="img">
                 <img src="<?php print $dir; ?>images/design-system/03.jpg" alt="" />
-                <p class="caption">Angle cutting through 1/2 of page at 36.5°</p>
               </div>
             </div>
-          </div>
-
-          <div class="section">
-            <h2 class="section-title">Layout Best Practices</h2>
             <div class="flex-column flex-2col">
               <div class="img">
                 <img src="<?php print $dir; ?>images/design-system/06.png" alt="" />

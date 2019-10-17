@@ -18,61 +18,77 @@
     <main>
       <div class="inner">
         <div class="content">
-          <section class="section header" style="background-color: <?php print $bgColAry[$randNum]; ?>;">
-            <a href="#brand">
-              <img class="lrg" src="images/<?php print $imgAry[$randNum]; ?>" alt="Welcome to the Xfinity Brand Site - Let's get started" />
-              <img class="mid" src="images/<?php print $imgAry2[$randNum]; ?>" alt="Welcome to the Xfinity Brand Site - Let's get started" />
-              <img class="sml" src="images/<?php print $imgAry3[$randNum]; ?>" alt="Welcome to the Xfinity Brand Site - Let's get started" />
-            </a>
-          </section>
-          <!-- <section class="section header vid">
-            <div class="info">
-              <h1 class="light">We’re on a journey to become an admired lifestyle brand.</h1>
-              <a class="button" data-featherlight="#brand-video" href="#">Launch Video</a>
-            </div>
-            <div class="featherlight-ajax" style="display: none;">
-              <div id="brand-video">
-                <iframe src="https://player.vimeo.com/video/288220044" width="960" height="540" frameborder="0" allowfullscreen></iframe>
-              </div>
-            </div>
-            <video id="brand-bg" autoplay loop muted>
-              <source src="<?php print $div; ?>video/brand-overview-bg.mp4" type="video/mp4">
-            </video>
-          </section> -->
           <section id="brand" class="section">
             <div class="info" style="padding-bottom: 10px;">
-              <h1>Brand Purpose</h1>
+              <h1>Who We Are</h1>
               <div class="separator"></div>
-              <h2>We exist to fuel discovery for everyday enjoyment.</h2>
-              <p>Through our products and services, we make experiences more vivid, more meaningful and more memorable. We offer unparalleled content, connectivity and experience design that work simply and easily to deliver meaningful experiences across every interaction so people can do more and enjoy more of what they love.</p>
+              <h2>We’re on a journey to become a brand people love.</h2>
+              <p>Xfinity is a key consumer brand in Comcast’s corporate portfolio, alongside Sky, Universal, NBC and others.</p>
+              <p>These guidelines are meant for Xfinity communications only.</p>
+              <p>Following the spirit of these guidelines is essential to ensuring the Xfinity brand is consistently represented across all touchpoints.</p>
+              <h3>We are The Host</h3>
+              <p>We invite people into our world and set the stage for discovery in a way only Xfinity can make possible. Our personality comes to life through our attributes: helpful, captivating, approachable, passionate and fresh. Expressing our personality across every interaction builds meaningful, lasting relationships.</p>
+              <a class="button" href="design">Let's Get Started</a>
             </div><!-- /.info -->
-            <img src="<?php print $dir; ?>images/bg_section-1.jpg" alt="" />
-          </section>
-          <section class="section">
-            <div class="info">
-              <h1>Our Target Mindset</h1>
-              <div class="separator"></div>
-              <h2>We are inspired by curious-minded people.</h2>
-              <p>They are open to new experiences, committed to developing connections with others, and fulfilled by the journey that leads to new discoveries each day. They see us as more than just technology – we are amplifying their lifestyle. Every experience we create and innovation we dream up is for and because of them.</p>
+            <div class="info" style="padding-bottom: 10px;">
+              <h2>Brand Voice</h2>
+              <p>We invite people in and set the stage for discovering enjoyment through experiences only we can make possible.</p>
+              <p>Our brand voice helps us express the personality – and spirit – of our brand. Our voice brings our personality attributes to life, directing the tone and style of all our communications.</p>
+
+              <h3>We’re Helpful</h3>
+              <p>A great host is attuned to your wants and needs so that you feel understood and satisfied.</p>
+              <ul>
+                <li>Simple</li>
+                <li>Straightforward</li>
+                <li>Empathetic</li>
+              </ul>
+
+              <h3>We’re Captivating</h3>
+              <p>A great host keeps you engaged through an infectious charm and enthusiasm.</p>
+              <ul>
+                <li>Delightful</li>
+                <li>Engaging</li>
+                <li>Dynamic</li>
+              </ul>
+
+              <h3>We’re Approachable</h3>
+              <p>A great host puts you at ease so you feel happy and comfortable.</p>
+              <ul>
+                <li>Warm</li>
+                <li>Personal</li>
+                <li>Human</li>
+              </ul>
+
+              <h3>We’re Passionate</h3>
+              <p>A great host is the life of the party so you feel hopeful and inspired.<p>
+              <ul>
+                <li>Optimistic</li>
+                <li>Relevant</li>
+                <li>Enthusiastic</li>
+              </ul>
+
+              <h3>We’re Fresh</h3>
+              <p>A great host shares their unique perspective on the latest trends and innovations so you feel ahead of the curve.</p>
+              <ul>
+                <li>Unexpected</li>
+                <li>Witty</li>
+                <li>Refreshing</li>
+              </ul>
+
+              <a class="button" href="inspired">Get Inspired</a>
             </div><!-- /.info -->
-          </section>
-          <section class="section bg-img">
-            <div class="info half">
-              <h1>Our Personality</h1>
-              <div class="separator"></div>
-              <h2>We are The Host.</h2>
-              <p>We invite people in to our world and set the stage for discovery in a way only Xfinity can make possible. Our personality comes to life across every interaction to build meaningful, lasting relationships.</p>
+            <div class="info" style="padding-bottom: 10px;">
+              <h2>Questions? Please reach out.</h2>
+              <p><strong>Catherine Clair Williams</strong> / <a href="#">Catherine_Clair@comcast.com</a></p>
+              <p><strong>Jamie Dion</strong> / <a href="#">Jamie_Dion@comcast.com</a></p>
+              <p><strong>Simone Bilotta</strong> / <a href="#">Simone_Bilotta@comcast.com</a></p>
             </div><!-- /.info -->
-            <img src="<?php print $dir; ?>images/bg_section-2.jpg" alt="" />
-          </section>
-          <section class="section tuck-up">
-            <div class="info">
-              <h1>Brand Tagline</h1>
-              <div class="separator"></div>
-              <h2>The Future of Awesome</h2>
-              <p>Together we're creating a new vision beyond the horizon, connecting people to what they can't see today. We will never settle and will keep innovating to deliver experiences – big and small – that people love.</p>
-              <p>Here, you’ll find the tools to bring the Xfinity brand to life and live into our brand purpose every day. Let’s get started.</p>
-            </div><!-- /.info -->
+
+
+
+
+
+
           </section>
         </div><!-- /.content -->
       </div><!-- /.inner -->

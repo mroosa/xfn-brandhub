@@ -360,6 +360,35 @@ main {
 }
 
 /* Layout */
+.section {
+  p {
+    &.intro {
+      @include Brown(24px, 400);
+    }
+  }
+
+  .section-thumbs {
+    display: flex;
+  }
+
+  .section-thumb {
+    width: 32%;
+    border: 1px solid #333;
+    padding: 5px;
+    margin: 1% 0;
+    position: relative;
+
+    h3 {
+      @include font-size(14px);
+      // position: absolute;
+      left: 5px;
+      top: 5px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
 .two-col {
   #subnav {
     width: 25%;
@@ -732,205 +761,217 @@ main {
 }
 
 /* Brand page */
-.brand {
+// .brand {
+//
+//   .content {
+//     background: #fff;
+//   }
+//
+//   section {
+//     position: relative;
+//     margin-bottom: 0;
+//
+//     &.vid {
+//       background: #000;
+//       margin-bottom: 0;
+//       display: flex;
+//       align-items: center;
+//       overflow: hidden;
+//
+//       h1 {
+//         display: block;
+//       }
+//
+//       *:not(video) {
+//         position: relative;
+//         z-index: 2;
+//       }
+//
+//       @include bp-min($xsm) {height: 350px;}
+//       @include bp-min($sml+1) {height: 400px;}
+//       @include bp-min($mid) {height: 488px;}
+//
+//       video {
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         min-width: 100%;
+//         min-height: 100%;
+//         height: auto;
+//         z-index: 1;
+//         transform-origin: center;
+//         transform: translate(-50%,-50%);
+//         transition: .25s;
+//         opacity: .5;
+//       }
+//     }
+//
+//     &.tuck-up {
+//       z-index: 3;
+//       margin-top: -135px;
+//       margin-bottom: 0;
+//     }
+//
+//     .info {
+//       padding: 60px 168px;
+//
+//       p {
+//         width: 75%;
+//       }
+//     }
+//
+//     .info.half {
+//       margin-left: 50%;
+//       padding-left: 8%;
+//       padding-right: 20%;
+//
+//       p {
+//         width: 100%;
+//       }
+//     }
+//
+//     img {
+//       max-width: 100%;
+//     }
+//
+//     &.bg-img {
+//       .info {
+//         position: absolute;
+//         z-index: 2;
+//       }
+//
+//       img {
+//         position: relative;
+//         z-index: 1;
+//       }
+//     }
+//
+//     &:not(.header) {
+//       h1 {
+//         @include font-size(14px);
+//         font-weight: 500;
+//         margin-bottom: 20px;
+//       }
+//     }
+//
+//     .separator {
+//       width: 64px;
+//       background: #c6c6c6;
+//       height: 2px;
+//       margin: 20px 0;
+//     }
+//
+//     h2 {
+//       @include font-size(30px);
+//       margin-top: 20px;
+//     }
+//
+//     &.header {
+//       position: relative;
+//       color: #fff;
+//
+//       a {
+//         color: #fff;
+//
+//         &.button {
+//           border-color: #fff;
+//         }
+//
+//         &:hover {
+//           background: #fff;
+//           color: #000;
+//         }
+//       }
+//
+//       .info {
+//         padding: 40px 20px;
+//         @include bp-min($xsm) {
+//           padding: 0 25% 0 50px;
+//         }
+//         @include bp-min($sml+1) {
+//           padding: 0 25% 0 128px;
+//         }
+//         @include bp-min($mid) {
+//           padding: 0 25% 0 168px;
+//         }
+//         @include bp-min(1080px) {
+//           padding: 0 45% 0 168px;
+//         }
+//       }
+//
+//       h1 {
+//         @include font-size(32px);
+//
+//         &.light {color: #fff;}
+//         &.dark {color: #000;}
+//
+//         @include bp-min($xsm) {
+//           @include font-size(32px);
+//         }
+//         @include bp-min($sml+1) {
+//           @include font-size(42px);
+//         }
+//         @include bp-min($mid) {
+//           @include font-size(48px);
+//         }
+//       }
+//     }
+//   }
+// }
+//
+// @media (max-width: 960px) {
+//   .brand section.bg-img .info.half {
+//     margin: 0;
+//     padding: 45px 168px;
+//   }
+//   .brand section.bg-img img {
+//     opacity: .3;
+//   }
+// }
+// @media (max-width: 768px) {
+//   .brand {
+//     .content {
+//       section {
+//         margin: 0;
+//
+//         .info {
+//           p {
+//             width: 100%;
+//           }
+//         }
+//
+//         &.bg-img {
+//           .info {
+//             position: relative;
+//             background: #eee;
+//           }
+//
+//           img {
+//             display: none;
+//           }
+//         }
+//
+//         &.tuck-up {
+//           z-index: 3;
+//           margin:0;
+//         }
+//
+//         &.bg-img .info.half,
+//         .info {
+//           padding: 40px 75px;
+//         }
+//       }
+//     }
+//   }
+// }
 
-  .content {
-    background: #fff;
-  }
-
-  section {
-    position: relative;
-    margin-bottom: 0;
-
-    &.vid {
-      background: #000;
-      margin-bottom: 0;
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-
-      h1 {
-        display: block;
-      }
-
-      *:not(video) {
-        position: relative;
-        z-index: 2;
-      }
-
-      @include bp-min($xsm) {height: 350px;}
-      @include bp-min($sml+1) {height: 400px;}
-      @include bp-min($mid) {height: 488px;}
-
-      video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        height: auto;
-        z-index: 1;
-        transform-origin: center;
-        transform: translate(-50%,-50%);
-        transition: .25s;
-        opacity: .5;
-      }
-    }
-
-    &.tuck-up {
-      z-index: 3;
-      margin-top: -135px;
-      margin-bottom: 0;
-    }
-
-    .info {
-      padding: 60px 168px;
-
-      p {
-        width: 75%;
-      }
-    }
-
-    .info.half {
-      margin-left: 50%;
-      padding-left: 8%;
-      padding-right: 20%;
-
-      p {
-        width: 100%;
-      }
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    &.bg-img {
-      .info {
-        position: absolute;
-        z-index: 2;
-      }
-
-      img {
-        position: relative;
-        z-index: 1;
-      }
-    }
-
-    &:not(.header) {
-      h1 {
-        @include font-size(14px);
-        font-weight: 500;
-        margin-bottom: 20px;
-      }
-    }
-
-    .separator {
-      width: 64px;
-      background: #c6c6c6;
-      height: 2px;
-      margin: 20px 0;
-    }
-
-    h2 {
-      @include font-size(30px);
-      margin-top: 20px;
-    }
-
-    &.header {
-      position: relative;
-      color: #fff;
-
-      a {
-        color: #fff;
-
-        &.button {
-          border-color: #fff;
-        }
-
-        &:hover {
-          background: #fff;
-          color: #000;
-        }
-      }
-
-      .info {
-        padding: 40px 20px;
-        @include bp-min($xsm) {
-          padding: 0 25% 0 50px;
-        }
-        @include bp-min($sml+1) {
-          padding: 0 25% 0 128px;
-        }
-        @include bp-min($mid) {
-          padding: 0 25% 0 168px;
-        }
-        @include bp-min(1080px) {
-          padding: 0 45% 0 168px;
-        }
-      }
-
-      h1 {
-        @include font-size(32px);
-
-        &.light {color: #fff;}
-        &.dark {color: #000;}
-
-        @include bp-min($xsm) {
-          @include font-size(32px);
-        }
-        @include bp-min($sml+1) {
-          @include font-size(42px);
-        }
-        @include bp-min($mid) {
-          @include font-size(48px);
-        }
-      }
-    }
-  }
-}
-
-@media (max-width: 960px) {
-  .brand section.bg-img .info.half {
-    margin: 0;
-    padding: 45px 168px;
-  }
-  .brand section.bg-img img {
-    opacity: .3;
-  }
-}
-@media (max-width: 768px) {
-  .brand {
-    .content {
-      section {
-        margin: 0;
-
-        .info {
-          p {
-            width: 100%;
-          }
-        }
-
-        &.bg-img {
-          .info {
-            position: relative;
-            background: #eee;
-          }
-
-          img {
-            display: none;
-          }
-        }
-
-        &.tuck-up {
-          z-index: 3;
-          margin:0;
-        }
-
-        &.bg-img .info.half,
-        .info {
-          padding: 40px 75px;
-        }
+/* Color */
+#color {
+  .color-palette {
+    h4 {
+      span {
+        font-weight: 400;
+        font-size: 75%;
       }
     }
   }

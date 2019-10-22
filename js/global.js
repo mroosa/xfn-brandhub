@@ -9,6 +9,7 @@ function tempExpand() {
       $(this).find(".temp-expand-inner").toggle();
   });
   $(".temp-expand-inner").hide();
+  $(".temp-expand").hide();
 }
 
 function toolTip(info) {
@@ -91,7 +92,7 @@ $(document).ready(function() {
   $(".weight").on("change mousemove", function() {
     var thisId = $(this).parents(".slider").attr("data-for");
     $("." + thisId).attr("data-weight",$(this).val());
-    
+     
     // console.log($(this).val());
   });
 

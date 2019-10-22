@@ -1,13 +1,13 @@
 <?php
 $subLinkAry = [
-	new NavLink($dir . 'design/#overview','Identity Overview', null),
-	new NavLink($dir . 'design/#logo','Logo', null),
-	new NavLink($dir . 'design/#color','Color', null),
-  new NavLink($dir . 'design/#typography','Typography', null),
-  new NavLink($dir . 'design/#photography','Photography', null),
-	new NavLink($dir . 'design/#secondary-graphics','Secondary Graphics', null),
-  new NavLink($dir . 'design/#design-system','Design System', null),
-	new NavLink($dir . 'design/#co-branding','Co-Branding', null),
+	new NavLink('#overview','Identity Overview', null),
+	new NavLink('#logo','Logo', null),
+	new NavLink('#color','Color', null),
+  new NavLink('#typography','Typography', null),
+  new NavLink('#photography','Photography', null),
+	new NavLink('#secondary-graphics','Secondary Graphics', null),
+  new NavLink('#design-system','Design System', null),
+	new NavLink('#co-branding','Co-Branding', null),
 ];
 
 print "\t<ul class=\"nav menu\">\n";

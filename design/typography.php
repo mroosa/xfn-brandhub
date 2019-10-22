@@ -3,12 +3,12 @@
 
             <blockquote class="live-type font-xfb">Hi, I'm Xfinity Brown</blockquote>
             <div class="slider" data-for="font-xfb">
-              <input type="range" min="1" max="3" value="3" class="weight">
+              <input type="range" min="1" max="3" value="3" class="weight" title="">
             </div>
 
             <blockquote class="live-type font-xfs">and I'm Xfinity Standard</blockquote>
             <div class="slider" data-for="font-xfs">
-              <input type="range" min="1" max="6" value="4" class="weight">
+              <input type="range" min="1" max="6" value="4" class="weight" title="">
             </div>
           </div><!-- /.section -->
 

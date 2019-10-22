@@ -30,26 +30,25 @@
           <div class="section">
             <h2>Types of Imagery</h2>
             <p>We pair lifestyle imagery with device imagery to showcase both the functional and emotional benefits of being an Xfinity customer, with color and visual impact.</p>
-          </div>
 
-          <div class="section">
-            <h2>Lifestyle</h2>
-            <p>To emphasize brand storytelling, lifestyle imagery should be used as much as possible. Lifestyle imagery allows us to be more human and adds warmth to our creative.</p>
-          </div>
-
-          <div class="section">
-            <h2>In-Situation</h2>
-            <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story, such as streaming. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
-          </div>
-
-          <div class="section">
-            <h2>Xfinity Devices</h2>
-            <p>Xfinity hardware should be showcased when possible. Please use images from provided by our brand team for consistency.</p>
-          </div>
-
-          <div class="section">
-            <h2>Generic Devices</h2>
-            <p>Generic device imagery should be used to showcase our UI and services. They should be used strategically, as overuse devalues our brand. Please use images provided by the brand team for consistency.</p>
+            <div class="tabs">
+              <div class="tab" id="image-lifestyle">
+                <h3>Lifestyle</h3>
+                <p>To emphasize brand storytelling, lifestyle imagery should be used as much as possible. Lifestyle imagery allows us to be more human and adds warmth to our creative.</p>
+              </div><!-- /. tab -->
+              <div class="tab" id="image-insitu">
+                <h3>In-Situation</h3>
+                <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story, such as streaming. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
+              </div><!-- /. tab -->
+              <div class="tab" id="image-xfinity-devices">
+                <h3>Xfinity Devices</h3>
+                <p>Xfinity hardware should be showcased when possible. Please use images from provided by our brand team for consistency.</p>
+              </div><!-- /. tab -->
+              <div class="tab" id="image-generic-devices">
+                <h3>Generic Devices</h3>
+                <p>Generic device imagery should be used to showcase our UI and services. They should be used strategically, as overuse devalues our brand. Please use images provided by the brand team for consistency.</p>
+              </div><!-- /. tab -->
+            </div><!-- /. tabs -->
           </div>
 
           <div class="temp-expand">

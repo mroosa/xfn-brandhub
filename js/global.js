@@ -17,7 +17,7 @@ function toolTip(info) {
 
 function smoothScrolling() {
   if ($(window).width()>768) {
-    console.log("smoothScrolling()");
+    // console.log("smoothScrolling()");
     $('a[href*="#"]')
       // Remove links that don't actually link to anything
       .not('[href="#"]')
@@ -55,6 +55,27 @@ function smoothScrolling() {
   }
 }
 
+function randNum(max, min) {
+  min = min != undefined ? min : 0;
+  return Math.floor(Math.random()*Math.floor(max-min)) + min;
+}
+
+function typeIn(field, content) {
+  var text = content;
+  $(field).html("&nbsp;");
+  var i = 0,
+      newText = "";
+  var typeInID = setInterval(function() {
+    if (i<text.length) {
+      newText += text.charAt(i);
+      $(field).html(newText);
+      i++;
+    } else {
+      clearInterval(typeInID);
+    }
+  },75);
+};
+
 
 $(document).ready(function() {
   smoothScrolling();
@@ -70,7 +91,18 @@ $(document).ready(function() {
   $(".weight").on("change mousemove", function() {
     var thisId = $(this).parents(".slider").attr("data-for");
     $("." + thisId).attr("data-weight",$(this).val());
+    
     // console.log($(this).val());
+  });
+
+
+  $(".live-type").each(function(index) {
+    var thisType = $(this).html();
+    $(this).html("&nbsp;");
+    var thisBlock = $(this);
+    var timeoutID = setTimeout(function() {
+      typeIn(thisBlock, thisType);
+    },Math.floor(index * 2000));
   });
   tempExpand();
 

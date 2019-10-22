@@ -511,7 +511,7 @@ main {
 .two-col .content {
   width: 75%;
   padding: 0 20px 0 0; }
-  @media (min-width: 768px) {
+  @media (min-width: 1020px) {
     .two-col .content {
       padding: 20px 140px 40px 20px; } }
   @media (min-width: 1200px) {

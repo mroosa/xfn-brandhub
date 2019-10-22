@@ -400,7 +400,7 @@ main {
   .content {
     width: 75%;
     padding: 0 20px 0 0;
-    @include bp-min ($sml) {
+    @include bp-min ($lrg) {
       padding: 20px 140px 40px 20px;
     }
     @include bp-min($xlg) {

@@ -3,10 +3,10 @@
             <p class="intro">Our logo should be used to represent Xfinity in all communications and experiences. It comes in black, white and red, with black and white preferred.</p>
             <h2>Primary Use</h3>
             <p>Black and reverse white are the primary variants of the Xfinity logo to be used in Xfinity communications and product experiences.</p>
-            <p class="caption">These help maintain legibility and allow the content to be the hero of the communication.</p>
+            <img src="../images/logo/Xfinity_logo_2017_blk_RGB.png" alt="" title="These help maintain legibility and allow the content to be the hero of the communication." />
             <h3>Limited Use</h3>
             <p>The Xfinity Red logo and reversed white out of Xfinity Red logo variant is reserved for high impact use in environmental applications.</p>
-            <p class="caption">Please contact the Brand Team for approval.</p>
+            <img src="../images/logo/Xfinity_logo_2017_gry_RGB.png" alt="" title="Please contact the Brand Team for approval." />
           </div>
 
           <div class="section">

@@ -1,7 +1,7 @@
           <h1>Photography</h1>
           <div class="section">
             <p class="intro">Our photography reinforces our design principles</p>
-            <div class="flex-column flex-3col">
+            <div class="flex-column flex-4col">
               <div>
                 <h3>Bold</h3>
                 <ul>
@@ -43,6 +43,9 @@
               <div class="tab" id="image-xfinity-devices">
                 <h3>Xfinity Devices</h3>
                 <p>Xfinity hardware should be showcased when possible. Please use images from provided by our brand team for consistency.</p>
+                <!-- <div class="img width-75">
+                  <img src="../images/photography/Photography-Device-Gif.gif" alt="" />
+                </div> -->
               </div><!-- /. tab -->
               <div class="tab" id="image-generic-devices">
                 <h3>Generic Devices</h3>

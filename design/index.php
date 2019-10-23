@@ -19,9 +19,9 @@
           endif;
         ?>
         <div class="content">
-          <section id="overview">
-            <?php include_once("overview.php"); ?>
-          </section>
+          <!-- <section id="overview">
+            <?php #include_once("overview.php"); ?>
+          </section> -->
           <section id="logo">
             <?php include_once("logo.php"); ?>
           </section>

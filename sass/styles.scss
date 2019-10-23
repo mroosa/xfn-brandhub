@@ -393,8 +393,10 @@ main {
   #subnav {
     width: 25%;
     padding: 0 2% 30px 5%;
+    text-align: right;
     @include bp-min($xlg) {
-      width: 300px;
+      padding: 0 1% 30px 2%;
+      width: 200px;
     }
   }
   .content {
@@ -404,12 +406,13 @@ main {
       padding: 20px 140px 40px 20px;
     }
     @include bp-min($xlg) {
-      width: calc(100% - 300px);
+      width: calc(100% - 200px);
     }
 
     p {
       max-width: 1020px;
     }
+
   }
 }
 .one-col {
@@ -470,6 +473,7 @@ main {
         text-decoration: none;
         color: #000;
         transition:color .25s, background .25s;
+        border-radius: 4px;
 
         &:hover {
           background: #666;
@@ -533,7 +537,7 @@ main {
     z-index: 2;
     width: 18%;
     @include bp-min($xlg) {
-      width: calc(300px - 7%);
+      width: calc(200px - 3%);
     }
   }
 }
@@ -624,6 +628,32 @@ main {
 
     &:focus {
       outline: none;
+    }
+
+    display: flex;
+
+    .col-1 {
+      width: 33%;
+      padding: 1%;
+      background: #F2F4F5;
+      position: relative;
+    }
+    .col-2 {
+      width: 67%;
+      padding-left: 2%;
+    }
+
+    &.active {
+      .col-1 {
+        width: 24%;
+        height: 100vh;
+        top: 0;
+        padding-top: 10vh;
+        position: fixed;
+      }
+      .col-2 {
+        margin-left: 33%;
+      }
     }
   }
 

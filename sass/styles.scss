@@ -589,7 +589,7 @@ main {
       transition: color .25s, background .25s;
       border-radius: 3ex;
       text-decoration: none;
-      @include font-size(14px);
+      @include Brown(14px);
       font-weight: 500;
       color: #000;
       margin:15px 15px 15px 0;

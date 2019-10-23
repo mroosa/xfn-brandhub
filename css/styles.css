@@ -664,6 +664,9 @@ main {
     transition: color .25s, background .25s;
     border-radius: 3ex;
     text-decoration: none;
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 500;

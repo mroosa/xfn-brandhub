@@ -1,6 +1,5 @@
 <?php
 $linkAry = [
-	new NavLink($dir . 'home','Who We Are', null),
 	new NavLink($dir . 'design','Core Elements', null),
 	new NavLink($dir . 'resources','Downloads', null),
 	new NavLink($dir . 'inspiration','Inspiration', null)

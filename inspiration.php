@@ -20,7 +20,7 @@
 ?>
 <body class="one-col inspiration">
   <div class="contain">
-    <?php include_once($dir . "_templates/_structure/header.php"); ?>
+    <!-- <?php #include_once($dir . "_templates/_structure/header.php"); ?> -->
     <main>
       <div class="inner">
         <div class="content">

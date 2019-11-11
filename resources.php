@@ -7,7 +7,7 @@
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 <body class="one-col downloads">
   <div class="contain">
-    <?php include_once($dir . "_templates/_structure/header.php"); ?>
+    <!-- <?php #include_once($dir . "_templates/_structure/header.php"); ?> -->
     <main>
       <div class="inner">
         <div class="content">

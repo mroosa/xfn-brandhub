@@ -54,7 +54,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-bg="drk-gry">
+    <div class="tab" style="background: #201e20;" data-bg="drk-gry">
       <div class="tab-col-1">
         <h2>Logo in Motion</h2>
         <p>Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a black background ensures optimal legibility, consistency and impact. It is available in English and Spanish.</p>

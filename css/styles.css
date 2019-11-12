@@ -262,7 +262,6 @@ main {
   main .inner {
     display: flex; }
 
-/* Footer Nav */
 .two-col #subnav {
   width: 20%;
   padding: 0 3% 30px 3%; }
@@ -309,16 +308,18 @@ main {
 #subnav {
   background: #5a5a5c;
   color: #fff; }
-  #subnav.ugly {
+  #subnav.wht {
     background: #fff;
     color: #000; }
-    #subnav.ugly ul li a {
+    #subnav.wht ul li a {
       color: #000; }
-      #subnav.ugly ul li a:hover {
+      #subnav.wht ul li a:hover {
         background: #5a5a5c;
         color: #fff; }
-    #subnav.ugly .logo svg {
+    #subnav.wht .logo svg {
       fill: #000; }
+  #subnav.black {
+    background: #000; }
   #subnav .nav {
     padding-top: 25px; }
   #subnav .logo svg {
@@ -580,7 +581,7 @@ section.with-tabs .tabs {
     border: 1px solid #000;
     background: #000;
     color: #fff;
-    transition: color .25s, background .25s;
+    transition: color .25s, background .25s, transform .25s, box-shadow .25s;
     border-radius: 4px;
     text-decoration: none;
     font-family: "XfinityBrown", sans-serif;
@@ -594,9 +595,12 @@ section.with-tabs .tabs {
       .content a.button {
         display: block;
         text-align: center; } }
-    .content a.button:hover {
+    .content a.button.active, .content a.button:hover {
       color: #000;
       background: #fff; }
+    .content a.button:hover {
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+      transform: translateY(-3px); }
   .content .flex-column ul.none,
   .content .flex-column ul.none li {
     list-style: none;
@@ -767,7 +771,7 @@ section.with-tabs .tabs {
     #color .color-swatches .swatch-info.active {
       opacity: 1;
       pointer-events: all;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
       transform: translate(50%, 50%) scale(1); }
   #color .color-swatches .ht-100 {
     height: 50%;
@@ -984,16 +988,18 @@ section.with-tabs .tabs {
       flex-wrap: wrap;
       background: #fff;
       width: 20%;
-      padding: 0 25px; }
-      .mosaic .photo-info-wrap .photo-info.black {
+      padding: 0 25px;
+      border: 1px solid #ccc;
+      border-radius: 4px; }
+      .mosaic .photo-info-wrap .photo-info.blk {
         border: 0;
         background: #000;
         color: #fff; }
-      .mosaic .photo-info-wrap .photo-info.grey {
+      .mosaic .photo-info-wrap .photo-info.gry {
         border: 0;
         background: #5a5a5c;
         color: #fff; }
-      .mosaic .photo-info-wrap .photo-info.lt-gry {
+      .mosaic .photo-info-wrap .photo-info.ltg {
         border: 0;
         background: #ebeef0; }
       .mosaic .photo-info-wrap .photo-info p {

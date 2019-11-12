@@ -45,6 +45,7 @@ $(document).ready(function() {
       },Math.floor(index * 2000));
       var newTimeoutID = setTimeout(function() {
         $(thisBlock).parents(".type-wrap").find(".slider").css({"visibility":"visible"}).addClass("show");
+        $("#typography .button[data-id=0]").addClass("active");
       },Math.floor(numTxts * 2000) + 500);
     });
   }

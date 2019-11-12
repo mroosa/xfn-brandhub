@@ -4,7 +4,7 @@
   <p class="intro">Our photography is easygoing and everyday, caught in the moment, authentic, inviting, curious, genuinely emotive.</p>
   <a class="button ignore-click" href="#photography-lifestyle">Lifestyle</a>
   <a class="button ignore-click" href="#photography-xfn-devices">Xfinity Devices</a>
-  <a class="button ignore-click" href="#photography-in-situ">In-situation</a>
+  <a class="button ignore-click" href="#photography-in-situ">In-Situation</a>
   <a class="button ignore-click" href="#photography-devices">Generic Devices</a>
 </div>
 <div class="col-2">
@@ -45,15 +45,15 @@
             <h3>Lifestyle</h3>
             <p>To emphasize brand storytelling, lifestyle imagery should be used as much as possible. Lifestyle imagery allows us to be more human and adds warmth to our creative.</p>
           </div>
-          <div class="photo-info lt-gry" id="photography-xfn-devices">
+          <div class="photo-info ltg" id="photography-xfn-devices">
             <h3>Xfinity Devices</h3>
             <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story, such as streaming. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
           </div>
-          <div class="photo-info grey" id="photography-in-situ">
+          <div class="photo-info gry" id="photography-in-situ">
             <h3>In-Situation</h3>
             <p>Xfinity hardware should be showcased when possible. Please use images from provided by our brand team for consistency.</p>
           </div>
-          <div class="photo-info black" id="photography-devices">
+          <div class="photo-info blk" id="photography-devices">
             <h3>Generic Devices</h3>
             <p>Generic device imagery should be used to showcase our UI and services. They should be used strategically, as overuse devalues our brand. Please use images provided by the brand team for consistency.</p>
           </div>

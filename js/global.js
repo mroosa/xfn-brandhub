@@ -274,6 +274,8 @@ $(document).ready(function() {
   $("#photography .col-1 .button").each(function(index) {
     $(this).attr("data-id",index);
     $(this).click(function() {
+      $("#photography .button.active").removeClass("active");
+      $(this).addClass("active");
       $("#photography .photo-info-wrap").css({
         "margin-left": -100 - 100 * index + "%"
       });
@@ -287,6 +289,8 @@ $(document).ready(function() {
   $("#typography .col-1 .button").each(function(index) {
     $(this).attr("data-id",index);
     $(this).click(function() {
+      $("#typography .button.active").removeClass("active");
+      $(this).addClass("active");
       $("#typography .col-2").attr("data-active", index);
       return false;
     })

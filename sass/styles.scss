@@ -326,6 +326,12 @@ section {
         height: 100vh;
         width: 100vw;
 
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 90%;
+        }
+
         .tab-col-1,
         .tab-col-2 {
           width: 50%;
@@ -1017,6 +1023,10 @@ section {
   .photo {
     border-radius: 4px;
     overflow: hidden;
+
+    &.border {
+      border: 1px solid #ccc;
+    }
 
     &:not(.default) {
       display: none;

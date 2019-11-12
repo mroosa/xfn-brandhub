@@ -296,6 +296,10 @@ $(document).ready(function() {
     })
   })
 
+  $(".logo").click(function() {
+    $(this).parents("#subnav").toggleClass("black").toggleClass("wht");
+  });
+
 
 
 });

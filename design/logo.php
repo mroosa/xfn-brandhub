@@ -2,7 +2,7 @@
 <div class="col-1">
   <h1>Logo</h1>
   <p class="intro">Our logo is our calling card and a symbol of our brand. It represents Xfinity in all communications and experiences. Whether it’s black or red, static or animated, it’s always an essential element of our story.</p>
-  <a class="button" href="#">View Logos</a>
+  <a class="button" href="#">Explore Logos</a>
 </div>
 <div class="col-2">
   <div class="img">

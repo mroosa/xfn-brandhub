@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
   // Sticky Nav
-  var buffer = 0;
+  var buffer = 100;
   var stickyNavTop = $('#subnav').offset().top;
   console.log(stickyNavTop);
   var subNav = $("#subnav .sidebar"),

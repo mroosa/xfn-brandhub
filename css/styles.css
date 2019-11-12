@@ -418,6 +418,10 @@ section.with-tabs .tabs {
     justify-content: center;
     height: 100vh;
     width: 100vw; }
+    section.with-tabs .tabs .tab img {
+      display: block;
+      margin: 0 auto;
+      max-width: 90%; }
     section.with-tabs .tabs .tab .tab-col-1,
     section.with-tabs .tabs .tab .tab-col-2 {
       width: 50%;
@@ -973,6 +977,8 @@ section.with-tabs .tabs {
   .mosaic .photo {
     border-radius: 4px;
     overflow: hidden; }
+    .mosaic .photo.border {
+      border: 1px solid #ccc; }
     .mosaic .photo:not(.default) {
       display: none; }
   .mosaic .photo-info-wrap {

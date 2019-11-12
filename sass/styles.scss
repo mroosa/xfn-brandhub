@@ -938,6 +938,7 @@ section {
       display: block;
       border-radius: 4px;
       height: 100%;
+      cursor: pointer;
 
       &.color-1 {
         border: 1px solid #ccc;
@@ -946,10 +947,12 @@ section {
       &.light {
         color: #fff;
         span {color: rgba(255,255,255,.65);}
+        .close-btn path {stroke: #fff;}
       }
       &.dark {
         color: #000;
         span {color: rgba(0,0,0,.35);}
+        .close-btn path {stroke: #000;}
       }
 
       &.color-1 {background: #ffffff;}
@@ -961,11 +964,12 @@ section {
     }
 
     .swatch-info {
+      cursor: text;
       opacity: 0;
       padding: 50px;
       border-radius: 4px;
       background: inherit;
-      border:1px solid #333;
+      border:1px solid rgba(0,0,0,.5);
       color: inherit;
       @include font-size(18px);
       position: absolute;
@@ -998,6 +1002,12 @@ section {
             color: #999;
           }
         }
+      }
+
+      .close-btn {
+        position: absolute;
+        right: 15px;
+        top: 15px;
       }
 
       &.active {

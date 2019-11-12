@@ -697,17 +697,22 @@ section.with-tabs .tabs {
   #color .color-swatches .color {
     display: block;
     border-radius: 4px;
-    height: 100%; }
+    height: 100%;
+    cursor: pointer; }
     #color .color-swatches .color.color-1 {
       border: 1px solid #ccc; }
     #color .color-swatches .color.light {
       color: #fff; }
       #color .color-swatches .color.light span {
         color: rgba(255, 255, 255, 0.65); }
+      #color .color-swatches .color.light .close-btn path {
+        stroke: #fff; }
     #color .color-swatches .color.dark {
       color: #000; }
       #color .color-swatches .color.dark span {
         color: rgba(0, 0, 0, 0.35); }
+      #color .color-swatches .color.dark .close-btn path {
+        stroke: #000; }
     #color .color-swatches .color.color-1 {
       background: #ffffff; }
     #color .color-swatches .color.color-2 {
@@ -721,11 +726,12 @@ section.with-tabs .tabs {
     #color .color-swatches .color.color-6 {
       background: #2B9CD8; }
   #color .color-swatches .swatch-info {
+    cursor: text;
     opacity: 0;
     padding: 50px;
     border-radius: 4px;
     background: inherit;
-    border: 1px solid #333;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     color: inherit;
     font-size: 18px;
     font-size: 1.125rem;
@@ -754,6 +760,10 @@ section.with-tabs .tabs {
         #color .color-swatches .swatch-info ul li span {
           font-weight: 100;
           color: #999; }
+    #color .color-swatches .swatch-info .close-btn {
+      position: absolute;
+      right: 15px;
+      top: 15px; }
     #color .color-swatches .swatch-info.active {
       opacity: 1;
       pointer-events: all;

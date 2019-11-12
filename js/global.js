@@ -255,11 +255,20 @@ $(document).ready(function() {
   });
 
   // Color swatches
-  $(".color-swatches .color").click(function() {
-    $(".color-swatches .active").removeClass("active");
-    $(this).find(".swatch-info").addClass("active");
-    return false;
-  });
+  $(".color-swatches .color")
+    .each(function() {
+      $(this).find(".swatch-info").prepend('<a class="close-btn" href="#"><svg width="14" height="14" viewBox="0 0 27.502 27.502"><g transform="translate(-1725.504 -76.49)"><path d="M-1916.082-22342.422l24.674-24.674" transform="translate(3643 22445)" fill="none" stroke="#000" stroke-width="4"/><path d="M-1916.082-22342.422l24.674-24.674" transform="translate(-20615.504 1993.986) rotate(90)" fill="none" stroke="#000" stroke-width="4"/></g></svg> <span class="ah">Close</span></a>');
+    })
+    .click(function() {
+      $(".color-swatches .active").removeClass("active");
+      $(this).find(".swatch-info").addClass("active");
+      return false;
+    });
+
+    $(".swatch-info .close-btn").click(function() {
+      $(this).parents(".swatch-info").removeClass("active");
+      return false;
+    })
 
   // Photography
   $("#photography .col-1 .button").each(function(index) {

@@ -7,7 +7,7 @@
 <div class="col-2">
   <div class="color-swatches">
     <div class="col-50 ht-100">
-      <a href="#" class="color color-1 dark">
+      <div href="#" class="color color-1 dark">
         <div class="swatch-info">
           <div>
             <h3>White</h3>
@@ -18,10 +18,10 @@
             </ul>
           </div>
         </div>
-      </a><!-- color -->
+      </div><!-- color -->
     </div>
     <div class="col-50 ht-100">
-      <a href="#" class="color color-2 light">
+      <div href="#" class="color color-2 light">
         <div class="swatch-info">
           <div>
             <h3>Black</h3>
@@ -32,10 +32,10 @@
             </ul>
           </div>
         </div>
-      </a><!-- color -->
+      </div><!-- color -->
     </div>
     <div class="col-50 ht-100">
-      <a href="#" class="color color-3 dark">
+      <div href="#" class="color color-3 dark">
         <div class="swatch-info">
           <div>
             <h3>Xfinity Cool Gray</h3>
@@ -46,11 +46,11 @@
             </ul>
           </div>
         </div>
-      </a><!-- color -->
+      </div><!-- color -->
     </div>
     <div class="col-50 ht-100">
       <div class="ht-66">
-        <a href="#" class="color color-4 light">
+        <div href="#" class="color color-4 light">
           <div class="swatch-info">
             <div>
               <h3>Xfinity Dark Gray</h3>
@@ -61,11 +61,11 @@
               </ul>
             </div>
           </div>
-        </a><!-- color -->
+        </div><!-- color -->
       </div>
       <div class="ht-33" style="display: flex;">
         <div class="col-50">
-          <a href="#" class="color color-5 light">
+          <div href="#" class="color color-5 light">
             <div class="swatch-info">
               <div>
                 <h3>Xfinity Accent Red</h3>
@@ -76,10 +76,10 @@
                 </ul>
               </div>
             </div>
-          </a><!-- color -->
+          </div><!-- color -->
         </div>
         <div class="col-50">
-          <a href="#" class="color color-6 light">
+          <div href="#" class="color color-6 light">
             <div class="swatch-info">
               <div>
                 <h3>Xfinity Action Blue</h3>
@@ -90,7 +90,7 @@
                 </ul>
               </div>
             </div>
-          </a><!-- color -->
+          </div><!-- color -->
         </div>
       </div>
     </div>

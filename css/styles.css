@@ -766,16 +766,51 @@ section.with-tabs .tabs {
   font-size: 75%; }
 
 /* Typography page */
-#typography .col-2 .section {
-  display: none; }
-  #typography .col-2 .section:first-child {
-    display: flex; }
+#typography .col-2 {
+  position: relative;
+  height: 100vh;
+  perspective: 6000vh;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+  transform-origin: center center; }
+  #typography .col-2[data-active="0"] {
+    transform: rotateX(0deg); }
+    #typography .col-2[data-active="0"] #typefaces {
+      background-color: #fff; }
+      #typography .col-2[data-active="0"] #typefaces .section-inner {
+        opacity: 1; }
+  #typography .col-2[data-active="1"] {
+    transform: rotateX(90deg); }
+    #typography .col-2[data-active="1"] #type-styles {
+      background-color: #fff; }
+      #typography .col-2[data-active="1"] #type-styles .section-inner {
+        opacity: 1; }
+  #typography .col-2[data-active="2"] {
+    transform: rotateX(180deg); }
+    #typography .col-2[data-active="2"] #type-examples {
+      background-color: #fff; }
+      #typography .col-2[data-active="2"] #type-examples .section-inner {
+        opacity: 1; }
 
 #typography .section {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  max-width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  background: #ccc;
+  transition: background-color 1s; }
+  #typography .section#typefaces {
+    transform: rotateX(0deg) translateZ(50vh); }
+  #typography .section#type-styles {
+    transform: rotateX(-90deg) translateZ(50vh); }
+  #typography .section#type-examples {
+    transform: rotateX(180deg) translateZ(50vh); }
+  #typography .section .section-inner {
+    transition: opacity 1s;
+    opacity: .5; }
 
 #typography blockquote {
   background: #fff;

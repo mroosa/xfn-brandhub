@@ -1,11 +1,11 @@
 <div class="col-1">
   <h1>Typography</h1>
   <p class="intro">Xfinity Brown is our primary and most expressive typeface. It should be used for headlines, short-form body copy, and other elements deserving emphasis, like subheads and calls to action.</p>
-  <a class="button" href="#typefaces">Typefaces</a>
-  <a class="button" href="#type-styles">Style/Weight</a>
-  <a class="button" href="#type-examples">Type Examples</a>
+  <a class="button ignore-click" href="#typefaces">Typefaces</a>
+  <a class="button ignore-click" href="#type-styles">Style/Weight</a>
+  <a class="button ignore-click" href="#type-examples">Type Examples</a>
 </div>
-<div class="col-2">
+<div class="col-2" data-active="0">
   <div class="section" id="typefaces">
     <div class="section-inner">
 

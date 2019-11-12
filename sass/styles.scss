@@ -1005,11 +1005,45 @@ section {
 #typography {
 
   .col-2 {
-    .section {
-      display: none;
+    position: relative;
+    height: 100vh;
+    perspective: 6000vh;
+    // .section {
+    //   display: none;
+    //
+    //   &:first-child {
+    //     display: flex;
+    //   }
+    // }
+    transform-style: preserve-3d;
+    transition: transform 1s;
+    transform-origin: center center;
 
-      &:first-child {
-        display: flex;
+    &[data-active="0"] {
+      transform: rotateX(0deg);
+      #typefaces {
+        background-color: #fff;
+        .section-inner {
+          opacity: 1;
+        }
+      }
+    }
+    &[data-active="1"] {
+      transform: rotateX(90deg);
+      #type-styles {
+        background-color: #fff;
+        .section-inner {
+          opacity: 1;
+        }
+      }
+    }
+    &[data-active="2"] {
+      transform: rotateX(180deg);
+      #type-examples {
+        background-color: #fff;
+        .section-inner {
+          opacity: 1;
+        }
       }
     }
   }
@@ -1018,8 +1052,19 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    background: #ccc;
+    transition: background-color 1s;
+
+    &#typefaces { transform: rotateX(   0deg ) translateZ( 50vh );}
+    &#type-styles { transform: rotateX( -90deg ) translateZ( 50vh );}
+    &#type-examples { transform: rotateX( 180deg ) translateZ( 50vh );}
 
     .section-inner {
+      transition: opacity 1s;
+      opacity: .5;
     }
   }
 

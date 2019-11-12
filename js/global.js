@@ -273,6 +273,15 @@ $(document).ready(function() {
       })
     })
 
+    // typography
+    $("#typography .col-1 .button").each(function(index) {
+      $(this).attr("data-id",index);
+      $(this).click(function() {
+        $("#typography .col-2").attr("data-active", index);
+        return false;
+      })
+    })
+
   })
 
 

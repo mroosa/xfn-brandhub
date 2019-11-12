@@ -6,8 +6,9 @@
 </div>
 <div class="col-2">
   <div class="img">
-    <img src="../images/logo/01.svg" alt="" title="These logo variations help maintain legibility and allow the content to be the hero of the communication." />
+    <img src="../images/logo/01.svg" alt="" title="" />
   </div>
+  <div class="tabs-wrapper">
   <div class="tabs">
 
     <!-- tab -->
@@ -53,15 +54,19 @@
     </div>
 
     <!-- tab -->
-    <div class="tab">
+    <div class="tab" data-bg="drk-gry">
       <div class="tab-col-1">
         <h2>Logo in Motion</h2>
         <p>Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a black background ensures optimal legibility, consistency and impact. It is available in English and Spanish.</p>
       </div>
       <div class="tab-col-2">
-        <ul>
+        <video muted nocontrols autoplay loop style="max-width: 100%;">
+          <source src="../video/xfn-endcard-sq-5s.mp4" type="video/mp4">
+          <img src="../images/x.svg" alt="" title="" />
+        </video>
+        <!-- <ul>
           <li><img src="../images/x.svg" alt="" title="" /></li>
-        </ul>
+        </ul> -->
       </div>
     </div>
 
@@ -79,4 +84,5 @@
     </div>
 
   </div>
+  </div><!-- .tabs-wrapper -->
 </div>

@@ -5,6 +5,7 @@ function smoothScrolling() {
       // Remove links that don't actually link to anything
       .not('[href="#"]')
       .not('[href="#0"]')
+      .not('.ignore-click')
       .click(function(event) {
         // On-page links
         if (
@@ -59,41 +60,83 @@ function typeIn(field, content) {
   },75);
 };
 
+// Clean body
+function cleanBody() {
+  $("body").removeAttr("data-bg");
+}
 
 // Tab functionality
 function openTabs(section) {
   var thisSec = section;
+  // Stop scrolling
   $("html, body").css({
     "overflow": "hidden"
   });
-  thisSec.find(".tabs").fadeIn(400,function() {
-    $(this)
-      .addClass("active")
-      .css({"display":""})
-  });
+  // Fade in tabs
+  thisSec.find(".tabs")
+    .fadeIn(400,function() {
+      $(this)
+        .addClass("active")
+        .css({"display":""})
+    });
 }
 
 function closeTabs() {
   $(".tabs.active").fadeOut(400,function() {
-    $(this).removeClass("active");
+    $(this)
+      // reset position
+      .css({"left":0})
+      // make inactive
+      .removeClass("active")
+      // reset to first tab
+      .find(".tab.active").removeClass("active").end()
+      .find(".tab[data-id=0]").addClass("active").end()
+      // pause any video
+      .find("video").get(0).pause();
+    // remove BGs
+    cleanBody();
   })
+  // Reset Scrolling
   $("html, body").css({
     "overflow": "auto"
   });
 }
 
 function tabGo(dir) {
-  var theTabs = $(".tabs.active");
-  var numTabs = theTabs.attr("data-count");
-  var activeTab = Number(theTabs.find(".tab.active").attr("data-id"));
+  var theTabs = $(".tabs.active"),
+      numTabs = theTabs.attr("data-count"),
+      curTab = theTabs.find(".tab.active"),
+      activeTabNum = Number(curTab.attr("data-id"));
   if (dir > 0) {
-    var newTab = (activeTab < numTabs - 1) ? activeTab + 1 : 0;
+    var newTabNum = (activeTabNum < numTabs - 1) ? activeTabNum + 1 : 0;
   } else {
-    var newTab = (activeTab == 0) ? numTabs - 1 : activeTab - 1;
+    var newTabNum = (activeTabNum == 0) ? numTabs - 1 : activeTabNum - 1;
   }
-  theTabs.find(".tab.active").removeClass("active");
-  theTabs.find(".tab[data-id=" + newTab + "]").addClass("active");
-  theTabs.css({"left":-100 * newTab + "vw"});
+  // Reset individual slideshows
+  if (curTab.find(".optionNav .active").attr("data-id") != 0) {
+    curTab.find(".optionNav .active").removeClass("active")
+    curTab.find(".options").css({"margin-left": 0});
+    curTab.find(".optionNav a[data-id=0]").addClass("active");
+  }
+  curTab.removeClass("active");
+
+  theTabs.find(".tab[data-id=" + newTabNum + "]").addClass("active");
+  var newTab = theTabs.find(".tab.active");
+  theTabs.css({"left":-100 * newTabNum + "vw"});
+  // Add body bg if available or remove it if not
+  if (newTab.attr("data-bg") != undefined) {
+    $("body").attr("data-bg", $(".tab.active").attr("data-bg"));
+  } else {
+    cleanBody();
+  }
+  // If new section has a video, play it. Pause all other videos regardless
+  if (newTab.find("video").length > 0) {
+    newTab.find("video").get(0).currentTime = 0;
+    newTab.find("video").get(0).play();
+  } else {
+    // Pause all other videos
+    $("video").get(0).pause();
+  }
 }
 
 $(document).ready(function() {
@@ -108,15 +151,23 @@ $(document).ready(function() {
 
   // Add number of section
   $(".content section").each(function(index) {
-    if(index < 9) {
+    if (index < 9) {
       $(this).find("h1").prepend("<span>0" + Math.floor(index + 1) + "</span> ");
     }
   });
 
   // Typepography slider
+  var brownWts = [null,'300','400','800'],
+      stdWts = [null,'100','200','300','400','500','700'];
   $(".weight").on("change mousemove", function() {
-    var thisId = $(this).parents(".slider").attr("data-for");
-    $("." + thisId).attr("data-weight",$(this).val());
+    var thisId = $(this).attr("data-font"),
+        wt = Number($(this).val());
+    $("." + thisId).attr("data-weight",wt);
+    if ($(this).attr("data-font")=="font-xfs") {
+      $(this).attr("title",stdWts[wt]);
+    } else if ($(this).attr("data-font")=="font-xfb") {
+      $(this).attr("title",brownWts[wt]);
+    }
      
     // console.log($(this).val());
   });
@@ -147,7 +198,10 @@ $(document).ready(function() {
     })
 
     // Previous/Next buttons
-    theTabs.prepend('<ul class="tab-nav"><li class="tab-prv"><a href="#"><img src="../images/btn-prv.svg"> <span class="ah">Previous</span></a></li><li class="tab-nxt"><a href="#"><img src="../images/btn-nxt.svg"> <span class="ah">Next</span></a></li></ul>')
+    var prvImg = '<svg width="9.759" height="17.059" viewBox="0 0 19.518 35.038"><path id="btn-prv" data-name="btn-prv" d="M-2569-22469.783l14.69-14.691,14.691,14.691" transform="translate(22486.473 -2536.79) rotate(-90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/></svg>';
+    var nxtImg = '<svg width="9.759" height="17.059" viewBox="0 0 19.518 35.038"><path id="btn-nxt" data-name="btn-nxt" d="M-2569-22469.783l14.69-14.691,14.691,14.691" transform="translate(-22466.955 2571.828) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/></svg>';
+
+    theTabs.prepend('<ul class="tab-nav"><li class="tab-prv"><a href="#">' + prvImg + ' <span class="ah">Previous</span></a></li><li class="tab-nxt"><a href="#">' + nxtImg + ' <span class="ah">Next</span></a></li></ul>')
     thisSec.find(".tab").each(function(index) {
       $(this).attr({"data-id":index});
     })
@@ -169,18 +223,24 @@ $(document).ready(function() {
     // Tab options
     theTabs.find(".tab-col-2 ul").each(function() {
       var theOptions = $(this);
-      var numOptions = theOptions.find("li").length;
+      var numOptions = Number(theOptions.find("li").length);
       if (numOptions > 1) {
+        $(this).wrap('<div class="slideshow">').css({"width":100 * numOptions + "%"});
         theOptions.addClass("options").after('<ul class="optionNav">');
         var optionNav = theOptions.parents(".tab").find(".optionNav");
-        theOptions.find("li").each(function(opt) {
-          $(this).attr("data-id",opt);
-          var optNavClass = (opt==0) ? ' class="active"': '';
-          $(this).addClass("active");
-          optionNav.append('<li><a' + optNavClass + ' data-id="' + opt + '" href="#"><span class="ah">Show ' + $(this).attr("data-alt") + '</span></a></li>');
-        });
+        theOptions.find("li")
+          .css("width", 100 / numOptions + "%")
+          .each(function(opt) {
+            $(this).attr("data-id",opt);
+            var optNavClass = (opt==0) ? ' class="active"': '';
+            optionNav.append('<li><a' + optNavClass + ' data-id="' + opt + '" href="#"><span class="ah">Show ' + $(this).attr("data-alt") + '</span></a></li>');
+          });
         optionNav.find("li").each(function() {
           $(this).find("a").click(function() {
+            optionNav.find("a.active").removeClass("active");
+            $(this).addClass("active");
+            $(this).parents(".slideshow").find(".options").css({"margin-left":-100 * $(this).attr("data-id") + "%"});
+            // Find/change background
             var dataBg = $(this).parents(".tab").find(".options li[data-id=" + $(this).attr("data-id") + "]").attr("data-bg");
             if (dataBg == undefined || dataBg == "") {
               $("body").removeAttr("data-bg");
@@ -191,6 +251,26 @@ $(document).ready(function() {
           });
         });
       }
+    })
+
+    // Color swatches
+    $(".color-swatches .color").click(function() {
+      $(".color-swatches .active").removeClass("active");
+      $(this).find(".swatch-info").addClass("active");
+      return false;
+    });
+
+    // Photography
+    $("#photography .col-1 .button").each(function(index) {
+      $(this).attr("data-id",index);
+      $(this).click(function() {
+        $("#photography .photo-info-wrap").css({
+          "margin-left": -100 - 100 * index + "%"
+        });
+        $(".photo[data-set=" + index + "]").show();
+        $(".photo").not("[data-set=" + index + "]").hide();
+        return false;
+      })
     })
 
   })

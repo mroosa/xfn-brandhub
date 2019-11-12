@@ -38,15 +38,15 @@
           <section id="photography">
             <?php include_once("photography.php"); ?>
           </section>
-          <section id="secondary-graphics">
-            <?php include_once("secondary-graphics.php"); ?>
-          </section>
-          <section id="design-system">
-            <?php include_once("design-system.php"); ?>
+          <!-- <section id="secondary-graphics">
+            <?php #include_once("secondary-graphics.php"); ?>
+          </section> -->
+          <!-- <section id="design-system">
+            <?php #include_once("design-system.php"); ?>
           </section>
           <section id="co-branding">
-            <?php include_once("co-branding.php"); ?>
-          </section>
+            <?php #include_once("co-branding.php"); ?>
+          </section> -->
           <!-- <section id="inspiration-gallery">
             <?php #include_once("../inspiration.php"); ?>
           </section>

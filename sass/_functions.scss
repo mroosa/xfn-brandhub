@@ -52,16 +52,13 @@
   }
 }
 
-/*
-@mixin Avenir($size:-1, $line:-1) {
-  font-family: "AvenirLT", Helvetica, Arial, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1.25px;
+@mixin Std($size:-1, $wt:400) {
+  font-family: "XfinityStandard", sans-serif;
+  line-height: 125%;
   @if $size!=-1 {
     @include font-size($size);
   }
-  @if $line!=-1 {
-    @include line-height($line);
+  @if $wt!=400 {
+    font-weight: $wt;
   }
 }
-*/

@@ -1,14 +1,79 @@
 <div class="col-1">
   <h1>Photography</h1>
-  <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+  <p class="intro">Our photography is simple and focused, with unique, unexpected perspectives.</p>
+  <p class="intro">Our photography is easygoing and everyday, caught in the moment, authentic, inviting, curious, genuinely emotive.</p>
+  <a class="button ignore-click" href="#photography-lifestyle">Lifestyle</a>
+  <a class="button ignore-click" href="#photography-xfn-devices">Xfinity Devices</a>
+  <a class="button ignore-click" href="#photography-in-situ">In-situation</a>
+  <a class="button ignore-click" href="#photography-devices">Generic Devices</a>
 </div>
 <div class="col-2">
-  <div class="img">
-    <img src="<?php print $dir; ?>images/photography/01.jpg" alt="" />
-  </div>
-  <div class="flex-column flex-2col bottom">
-    <div class="img">
-      <img src="<?php print $dir; ?>images/photography/09-1.jpg" alt="" />
+  <div class="mosaic">
+    <div class="row">
+      <div class="col col-1-3">
+        <div class="photo" data-set="0"><img src="../images/photography/photo-0-1.png" alt=""></div>
+        <div class="photo" data-set="1"><img src="../images/photography/photo-1-1.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-2-1.png" alt=""></div>
+        <div class="photo default" data-set="3"><img src="../images/photography/photo-3-1.gif" alt=""></div>
+      </div>
+      <div class="col col-2-3">
+        <div class="photo default" data-set="0"><img src="../images/photography/photo-0-2.png" alt=""></div>
+        <div class="photo" data-set="1"><img src="../images/photography/photo-1-2.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-2-2.png" alt=""></div>
+        <div class="photo" data-set="3"><img src="../images/photography/photo-3-2.png" alt=""></div>
+      </div>
     </div>
-  </div>
+    <div class="row">
+      <div class="col col-1-3">
+        <div class="photo default"><img src="../images/photography/photo-x-3.png" alt=""></div>
+        <div class="photo" data-set="0"><img src="../images/photography/photo-0-3.png" alt=""></div>
+        <div class="photo" data-set="1"><img src="../images/photography/photo-1-3.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-2-3.png" alt=""></div>
+        <div class="photo" data-set="3"><img src="../images/photography/photo-3-3.png" alt=""></div>
+        <div class="spacer"></div>
+        <div class="photo" data-set="0"><img src="../images/photography/photo-0-4.png" alt=""></div>
+        <div class="photo default" data-set="1"><img src="../images/photography/photo-1-4.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-2-4.png" alt=""></div>
+        <div class="photo" data-set="3"><img src="../images/photography/photo-3-4.png" alt=""></div>
+      </div>
+      <div class="col col-2-3 col-special" style="background:url(../images/photography/photo-1-5.png) center center no-repeat transparent; background-size: cover;">
+        <div class="photo-info-wrap">
+          <div class="photo-info" id="photography-null">
+            <!-- intentionally empty -->
+          </div>
+          <div class="photo-info" id="photography-lifestyle">
+            <h3>Lifestyle</h3>
+            <p>To emphasize brand storytelling, lifestyle imagery should be used as much as possible. Lifestyle imagery allows us to be more human and adds warmth to our creative.</p>
+          </div>
+          <div class="photo-info lt-gry" id="photography-xfn-devices">
+            <h3>Xfinity Devices</h3>
+            <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story, such as streaming. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
+          </div>
+          <div class="photo-info grey" id="photography-in-situ">
+            <h3>In-Situation</h3>
+            <p>Xfinity hardware should be showcased when possible. Please use images from provided by our brand team for consistency.</p>
+          </div>
+          <div class="photo-info black" id="photography-devices">
+            <h3>Generic Devices</h3>
+            <p>Generic device imagery should be used to showcase our UI and services. They should be used strategically, as overuse devalues our brand. Please use images provided by the brand team for consistency.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col col-2-3">
+        <div class="photo default"><img src="../images/photography/photo-x-6.gif" alt=""></div>
+        <div class="photo" data-set="0"><img src="../images/photography/photo-0-6.png" alt=""></div>
+        <div class="photo" data-set="1"><img src="../images/photography/photo-1-6.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-2-6.png" alt=""></div>
+        <div class="photo" data-set="3"><img src="../images/photography/photo-3-6.gif" alt=""></div>
+      </div>
+      <div class="col col-1-3">
+        <div class="photo default" data-set="0"><img src="../images/photography/photo-0-7.png" alt=""></div>
+        <div class="photo" data-set="1"><img src="../images/photography/photo-1-7.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-2-7.png" alt=""></div>
+        <div class="photo" data-set="3"><img src="../images/photography/photo-3-7.png" alt=""></div>
+      </div>
+    </div>
+  </div><!-- .mosaic -->
 </div>

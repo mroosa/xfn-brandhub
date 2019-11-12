@@ -309,6 +309,16 @@ main {
 #subnav {
   background: #5a5a5c;
   color: #fff; }
+  #subnav.ugly {
+    background: #fff;
+    color: #000; }
+    #subnav.ugly ul li a {
+      color: #000; }
+      #subnav.ugly ul li a:hover {
+        background: #5a5a5c;
+        color: #fff; }
+    #subnav.ugly .logo svg {
+      fill: #000; }
   #subnav .nav {
     padding-top: 25px; }
   #subnav .logo svg {
@@ -331,7 +341,6 @@ main {
         padding: 5px 10px;
         text-decoration: none;
         color: #fff;
-        transition: color .25s, background .25s;
         border-radius: 4px; }
         #subnav ul li a:hover {
           background: #fff;
@@ -533,7 +542,8 @@ section.with-tabs .tabs {
     .content h1 span {
       display: block;
       font-size: 75%;
-      padding-bottom: 10px; }
+      font-weight: 200;
+      padding-bottom: 0px; }
   .content h2 {
     font-family: "XfinityBrown", sans-serif;
     letter-spacing: -.04ex;
@@ -686,9 +696,10 @@ section.with-tabs .tabs {
   position: relative; }
   #color .color-swatches .color {
     display: block;
-    border: 1px solid #666;
     border-radius: 4px;
     height: 100%; }
+    #color .color-swatches .color.color-1 {
+      border: 1px solid #ccc; }
     #color .color-swatches .color.light {
       color: #fff; }
       #color .color-swatches .color.light span {
@@ -726,9 +737,10 @@ section.with-tabs .tabs {
     height: 50%;
     left: 0;
     top: 0;
-    transform: translate(50%, 50%);
-    transition: opacity .25s;
-    pointer-events: none; }
+    transform: translate(50%, 50%) scale(0.8);
+    transition: opacity .25s, box-shadow .25s, transform .25s;
+    pointer-events: none;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
     #color .color-swatches .swatch-info h3 {
       font-size: 18px;
       font-size: 1.125rem;
@@ -744,7 +756,9 @@ section.with-tabs .tabs {
           color: #999; }
     #color .color-swatches .swatch-info.active {
       opacity: 1;
-      pointer-events: all; }
+      pointer-events: all;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+      transform: translate(50%, 50%) scale(1); }
   #color .color-swatches .ht-100 {
     height: 50%;
     padding: 5px; }
@@ -769,48 +783,26 @@ section.with-tabs .tabs {
 #typography .col-2 {
   position: relative;
   height: 100vh;
-  perspective: 6000vh;
-  transform-style: preserve-3d;
-  transition: transform 1s;
-  transform-origin: center center; }
-  #typography .col-2[data-active="0"] {
-    transform: rotateX(0deg); }
-    #typography .col-2[data-active="0"] #typefaces {
-      background-color: #fff; }
-      #typography .col-2[data-active="0"] #typefaces .section-inner {
-        opacity: 1; }
-  #typography .col-2[data-active="1"] {
-    transform: rotateX(90deg); }
-    #typography .col-2[data-active="1"] #type-styles {
-      background-color: #fff; }
-      #typography .col-2[data-active="1"] #type-styles .section-inner {
-        opacity: 1; }
-  #typography .col-2[data-active="2"] {
-    transform: rotateX(180deg); }
-    #typography .col-2[data-active="2"] #type-examples {
-      background-color: #fff; }
-      #typography .col-2[data-active="2"] #type-examples .section-inner {
-        opacity: 1; }
+  overflow: hidden; }
+  #typography .col-2 .section-wrap {
+    width: 300%;
+    display: flex;
+    transition: .5s margin; }
+    #typography .col-2 .section-wrap .section {
+      width: 33.333%; }
+  #typography .col-2[data-active="0"] .section-wrap {
+    margin-left: 0; }
+  #typography .col-2[data-active="1"] .section-wrap {
+    margin-left: -100%; }
+  #typography .col-2[data-active="2"] .section-wrap {
+    margin-left: -200%; }
 
 #typography .section {
+  width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  position: absolute;
-  backface-visibility: hidden;
-  background: #ccc;
-  transition: background-color 1s; }
-  #typography .section#typefaces {
-    transform: rotateX(0deg) translateZ(50vh); }
-  #typography .section#type-styles {
-    transform: rotateX(-90deg) translateZ(50vh); }
-  #typography .section#type-examples {
-    transform: rotateX(180deg) translateZ(50vh); }
-  #typography .section .section-inner {
-    transition: opacity 1s;
-    opacity: .5; }
+  align-items: center; }
 
 #typography blockquote {
   background: #fff;
@@ -865,6 +857,9 @@ section.with-tabs .tabs {
       font-weight: 500; }
     #typography .live-type.font-xfs[data-weight="6"] {
       font-weight: 700; }
+
+#typography .slider {
+  width: 100%; }
 
 #typography .weight {
   -webkit-appearance: none;

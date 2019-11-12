@@ -252,36 +252,35 @@ $(document).ready(function() {
         });
       }
     })
+  });
+  
+  // Color swatches
+  $(".color-swatches .color").click(function() {
+    $(".color-swatches .active").removeClass("active");
+    $(this).find(".swatch-info").addClass("active");
+    return false;
+  });
 
-    // Color swatches
-    $(".color-swatches .color").click(function() {
-      $(".color-swatches .active").removeClass("active");
-      $(this).find(".swatch-info").addClass("active");
+  // Photography
+  $("#photography .col-1 .button").each(function(index) {
+    $(this).attr("data-id",index);
+    $(this).click(function() {
+      $("#photography .photo-info-wrap").css({
+        "margin-left": -100 - 100 * index + "%"
+      });
+      $(".photo[data-set=" + index + "]").show();
+      $(".photo").not("[data-set=" + index + "]").hide();
       return false;
-    });
-
-    // Photography
-    $("#photography .col-1 .button").each(function(index) {
-      $(this).attr("data-id",index);
-      $(this).click(function() {
-        $("#photography .photo-info-wrap").css({
-          "margin-left": -100 - 100 * index + "%"
-        });
-        $(".photo[data-set=" + index + "]").show();
-        $(".photo").not("[data-set=" + index + "]").hide();
-        return false;
-      })
     })
+  })
 
-    // typography
-    $("#typography .col-1 .button").each(function(index) {
-      $(this).attr("data-id",index);
-      $(this).click(function() {
-        $("#typography .col-2").attr("data-active", index);
-        return false;
-      })
+  // typography
+  $("#typography .col-1 .button").each(function(index) {
+    $(this).attr("data-id",index);
+    $(this).click(function() {
+      $("#typography .col-2").attr("data-active", index);
+      return false;
     })
-
   })
 
 

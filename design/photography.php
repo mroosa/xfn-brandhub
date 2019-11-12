@@ -66,7 +66,7 @@
         <div class="photo" data-set="0"><img src="../images/photography/photo-0-6.png" alt=""></div>
         <div class="photo" data-set="1"><img src="../images/photography/photo-1-6.png" alt=""></div>
         <div class="photo" data-set="2"><img src="../images/photography/photo-2-6.png" alt=""></div>
-        <div class="photo" data-set="3"><img src="../images/photography/photo-3-6.gif" alt=""></div>
+        <div class="photo" data-set="3"><img src="../images/photography/photo-3-6.png" alt=""></div>
       </div>
       <div class="col col-1-3">
         <div class="photo default" data-set="0"><img src="../images/photography/photo-0-7.png" alt=""></div>

@@ -79,6 +79,7 @@
       <div class="tab-col-2">
         <ul>
           <li><img src="../images/logo/08.svg" alt="" title="" /></li>
+          <li><img src="../images/logo/09.svg" alt="" title="" /></li>
         </ul>
       </div>
     </div>

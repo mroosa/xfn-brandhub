@@ -27,6 +27,29 @@ $(document).ready(function() {
   // Active sub nav items
 
 
+
+  $(".type-wrap").css({"opacity":0});
+  $(".slider").css({"visibility":"hidden"});
+  var textVisible = false;
+  function showText() {
+    textVisible = true;
+    var numTxts = $(".live-type").length;
+    $(".live-type").each(function(index) {
+      var thisType = $(this).html();
+      $(this).next(".slider").removeClass("show");
+      $(".type-wrap").css({"opacity":1});
+      $(this).html("&nbsp;");
+      var thisBlock = $(this);
+      var timeoutID = setTimeout(function() {
+        typeIn(thisBlock, thisType);
+      },Math.floor(index * 2000));
+      var newTimeoutID = setTimeout(function() {
+        $(thisBlock).parents(".type-wrap").find(".slider").css({"visibility":"visible"}).addClass("show");
+      },Math.floor(numTxts * 2000) + 500);
+    });
+  }
+
+
   $(window).scroll(function() {
     // actSect();
 		stickyNav();
@@ -46,6 +69,11 @@ $(document).ready(function() {
       .parent().removeClass("active")
       .end().filter("[href='#"+id+"']").parent().addClass("active");
     scrollItems.removeClass("active");
+    if ($(cur).attr("id") == 'typography') {
+      if (textVisible==false) {
+        showText();
+      }
+    }
     $(cur).addClass("active");
     $("section").not(cur).removeClass("active");
 	});

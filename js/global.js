@@ -163,11 +163,11 @@ $(document).ready(function() {
     var thisId = $(this).attr("data-font"),
         wt = Number($(this).val());
     $("." + thisId).attr("data-weight",wt);
-    if ($(this).attr("data-font")=="font-xfs") {
-      $(this).attr("title",stdWts[wt]);
-    } else if ($(this).attr("data-font")=="font-xfb") {
-      $(this).attr("title",brownWts[wt]);
-    }
+    // if ($(this).attr("data-font")=="font-xfs") {
+    //   $(this).attr("title",stdWts[wt]);
+    // } else if ($(this).attr("data-font")=="font-xfb") {
+    //   $(this).attr("title",brownWts[wt]);
+    // }
      
     // console.log($(this).val());
   });
@@ -253,7 +253,7 @@ $(document).ready(function() {
       }
     })
   });
-  
+
   // Color swatches
   $(".color-swatches .color").click(function() {
     $(".color-swatches .active").removeClass("active");
@@ -284,13 +284,5 @@ $(document).ready(function() {
   })
 
 
-  $(".live-type").each(function(index) {
-    var thisType = $(this).html();
-    $(this).html("&nbsp;");
-    var thisBlock = $(this);
-    var timeoutID = setTimeout(function() {
-      typeIn(thisBlock, thisType);
-    },Math.floor(index * 2000));
-  });
 
 });

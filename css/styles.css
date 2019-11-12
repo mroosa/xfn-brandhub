@@ -840,8 +840,7 @@ section.with-tabs .tabs {
     font-size: 3rem; }
     @media (min-width: 1200px) {
       #typography .live-type.font-xfs {
-        font-family: "XfinityBrown", sans-serif;
-        letter-spacing: -.04ex;
+        font-family: "XfinityStandard", sans-serif;
         line-height: 125%;
         font-size: 72px;
         font-size: 4.5rem; } }
@@ -859,7 +858,11 @@ section.with-tabs .tabs {
       font-weight: 700; }
 
 #typography .slider {
-  width: 100%; }
+  width: 100%;
+  transition: opacity .5s;
+  opacity: 0; }
+  #typography .slider.show {
+    opacity: 1; }
 
 #typography .weight {
   -webkit-appearance: none;

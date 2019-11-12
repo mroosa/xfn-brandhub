@@ -11,14 +11,18 @@
   <div class="section" id="typefaces">
     <div class="section-inner">
 
-      <blockquote class="live-type font-xfb">Hi, I'm Xfinity Brown</blockquote>
-      <div class="slider">
-        <input type="range" min="1" max="3" value="3" class="weight" title="800" data-font="font-xfb">
+      <div class="type-wrap">
+        <blockquote class="live-type font-xfb">Hi, I'm Xfinity Brown</blockquote>
+        <div class="slider show">
+          <input type="range" min="1" max="3" value="3" class="weight" data-font="font-xfb">
+        </div>
       </div>
 
-      <blockquote class="live-type font-xfs">and I'm Xfinity Standard</blockquote>
-      <div class="slider">
-        <input type="range" min="1" max="6" value="4" class="weight" title="400" data-font="font-xfs">
+      <div class="type-wrap">
+        <blockquote class="live-type font-xfs">and I'm Xfinity Standard</blockquote>
+        <div class="slider show">
+          <input type="range" min="1" max="6" value="4" class="weight" data-font="font-xfs">
+        </div>
       </div>
 
     </div>

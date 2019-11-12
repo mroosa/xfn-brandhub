@@ -1143,7 +1143,7 @@ section {
     &.font-xfs {
       @include Std(48px);
       @include bp-min($xlg) {
-        @include Brown(72px);
+        @include Std(72px);
       }
       &[data-weight="1"] {font-weight: 100;}
       &[data-weight="2"] {font-weight: 200;}
@@ -1156,6 +1156,12 @@ section {
 
   .slider {
     width: 100%;
+    transition: opacity .5s;
+    opacity: 0;
+
+    &.show {
+      opacity: 1;
+    }
   }
 
   .weight {

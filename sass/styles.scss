@@ -688,13 +688,31 @@ section {
   }
 }
 
+main {
+  -webkit-mask-image: radial-gradient(#000 70%, transparent 70.1%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 0 0;
+  -webkit-mask-position: 24% 21%;
+  transition: -webkit-mask-size 1.5s, -webkit-mask-position 1.5s;
+  transition-delay: 0.5s;
+  background: #fff;
+  &.reveal {
+    -webkit-mask-size: 200vmax 200vmax;
+    -webkit-mask-position: -60vw -50vh;
+  }
+  &.remove {
+    -webkit-mask-image:none;
+  }
+}
+
 /* Brand */
 #brand-story {
   min-height: 100vh;
-  background: #000;
-  color: #fff;
+  width: 100%;
   padding: 0;
   margin: 0;
+  position: absolute;
+  z-index: -1;
 
   .col-1 {
     position: absolute;

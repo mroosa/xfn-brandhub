@@ -1,5 +1,5 @@
 <div class="col-1">
-<video nocontrols muted autoplay>
+<video class="intro-vid" nocontrols muted autoplay>
   <source src="../video/intro-1.mp4" type="video/mp4">
 </video>
   <a style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%) rotate(-90deg) scale(.5);" href="#logo">

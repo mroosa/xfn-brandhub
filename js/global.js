@@ -300,6 +300,14 @@ $(document).ready(function() {
     $(this).parents("#subnav").toggleClass("black").toggleClass("wht");
   });
 
+  sldkjflskjdfID = setTimeout(function() {
+    $("main").addClass("reveal");
+    $(".intro-vid").get(0).pause();
+  },29000);
+  lsdkjflskjdfljksID = setTimeout(function() {
+    $("main").addClass("remove");
+  }, 31000);
+
 
 
 });

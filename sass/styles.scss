@@ -693,7 +693,29 @@ section {
   min-height: 100vh;
   background: #000;
   color: #fff;
-  padding: 5%;
+  padding: 0;
+  margin: 0;
+
+  .col-1 {
+    position: absolute;
+    top: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  video {
+    min-width: 100%;
+    min-height: 100%;
+
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
 
   h1 {
     @include font-size(72px);

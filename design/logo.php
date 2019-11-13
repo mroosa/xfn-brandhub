@@ -6,7 +6,7 @@
 </div>
 <div class="col-2">
   <div class="img">
-    <img src="../images/logo/01.svg" alt="" title="" />
+    <img src="../images/logo/landing.gif" alt="" />
   </div>
   <div class="tabs-wrapper">
   <div class="tabs">
@@ -19,8 +19,8 @@
       </div>
       <div class="tab-col-2">
         <ul>
-          <li data-alt="black logo"><img src="../images/logo/01.svg" alt="" title="These logo variations help maintain legibility and allow the content to be the hero of the communication." /></li>
-          <li data-alt="white logo" data-bg="black"><img src="../images/logo/02.svg" alt="" title="These logo variations help maintain legibility and allow the content to be the hero of the communication." /></li>
+          <li data-alt="black logo"><img src="../images/logo/01.svg" alt="" /></li>
+          <li data-alt="white logo" data-bg="black"><img src="../images/logo/02.svg" alt="" /></li>
         </ul>
       </div>
     </div>
@@ -33,7 +33,7 @@
       </div>
       <div class="tab-col-2">
         <ul>
-          <li><img src="../images/logo/03.svg" alt="" title="" /></li>
+          <li><img src="../images/logo/03.svg" alt="" /></li>
         </ul>
       </div>
     </div>
@@ -46,9 +46,9 @@
       </div>
       <div class="tab-col-2">
         <ul>
-          <li data-alt="black logo"><img src="../images/logo/04.svg" alt="" title="" /></li>
-          <li data-alt="white logo" data-bg="black"><img src="../images/logo/05.svg" alt="" title="" /></li>
-          <li data-alt="limited use red logo"><img src="../images/logo/06.svg" alt="" title="" /></li>
+          <li data-alt="black logo"><img src="../images/logo/04.svg" alt="" /></li>
+          <li data-alt="white logo" data-bg="black"><img src="../images/logo/05.svg" alt="" /></li>
+          <li data-alt="limited use red logo"><img src="../images/logo/06.svg" alt="" /></li>
         </ul>
       </div>
     </div>
@@ -62,10 +62,10 @@
       <div class="tab-col-2">
         <video muted nocontrols autoplay loop style="max-width: 100%;">
           <source src="../video/xfn-endcard-sq-5s.mp4" type="video/mp4">
-          <img src="../images/x.svg" alt="" title="" />
+          <img src="../images/x.svg" alt="" />
         </video>
         <!-- <ul>
-          <li><img src="../images/x.svg" alt="" title="" /></li>
+          <li><img src="../images/x.svg" alt="" /></li>
         </ul> -->
       </div>
     </div>
@@ -78,8 +78,8 @@
       </div>
       <div class="tab-col-2">
         <ul>
-          <li><img src="../images/logo/08.svg" alt="" title="" /></li>
-          <li><img src="../images/logo/09.svg" alt="" title="" /></li>
+          <li><img src="../images/logo/08.svg" alt="" /></li>
+          <li><img src="../images/logo/09.svg" alt="" /></li>
         </ul>
       </div>
     </div>

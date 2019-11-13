@@ -8,7 +8,7 @@
   <div class="color-swatches">
     <div class="col-50 ht-100">
       <div href="#" class="color color-1 dark">
-        <div class="swatch-info">
+        <div class="swatch-info" title="White">
           <div>
             <h3>White</h3>
             <ul>

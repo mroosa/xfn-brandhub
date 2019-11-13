@@ -8,6 +8,12 @@
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 <body class="two-col design">
   <div class="contain">
+    <a id="skip" style="position: absolute; bottom: 20px; left: 50%; transform: translateX(-50%) rotate(-90deg) scale(.5);z-index: 999;" href="#logo">
+      <svg width="19.518" height="35.038" viewBox="0 0 19.518 35.038">
+        <path d="M-2569-22469.783l14.69-14.691,14.691,14.691" transform="translate(22486.473 -2536.79) rotate(-90)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+      </svg>
+    </a>
+
     <?php #include_once($dir . "_templates/_structure/header.php"); ?>
     <section id="brand-story">
       <?php include_once("overview.php"); ?>

@@ -300,14 +300,27 @@ $(document).ready(function() {
     $(this).parents("#subnav").toggleClass("black").toggleClass("wht");
   });
 
-  sldkjflskjdfID = setTimeout(function() {
-    $("main").addClass("reveal");
-    $(".intro-vid").get(0).pause();
-  },29000);
-  lsdkjflskjdfljksID = setTimeout(function() {
-    $("main").addClass("remove");
-  }, 31000);
-
-
-
+  /* Temp */
+  // $("html").addClass("hide");
+  // $("#skip").click(function() {
+  //   deMask();
+  //   setTimeout(function() {
+  //     removeMask();
+  //   },2000);
+  //   return false;
+  // });
+  // function deMask() {
+  //   $("main").addClass("reveal");
+  //   $(".intro-vid").get(0).pause();
+  // }
+  // function removeMask() {
+  //   $("main").addClass("remove");
+  //   $("html").removeClass("hide");
+  // }
+  // sldkjflskjdfID = setTimeout(function() {
+  //   deMask();
+  // },29000);
+  // lsdkjflskjdfljksID = setTimeout(function() {
+  //   removeMask();
+  // }, 31000);
 });

@@ -26,6 +26,11 @@ html,
 html * {
   box-sizing: border-box;
 }
+html.hide {
+  &, body {
+    overflow: hidden;
+  }
+}
 
 body {
   margin: 0;
@@ -287,6 +292,16 @@ main {
 
 /* Content Area */
 section {
+
+  // .tabs-wrapper {
+  //   width: 95vw;
+  //   height: 95vh;
+  //   top: 2.5vh;
+  //   left: 2.5vh;
+  //   box-shadow: 0 0 30px rgba(0,0,0,.5);
+  //   position: absolute;
+  //   overflow: hidden;
+  // }
 
   // Tabbed content
   &.with-tabs {
@@ -688,31 +703,33 @@ section {
   }
 }
 
-main {
-  -webkit-mask-image: radial-gradient(#000 70%, transparent 70.1%);
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-size: 0 0;
-  -webkit-mask-position: 24% 21%;
-  transition: -webkit-mask-size 1.5s, -webkit-mask-position 1.5s;
-  transition-delay: 0.5s;
-  background: #fff;
-  &.reveal {
-    -webkit-mask-size: 200vmax 200vmax;
-    -webkit-mask-position: -60vw -50vh;
-  }
-  &.remove {
-    -webkit-mask-image:none;
-  }
-}
+// main {
+//   -webkit-mask-image: radial-gradient(#000 70%, transparent 70.1%);
+//   -webkit-mask-repeat: no-repeat;
+//   -webkit-mask-size: 0 0;
+//   -webkit-mask-position: 24% 21%;
+//   transition: -webkit-mask-size 1.5s, -webkit-mask-position 1.5s;
+//   transition-delay: 0.5s;
+//   background: #fff;
+//   &.reveal {
+//     -webkit-mask-size: 200vmax 200vmax;
+//     -webkit-mask-position: -60vw -50vh;
+//   }
+//   &.remove {
+//     -webkit-mask-image:none;
+//   }
+// }
 
 /* Brand */
 #brand-story {
+  display: none;
   min-height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
-  position: absolute;
-  z-index: -1;
+  background: #000;
+  // position: absolute;
+  // z-index: -1;
 
   .col-1 {
     position: absolute;

@@ -1,6 +1,6 @@
 <div class="col-1">
   <h1>Photography</h1>
-  <p class="intro">Our photography reinforces our design principles, showcasing simple, focused and unique imagery with unexpected perspectives. Our photography captures authentic moments and employs a clean color palette with occasional pops of color. All photography is naturally it and unfiltered.</p>
+  <p class="intro">Our photography reinforces our design principles, showcasing simple, focused and unique imagery with unexpected perspectives. Our photography captures authentic moments and employs a clean color palette with occasional pops of color. All photography is naturally lit and unfiltered.</p>
   <a class="button ignore-click" href="#photography-lifestyle">Lifestyle</a>
   <a class="button ignore-click" href="#photography-xfn-devices">Xfinity Devices</a>
   <a class="button ignore-click" href="#photography-in-situ">In-Situation</a>

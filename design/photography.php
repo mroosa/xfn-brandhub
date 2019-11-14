@@ -40,7 +40,7 @@
           <div class="photo-info" id="photography-null">
             <!-- intentionally empty -->
           </div>
-          <div class="photo-info" id="photography-lifestyle">
+          <div class="photo-info ltg" id="photography-lifestyle">
             <h3>Lifestyle</h3>
             <p>To emphasize brand storytelling, lifestyle imagery should be used as much as possible. Lifestyle imagery allows us to be more human and adds warmth to our creative.</p>
           </div>
@@ -48,11 +48,11 @@
             <h3>Xfinity Devices</h3>
             <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story, such as streaming. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
           </div>
-          <div class="photo-info gry" id="photography-in-situ">
+          <div class="photo-info ltg" id="photography-in-situ">
             <h3>In-Situation</h3>
             <p>Xfinity hardware should be showcased when possible. Please use images from provided by our brand team for consistency.</p>
           </div>
-          <div class="photo-info blk" id="photography-devices">
+          <div class="photo-info ltg" id="photography-devices">
             <h3>Generic Devices</h3>
             <p>Generic device imagery should be used to showcase our UI and services. They should be used strategically, as overuse devalues our brand. Please use images provided by the brand team for consistency.</p>
           </div>

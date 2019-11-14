@@ -65,64 +65,25 @@ function cleanBody() {
   $("body").removeAttr("data-bg");
 }
 
-// Tab functionality
-function openTabs(section) {
-  var thisSec = section;
-  // Stop scrolling
-  $("html, body").css({
-    "overflow": "hidden"
-  });
-  // Fade in tabs
-  thisSec.find(".tabs")
-    .fadeIn(400,function() {
-      $(this)
-        .addClass("active")
-        .css({"display":""})
-    });
-}
-
-function closeTabs() {
-  $(".tabs.active").fadeOut(400,function() {
-    $(this)
-      // reset position
-      .css({"left":0})
-      // make inactive
-      .removeClass("active")
-      // reset to first tab
-      .find(".tab.active").removeClass("active").end()
-      .find(".tab[data-id=0]").addClass("active").end()
-      // pause any video
-      .find("video").get(0).pause();
-    // remove BGs
-    cleanBody();
-  })
-  // Reset Scrolling
-  $("html, body").css({
-    "overflow": "auto"
-  });
-}
-
-function tabGo(dir) {
-  var theTabs = $(".tabs.active"),
-      numTabs = theTabs.attr("data-count"),
-      curTab = theTabs.find(".tab.active"),
-      activeTabNum = Number(curTab.attr("data-id"));
-  if (dir > 0) {
-    var newTabNum = (activeTabNum < numTabs - 1) ? activeTabNum + 1 : 0;
-  } else {
-    var newTabNum = (activeTabNum == 0) ? numTabs - 1 : activeTabNum - 1;
-  }
+function tabGo(tid, tabs) {
+  var tabs = (tabs != undefined) ? tabs : $(".tabs.active"),
+      curTab = tabs.find(".tab.active"),
+      activeTabNum = Number(curTab.attr("data-id")),
+      newTab = tabs.find(".tab[data-id=" + tid + "]");
   // Reset individual slideshows
   if (curTab.find(".optionNav .active").attr("data-id") != 0) {
-    curTab.find(".optionNav .active").removeClass("active")
-    curTab.find(".options").css({"margin-left": 0});
-    curTab.find(".optionNav a[data-id=0]").addClass("active");
+    setTimeout(function() {
+    curTab
+      .find(".optionNav .active").removeClass("active").end()
+      .find(".options").css({"margin-left": 0}).end()
+      .find(".optionNav a[data-id=0]").addClass("active");
+    }, 1000);
   }
+  // Reset old tab, set new tab
   curTab.removeClass("active");
-
-  theTabs.find(".tab[data-id=" + newTabNum + "]").addClass("active");
-  var newTab = theTabs.find(".tab.active");
-  theTabs.css({"left":-100 * newTabNum + "vw"});
+  tabs
+    .find(".tab[data-id=" + tid + "]").addClass("active").end()
+    .css({"margin-left":-100 * tid + "%"});
   // Add body bg if available or remove it if not
   if (newTab.attr("data-bg") != undefined) {
     $("body").attr("data-bg", $(".tab.active").attr("data-bg"));
@@ -174,50 +135,31 @@ $(document).ready(function() {
 
   // Tabbed content
   $("section.with-tabs").each(function() {
-    var thisSec = $(this);
-    var theTabs = $(this).find(".tabs");
-    var numTabs = $(this).find(".tab").length;
+    var thisSec = $(this),
+        theTabs = thisSec.find(".tabs"),
+        numTabs = theTabs.find(".tab").length;
     theTabs
-      .css({
-        "width": Math.floor(numTabs * 100) + "vw"
-      })
-      .attr({
-        "data-count": numTabs
-      })
+      .css({"width": Math.floor(numTabs * 100) + "%"})
+      .attr({"data-count": numTabs})
       .find(".tab:first-child").addClass("active");
 
-    // title
-    var theTtl = thisSec.find("h1").html();
-    theTabs.prepend('<h3 class="ttl">' + theTtl + '</h3>');
-
-    // Close button
-    theTabs.prepend('<a class="close-btn" href="#"><img src="../images/btn-close.svg" alt="Close"> <span class="ah">Close section</span></a>');
-    thisSec.find(".close-btn").click(function() {
-      closeTabs();
-      return false;
-    })
-
-    // Previous/Next buttons
-    var prvImg = '<svg width="9.759" height="17.059" viewBox="0 0 19.518 35.038"><path id="btn-prv" data-name="btn-prv" d="M-2569-22469.783l14.69-14.691,14.691,14.691" transform="translate(22486.473 -2536.79) rotate(-90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/></svg>';
-    var nxtImg = '<svg width="9.759" height="17.059" viewBox="0 0 19.518 35.038"><path id="btn-nxt" data-name="btn-nxt" d="M-2569-22469.783l14.69-14.691,14.691,14.691" transform="translate(-22466.955 2571.828) rotate(90)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/></svg>';
-
-    theTabs.prepend('<ul class="tab-nav"><li class="tab-prv"><a href="#">' + prvImg + ' <span class="ah">Previous</span></a></li><li class="tab-nxt"><a href="#">' + nxtImg + ' <span class="ah">Next</span></a></li></ul>')
     thisSec.find(".tab").each(function(index) {
-      $(this).attr({"data-id":index});
-    })
-    theTabs.find(".tab-nxt").click(function() {
-      tabGo(1);
-      return false;
-    });
-    theTabs.find(".tab-prv").click(function() {
-      tabGo(-1);
-      return false;
-    });
-
-    // Open tabs
-    thisSec.find(".button").click(function() {
-      openTabs(thisSec);
-      return false;
+      // Get tab title
+      var tabTtl = $(this).attr("data-ttl"),
+          linkClass = (index==0) ? " active" : "";
+      thisSec.find(".col-1").append('<a class="button set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a>');
+      thisSec.find(".set-tab").click(function(n) {
+        var newTab = $(this).attr("data-id");
+        if (newTab != n) {
+          tabGo(newTab, theTabs);
+          $(this).siblings(".active").removeClass("active");
+          $(this).addClass("active");
+        }
+        return false;
+      });
+      $(this)
+        .attr({"data-id":index})
+        .css({"width":100 / numTabs + "%" });
     })
 
     // Tab options

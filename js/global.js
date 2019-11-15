@@ -65,19 +65,24 @@ function cleanBody() {
   $("body").removeAttr("data-bg");
 }
 
-function tabGo(tid, tabs) {
+function resetActiveTab(tabs) {
+  var tabs = (tabs != undefined) ? tabs : $(".tabs.active");
+  tabs
+    .find(".optionNav .active").removeClass("active").end()
+    .find(".options").css({"margin-left": 0}).end()
+    .find(".optionNav a[data-id=0]").addClass("active");
+  cleanBody();
+ }
+
+function tabGo(tid, tabs, reset) {
   var tabs = (tabs != undefined) ? tabs : $(".tabs.active"),
       curTab = tabs.find(".tab.active"),
       activeTabNum = Number(curTab.attr("data-id")),
-      newTab = tabs.find(".tab[data-id=" + tid + "]");
+      newTab = tabs.find(".tab[data-id=" + tid + "]"),
+      curDataBg = curTab.attr("data-bg");
   // Reset individual slideshows
-  if (curTab.find(".optionNav .active").attr("data-id") != 0) {
-    setTimeout(function() {
-    curTab
-      .find(".optionNav .active").removeClass("active").end()
-      .find(".options").css({"margin-left": 0}).end()
-      .find(".optionNav a[data-id=0]").addClass("active");
-    }, 1000);
+  if (reset != undefined && reset == true) {
+    resetActiveTab(tabs);
   }
   // Reset old tab, set new tab
   curTab.removeClass("active");
@@ -86,9 +91,13 @@ function tabGo(tid, tabs) {
     .css({"margin-left":-100 * tid + "%"});
   // Add body bg if available or remove it if not
   if (newTab.attr("data-bg") != undefined) {
-    $("body").attr("data-bg", $(".tab.active").attr("data-bg"));
-  } else {
-    cleanBody();
+    // If new tab has options, and shares the same data-bg
+    if (newTab.find(".optionNav").length > 0 && newTab.find(".optionNav a[data-bg=" + curDataBg + "]")) {
+      var newTabOption = newTab.find(".options li[data-bg=" + curDataBg + "]").attr("data-id");
+      setTabOption(newTabOption, newTab);
+    } else {
+      $("body").attr("data-bg", newTab.attr("data-bg"));
+    }
   }
   // If new section has a video, play it. Pause all other videos regardless
   if (newTab.find("video").length > 0) {
@@ -98,6 +107,24 @@ function tabGo(tid, tabs) {
     // Pause all other videos
     $("video").get(0).pause();
   }
+}
+
+function setTabOption(oid, tab) {
+  console.log(oid+ " "+tab)
+  var link = tab.find(".optionNav a[data-id=" + oid + "]")
+  link.parents(".optionNav").find(".active").removeClass("active");
+  link
+    .addClass("active")
+    .parents(".slideshow").find(".options").css({"margin-left":-100 * link.attr("data-id") + "%"});
+  // Find/change background
+  var dataBg = link.parents(".tab").find(".options li[data-id=" + link.attr("data-id") + "]").attr("data-bg");
+  link.parents(".tab").attr("data-bg",dataBg);
+  if (dataBg == undefined || dataBg == "") {
+    $("body").removeAttr("data-bg");
+  } else {
+    $("body").attr("data-bg", dataBg);
+  }
+
 }
 
 $(document).ready(function() {
@@ -143,32 +170,26 @@ $(document).ready(function() {
       .attr({"data-count": numTabs})
       .find(".tab:first-child").addClass("active");
 
-    thisSec.find(".tab").each(function(index) {
+    theTabs.find(".tab").each(function(index) {
+      console.log(index);
+      // Get the current tab
+      var theTab = $(this),
       // Get tab title
-      var tabTtl = $(this).attr("data-ttl"),
+          tabTtl = $(this).attr("data-ttl"),
           linkClass = (index==0) ? " active" : "";
       thisSec.find(".col-1").append('<a class="button set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a>');
-      thisSec.find(".set-tab").click(function(n) {
-        var newTab = $(this).attr("data-id");
-        if (newTab != n) {
-          tabGo(newTab, theTabs);
-          $(this).siblings(".active").removeClass("active");
-          $(this).addClass("active");
-        }
-        return false;
-      });
       $(this)
         .attr({"data-id":index})
         .css({"width":100 / numTabs + "%" });
-    })
 
-    // Tab options
-    theTabs.find(".tab-col-2 ul").each(function() {
-      var theOptions = $(this);
-      var numOptions = Number(theOptions.find("li").length);
+      // Tab options
+      var theOptions = theTab.find(".tab-col-2 ul"),
+          numOptions = Number(theOptions.find("li").length);
       if (numOptions > 1) {
-        $(this).wrap('<div class="slideshow">').css({"width":100 * numOptions + "%"});
-        theOptions.addClass("options").after('<ul class="optionNav">');
+        theOptions.wrap('<div class="slideshow">').css({"width":100 * numOptions + "%"});
+        theOptions
+          .addClass("options")
+          .after('<ul class="optionNav">');
         var optionNav = theOptions.parents(".tab").find(".optionNav");
         theOptions.find("li")
           .css("width", 100 / numOptions + "%")
@@ -177,23 +198,20 @@ $(document).ready(function() {
             var optNavClass = (opt==0) ? ' class="active"': '';
             optionNav.append('<li><a' + optNavClass + ' data-id="' + opt + '" href="#"><span class="ah">Show ' + $(this).attr("data-alt") + '</span></a></li>');
           });
-        optionNav.find("li").each(function() {
-          $(this).find("a").click(function() {
-            optionNav.find("a.active").removeClass("active");
-            $(this).addClass("active");
-            $(this).parents(".slideshow").find(".options").css({"margin-left":-100 * $(this).attr("data-id") + "%"});
-            // Find/change background
-            var dataBg = $(this).parents(".tab").find(".options li[data-id=" + $(this).attr("data-id") + "]").attr("data-bg");
-            if (dataBg == undefined || dataBg == "") {
-              $("body").removeAttr("data-bg");
-            } else {
-              $("body").attr("data-bg", dataBg);
-            }
-            return false;
-          });
+        optionNav.find("a").click(function() {
+          setTabOption($(this).attr("data-id"), theTab);
+          return false;
         });
       }
-    })
+    });
+    thisSec.find(".set-tab").click(function() {
+      var newTab = $(this).attr("data-id");
+      tabGo(newTab, theTabs);
+      $(this).siblings(".active").removeClass("active");
+      $(this).addClass("active");
+      return false;
+    });
+
   });
 
   // Color swatches

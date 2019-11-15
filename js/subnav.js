@@ -3,7 +3,7 @@ $(document).ready(function() {
   // Sticky Nav
   var buffer = 100;
   var stickyNavTop = $('#subnav').offset().top;
-  console.log(stickyNavTop);
+  // console.log(stickyNavTop);
   var subNav = $("#subnav .sidebar"),
       // All list items
       menuItems = subNav.find("a"),

@@ -8,26 +8,26 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" data-ttl="Primary Use">
+    <div class="tab" data-ttl="Primary Use" data-bg="white">
       <div class="tab-col-1">
         <p>Use the black or white version of the Xfinity logo for Xfinity communications and product experiences.</p>
       </div>
       <div class="tab-col-2">
         <ul>
-          <li data-alt="black logo"><img src="../images/logo/01.svg" alt="" /></li>
+          <li data-alt="black logo" data-bg="white"><img src="../images/logo/01.svg" alt="" /></li>
           <li data-alt="white logo" data-bg="black"><img src="../images/logo/02.svg" alt="" /></li>
         </ul>
       </div>
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="The Future of Awesome">
+    <div class="tab" data-ttl="The Future of Awesome" data-bg="white">
       <div class="tab-col-1">
         <p>The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.</p>
       </div>
       <div class="tab-col-2">
         <ul>
-          <li data-alt="black logo"><img src="../images/logo/04.svg" alt="" /></li>
+          <li data-alt="black logo" data-bg="white"><img src="../images/logo/04.svg" alt="" /></li>
           <li data-alt="white logo" data-bg="black"><img src="../images/logo/05.svg" alt="" /></li>
         </ul>
       </div>

@@ -2,7 +2,7 @@
   <h1>Photography</h1>
   <p class="intro">Our photography reinforces our design principles, showcasing simple, focused and unique imagery with unexpected perspectives. Our photography captures authentic moments and employs a clean color palette with occasional pops of color. All photography is naturally lit and unfiltered.</p>
   <a class="button ignore-click" href="#photography-lifestyle">Lifestyle</a>
-  <a class="button ignore-click" href="#photography-xfn-devices">Xfinity Devices</a>
+  <a class="button ignore-click" href="#photography-xfn-devices">Xfinity Hardware</a>
   <a class="button ignore-click" href="#photography-in-situ">In-Situation</a>
   <a class="button ignore-click" href="#photography-devices">Generic Devices</a>
 </div>
@@ -10,32 +10,19 @@
   <div class="mosaic">
     <div class="row">
       <div class="col col-1-3">
-        <div class="photo" data-set="0"><img src="../images/photography/photo-0-1.png" alt=""></div>
-        <div class="photo border" data-set="1"><img src="../images/photography/photo-1-1.png" alt=""></div>
-        <div class="photo" data-set="2"><img src="../images/photography/photo-2-1.png" alt=""></div>
-        <div class="photo default" data-set="3"><img src="../images/photography/photo-3-1.gif" alt=""></div>
-      </div>
-      <div class="col col-2-3">
-        <div class="photo default" data-set="0"><img src="../images/photography/photo-0-2.png" alt=""></div>
-        <div class="photo border" data-set="1"><img src="../images/photography/photo-1-2.png" alt=""></div>
-        <div class="photo border" data-set="2"><img src="../images/photography/photo-2-2.png" alt=""></div>
-        <div class="photo border" data-set="3"><img src="../images/photography/photo-3-2.png" alt=""></div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col col-1-3">
-        <div class="photo default"><img src="../images/photography/photo-x-3.png" alt=""></div>
-        <div class="photo" data-set="0"><img src="../images/photography/photo-0-3.png" alt=""></div>
-        <div class="photo border" data-set="1"><img src="../images/photography/photo-1-3.png" alt=""></div>
-        <div class="photo border" data-set="2"><img src="../images/photography/photo-2-3.png" alt=""></div>
-        <div class="photo border" data-set="3"><img src="../images/photography/photo-3-3.png" alt=""></div>
+        <div class="photo default"><img src="../images/photography/photo-0-1.png" alt=""></div>
+        <div class="photo" data-set="0"><img src="../images/photography/photo-1-1.png" alt=""></div>
+        <div class="photo border" data-set="1"><img src="../images/photography/photo-2-1.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-3-1.png" alt=""></div>
+        <div class="photo border" data-set="3"><img src="../images/photography/photo-4-1.png" alt=""></div>
         <div class="spacer"></div>
-        <div class="photo" data-set="0"><img src="../images/photography/photo-0-4.png" alt=""></div>
-        <div class="photo default" data-set="1"><img src="../images/photography/photo-1-4.png" alt=""></div>
-        <div class="photo" data-set="2"><img src="../images/photography/photo-2-4.png" alt=""></div>
-        <div class="photo" data-set="3"><img src="../images/photography/photo-3-4.png" alt=""></div>
+        <div class="photo default"><img src="../images/photography/photo-0-2.gif" alt=""></div>
+        <div class="photo" data-set="0"><img src="../images/photography/photo-1-2.png" alt=""></div>
+        <div class="photo" data-set="1"><img src="../images/photography/photo-2-2.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-3-2.png" alt=""></div>
+        <div class="photo" data-set="3"><img src="../images/photography/photo-4-2.png" alt=""></div>
       </div>
-      <div class="col col-2-3 col-special" style="background:url(../images/photography/photo-1-5.png) center center no-repeat transparent; background-size: cover;">
+      <div class="col col-2-3 col-special" style="background:url(../images/photography/photo-0-3.png) center center no-repeat transparent; background-size: cover;">
         <div class="photo-info-wrap">
           <div class="photo-info" id="photography-null">
             <!-- intentionally empty -->
@@ -45,7 +32,7 @@
             <p>To emphasize brand storytelling, lifestyle imagery should be used as much as possible. Lifestyle imagery allows us to be more human and adds warmth to our creative.</p>
           </div>
           <div class="photo-info ltg" id="photography-xfn-devices">
-            <h3>Xfinity Devices</h3>
+            <h3>Xfinity Hardware</h3>
             <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story, such as streaming. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
           </div>
           <div class="photo-info ltg" id="photography-in-situ">
@@ -61,17 +48,18 @@
     </div>
     <div class="row">
       <div class="col col-2-3">
-        <div class="photo default"><img src="../images/photography/photo-x-6.gif" alt=""></div>
-        <div class="photo" data-set="0"><img src="../images/photography/photo-0-6.png" alt=""></div>
-        <div class="photo border" data-set="1"><img src="../images/photography/photo-1-6.png" alt=""></div>
-        <div class="photo" data-set="2"><img src="../images/photography/photo-2-6.png" alt=""></div>
-        <div class="photo" data-set="3"><img src="../images/photography/photo-3-6.png" alt=""></div>
+        <div class="photo default"><img src="../images/photography/photo-0-4.png" alt=""></div>
+        <div class="photo" data-set="0"><img src="../images/photography/photo-1-4.png" alt=""></div>
+        <div class="photo border" data-set="1"><img src="../images/photography/photo-2-4.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-3-4.png" alt=""></div>
+        <div class="photo border" data-set="3"><img src="../images/photography/photo-4-4.png" alt=""></div>
       </div>
       <div class="col col-1-3">
-        <div class="photo default" data-set="0"><img src="../images/photography/photo-0-7.png" alt=""></div>
-        <div class="photo border" data-set="1"><img src="../images/photography/photo-1-7.png" alt=""></div>
-        <div class="photo border" data-set="2"><img src="../images/photography/photo-2-7.png" alt=""></div>
-        <div class="photo border" data-set="3"><img src="../images/photography/photo-3-7.png" alt=""></div>
+        <div class="photo default"><img src="../images/photography/photo-0-5.gif" alt=""></div>
+        <div class="photo" data-set="0"><img src="../images/photography/photo-1-5.png" alt=""></div>
+        <div class="photo" data-set="1"><img src="../images/photography/photo-2-5.png" alt=""></div>
+        <div class="photo" data-set="2"><img src="../images/photography/photo-3-5.png" alt=""></div>
+        <div class="photo" data-set="3"><img src="../images/photography/photo-4-5.png" alt=""></div>
       </div>
     </div>
   </div><!-- .mosaic -->

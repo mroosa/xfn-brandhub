@@ -57,7 +57,7 @@
       <div class="col col-1-3">
         <div class="photo default"><img src="../images/photography/photo-0-5.gif" alt=""></div>
         <div class="photo" data-set="0"><img src="../images/photography/photo-1-5.png" alt=""></div>
-        <div class="photo" data-set="1"><img src="../images/photography/photo-2-5.png" alt=""></div>
+        <div class="photo border" data-set="1"><img src="../images/photography/photo-2-5.png" alt=""></div>
         <div class="photo" data-set="2"><img src="../images/photography/photo-3-5.png" alt=""></div>
         <div class="photo" data-set="3"><img src="../images/photography/photo-4-5.png" alt=""></div>
       </div>

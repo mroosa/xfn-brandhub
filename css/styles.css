@@ -1072,6 +1072,45 @@ body:not(.button-wrapping) a.button {
 .voice h2 {
   margin-top: -5px; }
 
+/* Downloads */
+#downloads {
+  display: block; }
+  #downloads .button {
+    min-width: 150px; }
+  #downloads section {
+    display: block;
+    min-height: auto;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc; }
+    #downloads section .download-intro {
+      padding: 20px 0;
+      display: flex; }
+      #downloads section .download-intro .flex-col {
+        width: 50%; }
+      #downloads section .download-intro .flex-col-1 {
+        text-align: left; }
+      #downloads section .download-intro .flex-col-2 {
+        text-align: right; }
+    #downloads section .download-contents {
+      background: #efefef;
+      padding: 10px 0;
+      display: none; }
+      #downloads section .download-contents ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; }
+      #downloads section .download-contents li {
+        width: 20%;
+        padding: 15px; }
+      #downloads section .download-contents img {
+        border: 1px solid #333;
+        max-width: 100%; }
+      #downloads section .download-contents .download-links {
+        padding: 0 15px; }
+
 /* Intro slide */
 .intro .caption {
   font-size: 48px;

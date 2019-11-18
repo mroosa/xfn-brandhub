@@ -1153,6 +1153,61 @@ body:not(.button-wrapping) a.button {
   }
 }
 
+/* Downloads */
+#downloads {
+  display: block;
+
+  .button {
+    min-width: 150px;
+  }
+  section {
+    display: block;
+    min-height: auto;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+
+    .download-intro {
+      padding: 20px 0;
+      display: flex;
+      .flex-col {
+        width: 50%;
+      }
+      .flex-col-1 {
+        text-align: left;
+      }
+      .flex-col-2 {
+        text-align: right;
+      }
+    }
+
+    .download-contents {
+      background: #efefef;
+      padding: 10px 0;
+      display: none;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      li {
+        width: 20%;
+        padding: 15px;
+      }
+      img {
+        border: 1px solid #333;
+        max-width: 100%;
+      }
+      .download-links {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+
 /* Intro slide */
 .intro {
   .caption {

@@ -55,10 +55,10 @@
           </section> -->
           <!-- <section id="inspiration-gallery">
             <?php #include_once("../inspiration.php"); ?>
-          </section>
-          <section id="downloads">
-            <?php #include_once("../resources.php"); ?>
           </section> -->
+          <section id="downloads">
+            <?php include_once("downloads.php"); ?>
+          </section>
         </div><!-- /.content -->
       </div><!-- /.inner -->
     </main>

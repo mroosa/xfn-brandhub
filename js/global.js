@@ -94,7 +94,7 @@ function tabGo(tid, tabs, reset) {
     // If new tab has options, and shares the same data-bg
     if (newTab.find(".optionNav").length > 0 && newTab.find(".optionNav a[data-bg=" + curDataBg + "]")) {
       var newTabOption = newTab.find(".options li[data-bg=" + curDataBg + "]").attr("data-id");
-      setTabOption(newTabOption, newTab);
+      setOption(newTabOption, newTab);
     } else {
       $("body").attr("data-bg", newTab.attr("data-bg"));
     }
@@ -109,8 +109,7 @@ function tabGo(tid, tabs, reset) {
   }
 }
 
-function setTabOption(oid, tab) {
-  console.log(oid+ " "+tab)
+function setOption(oid, tab) {
   var link = tab.find(".optionNav a[data-id=" + oid + "]")
   link.parents(".optionNav").find(".active").removeClass("active");
   link
@@ -127,7 +126,35 @@ function setTabOption(oid, tab) {
 
 }
 
+function createOptions(parent) {
+  var theOptions = parent.find("ul.optionWrap"),
+      numOptions = Number(theOptions.find("li").length);
+  if (numOptions > 1) {
+    theOptions.wrap('<div class="slideshow">').css({"width":100 * numOptions + "%"});
+    theOptions
+      .addClass("options")
+      .after('<ul class="optionNav">');
+    var optionNav = theOptions.parents(".tab").find(".optionNav");
+    theOptions.find("li")
+      .css("width", 100 / numOptions + "%")
+      .each(function(opt) {
+        var optionTtl = ($(this).attr("data-alt") != undefined) ? "Show " + $(this).attr("data-alt") : "";
+        $(this).attr("data-id",opt);
+        var optNavClass = (opt==0) ? ' class="active"': '';
+        optionNav.append('<li><a' + optNavClass + ' data-id="' + opt + '" href="#" title="' + optionTtl + '"><span class="ah">' + optionTtl + '</span></a></li>');
+      });
+    optionNav.find("a").click(function() {
+      setOption($(this).attr("data-id"), parent);
+      return false;
+    });
+  }
+}
+
 $(document).ready(function() {
+
+  // $(".optionWrap").each(function() {
+  //   createOptions($(this).parents(".section"));
+  // });
   smoothScrolling();
   $("input, textarea, select").wrap('<div class="form-item-wrap">');
   $(".form-item-wrap").find("input, textarea, select").focus(function() {
@@ -139,25 +166,42 @@ $(document).ready(function() {
 
   // Add number of section
   $(".content section").each(function(index) {
-    if (index < 9) {
-      $(this).find("h1").prepend("<span>0" + Math.floor(index + 1) + "</span> ");
-    }
+    var prefix = (index < 9) ? "0": "";
+    $(this).find("h1").prepend("<span>" + prefix + Math.floor(index + 1) + "</span> ");
   });
 
   // Typepography slider
-  var brownWts = [null,'300','400','800'],
-      stdWts = [null,'100','200','300','400','500','700'];
-  $(".weight").on("change mousemove", function() {
-    var thisId = $(this).attr("data-font"),
-        wt = Number($(this).val());
-    $("." + thisId).attr("data-weight",wt);
-    // if ($(this).attr("data-font")=="font-xfs") {
-    //   $(this).attr("title",stdWts[wt]);
-    // } else if ($(this).attr("data-font")=="font-xfb") {
-    //   $(this).attr("title",brownWts[wt]);
-    // }
-     
-    // console.log($(this).val());
+  $(".type-wrap").each(function() {
+    var fontWrap = $(this),
+        wts = fontWrap.find(".weights"),
+        numWts = wts.find("li").length,
+        font = fontWrap.find("blockquote").attr("data-font"),
+        wtAry = [null],
+        defaultWt;
+
+    // Find and create wt array
+    wts.find("li").each(function(index) {
+      wtAry.push($(this).attr("data-weight"));
+      if ($(this).hasClass("active")) {
+        defaultWt = index + 1;
+      }
+    });
+
+    // Create slider based on weights
+    wts.before('<input type="range" min="1" max="' + numWts + '" value="' + defaultWt + '" class="weight" data-font="' + font + '">');
+
+    // Change font weight on slider change
+    fontWrap.find(".weight").on("change mousemove", function() {
+      var wt = Number($(this).val());
+      fontWrap.find("blockquote").css({"font-weight":wtAry[wt]});
+      $(this).siblings(".weights").find("li.active").removeClass("active");
+      $(this).siblings(".weights").find("li[data-weight=" + wtAry[wt] + "]").addClass("active");
+      // if ($(this).attr("data-font")=="font-xfs") {
+      //   $(this).attr("title",stdWts[wt]);
+      // } else if ($(this).attr("data-font")=="font-xfb") {
+      //   $(this).attr("title",brownWts[wt]);
+      // }
+    });
   });
 
   // Tabbed content
@@ -170,40 +214,22 @@ $(document).ready(function() {
       .attr({"data-count": numTabs})
       .find(".tab:first-child").addClass("active");
 
+    var tabNavContents = "";
     theTabs.find(".tab").each(function(index) {
-      console.log(index);
       // Get the current tab
       var theTab = $(this),
       // Get tab title
           tabTtl = $(this).attr("data-ttl"),
           linkClass = (index==0) ? " active" : "";
-      thisSec.find(".col-1").append('<a class="button set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a>');
+      tabNavContents += '<a class="button ignore-click set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a>';
       $(this)
         .attr({"data-id":index})
         .css({"width":100 / numTabs + "%" });
 
       // Tab options
-      var theOptions = theTab.find(".tab-col-2 ul"),
-          numOptions = Number(theOptions.find("li").length);
-      if (numOptions > 1) {
-        theOptions.wrap('<div class="slideshow">').css({"width":100 * numOptions + "%"});
-        theOptions
-          .addClass("options")
-          .after('<ul class="optionNav">');
-        var optionNav = theOptions.parents(".tab").find(".optionNav");
-        theOptions.find("li")
-          .css("width", 100 / numOptions + "%")
-          .each(function(opt) {
-            $(this).attr("data-id",opt);
-            var optNavClass = (opt==0) ? ' class="active"': '';
-            optionNav.append('<li><a' + optNavClass + ' data-id="' + opt + '" href="#"><span class="ah">Show ' + $(this).attr("data-alt") + '</span></a></li>');
-          });
-        optionNav.find("a").click(function() {
-          setTabOption($(this).attr("data-id"), theTab);
-          return false;
-        });
-      }
+      createOptions(theTab);
     });
+    thisSec.find(".col-1").append('<ul class="tab-nav">' + tabNavContents + '</ul>');
     thisSec.find(".set-tab").click(function() {
       var newTab = $(this).attr("data-id");
       tabGo(newTab, theTabs);
@@ -246,19 +272,6 @@ $(document).ready(function() {
   })
 
   // typography
-  $("#typography .col-1 .button").each(function(index) {
-    $(this).attr("data-id",index);
-    $(this).click(function() {
-      $("#typography .button.active").removeClass("active");
-      $(this).addClass("active");
-      $("#typography .col-2").attr("data-active", index);
-      return false;
-    })
-  })
-
-  $(".logo").click(function() {
-    $(this).parents("#subnav").toggleClass("black").toggleClass("wht");
-  });
 
   /* Temp */
   // $("html").addClass("hide");
@@ -283,4 +296,9 @@ $(document).ready(function() {
   // lsdkjflskjdfljksID = setTimeout(function() {
   //   removeMask();
   // }, 31000);
+
+  // Wrap buttons
+  $("body").addClass("button-wrapping");
+  $(".button").wrapInner("<span>");
+
 });

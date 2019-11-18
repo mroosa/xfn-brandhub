@@ -315,14 +315,8 @@ section {
         max-width: 90%;
       }
 
-      .tab-col-1,
-      .tab-col-2 {
+      .tab-inner {
         position: relative;
-      }
-      .tab-col-1 {
-        display: none;
-      }
-      .tab-col-2 {
         width: 100%;
 
         .slideshow {
@@ -367,7 +361,7 @@ section {
           }
         }
       }
-      .tab-col-2 .optionNav {
+      .tab-inner .optionNav {
         padding: 30px 0 10px 0;
       }
       &.with-options {
@@ -384,7 +378,87 @@ section {
     }
 
   }
+  .optionWrap {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &.animate {
+      transition: .25s margin;
+    }
+
+    li {
+      margin: 0;
+      padding: 0;
+
+      img {
+        display: block;
+      }
+    }
+  }
 }
+body.button-wrapping .button span,
+body:not(.button-wrapping) a.button {
+  padding: 10px 25px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  transition: color .25s, background .25s, transform .25s, box-shadow .25s;
+  border-radius: 4px;
+  text-decoration: none;
+  @include Brown(12px);
+  font-weight: 500;
+  text-align: center;
+
+  @include bp-max($xsm) {
+    display: block;
+    text-align: center;
+  }
+
+  @include bp-min($lrg) {
+    @include Brown(13px);
+  }
+  @include bp-min($xxl) {
+    @include Brown(14px);
+  }
+
+}
+body.button-wrapping .button {
+  padding: 3px 0;
+  display: inline-block;
+  text-decoration: none;
+  span {
+    display: block;
+  }
+  margin: 5px 12px 5px 0;
+  &:hover {
+    span {
+      box-shadow: 0 5px 5px rgba(0,0,0,.35);
+      transform:translateY(-3px);
+    }
+  }
+  &.active,
+  &:hover {
+    span {
+      color: #000;
+      background: #fff;
+    }
+  }
+}
+body:not(.button-wrapping) a.button {
+  display: inline-block;
+  margin: 8px 12px 8px 0;
+  &:hover {
+    box-shadow: 0 5px 5px rgba(0,0,0,.35);
+    transform:translateY(-3px);
+  }
+  &.active,
+  &:hover {
+    color: #000;
+    background: #fff;
+  }
+}
+
 
 .content {
   overflow: hidden;
@@ -437,37 +511,6 @@ section {
     }
   }
 
-  a {
-    &.button {
-      display: inline-block;
-      padding: 10px 25px;
-      border: 1px solid #000;
-      background: #000;
-      color: #fff;
-      transition: color .25s, background .25s, transform .25s, box-shadow .25s;
-      border-radius: 4px;
-      text-decoration: none;
-      @include Brown(14px);
-      font-weight: 500;
-      margin:15px 15px 15px 0;
-
-      @include bp-max($xsm) {
-        display: block;
-        text-align: center;
-      }
-
-      &.active,
-      &:hover {
-        color: #000;
-        background: #fff;
-      }
-      &:hover {
-        box-shadow: 0 5px 5px rgba(0,0,0,.35);
-        transform:translateY(-3px);
-      }
-    }
-  }
-
   .flex-column ul.none,
   .flex-column ul.none li {
     list-style: none;
@@ -499,9 +542,29 @@ section {
       padding: 2%;
       position: relative;
     }
+
     .col-2 {
       width: 55%;
       padding: 0 2%;
+    }
+
+    .tab-nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin: 0;
+        @include bp-min($lrg) {
+          display: inline-block;
+          min-width: 45%;
+          margin: 0 2% 0 0;
+        }
+
+        a {
+          width: 100%;
+        }
+      }
     }
 
     // &.active {
@@ -746,6 +809,10 @@ section {
         box-shadow: 10px 10px 10px rgba(0,0,0,.35);
         transform: translate(50%,50%) scale(1);
       }
+
+      @include bp-max($xlg) {
+        padding: 20px;
+      }
     }
 
     .ht-100 {
@@ -787,43 +854,8 @@ section {
 /* Typography page */
 #typography {
 
-  .col-2 {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-
-    .section-wrap {
-      width: 300%;
-      display: flex;
-      transition: .5s margin;
-
-      .section {
-        width: 33.333%;
-      }
-    }
-
-    &[data-active="0"] {
-      .section-wrap {
-        margin-left: 0;
-      }
-    }
-    &[data-active="1"] {
-      .section-wrap {
-        margin-left: -100%;
-      }
-    }
-    &[data-active="2"] {
-      .section-wrap {
-        margin-left: -200%;
-      }
-    }
-  }
-  .section {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .type-wrap {
+    padding: 20px 0;
   }
 
   blockquote {
@@ -839,21 +871,12 @@ section {
       @include bp-min($xlg) {
         @include Brown(72px, 800);
       }
-      &[data-weight="1"] {font-weight: 300;}
-      &[data-weight="2"] {font-weight: 400;}
-      &[data-weight="3"] {font-weight: 800;}
     }
     &.font-xfs {
-      @include Std(48px);
+      @include Std(28px);
       @include bp-min($xlg) {
-        @include Std(72px);
+        @include Std(44px);
       }
-      &[data-weight="1"] {font-weight: 100;}
-      &[data-weight="2"] {font-weight: 200;}
-      &[data-weight="3"] {font-weight: 300;}
-      &[data-weight="4"] {font-weight: 400;}
-      &[data-weight="5"] {font-weight: 500;}
-      &[data-weight="6"] {font-weight: 700;}
     }
   }
 
@@ -864,6 +887,24 @@ section {
 
     &.show {
       opacity: 1;
+    }
+
+    .weights {
+      list-style: none;
+      margin: 0;
+      padding: 5px 5px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      li {
+        @include Brown(14px, 800);
+        transition:.25s;
+
+        &:not(.active) {
+          opacity: 0;
+        }
+      }
     }
   }
 
@@ -906,6 +947,7 @@ section {
   }
 
   .usage {
+    padding: 15px 40px;
     span {
       @include transition(.25s color);
     }
@@ -917,18 +959,37 @@ section {
     }
 
     &.usage-1 {
-      @include Brown(36px, 800);
+      @include Brown(42px, 800);
+      @include bp-max($xxl) {
+        @include Brown(32px, 800);
+      }
     }
     &.usage-2 {
-      @include Brown(24px, 800);
+      @include Brown(28px, 800);
+      @include bp-max($xxl) {
+        @include Brown(22px, 800);
+      }
     }
     &.usage-3 {
       @include Brown(18px);
+      @include bp-max($xxl) {
+        @include Brown(16px);
+      }
     }
     &.usage-4 {
       font-family: "XfinityStandard";
+      @include font-size(16px);
+      @include bp-max($xxl) {
+        @include font-size(14px);
+      }
     }
     &.usage-5 {
+      @include Brown(26px, 800);
+      @include bp-max($xxl) {
+        @include Brown(23px, 800);
+      }
+    }
+    &.usage-6 {
       font-family: "HelveticaNeueCondensed";
       @include font-size(12px);
     }
@@ -1081,11 +1142,22 @@ body[data-bg=black] {
   background: #000;
   color: #fff;
 
-  .button {
+  &.button-wrapping .button span,
+  &:not(.button-wrapping) .button {
     border-color: #fff;
     background: #fff;
     color: #000;
-
+  }
+  &.button-wrapping .button {
+    &.active,
+    &:hover {
+      span {
+        background: #000;
+        color: #fff;
+      }
+    }
+  }
+  &:not(.button-wrapping) .button {
     &.active,
     &:hover {
       background: #000;

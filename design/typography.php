@@ -1,53 +1,62 @@
 <div class="col-1">
   <h1>Typography</h1>
   <p class="intro">Xfinity Brown is our primary and most expressive typeface. It should be used for headlines, short-form body copy, and other elements deserving emphasis, like subheads and calls to action.</p>
-  <a class="button ignore-click" href="#typefaces">Typefaces</a>
-  <a class="button ignore-click" href="#type-styles">Style &amp; Weight</a>
-  <a class="button ignore-click" href="#type-examples">Type Examples</a>
 </div>
 <div class="col-2" data-active="0">
-  <div style="overflow: hidden;">
-  <div class="section-wrap">
-  <div class="section" id="typefaces">
-    <div class="section-inner">
+  <div class="tabs-wrapper">
+  <div class="tabs">
+    <div class="tab" id="typefaces" data-ttl="Typefaces">
+      <div class="tab-inner">
 
-      <div class="type-wrap">
-        <blockquote class="live-type font-xfb">Hi, I'm Xfinity Brown</blockquote>
-        <div class="slider show">
-          <input type="range" min="1" max="3" value="3" class="weight" data-font="font-xfb">
+        <div class="type-wrap">
+          <blockquote class="live-type font-xfb" data-font="font-xfb">Hi, I'm Xfinity Brown</blockquote>
+          <div class="slider show">
+            <ul class="weights">
+              <li data-weight="300">Light</li>
+              <li data-weight="400">Regular</li>
+              <li data-weight="800" class="active">Bold</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <div class="type-wrap">
-        <blockquote class="live-type font-xfs">and I'm Xfinity Standard</blockquote>
-        <div class="slider show">
-          <input type="range" min="1" max="6" value="4" class="weight" data-font="font-xfs">
+        <div class="type-wrap">
+          <blockquote class="live-type font-xfs" data-font="font-xfs">and I'm Xfinity Standard</blockquote>
+          <div class="slider show">
+            <ul class="weights">
+              <li data-weight="100">Thin</li>
+              <li data-weight="200">Extra Light</li>
+              <li data-weight="300">Light</li>
+              <li data-weight="400" class="active">Regular</li>
+              <li data-weight="500">Medium</li>
+              <li data-weight="700">Bold</li>
+            </ul>
+          </div>
         </div>
+
       </div>
+    </div><!-- /.section -->
 
-    </div>
-  </div><!-- /.section -->
-
-  <div class="section" id="type-styles">
-    <div class="section-inner">
-      <blockquote class="usage usage-1">Headlines <span>are set in Xfinity Brown Bold, with -20 kerning and auto leading.</span></blockquote>
-      <blockquote class="usage usage-2">Subheads <span>are set in Xfinity Brown Bold, with -20 kerning and auto leading.</span></blockquote>
-      <blockquote class="usage usage-3">Short-form body copy <span>is set in Xfinity Brown Regular, with -20 kerning and auto leading. Short-form body copy should be two to five sentences in length and is typically the only body copy on the creative.</span></blockquote>
-      <blockquote class="usage usage-4">Long-form body copy <span>is set in Xfinity Standard Regular with auto leading. Long-form body copy is over five sentences long and typically used when there are multiple body copy text blocks. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </span></blockquote>
-      <blockquote class="usage usage-5">Legal copy <span>is set in Helvetica Neue Condensed LT Std with auto leading, no smaller than 8pt.</span></blockquote>
-    </div>
-  </div><!-- /.section -->
-
-  <div class="section" id="type-examples">
-    <div class="section-inner">
-      <div class="img">
-        <img src="<?php print $dir; ?>images/typography/04-1.png" alt="Package Deals: Package deals are set in all caps Xfinity Brown Bold -20 kerning." />
-        <img src="<?php print $dir; ?>images/typography/04-2.png" alt="Price Point: Dollar and cents are set in Xfinity Brown Bold at 50% of the main pricing numbers with manually adjusted kerning." />
-        <img src="<?php print $dir; ?>images/typography/04-3.png" alt="Voice Commands: Voice commands are set in Xfinity Brown Bold, white or black." />
-        <img src="<?php print $dir; ?>images/typography/04-4.png" alt="CTA: Calls to action are set in Xfinity Brown Regular. The phone number and URL are set in Xfinity Brown Bold, using sentence case." />
+    <div class="tab" id="type-styles" data-ttl="Style & Weight">
+      <div class="tab-inner">
+        <blockquote class="usage usage-1" title="Xfinity Brown is always set with -20 kerning and auto leading">Headlines <span>are set in Xfinity Brown Bold. They should be conversational and used for emphasis.</span></blockquote>
+        <blockquote class="usage usage-2">Subheads <span>are set in Xfinity Brown Bold. They are always set in a smaller font size than the headline.</span></blockquote>
+        <blockquote class="usage usage-3">Short-form body copy <span>is set in Xfinity Brown Regular. Short-form body copy should be two to five sentences in length. Typically this is the only body copy on the creative.</span></blockquote>
+        <blockquote class="usage usage-4">Long-form body copy <span>is set in Xfinity Standard Regular with auto leading. Long-form body copy is over five sentences long and typically used when there are multiple body copy text blocks. This can include bullets, detailed product descriptions and digital communications.</span></blockquote>
+        <blockquote class="usage usage-5">Calls-to-action <span>are set in Xfinity Brown Bold.</span></blockquote>
+        <blockquote class="usage usage-6">Legal copy <span>is set in Helvetica Neue Condensed LT Std with auto leading, no smaller than 8pt.</span></blockquote>
       </div>
-    </div>
-  </div><!-- /.section -->
+    </div><!-- /.section -->
+
+    <div class="tab" id="type-examples" data-ttl="Type Examples">
+      <div class="tab-inner">
+        <ul class="optionWrap animate">
+          <li><img src="<?php print $dir; ?>images/typography/04-1.png" alt="Package Deals: Package deals are set in all caps Xfinity Brown Bold -20 kerning." /></li>
+          <li><img src="<?php print $dir; ?>images/typography/04-2.png" alt="Price Point: Dollar and cents are set in Xfinity Brown Bold at 50% of the main pricing numbers with manually adjusted kerning." /></li>
+          <li><img src="<?php print $dir; ?>images/typography/04-3.png" alt="Voice Commands: Voice commands are set in Xfinity Brown Bold, white or black." /></li>
+          <li><img src="<?php print $dir; ?>images/typography/04-4.png" alt="CTA: Calls to action are set in Xfinity Brown Regular. The phone number and URL are set in Xfinity Brown Bold, using sentence case." /></li>
+        </ul>
+      </div>
+    </div><!-- /.section -->
   </div>
-  </div>
+  </div><!-- .tabs-wrapper -->
 </div>

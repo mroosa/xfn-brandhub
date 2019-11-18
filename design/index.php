@@ -38,7 +38,7 @@
           <section id="color">
             <?php include_once("color.php"); ?>
           </section>
-          <section id="typography">
+          <section id="typography" class="with-tabs">
             <?php include_once("typography.php"); ?>
           </section>
           <section id="photography">

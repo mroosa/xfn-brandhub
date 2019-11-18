@@ -410,18 +410,14 @@ section.with-tabs .tab {
     display: block;
     margin: 0 auto;
     max-width: 90%; }
-  section.with-tabs .tab .tab-col-1,
-  section.with-tabs .tab .tab-col-2 {
-    position: relative; }
-  section.with-tabs .tab .tab-col-1 {
-    display: none; }
-  section.with-tabs .tab .tab-col-2 {
+  section.with-tabs .tab .tab-inner {
+    position: relative;
     width: 100%; }
-    section.with-tabs .tab .tab-col-2 .slideshow {
+    section.with-tabs .tab .tab-inner .slideshow {
       overflow: hidden; }
-      section.with-tabs .tab .tab-col-2 .slideshow ul {
+      section.with-tabs .tab .tab-inner .slideshow ul {
         display: flex; }
-    section.with-tabs .tab .tab-col-2 ul {
+    section.with-tabs .tab .tab-inner ul {
       list-style: none;
       margin: 0;
       padding: 0; }
@@ -445,7 +441,7 @@ section.with-tabs .tab {
       border-radius: 50%; }
       section.with-tabs .tab .optionNav li a.active {
         background: #000; }
-  section.with-tabs .tab .tab-col-2 .optionNav {
+  section.with-tabs .tab .tab-inner .optionNav {
     padding: 30px 0 10px 0; }
   section.with-tabs .tab.with-options .img {
     position: absolute;
@@ -454,6 +450,80 @@ section.with-tabs .tab {
     margin: 0; }
   section.with-tabs .tab.with-options .option:not(:first-child) {
     display: none; }
+
+section .optionWrap {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  section .optionWrap.animate {
+    transition: .25s margin; }
+  section .optionWrap li {
+    margin: 0;
+    padding: 0; }
+    section .optionWrap li img {
+      display: block; }
+
+body.button-wrapping .button span,
+body:not(.button-wrapping) a.button {
+  padding: 10px 25px;
+  border: 1px solid #000;
+  background: #000;
+  color: #fff;
+  transition: color .25s, background .25s, transform .25s, box-shadow .25s;
+  border-radius: 4px;
+  text-decoration: none;
+  font-family: "XfinityBrown", sans-serif;
+  letter-spacing: -.04ex;
+  line-height: 125%;
+  font-size: 12px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  text-align: center; }
+  @media (max-width: 550px) {
+    body.button-wrapping .button span,
+    body:not(.button-wrapping) a.button {
+      display: block;
+      text-align: center; } }
+  @media (min-width: 1020px) {
+    body.button-wrapping .button span,
+    body:not(.button-wrapping) a.button {
+      font-family: "XfinityBrown", sans-serif;
+      letter-spacing: -.04ex;
+      line-height: 125%;
+      font-size: 13px;
+      font-size: 0.8125rem; } }
+  @media (min-width: 1400px) {
+    body.button-wrapping .button span,
+    body:not(.button-wrapping) a.button {
+      font-family: "XfinityBrown", sans-serif;
+      letter-spacing: -.04ex;
+      line-height: 125%;
+      font-size: 14px;
+      font-size: 0.875rem; } }
+
+body.button-wrapping .button {
+  padding: 3px 0;
+  display: inline-block;
+  text-decoration: none;
+  margin: 5px 12px 5px 0; }
+  body.button-wrapping .button span {
+    display: block; }
+  body.button-wrapping .button:hover span {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+    transform: translateY(-3px); }
+  body.button-wrapping .button.active span, body.button-wrapping .button:hover span {
+    color: #000;
+    background: #fff; }
+
+body:not(.button-wrapping) a.button {
+  display: inline-block;
+  margin: 8px 12px 8px 0; }
+  body:not(.button-wrapping) a.button:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
+    transform: translateY(-3px); }
+  body:not(.button-wrapping) a.button.active, body:not(.button-wrapping) a.button:hover {
+    color: #000;
+    background: #fff; }
 
 .content {
   overflow: hidden;
@@ -514,32 +584,6 @@ section.with-tabs .tab {
     font-size: 0.875rem;
     font-weight: 400;
     color: #999; }
-  .content a.button {
-    display: inline-block;
-    padding: 10px 25px;
-    border: 1px solid #000;
-    background: #000;
-    color: #fff;
-    transition: color .25s, background .25s, transform .25s, box-shadow .25s;
-    border-radius: 4px;
-    text-decoration: none;
-    font-family: "XfinityBrown", sans-serif;
-    letter-spacing: -.04ex;
-    line-height: 125%;
-    font-size: 14px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    margin: 15px 15px 15px 0; }
-    @media (max-width: 550px) {
-      .content a.button {
-        display: block;
-        text-align: center; } }
-    .content a.button.active, .content a.button:hover {
-      color: #000;
-      background: #fff; }
-    .content a.button:hover {
-      box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
-      transform: translateY(-3px); }
   .content .flex-column ul.none,
   .content .flex-column ul.none li {
     list-style: none;
@@ -566,6 +610,19 @@ section.with-tabs .tab {
     .content section .col-2 {
       width: 55%;
       padding: 0 2%; }
+    .content section .tab-nav {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .content section .tab-nav li {
+        margin: 0; }
+        @media (min-width: 1020px) {
+          .content section .tab-nav li {
+            display: inline-block;
+            min-width: 45%;
+            margin: 0 2% 0 0; } }
+        .content section .tab-nav li a {
+          width: 100%; }
   .content .img {
     margin: 20px 0 40px 0; }
     .content .img img {
@@ -716,6 +773,9 @@ section.with-tabs .tab {
       pointer-events: all;
       box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
       transform: translate(50%, 50%) scale(1); }
+    @media (max-width: 1200px) {
+      #color .color-swatches .swatch-info {
+        padding: 20px; } }
   #color .color-swatches .ht-100 {
     height: 50%;
     padding: 5px; }
@@ -737,29 +797,8 @@ section.with-tabs .tab {
   font-size: 75%; }
 
 /* Typography page */
-#typography .col-2 {
-  position: relative;
-  height: 100vh;
-  overflow: hidden; }
-  #typography .col-2 .section-wrap {
-    width: 300%;
-    display: flex;
-    transition: .5s margin; }
-    #typography .col-2 .section-wrap .section {
-      width: 33.333%; }
-  #typography .col-2[data-active="0"] .section-wrap {
-    margin-left: 0; }
-  #typography .col-2[data-active="1"] .section-wrap {
-    margin-left: -100%; }
-  #typography .col-2[data-active="2"] .section-wrap {
-    margin-left: -200%; }
-
-#typography .section {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+#typography .type-wrap {
+  padding: 20px 0; }
 
 #typography blockquote {
   margin: 0;
@@ -783,35 +822,17 @@ section.with-tabs .tab {
         font-size: 72px;
         font-size: 4.5rem;
         font-weight: 800; } }
-    #typography .live-type.font-xfb[data-weight="1"] {
-      font-weight: 300; }
-    #typography .live-type.font-xfb[data-weight="2"] {
-      font-weight: 400; }
-    #typography .live-type.font-xfb[data-weight="3"] {
-      font-weight: 800; }
   #typography .live-type.font-xfs {
     font-family: "XfinityStandard", sans-serif;
     line-height: 125%;
-    font-size: 48px;
-    font-size: 3rem; }
+    font-size: 28px;
+    font-size: 1.75rem; }
     @media (min-width: 1200px) {
       #typography .live-type.font-xfs {
         font-family: "XfinityStandard", sans-serif;
         line-height: 125%;
-        font-size: 72px;
-        font-size: 4.5rem; } }
-    #typography .live-type.font-xfs[data-weight="1"] {
-      font-weight: 100; }
-    #typography .live-type.font-xfs[data-weight="2"] {
-      font-weight: 200; }
-    #typography .live-type.font-xfs[data-weight="3"] {
-      font-weight: 300; }
-    #typography .live-type.font-xfs[data-weight="4"] {
-      font-weight: 400; }
-    #typography .live-type.font-xfs[data-weight="5"] {
-      font-weight: 500; }
-    #typography .live-type.font-xfs[data-weight="6"] {
-      font-weight: 700; }
+        font-size: 44px;
+        font-size: 2.75rem; } }
 
 #typography .slider {
   width: 100%;
@@ -819,6 +840,23 @@ section.with-tabs .tab {
   opacity: 0; }
   #typography .slider.show {
     opacity: 1; }
+  #typography .slider .weights {
+    list-style: none;
+    margin: 0;
+    padding: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    #typography .slider .weights li {
+      font-family: "XfinityBrown", sans-serif;
+      letter-spacing: -.04ex;
+      line-height: 125%;
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 800;
+      transition: .25s; }
+      #typography .slider .weights li:not(.active) {
+        opacity: 0; }
 
 #typography .weight {
   -webkit-appearance: none;
@@ -850,43 +888,83 @@ section.with-tabs .tab {
     cursor: pointer;
     background: #dedede; }
 
-#typography .usage span {
-  -webkit-transition: 0.25s color;
-  transition: 0.25s color; }
-
-#typography .usage:hover span {
-  color: rgba(0, 0, 0, 0.15); }
-
-#typography .usage.usage-1 {
-  font-family: "XfinityBrown", sans-serif;
-  letter-spacing: -.04ex;
-  line-height: 125%;
-  font-size: 36px;
-  font-size: 2.25rem;
-  font-weight: 800; }
-
-#typography .usage.usage-2 {
-  font-family: "XfinityBrown", sans-serif;
-  letter-spacing: -.04ex;
-  line-height: 125%;
-  font-size: 24px;
-  font-size: 1.5rem;
-  font-weight: 800; }
-
-#typography .usage.usage-3 {
-  font-family: "XfinityBrown", sans-serif;
-  letter-spacing: -.04ex;
-  line-height: 125%;
-  font-size: 18px;
-  font-size: 1.125rem; }
-
-#typography .usage.usage-4 {
-  font-family: "XfinityStandard"; }
-
-#typography .usage.usage-5 {
-  font-family: "HelveticaNeueCondensed";
-  font-size: 12px;
-  font-size: 0.75rem; }
+#typography .usage {
+  padding: 15px 40px; }
+  #typography .usage span {
+    -webkit-transition: 0.25s color;
+    transition: 0.25s color; }
+  #typography .usage:hover span {
+    color: rgba(0, 0, 0, 0.15); }
+  #typography .usage.usage-1 {
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
+    font-size: 42px;
+    font-size: 2.625rem;
+    font-weight: 800; }
+    @media (max-width: 1400px) {
+      #typography .usage.usage-1 {
+        font-family: "XfinityBrown", sans-serif;
+        letter-spacing: -.04ex;
+        line-height: 125%;
+        font-size: 32px;
+        font-size: 2rem;
+        font-weight: 800; } }
+  #typography .usage.usage-2 {
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
+    font-size: 28px;
+    font-size: 1.75rem;
+    font-weight: 800; }
+    @media (max-width: 1400px) {
+      #typography .usage.usage-2 {
+        font-family: "XfinityBrown", sans-serif;
+        letter-spacing: -.04ex;
+        line-height: 125%;
+        font-size: 22px;
+        font-size: 1.375rem;
+        font-weight: 800; } }
+  #typography .usage.usage-3 {
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
+    font-size: 18px;
+    font-size: 1.125rem; }
+    @media (max-width: 1400px) {
+      #typography .usage.usage-3 {
+        font-family: "XfinityBrown", sans-serif;
+        letter-spacing: -.04ex;
+        line-height: 125%;
+        font-size: 16px;
+        font-size: 1rem; } }
+  #typography .usage.usage-4 {
+    font-family: "XfinityStandard";
+    font-size: 16px;
+    font-size: 1rem; }
+    @media (max-width: 1400px) {
+      #typography .usage.usage-4 {
+        font-size: 14px;
+        font-size: 0.875rem; } }
+  #typography .usage.usage-5 {
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
+    font-size: 26px;
+    font-size: 1.625rem;
+    font-weight: 800; }
+    @media (max-width: 1400px) {
+      #typography .usage.usage-5 {
+        font-family: "XfinityBrown", sans-serif;
+        letter-spacing: -.04ex;
+        line-height: 125%;
+        font-size: 23px;
+        font-size: 1.4375rem;
+        font-weight: 800; } }
+  #typography .usage.usage-6 {
+    font-family: "HelveticaNeueCondensed";
+    font-size: 12px;
+    font-size: 0.75rem; }
 
 /* Photography */
 .mosaic {
@@ -990,16 +1068,23 @@ body[data-bg=drk-gry],
 body[data-bg=black] {
   background: #000;
   color: #fff; }
-  body[data-bg=drk-gry] .button,
-  body[data-bg=black] .button {
+  body[data-bg=drk-gry].button-wrapping .button span,
+  body[data-bg=drk-gry]:not(.button-wrapping) .button,
+  body[data-bg=black].button-wrapping .button span,
+  body[data-bg=black]:not(.button-wrapping) .button {
     border-color: #fff;
     background: #fff;
     color: #000; }
-    body[data-bg=drk-gry] .button.active, body[data-bg=drk-gry] .button:hover,
-    body[data-bg=black] .button.active,
-    body[data-bg=black] .button:hover {
-      background: #000;
-      color: #fff; }
+  body[data-bg=drk-gry].button-wrapping .button.active span, body[data-bg=drk-gry].button-wrapping .button:hover span,
+  body[data-bg=black].button-wrapping .button.active span,
+  body[data-bg=black].button-wrapping .button:hover span {
+    background: #000;
+    color: #fff; }
+  body[data-bg=drk-gry]:not(.button-wrapping) .button.active, body[data-bg=drk-gry]:not(.button-wrapping) .button:hover,
+  body[data-bg=black]:not(.button-wrapping) .button.active,
+  body[data-bg=black]:not(.button-wrapping) .button:hover {
+    background: #000;
+    color: #fff; }
   body[data-bg=drk-gry] .optionNav a,
   body[data-bg=black] .optionNav a {
     border-color: #fff !important; }

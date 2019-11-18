@@ -1216,6 +1216,20 @@ body[data-bg=black] {
   #typography blockquote {color: #fff;}
   #typography .weight::-webkit-slider-thumb {background: #000; border-color: #666;}
   #typography .weight::-webkit-slider-runnable-track {background-color: #333;}
+
+  .content p.download a {
+    color: #ccc;
+    svg * {
+      stroke: #ccc;
+    }
+
+    &:hover {
+      color: #999;
+      svg * {
+        stroke: #999;
+      }
+    }
+  }
 }
 
 body[data-bg=drk-gry] {

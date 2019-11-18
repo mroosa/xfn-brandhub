@@ -1139,6 +1139,18 @@ body[data-bg=black] {
   body[data-bg=drk-gry] #typography .weight::-webkit-slider-runnable-track,
   body[data-bg=black] #typography .weight::-webkit-slider-runnable-track {
     background-color: #333; }
+  body[data-bg=drk-gry] .content p.download a,
+  body[data-bg=black] .content p.download a {
+    color: #ccc; }
+    body[data-bg=drk-gry] .content p.download a svg *,
+    body[data-bg=black] .content p.download a svg * {
+      stroke: #ccc; }
+    body[data-bg=drk-gry] .content p.download a:hover,
+    body[data-bg=black] .content p.download a:hover {
+      color: #999; }
+      body[data-bg=drk-gry] .content p.download a:hover svg *,
+      body[data-bg=black] .content p.download a:hover svg * {
+        stroke: #999; }
 
 body[data-bg=drk-gry] {
   background: #1e1e1e; }

@@ -202,8 +202,9 @@
 .icon-nxt:before {
   content: "\65"; }
 
-/* Sizes */
+/* Viewport Sizes */
 /* Colors */
+/* Techincal Sizes */
 html,
 html * {
   box-sizing: border-box; }
@@ -220,6 +221,12 @@ body {
 
 a {
   color: #999; }
+
+img.border {
+  border: 1px solid #ccc; }
+
+img.rounded {
+  border-radius: 4px; }
 
 .inner {
   max-width: 1800px;
@@ -895,7 +902,7 @@ body:not(.button-wrapping) a.button {
     border: 1px solid #999;
     height: 20px;
     width: 20px;
-    border-radius: 3px;
+    border-radius: 4px;
     background: #ffffff;
     cursor: pointer;
     margin-top: -8px;

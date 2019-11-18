@@ -45,6 +45,15 @@ a {
   color: #999;
 }
 
+img {
+  &.border {
+    border: 1px solid #ccc;
+  }
+  &.rounded {
+    border-radius: $bdr;
+  }
+}
+
 .inner {
   max-width: $max;
   width: 100%;
@@ -250,7 +259,7 @@ main {
         text-decoration: none;
         color: #fff;
         // transition:color .25s, background .25s;
-        border-radius: 4px;
+        border-radius: $bdr;
 
         &:hover {
           background: #fff;
@@ -436,7 +445,7 @@ body:not(.button-wrapping) a.button {
   background: #000;
   color: #fff;
   transition: color .25s, background .25s, transform .25s, box-shadow .25s;
-  border-radius: 4px;
+  border-radius: $bdr;
   text-decoration: none;
   @include Brown(12px);
   font-weight: 500;
@@ -758,7 +767,7 @@ body:not(.button-wrapping) a.button {
 
     .color {
       display: block;
-      border-radius: 4px;
+      border-radius: $bdr;
       height: 100%;
       cursor: pointer;
 
@@ -792,7 +801,7 @@ body:not(.button-wrapping) a.button {
       cursor: text;
       opacity: 0;
       padding: 50px;
-      border-radius: 4px;
+      border-radius: $bdr;
       background: inherit;
       border:1px solid rgba(0,0,0,.5);
       color: inherit;
@@ -956,7 +965,7 @@ body:not(.button-wrapping) a.button {
       border: 1px solid #999;
       height: 20px;
       width: 20px;
-      border-radius: 3px;
+      border-radius: $bdr;
       background: #ffffff;
       cursor: pointer;
       margin-top: -8px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
@@ -1063,7 +1072,7 @@ body:not(.button-wrapping) a.button {
   }
   .col-special {
     flex-shrink: 0;
-    border-radius: 4px;
+    border-radius: $bdr;
     overflow: hidden;
   }
 
@@ -1072,7 +1081,7 @@ body:not(.button-wrapping) a.button {
   }
 
   .photo {
-    border-radius: 4px;
+    border-radius: $bdr;
     overflow: hidden;
 
     &.border {
@@ -1100,7 +1109,7 @@ body:not(.button-wrapping) a.button {
       width: 20%;
       padding: 0 25px;
       border: 1px solid #ccc;
-      border-radius: 4px;
+      border-radius: $bdr;
 
       &.blk {
         border: 0;

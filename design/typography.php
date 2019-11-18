@@ -51,9 +51,9 @@
     <div class="tab" id="type-examples" data-ttl="Type Examples">
       <div class="tab-inner">
         <ul class="optionWrap animate">
-          <li><img src="<?php print $dir; ?>images/typography/type-ex-1.png" alt="" /></li>
-          <li><img src="<?php print $dir; ?>images/typography/type-ex-2.png" alt="" /></li>
-          <li><img src="<?php print $dir; ?>images/typography/type-ex-3.png" alt="" /></li>
+          <li><img class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-1.png" alt="" /></li>
+          <li><img class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-2.png" alt="" /></li>
+          <li><img class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-3.png" alt="" /></li>
         </ul>
       </div>
     </div><!-- /.section -->

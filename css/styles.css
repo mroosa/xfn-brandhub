@@ -265,6 +265,23 @@ main {
   main .inner {
     display: flex; }
 
+p.download a {
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+  font-size: 0.875rem;
+  display: flex; }
+  p.download a span {
+    padding: 0 5px; }
+  p.download a svg {
+    height: 18px; }
+  p.download a:hover {
+    text-decoration: underline;
+    color: #999; }
+    p.download a:hover svg,
+    p.download a:hover svg * {
+      stroke: #999; }
+
 .two-col #subnav {
   width: 20%;
   padding: 0 3% 30px 3%; }
@@ -409,7 +426,8 @@ section.with-tabs .tab {
   section.with-tabs .tab img {
     display: block;
     margin: 0 auto;
-    max-width: 90%; }
+    max-width: 90%;
+    width: 90%; }
   section.with-tabs .tab .tab-inner {
     position: relative;
     width: 100%; }
@@ -427,7 +445,9 @@ section.with-tabs .tab {
     left: 0;
     top: 0;
     width: 100%;
-    display: block; }
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   section.with-tabs .tab .optionNav {
     display: flex;
     justify-content: center;

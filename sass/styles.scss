@@ -111,6 +111,34 @@ main {
   }
 }
 
+p.download {
+  a {
+    text-decoration: none;
+    color: #333;
+    @include font-size(14px);
+    display: flex;
+
+    span {
+      padding: 0 5px;
+    }
+
+    svg {
+      height: 18px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+      color: #999;
+
+      svg,
+      svg * {
+        stroke: #999;
+      }
+    }
+  }
+}
+
+
 .two-col {
   #subnav {
     width: 20%;
@@ -313,6 +341,7 @@ section {
         display: block;
         margin: 0 auto;
         max-width: 90%;
+        width: 90%;
       }
 
       .tab-inner {
@@ -339,7 +368,9 @@ section {
           left: 0;
           top: 0;
           width: 100%;
-          display: block;
+          display: flex;
+          justify-content: center;
+          align-items: center;
         }
       }
 

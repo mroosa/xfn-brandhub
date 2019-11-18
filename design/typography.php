@@ -1,6 +1,7 @@
 <div class="col-1">
   <h1>Typography</h1>
-  <p class="intro">Xfinity Brown is our primary and most expressive typeface. It should be used for headlines, short-form body copy, and other elements deserving emphasis, like subheads and calls to action.</p>
+  <p>Xfinity Brown is our primary and most expressive typeface. It should be used for headlines, short-form body copy, and other elements deserving emphasis, like subheads and calls to action.</p>
+  <p class="download"><a href="#">Download Typefaces</a></p>
 </div>
 <div class="col-2" data-active="0">
   <div class="tabs-wrapper">
@@ -50,10 +51,9 @@
     <div class="tab" id="type-examples" data-ttl="Type Examples">
       <div class="tab-inner">
         <ul class="optionWrap animate">
-          <li><img src="<?php print $dir; ?>images/typography/04-1.png" alt="Package Deals: Package deals are set in all caps Xfinity Brown Bold -20 kerning." /></li>
-          <li><img src="<?php print $dir; ?>images/typography/04-2.png" alt="Price Point: Dollar and cents are set in Xfinity Brown Bold at 50% of the main pricing numbers with manually adjusted kerning." /></li>
-          <li><img src="<?php print $dir; ?>images/typography/04-3.png" alt="Voice Commands: Voice commands are set in Xfinity Brown Bold, white or black." /></li>
-          <li><img src="<?php print $dir; ?>images/typography/04-4.png" alt="CTA: Calls to action are set in Xfinity Brown Regular. The phone number and URL are set in Xfinity Brown Bold, using sentence case." /></li>
+          <li><img src="<?php print $dir; ?>images/typography/type-ex-1.png" alt="" /></li>
+          <li><img src="<?php print $dir; ?>images/typography/type-ex-2.png" alt="" /></li>
+          <li><img src="<?php print $dir; ?>images/typography/type-ex-3.png" alt="" /></li>
         </ul>
       </div>
     </div><!-- /.section -->

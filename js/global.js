@@ -196,11 +196,6 @@ $(document).ready(function() {
       fontWrap.find("blockquote").css({"font-weight":wtAry[wt]});
       $(this).siblings(".weights").find("li.active").removeClass("active");
       $(this).siblings(".weights").find("li[data-weight=" + wtAry[wt] + "]").addClass("active");
-      // if ($(this).attr("data-font")=="font-xfs") {
-      //   $(this).attr("title",stdWts[wt]);
-      // } else if ($(this).attr("data-font")=="font-xfb") {
-      //   $(this).attr("title",brownWts[wt]);
-      // }
     });
   });
 
@@ -273,6 +268,15 @@ $(document).ready(function() {
 
   // typography
 
+
+  $(".col-1 .tab-nav").each(function(index) {
+    console.log(index);
+    var maxWd = 0;
+    $(this).find("li").each(function() {
+      maxWd = ($(this).outerWidth() > maxWd) ? $(this).outerWidth() : maxWd;
+      console.log(maxWd);
+    });
+  });
   /* Temp */
   // $("html").addClass("hide");
   // $("#skip").click(function() {
@@ -296,6 +300,8 @@ $(document).ready(function() {
   // lsdkjflskjdfljksID = setTimeout(function() {
   //   removeMask();
   // }, 31000);
+  $(".download a").wrapInner("<span>");
+  $(".download a").prepend('<svg width="21.707" height="26.5" viewBox="0 0 21.707 26.5"><g id="btn-download" data-name="btn-download" transform="translate(-904.5 -988.5)"><path d="M0,7.825,7.824,0l7.825,7.825" transform="translate(922.993 1007.081) rotate(180)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><line y1="15.978" transform="translate(915.087 989.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/><line x2="19.707" transform="translate(905.5 1014)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/></g></svg>');
 
   // Wrap buttons
   $("body").addClass("button-wrapping");

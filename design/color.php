@@ -3,7 +3,7 @@
   <p>Xfinity embraces a neutral color palette, which allows our products and photography to shine.</li>
   <p>To stay true to our roots, we’ll occasionally use a pop of red to show our personality and highlight important information.</li>
   <p>Action blue is used exclusively for calls-to-action in digital experiences.</li>
-  <p class="download"><a href="#">Download Color Palette</a></p>
+  <p class="download"><a href="#downloads">Download Color Palette</a></p>
 </div>
 <div class="col-2">
   <div class="color-swatches">

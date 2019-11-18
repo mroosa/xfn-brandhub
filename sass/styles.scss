@@ -111,7 +111,8 @@ main {
   }
 }
 
-p.download {
+.content p.download {
+  margin: 0 0 30px 0;
   a {
     text-decoration: none;
     color: #333;
@@ -588,7 +589,7 @@ body:not(.button-wrapping) a.button {
         margin: 0;
         @include bp-min($lrg) {
           display: inline-block;
-          min-width: 45%;
+          min-width: 175px;
           margin: 0 2% 0 0;
         }
 
@@ -1036,6 +1037,10 @@ body:not(.button-wrapping) a.button {
   max-width: 636px;
 
   img {
+    display: block;
+  }
+
+  .tab-nav li:nth-of-type(2n) {
     display: block;
   }
 

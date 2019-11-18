@@ -141,7 +141,7 @@ function createOptions(parent) {
         var optionTtl = ($(this).attr("data-alt") != undefined) ? "Show " + $(this).attr("data-alt") : "";
         $(this).attr("data-id",opt);
         var optNavClass = (opt==0) ? ' class="active"': '';
-        optionNav.append('<li><a' + optNavClass + ' data-id="' + opt + '" href="#" title="' + optionTtl + '"><span class="ah">' + optionTtl + '</span></a></li>');
+        optionNav.append('<li><a' + optNavClass + ' data-id="' + opt + '" href="#"><span class="ah">' + optionTtl + '</span></a></li>');
       });
     optionNav.find("a").click(function() {
       setOption($(this).attr("data-id"), parent);
@@ -216,7 +216,7 @@ $(document).ready(function() {
       // Get tab title
           tabTtl = $(this).attr("data-ttl"),
           linkClass = (index==0) ? " active" : "";
-      tabNavContents += '<a class="button ignore-click set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a>';
+      tabNavContents += '<li><a class="button ignore-click set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a></li>';
       $(this)
         .attr({"data-id":index})
         .css({"width":100 / numTabs + "%" });
@@ -269,14 +269,6 @@ $(document).ready(function() {
   // typography
 
 
-  $(".col-1 .tab-nav").each(function(index) {
-    console.log(index);
-    var maxWd = 0;
-    $(this).find("li").each(function() {
-      maxWd = ($(this).outerWidth() > maxWd) ? $(this).outerWidth() : maxWd;
-      console.log(maxWd);
-    });
-  });
   /* Temp */
   // $("html").addClass("hide");
   // $("#skip").click(function() {
@@ -306,5 +298,15 @@ $(document).ready(function() {
   // Wrap buttons
   $("body").addClass("button-wrapping");
   $(".button").wrapInner("<span>");
+
+  // Get buttons to the same length
+  // $(".col-1 .tab-nav").each(function() {
+  //   let maxWd = 0;
+  //   $(this).find("li").each(function() {
+  //     maxWd = ($(this).find("a").innerWidth() > maxWd) ? $(this).find("a").innerWidth() : maxWd;
+  //   });
+  //   console.log($(this).find("li a"));
+  //   $(this).find("li a").width(maxWd);
+  // });
 
 });

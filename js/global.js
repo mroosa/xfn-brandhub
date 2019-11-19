@@ -228,7 +228,7 @@ $(document).ready(function() {
     thisSec.find(".set-tab").click(function() {
       var newTab = $(this).attr("data-id");
       tabGo(newTab, theTabs);
-      $(this).siblings(".active").removeClass("active");
+      $(this).parents(".tab-nav").find(".active").removeClass("active");
       $(this).addClass("active");
       return false;
     });

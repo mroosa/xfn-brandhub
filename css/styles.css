@@ -1074,7 +1074,8 @@ body:not(.button-wrapping) a.button {
 
 /* Downloads */
 #downloads {
-  display: block; }
+  display: block;
+  padding-top: 15vh; }
   #downloads .button {
     min-width: 150px; }
   #downloads section {

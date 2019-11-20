@@ -1,7 +1,7 @@
 <div class="col-1">
   <h1>Photography</h1>
   <p>Our photography reinforces our design principles, showcasing simple, focused and unique imagery with unexpected perspectives. Our photography captures authentic moments and employs a clean color palette with occasional pops of color. All photography is naturally lit and unfiltered.</p>
-  <p class="download"><a href="#downloads">Download Photography Library</a></p>
+  <p class="explore"><a href="https://www.google.com" target="_blank">Explore Photography Library</a></p>
   <ul class="tab-nav">
     <li><a class="button ignore-click" href="#photography-lifestyle">Lifestyle</a></li>
     <li><a class="button ignore-click" href="#photography-xfn-devices">Xfinity Hardware</a></li>

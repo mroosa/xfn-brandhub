@@ -322,8 +322,9 @@ $(document).ready(function() {
   // lsdkjflskjdfljksID = setTimeout(function() {
   //   removeMask();
   // }, 31000);
-  $(".download a").wrapInner("<span>");
+  $(".download a, .explore a").wrapInner("<span>");
   $(".download a").prepend('<svg width="21.707" height="26.5" viewBox="0 0 21.707 26.5"><g id="btn-download" data-name="btn-download" transform="translate(-904.5 -988.5)"><path d="M0,7.825,7.824,0l7.825,7.825" transform="translate(922.993 1007.081) rotate(180)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"/><line y1="15.978" transform="translate(915.087 989.5)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/><line x2="19.707" transform="translate(905.5 1014)" fill="none" stroke="#000" stroke-linecap="round" stroke-width="2"/></g></svg>');
+  $(".explore a").prepend('<svg x="0px" y="0px" viewBox="0 0 27 25" style="enable-background:new 0 0 27 25;" xml:space="preserve"><path fill="none" stroke="#000" class="st0" d="M14.5,1.4l11.1,0l0,11.1"/><line fill="none" stroke="#000" class="st1" x1="24.5" y1="2.6" x2="13.2" y2="13.9"/><path fill="none" stroke="#000" class="st1" d="M21.6,9.2c0.2,1.5,0.1,3.4,0.1,5.3v0c0,5.3,0.7,9.6-4.6,9.6H5.3c-5.3,0-4.6-4.3-4.6-9.6v0C0.8,9.3,0.1,5,5.3,5 h11.7c0.4,0,0.8,0,1.1,0.1"/></svg>');
 
   // Wrap buttons
   $("body").addClass("button-wrapping");

@@ -1,7 +1,7 @@
 
 <div class="col-1">
   <h1>Brand Symbol</h1>
-  <p>Our brand symbol X is our most distinctive feature of our identity. It’s used to signal our brand and celebrate our brand vision. It’s important to build meaning into our X over time through consistent, strategic execution, both internally and externally.</p>
+  <p>The X brand symbol is the most distinct feature of our identity. It acts as a signal of our brand, and is to be used strategically and consistently for the greatest impact. The ultimate goal is to reinforce that the X brand symbol represents Xfinity.</p>
   <p class="download"><a href="#downloads">Download Brand Symbol</a></p>
 </div>
 <div class="col-2">
@@ -27,7 +27,7 @@
           <li><a href="<?php print $dir; ?>images/brand-symbol/03-01.png"><img src="<?php print $dir; ?>images/brand-symbol/03-01t.png" alt="" /></a></li>
           <li><a href="<?php print $dir; ?>images/brand-symbol/03-02.png"><img src="<?php print $dir; ?>images/brand-symbol/03-02t.png" alt="" /></a></li>
           <li><a href="<?php print $dir; ?>images/brand-symbol/03-03.png"><img src="<?php print $dir; ?>images/brand-symbol/03-03t.png" alt="" /></a></li>
-          <li class="text"><a href="#"><h3>Functional</h3><p>Our X can be used as a shorthand for Xfinity in environments where the brand has already been established. It acts as a great compliments to other brand elements to help with pacing in experiential activations. The ultimate goal is to reinforce that X = Xfinity.</p></a></li>
+          <li class="text"><a href="#"><h3>Functional</h3><p>Our X can be used as a shorthand for Xfinity in environments where the brand has already been established. It compliments other brand elements in experiential activations.</p></a></li>
         </ul>
       </div>
     </div>

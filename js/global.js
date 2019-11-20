@@ -282,15 +282,7 @@ $(document).ready(function() {
 
   // typography
 
-  // Brand Symbol
-  // var quadWd = $(".quadWrap li").width();
-  // $(".quadWrap li")
-  //   .css({
-  //     "height": quadWd
-  //   });
-
   let closeSVG = '<svg width="15" height="15" viewBox="0 0 27.502 27.502"> <g transform="translate(-1725.504 -76.49)"> <path d="M-1916.082-22342.422l24.674-24.674" transform="translate(3643 22445)" fill="none" stroke="#000" stroke-width="4"/> <path d="M-1916.082-22342.422l24.674-24.674" transform="translate(-20615.504 1993.986) rotate(90)" fill="none" stroke="#000" stroke-width="4"/> </g> </svg>';
-
 
   $(".quadWrap").parent().append('<div class="lightbox-shade"><div class="lightbox"><div class="lightbox-content"></div><a class="close" href="#">' + closeSVG + '<span class="ah">Close preview</span></a></div></div>');
   $(".lightbox .close").click(function() {
@@ -300,7 +292,7 @@ $(document).ready(function() {
   $(".quadWrap li.text").append('<div class="fade"></div><a class="expand" href="#">' + closeSVG + '<span class="ah">Expand content</span></a>');
   $(".quadWrap li a:not(.expand)").each(function(n) {
     $(this).click(function() {
-      var popCon = ($(this).parents("li").hasClass("text")) ? $(this).html() : $(this).attr("href");
+      let popCon = ($(this).parents("li").hasClass("text")) ? $(this).html() : $(this).attr("href");
       popOut(popCon, $(this).parents("li").hasClass("text"), $(this).parents(".tab"));
       return false;
     });
@@ -336,15 +328,5 @@ $(document).ready(function() {
   // Wrap buttons
   $("body").addClass("button-wrapping");
   $(".button").wrapInner("<span>");
-
-  // Get buttons to the same length
-  // $(".col-1 .tab-nav").each(function() {
-  //   let maxWd = 0;
-  //   $(this).find("li").each(function() {
-  //     maxWd = ($(this).find("a").innerWidth() > maxWd) ? $(this).find("a").innerWidth() : maxWd;
-  //   });
-  //   console.log($(this).find("li a"));
-  //   $(this).find("li a").width(maxWd);
-  // });
 
 });

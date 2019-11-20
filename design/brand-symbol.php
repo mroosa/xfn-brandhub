@@ -9,7 +9,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" data-ttl="Brand Symbol" data-bg="white">
+    <div class="tab" data-ttl="The Xfinity X" data-bg="white">
       <div class="tab-inner">
         <ul class="optionWrap">
           <li data-alt="black brand symbol" data-bg="white" title="Our brand symbol X is available in black for light backgrounds.">
@@ -23,11 +23,15 @@
     <!-- tab -->
     <div class="tab" data-ttl="Functional" data-bg="white">
       <div class="tab-inner">
+        <div class="info">
+          <h3>Functional</h3>
+          <p>Our X can be used as a shorthand for Xfinity in environments where the brand has already been established. It complements other brand elements in experiential activations.</p>
+        </div>
         <ul class="quadWrap">
           <li><a href="<?php print $dir; ?>images/brand-symbol/03-01.png"><img src="<?php print $dir; ?>images/brand-symbol/03-01t.png" alt="" /></a></li>
           <li><a href="<?php print $dir; ?>images/brand-symbol/03-02.png"><img src="<?php print $dir; ?>images/brand-symbol/03-02t.png" alt="" /></a></li>
           <li><a href="<?php print $dir; ?>images/brand-symbol/03-03.png"><img src="<?php print $dir; ?>images/brand-symbol/03-03t.png" alt="" /></a></li>
-          <li class="text"><a href="#"><h3>Functional</h3><p>Our X can be used as a shorthand for Xfinity in environments where the brand has already been established. It compliments other brand elements in experiential activations.</p></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/03-04.png"><img src="<?php print $dir; ?>images/brand-symbol/03-04t.png" alt="" /></a></li>
         </ul>
       </div>
     </div>
@@ -35,11 +39,15 @@
     <!-- tab -->
     <div class="tab" data-ttl="Expressive" data-bg="white">
       <div class="tab-inner">
+        <div class="info">
+          <h3>Expressive</h3>
+          <p>Our X can also be used as a storytelling device to celebrate our passions and products. We use our brand symbol to tell stories around our unique perspective on a topic, event, or partnership.</p>
+        </div>
         <ul class="quadWrap">
           <li><a href="<?php print $dir; ?>images/brand-symbol/04-01.png"><img src="<?php print $dir; ?>images/brand-symbol/04-01t.png" alt="" /></a></li>
           <li><a href="<?php print $dir; ?>images/brand-symbol/04-02.png"><img src="<?php print $dir; ?>images/brand-symbol/04-02t.png" alt="" /></a></li>
           <li><a href="<?php print $dir; ?>images/brand-symbol/04-03.png"><img src="<?php print $dir; ?>images/brand-symbol/04-03t.png" alt="" /></a></li>
-          <li class="text"><a href="#"><h3>Expressive</h3><p>Our X can also be used as a storytelling device to celebrate our passions and products. We use our brand symbol to tell stories around our unique perspective on a topic, event, or partnership.</p></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/04-04.png"><img src="<?php print $dir; ?>images/brand-symbol/04-04t.png" alt="" /></a></li>
         </ul>
       </div>
     </div>

@@ -296,7 +296,7 @@ main {
       .content p.explore a:hover svg *,
       .content p.download a:hover svg,
       .content p.download a:hover svg * {
-        stroke: #999; }
+        fill: #999; }
 
 .two-col .sidebar {
   width: 200px; }
@@ -490,7 +490,7 @@ section .optionWrap {
 
 body.button-wrapping .button span,
 body:not(.button-wrapping) a.button {
-  padding: 10px 25px;
+  padding: 10px 15px;
   border: 1px solid #000;
   background: #000;
   color: #fff;
@@ -1065,6 +1065,19 @@ body:not(.button-wrapping) a.button {
         background: transparent; }
 
 /* Brand Symbol */
+.tab .info {
+  padding: 10px; }
+  .tab .info h3 {
+    font-size: 20px;
+    font-size: 1.25rem; }
+  .tab .info p {
+    font-size: 14px;
+    font-size: 0.875rem; }
+    @media (min-width: 1200px) {
+      .tab .info p {
+        font-size: 18px;
+        font-size: 1.125rem; } }
+
 .tab .lightbox-shade {
   height: 100%;
   width: 100%;
@@ -1126,6 +1139,7 @@ body:not(.button-wrapping) a.button {
   flex-wrap: wrap; }
   .tab .quadWrap li {
     flex-basis: calc(50% - 40px);
+    flex-grow: 1;
     margin: 10px;
     overflow: hidden;
     position: relative;
@@ -1135,16 +1149,6 @@ body:not(.button-wrapping) a.button {
       content: '';
       float: left;
       padding-top: 100%; }
-    .tab .quadWrap li h3 {
-      font-size: 20px;
-      font-size: 1.25rem; }
-    .tab .quadWrap li p {
-      font-size: 14px;
-      font-size: 0.875rem; }
-      @media (min-width: 1200px) {
-        .tab .quadWrap li p {
-          font-size: 18px;
-          font-size: 1.125rem; } }
     .tab .quadWrap li a {
       display: block;
       text-decoration: none;
@@ -1300,13 +1304,13 @@ body[data-bg=black] {
     color: #ccc; }
     body[data-bg=drk-gry] .content p.download a svg *,
     body[data-bg=black] .content p.download a svg * {
-      stroke: #ccc; }
+      fill: #ccc; }
     body[data-bg=drk-gry] .content p.download a:hover,
     body[data-bg=black] .content p.download a:hover {
       color: #999; }
       body[data-bg=drk-gry] .content p.download a:hover svg *,
       body[data-bg=black] .content p.download a:hover svg * {
-        stroke: #999; }
+        fill: #999; }
   body[data-bg=drk-gry].button-wrapping .download-intro .button span,
   body[data-bg=black].button-wrapping .download-intro .button span {
     border-color: #000;

@@ -143,7 +143,7 @@ main {
 
       svg,
       svg * {
-        stroke: #999;
+        fill: #999;
       }
     }
   }
@@ -429,7 +429,7 @@ section {
 }
 body.button-wrapping .button span,
 body:not(.button-wrapping) a.button {
-  padding: 10px 25px;
+  padding: 10px 15px;
   border: 1px solid #000;
   background: #000;
   color: #fff;
@@ -1126,6 +1126,19 @@ body:not(.button-wrapping) a.button {
 
 /* Brand Symbol */
 .tab {
+
+  .info {
+    padding: 10px;
+    h3 {
+      @include font-size(20px);
+    }
+    p {
+      @include font-size(14px);
+      @include bp-min($xlg) {
+        @include font-size(18px);
+      }
+    }
+  }
   .lightbox-shade {
     height: 100%;
     width: 100%;
@@ -1203,6 +1216,7 @@ body:not(.button-wrapping) a.button {
 
     li {
       flex-basis: calc(50% - 40px);
+      flex-grow: 1;
       margin: 10px;
       overflow: hidden;
       position: relative;
@@ -1215,15 +1229,6 @@ body:not(.button-wrapping) a.button {
         padding-top: 100%;
       }
 
-      h3 {
-        @include font-size(20px);
-      }
-      p {
-        @include font-size(14px);
-        @include bp-min($xlg) {
-          @include font-size(18px);
-        }
-      }
       a {
         display: block;
         text-decoration: none;
@@ -1409,13 +1414,13 @@ body[data-bg=black] {
   .content p.download a {
     color: #ccc;
     svg * {
-      stroke: #ccc;
+      fill: #ccc;
     }
 
     &:hover {
       color: #999;
       svg * {
-        stroke: #999;
+        fill: #999;
       }
     }
   }

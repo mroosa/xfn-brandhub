@@ -1153,7 +1153,7 @@ body:not(.button-wrapping) a.button {
         display: block;
         position: absolute;
         top: -5px;
-        right: 0;
+        right: -5px;
         text-align: right;
         pointer-events: none; }
         .tab .quadWrap li.text .expand svg {

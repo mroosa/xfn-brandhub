@@ -21,8 +21,8 @@
     <!-- tab -->
     <div class="tab" data-ttl="Limited Use" data-bg="white">
       <div class="tab-inner">
-        <ul class="optionWrap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
-          <li data-alt="limited use logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
+        <ul class="optionWrap" title="The red Xfinity logo is reserved for high impact use in environmental applications.">
+          <li data-alt="limited use logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/03.svg" alt="" /></li>
         </ul>
       </div>
     </div>

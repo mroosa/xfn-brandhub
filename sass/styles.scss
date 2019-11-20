@@ -1245,7 +1245,8 @@ body:not(.button-wrapping) a.button {
           display: block;
           position: absolute;
           top: -5px;
-          left: 80%;
+          right: 0;
+          text-align: right;
           pointer-events: none;
 
           svg {

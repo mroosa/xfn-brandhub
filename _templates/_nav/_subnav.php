@@ -1,10 +1,11 @@
 <?php
 $subLinkAry = [
-	new NavLink('#brand-story','Our Brand', null),
+#	new NavLink('#brand-story','Our Brand', null),
 	new NavLink('#logo','Logo', null),
 	new NavLink('#color','Color', null),
   new NavLink('#typography','Typography', null),
-  new NavLink('#photography','Photography', null),
+	new NavLink('#photography','Photography', null),
+	new NavLink('#brand-symbol','Brand Symbol', null),
 #	new NavLink('#secondary-graphics','Secondary Graphics', null),
 # new NavLink('#design-system','Design System', null),
 #	new NavLink('#co-branding','Co-Branding', null),

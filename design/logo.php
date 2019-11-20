@@ -12,8 +12,8 @@
     <div class="tab" data-ttl="Primary Use" data-bg="white">
       <div class="tab-inner">
         <ul class="optionWrap" title="Use the black or white version of the Xfinity logo for Xfinity communications and product experiences.">
-          <li data-alt="black logo" data-bg="white"><img src="../images/logo/01.svg" alt="" /></li>
-          <li data-alt="white logo" data-bg="black"><img src="../images/logo/02.svg" alt="" /></li>
+          <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/01.svg" alt="" /></li>
+          <li data-alt="white logo" data-bg="black"><img src="<?php print $dir; ?>images/logo/02.svg" alt="" /></li>
         </ul>
       </div>
     </div>
@@ -22,8 +22,8 @@
     <div class="tab" data-ttl="Future of Awesome" data-bg="white">
       <div class="tab-inner">
         <ul class="optionWrap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
-          <li data-alt="black logo" data-bg="white"><img src="../images/logo/04.svg" alt="" /></li>
-          <li data-alt="white logo" data-bg="black"><img src="../images/logo/05.svg" alt="" /></li>
+          <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
+          <li data-alt="white logo" data-bg="black"><img src="<?php print $dir; ?>images/logo/05.svg" alt="" /></li>
         </ul>
       </div>
     </div>
@@ -32,8 +32,8 @@
     <div class="tab" data-ttl="Logo in Motion" style="background: #1e1e1e;" data-bg="drk-gry">
       <div class="tab-inner">
         <video muted nocontrols autoplay loop style="max-width: 100%;" title="Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a black background ensures optimal legibility, consistency and impact. It is available in English and Spanish.">
-          <source src="../video/xfn-endcard-sq-5s.mp4" type="video/mp4">
-          <img src="../images/x.svg" alt="" />
+          <source src="<?php print $dir; ?>video/xfn-endcard-sq-5s.mp4" type="video/mp4">
+          <img src="<?php print $dir; ?>images/x.svg" alt="" />
         </video>
       </div>
     </div>

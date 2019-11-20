@@ -291,15 +291,14 @@ main {
       .content p.download a:hover svg * {
         stroke: #999; }
 
-.two-col #subnav {
-  width: 20%;
-  padding: 0 3% 30px 3%; }
-  @media (min-width: 1200px) {
-    .two-col #subnav {
-      padding: 0 1.5% 30px 1.5%;
-      width: 200px; } }
-  .two-col #subnav .logo {
+.two-col .sidebar {
+  width: 200px; }
+  .two-col .sidebar .logo {
     padding: 30px 100px 10px 0; }
+  .two-col .sidebar #subnav {
+    position: fixed;
+    width: 200px;
+    padding: 0 1.5% 30px 1.5%; }
 
 .two-col .content {
   width: 80%; }
@@ -320,68 +319,68 @@ main {
     margin: 20px; } }
 
 @media (max-width: 768px) {
-  .two-col #subnav {
+  .two-col .sidebar {
     padding: 30px 2.5% 30px 2.5%; } }
 
 @media (max-width: 550px) {
   .two-col main > .inner {
     display: block; }
   .two-col .content,
-  .two-col #subnav {
+  .two-col .sidebar {
     width: 100%;
     margin: 0; }
   .two-col .content {
     padding: 20px; } }
 
-/* Subnav */
-#subnav {
+/* Sidebar */
+.sidebar {
   background: #5a5a5c;
   color: #fff; }
-  #subnav.wht {
+  .sidebar.wht {
     background: #fff;
     color: #000; }
-    #subnav.wht ul li a {
+    .sidebar.wht ul li a {
       color: #000; }
-      #subnav.wht ul li a:hover {
+      .sidebar.wht ul li a:hover {
         background: #5a5a5c;
         color: #fff; }
-    #subnav.wht .logo svg {
+    .sidebar.wht .logo svg {
       fill: #000; }
-  #subnav.black {
+  .sidebar.black {
     background: #000; }
-  #subnav .nav {
+  .sidebar .nav {
     padding-top: 25px; }
-  #subnav .logo svg {
+  .sidebar .logo svg {
     fill: #fff; }
-  #subnav ul {
+  .sidebar ul {
     list-style: none;
     margin: 0;
     padding: 5px 0; }
-    #subnav ul li {
+    .sidebar ul li {
       margin: 0;
       padding: 5px 0;
       font-size: 14px;
       font-size: 0.875rem;
       font-weight: 100; }
-      #subnav ul li .menu {
+      .sidebar ul li .menu {
         padding: 0; }
-      #subnav ul li a {
+      .sidebar ul li a {
         display: block;
         margin: 0 -10px;
         padding: 5px 10px;
         text-decoration: none;
         color: #fff;
         border-radius: 4px; }
-        #subnav ul li a:hover {
+        .sidebar ul li a:hover {
           background: #fff;
           color: #000; }
-      #subnav ul li.active > a {
+      .sidebar ul li.active > a {
         font-weight: bold; }
-      #subnav ul li li {
+      .sidebar ul li li {
         font-size: 13px;
         font-size: 0.8125rem;
         padding: 0; }
-        #subnav ul li li a {
+        .sidebar ul li li a {
           padding: 6px 10px 6px 25px; }
 
 @media (max-width: 768px) {
@@ -389,7 +388,7 @@ main {
     display: none; } }
 
 @media (max-width: 550px) {
-  .two-col #subnav {
+  .two-col .sidebar {
     background: #666;
     color: #fff;
     padding: 0; }
@@ -408,16 +407,6 @@ main {
     border-right: 1px solid #999; }
   #subnav ul li.active > a {
     text-decoration: underline; } }
-
-@media (min-width: 551px) {
-  #subnav .sticky {
-    position: fixed;
-    top: 0;
-    z-index: 2;
-    width: 14%; } }
-  @media (min-width: 551px) and (min-width: 1200px) {
-    #subnav .sticky {
-      width: calc(200px - 3%); } }
 
 /* Content Area */
 section.with-tabs .tabs-wrapper {
@@ -885,7 +874,7 @@ body:not(.button-wrapping) a.button {
       font-weight: 800;
       transition: .25s; }
       #typography .slider .weights li:not(.active) {
-        opacity: 0; }
+        opacity: .10; }
 
 #typography .weight {
   -webkit-appearance: none;
@@ -1068,9 +1057,113 @@ body:not(.button-wrapping) a.button {
       .mosaic .photo-info-wrap .photo-info#photography-null {
         background: transparent; }
 
-/*Voice & Messaging*/
-.voice h2 {
-  margin-top: -5px; }
+/* Brand Symbol */
+.tab .lightbox-shade {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: rgba(255, 255, 255, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: .25s opacity;
+  pointer-events: none; }
+  .tab .lightbox-shade.active {
+    opacity: 1;
+    pointer-events: auto; }
+  .tab .lightbox-shade .lightbox {
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+    background: #fff;
+    width: 75%;
+    z-index: 1; }
+    .tab .lightbox-shade .lightbox.text {
+      padding: 10px 30px; }
+    .tab .lightbox-shade .lightbox img {
+      display: block;
+      max-width: 100%;
+      width: 100%; }
+    .tab .lightbox-shade .lightbox .close {
+      position: absolute;
+      z-index: 2;
+      right: 0;
+      top: 0;
+      transform: translate(40%, -40%);
+      height: 40px;
+      width: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #ededed;
+      border-radius: 50%;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+      transition: .25s background-color; }
+      .tab .lightbox-shade .lightbox .close svg path {
+        transition: stroke .25s; }
+      .tab .lightbox-shade .lightbox .close:hover {
+        background-color: #ccc; }
+        .tab .lightbox-shade .lightbox .close:hover svg path {
+          stroke: #fff; }
+
+.tab .quadWrap {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; }
+  .tab .quadWrap li {
+    flex-basis: calc(50% - 40px);
+    margin: 10px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4px;
+    border: 1px solid #ccc; }
+    .tab .quadWrap li:before {
+      content: '';
+      float: left;
+      padding-top: 100%; }
+    .tab .quadWrap li h3 {
+      font-size: 20px;
+      font-size: 1.25rem; }
+    .tab .quadWrap li p {
+      font-size: 14px;
+      font-size: 0.875rem; }
+    .tab .quadWrap li a {
+      display: block;
+      text-decoration: none;
+      color: #000; }
+    .tab .quadWrap li img {
+      display: block;
+      max-width: 100%;
+      width: 100%; }
+    .tab .quadWrap li.text {
+      padding: 10px; }
+      .tab .quadWrap li.text a {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding: 10px; }
+      .tab .quadWrap li.text .expand {
+        display: block;
+        position: absolute;
+        top: -5px;
+        left: 80%;
+        pointer-events: none; }
+        .tab .quadWrap li.text .expand svg {
+          transform: scale(0.5) rotate(45deg); }
+    .tab .quadWrap li .fade {
+      height: 25%;
+      width: 100%;
+      background: linear-gradient(0deg, white, transparent);
+      position: absolute;
+      bottom: 0;
+      left: 0; }
 
 /* Downloads */
 #downloads {
@@ -1084,8 +1177,11 @@ body:not(.button-wrapping) a.button {
     padding: 40px 0;
     border-bottom: 1px solid #ccc; }
     #downloads section .download-intro {
-      padding: 20px 0;
-      display: flex; }
+      padding: 20px;
+      background: #fff;
+      border-radius: 4px;
+      display: flex;
+      align-items: center; }
       #downloads section .download-intro .flex-col {
         width: 50%; }
       #downloads section .download-intro .flex-col-1 {
@@ -1162,18 +1258,18 @@ body[data-bg=black] {
   body[data-bg=drk-gry] .optionNav a.active,
   body[data-bg=black] .optionNav a.active {
     background: #fff !important; }
-  body[data-bg=drk-gry] #subnav,
-  body[data-bg=black] #subnav {
+  body[data-bg=drk-gry] .sidebar,
+  body[data-bg=black] .sidebar {
     background: #fff;
     color: #000; }
-    body[data-bg=drk-gry] #subnav .logo svg,
-    body[data-bg=black] #subnav .logo svg {
+    body[data-bg=drk-gry] .sidebar .logo svg,
+    body[data-bg=black] .sidebar .logo svg {
       fill: #000; }
-    body[data-bg=drk-gry] #subnav a,
-    body[data-bg=black] #subnav a {
+    body[data-bg=drk-gry] .sidebar a,
+    body[data-bg=black] .sidebar a {
       color: #000; }
-      body[data-bg=drk-gry] #subnav a:hover,
-      body[data-bg=black] #subnav a:hover {
+      body[data-bg=drk-gry] .sidebar a:hover,
+      body[data-bg=black] .sidebar a:hover {
         color: #fff;
         background: #000; }
   body[data-bg=drk-gry] #typography blockquote,
@@ -1198,6 +1294,21 @@ body[data-bg=black] {
       body[data-bg=drk-gry] .content p.download a:hover svg *,
       body[data-bg=black] .content p.download a:hover svg * {
         stroke: #999; }
+  body[data-bg=drk-gry].button-wrapping .download-intro .button span,
+  body[data-bg=black].button-wrapping .download-intro .button span {
+    border-color: #000;
+    background: #000;
+    color: #fff; }
+  body[data-bg=drk-gry].button-wrapping .download-intro .button.active span, body[data-bg=drk-gry].button-wrapping .download-intro .button:hover span,
+  body[data-bg=black].button-wrapping .download-intro .button.active span,
+  body[data-bg=black].button-wrapping .download-intro .button:hover span {
+    background: #fff;
+    color: #000; }
+  body[data-bg=drk-gry]:not(.button-wrapping) .download-intro .button.active, body[data-bg=drk-gry]:not(.button-wrapping) .download-intro .button:hover,
+  body[data-bg=black]:not(.button-wrapping) .download-intro .button.active,
+  body[data-bg=black]:not(.button-wrapping) .download-intro .button:hover {
+    background: #fff;
+    color: #000; }
 
 body[data-bg=drk-gry] {
   background: #1e1e1e; }

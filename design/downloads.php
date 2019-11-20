@@ -8,7 +8,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
             <div class="download-contents">
@@ -40,7 +40,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
             <div class="download-contents">
@@ -65,7 +65,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -77,7 +77,7 @@
                 <img src="<?php print $dir; ?>images/downloads/color-intro.png" alt="" />
               </div>
               <div class="flex-col flex-col-2">
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -90,7 +90,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -103,7 +103,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -116,7 +116,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -129,7 +129,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -142,7 +142,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -155,7 +155,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -168,7 +168,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->
@@ -181,7 +181,7 @@
               </div>
               <div class="flex-col flex-col-2">
                 <!-- <a class="button" data-action="view" href="#">Choose Items</a> -->
-                <a class="button" href="#">Download All</a>
+                <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
           </section><!-- /.download-row -->

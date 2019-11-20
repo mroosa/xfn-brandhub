@@ -37,3 +37,16 @@
   }
   ?>
 </head>
+<?php
+$bodyClasses = "";
+if (isset($bodyClassList) && $bodyClassList != 'undefined') {
+  $bodyClasses = " class=\"";
+  foreach ($bodyClassList as $bodyClass) {
+    $bodyClasses .= $bodyClass . " ";
+  }
+  $bodyClasses = rtrim($bodyClasses);
+  $bodyClasses .= "\"";
+}
+?>
+<body<?php print $bodyClasses; ?>>
+  <div class="contain">

@@ -1134,6 +1134,10 @@ body:not(.button-wrapping) a.button {
     .tab .quadWrap li p {
       font-size: 14px;
       font-size: 0.875rem; }
+      @media (min-width: 1200px) {
+        .tab .quadWrap li p {
+          font-size: 18px;
+          font-size: 1.125rem; } }
     .tab .quadWrap li a {
       display: block;
       text-decoration: none;
@@ -1142,22 +1146,23 @@ body:not(.button-wrapping) a.button {
       display: block;
       max-width: 100%;
       width: 100%; }
-    .tab .quadWrap li.text {
+    .tab .quadWrap li.text a {
+      position: absolute;
+      left: 0;
+      top: 0;
       padding: 10px; }
-      .tab .quadWrap li.text a {
-        position: absolute;
-        left: 0;
-        top: 0;
-        padding: 10px; }
-      .tab .quadWrap li.text .expand {
-        display: block;
-        position: absolute;
-        top: -5px;
-        right: -5px;
-        text-align: right;
-        pointer-events: none; }
-        .tab .quadWrap li.text .expand svg {
-          transform: scale(0.5) rotate(45deg); }
+      @media (min-width: 1200px) {
+        .tab .quadWrap li.text a {
+          padding: 20px; } }
+    .tab .quadWrap li.text .expand {
+      display: block;
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      text-align: right;
+      pointer-events: none; }
+      .tab .quadWrap li.text .expand svg {
+        transform: scale(0.5) rotate(45deg); }
     .tab .quadWrap li .fade {
       height: 25%;
       width: 100%;

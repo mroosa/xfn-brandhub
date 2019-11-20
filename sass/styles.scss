@@ -1219,6 +1219,9 @@ body:not(.button-wrapping) a.button {
       }
       p {
         @include font-size(14px);
+        @include bp-min($xlg) {
+          @include font-size(18px);
+        }
       }
       a {
         display: block;
@@ -1232,13 +1235,15 @@ body:not(.button-wrapping) a.button {
       }
 
       &.text {
-        padding: 10px;
 
         a {
           position: absolute;
           left: 0;
           top: 0;
           padding: 10px;
+          @include bp-min($xlg) {
+            padding: 20px;
+          }
         }
 
         .expand {

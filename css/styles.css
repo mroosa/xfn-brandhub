@@ -299,16 +299,24 @@ main {
         fill: #999; }
 
 .two-col .sidebar {
-  width: 200px; }
+  width: 150px; }
   .two-col .sidebar .logo {
-    padding: 30px 100px 10px 0; }
+    padding: 30px 5vw 10px 0; }
+  @media (min-width: 1200px) {
+    .two-col .sidebar {
+      width: 200px; }
+      .two-col .sidebar .logo {
+        padding: 30px 100px 10px 0; } }
   .two-col .sidebar #subnav {
     position: fixed;
-    width: 200px;
+    width: 150px;
     padding: 0 1.5% 30px 1.5%; }
+    @media (min-width: 1200px) {
+      .two-col .sidebar #subnav {
+        width: 200px; } }
 
 .two-col .content {
-  width: 80%; }
+  width: calc(100% - 150px); }
   @media (min-width: 1200px) {
     .two-col .content {
       width: calc(100% - 200px); } }
@@ -320,10 +328,6 @@ main {
 
 .one-col .content {
   width: 100%; }
-
-@media (max-width: 960px) {
-  .two-col .content {
-    margin: 20px; } }
 
 @media (max-width: 768px) {
   .two-col .sidebar {
@@ -558,8 +562,8 @@ body:not(.button-wrapping) a.button {
     font-family: "XfinityBrown", sans-serif;
     letter-spacing: -.04ex;
     line-height: 125%;
-    font-size: 52px;
-    font-size: 3.25rem;
+    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800; }
     @media (min-width: 1200px) {
       .content h1 {
@@ -597,10 +601,15 @@ body:not(.button-wrapping) a.button {
   .content li,
   .content p {
     margin-top: 10px;
-    font-size: 18px;
-    font-size: 1.125rem;
+    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 300;
     line-height: 150%; }
+    @media (min-width: 1200px) {
+      .content li,
+      .content p {
+        font-size: 18px;
+        font-size: 1.125rem; } }
     .content li strong,
     .content p strong {
       font-weight: 500; }
@@ -618,8 +627,7 @@ body:not(.button-wrapping) a.button {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 0 2%; }
+    justify-content: center; }
     @media (max-width: 768px) {
       .content section {
         margin-bottom: 75px; } }
@@ -628,13 +636,22 @@ body:not(.button-wrapping) a.button {
         margin-bottom: 50px; } }
     .content section:focus {
       outline: none; }
+    @media (min-width: 1200px) {
+      .content section {
+        padding: 0 2%; } }
     .content section .col-1 {
-      width: 45%;
       padding: 2%;
-      position: relative; }
+      position: relative;
+      width: 40%; }
+      @media (min-width: 1200px) {
+        .content section .col-1 {
+          width: 45%; } }
     .content section .col-2 {
-      width: 55%;
-      padding: 0 2%; }
+      padding: 0 2%;
+      width: 60%; }
+      @media (min-width: 1200px) {
+        .content section .col-2 {
+          width: 55%; } }
     .content section .tab-nav {
       list-style: none;
       margin: 30px 0;

@@ -54,14 +54,14 @@
           <section id="sub-brands" class="with-tabs">
             <?php include_once("design/sub-brands.php"); ?>
           </section>
-          <!-- <section id="secondary-graphics">
-            <?php #include_once("secondary-graphics.php"); ?>
-          </section> -->
-          <!-- <section id="design-system">
-            <?php #include_once("design-system.php"); ?>
+          <section id="secondary-graphics">
+            <?php include_once("design/secondary-graphics.php"); ?>
           </section>
-          <section id="co-branding">
-            <?php #include_once("co-branding.php"); ?>
+          <section id="design-system" class="with-tabs">
+            <?php include_once("design/design-system.php"); ?>
+          </section>
+          <!-- <section id="co-branding">
+            <?php #include_once("design/co-branding.php"); ?>
           </section> -->
           <!-- <section id="inspiration-gallery">
             <?php #include_once("../inspiration.php"); ?>

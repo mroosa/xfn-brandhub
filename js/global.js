@@ -98,7 +98,7 @@ function tabGo(tid, tabs, reset) {
       var newTabOption = newTab.find(".options li[data-bg=" + curDataBg + "]").attr("data-id");
       setOption(newTabOption, newTab);
     } else {
-      $("section.active").attr("data-bg", newTab.attr("data-bg"));
+      tabs.parents("section").attr("data-bg", newTab.attr("data-bg"));
     }
   }
   // If new section has a video, play it. Pause all other videos regardless
@@ -121,9 +121,9 @@ function setOption(oid, tab) {
   var dataBg = link.parents(".tab").find(".options li[data-id=" + link.attr("data-id") + "]").attr("data-bg");
   link.parents(".tab").attr("data-bg",dataBg);
   if (dataBg == undefined || dataBg == "") {
-    $("section.active").removeAttr("data-bg");
+    tab.parents("section").removeAttr("data-bg");
   } else {
-    $("section.active").attr("data-bg", dataBg);
+    tab.parents("section").attr("data-bg", dataBg);
   }
 
 }

@@ -152,18 +152,27 @@ main {
 
 .two-col {
   .sidebar {
-    width: 200px;
+    width: 150px;
     .logo {
-      padding: 30px 100px 10px 0;
+      padding: 30px 5vw 10px 0;
+    }
+    @include bp-min($xlg) {
+      width: 200px;
+      .logo {
+        padding: 30px 100px 10px 0;
+      }
     }
     #subnav {
       position: fixed;
-      width: 200px;
+      width: 150px;
+      @include bp-min($xlg) {
+        width: 200px;
+      }
       padding: 0 1.5% 30px 1.5%;
     }
   }
   .content {
-    width: 80%;
+    width: calc(100% - 150px);
     @include bp-min($xlg) {
       width: calc(100% - 200px);
     }
@@ -180,12 +189,6 @@ main {
 .one-col {
   .content {
     width: 100%;
-  }
-}
-
-@media (max-width: 960px) {
-  .two-col .content {
-    margin: 20px;
   }
 }
 
@@ -495,7 +498,7 @@ body:not(.button-wrapping) a.button {
 
   h1 {
     margin: 0 0 .5em 0;
-    @include Brown(52px, 800);
+    @include Brown(48px, 800);
     @include bp-min($xlg) {
       @include Brown(72px, 800);
     }
@@ -524,7 +527,10 @@ body:not(.button-wrapping) a.button {
   li,
   p {
     margin-top: 10px;
-    @include font-size(18px);
+    @include font-size(14px);
+    @include bp-min($xlg) {
+      @include font-size(18px);
+    }
     font-weight: 300;
     line-height: 150%;
 
@@ -565,17 +571,25 @@ body:not(.button-wrapping) a.button {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 2%;
+    @include bp-min($xlg) {
+      padding: 0 2%;
+    }
 
     .col-1 {
-      width: 45%;
       padding: 2%;
       position: relative;
+      width: 40%;
+      @include bp-min($xlg) {
+        width: 45%;
+      }
     }
 
     .col-2 {
-      width: 55%;
       padding: 0 2%;
+      width: 60%;
+      @include bp-min($xlg) {
+        width: 55%;
+      }
     }
 
     .tab-nav {

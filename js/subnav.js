@@ -75,7 +75,11 @@ $(document).ready(function() {
         showText();
       }
     }
-    $(cur).addClass("active");
-    $("section").not(cur).removeClass("active");
+    if ($(cur).attr("id") == id && !$(cur).hasClass("active")) {
+      // cleanBody();
+      // resetActiveTab();
+      $("section.active").removeClass("active");
+      $(cur).addClass("active");
+    }
 	});
 });

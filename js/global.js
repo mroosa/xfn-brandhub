@@ -66,7 +66,7 @@ function cleanBody() {
 }
 
 function resetActiveTab(tabs) {
-  var tabs = (tabs != undefined) ? tabs : $(".tabs.active");
+  var tabs = (tabs != undefined) ? tabs : $(".tab.active").parent();
   tabs
     .find(".optionNav .active").removeClass("active").end()
     .find(".options").css({"margin-left": 0}).end()
@@ -80,6 +80,8 @@ function tabGo(tid, tabs, reset) {
       activeTabNum = Number(curTab.attr("data-id")),
       newTab = tabs.find(".tab[data-id=" + tid + "]"),
       curDataBg = curTab.attr("data-bg");
+  // Close any lightboxes
+  closePopOut();
   // Reset individual slideshows
   if (reset != undefined && reset == true) {
     resetActiveTab(tabs);
@@ -96,7 +98,7 @@ function tabGo(tid, tabs, reset) {
       var newTabOption = newTab.find(".options li[data-bg=" + curDataBg + "]").attr("data-id");
       setOption(newTabOption, newTab);
     } else {
-      $("body").attr("data-bg", newTab.attr("data-bg"));
+      $("section.active").attr("data-bg", newTab.attr("data-bg"));
     }
   }
   // If new section has a video, play it. Pause all other videos regardless
@@ -119,9 +121,9 @@ function setOption(oid, tab) {
   var dataBg = link.parents(".tab").find(".options li[data-id=" + link.attr("data-id") + "]").attr("data-bg");
   link.parents(".tab").attr("data-bg",dataBg);
   if (dataBg == undefined || dataBg == "") {
-    $("body").removeAttr("data-bg");
+    $("section.active").removeAttr("data-bg");
   } else {
-    $("body").attr("data-bg", dataBg);
+    $("section.active").attr("data-bg", dataBg);
   }
 
 }
@@ -151,6 +153,7 @@ function createOptions(parent) {
 }
 
 function popOut(content, text, parent) {
+  $("body").addClass("lit");
   if (text) {
     parent.find(".lightbox").addClass("text");
   } else {
@@ -161,6 +164,7 @@ function popOut(content, text, parent) {
   parent.find(".lightbox-content").html(content);
 }
 function closePopOut() {
+  $("body").removeClass("lit");
   $(".lightbox-shade.active").removeClass("active");
 }
 
@@ -238,7 +242,9 @@ $(document).ready(function() {
       // Tab options
       createOptions(theTab);
     });
-    thisSec.find(".col-1").append('<ul class="tab-nav">' + tabNavContents + '</ul>');
+
+    // Create Tab buttons in main column
+    thisSec.find(".col-1 p.download").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
     thisSec.find(".set-tab").click(function() {
       var newTab = $(this).attr("data-id");
       tabGo(newTab, theTabs);
@@ -282,10 +288,28 @@ $(document).ready(function() {
 
   // typography
 
-  let closeSVG = '<svg width="15" height="15" viewBox="0 0 27.502 27.502"> <g transform="translate(-1725.504 -76.49)"> <path d="M-1916.082-22342.422l24.674-24.674" transform="translate(3643 22445)" fill="none" stroke="#000" stroke-width="4"/> <path d="M-1916.082-22342.422l24.674-24.674" transform="translate(-20615.504 1993.986) rotate(90)" fill="none" stroke="#000" stroke-width="4"/> </g> </svg>';
+  // Sub Brand
+  $(".sub-brand-nav li a").click(function() {
+    let activeNav = $(this).attr("data-brand");
+    if (!$(this).parent().hasClass("active")) {
+      $(".sub-brand-logos .sub-brand-logo-2 ul").css({"margin-top":-80 * activeNav + "px"});
+      $(".sub-brands ul").css({"margin-left":-100 * activeNav + "%"});
+      $(".sub-brand-nav li.active").removeClass("active");
+      $(this).parent().addClass("active");
+    }
+    return false;
+  });
 
+  // Brand Symbol
+  let closeSVG = '<svg width="15" height="15" viewBox="0 0 27.502 27.502"> <g transform="translate(-1725.504 -76.49)"> <path d="M-1916.082-22342.422l24.674-24.674" transform="translate(3643 22445)" fill="none" stroke="#000" stroke-width="4"/> <path d="M-1916.082-22342.422l24.674-24.674" transform="translate(-20615.504 1993.986) rotate(90)" fill="none" stroke="#000" stroke-width="4"/> </g> </svg>';
+  // $("body").append('<div id="click-shade"></div>');
+  // if($("body").hasClass("lit")) {
+  //   $("#click-shade").click(function() {
+  //     closePopOut();
+  //   });
+  // }
   $(".quadWrap").parent().append('<div class="lightbox-shade"><div class="lightbox"><div class="lightbox-content"></div><a class="close" href="#">' + closeSVG + '<span class="ah">Close preview</span></a></div></div>');
-  $(".lightbox .close").click(function() {
+  $(".lightbox-shade, .lightbox .close").click(function() {
     closePopOut();
     return false;
   });

@@ -1,15 +1,13 @@
 <div class="col-1">
   <h1>Photography</h1>
   <p>Our photography reinforces our design principles, showcasing simple, focused and unique imagery with unexpected perspectives. Our photography captures authentic moments and employs a clean color palette with occasional pops of color. All photography is naturally lit and unfiltered.</p>
-  <p class="explore"><a href="https://www.google.com" target="_blank">Explore Photography Library</a></p>
   <ul class="tab-nav">
     <li><a class="button ignore-click" href="#photography-lifestyle">Lifestyle</a></li>
     <li><a class="button ignore-click" href="#photography-xfn-devices">Xfinity Hardware</a></li>
-  </ul>
-  <ul class="tab-nav">
     <li><a class="button ignore-click" href="#photography-in-situ">In-Situation</a></li>
     <li><a class="button ignore-click" href="#photography-devices">Generic Devices</a></li>
   </ul>
+  <p class="explore"><a href="https://www.google.com" target="_blank">Explore Photography Library</a></p>
 </div>
 <div class="col-2">
   <div class="mosaic">

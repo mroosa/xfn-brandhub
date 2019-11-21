@@ -6,6 +6,7 @@ $subLinkAry = [
   new NavLink('#typography','Typography', null),
 	new NavLink('#photography','Photography', null),
 	new NavLink('#brand-symbol','Brand Symbol', null),
+	new NavLink('#sub-brands','Sub-Brands', null),
 #	new NavLink('#secondary-graphics','Secondary Graphics', null),
 # new NavLink('#design-system','Design System', null),
 #	new NavLink('#co-branding','Co-Branding', null),

@@ -122,7 +122,7 @@ main {
 
 .content p.explore,
 .content p.download {
-  margin: 0 0 30px 0;
+  margin: 30px 0 0 0;
   a {
     text-decoration: none;
     color: #333;
@@ -580,7 +580,7 @@ body:not(.button-wrapping) a.button {
 
     .tab-nav {
       list-style: none;
-      margin: 0;
+      margin: 30px 0;
       padding: 0;
 
       li {
@@ -1125,6 +1125,11 @@ body:not(.button-wrapping) a.button {
 }
 
 /* Brand Symbol */
+#brand-symbol .col-2 {
+  @include bp-min($xlg) {
+    transform: scale(.8);
+  }
+}
 .tab {
 
   .info {
@@ -1278,63 +1283,172 @@ body:not(.button-wrapping) a.button {
     }
 }
 
-/* Downloads */
-#downloads {
-  display: block;
-  padding-top: 15vh;
-
-  .button {
-    min-width: 150px;
+/* Sub brands */
+#sub-brands {
+  .col-2 {
+    padding: 0 3.5%;
   }
-  section {
-    display: block;
-    min-height: auto;
-    padding: 40px 0;
-    border-bottom: 1px solid #ccc;
+  .sub-brand-logos {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    overflow: hidden;
+    height: $lht;
 
-    .download-intro {
-      padding: 20px;
+    .sub-brand-logo-1 {
+      padding-right: 1vw;
+      position: relative;
+      z-index: 2;
       background: #fff;
-      border-radius: $bdr;
-      display: flex;
-      align-items: center;
-      .flex-col {
-        width: 50%;
-      }
-      .flex-col-1 {
-        text-align: left;
-      }
-      .flex-col-2 {
-        text-align: right;
+
+      &,
+      img {
+        height: $lht;
       }
     }
+    .sub-brand-logo-2 {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
 
-    .download-contents {
-      background: #efefef;
-      padding: 10px 0;
-      display: none;
       ul {
+        position: relative;
         list-style: none;
-        padding: 0;
         margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        padding: 0;
+        transition: .5s margin;
+
+        li {
+          margin: 10px 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+          img {
+            width: auto;
+          }
+          &,
+          img {
+            height: $lht;
+          }
+        }
       }
+    }
+  }
+  .sub-brands {
+    overflow: hidden;
+    margin: 30px 0;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 600%;
+      transition: .25s margin;
+
       li {
-        width: 20%;
-        padding: 15px;
+        flex-basis: 8.333333%;
+        @include font-size(15px);
+        padding-right: 20px;
+
+        img {
+          text-align: center;
+        }
       }
-      img {
-        border: 1px solid #333;
-        max-width: 100%;
-      }
-      .download-links {
-        padding: 0 15px;
+    }
+  }
+  .sub-brand-nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      li {
+        transition: .25s opacity;
+        opacity: .25;
+        flex-basis: 33%;
+
+        img {
+          height: 25px;
+          max-height: 100%;
+          max-width: none;
+        }
+
+        &:hover,
+        &.active {
+          opacity: 1;
+        }
       }
     }
   }
 }
+
+/* Downloads */
+// #downloads {
+//   display: block;
+//   padding-top: 15vh;
+//
+//   .button {
+//     min-width: 150px;
+//   }
+//   section {
+//     display: block;
+//     min-height: auto;
+//     padding: 40px 0;
+//     border-bottom: 1px solid #ccc;
+//
+//     .download-intro {
+//       padding: 20px;
+//       background: #fff;
+//       border-radius: $bdr;
+//       display: flex;
+//       align-items: center;
+//       .flex-col {
+//         width: 50%;
+//       }
+//       .flex-col-1 {
+//         text-align: left;
+//       }
+//       .flex-col-2 {
+//         text-align: right;
+//       }
+//     }
+//
+//     .download-contents {
+//       background: #efefef;
+//       padding: 10px 0;
+//       display: none;
+//       ul {
+//         list-style: none;
+//         padding: 0;
+//         margin: 0;
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: flex-start;
+//       }
+//       li {
+//         width: 20%;
+//         padding: 15px;
+//       }
+//       img {
+//         border: 1px solid #333;
+//         max-width: 100%;
+//       }
+//       .download-links {
+//         padding: 0 15px;
+//       }
+//     }
+//   }
+// }
+
+/* lightbox */
 
 
 /* Intro slide */
@@ -1366,91 +1480,139 @@ body:not(.button-wrapping) a.button {
 
 
 /* Color changing */
-body[data-bg=drk-gry],
-body[data-bg=black] {
+// body[data-bg=drk-gry],
+// body[data-bg=black] {
+//   background: #000;
+//   color: #fff;
+//
+//   &.button-wrapping .button span,
+//   &:not(.button-wrapping) .button {
+//     border-color: #fff;
+//     background: #fff;
+//     color: #000;
+//   }
+//
+//   &.button-wrapping .button {
+//     &.active,
+//     &:hover {
+//       span {
+//         background: #000;
+//         color: #fff;
+//       }
+//     }
+//   }
+//   &:not(.button-wrapping) .button {
+//     &.active,
+//     &:hover {
+//       background: #000;
+//       color: #fff;
+//     }
+//   }
+//
+//   .optionNav a {border-color: #fff !important;}
+//   .optionNav a.active {background: #fff !important;}
+//
+//   .sidebar {
+//     background: #fff; color: #000;
+//     .logo svg { fill: #000; }
+//     a {
+//       color: #000;
+//       &:hover { color: #fff; background: #000; }
+//     }
+//   }
+//
+//   #typography blockquote {color: #fff;}
+//   #typography .weight::-webkit-slider-thumb {background: #000; border-color: #666;}
+//   #typography .weight::-webkit-slider-runnable-track {background-color: #333;}
+//
+//   .content p.download a {
+//     color: #ccc;
+//     svg * {
+//       fill: #ccc;
+//     }
+//
+//     &:hover {
+//       color: #999;
+//       svg * {
+//         fill: #999;
+//       }
+//     }
+//   }
+//
+//   &.button-wrapping .download-intro {
+//     .button span {
+//       border-color: #000;
+//       background: #000;
+//       color: #fff;
+//     }
+//   }
+//
+//   &.button-wrapping .download-intro .button {
+//     &.active,
+//     &:hover {
+//       span {
+//         background: #fff;
+//         color: #000;
+//       }
+//     }
+//   }
+//   &:not(.button-wrapping) .download-intro .button {
+//     &.active,
+//     &:hover {
+//       background: #fff;
+//       color: #000;
+//     }
+//   }
+// }
+// body[data-bg=drk-gry] {
+//   background: #1e1e1e;
+// }
+
+section[data-bg=drk-gry],
+section[data-bg=black] {
   background: #000;
   color: #fff;
 
-  &.button-wrapping .button span,
-  &:not(.button-wrapping) .button {
-    border-color: #fff;
-    background: #fff;
-    color: #000;
-  }
-
-  &.button-wrapping .button {
-    &.active,
-    &:hover {
-      span {
-        background: #000;
-        color: #fff;
-      }
+  .download,
+  .explore {
+    svg {
+      fill: #ccc;
     }
-  }
-  &:not(.button-wrapping) .button {
-    &.active,
-    &:hover {
-      background: #000;
-      color: #fff;
+    a {
+      color: #ccc;
     }
   }
 
   .optionNav a {border-color: #fff !important;}
   .optionNav a.active {background: #fff !important;}
 
-  .sidebar {
-    background: #fff; color: #000;
-    .logo svg { fill: #000; }
-    a {
-      color: #000;
-      &:hover { color: #fff; background: #000; }
-    }
-  }
-
-  #typography blockquote {color: #fff;}
-  #typography .weight::-webkit-slider-thumb {background: #000; border-color: #666;}
-  #typography .weight::-webkit-slider-runnable-track {background-color: #333;}
-
-  .content p.download a {
-    color: #ccc;
-    svg * {
-      fill: #ccc;
-    }
-
-    &:hover {
-      color: #999;
-      svg * {
-        fill: #999;
-      }
-    }
-  }
-
-  &.button-wrapping .download-intro {
-    .button span {
-      border-color: #000;
+}
+body.button-wrapping section[data-bg=drk-gry] .button span,
+body.button-wrapping section[data-bg=black] .button span,
+body:not(.button-wrapping) section[data-bg=drk-gry] .button,
+body:not(.button-wrapping) section[data-bg=black] .button {
+  border-color: #fff;
+  background: #fff;
+  color: #000;
+}
+body.button-wrapping section[data-bg=drk-gry] .button,
+body.button-wrapping section[data-bg=black] .button {
+  &.active,
+  &:hover {
+    span {
       background: #000;
       color: #fff;
     }
   }
-
-  &.button-wrapping .download-intro .button {
-    &.active,
-    &:hover {
-      span {
-        background: #fff;
-        color: #000;
-      }
-    }
-  }
-  &:not(.button-wrapping) .download-intro .button {
-    &.active,
-    &:hover {
-      background: #fff;
-      color: #000;
-    }
+}
+body:not(.button-wrapping) section[data-bg=drk-gry] .button,
+body:not(.button-wrapping) section[data-bg=black] .button {
+  &.active,
+  &:hover {
+    background: #000;
+    color: #fff;
   }
 }
-
-body[data-bg=drk-gry] {
+section[data-bg=drk-gry] {
   background: #1e1e1e;
 }

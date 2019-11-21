@@ -36,7 +36,7 @@
       <?php endif; ?>
 
         <div class="content">
-          <section id="logo" class="with-tabs">
+          <section id="logo" class="with-tabs active">
             <?php include_once("design/logo.php"); ?>
           </section>
           <section id="color">
@@ -50,6 +50,9 @@
           </section>
           <section id="brand-symbol" class="with-tabs">
             <?php include_once("design/brand-symbol.php"); ?>
+          </section>
+          <section id="sub-brands" class="with-tabs">
+            <?php include_once("design/sub-brands.php"); ?>
           </section>
           <!-- <section id="secondary-graphics">
             <?php #include_once("secondary-graphics.php"); ?>

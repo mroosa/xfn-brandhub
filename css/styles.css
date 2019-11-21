@@ -274,7 +274,7 @@ main {
 
 .content p.explore,
 .content p.download {
-  margin: 0 0 30px 0; }
+  margin: 30px 0 0 0; }
   .content p.explore a,
   .content p.download a {
     text-decoration: none;
@@ -637,7 +637,7 @@ body:not(.button-wrapping) a.button {
       padding: 0 2%; }
     .content section .tab-nav {
       list-style: none;
-      margin: 0;
+      margin: 30px 0;
       padding: 0; }
       .content section .tab-nav li {
         margin: 0; }
@@ -1065,6 +1065,10 @@ body:not(.button-wrapping) a.button {
         background: transparent; }
 
 /* Brand Symbol */
+@media (min-width: 1200px) {
+  #brand-symbol .col-2 {
+    transform: scale(0.8); } }
+
 .tab .info {
   padding: 10px; }
   .tab .info h3 {
@@ -1182,49 +1186,86 @@ body:not(.button-wrapping) a.button {
       bottom: 0;
       left: 0; }
 
-/* Downloads */
-#downloads {
-  display: block;
-  padding-top: 15vh; }
-  #downloads .button {
-    min-width: 150px; }
-  #downloads section {
-    display: block;
-    min-height: auto;
-    padding: 40px 0;
-    border-bottom: 1px solid #ccc; }
-    #downloads section .download-intro {
-      padding: 20px;
-      background: #fff;
-      border-radius: 4px;
-      display: flex;
-      align-items: center; }
-      #downloads section .download-intro .flex-col {
-        width: 50%; }
-      #downloads section .download-intro .flex-col-1 {
-        text-align: left; }
-      #downloads section .download-intro .flex-col-2 {
-        text-align: right; }
-    #downloads section .download-contents {
-      background: #efefef;
-      padding: 10px 0;
-      display: none; }
-      #downloads section .download-contents ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start; }
-      #downloads section .download-contents li {
-        width: 20%;
-        padding: 15px; }
-      #downloads section .download-contents img {
-        border: 1px solid #333;
-        max-width: 100%; }
-      #downloads section .download-contents .download-links {
-        padding: 0 15px; }
+/* Sub brands */
+#sub-brands .col-2 {
+  padding: 0 3.5%; }
 
+#sub-brands .sub-brand-logos {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  height: 70px; }
+  #sub-brands .sub-brand-logos .sub-brand-logo-1 {
+    padding-right: 1vw;
+    position: relative;
+    z-index: 2;
+    background: #fff; }
+    #sub-brands .sub-brand-logos .sub-brand-logo-1,
+    #sub-brands .sub-brand-logos .sub-brand-logo-1 img {
+      height: 70px; }
+  #sub-brands .sub-brand-logos .sub-brand-logo-2 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+    #sub-brands .sub-brand-logos .sub-brand-logo-2 ul {
+      position: relative;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      transition: .5s margin; }
+      #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li {
+        margin: 10px 0; }
+        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li:first-child {
+          margin-top: 0; }
+        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li img {
+          width: auto; }
+        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li,
+        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li img {
+          height: 70px; }
+
+#sub-brands .sub-brands {
+  overflow: hidden;
+  margin: 30px 0; }
+  #sub-brands .sub-brands ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600%;
+    transition: .25s margin; }
+    #sub-brands .sub-brands ul li {
+      flex-basis: 8.333333%;
+      font-size: 15px;
+      font-size: 0.9375rem;
+      padding-right: 20px; }
+      #sub-brands .sub-brands ul li img {
+        text-align: center; }
+
+#sub-brands .sub-brand-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  #sub-brands .sub-brand-nav ul li {
+    transition: .25s opacity;
+    opacity: .25;
+    flex-basis: 33%; }
+    #sub-brands .sub-brand-nav ul li img {
+      height: 25px;
+      max-height: 100%;
+      max-width: none; }
+    #sub-brands .sub-brand-nav ul li:hover, #sub-brands .sub-brand-nav ul li.active {
+      opacity: 1; }
+
+/* Downloads */
+/* lightbox */
 /* Intro slide */
 .intro .caption {
   font-size: 48px;
@@ -1248,84 +1289,46 @@ body:not(.button-wrapping) a.button {
     display: none; } }
 
 /* Color changing */
-body[data-bg=drk-gry],
-body[data-bg=black] {
+section[data-bg=drk-gry],
+section[data-bg=black] {
   background: #000;
   color: #fff; }
-  body[data-bg=drk-gry].button-wrapping .button span,
-  body[data-bg=drk-gry]:not(.button-wrapping) .button,
-  body[data-bg=black].button-wrapping .button span,
-  body[data-bg=black]:not(.button-wrapping) .button {
-    border-color: #fff;
-    background: #fff;
-    color: #000; }
-  body[data-bg=drk-gry].button-wrapping .button.active span, body[data-bg=drk-gry].button-wrapping .button:hover span,
-  body[data-bg=black].button-wrapping .button.active span,
-  body[data-bg=black].button-wrapping .button:hover span {
-    background: #000;
-    color: #fff; }
-  body[data-bg=drk-gry]:not(.button-wrapping) .button.active, body[data-bg=drk-gry]:not(.button-wrapping) .button:hover,
-  body[data-bg=black]:not(.button-wrapping) .button.active,
-  body[data-bg=black]:not(.button-wrapping) .button:hover {
-    background: #000;
-    color: #fff; }
-  body[data-bg=drk-gry] .optionNav a,
-  body[data-bg=black] .optionNav a {
-    border-color: #fff !important; }
-  body[data-bg=drk-gry] .optionNav a.active,
-  body[data-bg=black] .optionNav a.active {
-    background: #fff !important; }
-  body[data-bg=drk-gry] .sidebar,
-  body[data-bg=black] .sidebar {
-    background: #fff;
-    color: #000; }
-    body[data-bg=drk-gry] .sidebar .logo svg,
-    body[data-bg=black] .sidebar .logo svg {
-      fill: #000; }
-    body[data-bg=drk-gry] .sidebar a,
-    body[data-bg=black] .sidebar a {
-      color: #000; }
-      body[data-bg=drk-gry] .sidebar a:hover,
-      body[data-bg=black] .sidebar a:hover {
-        color: #fff;
-        background: #000; }
-  body[data-bg=drk-gry] #typography blockquote,
-  body[data-bg=black] #typography blockquote {
-    color: #fff; }
-  body[data-bg=drk-gry] #typography .weight::-webkit-slider-thumb,
-  body[data-bg=black] #typography .weight::-webkit-slider-thumb {
-    background: #000;
-    border-color: #666; }
-  body[data-bg=drk-gry] #typography .weight::-webkit-slider-runnable-track,
-  body[data-bg=black] #typography .weight::-webkit-slider-runnable-track {
-    background-color: #333; }
-  body[data-bg=drk-gry] .content p.download a,
-  body[data-bg=black] .content p.download a {
+  section[data-bg=drk-gry] .download svg,
+  section[data-bg=drk-gry] .explore svg,
+  section[data-bg=black] .download svg,
+  section[data-bg=black] .explore svg {
+    fill: #ccc; }
+  section[data-bg=drk-gry] .download a,
+  section[data-bg=drk-gry] .explore a,
+  section[data-bg=black] .download a,
+  section[data-bg=black] .explore a {
     color: #ccc; }
-    body[data-bg=drk-gry] .content p.download a svg *,
-    body[data-bg=black] .content p.download a svg * {
-      fill: #ccc; }
-    body[data-bg=drk-gry] .content p.download a:hover,
-    body[data-bg=black] .content p.download a:hover {
-      color: #999; }
-      body[data-bg=drk-gry] .content p.download a:hover svg *,
-      body[data-bg=black] .content p.download a:hover svg * {
-        fill: #999; }
-  body[data-bg=drk-gry].button-wrapping .download-intro .button span,
-  body[data-bg=black].button-wrapping .download-intro .button span {
-    border-color: #000;
-    background: #000;
-    color: #fff; }
-  body[data-bg=drk-gry].button-wrapping .download-intro .button.active span, body[data-bg=drk-gry].button-wrapping .download-intro .button:hover span,
-  body[data-bg=black].button-wrapping .download-intro .button.active span,
-  body[data-bg=black].button-wrapping .download-intro .button:hover span {
-    background: #fff;
-    color: #000; }
-  body[data-bg=drk-gry]:not(.button-wrapping) .download-intro .button.active, body[data-bg=drk-gry]:not(.button-wrapping) .download-intro .button:hover,
-  body[data-bg=black]:not(.button-wrapping) .download-intro .button.active,
-  body[data-bg=black]:not(.button-wrapping) .download-intro .button:hover {
-    background: #fff;
-    color: #000; }
+  section[data-bg=drk-gry] .optionNav a,
+  section[data-bg=black] .optionNav a {
+    border-color: #fff !important; }
+  section[data-bg=drk-gry] .optionNav a.active,
+  section[data-bg=black] .optionNav a.active {
+    background: #fff !important; }
 
-body[data-bg=drk-gry] {
+body.button-wrapping section[data-bg=drk-gry] .button span,
+body.button-wrapping section[data-bg=black] .button span,
+body:not(.button-wrapping) section[data-bg=drk-gry] .button,
+body:not(.button-wrapping) section[data-bg=black] .button {
+  border-color: #fff;
+  background: #fff;
+  color: #000; }
+
+body.button-wrapping section[data-bg=drk-gry] .button.active span, body.button-wrapping section[data-bg=drk-gry] .button:hover span,
+body.button-wrapping section[data-bg=black] .button.active span,
+body.button-wrapping section[data-bg=black] .button:hover span {
+  background: #000;
+  color: #fff; }
+
+body:not(.button-wrapping) section[data-bg=drk-gry] .button.active, body:not(.button-wrapping) section[data-bg=drk-gry] .button:hover,
+body:not(.button-wrapping) section[data-bg=black] .button.active,
+body:not(.button-wrapping) section[data-bg=black] .button:hover {
+  background: #000;
+  color: #fff; }
+
+section[data-bg=drk-gry] {
   background: #1e1e1e; }

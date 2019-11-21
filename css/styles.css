@@ -1256,7 +1256,8 @@ body:not(.button-wrapping) a.button {
   #sub-brands .sub-brand-nav ul li {
     transition: .25s opacity;
     opacity: .25;
-    flex-basis: 33%; }
+    flex-basis: 33%;
+    padding: 0 20px 0 0; }
     #sub-brands .sub-brand-nav ul li img {
       height: 25px;
       max-height: 100%;

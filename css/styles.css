@@ -435,8 +435,7 @@ section.with-tabs .tab {
   section.with-tabs .tab img {
     display: block;
     margin: 0 auto;
-    max-width: 90%;
-    width: 90%; }
+    max-width: 90%; }
   section.with-tabs .tab .tab-inner {
     position: relative;
     width: 100%; }
@@ -740,6 +739,10 @@ body:not(.button-wrapping) a.button {
   #brand-story h1 {
     font-size: 72px;
     font-size: 4.5rem; }
+
+/* Logo */
+#logo .tabs .tab img {
+  width: 75%; }
 
 /* Color */
 #color .color-swatches {
@@ -1097,6 +1100,9 @@ body:not(.button-wrapping) a.button {
   #brand-symbol .col-2 {
     transform: scale(0.8); } }
 
+#brand-symbol .tab .brand-x img {
+  width: 90%; }
+
 .tab .info {
   padding: 10px; }
   .tab .info h3 {
@@ -1323,6 +1329,13 @@ body:not(.button-wrapping) a.button {
 /* Co-Branding */
 .tab video {
   max-width: 100%; }
+
+/* Secondary Graphics */
+#sg-intro {
+  display: flex;
+  flex-wrap: wrap; }
+  #sg-intro li {
+    flex-basis: 33%; }
 
 /* Downloads */
 /* lightbox */

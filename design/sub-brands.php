@@ -2,7 +2,7 @@
 <div class="col-1">
   <h1>Sub-Brands</h1>
   <p>Xfinity sub-brand logos are reserved for our six dedicated product experiences. Limit one sub-brand logo per communication. In the majority of communications, please use the primary Xfinity logo. </p>
-  <p class="download"><a href="#downloads">Download Sub-Brands</a></p>
+  <p class="download"><a href="#downloads">Download Sub-Brand logos</a></p>
 </div>
 <div class="col-2">
   <div class="sub-brand-logos">

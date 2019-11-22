@@ -1,9 +1,8 @@
 <div class="col-1">
   <h1>Co-Branding</h1>
-  <p>Xfinity supports a variety of partners and experiences to reinforce our brand purpose and passions.</p>
-  <p>For key partnerships, please follow best practices for co-branded lock ups, ensuring appropriate distance and 1:1 size relationship between logos.</p>
-  <p>For relationships where Xfinity is endorsing a partnership or experience, you may use a descriptive approach using the Xfinity logo. While endorsement line and sizing may vary, please ensure the Xfinity logo is legible and has impact.</p>
-  <p class="download"><a href="#downloads">Download Co-Branding</a></p>
+  <p>Xfinity supports a variety of partners and experiences to reinforce our brand purpose and passions. Please set co-branded lock ups with a 1:1 size relationship between logos and set them horizontally.</p>
+  <p>For endorsements or experience sponsorships, we may use a descriptive line along with our Xfinity logo. In most cases, this text will be in sentence case.</p>
+  <p class="download"><a href="#downloads">Download Co-Branding assets</a></p>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">
@@ -28,7 +27,7 @@
               <img class="border rounded" src="images/co-branding/01-4.png" alt="">
             </div>
           </li>
-          <li><div class="img width-75"><img src="images/co-branding/01-5.svg" alt=""></div></li>
+          <li><div class="img"><img style="width: 450px;" src="images/co-branding/01-5.svg" alt=""></div></li>
         </ul>
       </div>
     </div>
@@ -37,7 +36,7 @@
     <div class="tab" id="cb-endorsement" data-ttl="Endorsement">
       <div class="tab-inner">
         <ul class="optionWrap">
-          <li><img src="images/co-branding/02-1.svg" alt=""></li>
+          <li><img style="width: 350px;" src="images/co-branding/02-1.svg" alt=""></li>
           <li><img src="images/co-branding/02-2.png" alt=""></li>
           <li><img src="images/co-branding/02-3.png" alt=""></li>
         </ul>

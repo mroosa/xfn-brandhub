@@ -234,13 +234,14 @@ $(document).ready(function() {
       // Get tab title
           tabTtl = $(this).attr("data-ttl"),
           linkClass = (index==0) ? " active" : "";
-      tabNavContents += '<li><a class="button ignore-click set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a></li>';
       $(this)
         .attr({"data-id":index})
         .css({"width":100 / numTabs + "%" });
-
       // Tab options
       createOptions(theTab);
+      if (tabTtl != "" && tabTtl != undefined) {
+        tabNavContents += '<li><a class="button ignore-click set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a></li>';
+      }
     });
 
     // Create Tab buttons in main column

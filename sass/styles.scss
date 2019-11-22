@@ -343,7 +343,7 @@ section {
         display: block;
         margin: 0 auto;
         max-width: 90%;
-        width: 90%;
+        // width: 90%;
       }
 
       .tab-inner {
@@ -754,6 +754,13 @@ body:not(.button-wrapping) a.button {
   }
 }
 
+/* Logo */
+#logo {
+  .tabs .tab img {
+    width: 75%;
+  }
+}
+
 
 /* Color */
 #color {
@@ -1155,6 +1162,10 @@ body:not(.button-wrapping) a.button {
       transform: scale(.8);
     }
   }
+
+  .tab .brand-x img {
+    width: 90%;
+  }
 }
 .tab {
 
@@ -1460,6 +1471,16 @@ body:not(.button-wrapping) a.button {
 /* Co-Branding */
 .tab video {
   max-width: 100%;
+}
+
+/* Secondary Graphics */
+#sg-intro {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    flex-basis: 33%;
+  }
 }
 
 /* Downloads */

@@ -54,7 +54,7 @@
           <section id="sub-brands" class="with-tabs">
             <?php include_once("design/sub-brands.php"); ?>
           </section>
-          <section id="secondary-graphics">
+          <section id="secondary-graphics" class="with-tabs">
             <?php include_once("design/secondary-graphics.php"); ?>
           </section>
           <section id="design-system" class="with-tabs">

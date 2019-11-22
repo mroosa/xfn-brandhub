@@ -2,7 +2,7 @@
   <h1>Design System</h1>
   <p>The best way to create our dynamic angle is to use a grid. This allows us to organize key information in our communication and develop clean and simple layout. Angles should be used purposefully to create depth and acts as a plane for devices and images to lay on.</p>
   <p>Be sure to avoid overuse of the dynamic angle. Don’t use more than one angle per page or spread.</p>
-  <p class="download"><a href="#downloads">Download Design System</a></p>
+  <p class="download"><a href="#downloads">Download Design System examples</a></p>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">
@@ -44,7 +44,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="ds-horizontal" data-ttl="Horizontal">
+    <div class="tab" id="ds-horizontal" data-ttl="Horizontal Angles">
       <div class="tab-inner">
         <ul class="optionWrap">
           <li><img src="images/design-system/02-01.png" alt=""></li>
@@ -55,7 +55,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="ds-vertical" data-ttl="Vertical">
+    <div class="tab" id="ds-vertical" data-ttl="Vertical Angles">
       <div class="tab-inner">
         <ul class="optionWrap">
           <li><img style="width: auto;" src="images/design-system/03-01.png" alt="" title="Angles should be used purposefully to create depth and acts as a plane for devices and images to lay on."></li>

@@ -23,17 +23,17 @@
   <div class="sub-brands">
     <ul>
       <li data-brand="0"><img src="images/sub-brands/ex-x1.png" alt=""></li>
-      <li data-brand="0">Change the way you experience TV with the simplest, fastest and most complete way to access all your entertainment. Say it and see with the X1 Voice Remote, discover personalized recommendations and watch more with a DVR that does it all.</li>
+      <li data-brand="0">Change the way you experience TV with the simplest, fastest and most complete way to access all your entertainment. Say it and see with the X1 Voice Remote, browse personalized recommendations and discover a DVR that does it all.</li>
       <li data-brand="1"><img src="images/sub-brands/ex-xfi.png" alt=""></li>
-      <li data-brand="1">This is beyond WiFi. This is XFi. Personalize your in-home WIFi network, pause WiFi to connected devices and get notifications when new people join your network. It’s the speed, coverage and control you need for the ultimate in-home WiFi experience.</li>
+      <li data-brand="1">Personalize your in-home WIFi network, pause WiFi to connected devices and see when new devices join your network. It’s the speed, coverage and control you need for the ultimate in-home WiFi experience.</li>
       <li data-brand="2"><img src="images/sub-brands/ex-stream.png" alt=""></li>
       <li data-brand="2">Watch your entire TV line-up at home and top networks and live sports on the go. Enjoy the freedom to stream thousands of Xfinity On Demand titles and your DVR library on any device.</li>
       <li data-brand="3"><img src="images/sub-brands/ex-flex.png" alt=""></li>
-      <li data-brand="3">Discover a personalized streaming dashboard that puts all your favorites in one place on you TV. Flex brings together your favorite streaming apps and networks including HBO®, Netflix and Prime Video. Plus, it’s easy to search less and watch more with X1 Voice Remote.</li>
+      <li data-brand="3">Flex brings together popular streaming apps and networks including HBO®, Netflix and Prime Video in one personalized dashboard. Plus, it’s all searchable with the X1 Voice Remote.</li>
       <li data-brand="4"><img src="images/sub-brands/ex-home.png" alt=""></li>
-      <li data-brand="4">Enjoy more peace of mind with a total home security solutions. Xfinity delivers the advanced technology you need to protect and manage your home with 24/7 professional monitoring.</li>
+      <li data-brand="4">Enjoy more peace of mind with a total home security solution. Xfinity delivers the advanced technology you need to protect and manage your home with 24/7 professional monitoring.</li>
       <li data-brand="5"><img src="images/sub-brands/ex-mobile.png" alt=""></li>
-      <li data-brand="5">Discover a different kind of wireless network designed to save you money. Xfinity Mobile is the only wireless network that connects to millions of secure WiFi hotspots and the best LTE everywhere. Design your own data plan, so you only pay for what you need.</li>
+      <li data-brand="5">Discover a different kind of wireless network designed to save you money. Xfinity Mobile connects to millions of secure WiFi hotspots and the best LTE everywhere else. Design your own data plan, so you only pay for what you need.</li>
     </ul>
   </div><!-- /.sub-brands -->
   <div class="sub-brand-nav">

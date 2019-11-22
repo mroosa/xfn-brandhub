@@ -1,6 +1,8 @@
 <div class="col-1">
   <h1>Co-Branding</h1>
-  <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.</p>
+  <p>Xfinity supports a variety of partners and experiences to reinforce our brand purpose and passions.</p>
+  <p>For key partnerships, please follow best practices for co-branded lock ups, ensuring appropriate distance and 1:1 size relationship between logos.</p>
+  <p>For relationships where Xfinity is endorsing a partnership or experience, you may use a descriptive approach using the Xfinity logo. While endorsement line and sizing may vary, please ensure the Xfinity logo is legible and has impact.</p>
 </div>
 <div class="col-2">
   <div class="img">

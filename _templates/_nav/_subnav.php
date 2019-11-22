@@ -9,7 +9,7 @@ $subLinkAry = [
 	new NavLink('#sub-brands','Sub-Brands', null),
 	new NavLink('#secondary-graphics','Secondary Graphics', null),
 	new NavLink('#design-system','Design System', null),
-#	new NavLink('#co-branding','Co-Branding', null),
+	new NavLink('#co-branding','Co-Branding', null),
 #	new NavLink('#inspiration-gallery','Inspiration Gallery',null),
 #	new NavLink('#downloads','Downloads',null)
 ];

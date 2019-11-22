@@ -3,29 +3,44 @@
   <p>Xfinity supports a variety of partners and experiences to reinforce our brand purpose and passions.</p>
   <p>For key partnerships, please follow best practices for co-branded lock ups, ensuring appropriate distance and 1:1 size relationship between logos.</p>
   <p>For relationships where Xfinity is endorsing a partnership or experience, you may use a descriptive approach using the Xfinity logo. While endorsement line and sizing may vary, please ensure the Xfinity logo is legible and has impact.</p>
+  <p class="download"><a href="#downloads">Download Co-Branding</a></p>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" id="cb-overview">
-      <div class="tab-inner">
-
-      </div>
-    </div>
-
-    <!-- tab -->
     <div class="tab" id="cb-partnership" data-ttl="Partnership">
       <div class="tab-inner">
-
+        <ul class="optionWrap">
+          <li>
+            <video muted nocontrols loop autoplay>
+              <source src="video/cb-01-1.mp4" type="video/mp4">
+              <div>
+                <img src="images/co-branding/01-1.svg" alt="">
+                <img src="images/co-branding/01-2.svg" alt="">
+              </div>
+            </video>
+          </li>
+          <li>
+            <div>
+              <div class="img width-60"><img src="images/co-branding/01-3.png" alt=""></div>
+              <img class="border rounded" src="images/co-branding/01-4.png" alt="">
+            </div>
+          </li>
+          <li><img src="images/co-branding/01-5.svg" alt=""></li>
+        </ul>
       </div>
     </div>
 
     <!-- tab -->
     <div class="tab" id="cb-endorsement" data-ttl="Endorsement">
       <div class="tab-inner">
-
+        <ul class="optionWrap">
+          <li><img src="images/co-branding/02-1.svg" alt=""></li>
+          <li><img src="images/co-branding/02-2.png" alt=""></li>
+          <li><img src="images/co-branding/02-3.png" alt=""></li>
+        </ul>
       </div>
     </div>
 

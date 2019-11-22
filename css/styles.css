@@ -1310,6 +1310,10 @@ body:not(.button-wrapping) a.button {
       #design-system #btg li div h3 {
         margin: 10px 0; }
 
+/* Co-Branding */
+.tab video {
+  max-width: 100%; }
+
 /* Downloads */
 /* lightbox */
 /* Intro slide */

@@ -1087,11 +1087,9 @@ body:not(.button-wrapping) a.button {
 /* Brand Symbol */
 @media (min-width: 1200px) {
   #brand-symbol .col-2 {
-    transform: scale(0.8); } }
-
-@media all and (min-height: 700px) {
-  #brand-symbol .col-2 {
-    transform: scale(0.7); } }
+    transform: scale(0.8); }
+    #brand-symbol .col-2 section.with-tabs .tab {
+      height: 120vh; } }
 
 .tab .info {
   padding: 10px; }

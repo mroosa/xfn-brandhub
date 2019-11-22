@@ -1217,7 +1217,7 @@ body:not(.button-wrapping) a.button {
   overflow: hidden;
   height: 70px; }
   #sub-brands .sub-brand-logos .sub-brand-logo-1 {
-    padding-right: 1vw;
+    padding-right: 12px;
     position: relative;
     z-index: 2;
     background: #fff; }

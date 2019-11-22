@@ -5,7 +5,30 @@
   <p>For relationships where Xfinity is endorsing a partnership or experience, you may use a descriptive approach using the Xfinity logo. While endorsement line and sizing may vary, please ensure the Xfinity logo is legible and has impact.</p>
 </div>
 <div class="col-2">
-  <div class="img">
-    <img src="<?php print $dir; ?>images/cobranding/01.svg" alt="" />
+  <div class="tabs-wrapper">
+  <div class="tabs">
+
+    <!-- tab -->
+    <div class="tab" id="cb-overview">
+      <div class="tab-inner">
+
+      </div>
+    </div>
+
+    <!-- tab -->
+    <div class="tab" id="cb-partnership" data-ttl="Partnership">
+      <div class="tab-inner">
+
+      </div>
+    </div>
+
+    <!-- tab -->
+    <div class="tab" id="cb-endorsement" data-ttl="Endorsement">
+      <div class="tab-inner">
+
+      </div>
+    </div>
+
   </div>
+</div><!-- /.tabs-wrapper -->
 </div>

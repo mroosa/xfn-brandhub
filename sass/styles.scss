@@ -1146,6 +1146,9 @@ body:not(.button-wrapping) a.button {
   @include bp-min($xlg) {
     transform: scale(.8);
   }
+  @media all and (min-height: 700px) {
+    transform: scale(.7);
+  }
 }
 .tab {
 

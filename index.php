@@ -60,7 +60,7 @@
           <section id="design-system" class="with-tabs">
             <?php include_once("design/design-system.php"); ?>
           </section>
-          <section id="co-branding">
+          <section id="co-branding" class="with-tabs">
             <?php include_once("design/co-branding.php"); ?>
           </section>
           <!-- <section id="inspiration-gallery">

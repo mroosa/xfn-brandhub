@@ -23,7 +23,7 @@
   <div class="sub-brands">
     <ul>
       <li data-brand="0"><img src="images/sub-brands/ex-x1.png" alt=""></li>
-      <li data-brand="0">Change the way you experience TV with the simplest, fastest and most complete way to access all your entertainment. Say it and see with the X1 Voice Remote, browse personalized recommendations and discover a DVR that does it all.</li>
+      <li data-brand="0">Change the way you experience TV with the simplest, fastest and most complete way to access all your entertainment. Say it and see it with the X1 Voice Remote, browse personalized recommendations and discover a DVR that does it all.</li>
       <li data-brand="1"><img src="images/sub-brands/ex-xfi.png" alt=""></li>
       <li data-brand="1">Personalize your in-home WIFi network, pause WiFi to connected devices and see when new devices join your network. It’s the speed, coverage and control you need for the ultimate in-home WiFi experience.</li>
       <li data-brand="2"><img src="images/sub-brands/ex-stream.png" alt=""></li>

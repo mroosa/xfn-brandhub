@@ -673,6 +673,12 @@ body:not(.button-wrapping) a.button {
     .content .img img {
       display: block; }
     @media (min-width: 768px) {
+      .content .img.width-45 img {
+        max-width: 45%; }
+      .content .img.width-50 img {
+        max-width: 50%; }
+      .content .img.width-55 img {
+        max-width: 55%; }
       .content .img.width-60 img {
         max-width: 60%; }
       .content .img.width-65 img {
@@ -1286,7 +1292,7 @@ body:not(.button-wrapping) a.button {
       max-width: none; }
       @media (min-width: 1200px) {
         #sub-brands .sub-brand-nav ul li img {
-          height: 25px; } }
+          height: 23px; } }
     #sub-brands .sub-brand-nav ul li:hover, #sub-brands .sub-brand-nav ul li.active {
       opacity: 1; }
 
@@ -1299,15 +1305,19 @@ body:not(.button-wrapping) a.button {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 12% 2% 5% 3%; }
-    #design-system #btg li video,
-    #design-system #btg li img {
+    padding: 0 2%; }
+    @media all and (min-height: 900px) {
+      #design-system #btg li {
+        padding: 12% 2% 5% 3%; } }
+    #design-system #btg li .vid-wrap {
       width: 60%;
       border: 1px solid #999; }
-    #design-system #btg li div {
+    #design-system #btg li video {
+      display: block; }
+    #design-system #btg li div.info {
       width: 40%;
       padding: 3% 20px 20px 40px; }
-      #design-system #btg li div h3 {
+      #design-system #btg li div.info h3 {
         margin: 10px 0; }
 
 /* Co-Branding */

@@ -13,25 +13,31 @@
       <div class="tab-inner">
         <ul id="btg" class="optionWrap">
           <li>
-            <video autoplay muted nocontrols>
-              <source src="video/ds-01-01.mp4" type="video/mp4">
-              <img src="images/design-system/01-01.png" alt="">
-            </video>
-            <div><h3>Step 1</h3> Divide the page by thirds</div>
+            <div class="vid-wrap">
+              <video autoplay muted nocontrols style="transform: scale(1, .99);">
+                <source src="video/ds-01-01.mp4" type="video/mp4">
+                <img src="images/design-system/01-01.png" alt="">
+              </video>
+            </div>
+            <div class="info"><h3>Step 1</h3> Divide the page by thirds</div>
           </li>
           <li>
-            <video autoplay muted nocontrols>
-              <source src="video/ds-01-02.mp4" type="video/mp4">
-              <img src="images/design-system/01-02.png" alt="">
-            </video>
-            <div><h3>Step 2</h3> Divide the center section into equal segments</div>
+            <div class="vid-wrap">
+              <video autoplay muted nocontrols style="transform: scale(1, .99);">
+                <source src="video/ds-01-02.mp4" type="video/mp4">
+                <img src="images/design-system/01-02.png" alt="">
+              </video>
+            </div>
+            <div class="info"><h3>Step 2</h3> Divide the center section into equal segments</div>
           </li>
           <li>
-            <video autoplay muted nocontrols>
-              <source src="video/ds-01-03.mp4" type="video/mp4">
-              <img src="images/design-system/01-03.png" alt="">
-            </video>
-            <div><h3>Step 3</h3> Create the dynamic angle by connecting two points of the equally divided segments</div>
+            <div class="vid-wrap">
+              <video autoplay muted nocontrols style="transform: scale(1, .99);">
+                <source src="video/ds-01-03.mp4" type="video/mp4">
+                <img src="images/design-system/01-03.png" alt="">
+              </video>
+            </div>
+            <div class="info"><h3>Step 3</h3> Create the dynamic angle by connecting two points of the equally divided segments</div>
           </li>
         </ul>
       </div>

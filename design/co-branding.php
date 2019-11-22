@@ -24,11 +24,11 @@
           </li>
           <li>
             <div>
-              <div class="img width-60"><img src="images/co-branding/01-3.png" alt=""></div>
+              <div class="img width-45"><img src="images/co-branding/01-3.png" alt=""></div>
               <img class="border rounded" src="images/co-branding/01-4.png" alt="">
             </div>
           </li>
-          <li><img src="images/co-branding/01-5.svg" alt=""></li>
+          <li><div class="img width-75"><img src="images/co-branding/01-5.svg" alt=""></div></li>
         </ul>
       </div>
     </div>

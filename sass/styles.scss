@@ -623,6 +623,9 @@ body:not(.button-wrapping) a.button {
       display: block;
     }
     @include bp-min($sml) {
+      &.width-45 img {max-width: 45%;}
+      &.width-50 img {max-width: 50%;}
+      &.width-55 img {max-width: 55%;}
       &.width-60 img {max-width: 60%;}
       &.width-65 img {max-width: 65%;}
       &.width-70 img {max-width: 75%;}
@@ -1402,7 +1405,7 @@ body:not(.button-wrapping) a.button {
         img {
           height: 15px;
           @include bp-min($xlg) {
-            height: 25px;
+            height: 23px;
           }
           max-height: 100%;
           max-width: none;
@@ -1428,15 +1431,21 @@ body:not(.button-wrapping) a.button {
       display: flex;
       justify-content: center;
       align-items: flex-start;
-      padding: 12% 2% 5% 3%;
+      padding: 0 2%;
+      @media all and (min-height: 900px) {
+        padding: 12% 2% 5% 3%;
+      }
 
-      video,
-      img {
+      .vid-wrap {
         width: 60%;
         border: 1px solid #999;
       }
 
-      div {
+      video {
+        display: block;
+      }
+
+      div.info {
         width: 40%;
         padding: 3% 20px 20px 40px;
 

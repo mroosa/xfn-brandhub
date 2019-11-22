@@ -1298,8 +1298,10 @@ body:not(.button-wrapping) a.button {
     justify-content: center;
     align-items: flex-start;
     padding: 12% 2% 5% 3%; }
+    #design-system #btg li video,
     #design-system #btg li img {
-      width: 60%; }
+      width: 60%;
+      border: 1px solid #999; }
     #design-system #btg li div {
       width: 40%;
       padding: 3% 20px 20px 40px; }

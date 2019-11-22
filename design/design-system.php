@@ -11,11 +11,10 @@
     <!-- tab -->
     <div class="tab" id="ds-grid" data-ttl="Build the Grid">
       <div class="tab-inner">
-        <h3>Build the Grid</h3>
-        <ul>
-          <li><strong>Step 1</strong><br> Divide the page by thirds</li>
-          <li><strong>Step 2</strong><br> Divide the center section into equal segments</li>
-          <li><strong>Step 3</strong><br> Create the dynamic angle by connecting two points of the equally divided segments</li>
+        <ul id="btg" class="optionWrap">
+          <li><img src="images/design-system/01-01.png" alt=""><div><h3>Step 1</h3> Divide the page by thirds</div></li>
+          <li><img src="images/design-system/01-02.png" alt=""><div><h3>Step 2</h3> Divide the center section into equal segments</div></li>
+          <li><img src="images/design-system/01-03.png" alt=""><div><h3>Step 3</h3> Create the dynamic angle by connecting two points of the equally divided segments</div></li>
         </ul>
       </div>
     </div>
@@ -23,14 +22,22 @@
     <!-- tab -->
     <div class="tab" id="ds-horizontal" data-ttl="Horizontal">
       <div class="tab-inner">
-        <h3>Horizontal</h3>
+        <ul class="optionWrap">
+          <li><img src="images/design-system/02-01.png" alt=""></li>
+          <li><img src="images/design-system/02-02.png" alt=""></li>
+          <li><img src="images/design-system/02-03.png" alt=""></li>
+        </ul>
       </div>
     </div>
 
     <!-- tab -->
     <div class="tab" id="ds-vertical" data-ttl="Vertical">
       <div class="tab-inner">
-        <h3>Vertical</h3>
+        <ul class="optionWrap">
+          <li><img style="width: auto;" src="images/design-system/03-01.png" alt="" title="Angles should be used purposefully to create depth and acts as a plane for devices and images to lay on."></li>
+          <li><img style="width: auto;" src="images/design-system/03-02.png" alt=""></li>
+          <li><img src="images/design-system/03-03.png" alt=""></li>
+        </ul>
       </div>
     </div>
 

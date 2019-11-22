@@ -19,7 +19,7 @@
           <li><img src="images/secondary-graphics/01-6.svg" alt=""></li>
           <li><img src="images/secondary-graphics/01-7.svg" alt=""></li>
           <li><img src="images/secondary-graphics/01-8.svg" alt=""></li>
-          <li><img src="images/secondary-graphics/01-9.svg" alt=""></li>
+          <li><img src="images/secondary-graphics/01-9.png" alt=""></li>
         </ul>
       </div>
     </div>

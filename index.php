@@ -39,17 +39,20 @@
           <section id="logo" class="with-tabs active">
             <?php include_once("design/logo.php"); ?>
           </section>
+          <section id="brand-symbol" class="with-tabs">
+            <?php include_once("design/brand-symbol.php"); ?>
+          </section>
           <section id="color">
             <?php include_once("design/color.php"); ?>
+          </section>
+          <section id="voice-and-tone">
+            <?php include_once("design/voice-and-tone.php"); ?>
           </section>
           <section id="typography" class="with-tabs">
             <?php include_once("design/typography.php"); ?>
           </section>
           <section id="photography">
             <?php include_once("design/photography.php"); ?>
-          </section>
-          <section id="brand-symbol" class="with-tabs">
-            <?php include_once("design/brand-symbol.php"); ?>
           </section>
           <section id="sub-brands" class="with-tabs">
             <?php include_once("design/sub-brands.php"); ?>

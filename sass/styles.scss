@@ -1142,16 +1142,15 @@ body:not(.button-wrapping) a.button {
 }
 
 /* Brand Symbol */
-#brand-symbol .col-2 {
+#brand-symbol {
+
   @include bp-min($xlg) {
-    transform: scale(.8);
     section.with-tabs .tab {
       height: 120vh;
     }
-  }
-
-  @media all and (min-height: 700px) {
-
+    .col-2 {
+      transform: scale(.8);
+    }
   }
 }
 .tab {

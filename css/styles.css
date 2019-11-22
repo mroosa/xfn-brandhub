@@ -1086,7 +1086,7 @@ body:not(.button-wrapping) a.button {
 
 /* Brand Symbol */
 @media (min-width: 1200px) {
-  #brand-symbol section.with-tabs .tab {
+  #brand-symbol .tab {
     height: 120vh; }
   #brand-symbol .col-2 {
     transform: scale(0.8); } }

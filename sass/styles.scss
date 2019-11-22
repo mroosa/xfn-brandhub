@@ -1145,7 +1145,7 @@ body:not(.button-wrapping) a.button {
 #brand-symbol {
 
   @include bp-min($xlg) {
-    section.with-tabs .tab {
+    .tab {
       height: 120vh;
     }
     .col-2 {

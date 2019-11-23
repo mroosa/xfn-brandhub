@@ -682,6 +682,8 @@ body:not(.button-wrapping) a.button {
             margin: 0 2% 0 0; } }
         .content section .tab-nav li a {
           width: 100%; }
+      .content section .tab-nav[data-count="4"] {
+        width: 75%; }
   .content .img {
     margin: 20px 0 40px 0; }
     .content .img img {

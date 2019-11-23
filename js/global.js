@@ -253,8 +253,16 @@ $(document).ready(function() {
       $(this).addClass("active");
       return false;
     });
-
   });
+
+  // Add count to left button navs
+  $("section").each(function() {
+    var numBtns = $(this).find(".tab-nav li").length;
+    if (numBtns > 0) {
+      $(this).find(".tab-nav").attr("data-count",numBtns);
+    }
+  })
+
 
   // Color swatches
   $(".color-swatches .color")

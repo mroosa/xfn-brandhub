@@ -632,6 +632,10 @@ body:not(.button-wrapping) a.button {
           width: 100%;
         }
       }
+
+      &[data-count="4"] {
+        width: 75%;
+      }
     }
 
   }

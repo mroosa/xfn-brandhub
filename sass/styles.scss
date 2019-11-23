@@ -589,6 +589,7 @@ body:not(.button-wrapping) a.button {
       align-items: center;
       align-content: center;
       justify-content: center;
+      width: 100%;
       @include bp-min($max) {
         width: 1460px;
       }

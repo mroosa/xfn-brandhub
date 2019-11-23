@@ -648,7 +648,8 @@ body:not(.button-wrapping) a.button {
       display: flex;
       align-items: center;
       align-content: center;
-      justify-content: center; }
+      justify-content: center;
+      width: 100%; }
       @media (min-width: 1800px) {
         .content section .col-wrap {
           width: 1460px; } }

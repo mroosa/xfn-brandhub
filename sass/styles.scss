@@ -55,7 +55,7 @@ img {
 }
 
 .inner {
-  max-width: $max;
+  // max-width: $max;
   width: 100%;
   margin: 0 auto;
 }
@@ -162,6 +162,15 @@ main {
         padding: 30px 100px 10px 0;
       }
     }
+    @include bp-min($max) {
+      width: calc( ( ( 100vw - 1700px ) / 2 ) + 200px);
+      // needs 230 instead of 200 for some reason
+      padding-left: calc( ( 100vw - 1800px ) / 2);
+      .logo {
+        padding: 30px 0 10px 0;
+        width: 50px;
+      }
+    }
     #subnav {
       position: fixed;
       width: 150px;
@@ -177,7 +186,7 @@ main {
       width: calc(100% - 200px);
     }
     @include bp-min($max) {
-      padding-right:140px;
+      width: 100%;
     }
 
     p {
@@ -573,9 +582,19 @@ body:not(.button-wrapping) a.button {
 
     display: flex;
     align-items: center;
-    justify-content: center;
-    @include bp-min($xlg) {
-      padding: 0 2%;
+    justify-content: flex-start;
+
+    .col-wrap {
+      display: flex;
+      align-items: center;
+      align-content: center;
+      justify-content: center;
+      @include bp-min($max) {
+        width: 1460px;
+      }
+      @include bp-min($xlg) {
+        padding: 0 2%;
+      }
     }
 
     .col-1 {

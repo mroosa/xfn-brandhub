@@ -1,7 +1,7 @@
 <?php
   $dir = "";
-  $scriptList = ['subnav.js','gallery.js'];
-  $styleList = ['gallery.css'];
+  $scriptList = ['subnav.js','gallery.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration.js'];
+  $styleList = ['gallery.css','inspiration.css','featherlight.css'];
   // $activeMain = 0; // Design
   $activeSub = 0;
   $bodyClassList = ['two-col'];
@@ -23,7 +23,7 @@
         <div class="sidebar black">
           <div id="subnav">
             <div class="logo"><a href="#logo">
-              <svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115" style="enable-background:new 0 0 107.3 115;\">
+              <svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115">
                 <g>
                   <path d="M51.2,38.6L79.9,0h-12c-5.4,0-8.8,1.9-11.7,5.7L41.1,26.1L26.4,5.7C23.5,1.9,20.1,0,14.7,0h-12l28.4,38.6L0,80.6h11.4
             		c5.4,0,8.8-1.9,11.7-5.7l18-23.9l42.2,58.3c2.7,3.8,6.3,5.7,11.7,5.7h12.3L51.2,38.6z" />
@@ -97,11 +97,11 @@
             </div><!-- /.col-wrap -->
           </section>
 
-          <!-- <section id="inspiration-gallery">
+          <section id="inspiration-gallery">
             <div class="col-wrap">
-            <?php #include_once("../inspiration.php"); ?>
+            <?php include_once("design/inspiration.php"); ?>
             </div>
-          </section> -->
+          </section>
 
           <!-- <section id="downloads">
             <div class="col-wrap">

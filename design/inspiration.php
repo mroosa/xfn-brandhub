@@ -12,7 +12,7 @@
 
 ?>
 <div class="col-full">
-  <h1>Inspiration Gallery</h1>
+  <h1>Creative Examples</h1>
   <!-- <div class="form"> -->
   <?php
     // Output tags

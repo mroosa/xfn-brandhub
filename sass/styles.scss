@@ -1480,6 +1480,7 @@ body:not(.button-wrapping) a.button {
       .vid-wrap {
         width: 60%;
         border: 1px solid #999;
+        max-width: 340px;
       }
 
       video {

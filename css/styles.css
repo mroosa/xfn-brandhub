@@ -1337,7 +1337,8 @@ body:not(.button-wrapping) a.button {
         padding: 12% 2% 5% 3%; } }
     #design-system #btg li .vid-wrap {
       width: 60%;
-      border: 1px solid #999; }
+      border: 1px solid #999;
+      max-width: 340px; }
     #design-system #btg li video {
       display: block; }
     #design-system #btg li div.info {

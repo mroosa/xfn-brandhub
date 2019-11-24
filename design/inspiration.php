@@ -50,7 +50,7 @@
         $linkPreUrl = ($item -> type == 'image') ? "images/inspirations/" : "";
         $dataType = " data-featherlight=\"" . $item -> type . "\"";
         $output .= "\t\t<a href=\"" . $linkPreUrl . $item -> link . "\"" . $dataType . $dataSet . ">\n";
-        $output .= "\t\t\t<img src=\"images/inspirations/thumbnail/" . $item -> thumb . "\" alt=\"" . $item -> title . "\" />\n";
+        $output .= "\t\t\t<img class=\"border rounded\" src=\"images/inspirations/thumbnail/" . $item -> thumb . "\" alt=\"" . $item -> title . "\" />\n";
         $output .= "\t\t</a>\n";
         $output .= "\t</li>\n";
       }

@@ -424,9 +424,11 @@ section {
     list-style: none;
     margin: 0;
     padding: 0;
+    transition: .25s margin;
 
-    &.animate {
-      transition: .25s margin;
+    // Remove animation switching for 1:1 changes
+    &.swap {
+      transition: none;
     }
 
     li {

@@ -27,7 +27,7 @@
     <!-- tab -->
     <div class="tab" id="sg-mobile" data-ttl="Mobile App Icons">
       <div class="tab-inner">
-        <ul class="optionWrap">
+        <ul class="optionWrap animate">
           <li>
             <ul id="sg-m-1">
               <li class="img width-65"><img src="images/secondary-graphics/02-1.svg" alt=""><span>Xfinity Stream app</span></li>
@@ -65,7 +65,7 @@
     <!-- tab -->
     <div class="tab" id="sg-graphics" data-ttl="Graphics in Use">
       <div class="tab-inner">
-        <ul class="optionWrap">
+        <ul class="optionWrap animate">
           <li>
             <div style="flex-basis: 70%;">
               <img class="rounded border" src="images/secondary-graphics/04-01-1.png" alt="" title="Use the Voice Remote Microphone Button on communications that mention voice commands.">

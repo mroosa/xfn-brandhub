@@ -11,7 +11,7 @@
     <!-- tab -->
     <div class="tab" data-ttl="Primary Use" data-bg="white">
       <div class="tab-inner">
-        <ul class="optionWrap" title="Use the black or white version of the Xfinity logo for Xfinity communications and product experiences.">
+        <ul class="optionWrap swap" title="Use the black or white version of the Xfinity logo for Xfinity communications and product experiences.">
           <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/01.svg" alt="" /></li>
           <li data-alt="white logo" data-bg="black"><img src="<?php print $dir; ?>images/logo/02.svg" alt="" /></li>
         </ul>
@@ -21,7 +21,7 @@
     <!-- tab -->
     <div class="tab" data-ttl="Limited Use" data-bg="white">
       <div class="tab-inner">
-        <ul class="optionWrap" title="The red Xfinity logo is reserved for high impact use in environmental applications.">
+        <ul class="optionWrap swap" title="The red Xfinity logo is reserved for high impact use in environmental applications.">
           <li data-alt="limited use logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/03.svg" alt="" /></li>
         </ul>
       </div>
@@ -30,7 +30,7 @@
     <!-- tab -->
     <div class="tab" data-ttl="Future of Awesome" data-bg="white">
       <div class="tab-inner">
-        <ul class="optionWrap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
+        <ul class="optionWrap swap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
           <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
           <li data-alt="white logo" data-bg="black"><img src="<?php print $dir; ?>images/logo/05.svg" alt="" /></li>
         </ul>

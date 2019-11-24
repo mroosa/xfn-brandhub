@@ -11,7 +11,7 @@
     <!-- tab -->
     <div class="tab" id="ds-grid" data-ttl="Build the Grid">
       <div class="tab-inner">
-        <ul id="btg" class="optionWrap">
+        <ul id="btg" class="optionWrap swap">
           <li>
             <div class="vid-wrap">
               <video autoplay muted nocontrols style="transform: scale(1, .99);">

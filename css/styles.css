@@ -488,9 +488,10 @@ section.with-tabs .tab {
 section .optionWrap {
   list-style: none;
   margin: 0;
-  padding: 0; }
-  section .optionWrap.animate {
-    transition: .25s margin; }
+  padding: 0;
+  transition: .25s margin; }
+  section .optionWrap.swap {
+    transition: none; }
   section .optionWrap li {
     margin: 0;
     padding: 0;

@@ -9,7 +9,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" data-ttl="The Xfinity X" data-bg="white">
+    <div class="tab swap" data-ttl="The Xfinity X" data-bg="white">
       <div class="tab-inner">
         <ul class="optionWrap brand-x">
           <li data-alt="black brand symbol" data-bg="white" title="Our brand symbol X is available in black for light backgrounds.">

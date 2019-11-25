@@ -1654,8 +1654,8 @@ body[data-random-seed="4"] #secondary-graphics.active {
 
 #form-logout {
   position: fixed;
-  left: 0;
-  top: 0;
+  left: 10px;
+  bottom: 10px;
   z-index: 99;
   opacity: .25;
   transition: .25s opacity;

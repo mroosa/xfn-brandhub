@@ -1,4 +1,17 @@
 <?php
+  include_once("_templates/_db/config.php");
+
+  // Check user login or not
+  if(!isset($_SESSION['uname'])){
+    header('Location: login.php');
+  }
+
+  // logout
+  if(isset($_POST['but_logout'])){
+    session_destroy();
+    header('Location: login.php');
+  }
+
   $dir = "";
   $scriptList = ['subnav.js','gallery.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration.js'];
   $styleList = ['gallery.css','inspiration.css','featherlight.css'];
@@ -17,6 +30,9 @@
       <?php #include_once("overview.php"); ?>
     </section> -->
     <main>
+      <form id="form-logout" method='post' action="">
+        <input type="submit" value="Logout" name="but_logout">
+      </form>
       <div class="inner">
 
       <?php if (file_exists("_templates/_nav/_subnav.php")): ?>

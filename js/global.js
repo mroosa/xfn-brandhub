@@ -364,6 +364,6 @@ $(document).ready(function() {
 
   // Wrap buttons
   $("body").addClass("button-wrapping");
-  $(".button").wrapInner("<span>");
+  $("a.button").wrapInner("<span>");
 
 });

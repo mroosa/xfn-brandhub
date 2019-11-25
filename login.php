@@ -85,15 +85,7 @@
         showLogin();
       }, false);
 
-      // if (newTab.find("video").length > 0) {
-      //   newTab.find("video").get(0).currentTime = 0;
-      //   newTab.find("video").get(0).play();
-      // } else {
-      //   // Pause all other videos
-      //   $("video").get(0).pause();
-      // }
-
-
+      // Check status on input change to show button
       // $("input").on("change keyup paste", function() {
       //   console.log(checkInputs());
       //   if (checkInputs()) {

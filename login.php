@@ -43,7 +43,7 @@
           type:'post',
           data:{username:username,password:password},
           success:function(response){
-            var msg = "";
+            var msg = "&nbsp;";
             if(response == 1){
               window.location = "index.php";
             }else{

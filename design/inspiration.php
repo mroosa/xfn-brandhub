@@ -47,10 +47,10 @@
             }
           }
         }
-        $linkPreUrl = ($item -> type == 'image') ? "images/inspirations/" : "";
+        $linkPreUrl = ($item -> type == 'image') ? "images/creative-gallery/" : "";
         $dataType = " data-featherlight=\"" . $item -> type . "\"";
         $output .= "\t\t<a href=\"" . $linkPreUrl . $item -> link . "\"" . $dataType . $dataSet . ">\n";
-        $output .= "\t\t\t<img class=\"border rounded\" src=\"images/inspirations/thumbnail/" . $item -> thumb . "\" alt=\"" . $item -> title . "\" />\n";
+        $output .= "\t\t\t<img class=\"border rounded\" src=\"images/creative-gallery/thumbnail/" . $item -> thumb . "\" alt=\"" . $item -> title . "\" />\n";
         $output .= "\t\t</a>\n";
         $output .= "\t</li>\n";
       }

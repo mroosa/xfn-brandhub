@@ -73,9 +73,9 @@
               <img class="rounded border" src="images/secondary-graphics/04-01-2.png" alt="" title="The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go.">
             </div>
           </li>
-          <li><img class="rounded border" src="images/secondary-graphics/04-02.png" alt="" title="Use the Speed Test Badge on communications that reference Internet speed claims."></li>
-          <li><img class="rounded border" src="images/secondary-graphics/04-03.png" alt="" title="Use the Mobile App icons on communications that refer to mobile app experiences."></li>
-          <li><img class="rounded border" src="images/secondary-graphics/04-04.png" alt="" title="The Customer Commitment Badge is available for communications that reference our customer service promise."></li>
+          <li class="img width-65"><img class="rounded border" src="images/secondary-graphics/04-02.png" alt="" title="Use the Speed Test Badge on communications that reference Internet speed claims."></li>
+          <li class="img width-75"><img class="rounded border" src="images/secondary-graphics/04-03.png" alt="" title="Use the Mobile App icons on communications that refer to mobile app experiences."></li>
+          <li class="img width-75"><img class="rounded border" src="images/secondary-graphics/04-04.png" alt="" title="The Customer Commitment Badge is available for communications that reference our customer service promise."></li>
         </ul>
       </div>
     </div>

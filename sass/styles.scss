@@ -630,6 +630,7 @@ body:not(.button-wrapping) a.button {
 
     .col-full {
       width: 100%;
+      padding: 2%;
     }
 
     .tab-nav {
@@ -1248,7 +1249,7 @@ body:not(.button-wrapping) a.button {
       border: 1px solid #ccc;
       box-shadow: 5px 5px 5px rgba(0,0,0,.25);
       background: #fff;
-      width: 75%;
+      width: 85%;
       z-index: 1;
 
       &.text {
@@ -1474,8 +1475,8 @@ body:not(.button-wrapping) a.button {
   }
 }
 
-/* Design System */
-#design-system {
+/* Visual Layouts */
+#visual-layouts {
   #btg {
     list-style: none;
     margin: 0;
@@ -1633,14 +1634,19 @@ body[data-random-seed="4"] #secondary-graphics.active {
   flex-wrap: wrap;
 
   li {
-    padding: 5%;
+    padding: 15px;
     display: block;
     text-align: center;
+
+    &.img {
+      margin: 0;
+    }
 
     span {
       display: block;
       padding: 10px 0;
-      @include font-size(14px);
+      @include font-size(12px);
+      font-weight: 400;
       @include line-height(20px);
     }
   }
@@ -1787,62 +1793,67 @@ body[data-random-seed="4"] #secondary-graphics.active {
 }
 
 /* Downloads */
-// #downloads {
-//   display: block;
-//   padding-top: 15vh;
-//
-//   .button {
-//     min-width: 150px;
-//   }
-//   section {
-//     display: block;
-//     min-height: auto;
-//     padding: 40px 0;
-//     border-bottom: 1px solid #ccc;
-//
-//     .download-intro {
-//       padding: 20px;
-//       background: #fff;
-//       border-radius: $bdr;
-//       display: flex;
-//       align-items: center;
-//       .flex-col {
-//         width: 50%;
-//       }
-//       .flex-col-1 {
-//         text-align: left;
-//       }
-//       .flex-col-2 {
-//         text-align: right;
-//       }
-//     }
-//
-//     .download-contents {
-//       background: #efefef;
-//       padding: 10px 0;
-//       display: none;
-//       ul {
-//         list-style: none;
-//         padding: 0;
-//         margin: 0;
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: flex-start;
-//       }
-//       li {
-//         width: 20%;
-//         padding: 15px;
-//       }
-//       img {
-//         border: 1px solid #333;
-//         max-width: 100%;
-//       }
-//       .download-links {
-//         padding: 0 15px;
-//       }
-//     }
-//   }
-// }
+#downloads {
+  display: block;
+  padding-top: 15vh;
+
+  .button {
+    min-width: 150px;
+  }
+  .download-row {
+    display: block;
+    min-height: auto;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc;
+
+    .download-intro {
+      padding: 20px;
+      background: #fff;
+      border-radius: $bdr;
+      display: flex;
+      align-items: center;
+      .flex-col {
+        width: 50%;
+      }
+      .flex-col-1 {
+        text-align: left;
+      }
+      .flex-col-2 {
+        text-align: right;
+      }
+    }
+
+    .download-contents {
+      background: #efefef;
+      padding: 10px 0;
+      display: none;
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+      }
+      li {
+        width: 20%;
+        padding: 15px;
+      }
+      img {
+        border: 1px solid #333;
+        max-width: 100%;
+      }
+      .download-links {
+        padding: 0 15px;
+      }
+    }
+  }
+}
+
+/* Creative Examples */
+#creative-examples {
+  padding: 100px 0;
+}
 
 /* lightbox */
 

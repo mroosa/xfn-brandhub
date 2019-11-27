@@ -101,9 +101,9 @@
             </div><!-- /.col-wrap -->
           </section>
 
-          <section id="design-system" class="with-tabs">
+          <section id="visual-layouts" class="with-tabs">
             <div class="col-wrap">
-            <?php include_once("design/design-system.php"); ?>
+            <?php include_once("design/visual-layouts.php"); ?>
             </div><!-- /.col-wrap -->
           </section>
 
@@ -113,17 +113,17 @@
             </div><!-- /.col-wrap -->
           </section>
 
-          <section id="inspiration-gallery">
+          <section id="downloads">
+            <div class="col-wrap">
+            <?php include_once("design/downloads.php"); ?>
+            </div>
+          </section>
+
+          <section id="creative-examples">
             <div class="col-wrap">
             <?php include_once("design/inspiration.php"); ?>
             </div>
           </section>
-
-          <!-- <section id="downloads">
-            <div class="col-wrap">
-            <?php #include_once("design/downloads.php"); ?>
-            </div>
-          </section> -->
 
         </div><!-- /.content -->
       </div><!-- /.inner -->

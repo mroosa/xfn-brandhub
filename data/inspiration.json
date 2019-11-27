@@ -144,297 +144,227 @@
   "items": [
     {
       "title": "",
-      "tags": "brochure, account, apps, engagement",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-01-A.png",
-      "thumb": "Inspo-01.jpg"
+    	"link": "001.png",
+      "thumb": "001.jpg"
     },
     {
       "title": "",
-      "tags": "brochure, acquisition, brand",
-      "type": "iframe",
-      "link": "Inspo-02.png",
-      "thumb": "Inspo-02.jpg"
-    },
-    {
-      "title": "",
-      "tags": "print, engagement",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-03.png",
-      "thumb": "Inspo-03.jpg"
+      "link": "002.png",
+      "thumb": "002.jpg"
     },
     {
       "title": "",
-      "tags": "dm, acquisition",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-04.png",
-      "thumb": "Inspo-04.jpg"
+    	"link": "003.png",
+      "thumb": "003.jpg"
     },
     {
       "title": "",
-      "tags": "print, x1, acquisition, black-history",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-05.png",
-      "thumb": "Inspo-05.jpg"
+    	"link": "004.png",
+      "thumb": "004.jpg"
     },
     {
       "title": "",
-      "tags": "print, x1, acquisition, olympics",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-06.png",
-      "thumb": "Inspo-06.jpg"
+    	"link": "005.png",
+      "thumb": "005.jpg"
     },
     {
       "title": "",
-      "tags": "print, internet, acquisition",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-07.png",
-      "thumb": "Inspo-07.jpg"
+    	"link": "006.png",
+      "thumb": "006.jpg"
     },
     {
       "title": "",
-      "tags": "print, acquisition",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-08.png",
-      "thumb": "Inspo-08.jpg"
+    	"link": "007.png",
+      "thumb": "007.jpg"
     },
     {
       "title": "",
-      "tags": "dm, internet, acquisition",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-09.png",
-      "thumb": "Inspo-09.jpg"
+    	"link": "008.png",
+      "thumb": "008.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, x1, double, acquisition, world-cup",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-10.png",
-      "thumb": "Inspo-10.jpg"
+    	"link": "009.png",
+      "thumb": "009.jpg"
     },
     {
       "title": "",
-      "tags": "print, acquisition, world-cup",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-11.png",
-      "thumb": "Inspo-11.jpg"
+    	"link": "010.png",
+      "thumb": "010.jpg"
     },
     {
       "title": "",
-      "tags": "tv, acquisition, world-cup",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-      "link": "https://player.vimeo.com/video/291734888",
-      "thumb": "Inspo-12.jpg"
-    },
-    {
-      "title": "",
-      "tags": "tv, double, acquisition, world-cup",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-      "link": "https://player.vimeo.com/video/291734888",
-      "thumb": "Inspo-13.jpg"
-    },
-    {
-      "title": "",
-      "tags": "internet",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-14.png",
-      "thumb": "Inspo-14.jpg"
+    	"link": "011.png",
+      "thumb": "011.jpg"
     },
     {
       "title": "",
-      "tags": "internet",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-15.png",
-      "thumb": "Inspo-15.jpg"
+      "link": "012.png",
+      "thumb": "012.jpg"
     },
     {
       "title": "",
-      "tags": "internet",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-16.png",
-      "thumb": "Inspo-16.jpg"
+      "link": "013.png",
+      "thumb": "013.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, internet, acquisition",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-17.png",
-      "thumb": "Inspo-17.jpg"
+    	"link": "014.png",
+      "thumb": "014.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, internet",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-18.png",
-      "thumb": "Inspo-18.jpg"
+    	"link": "015.png",
+      "thumb": "015.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, internet",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-19.png",
-      "thumb": "Inspo-19.jpg"
+    	"link": "016.png",
+      "thumb": "016.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, internet",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-20.png",
-      "thumb": "Inspo-20.jpg"
+    	"link": "017.png",
+      "thumb": "017.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, internet",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-21.png",
-      "thumb": "Inspo-21.jpg"
+    	"link": "018.png",
+      "thumb": "018.jpg"
     },
     {
       "title": "",
-      "tags": "digital-banners, triple, acquisition",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-22.png",
-      "thumb": "Inspo-22.jpg"
+    	"link": "019.png",
+      "thumb": "019.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, internet, brand",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-23.png",
-      "thumb": "Inspo-23.jpg"
+    	"link": "020.png",
+      "thumb": "020.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, internet, brand",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-24.png",
-      "thumb": "Inspo-24.jpg"
+    	"link": "021.png",
+      "thumb": "021.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, stream, brand",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-25.png",
-      "thumb": "Inspo-25.jpg"
+    	"link": "022.png",
+      "thumb": "022.jpg"
     },
     {
       "title": "",
-      "tags": "digital-banners, x1, multicultural, black-history",
+      "tags": "",
       "type": "image",
-    	"link": "Inspo-26.png",
-      "thumb": "Inspo-26.jpg"
+    	"link": "023.png",
+      "thumb": "023.jpg"
     },
     {
       "title": "",
-      "tags": "tv, brand",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-      "link": "https://player.vimeo.com/video/291734888",
-      "thumb": "Inspo-27.jpg"
+      "tags": "",
+      "type": "image",
+    	"link": "024.png",
+      "thumb": "024.jpg"
     },
     {
       "title": "",
-      "tags": "tv, mobile, acquisition",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-      "link": "https://player.vimeo.com/video/291734888",
-      "thumb": "Inspo-28.jpg"
+      "tags": "",
+      "type": "image",
+    	"link": "025.png",
+      "thumb": "025.jpg"
     },
     {
       "title": "",
-      "tags": "tv, x1, engagement, olympics",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-      "link": "https://player.vimeo.com/video/291734888",
-      "thumb": "Inspo-29.jpg"
+      "tags": "",
+      "type": "image",
+    	"link": "026.png",
+      "thumb": "026.jpg"
     },
     {
       "title": "",
-      "tags": "tv, brand, olympics",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-      "link": "https://player.vimeo.com/video/291734888",
-      "thumb": "Inspo-30.jpg"
+      "tags": "",
+      "type": "image",
+      "link": "027.png",
+      "thumb": "027.jpg"
     },
     {
       "title": "",
-      "tags": "tv, brand, olympics",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-      "link": "https://player.vimeo.com/video/291734888",
-      "thumb": "Inspo-31.jpg"
+      "tags": "",
+      "type": "image",
+      "link": "028.png",
+      "thumb": "028.jpg"
     },
     {
       "title": "",
-      "tags": "tv, home, acquisition",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-      "link": "https://player.vimeo.com/video/291734888",
-      "thumb": "Inspo-32.jpg"
+      "tags": "",
+      "type": "image",
+      "link": "029.png",
+      "thumb": "029.jpg"
     },
     {
       "title": "",
-      "tags": "ooh, x1, acquisition",
-      "type": "iframe",
-      "data": [
-        {
-          "featherlight-iframe-width": "640",
-          "featherlight-iframe-height": "360",
-          "featherlight-iframe-style": "padding:25px;"
-        }
-      ],
-    	"link": "Inspo-33.png",
-      "thumb": "Inspo-33.jpg"
+      "tags": "",
+      "type": "image",
+      "link": "030.png",
+      "thumb": "030.jpg"
+    },
+    {
+      "title": "",
+      "tags": "",
+      "type": "image",
+      "link": "031.png",
+      "thumb": "031.jpg"
+    },
+    {
+      "title": "",
+      "tags": "",
+      "type": "image",
+      "link": "032.png",
+      "thumb": "032.jpg"
     }
   ]
 }

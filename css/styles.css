@@ -682,7 +682,8 @@ body:not(.button-wrapping) a.button {
         .content section .col-2 {
           width: 55%; } }
     .content section .col-full {
-      width: 100%; }
+      width: 100%;
+      padding: 2%; }
     .content section .tab-nav {
       list-style: none;
       margin: 30px 0;
@@ -1169,7 +1170,7 @@ body:not(.button-wrapping) a.button {
     border: 1px solid #ccc;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
     background: #fff;
-    width: 75%;
+    width: 85%;
     z-index: 1; }
     .tab .lightbox-shade .lightbox.text {
       padding: 10px 30px; }
@@ -1334,29 +1335,29 @@ body:not(.button-wrapping) a.button {
     #sub-brands .sub-brand-nav ul li:hover, #sub-brands .sub-brand-nav ul li.active {
       opacity: 1; }
 
-/* Design System */
-#design-system #btg {
+/* Visual Layouts */
+#visual-layouts #btg {
   list-style: none;
   margin: 0;
   padding: 0; }
-  #design-system #btg li {
+  #visual-layouts #btg li {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     padding: 0 2%; }
     @media all and (min-height: 900px) {
-      #design-system #btg li {
+      #visual-layouts #btg li {
         padding: 12% 2% 5% 3%; } }
-    #design-system #btg li .vid-wrap {
+    #visual-layouts #btg li .vid-wrap {
       width: 60%;
       border: 1px solid #999;
       max-width: 340px; }
-    #design-system #btg li video {
+    #visual-layouts #btg li video {
       display: block; }
-    #design-system #btg li div.info {
+    #visual-layouts #btg li div.info {
       width: 40%;
       padding: 3% 20px 20px 40px; }
-      #design-system #btg li div.info h3 {
+      #visual-layouts #btg li div.info h3 {
         margin: 10px 0; }
 
 /* Co-Branding */
@@ -1533,16 +1534,21 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
   #sg-additional #sg-ag-1 li,
   #sg-mobile #sg-m-1 li,
   #sg-mobile #sg-m-2 li {
-    padding: 5%;
+    padding: 15px;
     display: block;
     text-align: center; }
+    #sg-additional #sg-ag-1 li.img,
+    #sg-mobile #sg-m-1 li.img,
+    #sg-mobile #sg-m-2 li.img {
+      margin: 0; }
     #sg-additional #sg-ag-1 li span,
     #sg-mobile #sg-m-1 li span,
     #sg-mobile #sg-m-2 li span {
       display: block;
       padding: 10px 0;
-      font-size: 14px;
-      font-size: 0.875rem;
+      font-size: 12px;
+      font-size: 0.75rem;
+      font-weight: 400;
       line-height: 20px;
       line-height: 1.25rem; }
 
@@ -1661,6 +1667,52 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
           max-width: 100%; }
 
 /* Downloads */
+#downloads {
+  display: block;
+  padding-top: 15vh; }
+  #downloads .button {
+    min-width: 150px; }
+  #downloads .download-row {
+    display: block;
+    min-height: auto;
+    padding: 40px 0;
+    border-bottom: 1px solid #ccc; }
+    #downloads .download-row .download-intro {
+      padding: 20px;
+      background: #fff;
+      border-radius: 4px;
+      display: flex;
+      align-items: center; }
+      #downloads .download-row .download-intro .flex-col {
+        width: 50%; }
+      #downloads .download-row .download-intro .flex-col-1 {
+        text-align: left; }
+      #downloads .download-row .download-intro .flex-col-2 {
+        text-align: right; }
+    #downloads .download-row .download-contents {
+      background: #efefef;
+      padding: 10px 0;
+      display: none; }
+      #downloads .download-row .download-contents ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; }
+      #downloads .download-row .download-contents li {
+        width: 20%;
+        padding: 15px; }
+      #downloads .download-row .download-contents img {
+        border: 1px solid #333;
+        max-width: 100%; }
+      #downloads .download-row .download-contents .download-links {
+        padding: 0 15px; }
+
+/* Creative Examples */
+#creative-examples {
+  padding: 100px 0; }
+
 /* lightbox */
 /* Intro slide */
 .intro .caption {

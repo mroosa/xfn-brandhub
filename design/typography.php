@@ -1,6 +1,6 @@
 <div class="col-1">
   <h1>Typography</h1>
-  <p>Xfinity Brown is our primary and most expressive typeface. It should be used for headlines, short-form body copy, and other elements deserving emphasis, like subheads and calls to action.</p>
+  <p>Xfinity Brown is our primary and most expressive typeface. It should be used for headlines, short-form body copy, and other elements deserving emphasis, like subheads and calls to action. Xfinity Brown is always set with -20 kerning and auto leading.</p>
   <p class="download"><a href="#downloads">Download Typefaces</a></p>
 </div>
 <div class="col-2" data-active="0">
@@ -39,7 +39,7 @@
 
     <div class="tab" id="type-styles" data-ttl="Style & Weight">
       <div class="tab-inner">
-        <blockquote class="usage usage-1" title="Xfinity Brown is always set with -20 kerning and auto leading">Headlines <span>are set in Xfinity Brown Bold. They should be conversational and used for emphasis.</span></blockquote>
+        <blockquote class="usage usage-1">Headlines <span>are set in Xfinity Brown Bold. They should be conversational and used for emphasis.</span></blockquote>
         <blockquote class="usage usage-2">Subheads <span>are set in Xfinity Brown Bold. They are always set in a smaller font size than the headline.</span></blockquote>
         <blockquote class="usage usage-3">Short-form body copy <span>is set in Xfinity Brown Regular. Short-form body copy should be two to five sentences in length. Typically this is the only body copy on the creative.</span></blockquote>
         <blockquote class="usage usage-4">Long-form body copy <span>is set in Xfinity Standard Regular with auto leading. Long-form body copy is over five sentences long and typically used when there are multiple body copy text blocks. This can include bullets, detailed product descriptions and digital communications.</span></blockquote>

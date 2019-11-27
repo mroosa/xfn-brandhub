@@ -183,7 +183,7 @@ $(document).ready(function() {
   });
 
   // Add number of section
-  $(".content section").each(function(index) {
+  $(".content > section").each(function(index) {
     var prefix = (index < 9) ? "0": "";
     $(this).find("h1").prepend("<span>" + prefix + Math.floor(index + 1) + "</span> ");
   });

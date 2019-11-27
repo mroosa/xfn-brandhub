@@ -1,6 +1,6 @@
         <div class="col-full">
           <h1>Downloads</h1>
-          <section class="download-row" id="xfinity-logo">
+          <div class="download-row" id="xfinity-logo">
             <h3>Xfinity Logo</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -30,9 +30,9 @@
                 <a class="button" data-action="download" href="#">Download Selected</a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="comcast-logo">
+          <div class="download-row" id="comcast-logo">
             <h3>Comcast Logo</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -55,9 +55,9 @@
                 <a class="button" data-action="download" href="#">Download Selected</a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="sub-brands">
+          <div class="download-row" id="sub-brands">
             <h3>Sub Brands</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -68,9 +68,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="color">
+          <div class="download-row" id="color">
             <h3>Color</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -80,9 +80,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="typography">
+          <div class="download-row" id="typography">
             <h3>Typography</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -93,9 +93,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="photography">
+          <div class="download-row" id="photography">
             <h3>Photography</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -106,9 +106,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="xfinity-devices">
+          <div class="download-row" id="xfinity-devices">
             <h3>Xfinity Devices</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -119,9 +119,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="generic-devices">
+          <div class="download-row" id="generic-devices">
             <h3>Generic Devices</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -132,9 +132,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="mobile-app-icons">
+          <div class="download-row" id="mobile-app-icons">
             <h3>Mobile App Icons</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -145,9 +145,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="icons">
+          <div class="download-row" id="icons">
             <h3>Icons</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -158,9 +158,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="end-card">
+          <div class="download-row" id="end-card">
             <h3>End Card</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -171,9 +171,9 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
-          <section class="download-row" id="powerpoint">
+          <div class="download-row" id="powerpoint">
             <h3>Powerpoint Templates</h3>
             <div class="download-intro">
               <div class="flex-col flex-col-1">
@@ -184,6 +184,6 @@
                 <a class="button" href="#">Download <!-- All --></a>
               </div>
             </div>
-          </section><!-- /.download-row -->
+          </div><!-- /.download-row -->
 
         </div><!-- /.col-full -->

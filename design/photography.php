@@ -36,11 +36,11 @@
           </div>
           <div class="photo-info ltg" id="photography-xfn-devices">
             <h3>Xfinity Hardware</h3>
-            <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
+            <p>Xfinity hardware should be showcased when possible. Please use images from the brand team for consistency.</p>
           </div>
           <div class="photo-info ltg" id="photography-in-situ">
             <h3>In-Situation</h3>
-            <p>Xfinity hardware should be showcased when possible. Please use images from the brand team for consistency.</p>
+            <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
           </div>
           <div class="photo-info ltg" id="photography-devices">
             <h3>Generic Devices</h3>

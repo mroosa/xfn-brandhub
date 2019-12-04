@@ -426,34 +426,45 @@ main {
     text-decoration: underline; } }
 
 /* Content Area */
-section.with-tabs .tabs-wrapper {
+.content section.active {
+  z-index: 1; }
+  .content section.active .col-1 {
+    position: fixed;
+    z-index: 1;
+    left: 200px;
+    top: 15vh;
+    width: calc( ( 100vw - 200px ) * .45); }
+  .content section.active .col-2 {
+    margin-left: calc( ( 100vw - 200px ) * .45);
+    width: calc( ( 100vw - 200px ) * .55); }
+
+.content section.with-tabs .tabs-wrapper {
   overflow: hidden; }
 
-section.with-tabs .tabs {
-  transition: .25s margin;
-  display: flex; }
+.content section.with-tabs .tabs {
+  transition: .25s margin; }
 
-section.with-tabs .tab {
+.content section.with-tabs .tab {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh; }
-  section.with-tabs .tab img {
+  .content section.with-tabs .tab img {
     display: block;
     margin: 0 auto;
     max-width: 90%; }
-  section.with-tabs .tab .tab-inner {
+  .content section.with-tabs .tab .tab-inner {
     position: relative;
     width: 100%; }
-    section.with-tabs .tab .tab-inner .slideshow {
+    .content section.with-tabs .tab .tab-inner .slideshow {
       overflow: hidden; }
-      section.with-tabs .tab .tab-inner .slideshow ul {
+      .content section.with-tabs .tab .tab-inner .slideshow ul {
         display: flex; }
-    section.with-tabs .tab .tab-inner ul {
+    .content section.with-tabs .tab .tab-inner ul {
       list-style: none;
       margin: 0;
       padding: 0; }
-  section.with-tabs .tab .options li {
+  .content section.with-tabs .tab .options li {
     margin: 0;
     padding: 0;
     left: 0;
@@ -462,41 +473,41 @@ section.with-tabs .tab {
     display: flex;
     justify-content: center;
     align-items: center; }
-  section.with-tabs .tab .optionNav {
+  .content section.with-tabs .tab .optionNav {
     display: flex;
     justify-content: center;
     align-items: center; }
-    section.with-tabs .tab .optionNav li a {
+    .content section.with-tabs .tab .optionNav li a {
       display: block;
       height: 20px;
       width: 20px;
       margin: 5px;
       border: 2px solid #000;
       border-radius: 50%; }
-      section.with-tabs .tab .optionNav li a.active {
+      .content section.with-tabs .tab .optionNav li a.active {
         background: #000; }
-  section.with-tabs .tab .tab-inner .optionNav {
+  .content section.with-tabs .tab .tab-inner .optionNav {
     padding: 30px 0 10px 0; }
-  section.with-tabs .tab.with-options .img {
+  .content section.with-tabs .tab.with-options .img {
     position: absolute;
     left: 0;
     top: 0;
     margin: 0; }
-  section.with-tabs .tab.with-options .option:not(:first-child) {
+  .content section.with-tabs .tab.with-options .option:not(:first-child) {
     display: none; }
 
-section .optionWrap {
+.content section .optionWrap {
   list-style: none;
   margin: 0;
   padding: 0;
   transition: .25s margin; }
-  section .optionWrap.swap {
+  .content section .optionWrap.swap {
     transition: none; }
-  section .optionWrap li {
+  .content section .optionWrap li {
     margin: 0;
     padding: 0;
     max-height: 75vh; }
-    section .optionWrap li img {
+    .content section .optionWrap li img {
       align-self: center;
       max-height: 75vh;
       display: block; }
@@ -645,6 +656,10 @@ body:not(.button-wrapping) a.button {
     margin: 0; }
   .content section {
     min-height: 100vh;
+    background: #fff;
+    box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.15);
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
     justify-content: flex-start; }
@@ -665,25 +680,26 @@ body:not(.button-wrapping) a.button {
       @media (min-width: 1800px) {
         .content section .col-wrap {
           width: 1460px; } }
-      @media (min-width: 1200px) {
-        .content section .col-wrap {
-          padding: 0 2%; } }
     .content section .col-1 {
-      padding: 2%;
+      padding: 2vw;
       position: relative;
       width: 40%; }
       @media (min-width: 1200px) {
         .content section .col-1 {
-          width: 45%; } }
+          width: 45%;
+          position: absolute;
+          top: 15vh;
+          left: 0; } }
     .content section .col-2 {
-      padding: 0 2%;
+      padding: 0 2vw;
       width: 60%; }
       @media (min-width: 1200px) {
         .content section .col-2 {
-          width: 55%; } }
+          width: 55%;
+          margin-left: 45%; } }
     .content section .col-full {
       width: 100%;
-      padding: 2%; }
+      padding: 2vw; }
     .content section .tab-nav {
       list-style: none;
       margin: 30px 0;

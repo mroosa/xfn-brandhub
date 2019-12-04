@@ -223,7 +223,7 @@ $(document).ready(function() {
         theTabs = thisSec.find(".tabs"),
         numTabs = theTabs.find(".tab").length;
     theTabs
-      .css({"width": Math.floor(numTabs * 100) + "%"})
+      // .css({"width": Math.floor(numTabs * 100) + "%"})
       .attr({"data-count": numTabs})
       .find(".tab:first-child").addClass("active");
 
@@ -236,7 +236,7 @@ $(document).ready(function() {
           linkClass = (index==0) ? " active" : "";
       $(this)
         .attr({"data-id":index})
-        .css({"width":100 / numTabs + "%" });
+        // .css({"width":100 / numTabs + "%" });
       // Tab options
       createOptions(theTab);
       if (tabTtl != "" && tabTtl != undefined) {

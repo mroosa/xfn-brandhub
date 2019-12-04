@@ -330,7 +330,26 @@ main {
 }
 
 /* Content Area */
-section {
+.content section {
+
+  // Active section
+  &.active {
+    z-index: 1;
+    .col-1 {
+      position: fixed;
+      z-index: 1;
+      left: 200px;
+      top: 15vh;
+      width: calc( ( 100vw - 200px ) * .45 );
+    }
+    .col-2 {
+      margin-left: calc( ( 100vw - 200px ) * .45 );
+      width: calc( ( 100vw - 200px ) * .55 );
+      // @include bp-min($max) {
+      //   padding-left: calc( 50% + ( 100vw - 1800px ) / 2);
+      // }
+    }
+  }
 
   // Tabbed content
   &.with-tabs {
@@ -339,7 +358,7 @@ section {
     }
     .tabs {
       transition: .25s margin;
-      display: flex;
+      // display: flex;
     }
 
     .tab {
@@ -581,6 +600,11 @@ body:not(.button-wrapping) a.button {
 
   section {
     min-height: 100vh;
+    background: #fff;
+    box-shadow: 0 -5px 15px rgba(0,0,0,.15);
+    position: relative;
+    z-index: 2;
+
     // margin-bottom: 120px;
     @include bp-max($sml) {
       margin-bottom: 75px;
@@ -607,30 +631,34 @@ body:not(.button-wrapping) a.button {
         width: 1460px;
       }
       @include bp-min($xlg) {
-        padding: 0 2%;
+        // padding: 0 2%;
       }
     }
 
     .col-1 {
-      padding: 2%;
+      padding: 2vw;
       position: relative;
       width: 40%;
       @include bp-min($xlg) {
         width: 45%;
+        position: absolute;
+        top: 15vh;
+        left: 0;
       }
     }
 
     .col-2 {
-      padding: 0 2%;
+      padding: 0 2vw;
       width: 60%;
       @include bp-min($xlg) {
         width: 55%;
+        margin-left: 45%;
       }
     }
 
     .col-full {
       width: 100%;
-      padding: 2%;
+      padding: 2vw;
     }
 
     .tab-nav {

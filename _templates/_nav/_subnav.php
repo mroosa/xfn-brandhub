@@ -1,18 +1,18 @@
 <?php
 $subLinkAry = [
-	#new NavLink('#brand-story','Our Brand', null),
+#	new NavLink('#brand-story','Our Brand', null),
 	new NavLink('#logo','Logo', null),
 	new NavLink('#brand-symbol','Brand Symbol', null),
+	new NavLink('#sub-brands','Sub-Brands', null),
 	new NavLink('#color','Color', null),
 	new NavLink('#typography','Typography', null),
 	new NavLink('#voice-and-tone','Voice & Tone', null),
 	new NavLink('#photography','Photography', null),
-	new NavLink('#sub-brands','Sub-Brands', null),
 	new NavLink('#secondary-graphics','Secondary Graphics', null),
 	new NavLink('#visual-layouts','Visual Layouts', null),
 	new NavLink('#co-branding','Co-Branding', null),
+	new NavLink('#creative-examples','Creative Examples',null),
 	new NavLink('#downloads','Downloads',null),
-	new NavLink('#creative-examples','Creative Examples',null)
 ];
 
 print "\t<ul class=\"nav menu\">\n";

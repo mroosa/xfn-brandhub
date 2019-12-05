@@ -65,6 +65,12 @@
             </div><!-- /.col-wrap -->
           </section>
 
+          <section id="sub-brands" class="with-tabs">
+            <div class="col-wrap">
+            <?php include_once("design/sub-brands.php"); ?>
+            </div><!-- /.col-wrap -->
+          </section>
+
           <section id="color">
             <div class="col-wrap">
             <?php include_once("design/color.php"); ?>
@@ -80,18 +86,12 @@
           <section id="voice-and-tone">
             <div class="col-wrap">
             <?php include_once("design/voice-and-tone.php"); ?>
-            </div><!-- /.col-wrap -->
+          </div><!-- /.col-wrap -->
           </section>
 
           <section id="photography">
             <div class="col-wrap">
             <?php include_once("design/photography.php"); ?>
-            </div><!-- /.col-wrap -->
-          </section>
-
-          <section id="sub-brands" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/sub-brands.php"); ?>
             </div><!-- /.col-wrap -->
           </section>
 
@@ -113,15 +113,15 @@
             </div><!-- /.col-wrap -->
           </section>
 
-          <section id="downloads">
-            <div class="col-wrap">
-            <?php include_once("design/downloads.php"); ?>
-            </div>
-          </section>
-
           <section id="creative-examples">
             <div class="col-wrap">
             <?php include_once("design/inspiration.php"); ?>
+            </div>
+          </section>
+
+          <section id="downloads">
+            <div class="col-wrap">
+            <?php include_once("design/downloads.php"); ?>
             </div>
           </section>
 

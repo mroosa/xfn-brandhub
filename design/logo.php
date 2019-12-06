@@ -9,7 +9,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" data-ttl="Primary Use" data-bg="white">
+    <div class="tab" data-ttl="Primary Use" data-bg="white" id="logo-primary-use">
       <div class="tab-inner">
         <ul class="optionWrap swap" title="Use the black or white version of the Xfinity logo for Xfinity communications and product experiences.">
           <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/01.svg" alt="" /></li>
@@ -19,7 +19,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Limited Use" data-bg="white">
+    <div class="tab" data-ttl="Limited Use" data-bg="white" id="logo-limited-use">
       <div class="tab-inner">
         <ul class="optionWrap swap" title="The red Xfinity logo is reserved for high impact use in environmental applications.">
           <li data-alt="limited use logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/03.svg" alt="" /></li>
@@ -28,7 +28,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Future of Awesome" data-bg="white">
+    <div class="tab" data-ttl="Future of Awesome" data-bg="white" id="logo-future-of-awesome">
       <div class="tab-inner">
         <ul class="optionWrap swap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
           <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
@@ -38,7 +38,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Logo in Motion" style="background: #1e1e1e;" data-bg="drk-gry">
+    <div class="tab" data-ttl="Logo in Motion" style="background: #1e1e1e;" data-bg="drk-gry" id="logo-in-motion">
       <div class="tab-inner">
         <video muted nocontrols autoplay loop style="max-width: 100%;" title="Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a black background ensures optimal legibility, consistency and impact. It is available in English and Spanish.">
           <source src="<?php print $dir; ?>video/xfn-endcard-sq-5s.mp4" type="video/mp4">

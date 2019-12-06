@@ -9,7 +9,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" id="cb-partnership" data-ttl="Partnership">
+    <div class="tab" id="co-branding-partnership" data-ttl="Partnership">
       <div class="tab-inner">
         <ul class="optionWrap">
           <li>
@@ -33,7 +33,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="cb-endorsement" data-ttl="Endorsement">
+    <div class="tab" id="co-branding-endorsement" data-ttl="Endorsement">
       <div class="tab-inner">
         <ul class="optionWrap">
           <li><img style="width: 350px;" src="images/co-branding/02-1.svg" alt=""></li>

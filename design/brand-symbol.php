@@ -9,9 +9,9 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab swap" data-ttl="The Xfinity X" data-bg="white">
+    <div class="tab swap" data-ttl="The Xfinity X" data-bg="white" id="the-xfinity-x">
       <div class="tab-inner">
-        <ul class="optionWrap brand-x">
+        <ul class="optionWrap brand-x swap">
           <li data-alt="black brand symbol" data-bg="white" title="Our brand symbol X is available in black for light backgrounds.">
             <img style="max-width: 55%;" src="<?php print $dir; ?>images/brand-symbol/01.svg" alt="" /></li>
           <li data-alt="white brand symbol" data-bg="black" title="Our brand symbol X is available in white for dark backgrounds.">
@@ -21,7 +21,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Functional" data-bg="white">
+    <div class="tab" data-ttl="Functional" data-bg="white" id="brand-symbol-functional">
       <div class="tab-inner">
         <div class="info">
           <h3>Functional</h3>
@@ -37,7 +37,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Expressive" data-bg="white">
+    <div class="tab" data-ttl="Expressive" data-bg="white" id="brand-symbol-expressive">
       <div class="tab-inner">
         <div class="info">
           <h3>Expressive</h3>

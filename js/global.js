@@ -240,19 +240,20 @@ $(document).ready(function() {
       // Tab options
       createOptions(theTab);
       if (tabTtl != "" && tabTtl != undefined) {
-        tabNavContents += '<li><a class="button ignore-click set-tab' + linkClass + '" data-id="' + index + '" href="#">' + tabTtl + '</a></li>';
+        // tabNavContents += '<li><a class="button ignore-click set-tab' + linkClass + '" data-id="' + index + '" href="#' + $(this).attr("id") + '">' + tabTtl + '</a></li>';
+        tabNavContents += '<li><a class="button set-tab' + linkClass + '" data-id="' + index + '" href="#' + $(this).attr("id") + '">' + tabTtl + '</a></li>';
       }
     });
 
     // Create Tab buttons in main column
     thisSec.find(".col-1 p.download").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
-    thisSec.find(".set-tab").click(function() {
-      var newTab = $(this).attr("data-id");
-      tabGo(newTab, theTabs);
-      $(this).parents(".tab-nav").find(".active").removeClass("active");
-      $(this).addClass("active");
-      return false;
-    });
+    // thisSec.find(".set-tab").click(function() {
+    //   var newTab = $(this).attr("data-id");
+    //   tabGo(newTab, theTabs);
+    //   $(this).parents(".tab-nav").find(".active").removeClass("active");
+    //   $(this).addClass("active");
+    //   return false;
+    // });
   });
 
   // Add count to left button navs

@@ -35,10 +35,13 @@ html.hide {
 body {
   margin: 0;
   padding: 0;
-  color: #000000;
-  background: #ffffff;
+  color: #fff;
+  background: #000;
   font-family: "XfinityBrown", "Helvetica", "Arial", sans-serif;
 
+  &.login {
+    color: #000;
+  }
 }
 
 a {
@@ -164,7 +167,6 @@ main {
     }
     @include bp-min($max) {
       width: calc( ( ( 100vw - 1700px ) / 2 ) + 200px);
-      // needs 230 instead of 200 for some reason
       padding-left: calc( ( 100vw - 1800px ) / 2);
       .logo {
         padding: 30px 0 10px 0;
@@ -338,16 +340,16 @@ main {
     .col-1 {
       position: fixed;
       z-index: 1;
-      left: 200px;
-      top: 15vh;
-      width: calc( ( 100vw - 200px ) * .45 );
+      left: 150px;
+      @include bp-min($lrg) {
+        left: 200px;
+      }
+      @include bp-min($max) {
+        left: calc( ( (100vw - 1800px) / 2 ) + 215px);
+      }
     }
     .col-2 {
-      margin-left: calc( ( 100vw - 200px ) * .45 );
-      width: calc( ( 100vw - 200px ) * .55 );
-      // @include bp-min($max) {
-      //   padding-left: calc( 50% + ( 100vw - 1800px ) / 2);
-      // }
+
     }
   }
 
@@ -541,7 +543,7 @@ body:not(.button-wrapping) a.button {
   overflow: hidden;
 
   h1 {
-    margin: 0 0 .5em 0;
+    margin: 0 0 .25em 0;
     @include Brown(48px, 800);
     @include bp-min($xlg) {
       @include Brown(72px, 800);
@@ -553,9 +555,10 @@ body:not(.button-wrapping) a.button {
     }
     span {
       display: block;
-      font-size: 75%;
+      font-size: 65%;
       font-weight: 200;
       padding-bottom: 0px;
+      line-height: 110%;
     }
   }
 
@@ -601,7 +604,8 @@ body:not(.button-wrapping) a.button {
   section {
     min-height: 100vh;
     background: #fff;
-    box-shadow: 0 -5px 15px rgba(0,0,0,.15);
+    color: #000;
+    box-shadow: 0 -15px 35px rgba(0,0,0,.15);
     position: relative;
     z-index: 2;
 
@@ -637,24 +641,39 @@ body:not(.button-wrapping) a.button {
 
     .col-1 {
       padding: 2vw;
-      position: relative;
-      width: 40%;
-      @include bp-min($xlg) {
-        width: 45%;
-        position: absolute;
-        top: 15vh;
-        left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-items: center;
+      align-content: center;
+      height: 100vh;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: calc( ( 100vw - 150px ) * .40 );
+      @include bp-min($lrg) {
+        width: calc( ( 100vw - 200px ) * .45 );
       }
+    }
+    .col-2 {
+      // padding: 0 2vw;
+
+      margin-left: calc( ( 100vw - 150px ) * .40 );
+      width: calc( ( 100vw - 150px ) * .60 );
+      @include bp-min($lrg) {
+        margin-left: calc( ( 100vw - 200px ) * .45 );
+        width: calc( ( 100vw - 200px ) * .55 );
+      }
+
+      .tabs-wrapper .tab {
+        padding: 0 2vw;
+      }
+      // @include bp-min($max) {
+      //   padding-left: calc( 50% + ( 100vw - 1800px ) / 2);
+      // }
     }
 
-    .col-2 {
-      padding: 0 2vw;
-      width: 60%;
-      @include bp-min($xlg) {
-        width: 55%;
-        margin-left: 45%;
-      }
-    }
 
     .col-full {
       width: 100%;
@@ -695,15 +714,15 @@ body:not(.button-wrapping) a.button {
       display: block;
     }
     @include bp-min($sml) {
-      &.width-45 img {max-width: 45%;}
-      &.width-50 img {max-width: 50%;}
-      &.width-55 img {max-width: 55%;}
-      &.width-60 img {max-width: 60%;}
-      &.width-65 img {max-width: 65%;}
-      &.width-70 img {max-width: 75%;}
-      &.width-75 img {max-width: 75%;}
-      &.width-80 img {max-width: 80%;}
-      &.width-85 img {max-width: 85%;}
+      &.width-45 img {max-width: 45% !important;}
+      &.width-50 img {max-width: 50% !important;}
+      &.width-55 img {max-width: 55% !important;}
+      &.width-60 img {max-width: 60% !important;}
+      &.width-65 img {max-width: 65% !important;}
+      &.width-70 img {max-width: 70% !important;}
+      &.width-75 img {max-width: 75% !important;}
+      &.width-80 img {max-width: 80% !important;}
+      &.width-85 img {max-width: 85% !important;}
     }
   }
 
@@ -841,6 +860,7 @@ body:not(.button-wrapping) a.button {
     flex-flow: row wrap;
     height: 75vh;
     position: relative;
+    padding: 2vw;
 
     .color {
       display: block;
@@ -1230,7 +1250,7 @@ body:not(.button-wrapping) a.button {
     .tab {
       height: 120vh;
     }
-    .col-2 {
+    .col-2 .tab:not(:first-child) {
       transform: scale(.8);
     }
   }
@@ -1285,7 +1305,7 @@ body:not(.button-wrapping) a.button {
       }
       img {
         display: block;
-        max-width: 100%;
+        max-width: 100% !important;
         width: 100%;
       }
 
@@ -1350,7 +1370,7 @@ body:not(.button-wrapping) a.button {
       }
       img {
         display: block;
-        max-width: 100%;
+        max-width: 100% !important;
         width: 100%;
       }
 
@@ -1652,9 +1672,9 @@ body[data-random-seed="4"] #secondary-graphics.active {
     &:nth-of-type(2) img {animation: pop .5s forwards normal 2.25s;}
   }
 }
-#sg-additional #sg-ag-1,
-#sg-mobile #sg-m-1,
-#sg-mobile #sg-m-2 {
+#secondary-graphics-additional #sg-ag-1,
+#secondary-graphics-mobile-app-icons #sg-m-1,
+#secondary-graphics-mobile-app-icons #sg-m-2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1679,9 +1699,9 @@ body[data-random-seed="4"] #secondary-graphics.active {
     }
   }
 }
-#sg-additional #sg-ag-1 li,
-#sg-mobile #sg-m-1 li {flex: 0 0 33%;}
-#sg-mobile #sg-m-2 li {flex: 0 0 100%;}
+#secondary-graphics-additional #sg-ag-1 li,
+#secondary-graphics-mobile-app-icons #sg-m-1 li {flex: 0 0 33%;}
+#secondary-graphics-mobile-app-icons #sg-m-2 li {flex: 0 0 100%;}
 
 /* Login page */
 // Contents are left here in case login is ever integrated directly on page
@@ -1720,8 +1740,18 @@ body[data-random-seed="4"] #secondary-graphics.active {
     max-width: 1400px;
     margin: 0 auto;
 
+    section {
+      background: transparent !important;
+    }
+
     .login-wrap {
       width: 60%;
+
+      h1 {
+        @include font-size(28px);
+        line-height: 125%;
+        margin-bottom: 35px;
+      }
 
       #message {
         color: #dc4e4e;
@@ -1778,11 +1808,12 @@ body[data-random-seed="4"] #secondary-graphics.active {
       }
 
       &.reveal {
+        h1 {animation: reveal .75s forwards normal .25s;}
         label[for="txt_uname"],
-        #txt_uname {animation: reveal .75s forwards normal .25s;}
+        #txt_uname {animation: reveal .75s forwards normal .75s;}
         label[for="txt_pwd"],
-        #txt_pwd {animation: reveal .75s forwards normal .75s;}
-        #btn_submit {animation: reveal .75s forwards normal 1.25s;}
+        #txt_pwd {animation: reveal .75s forwards normal 1.25s;}
+        #btn_submit {animation: reveal .75s forwards normal 1.75s;}
       }
     }
 
@@ -1818,6 +1849,25 @@ body[data-random-seed="4"] #secondary-graphics.active {
 
 
   }
+
+  &.dark {
+    background: #000;
+    color: #fff;
+
+    main #login {
+      input:not([type="button"]) {
+        background: #000;
+        color: #fff;
+        border-color: #666;
+        box-shadow: 0 0 0 rgba(255,255,255,1);
+
+        &:focus {
+          border-color: #fff;
+          box-shadow: 0 0 15px rgba(255,255,255,.75);
+        }
+      }
+    }
+  }
 }
 
 /* Downloads */
@@ -1833,6 +1883,10 @@ body[data-random-seed="4"] #secondary-graphics.active {
     min-height: auto;
     padding: 40px 0;
     border-bottom: 1px solid #ccc;
+
+    &:last-child {
+      border-bottom: 0;
+    }
 
     .download-intro {
       padding: 20px;

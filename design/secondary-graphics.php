@@ -8,7 +8,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" id="sg-overview">
+    <div class="tab" id="secondary-graphics-overview">
       <div class="tab-inner">
         <ul id="sg-intro">
           <li><img src="images/secondary-graphics/01-1.svg" alt=""></li>
@@ -25,7 +25,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="sg-mobile" data-ttl="Mobile App Icons">
+    <div class="tab" id="secondary-graphics-mobile-app-icons" data-ttl="Mobile App Icons">
       <div class="tab-inner">
         <ul class="optionWrap animate">
           <li>
@@ -51,7 +51,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="sg-additional" data-ttl="Additional Graphics">
+    <div class="tab" id="secondary-graphics-additional" data-ttl="Additional Graphics">
       <div class="tab-inner">
         <ul id="sg-ag-1">
           <li class="img width-65"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
@@ -63,7 +63,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="sg-graphics" data-ttl="Graphics in Use">
+    <div class="tab" id="secondary-graphics-in-use" data-ttl="Graphics in Use">
       <div class="tab-inner">
         <ul class="optionWrap animate">
           <li>

@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
   // Sticky Nav
-  // var buffer = 100;
-  var buffer = 0;
+  var buffer = 100;
+  var buffer = 1;
   var stickyNavTop = $('#subnav').offset().top;
   // console.log(stickyNavTop);
   var subNav = $("#subnav"),

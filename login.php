@@ -5,8 +5,8 @@
 
   <main>
     <div id="login">
-      <div class="login-wrap">
-        <h1 class="ah">Login</h1>
+      <section class="login-wrap">
+        <h1>Welcome to the<br>Xfinity Brand Hub</h1>
           <label for="txt_uname">Username</label>
           <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
           <label for="txt_pwd">Password</label>
@@ -15,7 +15,7 @@
           <a id="btn_submit" class="button" href="#">Start Exploring</a>
           <input type="submit" style="display: none" />
       </div>
-    </div>
+    </section>
     <div id="login-video">
       <div class="vid-wrap">
         <video id="login-intro" autoplay muted nocontrols>
@@ -61,7 +61,7 @@
     $(document).ready(function(){
 
       // hide form
-      $("label, input, #btn_submit").css({"opacity":"0"});
+      $("h1, label, input, #btn_submit").css({"opacity":"0"});
       $("#login-video").css({"transform":"translateX(-50%)"});
 
       // Function to start login animation

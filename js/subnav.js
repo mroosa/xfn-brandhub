@@ -14,6 +14,12 @@ $(document).ready(function() {
         if (item.length) { return item; }
       });
 
+  var internalNav = $(".tab-nav"),
+      internalMenuItems = internalNav.find("a");
+  var internalScrollItems = internalMenuItems.map(function() {
+    var item = $($(this).attr("href"));
+    if (item.length) { return item; }
+  });
  	// var stickyNav = function(){
   //   var scrollTop = $(window).scrollTop();
   //   // console.log(scrollTop);
@@ -82,5 +88,15 @@ $(document).ready(function() {
       $("section.active").removeClass("active");
       $(cur).addClass("active");
     }
+
+    var curInt = internalScrollItems.map(function() {
+      if ($(this).offset().top < fromTop)
+      return this;
+    });
+    curInt = curInt[curInt.length-1];
+    var iid = curInt && curInt.length ? curInt[0].id : "";
+    internalMenuItems
+      .removeClass("active")
+      .filter("[href='#"+iid+"']").addClass("active");
 	});
 });

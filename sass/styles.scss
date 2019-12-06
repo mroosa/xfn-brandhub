@@ -1745,10 +1745,13 @@ body[data-random-seed="4"] #secondary-graphics.active {
     }
 
     .login-wrap {
-      width: 60%;
+      width: 90%;
+      @include bp-min($xlg) {
+        width: 60%;
+      }
 
       h1 {
-        @include font-size(28px);
+        @include font-size(36px);
         line-height: 125%;
         margin-bottom: 35px;
       }
@@ -1765,11 +1768,6 @@ body[data-random-seed="4"] #secondary-graphics.active {
       }
     }
 
-    #login,
-    #login-video {
-      flex: 0 1 50%;
-    }
-
     #login {
       display: flex;
       align-items: center;
@@ -1783,8 +1781,6 @@ body[data-random-seed="4"] #secondary-graphics.active {
 
       label {
         display: block;
-      }
-      label{
         margin: 20px 0 0 0;
       }
       input:not([type="button"]) {
@@ -1830,19 +1826,22 @@ body[data-random-seed="4"] #secondary-graphics.active {
       z-index: 1;
 
       video {
-        /* Make video to at least 100% wide and tall */
-        min-width: 100%;
-        min-height: 100%;
-
-        /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-        width: auto;
-        height: auto;
-
-        /* Center the video */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
+      //   /* Make video to at least 100% wide and tall */
+      //   min-width: 100%;
+      //   min-height: 100%;
+      //
+      //   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+      //   width: auto;
+      //   height: auto;
+      //
+      //   /* Center the video */
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   transform: translate(-50%,-50%);
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
       }
     }
 
@@ -1862,6 +1861,18 @@ body[data-random-seed="4"] #secondary-graphics.active {
 
         &:focus {
           border-color: #fff;
+          box-shadow: 0 0 15px rgba(255,255,255,.75);
+        }
+      }
+    }
+  }
+  section[data-bg=black] {
+    #btn_submit {
+
+      &:hover {
+
+        span {
+          transform: none;
           box-shadow: 0 0 15px rgba(255,255,255,.75);
         }
       }

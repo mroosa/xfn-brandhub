@@ -1619,10 +1619,13 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
     .login main section {
       background: transparent !important; }
     .login main .login-wrap {
-      width: 60%; }
+      width: 90%; }
+      @media (min-width: 1200px) {
+        .login main .login-wrap {
+          width: 60%; } }
       .login main .login-wrap h1 {
-        font-size: 28px;
-        font-size: 1.75rem;
+        font-size: 36px;
+        font-size: 2.25rem;
         line-height: 125%;
         margin-bottom: 35px; }
       .login main .login-wrap #message {
@@ -1632,9 +1635,6 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
         margin: 5px 0; }
         .login main .login-wrap #message.active {
           opacity: 1; }
-    .login main #login,
-    .login main #login-video {
-      flex: 0 1 50%; }
     .login main #login {
       display: flex;
       align-items: center;
@@ -1645,8 +1645,7 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
       width: 50%;
       left: 0; }
       .login main #login label {
-        display: block; }
-      .login main #login label {
+        display: block;
         margin: 20px 0 0 0; }
       .login main #login input:not([type="button"]) {
         font-family: "XfinityBrown", sans-serif;
@@ -1692,17 +1691,9 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
       overflow: hidden;
       z-index: 1; }
       .login main .vid-wrap video {
-        /* Make video to at least 100% wide and tall */
-        min-width: 100%;
-        min-height: 100%;
-        /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-        width: auto;
-        height: auto;
-        /* Center the video */
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
+        height: 100%;
+        width: 100%;
+        object-fit: contain; }
   .login.dark {
     background: #000;
     color: #fff; }
@@ -1714,6 +1705,9 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
       .login.dark main #login input:not([type="button"]):focus {
         border-color: #fff;
         box-shadow: 0 0 15px rgba(255, 255, 255, 0.75); }
+  .login section[data-bg=black] #btn_submit:hover span {
+    transform: none;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.75); }
 
 /* Downloads */
 #downloads {

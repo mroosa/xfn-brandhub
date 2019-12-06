@@ -16,15 +16,10 @@
           <input type="submit" style="display: none" />
       </div>
     </section>
-    <div id="login-video">
-      <div class="vid-wrap">
-        <video id="login-intro" autoplay muted nocontrols>
-          <source src="video/login-intro.mp4" type="video/mp4">
-        </video>
-        <video id="login-loop" muted nocontrols loop>
-          <source src="video/login-loop.mp4" type="video/mp4">
-        </video>
-      </div>
+    <div class="vid-wrap">
+      <video id="login-intro" autoplay muted nocontrols>
+        <source src="video/login-intro-glow.mp4" type="video/mp4">
+      </video>
     </div>
   </main>
 
@@ -62,26 +57,16 @@
 
       // hide form
       $("h1, label, input, #btn_submit").css({"opacity":"0"});
-      $("#login-video").css({"transform":"translateX(-50%)"});
 
       // Function to start login animation
       function showLogin() {
         $("#login").addClass("reveal");
-        $("#login-video").addClass("slide");
-      }
-
-      // Function show/start looping video
-      function startLoop(loopVid) {
-        $(loopVid).get(0).play();
-        $(loopVid).css({'opacity':'1'});
       }
 
       // Define videos
       var loginIntroVid = document.getElementById('login-intro');
-      var loginLoopVid = document.getElementById('login-loop');
       // Listen for end of first video
       loginIntroVid.addEventListener('ended',function() {
-        startLoop(loginLoopVid);
         showLogin();
       }, false);
 

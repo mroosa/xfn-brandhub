@@ -1737,8 +1737,8 @@ body[data-random-seed="4"] #secondary-graphics.active {
     align-items: center;
     align-content: center;
     height: 100vh;
-    max-width: 1400px;
-    margin: 0 auto;
+    // max-width: 1400px;
+    // margin: 0 auto;
 
     section {
       background: transparent !important;
@@ -1775,8 +1775,11 @@ body[data-random-seed="4"] #secondary-graphics.active {
       align-items: center;
       justify-content: flex-end;
       align-content: center;
-      position: relative;
-      z-index: 1;
+      position: absolute;
+      z-index: 2;
+      width: 50%;
+      left: 0;
+
 
       label {
         display: block;
@@ -1817,33 +1820,29 @@ body[data-random-seed="4"] #secondary-graphics.active {
       }
     }
 
-    #login-video {
+    .vid-wrap {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
       overflow: hidden;
-      position: relative;
-      z-index: 2;
+      z-index: 1;
 
-      &.slide {animation: slideIntro 1s forwards normal;}
+      video {
+        /* Make video to at least 100% wide and tall */
+        min-width: 100%;
+        min-height: 100%;
 
-      .vid-wrap {
-        position: relative;
+        /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+        width: auto;
+        height: auto;
 
-        #login-intro {
-          opacity: 1;
-          position: relative;
-          z-index: 1;
-        }
-
-        #login-loop {
-          position: absolute;
-          left: 0;
-          opacity: 0;
-          z-index: 2;
-        }
-
-        video {
-          max-height: 100vh;
-          max-width: 100%;
-        }
+        /* Center the video */
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
       }
     }
 

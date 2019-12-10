@@ -775,6 +775,12 @@ body:not(.button-wrapping) a.button {
     .content .img img {
       display: block; }
     @media (min-width: 768px) {
+      .content .img.width-30 img {
+        max-width: 35% !important; }
+      .content .img.width-35 img {
+        max-width: 35% !important; }
+      .content .img.width-40 img {
+        max-width: 40% !important; }
       .content .img.width-45 img {
         max-width: 45% !important; }
       .content .img.width-50 img {
@@ -848,24 +854,6 @@ body:not(.button-wrapping) a.button {
   width: 75%; }
 
 /* Color */
-body #color.active .color-swatches .color-1 {
-  animation: pop .5s forwards normal 0.25s; }
-
-body #color.active .color-swatches .color-2 {
-  animation: pop .5s forwards normal 0.50s; }
-
-body #color.active .color-swatches .color-3 {
-  animation: pop .5s forwards normal 0.75s; }
-
-body #color.active .color-swatches .color-4 {
-  animation: pop .5s forwards normal 1.00s; }
-
-body #color.active .color-swatches .color-5 {
-  animation: pop .5s forwards normal 1.25s; }
-
-body #color.active .color-swatches .color-6 {
-  animation: pop .5s forwards normal 1.50s; }
-
 #color .color-swatches {
   display: flex;
   flex-flow: row wrap;
@@ -877,8 +865,7 @@ body #color.active .color-swatches .color-6 {
     display: block;
     border-radius: 4px;
     height: 100%;
-    cursor: pointer;
-    opacity: 0; }
+    cursor: pointer; }
     #color .color-swatches .color.color-1 {
       border: 1px solid #ccc; }
     #color .color-swatches .color.color-2 {

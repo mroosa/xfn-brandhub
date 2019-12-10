@@ -103,7 +103,14 @@
       </div>
 
       <div class="tab" id="color-in-use" data-ttl="Color In Use">
-        <h3>Color In Use</h3>
+        <div class="tab-inner">
+          <h3>Color In Use</h3>
+          <ul class="optionWrap" title="">
+            <li class="img width-75"><img class="rounded" src="<?php print $dir; ?>images/color/01.png" alt="" /></li>
+            <li class="img width-50"><img class="border rounded" src="<?php print $dir; ?>images/color/02.png" alt="" /></li>
+            <li class="img width-35"><img class="border rounded" src="<?php print $dir; ?>images/color/03.png" alt="" /></li>
+          </ul>
+        </div>
       </div>
 
     </div>

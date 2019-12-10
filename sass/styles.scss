@@ -723,6 +723,9 @@ body:not(.button-wrapping) a.button {
       display: block;
     }
     @include bp-min($sml) {
+      &.width-30 img {max-width: 35% !important;}
+      &.width-35 img {max-width: 35% !important;}
+      &.width-40 img {max-width: 40% !important;}
       &.width-45 img {max-width: 45% !important;}
       &.width-50 img {max-width: 50% !important;}
       &.width-55 img {max-width: 55% !important;}
@@ -863,16 +866,19 @@ body:not(.button-wrapping) a.button {
 
 
 /* Color */
-body #color.active  {
-  .color-swatches {
-    .color-1 {animation: pop .5s forwards normal 0.25s;}
-    .color-2 {animation: pop .5s forwards normal 0.50s;}
-    .color-3 {animation: pop .5s forwards normal 0.75s;}
-    .color-4 {animation: pop .5s forwards normal 1.00s;}
-    .color-5 {animation: pop .5s forwards normal 1.25s;}
-    .color-6 {animation: pop .5s forwards normal 1.50s;}
-  }
-}
+// body #color {
+//   .color{opacity: 0;}
+//   &.active  {
+//     .color-swatches {
+//       .color-1 {animation: pop .5s forwards normal 0.25s;}
+//       .color-2 {animation: pop .5s forwards normal 0.50s;}
+//       .color-3 {animation: pop .5s forwards normal 0.75s;}
+//       .color-4 {animation: pop .5s forwards normal 1.00s;}
+//       .color-5 {animation: pop .5s forwards normal 1.25s;}
+//       .color-6 {animation: pop .5s forwards normal 1.50s;}
+//     }
+//   }
+// }
 #color {
   .color-swatches {
     display: flex;
@@ -887,7 +893,6 @@ body #color.active  {
       border-radius: $bdr;
       height: 100%;
       cursor: pointer;
-      opacity: 0;
 
       &.color-1 {
         border: 1px solid #ccc;

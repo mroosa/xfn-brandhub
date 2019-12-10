@@ -9,15 +9,16 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" id="design-system-grid" data-ttl="Build the Grid">
+    <div class="tab" id="design-system-grid" data-ttl="Visual Layout">
       <div class="tab-inner">
-        Awaiting content
+        <h3>Visual Layout</h3>
       </div>
     </div>
 
     <!-- tab -->
     <div class="tab" id="design-system-horizontal" data-ttl="Horizontal Angles">
       <div class="tab-inner">
+        <h3>Horizontal Angles</h3>
         <ul class="optionWrap">
           <li><img src="images/design-system/02-01.png" alt=""></li>
           <li><img src="images/design-system/02-02.png" alt=""></li>
@@ -29,6 +30,7 @@
     <!-- tab -->
     <div class="tab" id="design-system-vertical" data-ttl="Vertical Angles">
       <div class="tab-inner">
+        <h3>Vertical Angles</h3>
         <ul class="optionWrap">
           <li class="img width-65"><img style="width: auto;" src="images/design-system/03-01.png" alt=""></li>
           <li class="img width-65"><img style="width: auto;" src="images/design-system/03-02.png" alt=""></li>

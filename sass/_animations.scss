@@ -1,0 +1,23 @@
+// Pop-in animation
+@keyframes pop {
+  0% {transform: scale(.5); opacity: 0;}
+  75% {transform: scale(1.1); opacity: 1;}
+  100% {transform: scale(1); opacity: 1;}
+}
+@keyframes popShadow {
+  0% {transform: scale(.5); opacity: 0; box-shadow: 0 0 10px rgba(0,0,0,.25);}
+  75% {transform: scale(1.1); opacity: 1; box-shadow: 0 0 30px rgba(0,0,0,.25);}
+  100% {transform: scale(1); opacity: 1; box-shadow: 0 0 0 rgba(0,0,0,0);}
+}
+
+// Slide intro
+@keyframes slideIntro {
+  from {transform: translateX(-50%)}
+  to {transform: translateX(0)}
+}
+
+// Basic reveal
+@keyframes reveal {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

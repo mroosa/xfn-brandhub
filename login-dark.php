@@ -7,13 +7,15 @@
     <div id="login">
       <section class="login-wrap" data-bg="black">
         <h1>Welcome to the<br>Xfinity Brand Hub</h1>
+        <form method="post" onsubmit="javascript:submitLogin();">
           <label for="txt_uname">Username</label>
-          <input type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
+          <input tabindex="1" type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
           <label for="txt_pwd">Password</label>
-          <input type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
+          <input tabindex="2" type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
           <div id="message">&nbsp;</div>
-          <a id="btn_submit" class="button" href="#">Start Exploring</a>
-          <input type="submit" style="display: none" />
+          <a tabindex="3" id="btn_submit" class="button" href="#">Get Started</a>
+          <input type="submit" style="display: none" value="Get Started" />
+        </form>
       </div>
     </section>
     <div class="vid-wrap">
@@ -39,7 +41,7 @@
           data:{username:username,password:password},
           success:function(response){
             var msg = "&nbsp;";
-            if(response == 1){
+            if (response == 1) {
               window.location = "index.php";
             }else{
               msg = "Invalid username and password!";
@@ -51,6 +53,8 @@
           }
         });
       }
+
+      return false;
     }
 
     $(document).ready(function(){

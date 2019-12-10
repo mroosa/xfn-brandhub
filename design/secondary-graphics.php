@@ -27,6 +27,7 @@
     <!-- tab -->
     <div class="tab" id="secondary-graphics-mobile-app-icons" data-ttl="Mobile App Icons">
       <div class="tab-inner">
+        <h3>Mobile App Icons</h3>
         <ul class="optionWrap animate">
           <li>
             <ul id="sg-m-1">
@@ -53,18 +54,23 @@
     <!-- tab -->
     <div class="tab" id="secondary-graphics-additional" data-ttl="Additional Graphics">
       <div class="tab-inner">
-        <ul id="sg-ag-1">
-          <li class="img width-65"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
-          <li class="img width-65"><img src="images/secondary-graphics/03-2.svg" alt=""><span>Speedtest Badge</span></li>
-          <li class="img width-65"><img src="images/secondary-graphics/03-3.svg" alt=""><span>Voice Remote Microphone Button</span></li>
-          <li class="img width-65"><img src="images/secondary-graphics/03-4.svg" alt=""><span>WiFi</span></li>
-          <li class="img width-65"><img src="images/secondary-graphics/03-5.svg" alt=""><span>WiFi Hotspot</span></li>
+        <h3>Additional Graphics</h3>
+        <ul class="optionWrap"><li>
+          <ul id="sg-ag-1">
+            <li class="img width-65"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
+            <li class="img width-65"><img src="images/secondary-graphics/03-2.svg" alt=""><span>Speedtest Badge</span></li>
+            <li class="img width-65"><img src="images/secondary-graphics/03-3.svg" alt=""><span>Voice Remote Microphone Button</span></li>
+            <li class="img width-65"><img src="images/secondary-graphics/03-4.svg" alt=""><span>WiFi</span></li>
+            <li class="img width-65"><img src="images/secondary-graphics/03-5.svg" alt=""><span>WiFi Hotspot</span></li>
+          </ul>
+        </li></ul>
       </div>
     </div>
 
     <!-- tab -->
     <div class="tab" id="secondary-graphics-in-use" data-ttl="Graphics in Use">
       <div class="tab-inner">
+        <h3>Graphics in Use</h3>
         <ul class="optionWrap animate">
           <li>
             <div style="flex-basis: 70%;">

@@ -50,6 +50,7 @@
 
     <div class="tab" id="type-examples" data-ttl="Type Examples">
       <div class="tab-inner">
+        <h3>Type Examples</h3>
         <ul class="optionWrap animate">
           <li><img class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-3.png" alt="" /></li>
           <li><img class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-1.png" alt="" /></li>

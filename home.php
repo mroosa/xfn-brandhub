@@ -71,7 +71,7 @@
             </div><!-- /.col-wrap -->
           </section>
 
-          <section id="color">
+          <section id="color" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/color.php"); ?>
             </div><!-- /.col-wrap -->

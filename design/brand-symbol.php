@@ -11,6 +11,7 @@
     <!-- tab -->
     <div class="tab swap" data-ttl="The Xfinity X" data-bg="white" id="the-xfinity-x">
       <div class="tab-inner">
+        <h3>The Xfinity X</h3>
         <ul class="optionWrap brand-x swap">
           <li data-alt="black brand symbol" data-bg="white" title="Our brand symbol X is available in black for light backgrounds.">
             <img style="max-width: 55%;" src="<?php print $dir; ?>images/brand-symbol/01.svg" alt="" /></li>

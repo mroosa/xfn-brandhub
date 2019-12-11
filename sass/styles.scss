@@ -866,20 +866,51 @@ body:not(.button-wrapping) a.button {
 
 
 /* Color */
-// body #color {
-//   .color{opacity: 0;}
-//   &.active  {
-//     .color-swatches {
-//       .color-1 {animation: pop .5s forwards normal 0.25s;}
-//       .color-2 {animation: pop .5s forwards normal 0.50s;}
-//       .color-3 {animation: pop .5s forwards normal 0.75s;}
-//       .color-4 {animation: pop .5s forwards normal 1.00s;}
-//       .color-5 {animation: pop .5s forwards normal 1.25s;}
-//       .color-6 {animation: pop .5s forwards normal 1.50s;}
-//     }
-//   }
-// }
+body #color {
+  .color{opacity: 0;}
+  &.active  {
+    .color-swatches {
+      .color-1 {animation: pop .5s forwards normal 0.25s;}
+      .color-2 {animation: pop .5s forwards normal 0.50s;}
+      .color-3 {animation: pop .5s forwards normal 0.75s;}
+      .color-4 {animation: pop .5s forwards normal 1.00s;}
+      .color-5 {animation: pop .5s forwards normal 1.25s;}
+      .color-6 {animation: pop .5s forwards normal 1.50s;}
+    }
+  }
+}
 #color {
+
+  #color-palette {
+    position: relative;
+  }
+
+  #color-white,
+  .color-1 {background: #ffffff;}
+  #color-black,
+  .color-2 {background: #000000;}
+  #color-cool-gray,
+  .color-3 {background: #EBEEF0;}
+  #color-dark-gray,
+  .color-4 {background: #5A5A5C;}
+  #color-accent-red,
+  .color-5 {background: #C8001D;}
+  #color-action-blue,
+  .color-6 {background: #2B9CD8;}
+
+  .swatch-info {
+    &.light {
+      color: #fff;
+      span {color: rgba(255,255,255,.65);}
+      .close-btn path {stroke: #fff;}
+    }
+    &.dark {
+      color: #000;
+      span {color: rgba(0,0,0,.35);}
+      .close-btn path {stroke: #000;}
+    }
+  }
+
   .color-swatches {
     display: flex;
     flex-flow: row wrap;
@@ -887,6 +918,7 @@ body:not(.button-wrapping) a.button {
     position: relative;
     padding: 2vw;
     width: 100%;
+    z-index: 2;
 
     .color {
       display: block;
@@ -897,86 +929,9 @@ body:not(.button-wrapping) a.button {
       &.color-1 {
         border: 1px solid #ccc;
       }
-      &.color-2 {
-        border: 1px solid #666;
-      }
-
-      &.light {
-        color: #fff;
-        span {color: rgba(255,255,255,.65);}
-        .close-btn path {stroke: #fff;}
-      }
-      &.dark {
-        color: #000;
-        span {color: rgba(0,0,0,.35);}
-        .close-btn path {stroke: #000;}
-      }
-
-      &.color-1 {background: #ffffff;}
-      &.color-2 {background: #000000;}
-      &.color-3 {background: #EBEEF0;}
-      &.color-4 {background: #5A5A5C;}
-      &.color-5 {background: #C8001D;}
-      &.color-6 {background: #2B9CD8;}
-    }
-
-    .swatch-info {
-      cursor: text;
-      opacity: 0;
-      padding: 50px;
-      border-radius: $bdr;
-      background: inherit;
-      border:1px solid rgba(0,0,0,.5);
-      color: inherit;
-      @include font-size(18px);
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: flex-start;
-      width: 50%;
-      height: 50%;
-      left: 0;
-      top: 0;
-      transform: translate(50%,50%) scale(.8);
-      transition: opacity .25s, box-shadow .25s, transform .25s;
-      pointer-events: none;
-      box-shadow: 0 0 0 rgba(0,0,0,0);
-
-      h3 {
-        @include font-size(18px);
-        font-weight: bold;
-      }
-
-      ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-
-        li {
-          margin: 2px 0;
-          span {
-            font-weight: 100;
-            color: #999;
-          }
-        }
-      }
-
-      .close-btn {
-        position: absolute;
-        right: 15px;
-        top: 15px;
-      }
-
-      &.active {
-        opacity: 1;
-        pointer-events: all;
-        box-shadow: 10px 10px 10px rgba(0,0,0,.35);
-        transform: translate(50%,50%) scale(1);
-      }
-
-      @include bp-max($xlg) {
-        padding: 20px;
-      }
+      // &.color-2 {
+      //   border: 1px solid #666;
+      // }
     }
 
     .ht-100 {
@@ -1005,7 +960,76 @@ body:not(.button-wrapping) a.button {
       flex-basis: 50%;
     }
   }
+  .color-swatch-info {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    z-index: 3;
+
+    .swatch-info {
+      cursor: text;
+      opacity: 0;
+      padding: 50px;
+      border-radius: $bdr;
+      background: inherit;
+      border:1px solid rgba(0,0,0,.5);
+      @include font-size(18px);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      width: 50%;
+      height: 50%;
+      left: 0;
+      top: 0;
+      transform: translate(50%,50%) scale(.8);
+      transition: opacity .25s, box-shadow .25s, transform .25s;
+      pointer-events: none;
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+
+      h3 {
+        @include font-size(18px);
+        font-weight: bold;
+      }
+
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+          margin: 2px 0;
+          span {
+            font-weight: 100;
+          }
+        }
+      }
+
+      .close-btn {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+      }
+
+      &.active {
+        opacity: 1;
+        pointer-events: all;
+        box-shadow: 10px 10px 10px rgba(0,0,0,.35);
+        transform: translate(50%,50%) scale(1);
+        z-index: 4;
+      }
+
+      @include bp-max($xlg) {
+        padding: 20px;
+      }
+    }
+
+  }
   .color-palette {
+    position: relative;
     h4 {
       span {
         font-weight: 400;

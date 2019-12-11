@@ -854,13 +854,76 @@ body:not(.button-wrapping) a.button {
   width: 75%; }
 
 /* Color */
+body #color .color {
+  opacity: 0; }
+
+body #color.active .color-swatches .color-1 {
+  animation: pop .5s forwards normal 0.25s; }
+
+body #color.active .color-swatches .color-2 {
+  animation: pop .5s forwards normal 0.50s; }
+
+body #color.active .color-swatches .color-3 {
+  animation: pop .5s forwards normal 0.75s; }
+
+body #color.active .color-swatches .color-4 {
+  animation: pop .5s forwards normal 1.00s; }
+
+body #color.active .color-swatches .color-5 {
+  animation: pop .5s forwards normal 1.25s; }
+
+body #color.active .color-swatches .color-6 {
+  animation: pop .5s forwards normal 1.50s; }
+
+#color #color-palette {
+  position: relative; }
+
+#color #color-white,
+#color .color-1 {
+  background: #ffffff; }
+
+#color #color-black,
+#color .color-2 {
+  background: #000000; }
+
+#color #color-cool-gray,
+#color .color-3 {
+  background: #EBEEF0; }
+
+#color #color-dark-gray,
+#color .color-4 {
+  background: #5A5A5C; }
+
+#color #color-accent-red,
+#color .color-5 {
+  background: #C8001D; }
+
+#color #color-action-blue,
+#color .color-6 {
+  background: #2B9CD8; }
+
+#color .swatch-info.light {
+  color: #fff; }
+  #color .swatch-info.light span {
+    color: rgba(255, 255, 255, 0.65); }
+  #color .swatch-info.light .close-btn path {
+    stroke: #fff; }
+
+#color .swatch-info.dark {
+  color: #000; }
+  #color .swatch-info.dark span {
+    color: rgba(0, 0, 0, 0.35); }
+  #color .swatch-info.dark .close-btn path {
+    stroke: #000; }
+
 #color .color-swatches {
   display: flex;
   flex-flow: row wrap;
   height: 75vh;
   position: relative;
   padding: 2vw;
-  width: 100%; }
+  width: 100%;
+  z-index: 2; }
   #color .color-swatches .color {
     display: block;
     border-radius: 4px;
@@ -868,79 +931,6 @@ body:not(.button-wrapping) a.button {
     cursor: pointer; }
     #color .color-swatches .color.color-1 {
       border: 1px solid #ccc; }
-    #color .color-swatches .color.color-2 {
-      border: 1px solid #666; }
-    #color .color-swatches .color.light {
-      color: #fff; }
-      #color .color-swatches .color.light span {
-        color: rgba(255, 255, 255, 0.65); }
-      #color .color-swatches .color.light .close-btn path {
-        stroke: #fff; }
-    #color .color-swatches .color.dark {
-      color: #000; }
-      #color .color-swatches .color.dark span {
-        color: rgba(0, 0, 0, 0.35); }
-      #color .color-swatches .color.dark .close-btn path {
-        stroke: #000; }
-    #color .color-swatches .color.color-1 {
-      background: #ffffff; }
-    #color .color-swatches .color.color-2 {
-      background: #000000; }
-    #color .color-swatches .color.color-3 {
-      background: #EBEEF0; }
-    #color .color-swatches .color.color-4 {
-      background: #5A5A5C; }
-    #color .color-swatches .color.color-5 {
-      background: #C8001D; }
-    #color .color-swatches .color.color-6 {
-      background: #2B9CD8; }
-  #color .color-swatches .swatch-info {
-    cursor: text;
-    opacity: 0;
-    padding: 50px;
-    border-radius: 4px;
-    background: inherit;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    color: inherit;
-    font-size: 18px;
-    font-size: 1.125rem;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50%;
-    height: 50%;
-    left: 0;
-    top: 0;
-    transform: translate(50%, 50%) scale(0.8);
-    transition: opacity .25s, box-shadow .25s, transform .25s;
-    pointer-events: none;
-    box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
-    #color .color-swatches .swatch-info h3 {
-      font-size: 18px;
-      font-size: 1.125rem;
-      font-weight: bold; }
-    #color .color-swatches .swatch-info ul {
-      list-style: none;
-      margin: 0;
-      padding: 0; }
-      #color .color-swatches .swatch-info ul li {
-        margin: 2px 0; }
-        #color .color-swatches .swatch-info ul li span {
-          font-weight: 100;
-          color: #999; }
-    #color .color-swatches .swatch-info .close-btn {
-      position: absolute;
-      right: 15px;
-      top: 15px; }
-    #color .color-swatches .swatch-info.active {
-      opacity: 1;
-      pointer-events: all;
-      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
-      transform: translate(50%, 50%) scale(1); }
-    @media (max-width: 1200px) {
-      #color .color-swatches .swatch-info {
-        padding: 20px; } }
   #color .color-swatches .ht-100 {
     height: 50%;
     padding: 5px; }
@@ -957,9 +947,66 @@ body:not(.button-wrapping) a.button {
   #color .color-swatches .col-50 {
     flex-basis: 50%; }
 
-#color .color-palette h4 span {
-  font-weight: 400;
-  font-size: 75%; }
+#color .color-swatch-info {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  z-index: 3; }
+  #color .color-swatch-info .swatch-info {
+    cursor: text;
+    opacity: 0;
+    padding: 50px;
+    border-radius: 4px;
+    background: inherit;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 18px;
+    font-size: 1.125rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 50%;
+    height: 50%;
+    left: 0;
+    top: 0;
+    transform: translate(50%, 50%) scale(0.8);
+    transition: opacity .25s, box-shadow .25s, transform .25s;
+    pointer-events: none;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); }
+    #color .color-swatch-info .swatch-info h3 {
+      font-size: 18px;
+      font-size: 1.125rem;
+      font-weight: bold; }
+    #color .color-swatch-info .swatch-info ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      #color .color-swatch-info .swatch-info ul li {
+        margin: 2px 0; }
+        #color .color-swatch-info .swatch-info ul li span {
+          font-weight: 100; }
+    #color .color-swatch-info .swatch-info .close-btn {
+      position: absolute;
+      right: 15px;
+      top: 15px; }
+    #color .color-swatch-info .swatch-info.active {
+      opacity: 1;
+      pointer-events: all;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.35);
+      transform: translate(50%, 50%) scale(1);
+      z-index: 4; }
+    @media (max-width: 1200px) {
+      #color .color-swatch-info .swatch-info {
+        padding: 20px; } }
+
+#color .color-palette {
+  position: relative; }
+  #color .color-palette h4 span {
+    font-weight: 400;
+    font-size: 75%; }
 
 /* Typography page */
 #typography .type-wrap {

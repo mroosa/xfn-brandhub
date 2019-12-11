@@ -16,25 +16,27 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="design-system-horizontal" data-ttl="Horizontal Angles">
+    <div class="tab" id="design-system-horizontal" data-ttl="Dynamic Angle">
       <div class="tab-inner">
-        <h3>Horizontal Angles</h3>
+        <h3>Dynamic Angle</h3>
+        <p>Our dynamic angle is a tool that can be used to help organize information and create containers for imagery or copy. Dynamic angles should be used in a purposeful manner to create depth or act as a plane for devices to lay on. Please only use one angle per communication.</p>
         <ul class="optionWrap">
           <li><img src="images/design-system/02-01.png" alt=""></li>
-          <li><img src="images/design-system/02-02.png" alt=""></li>
+          <li class="img width-65"><img src="images/design-system/02-02.png" alt=""></li>
           <li><img src="images/design-system/02-03.png" alt=""></li>
         </ul>
       </div>
     </div>
 
     <!-- tab -->
-    <div class="tab" id="design-system-vertical" data-ttl="Vertical Angles">
+    <div class="tab" id="design-system-vertical" data-ttl="Hierarchy">
       <div class="tab-inner">
-        <h3>Vertical Angles</h3>
+        <h3>Hierarchy</h3>
+        <p>For maximized impact, it is recommended that a hierarchy of information is used to make your communication clear. Please prioritize the headline, price point (when applicable), call-to-action or button, and logo.</p>
         <ul class="optionWrap">
-          <li class="img width-65"><img style="width: auto;" src="images/design-system/03-01.png" alt=""></li>
-          <li class="img width-65"><img style="width: auto;" src="images/design-system/03-02.png" alt=""></li>
-          <li><img src="images/design-system/03-03.png" alt=""></li>
+          <li class="img width-65"><img class="rounded" src="images/design-system/01-01.png" alt=""></li>
+          <li class="img width-65"><img class="rounded border" src="images/design-system/01-02.png" alt=""></li>
+          <li class="img width-40"><img class="rounded" src="images/design-system/01-03.png" alt=""></li>
         </ul>
       </div>
     </div>

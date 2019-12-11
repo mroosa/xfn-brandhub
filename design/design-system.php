@@ -1,7 +1,6 @@
 <div class="col-1">
   <h1>Design System</h1>
-  <p>The best way to create our dynamic angle is to use a grid. This allows us to organize key information in our communication and develop clean and simple layout. Angles should be used purposefully to create depth and acts as a plane for devices and images to lay on.</p>
-  <p>Be sure to avoid overuse of the dynamic angle. Don’t use more than one angle per page or spread.</p>
+  <p>Our design system allows for flexibility across all shapes and sizes. Aim for clean layouts with plenty of white space and a clear information hierarchy to guide the eye and help customers easily understand the key message of our communication.</p>
   <p class="download"><a href="#downloads">Download Design System examples</a></p>
 </div>
 <div class="col-2">

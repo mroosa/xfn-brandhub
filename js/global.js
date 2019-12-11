@@ -112,6 +112,11 @@ function tabGo(tid, tabs, reset) {
 }
 
 function setOption(oid, tab) {
+  if (oid == "next") {
+    var totalOptions = tab.find(".optionNav li").length;
+    var curLink = Number(tab.find(".optionNav a.active").attr("data-id"));
+    oid = (curLink + 1 < totalOptions) ? curLink + 1: 0;
+  }
   var link = tab.find(".optionNav a[data-id=" + oid + "]")
   link.parents(".optionNav").find(".active").removeClass("active");
   link
@@ -125,15 +130,15 @@ function setOption(oid, tab) {
   } else {
     tab.parents("section").attr("data-bg", dataBg);
   }
-
 }
 
 function createOptions(parent) {
   var theOptions = parent.find("ul.optionWrap"),
       numOptions = Number(theOptions.children().length);
   if (numOptions > 1) {
-    theOptions.wrap('<div class="slideshow">').css({"width":100 * numOptions + "%"});
     theOptions
+      .wrap('<div class="slideshow">')
+      .css({"width":100 * numOptions + "%"})
       .addClass("options")
       .after('<ul class="optionNav">');
     var optionNav = theOptions.parents(".tab").find(".optionNav");
@@ -149,6 +154,12 @@ function createOptions(parent) {
       setOption($(this).attr("data-id"), parent);
       return false;
     });
+    if (theOptions.hasClass("auto")) {
+      var timeDelay = theOptions.attr("data-speed");
+      var timeID = setInterval(function() {
+        setOption("next", parent);
+      }, timeDelay * 1000);
+    };
   }
 }
 

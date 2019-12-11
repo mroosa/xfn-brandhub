@@ -11,6 +11,9 @@
     <div class="tab" id="design-system-grid" data-ttl="Visual Layout">
       <div class="tab-inner">
         <h3>Visual Layout</h3>
+        <ul class="optionWrap">
+          <li><img src="images/design-system/000.png" alt=""></li>
+        </ul>
       </div>
     </div>
 
@@ -19,10 +22,13 @@
       <div class="tab-inner">
         <h3>Dynamic Angle</h3>
         <p>Our dynamic angle is a tool that can be used to help organize information and create containers for imagery or copy. Dynamic angles should be used in a purposeful manner to create depth or act as a plane for devices to lay on. Please only use one angle per communication.</p>
-        <ul class="optionWrap">
-          <li><img src="images/design-system/02-01.png" alt=""></li>
-          <li class="img width-65"><img src="images/design-system/02-02.png" alt=""></li>
-          <li><img src="images/design-system/02-03.png" alt=""></li>
+        <ul class="optionWrap auto" data-speed="3">
+          <li><img class="rounded border" src="images/design-system/02-01.jpg" alt=""></li>
+          <li class="img width-70"><img class="rounded border" src="images/design-system/02-02.jpg" alt=""></li>
+          <li><img class="rounded border" src="images/design-system/02-03.jpg" alt=""></li>
+          <li class="img width-45"><img class="rounded border" src="images/design-system/03-01.jpg" alt=""></li>
+          <li class="img width-45"><img class="rounded border" src="images/design-system/03-02.jpg" alt=""></li>
+          <li><img class="rounded border" src="images/design-system/03-03.jpg" alt=""></li>
         </ul>
       </div>
     </div>

@@ -506,6 +506,8 @@ main {
       padding: 0; }
     .content section.with-tabs .tab .tab-inner .optionWrap {
       margin-top: 60px; }
+      .content section.with-tabs .tab .tab-inner .optionWrap.auto + .optionNav {
+        display: none !important; }
   .content section.with-tabs .tab .options li {
     margin: 0;
     padding: 0;

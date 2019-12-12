@@ -26,7 +26,7 @@
       <div class="tab-inner">
         <h3>Dynamic Angle</h3>
         <p>Our dynamic angle is a tool that can be used to help organize information and create containers for imagery or copy. Dynamic angles should be used in a purposeful manner to create depth or act as a plane for devices to lay on. Please only use one angle per communication.</p>
-        <ul class="optionWrap auto" data-speed="3">
+        <ul class="optionWrap auto" data-speed="1.5">
           <li><img class="rounded border" src="images/design-system/02-01.jpg" alt=""></li>
           <li class="img width-70"><img class="rounded border" src="images/design-system/02-02.jpg" alt=""></li>
           <li><img class="rounded border" src="images/design-system/02-03.jpg" alt=""></li>

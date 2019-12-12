@@ -11,9 +11,13 @@
     <div class="tab" id="design-system-grid" data-ttl="Visual Layout">
       <div class="tab-inner">
         <h3>Visual Layout</h3>
-        <ul class="optionWrap">
-          <li><img src="images/design-system/000.png" alt=""></li>
-        </ul>
+        <p>&nbsp;</p>
+        <video nocontrols autoplay muted>
+          <source src="video/000.mp4" type="video/mp4">
+        </video>
+        <!-- <ul class="optionWrap">
+          <li class="img width-100"><img src="images/design-system/000.png" alt=""></li>
+        </ul> -->
       </div>
     </div>
 

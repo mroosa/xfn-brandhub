@@ -83,11 +83,11 @@
             </div><!-- /.col-wrap -->
           </section>
 
-          <section id="voice-and-tone">
+          <!-- <section id="voice-and-tone">
             <div class="col-wrap">
-            <?php include_once("design/voice-and-tone.php"); ?>
-          </div><!-- /.col-wrap -->
-          </section>
+            <?php #include_once("design/voice-and-tone.php"); ?>
+          </div>
+          </section> -->
 
           <section id="photography">
             <div class="col-wrap">

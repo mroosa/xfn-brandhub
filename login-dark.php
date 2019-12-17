@@ -7,7 +7,7 @@
     <div id="login">
       <section class="login-wrap" data-bg="black">
         <h1>Welcome to the<br>Xfinity Brand Hub</h1>
-        <form method="post" onsubmit="javascript:submitLogin();">
+        <form method="post" onsubmit="submitLogin()">
           <label for="txt_uname">Username</label>
           <input tabindex="1" type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
           <label for="txt_pwd">Password</label>

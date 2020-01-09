@@ -98,6 +98,7 @@
         </div><!-- /.color-swatch-info -->
       </div>
 
+      <!-- tab -->
       <div class="tab" id="color-in-use" data-ttl="Color In Use">
         <div class="tab-inner">
           <h3>Color In Use</h3>
@@ -105,6 +106,20 @@
             <li class="img width-75"><img class="rounded" src="<?php print $dir; ?>images/color/01.png" alt="" /></li>
             <li class="img width-50"><img class="border rounded" src="<?php print $dir; ?>images/color/02.png" alt="" /></li>
             <li class="img width-35"><img class="border rounded" src="<?php print $dir; ?>images/color/03.png" alt="" /></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- tab -->
+      <div class="tab" data-ttl="Misuses" data-bg="white" id="color-misuses">
+        <div class="tab-inner">
+          <h3>Color Misuses</h3>
+          <ul class="optionWrap swap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
+            <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
+            <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
+            <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
+            <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
+            <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
           </ul>
         </div>
       </div>

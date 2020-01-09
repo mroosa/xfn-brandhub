@@ -1,11 +1,11 @@
 <?php
-  $bodyClassList = ['login'];
+  $bodyClassList = ['login','dark'];
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 
   <main>
     <div id="login">
-      <section class="login-wrap">
+      <section class="login-wrap" data-bg="black">
         <h1>Welcome to the<br>Xfinity Brand Hub</h1>
         <form method="post" onsubmit="submitLogin()">
           <label for="txt_uname">Username</label>
@@ -20,7 +20,7 @@
     </section>
     <div class="vid-wrap">
       <video id="login-intro" autoplay muted nocontrols>
-        <source src="video/login-intro-ripple.mp4" type="video/mp4">
+        <source src="video/login-intro-glow.mp4" type="video/mp4">
       </video>
     </div>
   </main>

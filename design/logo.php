@@ -56,11 +56,9 @@
       <div class="tab-inner">
         <h3>Logo Misuses</h3>
         <ul class="optionWrap swap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
-          <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
-          <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
-          <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
-          <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
-          <li data-alt="black logo" data-bg="white"><img src="<?php print $dir; ?>images/logo/04.svg" alt="" /></li>
+          <li><img src="<?php print $dir; ?>images/logo/misuse-1.svg" alt="" /></li>
+          <li><img src="<?php print $dir; ?>images/logo/misuse-2.svg" alt="" /></li>
+          <li><img src="<?php print $dir; ?>images/logo/misuse-3.svg" alt="" /></li>
         </ul>
       </div>
     </div>

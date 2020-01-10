@@ -925,11 +925,11 @@ body:not(.button-wrapping) a.button {
   #introduction p:nth-of-type(1) {
     animation: .75s ease-in 1.75s 1 normal both revealSlide; }
   #introduction p:nth-of-type(2) {
-    animation: .75s ease-in 4.5s 1 normal both revealSlide; }
+    animation: .75s ease-in 1.75s 1 normal both revealSlide; }
   #introduction h2 {
     animation: .75s ease-in 6.5s 1 normal both revealSlide; }
   #introduction .get-started {
-    animation: .75s ease-in 7.5s 1 normal both reveal; }
+    animation: .75s ease-in 6.5s 1 normal both reveal; }
   #introduction .vid-wrap {
     position: absolute;
     top: 0;

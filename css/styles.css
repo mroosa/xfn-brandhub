@@ -414,7 +414,7 @@ main {
     padding: 5px 0; }
     .sidebar ul li {
       margin: 0;
-      padding: 5px 0;
+      padding: 5px 0 4px 0;
       font-size: 14px;
       font-size: 0.875rem;
       font-weight: 100; }

@@ -8,7 +8,7 @@
   <div class="tabs-wrapper">
     <div class="tabs">
 
-      <div class="tab" id="color-palette" data-ttl="Color Palette">
+      <div class="tab" id="sub-brands" data-ttl="Sub-Brands">
 
         <div class="sub-brand-logos">
           <div class="sub-brand-logo-1">

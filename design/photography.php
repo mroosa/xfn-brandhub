@@ -13,13 +13,13 @@
   <div class="mosaic">
     <div class="row">
       <div class="col col-1-3">
-        <div class="photo default"><img src="<?php print $dir; ?>images/photography/photo-0-1.png" alt=""></div>
+        <div class="photo default"><img src="<?php print $dir; ?>images/photography/photo-0-1.gif" alt=""></div>
         <div class="photo" data-set="0"><img src="<?php print $dir; ?>images/photography/photo-1-1.png" alt=""></div>
         <div class="photo border" data-set="1"><img src="<?php print $dir; ?>images/photography/photo-2-1.png" alt=""></div>
         <div class="photo" data-set="2"><img src="<?php print $dir; ?>images/photography/photo-3-1.png" alt=""></div>
         <div class="photo border" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-4-1.png" alt=""></div>
         <div class="spacer"></div>
-        <div class="photo default"><img src="<?php print $dir; ?>images/photography/photo-0-2.gif" alt=""></div>
+        <div class="photo default"><img src="<?php print $dir; ?>images/photography/photo-0-2.png" alt=""></div>
         <div class="photo" data-set="0"><img src="<?php print $dir; ?>images/photography/photo-1-2.png" alt=""></div>
         <div class="photo" data-set="1"><img src="<?php print $dir; ?>images/photography/photo-2-2.png" alt=""></div>
         <div class="photo" data-set="2"><img src="<?php print $dir; ?>images/photography/photo-3-2.png" alt=""></div>

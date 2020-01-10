@@ -57,10 +57,10 @@
     <div class="tab" data-ttl="Misuses" data-bg="white" id="brand-symbol-misuses">
       <div class="tab-inner">
         <h3>Brand Symbol Misuses</h3>
-        <ul class="optionWrap swap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
-          <li><img src="<?php print $dir; ?>images/brand-symbol/misuse-0.svg" alt="" /></li>
-          <li><img src="<?php print $dir; ?>images/brand-symbol/misuse-1.svg" alt="" /></li>
-          <li class="img width-45"><img src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" /></li>
+        <ul class="optionWrap swap">
+          <li title="Do not recolor the brand symbol."><img src="<?php print $dir; ?>images/brand-symbol/misuse-0.svg" alt="" /></li>
+          <li title="The brand symbol does not act as a replacement for text."><img src="<?php print $dir; ?>images/brand-symbol/misuse-1.svg" alt="" /></li>
+          <li title="Do not warp." class="img width-45"><img src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" /></li>
         </ul>
       </div>
     </div>

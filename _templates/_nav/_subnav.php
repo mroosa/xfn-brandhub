@@ -1,6 +1,6 @@
 <?php
 $subLinkAry = [
-#	new NavLink('#brand-story','Our Brand', null),
+	new NavLink('#introduction','Introduction', null),
 	new NavLink('#logo','Logo', null),
 	new NavLink('#brand-symbol','Brand Symbol', null),
 	new NavLink('#sub-brands','Sub-Brands', null),

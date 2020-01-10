@@ -20,16 +20,17 @@ $(document).ready(function() {
     var item = $($(this).attr("href"));
     if (item.length) { return item; }
   });
- 	// var stickyNav = function(){
-  //   var scrollTop = $(window).scrollTop();
-  //   // console.log(scrollTop);
-  //   if (scrollTop > stickyNavTop) {
-  //       $('#subnav .sidebar').addClass('sticky');
-  //   } else {
-  //       $('#subnav .sidebar').removeClass('sticky');
-  //   }
-	// };
-	// stickyNav();
+
+ 	var stickyNav = function(){
+    var scrollTop = $(window).scrollTop();
+//    console.log(scrollTop);
+    if (scrollTop > stickyNavTop) {
+        $('#subnav').addClass('sticky');
+    } else {
+        $('#subnav').removeClass('sticky');
+    }
+	};
+	stickyNav();
 
   // Active sub nav items
 
@@ -60,7 +61,7 @@ $(document).ready(function() {
 
   $(window).scroll(function() {
     // actSect();
-		// stickyNav();
+		stickyNav();
 
     var fromTop = $(window).scrollTop() + buffer;
 

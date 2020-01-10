@@ -175,12 +175,15 @@ main {
       }
     }
     #subnav {
-      position: fixed;
       width: 150px;
       @include bp-min($xlg) {
         width: 200px;
       }
-      padding: 0 1.5% 30px 1.5%;
+      padding: 0 1.5vw 30px 1.5vw;
+      &.sticky {
+        position: fixed;
+        top: 0;
+      }
     }
   }
   .content {
@@ -810,31 +813,18 @@ body:not(.button-wrapping) a.button {
   }
 }
 
-// main {
-//   -webkit-mask-image: radial-gradient(#000 70%, transparent 70.1%);
-//   -webkit-mask-repeat: no-repeat;
-//   -webkit-mask-size: 0 0;
-//   -webkit-mask-position: 24% 21%;
-//   transition: -webkit-mask-size 1.5s, -webkit-mask-position 1.5s;
-//   transition-delay: 0.5s;
-//   background: #fff;
-//   &.reveal {
-//     -webkit-mask-size: 200vmax 200vmax;
-//     -webkit-mask-position: -60vw -50vh;
-//   }
-//   &.remove {
-//     -webkit-mask-image:none;
-//   }
-// }
 
-/* Brand */
-#brand-story {
-  display: none;
+/* Intro */
+#introduction {
   min-height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
   background: #000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
   // position: absolute;
   // z-index: -1;
 
@@ -1483,47 +1473,11 @@ body #color {
     justify-content: flex-start;
     position: relative;
     overflow: hidden;
-    height: $lht;
 
     .sub-brand-logo-1 {
       padding-right: 12px;
       position: relative;
       z-index: 2;
-      background: #fff;
-
-      &,
-      img {
-        height: $lht;
-      }
-    }
-    .sub-brand-logo-2 {
-      position: absolute;
-      z-index: 1;
-      top: 0;
-      left: 0;
-
-      ul {
-        position: relative;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        transition: .5s margin;
-
-        li {
-          margin: 10px 0;
-
-          &:first-child {
-            margin-top: 0;
-          }
-          img {
-            width: auto;
-          }
-          &,
-          img {
-            height: $lht;
-          }
-        }
-      }
     }
   }
   .sub-brands {
@@ -1898,7 +1852,20 @@ body[data-random-seed="4"] #secondary-graphics.active {
       height: 100%;
       width: 100%;
       object-fit: contain;
+      position: relative;
+      z-index: 1;
       }
+
+      .frost {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        z-index: 2;
+        background: url(../images/black-frost.png) no-repeat center center transparent;
+        background-size: contain;
+      }
+
     }
 
 

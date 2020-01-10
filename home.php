@@ -26,9 +26,9 @@
       </svg>
     </a> -->
 
-    <!-- <section id="brand-story">
-      <?php #include_once("overview.php"); ?>
-    </section> -->
+    <section id="introduction">
+      <?php include_once("design/overview.php"); ?>
+    </section>
     <main>
       <form id="form-logout" method='post' action="">
         <input type="submit" value="Logout" name="but_logout">
@@ -53,7 +53,7 @@
 
         <div class="content">
 
-          <section id="logo" class="with-tabs active">
+          <section id="logo" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/logo.php"); ?>
             </div><!-- /.col-wrap -->

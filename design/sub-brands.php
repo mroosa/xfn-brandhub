@@ -12,17 +12,9 @@
 
         <div class="sub-brand-logos">
           <div class="sub-brand-logo-1">
-            <img src="images/xfinity-logo.svg" alt="">
-          </div>
-          <div class="sub-brand-logo-2">
-            <ul>
-              <li data-brand="0" class="active"><img src="images/sub-brands/xfinity-x1.svg" alt=""></li>
-              <li data-brand="1"><img src="images/sub-brands/xfinity-xfi.svg" alt=""></li>
-              <li data-brand="2"><img src="images/sub-brands/xfinity-stream.svg" alt=""></li>
-              <li data-brand="3"><img src="images/sub-brands/xfinity-flex.svg" alt=""></li>
-              <li data-brand="4"><img src="images/sub-brands/xfinity-home.svg" alt=""></li>
-              <li data-brand="5"><img src="images/sub-brands/xfinity-mobile.svg" alt=""></li>
-            </ul>
+            <video autoplay muted loop nocontrols>
+              <source src="video/sub-brand-loop.mp4" type="video/mp4">
+            </video>
           </div>
         </div><!-- /.brand-logos -->
 
@@ -32,10 +24,10 @@
       <div class="tab" data-ttl="Misuses" data-bg="white" id="sub-brand-misuses">
         <div class="tab-inner">
           <h3>Sub-Brand Misuses</h3>
-          <ul class="optionWrap swap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
-            <li><img src="<?php print $dir; ?>images/sub-brands/misuse-0.svg" alt="" /></li>
-            <li><img src="<?php print $dir; ?>images/sub-brands/misuse-1.svg" alt="" /></li>
-            <li><img src="<?php print $dir; ?>images/sub-brands/misuse-2.svg" alt="" /></li>
+          <ul class="optionWrap swap">
+            <li title="Sub-brand logos may not be recolored."><img src="<?php print $dir; ?>images/sub-brands/misuse-0.svg" alt="" /></li>
+            <li title="Do not use sub-brand logos to create third-party lock-ups."><img src="<?php print $dir; ?>images/sub-brands/misuse-1.svg" alt="" /></li>
+            <li title="Do not use sub-brand logos with feature names."><img src="<?php print $dir; ?>images/sub-brands/misuse-2.svg" alt="" /></li>
           </ul>
         </div>
       </div>

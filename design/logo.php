@@ -55,10 +55,10 @@
     <div class="tab" data-ttl="Misuses" data-bg="white" id="logo-misuses">
       <div class="tab-inner">
         <h3>Logo Misuses</h3>
-        <ul class="optionWrap swap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
-          <li><img src="<?php print $dir; ?>images/logo/misuse-1.svg" alt="" /></li>
-          <li><img src="<?php print $dir; ?>images/logo/misuse-2.svg" alt="" /></li>
-          <li><img src="<?php print $dir; ?>images/logo/misuse-3.svg" alt="" /></li>
+        <ul class="optionWrap swap">
+          <li title="Do not add gradients to the logo."><img src="<?php print $dir; ?>images/logo/misuse-1.svg" alt="" /></li>
+          <li title="Do not manipulate the logo."><img src="<?php print $dir; ?>images/logo/misuse-2.svg" alt="" /></li>
+          <li title="Do not lockup with other graphic elements."><img src="<?php print $dir; ?>images/logo/misuse-3.svg" alt="" /></li>
         </ul>
       </div>
     </div>

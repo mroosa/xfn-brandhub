@@ -1,5 +1,3 @@
-<div class="col-1">
-<!-- <video class="intro-vid" nocontrols muted autoplay>
-  <source src="../video/intro-1.mp4" type="video/mp4">
-</video> -->
+<div class="col-1" style="display: flex; height: 100%;align-items: center; justify-content: center;">
+  <h1>Introduction</h1>
 </div>

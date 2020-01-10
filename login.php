@@ -19,6 +19,7 @@
       </div>
     </section>
     <div class="vid-wrap">
+      <div class="frost"></div>
       <video id="login-intro" autoplay muted nocontrols>
         <source src="video/login-intro-glow.mp4" type="video/mp4">
       </video>

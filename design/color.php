@@ -114,10 +114,10 @@
       <div class="tab" data-ttl="Misuses" data-bg="white" id="color-misuses">
         <div class="tab-inner">
           <h3>Color Misuses</h3>
-          <ul class="optionWrap swap" title="The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.">
-            <li class="img"><img class="border rounded" src="<?php print $dir; ?>images/color/misuse-0.png" alt="" /></li>
-            <li class="img width-55"><img class="rounded" src="<?php print $dir; ?>images/color/misuse-1.png" alt="" /></li>
-            <li class="img width-55"><img class="border rounded" src="<?php print $dir; ?>images/color/misuse-2.png" alt="" /></li>
+          <ul class="optionWrap swap">
+            <li title="Headlines and subheads cannot be Accent Red. Don't use Action Blue outside of digital applications. Red logos are only to be used for high impact environments." class="img"><img class="border rounded" src="<?php print $dir; ?>images/color/misuse-0.png" alt="" /></li>
+            <li title="Accent Red cannot be used to draw attention to text. Red accent bars are only used for price points." class="img width-55"><img class="rounded" src="<?php print $dir; ?>images/color/misuse-1.png" alt="" /></li>
+            <li title="Don't use Accent Red as a background color." class="img width-55"><img class="border rounded" src="<?php print $dir; ?>images/color/misuse-2.png" alt="" /></li>
           </ul>
         </div>
       </div>

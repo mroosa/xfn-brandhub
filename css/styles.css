@@ -353,12 +353,14 @@ main {
         padding: 30px 0 10px 0;
         width: 50px; } }
   .two-col .sidebar #subnav {
-    position: fixed;
     width: 150px;
-    padding: 0 1.5% 30px 1.5%; }
+    padding: 0 1.5vw 30px 1.5vw; }
     @media (min-width: 1200px) {
       .two-col .sidebar #subnav {
         width: 200px; } }
+    .two-col .sidebar #subnav.sticky {
+      position: fixed;
+      top: 0; }
 
 .two-col .content {
   width: calc(100% - 150px); }
@@ -845,15 +847,17 @@ body:not(.button-wrapping) a.button {
   .content .flex-column .no-mobile {
     display: none; }
 
-/* Brand */
-#brand-story {
-  display: none;
+/* Intro */
+#introduction {
   min-height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
-  background: #000; }
-  #brand-story h1 {
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  #introduction h1 {
     font-size: 72px;
     font-size: 4.5rem; }
 
@@ -1393,36 +1397,11 @@ body #color.active .color-swatches .color-6 {
   display: flex;
   justify-content: flex-start;
   position: relative;
-  overflow: hidden;
-  height: 70px; }
+  overflow: hidden; }
   #sub-brands .sub-brand-logos .sub-brand-logo-1 {
     padding-right: 12px;
     position: relative;
-    z-index: 2;
-    background: #fff; }
-    #sub-brands .sub-brand-logos .sub-brand-logo-1,
-    #sub-brands .sub-brand-logos .sub-brand-logo-1 img {
-      height: 70px; }
-  #sub-brands .sub-brand-logos .sub-brand-logo-2 {
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0; }
-    #sub-brands .sub-brand-logos .sub-brand-logo-2 ul {
-      position: relative;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      transition: .5s margin; }
-      #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li {
-        margin: 10px 0; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li:first-child {
-          margin-top: 0; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li img {
-          width: auto; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li,
-        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li img {
-          height: 70px; }
+    z-index: 2; }
 
 #sub-brands .sub-brands {
   overflow: hidden;
@@ -1778,7 +1757,17 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
       .login main .vid-wrap video {
         height: 100%;
         width: 100%;
-        object-fit: contain; }
+        object-fit: contain;
+        position: relative;
+        z-index: 1; }
+      .login main .vid-wrap .frost {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        z-index: 2;
+        background: url(../images/black-frost.png) no-repeat center center transparent;
+        background-size: contain; }
   .login.dark {
     background: #000;
     color: #fff; }

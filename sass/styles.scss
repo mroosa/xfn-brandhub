@@ -852,6 +852,10 @@ body:not(.button-wrapping) a.button {
   h1 {
     @include font-size(72px);
   }
+
+  .col-1 {
+    text-align: center;
+  }
 }
 
 /* Logo */

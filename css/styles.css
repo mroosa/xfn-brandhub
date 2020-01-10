@@ -860,6 +860,8 @@ body:not(.button-wrapping) a.button {
   #introduction h1 {
     font-size: 72px;
     font-size: 4.5rem; }
+  #introduction .col-1 {
+    text-align: center; }
 
 /* Logo */
 #logo .tabs .tab img {

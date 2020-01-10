@@ -825,37 +825,120 @@ body:not(.button-wrapping) a.button {
   display: flex;
   align-items: center;
   justify-content: center;
-  // position: absolute;
-  // z-index: -1;
 
-  // .col-1 {
-  //   position: absolute;
-  //   top: 0;
-  //   border: 0;
-  //   width: 100%;
-  //   height: 100%;
-  //   overflow: hidden;
-  // }
-
-  // video {
-  //   min-width: 100%;
-  //   min-height: 100%;
-  //
-  //   width: auto;
-  //   height: auto;
-  //   position: absolute;
-  //   top: 50%;
-  //   left: 50%;
-  //   transform: translate(-50%,-50%);
-  // }
+  .intro-info {
+    max-width: 550px;
+    position: relative;
+    z-index: 10;
+  }
 
   h1 {
-    @include font-size(72px);
+    @include font-size(54px);
+    line-height: 130%;
   }
 
-  .col-1 {
-    text-align: center;
+  p {
+    @include font-size(18px);
+    line-height: 130%;
   }
+
+  h2 {
+    @include font-size(32px);
+    line-height: 130%;
+  }
+
+  &.opt-1, &.opt-2 {
+    justify-content: flex-start;
+    .col-1 {
+      padding: 100px;
+      width: 55%;
+      text-align: left;
+    }
+
+    .intro-shade {
+      position: absolute;
+      z-index: 2;
+      background: linear-gradient(90deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.5) 35%, rgba(0,0,0,0) 100%);
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0;
+    }
+  }
+
+  &.opt-2 {
+    .intro-info {
+      h1,p,h2 {
+        color: #000;
+      }
+    }
+  }
+
+  &.opt-3 {
+
+  }
+
+  @include bp-min($xlg) {
+    &.opt-1, &.opt-2 {
+      justify-content: center;
+      .col-1 {
+        width: $xxl;
+        margin: 0 auto;
+        padding: 50px;
+      }
+    }
+  }
+
+
+
+  .get-started {
+    position: absolute;
+    display: block;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 99;
+
+    svg {
+      height: 45px;
+      width: 45px;
+      padding: 5px;
+      fill: #fff;
+      transform: translate(0,0);
+      transition: .25s transform;
+    }
+
+    &:hover {
+      svg {
+        transform: translate(0, 5px);
+      }
+    }
+  }
+
+  h1 {animation: .75s ease-in 0.25s 1 normal both revealSlide;}
+  p:nth-of-type(1) {animation: .75s ease-in 1.75s 1 normal both revealSlide;}
+  p:nth-of-type(2) {animation: .75s ease-in 4.5s 1 normal both revealSlide;}
+  h2 {animation: .75s ease-in 6.5s 1 normal both revealSlide;}
+  .get-started {animation: .75s ease-in 7.5s 1 normal both reveal;}
+
+  .vid-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+
+    video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    }
+  }
+
 }
 
 /* Logo */
@@ -868,15 +951,14 @@ body:not(.button-wrapping) a.button {
 
 /* Color */
 body #color {
-  .color{opacity: 0;}
   &.active  {
     .color-swatches {
-      .color-1 {animation: pop .5s forwards normal 0.25s;}
-      .color-2 {animation: pop .5s forwards normal 0.50s;}
-      .color-3 {animation: pop .5s forwards normal 0.75s;}
-      .color-4 {animation: pop .5s forwards normal 1.00s;}
-      .color-5 {animation: pop .5s forwards normal 1.25s;}
-      .color-6 {animation: pop .5s forwards normal 1.50s;}
+      .color-1 {animation: pop .5s both normal 0.25s;}
+      .color-2 {animation: pop .5s both normal 0.50s;}
+      .color-3 {animation: pop .5s both normal 0.75s;}
+      .color-4 {animation: pop .5s both normal 1.00s;}
+      .color-5 {animation: pop .5s both normal 1.25s;}
+      .color-6 {animation: pop .5s both normal 1.50s;}
     }
   }
 }
@@ -1645,54 +1727,54 @@ body #color {
 
 body[data-random-seed="1"] #secondary-graphics.active  {
   #sg-intro li {
-    &:nth-of-type(1) img {animation: pop .5s forwards normal 0.25s;}
-    &:nth-of-type(4) img {animation: pop .5s forwards normal 0.50s;}
-    &:nth-of-type(9) img {animation: pop .5s forwards normal 0.75s;}
-    &:nth-of-type(2) img {animation: pop .5s forwards normal 1.00s;}
-    &:nth-of-type(5) img {animation: pop .5s forwards normal 1.25s;}
-    &:nth-of-type(3) img {animation: pop .5s forwards normal 1.50s;}
-    &:nth-of-type(7) img {animation: pop .5s forwards normal 1.75s;}
-    &:nth-of-type(8) img {animation: pop .5s forwards normal 2.00s;}
-    &:nth-of-type(6) img {animation: pop .5s forwards normal 2.25s;}
+    &:nth-of-type(1) img {animation: pop .5s both normal 0.25s;}
+    &:nth-of-type(4) img {animation: pop .5s both normal 0.50s;}
+    &:nth-of-type(9) img {animation: pop .5s both normal 0.75s;}
+    &:nth-of-type(2) img {animation: pop .5s both normal 1.00s;}
+    &:nth-of-type(5) img {animation: pop .5s both normal 1.25s;}
+    &:nth-of-type(3) img {animation: pop .5s both normal 1.50s;}
+    &:nth-of-type(7) img {animation: pop .5s both normal 1.75s;}
+    &:nth-of-type(8) img {animation: pop .5s both normal 2.00s;}
+    &:nth-of-type(6) img {animation: pop .5s both normal 2.25s;}
   }
 }
 body[data-random-seed="2"] #secondary-graphics.active  {
   #sg-intro li {
-    &:nth-of-type(3) img {animation: pop .5s forwards normal 0.25s;}
-    &:nth-of-type(8) img {animation: pop .5s forwards normal 0.50s;}
-    &:nth-of-type(6) img {animation: pop .5s forwards normal 0.75s;}
-    &:nth-of-type(4) img {animation: pop .5s forwards normal 1.00s;}
-    &:nth-of-type(5) img {animation: pop .5s forwards normal 1.25s;}
-    &:nth-of-type(9) img {animation: pop .5s forwards normal 1.50s;}
-    &:nth-of-type(1) img {animation: pop .5s forwards normal 1.75s;}
-    &:nth-of-type(2) img {animation: pop .5s forwards normal 2.00s;}
-    &:nth-of-type(7) img {animation: pop .5s forwards normal 2.25s;}
+    &:nth-of-type(3) img {animation: pop .5s both normal 0.25s;}
+    &:nth-of-type(8) img {animation: pop .5s both normal 0.50s;}
+    &:nth-of-type(6) img {animation: pop .5s both normal 0.75s;}
+    &:nth-of-type(4) img {animation: pop .5s both normal 1.00s;}
+    &:nth-of-type(5) img {animation: pop .5s both normal 1.25s;}
+    &:nth-of-type(9) img {animation: pop .5s both normal 1.50s;}
+    &:nth-of-type(1) img {animation: pop .5s both normal 1.75s;}
+    &:nth-of-type(2) img {animation: pop .5s both normal 2.00s;}
+    &:nth-of-type(7) img {animation: pop .5s both normal 2.25s;}
   }
 }
 body[data-random-seed="3"] #secondary-graphics.active  {
   #sg-intro li {
-    &:nth-of-type(5) img {animation: pop .5s forwards normal 0.25s;}
-    &:nth-of-type(1) img {animation: pop .5s forwards normal 0.50s;}
-    &:nth-of-type(7) img {animation: pop .5s forwards normal 0.75s;}
-    &:nth-of-type(4) img {animation: pop .5s forwards normal 1.00s;}
-    &:nth-of-type(6) img {animation: pop .5s forwards normal 1.25s;}
-    &:nth-of-type(8) img {animation: pop .5s forwards normal 1.50s;}
-    &:nth-of-type(3) img {animation: pop .5s forwards normal 1.75s;}
-    &:nth-of-type(9) img {animation: pop .5s forwards normal 2.00s;}
-    &:nth-of-type(2) img {animation: pop .5s forwards normal 2.25s;}
+    &:nth-of-type(5) img {animation: pop .5s both normal 0.25s;}
+    &:nth-of-type(1) img {animation: pop .5s both normal 0.50s;}
+    &:nth-of-type(7) img {animation: pop .5s both normal 0.75s;}
+    &:nth-of-type(4) img {animation: pop .5s both normal 1.00s;}
+    &:nth-of-type(6) img {animation: pop .5s both normal 1.25s;}
+    &:nth-of-type(8) img {animation: pop .5s both normal 1.50s;}
+    &:nth-of-type(3) img {animation: pop .5s both normal 1.75s;}
+    &:nth-of-type(9) img {animation: pop .5s both normal 2.00s;}
+    &:nth-of-type(2) img {animation: pop .5s both normal 2.25s;}
   }
 }
 body[data-random-seed="4"] #secondary-graphics.active {
   #sg-intro li {
-    &:nth-of-type(9) img {animation: pop .5s forwards normal 0.25s;}
-    &:nth-of-type(3) img {animation: pop .5s forwards normal 0.50s;}
-    &:nth-of-type(5) img {animation: pop .5s forwards normal 0.75s;}
-    &:nth-of-type(1) img {animation: pop .5s forwards normal 1.00s;}
-    &:nth-of-type(8) img {animation: pop .5s forwards normal 1.25s;}
-    &:nth-of-type(6) img {animation: pop .5s forwards normal 1.50s;}
-    &:nth-of-type(4) img {animation: pop .5s forwards normal 1.75s;}
-    &:nth-of-type(8) img {animation: pop .5s forwards normal 2.00s;}
-    &:nth-of-type(2) img {animation: pop .5s forwards normal 2.25s;}
+    &:nth-of-type(9) img {animation: pop .5s both normal 0.25s;}
+    &:nth-of-type(3) img {animation: pop .5s both normal 0.50s;}
+    &:nth-of-type(5) img {animation: pop .5s both normal 0.75s;}
+    &:nth-of-type(1) img {animation: pop .5s both normal 1.00s;}
+    &:nth-of-type(8) img {animation: pop .5s both normal 1.25s;}
+    &:nth-of-type(6) img {animation: pop .5s both normal 1.50s;}
+    &:nth-of-type(4) img {animation: pop .5s both normal 1.75s;}
+    &:nth-of-type(8) img {animation: pop .5s both normal 2.00s;}
+    &:nth-of-type(2) img {animation: pop .5s both normal 2.25s;}
   }
 }
 #secondary-graphics-additional #sg-ag-1,
@@ -1821,12 +1903,12 @@ body[data-random-seed="4"] #secondary-graphics.active {
       }
 
       &.reveal {
-        h1 {animation: reveal .75s forwards normal .25s;}
+        h1 {animation: reveal .75s both normal .25s;}
         label[for="txt_uname"],
-        #txt_uname {animation: reveal .75s forwards normal .75s;}
+        #txt_uname {animation: reveal .75s both normal .75s;}
         label[for="txt_pwd"],
-        #txt_pwd {animation: reveal .75s forwards normal 1.25s;}
-        #btn_submit {animation: reveal .75s forwards normal 1.75s;}
+        #txt_pwd {animation: reveal .75s both normal 1.25s;}
+        #btn_submit {animation: reveal .75s both normal 1.75s;}
       }
     }
 

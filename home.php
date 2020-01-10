@@ -26,7 +26,7 @@
       </svg>
     </a> -->
 
-    <section id="introduction">
+    <section id="introduction" class="opt-1">
       <?php include_once("design/overview.php"); ?>
     </section>
     <main>

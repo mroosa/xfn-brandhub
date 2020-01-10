@@ -242,6 +242,14 @@
   to {
     opacity: 1; } }
 
+@keyframes revealSlide {
+  from {
+    opacity: 0;
+    transform: translateY(20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
 html,
 html * {
   box-sizing: border-box; }
@@ -857,37 +865,108 @@ body:not(.button-wrapping) a.button {
   display: flex;
   align-items: center;
   justify-content: center; }
+  #introduction .intro-info {
+    max-width: 550px;
+    position: relative;
+    z-index: 10; }
   #introduction h1 {
-    font-size: 72px;
-    font-size: 4.5rem; }
-  #introduction .col-1 {
-    text-align: center; }
+    font-size: 54px;
+    font-size: 3.375rem;
+    line-height: 130%; }
+  #introduction p {
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 130%; }
+  #introduction h2 {
+    font-size: 32px;
+    font-size: 2rem;
+    line-height: 130%; }
+  #introduction.opt-1, #introduction.opt-2 {
+    justify-content: flex-start; }
+    #introduction.opt-1 .col-1, #introduction.opt-2 .col-1 {
+      padding: 100px;
+      width: 55%;
+      text-align: left; }
+    #introduction.opt-1 .intro-shade, #introduction.opt-2 .intro-shade {
+      position: absolute;
+      z-index: 2;
+      background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0) 100%);
+      height: 100%;
+      width: 100%;
+      left: 0;
+      top: 0; }
+  #introduction.opt-2 .intro-info h1, #introduction.opt-2 .intro-info p, #introduction.opt-2 .intro-info h2 {
+    color: #000; }
+  @media (min-width: 1200px) {
+    #introduction.opt-1, #introduction.opt-2 {
+      justify-content: center; }
+      #introduction.opt-1 .col-1, #introduction.opt-2 .col-1 {
+        width: 1400px;
+        margin: 0 auto;
+        padding: 50px; } }
+  #introduction .get-started {
+    position: absolute;
+    display: block;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 99; }
+    #introduction .get-started svg {
+      height: 45px;
+      width: 45px;
+      padding: 5px;
+      fill: #fff;
+      transform: translate(0, 0);
+      transition: .25s transform; }
+    #introduction .get-started:hover svg {
+      transform: translate(0, 5px); }
+  #introduction h1 {
+    animation: .75s ease-in 0.25s 1 normal both revealSlide; }
+  #introduction p:nth-of-type(1) {
+    animation: .75s ease-in 1.75s 1 normal both revealSlide; }
+  #introduction p:nth-of-type(2) {
+    animation: .75s ease-in 4.5s 1 normal both revealSlide; }
+  #introduction h2 {
+    animation: .75s ease-in 6.5s 1 normal both revealSlide; }
+  #introduction .get-started {
+    animation: .75s ease-in 7.5s 1 normal both reveal; }
+  #introduction .vid-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; }
+    #introduction .vid-wrap video {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 1; }
 
 /* Logo */
 #logo .tabs .tab img {
   width: 75%; }
 
 /* Color */
-body #color .color {
-  opacity: 0; }
-
 body #color.active .color-swatches .color-1 {
-  animation: pop .5s forwards normal 0.25s; }
+  animation: pop .5s both normal 0.25s; }
 
 body #color.active .color-swatches .color-2 {
-  animation: pop .5s forwards normal 0.50s; }
+  animation: pop .5s both normal 0.50s; }
 
 body #color.active .color-swatches .color-3 {
-  animation: pop .5s forwards normal 0.75s; }
+  animation: pop .5s both normal 0.75s; }
 
 body #color.active .color-swatches .color-4 {
-  animation: pop .5s forwards normal 1.00s; }
+  animation: pop .5s both normal 1.00s; }
 
 body #color.active .color-swatches .color-5 {
-  animation: pop .5s forwards normal 1.25s; }
+  animation: pop .5s both normal 1.25s; }
 
 body #color.active .color-swatches .color-6 {
-  animation: pop .5s forwards normal 1.50s; }
+  animation: pop .5s both normal 1.50s; }
 
 #color #color-palette {
   position: relative; }
@@ -1523,112 +1602,112 @@ body #color.active .color-swatches .color-6 {
       opacity: 0; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(1) img {
-  animation: pop .5s forwards normal 0.25s; }
+  animation: pop .5s both normal 0.25s; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(4) img {
-  animation: pop .5s forwards normal 0.50s; }
+  animation: pop .5s both normal 0.50s; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(9) img {
-  animation: pop .5s forwards normal 0.75s; }
+  animation: pop .5s both normal 0.75s; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(2) img {
-  animation: pop .5s forwards normal 1.00s; }
+  animation: pop .5s both normal 1.00s; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(5) img {
-  animation: pop .5s forwards normal 1.25s; }
+  animation: pop .5s both normal 1.25s; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(3) img {
-  animation: pop .5s forwards normal 1.50s; }
+  animation: pop .5s both normal 1.50s; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(7) img {
-  animation: pop .5s forwards normal 1.75s; }
+  animation: pop .5s both normal 1.75s; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(8) img {
-  animation: pop .5s forwards normal 2.00s; }
+  animation: pop .5s both normal 2.00s; }
 
 body[data-random-seed="1"] #secondary-graphics.active #sg-intro li:nth-of-type(6) img {
-  animation: pop .5s forwards normal 2.25s; }
+  animation: pop .5s both normal 2.25s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(3) img {
-  animation: pop .5s forwards normal 0.25s; }
+  animation: pop .5s both normal 0.25s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(8) img {
-  animation: pop .5s forwards normal 0.50s; }
+  animation: pop .5s both normal 0.50s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(6) img {
-  animation: pop .5s forwards normal 0.75s; }
+  animation: pop .5s both normal 0.75s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(4) img {
-  animation: pop .5s forwards normal 1.00s; }
+  animation: pop .5s both normal 1.00s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(5) img {
-  animation: pop .5s forwards normal 1.25s; }
+  animation: pop .5s both normal 1.25s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(9) img {
-  animation: pop .5s forwards normal 1.50s; }
+  animation: pop .5s both normal 1.50s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(1) img {
-  animation: pop .5s forwards normal 1.75s; }
+  animation: pop .5s both normal 1.75s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(2) img {
-  animation: pop .5s forwards normal 2.00s; }
+  animation: pop .5s both normal 2.00s; }
 
 body[data-random-seed="2"] #secondary-graphics.active #sg-intro li:nth-of-type(7) img {
-  animation: pop .5s forwards normal 2.25s; }
+  animation: pop .5s both normal 2.25s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(5) img {
-  animation: pop .5s forwards normal 0.25s; }
+  animation: pop .5s both normal 0.25s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(1) img {
-  animation: pop .5s forwards normal 0.50s; }
+  animation: pop .5s both normal 0.50s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(7) img {
-  animation: pop .5s forwards normal 0.75s; }
+  animation: pop .5s both normal 0.75s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(4) img {
-  animation: pop .5s forwards normal 1.00s; }
+  animation: pop .5s both normal 1.00s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(6) img {
-  animation: pop .5s forwards normal 1.25s; }
+  animation: pop .5s both normal 1.25s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(8) img {
-  animation: pop .5s forwards normal 1.50s; }
+  animation: pop .5s both normal 1.50s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(3) img {
-  animation: pop .5s forwards normal 1.75s; }
+  animation: pop .5s both normal 1.75s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(9) img {
-  animation: pop .5s forwards normal 2.00s; }
+  animation: pop .5s both normal 2.00s; }
 
 body[data-random-seed="3"] #secondary-graphics.active #sg-intro li:nth-of-type(2) img {
-  animation: pop .5s forwards normal 2.25s; }
+  animation: pop .5s both normal 2.25s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(9) img {
-  animation: pop .5s forwards normal 0.25s; }
+  animation: pop .5s both normal 0.25s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(3) img {
-  animation: pop .5s forwards normal 0.50s; }
+  animation: pop .5s both normal 0.50s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(5) img {
-  animation: pop .5s forwards normal 0.75s; }
+  animation: pop .5s both normal 0.75s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(1) img {
-  animation: pop .5s forwards normal 1.00s; }
+  animation: pop .5s both normal 1.00s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(8) img {
-  animation: pop .5s forwards normal 1.25s; }
+  animation: pop .5s both normal 1.25s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(6) img {
-  animation: pop .5s forwards normal 1.50s; }
+  animation: pop .5s both normal 1.50s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(4) img {
-  animation: pop .5s forwards normal 1.75s; }
+  animation: pop .5s both normal 1.75s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(8) img {
-  animation: pop .5s forwards normal 2.00s; }
+  animation: pop .5s both normal 2.00s; }
 
 body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2) img {
-  animation: pop .5s forwards normal 2.25s; }
+  animation: pop .5s both normal 2.25s; }
 
 #secondary-graphics-additional #sg-ag-1,
 #secondary-graphics-mobile-app-icons #sg-m-1,
@@ -1739,15 +1818,15 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
           border-color: #000;
           box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15); }
       .login main #login.reveal h1 {
-        animation: reveal .75s forwards normal .25s; }
+        animation: reveal .75s both normal .25s; }
       .login main #login.reveal label[for="txt_uname"],
       .login main #login.reveal #txt_uname {
-        animation: reveal .75s forwards normal .75s; }
+        animation: reveal .75s both normal .75s; }
       .login main #login.reveal label[for="txt_pwd"],
       .login main #login.reveal #txt_pwd {
-        animation: reveal .75s forwards normal 1.25s; }
+        animation: reveal .75s both normal 1.25s; }
       .login main #login.reveal #btn_submit {
-        animation: reveal .75s forwards normal 1.75s; }
+        animation: reveal .75s both normal 1.75s; }
     .login main .vid-wrap {
       position: absolute;
       top: 0;

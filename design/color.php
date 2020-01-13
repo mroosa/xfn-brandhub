@@ -99,7 +99,7 @@
       </div>
 
       <!-- tab -->
-      <div class="tab" id="color-in-use" data-ttl="Color In Use">
+      <!-- <div class="tab" id="color-in-use" data-ttl="Color In Use">
         <div class="tab-inner">
           <h3>Color In Use</h3>
           <ul class="optionWrap" title="">
@@ -108,7 +108,7 @@
             <li class="img width-35"><img class="border rounded" src="<?php print $dir; ?>images/color/03.png" alt="" /></li>
           </ul>
         </div>
-      </div>
+      </div> -->
 
       <!-- tab -->
       <div class="tab" data-ttl="Misuses" data-bg="white" id="color-misuses">

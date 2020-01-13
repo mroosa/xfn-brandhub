@@ -21,4 +21,9 @@
       <source src="video/intro-1.mp4" type="video/mp4">
     </video>
   </div> -->
+  <div class="vid-wrap">
+    <video nocontrols loop muted autoplay>
+      <source src="video/intro-3.mp4" type="video/mp4">
+    </video>
+  </div>
 </div>

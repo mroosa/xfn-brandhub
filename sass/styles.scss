@@ -1008,13 +1008,17 @@ body #color {
       border-radius: $bdr;
       height: 100%;
       cursor: pointer;
+      transition: .25s transform;
+      z-index: 1;
+      display: relative;
 
       &.color-1 {
         border: 1px solid #ccc;
       }
-      // &.color-2 {
-      //   border: 1px solid #666;
-      // }
+      &:hover {
+        animation-play-state: paused;
+        transform: scale(1.05);
+      }
     }
 
     .ht-100 {

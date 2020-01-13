@@ -1,5 +1,6 @@
         <div class="col-full">
           <h1>Downloads</h1>
+          <p>All assets are available to download at the <a href="#">Xfinity Brand Hub</a>. <br>Please reach out to the Xfinity Brand Team with any questions or concerns.</p>
           <div class="download-row" id="xfinity-logo">
             <h3>Xfinity Logo</h3>
             <div class="download-intro">

@@ -826,6 +826,10 @@ body:not(.button-wrapping) a.button {
   align-items: center;
   justify-content: center;
 
+  .vid-wrap {
+    display: none;
+  }
+
   .intro-info {
     max-width: 550px;
     position: relative;
@@ -847,7 +851,7 @@ body:not(.button-wrapping) a.button {
     line-height: 130%;
   }
 
-  &.opt-1, &.opt-2 {
+  &[data-option="1"], &[data-option="2"] {
     justify-content: flex-start;
     .col-1 {
       padding: 100px;
@@ -866,20 +870,40 @@ body:not(.button-wrapping) a.button {
     }
   }
 
-  &.opt-2 {
+  &[data-option="1"] {
+    #vid-1 {display: block;}
+    .get-started span {color: #fff;}
+    .get-started svg {fill: #fff;}
+  }
+
+  &[data-option="2"] {
+    #vid-2 {display: block;}
+    .col-1 {width: 100%;}
+    .intro-info {
+      max-width: 1000px;
+      text-align: center;
+      color: #000;
+      margin: 0 auto;
+    }
+    .intro-shade {display: none;}
+    .get-started span {color: #000;}
+    .get-started svg {fill: #000;}
+  }
+
+  &[data-option="3"] {
+    #vid-3 {display: block;}
     .intro-info {
       h1,p,h2 {
         color: #000;
       }
     }
-  }
-
-  &.opt-3 {
-
+    .intro-shade {display: none;}
+    .get-started span {color: #000;}
+    .get-started svg {fill: #000;}
   }
 
   @include bp-min($xlg) {
-    &.opt-1, &.opt-2 {
+    &[data-option="1"], &[data-option="3"] {
       justify-content: center;
       .col-1 {
         width: $xxl;
@@ -889,26 +913,71 @@ body:not(.button-wrapping) a.button {
     }
   }
 
+  // temp vid nav
+  .vidNav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    text-align: center;
+    z-index: 99;
+    right: 20px;
+    bottom: 20px;
+
+    li {
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+
+      a {
+        display: block;
+        height: 25px;
+        width: 25px;
+        line-height: 25px;
+        background: #fff;
+        opacity: .25;
+        text-decoration: none;
+        transition: .25s opacity;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        &:hover {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
 
 
   .get-started {
     position: absolute;
-    display: block;
+    display: flex;
     bottom: 25px;
-    left: 50%;
-    transform: translate(-50%, 0);
+    left: 0;
     z-index: 99;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      opacity: 0;
+      transition: .25s opacity;
+    }
 
     svg {
       height: 45px;
       width: 45px;
       padding: 5px;
-      fill: #fff;
       transform: translate(0,0);
       transition: .25s transform;
     }
 
     &:hover {
+      span {
+        opacity: 1;
+      }
       svg {
         transform: translate(0, 5px);
       }
@@ -1015,10 +1084,10 @@ body #color {
       &.color-1 {
         border: 1px solid #ccc;
       }
-      &:hover {
-        animation-play-state: paused;
-        transform: scale(1.05);
-      }
+      // &:hover {
+      //   animation-play-state: paused;
+      //   transform: scale(1.05);
+      // }
     }
 
     .ht-100 {

@@ -181,6 +181,17 @@ function closePopOut() {
 
 $(document).ready(function() {
 
+  // TEMP INTRO videos
+  var numVids = $("#introduction .vid-wrap").length;
+  $("#introduction .col-1").append('<ul class="vidNav"></ul>');
+  $("#introduction .vid-wrap").each(function(index) {
+    $(".vidNav").append('<li><a href="#" data-id="' + Math.floor(index + 1) + '">' + Math.floor(index + 1) + '</a></li>');
+  });
+  $(".vidNav a").click(function() {
+    $("#introduction").attr("data-option", $(this).attr("data-id"));
+    return false;
+  });
+
   // $(".optionWrap").each(function() {
   //   createOptions($(this).parents(".section"));
   // });

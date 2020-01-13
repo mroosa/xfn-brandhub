@@ -3,13 +3,13 @@
 
   // Check user login or not
   if(!isset($_SESSION['uname'])){
-    header('Location: login.php');
+    header('Location: login');
   }
 
   // logout
   if(isset($_POST['but_logout'])){
     session_destroy();
-    header('Location: login.php');
+    header('Location: login');
   }
 
   $dir = "";
@@ -26,7 +26,7 @@
       </svg>
     </a> -->
 
-    <section id="introduction" class="opt-1">
+    <section id="introduction" data-option="2">
       <?php include_once("design/overview.php"); ?>
     </section>
     <main>

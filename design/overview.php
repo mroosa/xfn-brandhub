@@ -25,7 +25,7 @@
   </div>
   <div class="vid-wrap" id="vid-2">
     <video nocontrols loop muted autoplay>
-      <source src="video/intro-3.mp4" type="video/mp4">
+      <source src="video/intro-2.mp4" type="video/mp4">
     </video>
   </div>
   <div class="vid-wrap" id="vid-3">

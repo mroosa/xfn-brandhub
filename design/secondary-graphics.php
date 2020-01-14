@@ -14,7 +14,7 @@
           <li><img src="images/secondary-graphics/01-1.svg" alt=""></li>
           <li><img src="images/secondary-graphics/01-2.svg" alt=""></li>
           <li><img src="images/secondary-graphics/01-3.svg" alt=""></li>
-          <li style="padding: 0;"><img src="images/secondary-graphics/01-4.svg" alt=""></li>
+          <li><img src="images/secondary-graphics/02-4.svg" alt=""></li>
           <li><img src="images/secondary-graphics/01-5.svg" alt=""></li>
           <li><img src="images/secondary-graphics/01-6.svg" alt=""></li>
           <li><img src="images/secondary-graphics/01-7.svg" alt=""></li>
@@ -58,7 +58,6 @@
         <ul class="optionWrap"><li>
           <ul id="sg-ag-1">
             <li class="img width-65"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
-            <li class="img width-65"><img src="images/secondary-graphics/03-2.svg" alt=""><span>Speedtest Badge</span></li>
             <li class="img width-65"><img src="images/secondary-graphics/03-3.svg" alt=""><span>Voice Remote Microphone Button</span></li>
             <li class="img width-65"><img src="images/secondary-graphics/03-4.svg" alt=""><span>WiFi</span></li>
             <li class="img width-65"><img src="images/secondary-graphics/03-5.svg" alt=""><span>WiFi Hotspot</span></li>
@@ -79,7 +78,6 @@
               <img class="rounded border" src="images/secondary-graphics/04-01-2.png" alt="" title="The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go.">
             </div>
           </li>
-          <li class="img width-65"><img class="rounded border" src="images/secondary-graphics/04-02.png" alt="" title="Use the Speed Test Badge on communications that reference Internet speed claims."></li>
           <li class="img width-75"><img class="rounded border" src="images/secondary-graphics/04-03.png" alt="" title="Use the Mobile App icons on communications that refer to mobile app experiences."></li>
           <li class="img width-75"><img class="rounded border" src="images/secondary-graphics/04-04.png" alt="" title="The Customer Commitment Badge is available for communications that reference our customer service promise."></li>
         </ul>

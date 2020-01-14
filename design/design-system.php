@@ -1,6 +1,7 @@
 <div class="col-1">
   <h1>Design System</h1>
-  <p>Our design system allows for flexibility across all shapes and sizes. Aim for clean layouts with plenty of white space and a clear information hierarchy to guide the eye and help customers easily understand the key message of our communication.</p>
+  <p>Our design system allows for flexibility across communications of all sizes. Layouts with a clear information hierarchy and plenty of white space help guide the eye and allow customers to easily understand the key message.</p>
+  <p>One of the design tools used to achieve this look is the dynamic angle. It can be used to structure information and create containers for imagery or copy. Dynamic angles should be used in a purposeful manner to create depth or act as a plane for devices to lay on. Please only use one angle per communication.</p>
   <p class="download"><a href="#downloads">Download Design System examples</a></p>
 </div>
 <div class="col-2">

@@ -8,7 +8,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" id="secondary-graphics-overview">
+    <div class="tab" id="secondary-graphics-overview" data-intro="true">
       <div class="tab-inner">
         <ul id="sg-intro">
           <li><img src="images/secondary-graphics/01-1.svg" alt=""></li>

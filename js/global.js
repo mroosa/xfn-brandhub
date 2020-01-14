@@ -179,6 +179,16 @@ function closePopOut() {
   $(".lightbox-shade.active").removeClass("active");
 }
 
+function setPhotography(section) {
+  $("#photography .button.active").removeClass("active");
+  $('#photography a[href="#' + section + '"]').addClass("active");
+  $("#photography .photo-info-wrap").css({
+    "margin-left": -100 * section + "%"
+  });
+  $(".photo[data-set=" + section + "]").show();
+  $(".photo").not("[data-set=" + section + "]").hide();
+}
+
 $(document).ready(function() {
 
   // TEMP INTRO videos
@@ -189,6 +199,11 @@ $(document).ready(function() {
   });
   $(".vidNav a").click(function() {
     $("#introduction").attr("data-option", $(this).attr("data-id"));
+    return false;
+  });
+
+  $("#subnav a[href='#photography']").click(function() {
+    setPhotography(0);
     return false;
   });
 
@@ -308,13 +323,7 @@ $(document).ready(function() {
   $("#photography .col-1 .button").each(function(index) {
     $(this).attr("data-id",index);
     $(this).click(function() {
-      $("#photography .button.active").removeClass("active");
-      $(this).addClass("active");
-      $("#photography .photo-info-wrap").css({
-        "margin-left": -100 - 100 * index + "%"
-      });
-      $(".photo[data-set=" + index + "]").show();
-      $(".photo").not("[data-set=" + index + "]").hide();
+      setPhotography(index);
       return false;
     })
   })

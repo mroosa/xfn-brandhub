@@ -57,10 +57,10 @@
         <h3>Additional Graphics</h3>
         <ul class="optionWrap"><li>
           <ul id="sg-ag-1">
-            <li class="img width-65"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
-            <li class="img width-65"><img src="images/secondary-graphics/03-3.svg" alt=""><span>Voice Remote Microphone Button</span></li>
-            <li class="img width-65"><img src="images/secondary-graphics/03-4.svg" alt=""><span>WiFi</span></li>
-            <li class="img width-65"><img src="images/secondary-graphics/03-5.svg" alt=""><span>WiFi Hotspot</span></li>
+            <li class="img width-45"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
+            <li class="img width-45"><img src="images/secondary-graphics/03-3.svg" alt=""><span>Voice Remote Microphone Button</span></li>
+            <li class="img width-45"><img src="images/secondary-graphics/03-4.svg" alt=""><span>WiFi</span></li>
+            <li class="img width-45"><img src="images/secondary-graphics/03-5.svg" alt=""><span>WiFi Hotspot</span></li>
           </ul>
         </li></ul>
       </div>

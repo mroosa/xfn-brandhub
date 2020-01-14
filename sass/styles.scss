@@ -1877,7 +1877,7 @@ body[data-random-seed="4"] #secondary-graphics.active {
     }
   }
 }
-#secondary-graphics-additional #sg-ag-1 li,
+#secondary-graphics-additional #sg-ag-1 li {flex: 0 1 50%}
 #secondary-graphics-mobile-app-icons #sg-m-1 li {flex: 0 0 33%;}
 #secondary-graphics-mobile-app-icons #sg-m-2 li {flex: 0 0 100%;}
 

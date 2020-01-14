@@ -1805,7 +1805,9 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
       line-height: 20px;
       line-height: 1.25rem; }
 
-#secondary-graphics-additional #sg-ag-1 li,
+#secondary-graphics-additional #sg-ag-1 li {
+  flex: 0 1 50%; }
+
 #secondary-graphics-mobile-app-icons #sg-m-1 li {
   flex: 0 0 33%; }
 

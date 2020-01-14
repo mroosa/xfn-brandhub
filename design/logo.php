@@ -56,7 +56,7 @@
       <div class="tab-inner">
         <h3>Logo Misuses</h3>
         <ul class="optionWrap swap">
-          <li title="Do not add gradients to the logo."><img src="<?php print $dir; ?>images/logo/misuse-1.svg" alt="" /></li>
+          <li title="Do not recolor or add gradients to our logo."><img src="<?php print $dir; ?>images/logo/misuse-1.svg" alt="" /></li>
           <li title="Do not manipulate the logo."><img src="<?php print $dir; ?>images/logo/misuse-2.svg" alt="" /></li>
           <li title="Do not lockup with other graphic elements."><img src="<?php print $dir; ?>images/logo/misuse-3.svg" alt="" /></li>
         </ul>

@@ -1,7 +1,7 @@
 
 <div class="col-1">
   <h1>Brand Symbol</h1>
-  <p>The X brand symbol is the most distinct feature of our name and identity. It acts as a symbol of our brand &ndash; and celebrates who we are and what we stand for. To build meaning into our brand symbol over time, we should use it selectively and strategically for the greatest impact.</p>
+  <p>The X brand symbol is the most distinct feature of our name and identity. It acts as a symbol of our brand &ndash; and celebrates who we are and what we stand for. To build meaning into our brand symbol over time, we should use it selectively and strategically for the greatest impact. Please approach the Brand team for approval.</p>
   <p class="download"><a href="#downloads">Download Brand Symbol</a></p>
 </div>
 <div class="col-2">
@@ -58,8 +58,8 @@
       <div class="tab-inner">
         <h3>Brand Symbol Misuses</h3>
         <ul class="optionWrap swap">
-          <li title="Do not recolor the brand symbol."><img src="<?php print $dir; ?>images/brand-symbol/misuse-0.svg" alt="" /></li>
-          <li title="The brand symbol does not act as a replacement for text."><img src="<?php print $dir; ?>images/brand-symbol/misuse-1.svg" alt="" /></li>
+          <li title="Do not recolor, especially in red."><img src="<?php print $dir; ?>images/brand-symbol/misuse-0.svg" alt="" /></li>
+          <li title="Do not use as a replacement for the letter X or lock up with text."><img src="<?php print $dir; ?>images/brand-symbol/misuse-1.svg" alt="" /></li>
           <li title="Do not warp." class="img width-45"><img src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" /></li>
         </ul>
       </div>

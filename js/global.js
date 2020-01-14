@@ -273,17 +273,18 @@ $(document).ready(function() {
           linkClass = (index==0) ? " active" : "";
       $(this)
         .attr({"data-id":index})
-        // .css({"width":100 / numTabs + "%" });
       // Tab options
       createOptions(theTab);
-      if (tabTtl != "" && tabTtl != undefined) {
-        // tabNavContents += '<li><a class="button ignore-click set-tab' + linkClass + '" data-id="' + index + '" href="#' + $(this).attr("id") + '">' + tabTtl + '</a></li>';
+      if (tabTtl != "" && tabTtl != undefined && numTabs > 1) {
         tabNavContents += '<li><a class="button set-tab' + linkClass + '" data-id="' + index + '" href="#' + $(this).attr("id") + '">' + tabTtl + '</a></li>';
       }
     });
 
     // Create Tab buttons in main column
-    thisSec.find(".col-1 p.download").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
+
+    if (numTabs > 1) {
+      thisSec.find(".col-1 p.download").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
+    }
     // thisSec.find(".set-tab").click(function() {
     //   var newTab = $(this).attr("data-id");
     //   tabGo(newTab, theTabs);

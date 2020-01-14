@@ -668,7 +668,7 @@ body:not(.button-wrapping) a.button {
         font-size: 3rem; } }
     .content h1 span {
       display: block;
-      font-size: 65%;
+      font-size: 50%;
       font-weight: 200;
       padding-bottom: 0px;
       line-height: 110%; }

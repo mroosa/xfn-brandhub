@@ -5,7 +5,7 @@ $(document).ready(function() {
   var buffer = 1;
   var stickyNavTop = $('#subnav').offset().top;
   // console.log(stickyNavTop);
-  var subNav = $("#subnav"),
+  var subNav = $("#subnav .nav"),
       // All list items
       menuItems = subNav.find("a"),
       // Anchors corresponding to menu items
@@ -25,9 +25,20 @@ $(document).ready(function() {
     var scrollTop = $(window).scrollTop();
 //    console.log(scrollTop);
     if (scrollTop > stickyNavTop) {
+      if (!$('#subnav').hasClass('sticky')) {
         $('#subnav').addClass('sticky');
+        $('#subnav video').get(0).play();
+      }
     } else {
         $('#subnav').removeClass('sticky');
+        if (scrollTop < 0) {
+          $('#subnav video').get(0).pause();
+          $('#subnav video').get(0).load();
+        }
+        // if ($('#subnav video').get(0).currentTime > 0) {
+        //   $('#subnav video').get(0).pause();
+        //   $('#subnav video').get(0).load();
+        // }
     }
 	};
 	stickyNav();

@@ -918,7 +918,11 @@ body:not(.button-wrapping) a.button {
     position: absolute;
     top: 20px;
     width: 150px;
+    left: 20px;
     z-index: 10;
+    @include bp-min(1800px) {
+      left: calc( ( 100% - 1700px ) / 2);
+    }
 
     svg {
       max-width: 100%;

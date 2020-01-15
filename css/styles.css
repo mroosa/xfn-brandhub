@@ -933,7 +933,11 @@ body:not(.button-wrapping) a.button {
     position: absolute;
     top: 20px;
     width: 150px;
+    left: 20px;
     z-index: 10; }
+    @media (min-width: 1800px) {
+      #introduction .intro-logo {
+        left: calc( ( 100% - 1700px ) / 2); } }
     #introduction .intro-logo svg {
       max-width: 100%;
       fill: #fff; }

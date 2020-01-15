@@ -9,7 +9,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab swap" data-ttl="The Xfinity X" data-bg="white" id="the-xfinity-x">
+    <div class="tab swap" data-ttl="Our Mark" data-bg="white" id="the-xfinity-x">
       <div class="tab-inner">
         <h3>The Xfinity X</h3>
         <ul class="optionWrap brand-x swap">

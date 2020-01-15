@@ -158,18 +158,28 @@ main {
   .sidebar {
     width: 150px;
     .logo {
+      display: block;
       padding: 30px 5vw 10px 0;
+
+      &.vid-logo {
+        padding: 30px 0 0 0;
+      }
+
+      video {
+        max-width: 100%;
+        margin: -5px;
+      }
     }
     @include bp-min($xlg) {
       width: 200px;
       .logo {
-        padding: 30px 100px 10px 0;
+        // padding: 30px 100px 10px 0;
       }
     }
     @include bp-min($max) {
       width: calc( ( ( 100vw - 1700px ) / 2 ) + 200px);
       padding-left: calc( ( 100vw - 1800px ) / 2);
-      .logo {
+      .logo:not(.vid-logo) {
         padding: 30px 0 10px 0;
         width: 50px;
       }
@@ -826,14 +836,13 @@ body:not(.button-wrapping) a.button {
   align-items: center;
   justify-content: center;
 
-  .vid-wrap {
-    display: none;
-  }
-
   .intro-info {
-    max-width: 550px;
     position: relative;
     z-index: 10;
+    max-width: 1000px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
   }
 
   h1 {
@@ -851,104 +860,25 @@ body:not(.button-wrapping) a.button {
     line-height: 130%;
   }
 
-  &[data-option="1"], &[data-option="2"] {
-    justify-content: flex-start;
-    .col-1 {
-      padding: 100px;
-      width: 55%;
-      text-align: left;
-    }
-
-    .intro-shade {
-      position: absolute;
-      z-index: 2;
-      background: linear-gradient(90deg, rgba(0,0,0,.7) 0%, rgba(0,0,0,.5) 35%, rgba(0,0,0,0) 100%);
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0;
-    }
+  .col-1 {
+    padding: 100px 200px;
+    width: 55%;
+    text-align: left;
   }
 
-  &[data-option="1"] {
-    #vid-1 {display: block;}
-    .get-started span {color: #fff;}
-    .get-started svg {fill: #fff;}
-  }
-
-  &[data-option="2"] {
-    #vid-2 {display: block;}
-    .col-1 {width: 100%;}
-    .intro-info {
-      max-width: 1000px;
-      text-align: center;
-      color: #000;
-      margin: 0 auto;
-    }
-    .intro-shade {display: none;}
-    .get-started span {color: #000;}
-    .get-started svg {fill: #000;}
-  }
-
-  &[data-option="3"] {
-    #vid-3 {display: block;}
-    .intro-info {
-      h1,p,h2 {
-        color: #000;
-      }
-    }
-    .intro-shade {display: none;}
-    .get-started span {color: #000;}
-    .get-started svg {fill: #000;}
-  }
-
-  @include bp-min($xlg) {
-    &[data-option="1"], &[data-option="3"] {
-      justify-content: center;
-      .col-1 {
-        width: $xxl;
-        margin: 0 auto;
-        padding: 50px;
-      }
-    }
-  }
-
-  // temp vid nav
-  .vidNav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  .intro-shade {
     position: absolute;
-    text-align: center;
-    z-index: 99;
-    right: 20px;
-    bottom: 20px;
-
-    li {
-      margin: 0;
-      padding: 0;
-      display: inline-block;
-
-      a {
-        display: block;
-        height: 25px;
-        width: 25px;
-        line-height: 25px;
-        background: #fff;
-        opacity: .25;
-        text-decoration: none;
-        transition: .25s opacity;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
-    }
+    z-index: 2;
+    background: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
   }
 
-
+  .col-1 {width: 100%;}
+  .get-started span {color: #fff;}
+  .get-started svg {fill: #fff;}
 
   .get-started {
     position: absolute;
@@ -984,11 +914,23 @@ body:not(.button-wrapping) a.button {
     }
   }
 
-  h1 {animation: .75s ease-in 0.25s 1 normal both revealSlide;}
-  p:nth-of-type(1) {animation: .75s ease-in 1.75s 1 normal both revealSlide;}
-  p:nth-of-type(2) {animation: .75s ease-in 1.75s 1 normal both revealSlide;}
-  h2 {animation: .75s ease-in 6.5s 1 normal both revealSlide;}
-  .get-started {animation: .75s ease-in 6.5s 1 normal both reveal;}
+  .intro-logo {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    z-index: 10;
+
+    svg {
+      max-width: 100%;
+      fill: #fff;
+    }
+  }
+
+  h1 {animation: .75s ease-in 0.5s 1 normal both revealSlide;}
+  p:nth-of-type(1) {animation: .75s ease-in 1.5s 1 normal both revealSlide;}
+  p:nth-of-type(2) {animation: .75s ease-in 1.5s 1 normal both revealSlide;}
+  h2 {animation: .75s ease-in 2.5s 1 normal both revealSlide;}
+  .get-started {animation: .75s ease-in 2.5s 1 normal both reveal;}
 
   .vid-wrap {
     position: absolute;

@@ -347,17 +347,21 @@ main {
 .two-col .sidebar {
   width: 150px; }
   .two-col .sidebar .logo {
+    display: block;
     padding: 30px 5vw 10px 0; }
+    .two-col .sidebar .logo.vid-logo {
+      padding: 30px 0 0 0; }
+    .two-col .sidebar .logo video {
+      max-width: 100%;
+      margin: -5px; }
   @media (min-width: 1200px) {
     .two-col .sidebar {
-      width: 200px; }
-      .two-col .sidebar .logo {
-        padding: 30px 100px 10px 0; } }
+      width: 200px; } }
   @media (min-width: 1800px) {
     .two-col .sidebar {
       width: calc( ( ( 100vw - 1700px ) / 2 ) + 200px);
       padding-left: calc( ( 100vw - 1800px ) / 2); }
-      .two-col .sidebar .logo {
+      .two-col .sidebar .logo:not(.vid-logo) {
         padding: 30px 0 10px 0;
         width: 50px; } }
   .two-col .sidebar #subnav {
@@ -865,12 +869,13 @@ body:not(.button-wrapping) a.button {
   display: flex;
   align-items: center;
   justify-content: center; }
-  #introduction .vid-wrap {
-    display: none; }
   #introduction .intro-info {
-    max-width: 550px;
     position: relative;
-    z-index: 10; }
+    z-index: 10;
+    max-width: 1000px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto; }
   #introduction h1 {
     font-size: 54px;
     font-size: 3.375rem;
@@ -883,84 +888,24 @@ body:not(.button-wrapping) a.button {
     font-size: 32px;
     font-size: 2rem;
     line-height: 130%; }
-  #introduction[data-option="1"], #introduction[data-option="2"] {
-    justify-content: flex-start; }
-    #introduction[data-option="1"] .col-1, #introduction[data-option="2"] .col-1 {
-      padding: 100px;
-      width: 55%;
-      text-align: left; }
-    #introduction[data-option="1"] .intro-shade, #introduction[data-option="2"] .intro-shade {
-      position: absolute;
-      z-index: 2;
-      background: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 35%, rgba(0, 0, 0, 0) 100%);
-      height: 100%;
-      width: 100%;
-      left: 0;
-      top: 0; }
-  #introduction[data-option="1"] #vid-1 {
-    display: block; }
-  #introduction[data-option="1"] .get-started span {
-    color: #fff; }
-  #introduction[data-option="1"] .get-started svg {
-    fill: #fff; }
-  #introduction[data-option="2"] #vid-2 {
-    display: block; }
-  #introduction[data-option="2"] .col-1 {
-    width: 100%; }
-  #introduction[data-option="2"] .intro-info {
-    max-width: 1000px;
-    text-align: center;
-    color: #000;
-    margin: 0 auto; }
-  #introduction[data-option="2"] .intro-shade {
-    display: none; }
-  #introduction[data-option="2"] .get-started span {
-    color: #000; }
-  #introduction[data-option="2"] .get-started svg {
-    fill: #000; }
-  #introduction[data-option="3"] #vid-3 {
-    display: block; }
-  #introduction[data-option="3"] .intro-info h1, #introduction[data-option="3"] .intro-info p, #introduction[data-option="3"] .intro-info h2 {
-    color: #000; }
-  #introduction[data-option="3"] .intro-shade {
-    display: none; }
-  #introduction[data-option="3"] .get-started span {
-    color: #000; }
-  #introduction[data-option="3"] .get-started svg {
-    fill: #000; }
-  @media (min-width: 1200px) {
-    #introduction[data-option="1"], #introduction[data-option="3"] {
-      justify-content: center; }
-      #introduction[data-option="1"] .col-1, #introduction[data-option="3"] .col-1 {
-        width: 1400px;
-        margin: 0 auto;
-        padding: 50px; } }
-  #introduction .vidNav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  #introduction .col-1 {
+    padding: 100px 200px;
+    width: 55%;
+    text-align: left; }
+  #introduction .intro-shade {
     position: absolute;
-    text-align: center;
-    z-index: 99;
-    right: 20px;
-    bottom: 20px; }
-    #introduction .vidNav li {
-      margin: 0;
-      padding: 0;
-      display: inline-block; }
-      #introduction .vidNav li a {
-        display: block;
-        height: 25px;
-        width: 25px;
-        line-height: 25px;
-        background: #fff;
-        opacity: .25;
-        text-decoration: none;
-        transition: .25s opacity;
-        border: 1px solid #ccc;
-        border-radius: 4px; }
-        #introduction .vidNav li a:hover {
-          opacity: 1; }
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0; }
+  #introduction .col-1 {
+    width: 100%; }
+  #introduction .get-started span {
+    color: #fff; }
+  #introduction .get-started svg {
+    fill: #fff; }
   #introduction .get-started {
     position: absolute;
     display: flex;
@@ -984,16 +929,24 @@ body:not(.button-wrapping) a.button {
       opacity: 1; }
     #introduction .get-started:hover svg {
       transform: translate(0, 5px); }
+  #introduction .intro-logo {
+    position: absolute;
+    top: 20px;
+    width: 150px;
+    z-index: 10; }
+    #introduction .intro-logo svg {
+      max-width: 100%;
+      fill: #fff; }
   #introduction h1 {
-    animation: .75s ease-in 0.25s 1 normal both revealSlide; }
+    animation: .75s ease-in 0.5s 1 normal both revealSlide; }
   #introduction p:nth-of-type(1) {
-    animation: .75s ease-in 1.75s 1 normal both revealSlide; }
+    animation: .75s ease-in 1.5s 1 normal both revealSlide; }
   #introduction p:nth-of-type(2) {
-    animation: .75s ease-in 1.75s 1 normal both revealSlide; }
+    animation: .75s ease-in 1.5s 1 normal both revealSlide; }
   #introduction h2 {
-    animation: .75s ease-in 6.5s 1 normal both revealSlide; }
+    animation: .75s ease-in 2.5s 1 normal both revealSlide; }
   #introduction .get-started {
-    animation: .75s ease-in 6.5s 1 normal both reveal; }
+    animation: .75s ease-in 2.5s 1 normal both reveal; }
   #introduction .vid-wrap {
     position: absolute;
     top: 0;

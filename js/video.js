@@ -1,6 +1,6 @@
 $(document).ready(function() {
-  $("video").each(function() {
-    if ($(this).attr("controls") == undefined) {
+  $("video").each(function(n) {
+    if ($(this).attr("data-controls") == 'simple') {
       var playBtn;
       var $thisVid = $(this);
       var dataPlay = ($thisVid.attr("autoplay") == "autoplay") ? true : false;

@@ -13,8 +13,8 @@
   }
 
   $dir = "";
-  $scriptList = ['subnav.js','gallery.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration.js'];
-  $styleList = ['gallery.css','inspiration.css','featherlight.css'];
+  $scriptList = ['subnav.js','gallery.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration.js','video-min.js'];
+  $styleList = ['gallery.css','inspiration.css','featherlight.css','video.css'];
   // $activeMain = 0; // Design
   $activeSub = 0;
   $bodyClassList = ['two-col'];
@@ -38,13 +38,16 @@
       <?php if (file_exists("_templates/_nav/_subnav.php")): ?>
         <div class="sidebar black">
           <div id="subnav">
-            <div class="logo"><a href="#logo">
-              <svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115">
-                <g>
-                  <path d="M51.2,38.6L79.9,0h-12c-5.4,0-8.8,1.9-11.7,5.7L41.1,26.1L26.4,5.7C23.5,1.9,20.1,0,14.7,0h-12l28.4,38.6L0,80.6h11.4
-            		c5.4,0,8.8-1.9,11.7-5.7l18-23.9l42.2,58.3c2.7,3.8,6.3,5.7,11.7,5.7h12.3L51.2,38.6z" />
-                </g>
-              </svg>
+            <div class="logo vid-logo"><a href="#logo">
+              <video nocontrols muted autoplay>
+                <source src="video/logo.mp4" type="video/mp4">
+                <svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115">
+                  <g>
+                    <path d="M51.2,38.6L79.9,0h-12c-5.4,0-8.8,1.9-11.7,5.7L41.1,26.1L26.4,5.7C23.5,1.9,20.1,0,14.7,0h-12l28.4,38.6L0,80.6h11.4
+              		c5.4,0,8.8-1.9,11.7-5.7l18-23.9l42.2,58.3c2.7,3.8,6.3,5.7,11.7,5.7h12.3L51.2,38.6z" />
+                  </g>
+                </svg>
+              </video>
             </a></div><!-- /.logo -->
             <?php include_once("_templates/_nav/_subnav.php"); ?>
           </div><!-- /.sidebar -->

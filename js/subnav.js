@@ -31,7 +31,7 @@ $(document).ready(function() {
       }
     } else {
         $('#subnav').removeClass('sticky');
-        if (scrollTop < 0) {
+        if (scrollTop <= 0) {
           $('#subnav video').get(0).pause();
           $('#subnav video').get(0).load();
         }

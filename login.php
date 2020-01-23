@@ -67,6 +67,9 @@
       function showLogin() {
         $("#login").addClass("reveal");
       }
+      setTimeout(function() {
+        showLogin();
+      }, 1000);
 
       // Define videos
       var loginIntroVid = document.getElementById('login-intro');

@@ -442,10 +442,10 @@ main {
         color: #fff;
         border-radius: 4px; }
         .sidebar ul li a:hover {
-          background: #fff;
-          color: #000; }
+          font-weight: bold; }
       .sidebar ul li.active > a {
-        font-weight: bold; }
+        background: #fff;
+        color: #000; }
       .sidebar ul li li {
         font-size: 13px;
         font-size: 0.8125rem;
@@ -720,7 +720,7 @@ body:not(.button-wrapping) a.button {
     min-height: 100vh;
     background: #fff;
     color: #000;
-    box-shadow: 0 -15px 35px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 -15px 35px rgba(0, 0, 0, 0.35);
     position: relative;
     z-index: 2;
     display: flex;
@@ -1970,48 +1970,26 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
   font-size: 0.875rem; }
 
 /* Color changing */
-section[data-bg=drk-gry],
-section[data-bg=black] {
+section .tab[data-bg=drk-gry],
+section .tab[data-bg=black] {
   background: #000;
   color: #fff; }
-  section[data-bg=drk-gry] .download svg,
-  section[data-bg=drk-gry] .explore svg,
-  section[data-bg=black] .download svg,
-  section[data-bg=black] .explore svg {
+  section .tab[data-bg=drk-gry] .download svg,
+  section .tab[data-bg=drk-gry] .explore svg,
+  section .tab[data-bg=black] .download svg,
+  section .tab[data-bg=black] .explore svg {
     fill: #ccc; }
-  section[data-bg=drk-gry] .download a,
-  section[data-bg=drk-gry] .explore a,
-  section[data-bg=black] .download a,
-  section[data-bg=black] .explore a {
+  section .tab[data-bg=drk-gry] .download a,
+  section .tab[data-bg=drk-gry] .explore a,
+  section .tab[data-bg=black] .download a,
+  section .tab[data-bg=black] .explore a {
     color: #ccc; }
-  section[data-bg=drk-gry] .optionNav a,
-  section[data-bg=black] .optionNav a {
+  section .tab[data-bg=drk-gry] .optionNav a,
+  section .tab[data-bg=black] .optionNav a {
     border-color: #fff !important; }
-  section[data-bg=drk-gry] .optionNav a.active,
-  section[data-bg=black] .optionNav a.active {
+  section .tab[data-bg=drk-gry] .optionNav a.active,
+  section .tab[data-bg=black] .optionNav a.active {
     background: #fff !important; }
-
-body.button-wrapping section[data-bg=drk-gry] .button span,
-body.button-wrapping section[data-bg=black] .button span,
-body:not(.button-wrapping) section[data-bg=drk-gry] .button,
-body:not(.button-wrapping) section[data-bg=black] .button {
-  border-color: #fff;
-  background: #fff;
-  color: #000; }
-
-body.button-wrapping section[data-bg=drk-gry] .button.active span, body.button-wrapping section[data-bg=drk-gry] .button:focus span, body.button-wrapping section[data-bg=drk-gry] .button:hover span,
-body.button-wrapping section[data-bg=black] .button.active span,
-body.button-wrapping section[data-bg=black] .button:focus span,
-body.button-wrapping section[data-bg=black] .button:hover span {
-  background: #000;
-  color: #fff; }
-
-body:not(.button-wrapping) section[data-bg=drk-gry] .button.active, body:not(.button-wrapping) section[data-bg=drk-gry] .button:focus, body:not(.button-wrapping) section[data-bg=drk-gry] .button:hover,
-body:not(.button-wrapping) section[data-bg=black] .button.active,
-body:not(.button-wrapping) section[data-bg=black] .button:focus,
-body:not(.button-wrapping) section[data-bg=black] .button:hover {
-  background: #000;
-  color: #fff; }
 
 section[data-bg=drk-gry] {
   background: #1e1e1e; }

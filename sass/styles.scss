@@ -291,13 +291,13 @@ main {
         border-radius: $bdr;
 
         &:hover {
-          background: #fff;
-          color: #000;
+          font-weight: bold;
         }
       }
 
       &.active > a {
-        font-weight: bold;
+        background: #fff;
+        color: #000;
       }
 
       li {
@@ -631,7 +631,7 @@ body:not(.button-wrapping) a.button {
     min-height: 100vh;
     background: #fff;
     color: #000;
-    box-shadow: 0 -15px 35px rgba(0,0,0,.15);
+    box-shadow: 0 -15px 35px rgba(0,0,0,.35);
     position: relative;
     z-index: 2;
 
@@ -2200,8 +2200,8 @@ body[data-random-seed="4"] #secondary-graphics.active {
 //   background: #1e1e1e;
 // }
 
-section[data-bg=drk-gry],
-section[data-bg=black] {
+section .tab[data-bg=drk-gry],
+section .tab[data-bg=black] {
   background: #000;
   color: #fff;
 
@@ -2219,34 +2219,34 @@ section[data-bg=black] {
   .optionNav a.active {background: #fff !important;}
 
 }
-body.button-wrapping section[data-bg=drk-gry] .button span,
-body.button-wrapping section[data-bg=black] .button span,
-body:not(.button-wrapping) section[data-bg=drk-gry] .button,
-body:not(.button-wrapping) section[data-bg=black] .button {
-  border-color: #fff;
-  background: #fff;
-  color: #000;
-}
-body.button-wrapping section[data-bg=drk-gry] .button,
-body.button-wrapping section[data-bg=black] .button {
-  &.active,
-  &:focus,
-  &:hover {
-    span {
-      background: #000;
-      color: #fff;
-    }
-  }
-}
-body:not(.button-wrapping) section[data-bg=drk-gry] .button,
-body:not(.button-wrapping) section[data-bg=black] .button {
-  &.active,
-  &:focus,
-  &:hover {
-    background: #000;
-    color: #fff;
-  }
-}
+// body.button-wrapping section[data-bg=drk-gry] .button span,
+// body.button-wrapping section[data-bg=black] .button span,
+// body:not(.button-wrapping) section[data-bg=drk-gry] .button,
+// body:not(.button-wrapping) section[data-bg=black] .button {
+//   border-color: #fff;
+//   background: #fff;
+//   color: #000;
+// }
+// body.button-wrapping section[data-bg=drk-gry] .button,
+// body.button-wrapping section[data-bg=black] .button {
+//   &.active,
+//   &:focus,
+//   &:hover {
+//     span {
+//       background: #000;
+//       color: #fff;
+//     }
+//   }
+// }
+// body:not(.button-wrapping) section[data-bg=drk-gry] .button,
+// body:not(.button-wrapping) section[data-bg=black] .button {
+//   &.active,
+//   &:focus,
+//   &:hover {
+//     background: #000;
+//     color: #fff;
+//   }
+// }
 section[data-bg=drk-gry] {
   background: #1e1e1e;
 }

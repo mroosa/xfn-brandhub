@@ -123,6 +123,12 @@
             </div>
           </section>
 
+          <section id="contact-resources">
+            <div class="col-wrap">
+            <?php include_once("design/contact.php"); ?>
+            </div>
+          </section>
+
         </div><!-- /.content -->
       </div><!-- /.inner -->
     </main>

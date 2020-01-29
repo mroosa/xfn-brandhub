@@ -87,7 +87,7 @@
           </div>
           </section> -->
 
-          <section id="photography">
+          <section id="photography" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/photography.php"); ?>
             </div><!-- /.col-wrap -->

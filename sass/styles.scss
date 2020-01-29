@@ -689,7 +689,7 @@ body:not(.button-wrapping) a.button {
       }
     }
     .col-2 {
-      padding: 2vw;
+      padding: 2vw 0;
 
       margin-left: calc( ( 100vw - 150px ) * .40 );
       width: calc( ( 100vw - 150px ) * .60 );
@@ -703,7 +703,7 @@ body:not(.button-wrapping) a.button {
       }
 
       .tabs-wrapper .tab {
-        padding: 2vw 0;
+        padding: 2vw;
       }
       // @include bp-min($max) {
       //   padding-left: calc( 50% + ( 100vw - $max ) / 2);
@@ -1298,6 +1298,7 @@ body #color {
 }
 
 /* Photography */
+.content section#photography.with-tabs .tab img {max-width: 100%;}
 
 .mosaic {
   display: flex;
@@ -1345,10 +1346,6 @@ body #color {
 
     &.border {
       border: 1px solid #ccc;
-    }
-
-    &:not(.default) {
-      display: none;
     }
   }
 

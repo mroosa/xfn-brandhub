@@ -180,23 +180,23 @@ function closePopOut() {
   $(".lightbox-shade.active").removeClass("active");
 }
 
-function setPhotography(section) {
-  $("#photography .button.active").removeClass("active");
-  $('#photography a[href="#' + section + '"]').addClass("active");
-  $("#photography .photo-info-wrap").css({
-    "margin-left": -100 * section + "%"
-  });
-  $(".photo[data-set=" + section + "]").show();
-  $(".photo").not("[data-set=" + section + "]").hide();
-}
+// function setPhotography(section) {
+//   $("#photography .button.active").removeClass("active");
+//   $('#photography a[href="#' + section + '"]').addClass("active");
+//   $("#photography .photo-info-wrap").css({
+//     "margin-left": -100 * section + "%"
+//   });
+//   $(".photo[data-set=" + section + "]").show();
+//   $(".photo").not("[data-set=" + section + "]").hide();
+// }
 
 $(document).ready(function() {
 
   // Reset photography on sub nav click
-  $("#subnav a[href='#photography']").click(function() {
-    setPhotography(0);
-    return false;
-  });
+  // $("#subnav a[href='#photography']").click(function() {
+  //   setPhotography(0);
+  //   return false;
+  // });
 
   // $(".optionWrap").each(function() {
   //   createOptions($(this).parents(".section"));
@@ -274,7 +274,8 @@ $(document).ready(function() {
     // Create Tab buttons in main column
 
     if (numTabs > 1) {
-      thisSec.find(".col-1 p.download").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
+      thisSec.find(".col-1 p.download, .col-1 p.explore").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
+      $("#subnav");
     }
     // thisSec.find(".set-tab").click(function() {
     //   var newTab = $(this).attr("data-id");
@@ -312,13 +313,13 @@ $(document).ready(function() {
   })
 
   // Photography
-  $("#photography .col-1 .button").each(function(index) {
-    $(this).attr("data-id",index);
-    $(this).click(function() {
-      setPhotography(index);
-      return false;
-    })
-  })
+  // $("#photography .col-1 .button").each(function(index) {
+  //   $(this).attr("data-id",index);
+  //   $(this).click(function() {
+  //     setPhotography(index);
+  //     return false;
+  //   })
+  // })
 
   // typography
 

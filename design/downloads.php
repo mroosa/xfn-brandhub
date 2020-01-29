@@ -3,74 +3,68 @@
           <div class="downloads">
             <div class="download-row" id="xfinity-logo">
               <h3>Xfinity Logo</h3>
-              <img src="<?php print $dir; ?>images/downloads/xfinity-logo-intro.png" alt="" />
-              <a class="button" href="#">Download <!-- All --></a>
-            </div><!-- /.download-row -->
-
-            <div class="download-row" id="comcast-logo">
-              <h3>Comcast Logo</h3>
-              <img src="<?php print $dir; ?>images/downloads/comcast-logo-intro.png" alt="" />
+              <img src="images/downloads/logo.png" alt="" />
               <a class="button" href="#">Download <!-- All --></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="sub-brands">
               <h3>Sub Brands</h3>
-              <img src="<?php print $dir; ?>images/downloads/sub-brands-intro.png" alt="" />
+              <img src="images/downloads/sub-brands.png" alt="" />
               <a class="button" href="#">Download <!-- All --></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="color">
               <h3>Color</h3>
-              <img src="<?php print $dir; ?>images/downloads/color-intro.png" alt="" />
+              <img src="images/downloads/color.png" alt="" />
               <a class="button" href="#">Download <!-- All --></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="typography">
               <h3>Typography</h3>
-              <img src="<?php print $dir; ?>images/downloads/typography-intro.png" alt="" />
+              <img src="images/downloads/typography.png" alt="" />
               <a class="button" href="#">Download <!-- All --></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="photography">
               <h3>Photography</h3>
-              <img src="<?php print $dir; ?>images/downloads/photography-intro.png" alt="" />
-              <a class="button" href="#">Download <!-- All --></a>
-            </div><!-- /.download-row -->
-
-            <div class="download-row" id="xfinity-devices">
-              <h3>Xfinity Devices</h3>
-              <img src="<?php print $dir; ?>images/downloads/xfinity-devices-intro.png" alt="" />
-              <a class="button" href="#">Download <!-- All --></a>
-            </div><!-- /.download-row -->
-
-            <div class="download-row" id="generic-devices">
-              <h3>Generic Devices</h3>
-              <img src="<?php print $dir; ?>images/downloads/generic-devices-intro.png" alt="" />
-              <a class="button" href="#">Download <!-- All --></a>
-            </div><!-- /.download-row -->
-
-            <div class="download-row" id="mobile-app-icons">
-              <h3>Mobile App Icons</h3>
-              <img src="<?php print $dir; ?>images/downloads/mobile-app-icons-intro.png" alt="" />
-              <a class="button" href="#">Download <!-- All --></a>
-            </div><!-- /.download-row -->
-
-            <div class="download-row" id="icons">
-              <h3>Icons</h3>
-              <img src="<?php print $dir; ?>images/downloads/icons-intro.png" alt="" />
-              <a class="button" href="#">Download <!-- All --></a>
+              <img src="images/downloads/photography.png" alt="" />
+              <a class="button" href="http://xfinity.com/" target="_blank">Download <!-- All --></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="end-card">
               <h3>End Card</h3>
-              <img src="<?php print $dir; ?>images/downloads/end-card-intro.png" alt="" />
+              <img src="images/downloads/endcard.png" alt="" />
               <a class="button" href="#">Download <!-- All --></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="powerpoint">
               <h3>Powerpoint Templates</h3>
-              <img src="<?php print $dir; ?>images/downloads/powerpoint-intro.png" alt="" />
+              <img src="images/downloads/ppt.png" alt="" />
               <a class="button" href="#">Download <!-- All --></a>
+            </div><!-- /.download-row -->
+
+            <div class="download-row" id="secondary-assets">
+              <h3>Secondary Assets</h3>
+              <img src="images/downloads/secondary.png" alt="" />
+              <a class="button" href="#">Download <!-- All --></a>
+            </div><!-- /.download-row -->
+
+            <div class="download-row" id="xfinity-design-guidelines">
+              <h3>Xfinity Design Guidelines</h3>
+              <img src="images/downloads/design-guidelines.png" alt="" />
+              <a class="button" href="http://xfinity.com/" target="_blank">Download <!-- All --></a>
+            </div><!-- /.download-row -->
+
+            <div class="download-row" id="messaging-guidelines">
+              <h3>Messaging Guidelines</h3>
+              <img src="images/downloads/messaging-guidelines.png" alt="" />
+              <a class="button" href="http://xfinity.com/" target="_blank">Download <!-- All --></a>
+            </div><!-- /.download-row -->
+
+            <div class="download-row" id="supplemental-guidelines">
+              <h3>Supplemental Guidelines</h3>
+              <img src="images/downloads/supplemental-guidelines.png" alt="" />
+              <a class="button" href="http://xfinity.com/" target="_blank">Download <!-- All --></a>
             </div><!-- /.download-row -->
 
           </div><!-- /.downloads -->

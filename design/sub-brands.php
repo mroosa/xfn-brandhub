@@ -1,20 +1,28 @@
 
 <div class="col-1">
   <h1>Sub-Brands</h1>
-  <p>Our masterbrand strategy includes products, features and benefits that support Xfinity. Sub-brand logos have been designed for strategically significant experiences, particularly for products and packaging. The primary Xfinity logo should be used in the majority of communications.</p>
+  <p>Our masterbrand strategy includes products, features and benefits that support Xfinity. Sub-Brand logos have been designed for strategically significant experiences, particularly for products and packaging. The primary Xfinity logo should be used in the majority of communications.</p>
   <p class="download"><a href="#downloads">Download Sub-Brand logos</a></p>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">
     <div class="tabs">
 
-      <div class="tab" id="sub-brands" data-ttl="Sub-Brands">
+      <div class="tab" id="our-sub-brands" data-ttl="Sub-Brands">
 
         <div class="sub-brand-logos">
           <div class="sub-brand-logo-1">
-            <video autoplay muted loop nocontrols>
+            <ul>
+              <li><img src="images/sub-brands/xfinity-flex.png" alt="Xfinity Flex"></li>
+              <li><img src="images/sub-brands/xfinity-stream.png" alt="Xfinity Stream"></li>
+              <li><img src="images/sub-brands/xfinity-xfi.png" alt="Xfinity xFi"></li>
+              <li><img src="images/sub-brands/xfinity-mobile.png" alt="Xfinity Mobile"></li>
+              <li><img src="images/sub-brands/xfinity-x1.png" alt="Xfinity x1"></li>
+              <li><img src="images/sub-brands/xfinity-home.png" alt="Xfinity Home"></li>
+            </ul>
+            <!-- <video autoplay muted loop nocontrols>
               <source src="video/sub-brand-loop.mp4" type="video/mp4">
-            </video>
+            </video> -->
           </div>
         </div><!-- /.brand-logos -->
 

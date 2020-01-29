@@ -4,10 +4,10 @@
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 
   <main>
-    <div id="login">
+    <div id="login" class="reveal">
       <section class="login-wrap" data-bg="black">
         <h1>Welcome to the<br>Xfinity Brand Hub</h1>
-        <form method="post" onsubmit="submitLogin()">
+        <form id="login-form" method="post" onsubmit="submitLogin();">
           <label for="txt_uname">Username</label>
           <input tabindex="1" type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
           <label for="txt_pwd">Password</label>
@@ -15,6 +15,7 @@
           <div id="message">&nbsp;</div>
           <a tabindex="3" id="btn_submit" class="button" href="#">Get Started</a>
           <input type="submit" style="display: none" value="Get Started" />
+          <p class="help">Need help logging in? Contact the Xfinity Brand team.</p>
         </form>
       </div>
     </section>
@@ -27,10 +28,6 @@
   </main>
 
   <script type="text/javascript">
-    function checkInputs() {
-      $("input").length > 0;
-    }
-
     function submitLogin() {
       var username = $("#txt_uname").val().trim();
       var password = $("#txt_pwd").val().trim();
@@ -54,39 +51,23 @@
           }
         });
       }
-
       return false;
     }
 
     $(document).ready(function(){
 
       // hide form
-      $("h1, label, input, #btn_submit").css({"opacity":"0"});
+      $("h1, label, input, #btn_submit, .help").css({"opacity":"0"});
 
-      // Function to start login animation
-      function showLogin() {
-        $("#login").addClass("reveal");
-      }
-      setTimeout(function() {
-        showLogin();
-      }, 1000);
+      // Submit form via hidden button (using enter)
+      $("#login-form").on('submit',function(e) {
+        e.preventDefault();
+        e.returnValue = false;
 
-      // Define videos
-      var loginIntroVid = document.getElementById('login-intro');
-      // Listen for end of first video
-      loginIntroVid.addEventListener('ended',function() {
-        showLogin();
-      }, false);
+        submitLogin();
+      });
 
-      // Check status on input change to show button
-      // $("input").on("change keyup paste", function() {
-      //   console.log(checkInputs());
-      //   if (checkInputs()) {
-      //     $("btn_submit").removeClass("disabled");
-      //   }
-      // });
-      //
-      // $("#btn_submit").addClass("disabled");
+      // Submit button on button click
       $("#btn_submit").click(function(){
         submitLogin();
         return false;

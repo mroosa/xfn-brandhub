@@ -298,6 +298,7 @@ main {
       &.active > a {
         background: #fff;
         color: #000;
+        font-weight: bold;
       }
 
       li {
@@ -488,7 +489,7 @@ main {
 }
 body.button-wrapping .button span,
 body:not(.button-wrapping) a.button {
-  padding: 10px 15px;
+  padding: 10px 15px 8px 15px;
   border: 1px solid #000;
   background: #000;
   color: #fff;
@@ -1886,6 +1887,10 @@ body[data-random-seed="4"] #secondary-graphics.active {
           opacity: 1;
         }
       }
+      p {
+        font-weight: 200;
+        font-size: 90%;
+      }
     }
 
     #login {
@@ -1922,12 +1927,14 @@ body[data-random-seed="4"] #secondary-graphics.active {
       }
 
       &.reveal {
-        h1 {animation: reveal .75s both normal .25s;}
+        h1 {animation: reveal .75s both normal .25s, slideUp .75s both normal 1.5s;}
         label[for="txt_uname"],
-        #txt_uname {animation: reveal .75s both normal .75s;}
+        #txt_uname {animation: reveal .75s both normal 1.75s;}
         label[for="txt_pwd"],
-        #txt_pwd {animation: reveal .75s both normal 1.25s;}
-        #btn_submit {animation: reveal .75s both normal 1.75s;}
+        #txt_pwd {animation: reveal .75s both normal 1.80s;}
+        p.help,
+        #btn_submit {animation: reveal .75s both normal 1.85s;}
+
       }
     }
 
@@ -2070,16 +2077,35 @@ body[data-random-seed="4"] #secondary-graphics.active {
     }
   }
 
-  // .downloads {
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   .download-row {
-  //     flex: 1 0 20%;
-  //     border-radius: 4px;
-  //     border: 1px solid rgb(204,204,204);
-  //     padding: 20px;
-  //   }
-  // }
+  .downloads {
+    display: flex;
+    flex-wrap: wrap;
+    .download-row {
+      flex: 0 1 23%;
+      border-radius: 4px;
+      border: 1px solid rgb(204,204,204);
+      padding: 20px;
+      margin: 1%;
+      display: flex;
+      flex-direction: column;
+      flex-flow: column;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-weight: 400;
+        margin: 0;
+      }
+
+      img {
+        padding: 20px 0;
+      }
+      .button {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
 }
 
 /* Creative Examples */
@@ -2230,34 +2256,27 @@ section .tab[data-bg=black] {
   .optionNav a.active {background: #fff !important;}
 
 }
-// body.button-wrapping section[data-bg=drk-gry] .button span,
-// body.button-wrapping section[data-bg=black] .button span,
-// body:not(.button-wrapping) section[data-bg=drk-gry] .button,
-// body:not(.button-wrapping) section[data-bg=black] .button {
-//   border-color: #fff;
-//   background: #fff;
-//   color: #000;
-// }
-// body.button-wrapping section[data-bg=drk-gry] .button,
-// body.button-wrapping section[data-bg=black] .button {
-//   &.active,
-//   &:focus,
-//   &:hover {
-//     span {
-//       background: #000;
-//       color: #fff;
-//     }
-//   }
-// }
-// body:not(.button-wrapping) section[data-bg=drk-gry] .button,
-// body:not(.button-wrapping) section[data-bg=black] .button {
-//   &.active,
-//   &:focus,
-//   &:hover {
-//     background: #000;
-//     color: #fff;
-//   }
-// }
-section[data-bg=drk-gry] {
-  background: #1e1e1e;
+body.button-wrapping section[data-bg=black] .button span,
+body:not(.button-wrapping) section[data-bg=black] .button {
+  border-color: #fff;
+  background: #fff;
+  color: #000;
+}
+body.button-wrapping section[data-bg=black] .button {
+  &.active,
+  &:focus,
+  &:hover {
+    span {
+      background: #000;
+      color: #fff;
+    }
+  }
+}
+body:not(.button-wrapping) section[data-bg=black] .button {
+  &.active,
+  &:focus,
+  &:hover {
+    background: #000;
+    color: #fff;
+  }
 }

@@ -97,9 +97,10 @@ function tabGo(tid, tabs, reset) {
     if (newTab.find(".optionNav").length > 0 && newTab.find(".optionNav a[data-bg=" + curDataBg + "]")) {
       var newTabOption = newTab.find(".options li[data-bg=" + curDataBg + "]").attr("data-id");
       setOption(newTabOption, newTab);
-    } else {
-      tabs.parents("section").attr("data-bg", newTab.attr("data-bg"));
     }
+    // } else {
+    //   tabs.parents("section").attr("data-bg", newTab.attr("data-bg"));
+    // }
   }
   // If new section has a video, play it. Pause all other videos regardless
   if (newTab.find("video").length > 0) {
@@ -125,11 +126,11 @@ function setOption(oid, tab) {
   // Find/change background
   var dataBg = link.parents(".tab").find(".options li[data-id=" + link.attr("data-id") + "]").attr("data-bg");
   link.parents(".tab").attr("data-bg",dataBg);
-  if (dataBg == undefined || dataBg == "") {
-    tab.parents("section").removeAttr("data-bg");
-  } else {
-    tab.parents("section").attr("data-bg", dataBg);
-  }
+  // if (dataBg == undefined || dataBg == "") {
+  //   tab.parents("section").removeAttr("data-bg");
+  // } else {
+  //   tab.parents("section").attr("data-bg", dataBg);
+  // }
 }
 
 function createOptions(parent) {

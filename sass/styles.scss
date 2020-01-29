@@ -696,7 +696,8 @@ body:not(.button-wrapping) a.button {
       }
     }
     .col-2 {
-      padding: 2vw 0;
+      // needs to be zero for active states
+      padding: 0;
 
       margin-left: calc( ( 100vw - 150px ) * .40 );
       width: calc( ( 100vw - 150px ) * .60 );

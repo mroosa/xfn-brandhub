@@ -2,7 +2,7 @@ $(document).ready(function() {
 
   // Sticky Nav
   var buffer = 100,
-      buffer = 1,
+      buffer = 10,
       stickyNavTop = $('#subnav').offset().top,
       subNav = $("#subnav .nav"),
       // All list items

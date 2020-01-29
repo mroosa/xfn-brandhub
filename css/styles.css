@@ -379,6 +379,8 @@ main {
     .two-col .sidebar #subnav.sticky {
       position: fixed;
       top: 0; }
+  .two-col .sidebar #tert-nav {
+    display: none; }
 
 .two-col .content {
   width: calc(100% - 150px); }
@@ -512,6 +514,8 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh; }
+  .content section.with-tabs .tab:focus {
+    outline: none; }
   .content section.with-tabs .tab img {
     display: block;
     margin: 0 auto;

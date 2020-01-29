@@ -46,7 +46,6 @@
         <h3>Logo in Motion</h3>
         <video muted nocontrols autoplay loop style="max-width: 100%;" title="Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a black background ensures optimal legibility, consistency and impact. It is available in English and Spanish.">
           <source src="<?php print $dir; ?>video/xfn-endcard-sq-5s.mp4" type="video/mp4">
-          <img src="<?php print $dir; ?>images/x.svg" alt="" />
         </video>
       </div>
     </div>

@@ -195,6 +195,9 @@ main {
         top: 0;
       }
     }
+    #tert-nav {
+      display: none;
+    }
   }
   .content {
     width: calc(100% - 150px);
@@ -385,6 +388,10 @@ main {
       align-items: center;
       justify-content: center;
       height: 100vh;
+
+      &:focus {
+        outline: none;
+      }
 
       img {
         display: block;

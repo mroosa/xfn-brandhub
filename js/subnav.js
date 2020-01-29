@@ -1,13 +1,12 @@
 $(document).ready(function() {
 
   // Sticky Nav
-  var buffer = 100;
-  var buffer = 1;
-  var stickyNavTop = $('#subnav').offset().top;
-  // console.log(stickyNavTop);
-  var subNav = $("#subnav .nav"),
+  var buffer = 100,
+      buffer = 1,
+      stickyNavTop = $('#subnav').offset().top,
+      subNav = $("#subnav .nav"),
       // All list items
-      menuItems = subNav.find("a"),
+      menuItems = subNav.find(".primary > a"),
       // Anchors corresponding to menu items
       scrollItems = menuItems.map(function(){
         var item = $($(this).attr("href"));
@@ -15,8 +14,8 @@ $(document).ready(function() {
       });
 
   var internalNav = $(".tab-nav"),
-      internalMenuItems = internalNav.find("a");
-  var internalScrollItems = internalMenuItems.map(function() {
+      internalMenuItems = internalNav.find("a"),
+      internalScrollItems = internalMenuItems.map(function() {
     var item = $($(this).attr("href"));
     if (item.length) { return item; }
   });

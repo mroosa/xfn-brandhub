@@ -24,7 +24,7 @@
     <section id="introduction" data-option="1">
       <?php include_once("design/overview.php"); ?>
     </section>
-    <main>
+    <main id="top">
       <form id="form-logout" method='post' action="">
         <input type="submit" value="Logout" name="but_logout">
       </form>
@@ -33,7 +33,7 @@
       <?php if (file_exists("_templates/_nav/_subnav.php")): ?>
         <div class="sidebar black">
           <div id="subnav">
-            <div class="logo vid-logo"><a href="#logo">
+            <div class="logo vid-logo"><a href="#top">
               <video nocontrols muted>
                 <source src="video/logo.mp4" type="video/mp4">
                 <svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115">

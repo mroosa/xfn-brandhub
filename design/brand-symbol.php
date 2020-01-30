@@ -57,10 +57,10 @@
     <div class="tab" data-ttl="Misuses" data-bg="white" id="brand-symbol-misuses">
       <div class="tab-inner">
         <h3>Brand Symbol Misuses</h3>
-        <ul class="optionWrap swap">
+        <ul class="optionWrap">
           <li title="Do not recolor, especially in red."><img src="<?php print $dir; ?>images/brand-symbol/misuse-0.svg" alt="" /></li>
           <li title="Do not use as a replacement for the letter X or lock up with text."><img src="<?php print $dir; ?>images/brand-symbol/misuse-1.svg" alt="" /></li>
-          <li title="Do not warp." class="img width-45"><img src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" /></li>
+          <li title="Do not warp." class="img"><img style="height: 250px; width: 400px;max-width: 100% !important;" src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" /></li>
         </ul>
       </div>
     </div>

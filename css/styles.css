@@ -513,7 +513,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; }
+  min-height: 100vh; }
   .content section.with-tabs .tab:focus {
     outline: none; }
   .content section.with-tabs .tab img {
@@ -958,7 +958,7 @@ body:not(.button-wrapping) a.button {
     z-index: 10; }
     @media (min-width: 1600px) {
       #introduction .intro-logo {
-        left: calc( ( 100% - 1700px ) / 2); } }
+        left: calc(( ( 100% - 1600px ) / 2) + 1.5vw); } }
     #introduction .intro-logo svg {
       max-width: 100%;
       fill: #fff; }
@@ -1352,17 +1352,14 @@ body #color.active .color-swatches .color-6 {
       border: 1px solid #ccc; }
   .mosaic .photo-info-wrap {
     height: 100%;
-    width: 500%;
-    display: flex;
-    align-items: stretch;
-    transition: .25s margin; }
+    width: 100%;
+    display: flex; }
     .mosaic .photo-info-wrap .photo-info {
       display: flex;
       align-items: center;
       align-content: center;
       flex-wrap: wrap;
       background: #fff;
-      width: 20%;
       padding: 0 25px;
       border: 1px solid #ccc;
       border-radius: 4px; }
@@ -1924,18 +1921,34 @@ body[data-random-seed="4"] #secondary-graphics.active #sg-intro li:nth-of-type(2
     display: flex;
     flex-wrap: wrap; }
     #downloads .downloads .download-row {
-      flex: 0 1 25%;
-      padding: 40px 20px;
       display: flex;
       flex-direction: column;
       flex-flow: column;
-      align-items: left;
-      justify-content: space-between; }
+      justify-content: space-between;
+      flex: 0 1 50%;
+      padding: 40px 20px; }
+      @media (min-width: 960px) {
+        #downloads .downloads .download-row {
+          flex: 0 1 33.3%;
+          padding: 40px 1vw; } }
+      @media (min-width: 1200px) {
+        #downloads .downloads .download-row {
+          flex: 0 1 25%; } }
       #downloads .downloads .download-row h3 {
         font-weight: 400;
-        margin: 0; }
+        margin: 0;
+        font-size: 18px;
+        font-size: 1.125rem; }
+        @media (min-width: 960px) {
+          #downloads .downloads .download-row h3 {
+            font-size: 15px;
+            font-size: 0.9375rem; } }
+        @media (min-width: 1200px) {
+          #downloads .downloads .download-row h3 {
+            font-size: 17px;
+            font-size: 1.0625rem; } }
       #downloads .downloads .download-row img {
-        margin: 20px 0;
+        margin: 10px 0 15px 0;
         border: 1px solid #cccccc;
         border-radius: 4px; }
       #downloads .downloads .download-row .button {

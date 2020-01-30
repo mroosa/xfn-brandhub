@@ -105,6 +105,7 @@ function tabGo(tid, tabs, reset) {
   }
   // If new section has a video, play it. Pause all other videos regardless
   if (newTab.find("video").length > 0) {
+    alert(newTab.attr("id"));
     newTab.find("video").get(0).currentTime = 0;
     newTab.find("video").get(0).play();
   } else {
@@ -181,27 +182,7 @@ function closePopOut() {
   $(".lightbox-shade.active").removeClass("active");
 }
 
-// function setPhotography(section) {
-//   $("#photography .button.active").removeClass("active");
-//   $('#photography a[href="#' + section + '"]').addClass("active");
-//   $("#photography .photo-info-wrap").css({
-//     "margin-left": -100 * section + "%"
-//   });
-//   $(".photo[data-set=" + section + "]").show();
-//   $(".photo").not("[data-set=" + section + "]").hide();
-// }
-
 $(document).ready(function() {
-
-  // Reset photography on sub nav click
-  // $("#subnav a[href='#photography']").click(function() {
-  //   setPhotography(0);
-  //   return false;
-  // });
-
-  // $(".optionWrap").each(function() {
-  //   createOptions($(this).parents(".section"));
-  // });
   $("input, textarea, select").wrap('<div class="form-item-wrap">');
   $(".form-item-wrap").find("input, textarea, select").focus(function() {
     $(this).parent(".form-item-wrap").addClass("focus");
@@ -273,8 +254,7 @@ $(document).ready(function() {
       }
     });
 
-    // Create Tab buttons in main column
-
+    // Create Tab buttons in main column, add to subnav
     if (numTabs > 1) {
       thisSec.find(".col-1 p.download, .col-1 p.explore").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
       $('#subnav a[href="#' + thisSec.attr("id") + '"]').parent().append('<ul id="tert-nav">' + subNavContents + '</ul>');

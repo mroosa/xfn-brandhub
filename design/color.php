@@ -114,7 +114,7 @@
       <div class="tab" data-ttl="Misuses" data-bg="white" id="color-misuses">
         <div class="tab-inner">
           <h3>Color Misuses</h3>
-          <ul class="optionWrap swap">
+          <ul class="optionWrap">
             <li title="Do not use red or blue in headlines or subheads. Do not use the limited use red logo in communications." class="img"><img class="border rounded" src="<?php print $dir; ?>images/color/misuse-0.png" alt="" /></li>
             <li title="Do not overuse red or re-color icons." class="img width-55"><img class="rounded" src="<?php print $dir; ?>images/color/misuse-1.png" alt="" /></li>
             <li title="Do not use red in full bleed or as a background color." class="img width-55"><img class="border rounded" src="<?php print $dir; ?>images/color/misuse-2.png" alt="" /></li>

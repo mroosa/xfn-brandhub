@@ -8,7 +8,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" id="secondary-graphics-overview" data-intro="true">
+    <!-- <div class="tab" id="secondary-graphics-overview" data-intro="true">
       <div class="tab-inner">
         <ul id="sg-intro">
           <li><img src="images/secondary-graphics/01-1.svg" alt=""></li>
@@ -22,7 +22,7 @@
           <li><img src="images/secondary-graphics/01-9.svg" alt=""></li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <!-- tab -->
     <div class="tab" id="secondary-graphics-mobile-app-icons" data-ttl="Mobile App Icons">

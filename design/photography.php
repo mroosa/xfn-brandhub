@@ -63,34 +63,6 @@
         </div><!-- .mosaic -->
       </div>
 
-      <div class="tab" id="photography-in-situ" data-ttl="In-Situation">
-        <div class="mosaic">
-          <div class="row">
-            <div class="col col-1-3">
-              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-1.png" alt=""></div>
-              <div class="spacer"></div>
-              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-2.png" alt=""></div>
-            </div>
-            <div class="col col-2-3 col-special">
-              <div class="photo-info-wrap">
-                <div class="photo-info ltg" id="photography-in-situ">
-                  <h3>In-Situation</h3>
-                  <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col col-2-3">
-              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-4.png" alt=""></div>
-            </div>
-            <div class="col col-1-3">
-              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-5.png" alt=""></div>
-            </div>
-          </div>
-        </div><!-- .mosaic -->
-      </div>
-
       <div class="tab" id="photography-devices" data-ttl="Generic Devices">
         <div class="mosaic">
           <div class="row">
@@ -114,6 +86,34 @@
             </div>
             <div class="col col-1-3">
               <div class="photo" data-set="4"><img src="<?php print $dir; ?>images/photography/photo-0-5.gif" alt=""></div>
+            </div>
+          </div>
+        </div><!-- .mosaic -->
+      </div>
+
+      <div class="tab" id="photography-in-situ" data-ttl="In-Situation">
+        <div class="mosaic">
+          <div class="row">
+            <div class="col col-1-3">
+              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-1.png" alt=""></div>
+              <div class="spacer"></div>
+              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-2.png" alt=""></div>
+            </div>
+            <div class="col col-2-3 col-special">
+              <div class="photo-info-wrap">
+                <div class="photo-info ltg" id="photography-in-situ">
+                  <h3>In-Situation</h3>
+                  <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col col-2-3">
+              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-4.png" alt=""></div>
+            </div>
+            <div class="col col-1-3">
+              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-5.png" alt=""></div>
             </div>
           </div>
         </div><!-- .mosaic -->

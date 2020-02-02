@@ -2006,7 +2006,7 @@ body #color {
       height: 100%;
       overflow: hidden;
       z-index: 99;
-      background: url(../images/login-intro.png) center center no-repeat #000;
+      background: url(../images/login-intro.jpg) center center no-repeat #000;
       @include bp-min($mid) {
         z-index: 1;
         background: #000;

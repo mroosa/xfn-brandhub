@@ -591,79 +591,57 @@ main {
       max-height: 75vh;
       display: block; }
 
-body.button-wrapping .button span,
-body:not(.button-wrapping) a.button {
-  padding: 10px 15px 8px 15px;
-  border: 1px solid #000;
-  background: #000;
-  color: #fff;
-  transition: color .25s, background .25s, transform .25s, box-shadow .25s;
-  border-radius: 4px;
-  text-decoration: none;
-  font-family: "XfinityBrown", sans-serif;
-  letter-spacing: -.04ex;
-  line-height: 125%;
-  font-size: 12px;
-  font-size: 0.75rem;
-  font-weight: 500;
-  text-align: center; }
-  @media (max-width: 550px) {
-    body.button-wrapping .button span,
-    body:not(.button-wrapping) a.button {
-      display: block;
-      text-align: center; } }
-  @media (min-width: 1020px) {
-    body.button-wrapping .button span,
-    body:not(.button-wrapping) a.button {
-      font-family: "XfinityBrown", sans-serif;
-      letter-spacing: -.04ex;
-      line-height: 125%;
-      font-size: 13px;
-      font-size: 0.8125rem; } }
-  @media (min-width: 1400px) {
-    body.button-wrapping .button span,
-    body:not(.button-wrapping) a.button {
-      font-family: "XfinityBrown", sans-serif;
-      letter-spacing: -.04ex;
-      line-height: 125%;
-      font-size: 14px;
-      font-size: 0.875rem; } }
-
-body.button-wrapping .button.disabled span,
-body:not(.button-wrapping) a.button.disabled {
-  border-color: #666;
-  background: #666;
-  color: #ccc; }
-
-body.button-wrapping .button.disabled,
-body:not(.button-wrapping) a.button.disabled {
-  pointer-events: none; }
-
-body.button-wrapping .button {
+.button {
   padding: 3px 0;
   display: inline-block;
   text-decoration: none;
   margin: 5px 12px 5px 0; }
-  body.button-wrapping .button span {
-    display: block; }
-  body.button-wrapping .button:not(.disabled):focus, body.button-wrapping .button:not(.disabled):hover {
+  .button span {
+    display: block;
+    padding: 10px 15px 8px 15px;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    transition: color .25s, background .25s, transform .25s, box-shadow .25s;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: "XfinityBrown", sans-serif;
+    letter-spacing: -.04ex;
+    line-height: 125%;
+    font-size: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-align: center; }
+    @media (max-width: 550px) {
+      .button span {
+        display: block;
+        text-align: center; } }
+    @media (min-width: 1020px) {
+      .button span {
+        font-family: "XfinityBrown", sans-serif;
+        letter-spacing: -.04ex;
+        line-height: 125%;
+        font-size: 13px;
+        font-size: 0.8125rem; } }
+    @media (min-width: 1400px) {
+      .button span {
+        font-family: "XfinityBrown", sans-serif;
+        letter-spacing: -.04ex;
+        line-height: 125%;
+        font-size: 14px;
+        font-size: 0.875rem; } }
+  .button.disabled {
+    pointer-events: none; }
+    .button.disabled span {
+      border-color: #666;
+      background: #666;
+      color: #ccc; }
+  .button:not(.disabled):focus, .button:not(.disabled):hover {
     outline: 0; }
-    body.button-wrapping .button:not(.disabled):focus span, body.button-wrapping .button:not(.disabled):hover span {
+    .button:not(.disabled):focus span, .button:not(.disabled):hover span {
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
       transform: translateY(-3px); }
-  body.button-wrapping .button:not(.disabled):focus span, body.button-wrapping .button:not(.disabled).active span, body.button-wrapping .button:not(.disabled):hover span {
-    color: #000;
-    background: #fff; }
-
-body:not(.button-wrapping) a.button {
-  display: inline-block;
-  margin: 8px 12px 8px 0;
-  padding: inherit; }
-  body:not(.button-wrapping) a.button:focus, body:not(.button-wrapping) a.button:hover {
-    outline: 0;
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
-    transform: translateY(-3px); }
-  body:not(.button-wrapping) a.button.active, body:not(.button-wrapping) a.button:hover {
+  .button:not(.disabled):focus span, .button:not(.disabled).active span, .button:not(.disabled):hover span {
     color: #000;
     background: #fff; }
 
@@ -898,66 +876,16 @@ body:not(.button-wrapping) a.button {
   display: flex;
   align-items: center;
   justify-content: center; }
-  #introduction .intro-info {
-    position: relative;
-    z-index: 10;
-    max-width: 1000px;
-    text-align: center;
-    color: #fff;
-    margin: 0 auto; }
-  #introduction h1 {
-    font-size: 54px;
-    font-size: 3.375rem;
-    line-height: 130%; }
-  #introduction p {
-    font-size: 18px;
-    font-size: 1.125rem;
-    line-height: 130%; }
-  #introduction h2 {
-    font-size: 32px;
-    font-size: 2rem;
-    line-height: 130%; }
   #introduction .col-1 {
-    padding: 100px 200px;
-    width: 55%;
-    text-align: left; }
-  #introduction .intro-shade {
-    position: absolute;
-    z-index: 2;
-    background: rgba(0, 0, 0, 0.5);
-    height: 100%;
     width: 100%;
-    left: 0;
-    top: 0; }
-  #introduction .col-1 {
-    width: 100%; }
-  #introduction .get-started span {
-    color: #fff; }
-  #introduction .get-started svg {
-    fill: #fff; }
-  #introduction .get-started {
-    position: absolute;
-    display: flex;
-    bottom: 25px;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    #introduction .get-started span {
-      opacity: 0;
-      transition: .25s opacity; }
-    #introduction .get-started svg {
-      height: 45px;
-      width: 45px;
-      padding: 5px;
-      transform: translate(0, 0);
-      transition: .25s transform; }
-    #introduction .get-started:hover span {
-      opacity: 1; }
-    #introduction .get-started:hover svg {
-      transform: translate(0, 5px); }
+    text-align: left;
+    padding: 40px 20px; }
+    @media (min-width: 550px) {
+      #introduction .col-1 {
+        padding: 40px; } }
+    @media (min-width: 960px) {
+      #introduction .col-1 {
+        padding: 100px 200px; } }
   #introduction .intro-logo {
     position: absolute;
     top: 20px;
@@ -970,16 +898,108 @@ body:not(.button-wrapping) a.button {
     #introduction .intro-logo svg {
       max-width: 100%;
       fill: #fff; }
-  #introduction h1 {
-    animation: .75s ease-in 0.5s 1 normal both revealSlide; }
-  #introduction p:nth-of-type(1) {
-    animation: .75s ease-in 1.5s 1 normal both revealSlide; }
-  #introduction p:nth-of-type(2) {
-    animation: .75s ease-in 1.5s 1 normal both revealSlide; }
-  #introduction h2 {
-    animation: .75s ease-in 2.5s 1 normal both revealSlide; }
+  #introduction .intro-info {
+    position: relative;
+    z-index: 10;
+    max-width: 1000px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    #introduction .intro-info h1, #introduction .intro-info h2, #introduction .intro-info p {
+      line-height: 130%; }
+    #introduction .intro-info h1 {
+      font-size: 28px;
+      font-size: 1.75rem; }
+      @media (min-width: 550px) {
+        #introduction .intro-info h1 {
+          font-size: 40px;
+          font-size: 2.5rem; } }
+      @media (min-width: 768px) {
+        #introduction .intro-info h1 {
+          font-size: 54px;
+          font-size: 3.375rem; } }
+    #introduction .intro-info p {
+      font-size: 14px;
+      font-size: 0.875rem; }
+      @media (min-width: 550px) {
+        #introduction .intro-info p {
+          font-size: 16px;
+          font-size: 1rem; } }
+      @media (min-width: 768px) {
+        #introduction .intro-info p {
+          font-size: 18px;
+          font-size: 1.125rem; } }
+    #introduction .intro-info h2 {
+      font-size: 18px;
+      font-size: 1.125rem; }
+      @media (min-width: 550px) {
+        #introduction .intro-info h2 {
+          font-size: 24px;
+          font-size: 1.5rem; } }
+      @media (min-width: 768px) {
+        #introduction .intro-info h2 {
+          font-size: 32px;
+          font-size: 2rem; } }
+    #introduction .intro-info .intro-more {
+      max-width: 250px;
+      margin: 0 auto; }
+      @media (min-width: 768px) {
+        #introduction .intro-info .intro-more {
+          display: none; } }
+    @media (min-width: 768px) {
+      #introduction .intro-info h1 {
+        order: 1; }
+      #introduction .intro-info .intro-txt {
+        order: 2; }
+      #introduction .intro-info h2 {
+        order: 3; } }
+  #introduction .intro-shade {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0; }
   #introduction .get-started {
-    animation: .75s ease-in 2.5s 1 normal both reveal; }
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none; }
+    @media (min-width: 960px) {
+      #introduction .get-started {
+        display: flex; } }
+    #introduction .get-started span {
+      opacity: 0;
+      color: #fff;
+      transition: .25s opacity; }
+    #introduction .get-started svg {
+      fill: #fff;
+      width: 45px;
+      height: 45px;
+      padding: 5px;
+      transform: translate(0, 0);
+      transition: .25s transform; }
+    #introduction .get-started:hover span {
+      opacity: 1; }
+    #introduction .get-started:hover svg {
+      transform: translate(0, 5px); }
+  @media (min-width: 960px) {
+    #introduction h1 {
+      animation: .75s ease-in 0.5s 1 normal both revealSlide; }
+    #introduction .intro-txt {
+      animation: .75s ease-in 1.5s 1 normal both revealSlide; }
+    #introduction h2 {
+      animation: .75s ease-in 2.5s 1 normal both revealSlide; }
+    #introduction .get-started {
+      animation: .75s ease-in 2.5s 1 normal both reveal; } }
   #introduction .vid-wrap {
     position: absolute;
     top: 0;
@@ -987,13 +1007,17 @@ body:not(.button-wrapping) a.button {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: 1; }
+    z-index: 1;
+    display: none; }
     #introduction .vid-wrap video {
       height: 100%;
       width: 100%;
       object-fit: cover;
       position: relative;
       z-index: 1; }
+    @media (min-width: 768px) {
+      #introduction .vid-wrap {
+        display: block; } }
 
 /* Logo */
 #logo .tabs .tab img {
@@ -1729,12 +1753,15 @@ body #color.active .color-swatches .color-6 {
     .login main #login {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
       align-content: center;
-      position: absolute;
       z-index: 2;
-      width: 50%;
-      left: 0; }
+      left: 0;
+      justify-content: center; }
+      @media (min-width: 960px) {
+        .login main #login {
+          position: absolute;
+          justify-content: flex-end;
+          width: 50%; } }
       .login main #login label {
         display: block;
         margin: 20px 0 0 0; }
@@ -1751,8 +1778,11 @@ body #color.active .color-swatches .color-6 {
         margin: 10px 0;
         box-shadow: 0 0 0 rgba(0, 0, 0, 0);
         transition: .25s box-shadow, .25s border-color;
-        width: 80%;
-        max-width: 300px; }
+        max-width: 300px;
+        width: 100%; }
+        @media (min-width: 960px) {
+          .login main #login input:not([type="button"]) {
+            width: 80%; } }
         .login main #login input:not([type="button"]):focus {
           outline: 0;
           border-color: #000;
@@ -1775,7 +1805,20 @@ body #color.active .color-swatches .color-6 {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      z-index: 1; }
+      z-index: 99;
+      background: url(../images/login-intro.png) center center no-repeat #000; }
+      @media (min-width: 960px) {
+        .login main .vid-wrap {
+          z-index: 1;
+          background: #000; } }
+      .login main .vid-wrap > * {
+        display: none; }
+        @media (min-width: 960px) {
+          .login main .vid-wrap > * {
+            display: block; } }
+      @media (max-width: 959px) {
+        .login main .vid-wrap {
+          animation: reveal .5s reverse both .5s; } }
       .login main .vid-wrap video {
         height: 100%;
         width: 100%;
@@ -1905,16 +1948,11 @@ section .tab[data-bg=black] {
   section .tab[data-bg=black] .optionNav a.active {
     background: #fff !important; }
 
-body.button-wrapping section[data-bg=black] .button span,
-body:not(.button-wrapping) section[data-bg=black] .button {
+section[data-bg=black] .button span {
   border-color: #fff;
   background: #fff;
   color: #000; }
 
-body.button-wrapping section[data-bg=black] .button.active span, body.button-wrapping section[data-bg=black] .button:focus span, body.button-wrapping section[data-bg=black] .button:hover span {
-  background: #000;
-  color: #fff; }
-
-body:not(.button-wrapping) section[data-bg=black] .button.active, body:not(.button-wrapping) section[data-bg=black] .button:focus, body:not(.button-wrapping) section[data-bg=black] .button:hover {
+section[data-bg=black] .button.active span, section[data-bg=black] .button:focus span, section[data-bg=black] .button:hover span {
   background: #000;
   color: #fff; }

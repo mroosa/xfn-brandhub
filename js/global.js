@@ -249,7 +249,7 @@ $(document).ready(function() {
       // Tab options
       createOptions(theTab);
       if (tabTtl != "" && tabTtl != undefined && numTabs > 1) {
-        tabNavContents += '<li><a class="button set-tab' + linkClass + '" data-id="' + index + '" href="#' + $(this).attr("id") + '">' + tabTtl + '</a></li>';
+        tabNavContents += '<li><a class="button set-tab' + linkClass + '" data-id="' + index + '" href="#' + $(this).attr("id") + '"><span>' + tabTtl + '</span></a></li>';
         subNavContents += '<li><a href="#' + $(this).attr("id") + '">' + tabTtl + '</a></li>';
       }
     });
@@ -346,10 +346,6 @@ $(document).ready(function() {
 
   // Random seed
   $("body").attr("data-random-seed",randNum(4,1));
-
-  // Wrap buttons
-  $("body").addClass("button-wrapping");
-  $("a.button").wrapInner("<span>");
 
   smoothScrolling();
 });

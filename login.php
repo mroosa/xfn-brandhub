@@ -13,7 +13,7 @@
           <label for="txt_pwd">Password</label>
           <input tabindex="2" type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
           <div id="message">&nbsp;</div>
-          <a tabindex="3" id="btn_submit" class="button" href="#">Get Started</a>
+          <a tabindex="3" id="btn_submit" class="button" href="#"><span>Get Started</span></a>
           <input type="submit" style="display: none" value="Get Started" />
           <p class="help">Need help logging in? Contact the Xfinity Brand team.</p>
         </form>

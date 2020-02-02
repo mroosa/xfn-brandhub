@@ -496,50 +496,48 @@ main {
     }
   }
 }
-body.button-wrapping .button span,
-body:not(.button-wrapping) a.button {
-  padding: 10px 15px 8px 15px;
-  border: 1px solid #000;
-  background: #000;
-  color: #fff;
-  transition: color .25s, background .25s, transform .25s, box-shadow .25s;
-  border-radius: $bdr;
-  text-decoration: none;
-  @include Brown(12px);
-  font-weight: 500;
-  text-align: center;
-
-  @include bp-max($xsm) {
-    display: block;
-    text-align: center;
-  }
-
-  @include bp-min($lrg) {
-    @include Brown(13px);
-  }
-  @include bp-min($xxl) {
-    @include Brown(14px);
-  }
-
-}
-body.button-wrapping .button.disabled span,
-body:not(.button-wrapping) a.button.disabled {
-  border-color: #666;
-  background: #666;
-  color: #ccc;
-}
-body.button-wrapping .button.disabled,
-body:not(.button-wrapping) a.button.disabled {
-  pointer-events: none;
-}
-body.button-wrapping .button {
+.button {
   padding: 3px 0;
   display: inline-block;
   text-decoration: none;
+  margin: 5px 12px 5px 0;
+
   span {
     display: block;
+    padding: 10px 15px 8px 15px;
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+    transition: color .25s, background .25s, transform .25s, box-shadow .25s;
+    border-radius: $bdr;
+    text-decoration: none;
+    @include Brown(12px);
+    font-weight: 500;
+    text-align: center;
+
+    @include bp-max($xsm) {
+      display: block;
+      text-align: center;
+    }
+
+    @include bp-min($lrg) {
+      @include Brown(13px);
+    }
+    @include bp-min($xxl) {
+      @include Brown(14px);
+    }
+
   }
-  margin: 5px 12px 5px 0;
+
+  &.disabled {
+    pointer-events: none;
+    span {
+      border-color: #666;
+      background: #666;
+      color: #ccc;
+    }
+  }
+
   &:not(.disabled):focus,
   &:not(.disabled):hover {
     outline: 0;
@@ -548,6 +546,7 @@ body.button-wrapping .button {
       transform:translateY(-3px);
     }
   }
+
   &:not(.disabled):focus,
   &:not(.disabled).active,
   &:not(.disabled):hover {
@@ -556,24 +555,8 @@ body.button-wrapping .button {
       background: #fff;
     }
   }
-}
-body:not(.button-wrapping) a.button {
-  display: inline-block;
-  margin: 8px 12px 8px 0;
-  padding: inherit;
-  &:focus,
-  &:hover {
-    outline: 0;
-    box-shadow: 0 5px 5px rgba(0,0,0,.35);
-    transform:translateY(-3px);
-  }
-  &.active,
-  &:hover {
-    color: #000;
-    background: #fff;
-  }
-}
 
+}
 
 .content {
   overflow: hidden;
@@ -854,81 +837,16 @@ body:not(.button-wrapping) a.button {
   align-items: center;
   justify-content: center;
 
-  .intro-info {
-    position: relative;
-    z-index: 10;
-    max-width: 1000px;
-    text-align: center;
-    color: #fff;
-    margin: 0 auto;
-  }
-
-  h1 {
-    @include font-size(54px);
-    line-height: 130%;
-  }
-
-  p {
-    @include font-size(18px);
-    line-height: 130%;
-  }
-
-  h2 {
-    @include font-size(32px);
-    line-height: 130%;
-  }
-
   .col-1 {
-    padding: 100px 200px;
-    width: 55%;
+    width: 100%;
     text-align: left;
-  }
 
-  .intro-shade {
-    position: absolute;
-    z-index: 2;
-    background: rgba(0,0,0,.5);
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-  }
-
-  .col-1 {width: 100%;}
-  .get-started span {color: #fff;}
-  .get-started svg {fill: #fff;}
-
-  .get-started {
-    position: absolute;
-    display: flex;
-    bottom: 25px;
-    left: 0;
-    z-index: 99;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    span {
-      opacity: 0;
-      transition: .25s opacity;
+    padding: 40px 20px;
+    @include bp-min($xsm) {
+      padding: 40px;
     }
-
-    svg {
-      height: 45px;
-      width: 45px;
-      padding: 5px;
-      transform: translate(0,0);
-      transition: .25s transform;
-    }
-
-    &:hover {
-      span {
-        opacity: 1;
-      }
-      svg {
-        transform: translate(0, 5px);
-      }
+    @include bp-min($mid) {
+      padding: 100px 200px;
     }
   }
 
@@ -948,11 +866,120 @@ body:not(.button-wrapping) a.button {
     }
   }
 
-  h1 {animation: .75s ease-in 0.5s 1 normal both revealSlide;}
-  p:nth-of-type(1) {animation: .75s ease-in 1.5s 1 normal both revealSlide;}
-  p:nth-of-type(2) {animation: .75s ease-in 1.5s 1 normal both revealSlide;}
-  h2 {animation: .75s ease-in 2.5s 1 normal both revealSlide;}
-  .get-started {animation: .75s ease-in 2.5s 1 normal both reveal;}
+  .intro-info {
+    position: relative;
+    z-index: 10;
+    max-width: 1000px;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    h1,h2,p {line-height: 130%;}
+
+    h1 {
+      @include font-size(28px);
+      @include bp-min($xsm) {
+        @include font-size(40px);
+      }
+      @include bp-min($sml) {
+        @include font-size(54px)
+      };
+    }
+
+    p {
+      @include font-size(14px);
+      @include bp-min($xsm) {
+        @include font-size(16px);
+      }
+      @include bp-min($sml) {
+        @include font-size(18px)
+      };
+    }
+
+    h2 {
+      @include font-size(18px);
+      @include bp-min($xsm) {
+        @include font-size(24px);
+      }
+      @include bp-min($sml) {
+        @include font-size(32px)
+      };
+    }
+
+    .intro-more {
+      max-width: 250px;
+      margin: 0 auto;
+      @include bp-min($sml) {
+        display: none;
+      }
+    }
+
+    @include bp-min($sml) {
+      h1 {order: 1;}
+      .intro-txt {order: 2;}
+      h2 {order: 3;}
+    }
+  }
+
+
+  .intro-shade {
+    position: absolute;
+    z-index: 2;
+    background: rgba(0,0,0,.5);
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .get-started {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+    @include bp-min($mid) {
+      display: flex;
+    }
+
+    span {
+      opacity: 0;
+      color: #fff;
+      transition: .25s opacity;
+    }
+
+    svg {
+      fill: #fff;
+      width: 45px;
+      height: 45px;
+      padding: 5px;
+      transform: translate(0,0);
+      transition: .25s transform;
+    }
+
+    &:hover {
+      span {
+        opacity: 1;
+      }
+      svg {
+        transform: translate(0, 5px);
+      }
+    }
+  }
+
+  @include bp-min($mid) {
+    h1 {animation: .75s ease-in 0.5s 1 normal both revealSlide;}
+    .intro-txt {animation: .75s ease-in 1.5s 1 normal both revealSlide;}
+    h2 {animation: .75s ease-in 2.5s 1 normal both revealSlide;}
+    .get-started {animation: .75s ease-in 2.5s 1 normal both reveal;}
+  }
 
   .vid-wrap {
     position: absolute;
@@ -964,11 +991,16 @@ body:not(.button-wrapping) a.button {
     z-index: 1;
 
     video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    position: relative;
-    z-index: 1;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    display: none;
+    @include bp-min($sml) {
+      display: block;
     }
   }
 
@@ -1849,6 +1881,8 @@ body #color {
 #secondary-graphics-mobile-app-icons #sg-m-2 li {flex: 0 0 100%;}
 
 /* Login page */
+
+
 // Contents are left here in case login is ever integrated directly on page
 
 #form-logout {
@@ -1916,13 +1950,16 @@ body #color {
     #login {
       display: flex;
       align-items: center;
-      justify-content: flex-end;
       align-content: center;
-      position: absolute;
       z-index: 2;
-      width: 50%;
       left: 0;
 
+      justify-content: center;
+      @include bp-min($mid) {
+        position: absolute;
+        justify-content: flex-end;
+        width: 50%;
+      }
 
       label {
         display: block;
@@ -1936,8 +1973,11 @@ body #color {
         margin: 10px 0;
         box-shadow: 0 0 0 rgba(0,0,0,0);
         transition: .25s box-shadow, .25s border-color;
-        width: 80%;
         max-width: 300px;
+        width: 100%;
+        @include bp-min($mid) {
+          width: 80%;
+        }
 
         &:focus {
           outline: 0;
@@ -1965,27 +2005,29 @@ body #color {
       width: 100%;
       height: 100%;
       overflow: hidden;
-      z-index: 1;
+      z-index: 99;
+      background: url(../images/login-intro.png) center center no-repeat #000;
+      @include bp-min($mid) {
+        z-index: 1;
+        background: #000;
+      }
+      & > * {
+        display: none;
+        @include bp-min($mid) {
+          display: block;
+        }
+      }
+
+      @include bp-max($mid - 1) {
+        animation: reveal .5s reverse both .5s;
+      }
 
       video {
-      //   /* Make video to at least 100% wide and tall */
-      //   min-width: 100%;
-      //   min-height: 100%;
-      //
-      //   /* Setting width & height to auto prevents the browser from stretching or squishing the video */
-      //   width: auto;
-      //   height: auto;
-      //
-      //   /* Center the video */
-      //   position: absolute;
-      //   top: 50%;
-      //   left: 50%;
-      //   transform: translate(-50%,-50%);
-      height: 100%;
-      width: 100%;
-      object-fit: contain;
-      position: relative;
-      z-index: 1;
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+        z-index: 1;
       }
 
       .frost {
@@ -2239,13 +2281,12 @@ section .tab[data-bg=black] {
   .optionNav a.active {background: #fff !important;}
 
 }
-body.button-wrapping section[data-bg=black] .button span,
-body:not(.button-wrapping) section[data-bg=black] .button {
+section[data-bg=black] .button span {
   border-color: #fff;
   background: #fff;
   color: #000;
 }
-body.button-wrapping section[data-bg=black] .button {
+section[data-bg=black] .button {
   &.active,
   &:focus,
   &:hover {
@@ -2253,13 +2294,5 @@ body.button-wrapping section[data-bg=black] .button {
       background: #000;
       color: #fff;
     }
-  }
-}
-body:not(.button-wrapping) section[data-bg=black] .button {
-  &.active,
-  &:focus,
-  &:hover {
-    background: #000;
-    color: #fff;
   }
 }

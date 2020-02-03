@@ -1189,12 +1189,12 @@ main {
   top: 0;
   height: 100%;
   width: 100%;
-  pointer-events: none;
   z-index: 3;
   position: relative; }
   @media (min-width: 550px) {
     #color .color-swatch-info {
-      position: absolute; } }
+      position: absolute;
+      pointer-events: none; } }
   #color .color-swatch-info .swatch-info {
     cursor: text;
     border-radius: 4px;

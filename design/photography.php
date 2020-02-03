@@ -9,13 +9,8 @@
 
       <div class="tab" id="photography-lifestyle" data-ttl="Lifestyle">
         <div class="mosaic">
-          <div class="row">
-            <div class="col col-1-3">
-              <div class="photo" data-set="1"><img src="<?php print $dir; ?>images/photography/photo-1-1.png" alt=""></div>
-              <div class="spacer"></div>
-              <div class="photo border" data-set="1"><img src="<?php print $dir; ?>images/photography/photo-0-1.gif" alt=""></div>
-            </div>
-            <div class="col col-2-3 col-special">
+          <div class="row row-1">
+            <div class="col col-a col-2-3 col-special">
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-lifestyle">
                   <h3>Lifestyle</h3>
@@ -23,12 +18,17 @@
                 </div>
               </div>
             </div>
+            <div class="col col-b col-1-3">
+              <div class="photo" data-set="1"><img src="<?php print $dir; ?>images/photography/photo-1-1.png" alt=""></div>
+              <div class="spacer"></div>
+              <div class="photo border" data-set="1"><img src="<?php print $dir; ?>images/photography/photo-0-1.gif" alt=""></div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col col-2-3">
+          <div class="row row-2">
+            <div class="col col-a col-2-3">
               <div class="photo" data-set="1"><img src="<?php print $dir; ?>images/photography/photo-1-4.png" alt=""></div>
             </div>
-            <div class="col col-1-3">
+            <div class="col col-b col-1-3">
               <div class="photo" data-set="1"><img src="<?php print $dir; ?>images/photography/photo-1-5.png" alt=""></div>
             </div>
           </div>
@@ -37,13 +37,8 @@
 
       <div class="tab" id="photography-xfn-devices" data-ttl="Xfinity Hardware">
         <div class="mosaic">
-          <div class="row">
-            <div class="col col-1-3">
-              <div class="photo border" data-set="2"><img src="<?php print $dir; ?>images/photography/photo-2-1.png" alt=""></div>
-              <div class="spacer"></div>
-              <div class="photo" data-set="2"><img src="<?php print $dir; ?>images/photography/photo-2-2.png" alt=""></div>
-            </div>
-            <div class="col col-2-3 col-special">
+          <div class="row row-1">
+            <div class="col col-a col-2-3 col-special">
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-xfn-devices">
                   <h3>Xfinity Hardware</h3>
@@ -51,12 +46,17 @@
                 </div>
               </div>
             </div>
+            <div class="col col-b col-1-3">
+              <div class="photo border" data-set="2"><img src="<?php print $dir; ?>images/photography/photo-2-1.png" alt=""></div>
+              <div class="spacer"></div>
+              <div class="photo" data-set="2"><img src="<?php print $dir; ?>images/photography/photo-2-2.png" alt=""></div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col col-2-3">
+          <div class="row row-2">
+            <div class="col col-a col-2-3">
               <div class="photo border" data-set="2"><img src="<?php print $dir; ?>images/photography/photo-2-4.png" alt=""></div>
             </div>
-            <div class="col col-1-3">
+            <div class="col col-b col-1-3">
               <div class="photo border" data-set="2"><img src="<?php print $dir; ?>images/photography/photo-2-5.png" alt=""></div>
             </div>
           </div>
@@ -65,13 +65,8 @@
 
       <div class="tab" id="photography-devices" data-ttl="Generic Devices">
         <div class="mosaic">
-          <div class="row">
-            <div class="col col-1-3">
-              <div class="photo border" data-set="4"><img src="<?php print $dir; ?>images/photography/photo-4-1.png" alt=""></div>
-              <div class="spacer"></div>
-              <div class="photo" data-set="4"><img src="<?php print $dir; ?>images/photography/photo-4-2.png" alt=""></div>
-            </div>
-            <div class="col col-2-3 col-special">
+          <div class="row row-1">
+            <div class="col col-a col-2-3 col-special">
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-devices">
                   <h3>Generic Devices</h3>
@@ -79,12 +74,17 @@
                 </div>
               </div>
             </div>
+            <div class="col col-b col-1-3">
+              <div class="photo border" data-set="4"><img src="<?php print $dir; ?>images/photography/photo-4-1.png" alt=""></div>
+              <div class="spacer"></div>
+              <div class="photo" data-set="4"><img src="<?php print $dir; ?>images/photography/photo-4-2.png" alt=""></div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col col-2-3">
+          <div class="row row-2">
+            <div class="col col-a col-2-3">
               <div class="photo border" data-set="4"><img src="<?php print $dir; ?>images/photography/photo-4-4.png" alt=""></div>
             </div>
-            <div class="col col-1-3">
+            <div class="col col-b col-1-3">
               <div class="photo" data-set="4"><img src="<?php print $dir; ?>images/photography/photo-0-5.gif" alt=""></div>
             </div>
           </div>
@@ -93,13 +93,8 @@
 
       <div class="tab" id="photography-in-situ" data-ttl="In-Situation">
         <div class="mosaic">
-          <div class="row">
-            <div class="col col-1-3">
-              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-1.png" alt=""></div>
-              <div class="spacer"></div>
-              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-2.png" alt=""></div>
-            </div>
-            <div class="col col-2-3 col-special">
+          <div class="row row-1">
+            <div class="col col-a col-2-3 col-special">
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-in-situ">
                   <h3>In-Situation</h3>
@@ -107,13 +102,18 @@
                 </div>
               </div>
             </div>
+            <div class="col col-b col-1-3">
+              <div class="photo border" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-1.png" alt=""></div>
+              <div class="spacer"></div>
+              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-2.png" alt=""></div>
+            </div>
           </div>
-          <div class="row">
-            <div class="col col-2-3">
+          <div class="row row-2">
+            <div class="col col-a col-2-3">
               <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-4.png" alt=""></div>
             </div>
-            <div class="col col-1-3">
-              <div class="photo" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-5.png" alt=""></div>
+            <div class="col col-b col-1-3">
+              <div class="photo border" data-set="3"><img src="<?php print $dir; ?>images/photography/photo-3-5.png" alt=""></div>
             </div>
           </div>
         </div><!-- .mosaic -->

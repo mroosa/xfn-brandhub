@@ -150,12 +150,34 @@ main {
         fill: #999;
       }
     }
+    @include bp-max($xsm - 1) {
+      display: block;
+      padding: 12px 15px 10px 15px;
+      border: 1px solid #000;
+      background: #000;
+      color: #fff;
+      transition: color .25s, background .25s, transform .25s, box-shadow .25s;
+      border-radius: $bdr;
+      text-decoration: none;
+      @include Brown(14px);
+      font-weight: 500;
+      text-align: center;
+      border-radius: $bdr;
+
+      svg {display: none;}
+      &:hover {
+        text-decoration: none;
+        color: #000;
+        background: #fff;
+      }
+    }
   }
 }
 
 
 .two-col {
   .sidebar {
+
     width: 150px;
     .logo {
       display: block;
@@ -169,6 +191,11 @@ main {
         max-width: 100%;
         margin: -5px;
       }
+    }
+
+    display: none;
+    @include bp-min($sml) {
+      display: block;
     }
     @include bp-min($xlg) {
       width: 200px;
@@ -200,7 +227,9 @@ main {
     }
   }
   .content {
-    width: calc(100% - 150px);
+    @include bp-min($sml) {
+      width: calc(100% - 150px);
+    }
     @include bp-min($xlg) {
       width: calc(100% - 200px);
     }
@@ -221,25 +250,6 @@ main {
   }
 }
 
-@media (max-width: 768px) {
-  .two-col .sidebar {
-    padding: 30px 2.5% 30px 2.5%;
-  }
-}
-
-@media (max-width: 550px) {
-  .two-col main > .inner {
-    display: block;
-  }
-  .two-col .content,
-  .two-col .sidebar {
-    width: 100%;
-    margin: 0;
-  }
-  .two-col .content {
-    padding: 20px;
-  }
-}
 
 /* Sidebar */
 .sidebar {
@@ -317,13 +327,13 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+@include bp-max($sml - 1) {
   #subnav ul li .menu {
     display: none;
   }
 }
 
-@media (max-width: 550px) {
+@include bp-max($xsm - 1) {
   .two-col .sidebar {
     background: #666;
     color: #fff;
@@ -352,15 +362,22 @@ main {
 
 /* Content Area */
 .content section {
+  @include bp-max($xsm - 1) {
+    padding-top: 6vw;
+  }
 
   // Active section
   &.active {
     z-index: 1;
     .col-1 {
-      position: fixed;
-      z-index: 1;
-      left: 150px;
-      @include bp-min($lrg) {
+      @include bp-min($xsm) {
+        position: fixed;
+        z-index: 1;
+      }
+      @include bp-min($sml) {
+        left: 150px;
+      }
+      @include bp-min($xlg) {
         left: 200px;
       }
       @include bp-min($max) {
@@ -387,7 +404,12 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
+
+      padding: 4vw;
+      @include bp-min($xsm) {
+        min-height: 100vh;
+        padding: 2vw;
+      }
 
       &:focus {
         outline: none;
@@ -417,7 +439,10 @@ main {
           padding: 0;
         }
         .optionWrap {
-          margin-top: 60px;
+          margin-top: 20px;
+          @include bp-min($xsm) {
+            margin-top: 60px;
+          }
 
           &.auto + .optionNav {
             display: none !important;
@@ -496,6 +521,7 @@ main {
     }
   }
 }
+
 .button {
   padding: 3px 0;
   display: inline-block;
@@ -515,7 +541,7 @@ main {
     font-weight: 500;
     text-align: center;
 
-    @include bp-max($xsm) {
+    @include bp-max($xsm - 1) {
       display: block;
       text-align: center;
     }
@@ -562,18 +588,22 @@ main {
   overflow: hidden;
 
   h1 {
-    margin: 0 0 .25em 0;
+    margin: 15px 0 .25em 0;
     @include Brown(48px, 800);
+    @include bp-min($xsm) {
+      @include Brown(36px, 800);
+    }
+    @include bp-min($mid) {
+      margin-top: 0;
+      @include Brown(48px, 800);
+    }
     @include bp-min($xlg) {
-      @include Brown(72px, 800);
+      @include Brown(68px, 800);
     }
 
-    @include bp-max($sml) {
-      margin-top: 15px;
-      @include font-size(48px);
-    }
     span {
       display: block;
+      display: none;
       font-size: 50%;
       font-weight: 200;
       padding-bottom: 0px;
@@ -627,13 +657,9 @@ main {
     box-shadow: 0 -15px 35px rgba(0,0,0,.35);
     position: relative;
     z-index: 2;
-
-    // margin-bottom: 120px;
-    @include bp-max($sml) {
-      margin-bottom: 75px;
-    }
-    @include bp-max($xsm) {
-      margin-bottom: 50px;
+    padding-bottom: 8vh;
+    @include bp-min($xsm) {
+      padding-bottom: 0;
     }
 
     &:focus {
@@ -641,8 +667,11 @@ main {
     }
 
     display: flex;
-    align-items: center;
     justify-content: flex-start;
+    align-items: flex-start;
+    @include bp-min($xsm) {
+      align-items: center;
+    }
 
     .col-wrap {
       display: flex;
@@ -650,67 +679,84 @@ main {
       align-content: center;
       justify-content: flex-start;
       width: 100%;
+      flex-direction: column;
+      @include bp-min($xsm) {
+        flex-direction: row;
+      }
       @include bp-min($max) {
         width: 1400px;
       }
       @include bp-min($xlg) {
         // padding: 0 2%;
       }
-    }
 
-    .col-1 {
-      padding: 2vw;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      align-content: center;
-      min-height: 100vh;
-
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: calc( ( 100vw - 150px ) * .40 );
-      @include bp-min($lrg) {
-        width: calc( ( 100vw - 200px ) * .45 );
-      }
-      @include bp-min($max) {
-        width: 600px;
+      .col-1 {
+        padding: 4vw;
+        @include bp-min($xsm) {
+          padding: 2vw;
+        }
       }
     }
-    .col-2 {
-      // needs to be zero for active states
-      padding: 0;
 
-      margin-left: calc( ( 100vw - 150px ) * .40 );
-      width: calc( ( 100vw - 150px ) * .60 );
-      @include bp-min($lrg) {
-        margin-left: calc( ( 100vw - 200px ) * .45 );
-        width: calc( ( 100vw - 200px ) * .55 );
-      }
-      @include bp-min($max) {
-        margin-left: 600px;
-        width: 800px;
-      }
+    @include bp-min($xsm) {
+      .col-1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        min-height: 100vh;
 
-      .tabs-wrapper .tab {
-        padding: 2vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 40%;
+        @include bp-min($sml) {
+          width: calc( ( 100vw - 150px ) * .40 );
+        }
+        @include bp-min($lrg) {
+          width: calc( ( 100vw - 200px ) * .45 );
+        }
+        @include bp-min($max) {
+          width: 600px;
+        }
       }
-      // @include bp-min($max) {
-      //   padding-left: calc( 50% + ( 100vw - $max ) / 2);
-      // }
+      .col-2 {
+        // needs to be zero for active states
+        padding: 0;
+
+        margin-left: 40%;
+        width: 60%;
+        @include bp-min($sml) {
+          margin-left: calc( ( 100vw - 150px ) * .40 );
+          width: calc( ( 100vw - 150px ) * .60 );
+        }
+        @include bp-min($lrg) {
+          margin-left: calc( ( 100vw - 200px ) * .45 );
+          width: calc( ( 100vw - 200px ) * .55 );
+        }
+        @include bp-min($max) {
+          margin-left: 600px;
+          width: 800px;
+        }
+
+      }
     }
-
 
     .col-full {
       width: 100%;
-      padding: 2vw;
+      padding: 4vw;
     }
 
     .tab-nav {
       list-style: none;
       margin: 30px 0;
       padding: 0;
+
+      display: none;
+      @include bp-min($xsm) {
+        display: block;
+      }
 
       li {
         margin: 0;
@@ -1017,13 +1063,15 @@ main {
 /* Color */
 body #color {
   &.active  {
-    .color-swatches {
-      .color-1 {animation: pop .5s both normal 0.25s;}
-      .color-2 {animation: pop .5s both normal 0.50s;}
-      .color-3 {animation: pop .5s both normal 0.75s;}
-      .color-4 {animation: pop .5s both normal 1.00s;}
-      .color-5 {animation: pop .5s both normal 1.25s;}
-      .color-6 {animation: pop .5s both normal 1.50s;}
+    @include bp-min($xsm) {
+      .color-swatches {
+        .color-1 {animation: pop .5s both normal 0.25s;}
+        .color-2 {animation: pop .5s both normal 0.50s;}
+        .color-3 {animation: pop .5s both normal 0.75s;}
+        .color-4 {animation: pop .5s both normal 1.00s;}
+        .color-5 {animation: pop .5s both normal 1.25s;}
+        .color-6 {animation: pop .5s both normal 1.50s;}
+      }
     }
   }
 }
@@ -1060,13 +1108,17 @@ body #color {
   }
 
   .color-swatches {
-    display: flex;
-    flex-flow: row wrap;
-    height: 75vh;
-    position: relative;
-    padding: 2vw;
-    width: 100%;
-    z-index: 2;
+    display: none;
+    @include bp-min($xsm) {
+      height: 75vh;
+      display: flex;
+      flex-flow: row wrap;
+      position: relative;
+      padding: 2vw;
+      width: 100%;
+      z-index: 2;
+    }
+
 
     .color {
       display: block;
@@ -1113,7 +1165,6 @@ body #color {
     }
   }
   .color-swatch-info {
-    position: absolute;
     left: 0;
     top: 0;
     height: 100%;
@@ -1121,26 +1172,41 @@ body #color {
     pointer-events: none;
     z-index: 3;
 
+    position: relative;
+    @include bp-min($xsm) {
+      position: absolute;
+    }
+
     .swatch-info {
       cursor: text;
-      opacity: 0;
-      padding: 50px;
       border-radius: $bdr;
       background: inherit;
       border:1px solid rgba(0,0,0,.5);
       @include font-size(18px);
-      position: absolute;
       display: flex;
       align-items: center;
       justify-content: flex-start;
-      width: 50%;
-      height: 50%;
-      left: 0;
-      top: 0;
-      transform: translate(50%,50%) scale(.8);
       transition: opacity .25s, box-shadow .25s, transform .25s;
-      pointer-events: none;
-      box-shadow: 0 0 0 rgba(0,0,0,0);
+      padding: 150px 20px 20px 20px;
+      margin: 15px 0;
+
+      @include bp-min($xsm) {
+        padding: 20px;
+        margin: 0;
+        opacity: 0;
+        position: absolute;
+        pointer-events: none;
+        transform: translate(50%,50%) scale(.8);
+        box-shadow: 0 0 0 rgba(0,0,0,0);
+        width: 50%;
+        height: 50%;
+        left: 0;
+        top: 0;
+      }
+
+      @include bp-min($xlg) {
+        padding: 50px;
+      }
 
       h3 {
         @include font-size(18px);
@@ -1161,9 +1227,13 @@ body #color {
       }
 
       .close-btn {
-        position: absolute;
-        right: 15px;
-        top: 15px;
+        display: none;
+        @include bp-min($xsm) {
+          display: block;
+          position: absolute;
+          right: 15px;
+          top: 15px;
+        }
       }
 
       &.active {
@@ -1174,9 +1244,6 @@ body #color {
         z-index: 4;
       }
 
-      @include bp-max($xlg) {
-        padding: 20px;
-      }
     }
 
   }
@@ -1200,7 +1267,6 @@ body #color {
 
   blockquote {
     margin: 0;
-    padding: 30px 40px;
     color: #000;
   }
   .live-type {
@@ -1286,8 +1352,19 @@ body #color {
     }
   }
 
+  @include bp-max($xsm - 1) {
+    #type-styles .tab-inner {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-shadow: 4px 4px 10px rgba(0,0,0,.25);
+      padding: 10px 0;
+    }
+  }
   .usage {
-    padding: 15px 40px;
+    padding: 15px 20px;
+    @include bp-min($xsm) {
+      padding: 15px 40px;
+    }
     span {
       @include transition(.25s color);
     }
@@ -1338,102 +1415,119 @@ body #color {
 }
 
 /* Photography */
-.content section#photography.with-tabs .tab img {max-width: 100%;}
-
-.mosaic {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 636px;
-
-  img {
-    display: block;
+.content section#photography {
+  &.with-tabs .tab img {max-width: 100%;}
+  .tab {
+    @include bp-max($xsm - 1) {
+      padding: 2vw calc(4vw - 5px);
+    }
+    // &:nth-of-type(2n) {
+    //   .row-1 .col-2-3 {order: 1;}
+    //   .row-1 .col-1-3 {order: 2;}
+    //   .row-2 .col-1-3 {order: 1;}
+    //   .row-2 .col-2-3 {order: 2;}
+    // }
   }
 
-  .tab-nav li:nth-of-type(2n) {
-    display: block;
-  }
-
-  .row {
+  .mosaic {
     display: flex;
-    align-items: stretch;
-    margin: 5px 0;
-    width: 100%;
-  }
+    flex-wrap: wrap;
+    max-width: 636px;
 
-  .col {
-    margin: 0 5px;
-
-    &.col-1-3 {
-      width: 39%;
+    img {
+      display: block;
     }
-    &.col-2-3 {
-      width: 61%
+
+    .tab-nav li:nth-of-type(2n) {
+      display: block;
     }
-  }
-  .col-special {
-    flex-shrink: 0;
-    border-radius: $bdr;
-    overflow: hidden;
-  }
 
-  .spacer {
-    height: 10px;
-  }
-
-  .photo {
-    border-radius: $bdr;
-    overflow: hidden;
-
-    &.border {
-      border: 1px solid #ccc;
-    }
-  }
-
-  .photo-info-wrap {
-    height: 100%;
-    width: 100%;
-    display: flex;
-
-    .photo-info {
+    .row {
       display: flex;
-      align-items: center;
-      align-content: center;
-      flex-wrap: wrap;
-      background: #fff;
-      padding: 0 25px;
-      border: 1px solid #ccc;
+      align-items: stretch;
+      margin: 5px 0;
+      width: 100%;
+
+      &.row-1 {
+        .col-a {order: 2;}
+      }
+
+      .col {
+        margin: 0 5px;
+        padding: 0;
+
+        &.col-1-3 {
+          width: 39%;
+        }
+        &.col-2-3 {
+          width: 61%
+        }
+        &.col-special {
+          border-radius: $bdr;
+          overflow: hidden;
+        }
+      }
+    }
+
+    .spacer {
+      height: 10px;
+    }
+
+    .photo {
       border-radius: $bdr;
+      overflow: hidden;
 
-      &.blk {
-        border: 0;
-        background: #000;
-        color: #fff;
+      &.border {
+        border: 1px solid #ccc;
       }
+    }
 
-      &.gry {
-        border: 0;
-        background: #5a5a5c;
-        color: #fff;
-      }
+    .photo-info-wrap {
+      height: 100%;
+      width: 100%;
+      display: flex;
 
-      &.ltg {
-        border: 0;
-        background: #ebeef0;
-        color: #000;
+      .photo-info {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        background: #fff;
+        padding: 0 25px;
+        border: 1px solid #ccc;
+        border-radius: $bdr;
 
-        h3 {
-          color: #999;
+        &.blk {
+          border: 0;
+          background: #000;
+          color: #fff;
         }
-      }
-      p {
-        @include font-size(14px);
-        @include bp-min($xlg) {
-          @include font-size(18px);
-        }
-      }
 
-      &#photography-null {
-        background: transparent;
+        &.gry {
+          border: 0;
+          background: #5a5a5c;
+          color: #fff;
+        }
+
+        &.ltg {
+          border: 0;
+          background: #ebeef0;
+          color: #000;
+
+          h3 {
+            color: #999;
+          }
+        }
+        p {
+          @include font-size(14px);
+          @include bp-min($xlg) {
+            @include font-size(18px);
+          }
+        }
+
+        &#photography-null {
+          background: transparent;
+        }
       }
     }
   }
@@ -1615,19 +1709,27 @@ body #color {
 /* Sub brands */
 #sub-brands {
   .col-2 {
-    padding: 0 3.5%;
+    @include bp-min($xsm) {
+      padding: 0 3.5%;
+    }
   }
   .sub-brand-logos {
     display: flex;
     justify-content: flex-start;
     position: relative;
     overflow: hidden;
+    margin: 0 -4vw;
+    @include bp-min($xsm) {
+      margin: 0;
+    }
 
     .sub-brand-logo-1 {
       padding-right: 12px;
       position: relative;
       z-index: 2;
-      padding: 40px;
+      @include bp-min($xsm) {
+        padding: 40px;
+      }
 
       ul {
         list-style: none;
@@ -2007,6 +2109,7 @@ body #color {
       overflow: hidden;
       z-index: 99;
       background: url(../images/login-intro.jpg) center center no-repeat #000;
+      pointer-events: none;
       @include bp-min($mid) {
         z-index: 1;
         background: #000;
@@ -2081,7 +2184,9 @@ body #color {
 /* Downloads */
 #downloads {
   display: block;
-  padding: 15vh 0 10vh 0;
+  @include bp-min($xsm) {
+    padding: 15vh 0 10vh 0;
+  }
 
   .button {
     min-width: 150px;
@@ -2089,6 +2194,10 @@ body #color {
   .downloads {
     display: flex;
     flex-wrap: wrap;
+    margin: -15px;
+    @include bp-min($xsm) {
+      margin: 0;
+    }
 
     .download-row {
       display: flex;
@@ -2097,7 +2206,10 @@ body #color {
       justify-content: space-between;
 
       flex: 0 1 50%;
-      padding: 40px 20px;
+      padding: 20px 15px;
+      @include bp-min($xsm) {
+        padding: 40px 20px;
+      }
       @include bp-min($mid) {
         flex: 0 1 33.3%;
         padding: 40px 1vw;
@@ -2135,7 +2247,13 @@ body #color {
 
 /* Creative Examples */
 #creative-examples {
-  padding: 100px 0;
+  @include bp-min($xsm) {
+    padding: 100px 0;
+  }
+
+  .grid {
+    margin: -8px;
+  }
 }
 
 /* lightbox */
@@ -2171,96 +2289,6 @@ body #color {
 .ui-widget.ui-tooltip {
   @include Brown(14px, 400);
 }
-
-
-/* Color changing */
-// body[data-bg=drk-gry],
-// body[data-bg=black] {
-//   background: #000;
-//   color: #fff;
-//
-//   &.button-wrapping .button span,
-//   &:not(.button-wrapping) .button {
-//     border-color: #fff;
-//     background: #fff;
-//     color: #000;
-//   }
-//
-//   &.button-wrapping .button {
-//     &.active,
-//     &:hover {
-//       span {
-//         background: #000;
-//         color: #fff;
-//       }
-//     }
-//   }
-//   &:not(.button-wrapping) .button {
-//     &.active,
-//     &:hover {
-//       background: #000;
-//       color: #fff;
-//     }
-//   }
-//
-//   .optionNav a {border-color: #fff !important;}
-//   .optionNav a.active {background: #fff !important;}
-//
-//   .sidebar {
-//     background: #fff; color: #000;
-//     .logo svg { fill: #000; }
-//     a {
-//       color: #000;
-//       &:hover { color: #fff; background: #000; }
-//     }
-//   }
-//
-//   #typography blockquote {color: #fff;}
-//   #typography .weight::-webkit-slider-thumb {background: #000; border-color: #666;}
-//   #typography .weight::-webkit-slider-runnable-track {background-color: #333;}
-//
-//   .content p.download a {
-//     color: #ccc;
-//     svg * {
-//       fill: #ccc;
-//     }
-//
-//     &:hover {
-//       color: #999;
-//       svg * {
-//         fill: #999;
-//       }
-//     }
-//   }
-//
-//   &.button-wrapping .download-intro {
-//     .button span {
-//       border-color: #000;
-//       background: #000;
-//       color: #fff;
-//     }
-//   }
-//
-//   &.button-wrapping .download-intro .button {
-//     &.active,
-//     &:hover {
-//       span {
-//         background: #fff;
-//         color: #000;
-//       }
-//     }
-//   }
-//   &:not(.button-wrapping) .download-intro .button {
-//     &.active,
-//     &:hover {
-//       background: #fff;
-//       color: #000;
-//     }
-//   }
-// }
-// body[data-bg=drk-gry] {
-//   background: #1e1e1e;
-// }
 
 section .tab[data-bg=drk-gry],
 section .tab[data-bg=black] {

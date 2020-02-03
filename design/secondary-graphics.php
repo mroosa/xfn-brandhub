@@ -1,7 +1,7 @@
 <div class="col-1">
   <h1>Secondary Graphics</h1>
   <p>Our secondary graphics library helps us tell a greater brand story. They should not be used to replace the primary Xfinity logo, but rather further communications about specific product experiences. Please do not create any new secondary graphics.</p>
-  <p class="download"><a href="#downloads">Download Secondary Graphics</a></p>
+  <a class="button" href="#downloads"><span>Download Secondary Graphics</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

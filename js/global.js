@@ -256,16 +256,9 @@ $(document).ready(function() {
 
     // Create Tab buttons in main column, add to subnav
     if (numTabs > 1) {
-      thisSec.find(".col-1 p.download, .col-1 p.explore").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
-      $('#subnav a[href="#' + thisSec.attr("id") + '"]').parent().append('<ul id="tert-nav">' + subNavContents + '</ul>');
+      //thisSec.find(".col-1 p.download, .col-1 p.explore").prev().append('<ul class="tab-nav">' + tabNavContents + '</ul>');
+      $('#subnav a[href="#' + thisSec.attr("id") + '"]').parent().append('<ul class="tert-nav">' + subNavContents + '</ul>');
     }
-    // thisSec.find(".set-tab").click(function() {
-    //   var newTab = $(this).attr("data-id");
-    //   tabGo(newTab, theTabs);
-    //   $(this).parents(".tab-nav").find(".active").removeClass("active");
-    //   $(this).addClass("active");
-    //   return false;
-    // });
   });
 
   // Add count to left button navs

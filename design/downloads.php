@@ -28,7 +28,7 @@
             <div class="download-row" id="photography">
               <h3>Photography</h3>
               <img src="images/downloads/photography.png" alt="" />
-              <a class="button" href="http://xfinity.com/" target="_blank"><span>Download</span></a>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="end-card">
@@ -52,19 +52,19 @@
             <div class="download-row" id="xfinity-design-guidelines">
               <h3>Xfinity Design Guidelines</h3>
               <img src="images/downloads/design-guidelines.png" alt="" />
-              <a class="button" href="http://xfinity.com/" target="_blank"><span>Download</span></a>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="messaging-guidelines">
               <h3>Messaging Guidelines</h3>
               <img src="images/downloads/messaging-guidelines.png" alt="" />
-              <a class="button" href="http://xfinity.com/" target="_blank"><span>Download</span></a>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div><!-- /.download-row -->
 
             <div class="download-row" id="supplemental-guidelines">
               <h3>Supplemental Guidelines</h3>
               <img src="images/downloads/supplemental-guidelines.png" alt="" />
-              <a class="button" href="http://xfinity.com/" target="_blank"><span>Download</span></a>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div><!-- /.download-row -->
 
           </div><!-- /.downloads -->

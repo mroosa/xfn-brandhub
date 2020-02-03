@@ -1,7 +1,7 @@
 <div class="col-1">
   <h1>Photography</h1>
   <p>Our photography reinforces our design principles, showcasing simple, focused and unique imagery with unexpected perspectives. Our photography captures authentic moments and employs a clean color palette with occasional pops of color. All photography is naturally lit and unfiltered.</p>
-  <p class="explore"><a href="https://www.google.com" target="_blank">Explore Photography Library</a></p>
+  <a class="button" href="https://google.com" target="_blank"><span>Explore Photography</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

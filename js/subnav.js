@@ -13,12 +13,15 @@ $(document).ready(function() {
         if (item.length) { return item; }
       });
 
-  var internalNav = $(".tab-nav"),
+  var internalNav = $(".tert-nav"),
       internalMenuItems = internalNav.find("a"),
       internalScrollItems = internalMenuItems.map(function() {
     var item = $($(this).attr("href"));
     if (item.length) { return item; }
   });
+
+
+
 
  	var stickyNav = function(){
     var scrollTop = $(window).scrollTop();
@@ -107,7 +110,7 @@ $(document).ready(function() {
     curInt = curInt[curInt.length-1];
     var iid = curInt && curInt.length ? curInt[0].id : "";
     internalMenuItems
-      .removeClass("active")
-      .filter("[href='#"+iid+"']").addClass("active");
+      .parent().removeClass("active")
+      .end().filter("[href='#"+iid+"']").parent().addClass("active");
 	});
 });

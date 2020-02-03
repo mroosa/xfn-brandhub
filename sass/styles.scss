@@ -222,7 +222,7 @@ main {
         top: 0;
       }
     }
-    #tert-nav {
+    .tert-nav {
       display: none;
     }
   }
@@ -290,6 +290,7 @@ main {
       padding: 5px 0;
       @include font-size(14px);
       font-weight: 100;
+      line-height: 125%;
 
       .menu {
         padding: 0;
@@ -298,7 +299,7 @@ main {
       a {
         display: block;
         margin: 0 -10px;
-        padding: 5px 10px 3px 10px;
+        padding: 4px 10px 2px 10px;
         text-decoration: none;
         color: #fff;
         // transition:color .25s, background .25s;
@@ -309,10 +310,26 @@ main {
         }
       }
 
-      &.active > a {
-        background: #fff;
-        color: #000;
-        font-weight: bold;
+      &.active {
+
+        & > a {
+          background: #fff;
+          color: #000;
+          font-weight: bold;
+        }
+
+        li.active > a {
+          background: transparent;
+          color: #fff;
+
+          &:before {
+            color: rgba(255, 255, 255, 1);
+          }
+        }
+
+        .tert-nav {
+          display: block;
+        }
       }
 
       li {
@@ -320,7 +337,16 @@ main {
         padding: 0;
 
         a {
-          padding: 6px 10px 6px 25px;
+          margin: 0;
+          padding: 6px 5px 6px 15px;
+          text-indent: -15px;
+
+          &:before {
+            content: "• ";
+            margin: 0 3px 0 0;
+            transition: .25s;
+            color: rgba(255,255,255, 0);
+          }
         }
       }
     }
@@ -1189,6 +1215,9 @@ body #color {
       transition: opacity .25s, box-shadow .25s, transform .25s;
       padding: 150px 20px 20px 20px;
       margin: 15px 0;
+
+      &#color-accent-red,
+      &#color-action-blue {padding-top: 5px;}
 
       @include bp-min($xsm) {
         padding: 20px;

@@ -2,7 +2,7 @@
 <div class="col-1">
   <h1>Sub-Brands</h1>
   <p>Our masterbrand strategy includes products, features and benefits that support Xfinity. Sub-Brand logos have been designed for strategically significant experiences, particularly for products and packaging. The primary Xfinity logo should be used in the majority of communications.</p>
-  <p class="download"><a href="#downloads">Download Sub-Brand logos</a></p>
+  <a class="button" href="#downloads"><span>Download Sub-Brand logos</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

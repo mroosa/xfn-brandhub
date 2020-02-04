@@ -13,24 +13,7 @@
 ?>
 <div class="col-full">
   <h1>Creative Examples</h1>
-  <!-- <div class="form"> -->
-  <?php
-    // Output tags
-    // $output = "";
-    // foreach($taglist as $tag) {
-    //   $output .= "<div class=\"selection\">\n";
-    //   $output .= "\t<label for=\"" . $tag -> id . "\">" . $tag -> title . "</label>\n";
-    //   $output .= "\t<select id=\"" . $tag -> id . "\" name=\"" . $tag -> id . "\">\n";
-    //   $output .= "\t\t<option value=\"all\">" . $tag -> all ."</option>\n";
-    //   foreach($tag -> options as $option) {
-    //     $output .= "\t\t<option value=\"" . $option -> value ."\">" . $option -> title ."</option>\n";
-    //   }
-    //   $output .= "\t</select>\n";
-    //   $output .= "</div><!-- /.selection -->\n";
-    // }
-    // echo $output;
-  ?>
-  <!-- </div> -->
+
   <div class="inspiration-gallery">
     <?php
       // grid items

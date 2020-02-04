@@ -1761,68 +1761,131 @@ body #color {
       padding: 0 3.5%;
     }
   }
+
+  #our-sub-brands {
+    flex-direction: column;
+    align-items: flex-start;
+
+    .sub-brand-logos li img,
+    .sub-brand-nav li img {
+      max-width: 100%;
+      margin: 0;
+
+    }
+
+  }
   .sub-brand-logos {
     display: flex;
     justify-content: flex-start;
     position: relative;
     overflow: hidden;
-    margin: 0 -4vw;
-    @include bp-min($xsm) {
-      margin: 0;
-    }
+    height: $lht;
+    width: 100%;
 
     .sub-brand-logo-1 {
       padding-right: 12px;
       position: relative;
       z-index: 2;
-      @include bp-min($xsm) {
-        padding: 40px;
+      background: #fff;
+
+      &,
+      img {
+        height: $lht;
       }
+    }
+    .sub-brand-logo-2 {
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      left: 0;
 
       ul {
+        position: relative;
         list-style: none;
         margin: 0;
         padding: 0;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        transition: .5s margin;
 
         li {
-          &:nth-of-type(1),
-          &:nth-of-type(2) {transition-delay: .25s;}
-          &:nth-of-type(3),
-          &:nth-of-type(4) {transition-delay: .45s;}
-          &:nth-of-type(5),
-          &:nth-of-type(6) {transition-delay: .65s;}
-          &:nth-of-type(1) {transform: scale(1) translate(-40px, -40px); transform-origin: right bottom;}
-          &:nth-of-type(2) {transform: scale(1) translate(40px, -40px); transform-origin: left bottom;}
-          &:nth-of-type(3) {transform: scale(1) translate(-40px, 0); transform-origin: right center;}
-          &:nth-of-type(4) {transform: scale(1) translate(40px, 0); transform-origin: left center;}
-          &:nth-of-type(5) {transform: scale(1) translate(-40px, 40px); transform-origin: right top;}
-          &:nth-of-type(6) {transform: scale(1) translate(40px, 40px); transform-origin: left top;}
+          margin: 10px 0;
 
-          transition: .5s opacity, .5s transform;
-          opacity: 0;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-          flex-basis: 50%;
-
-          img {
-            margin: 20px 0;
-            max-width: 100%;
+          &:first-child {
+            margin-top: 0;
           }
-
-
+          img {
+            width: auto;
+          }
+          &,
+          img {
+            height: $lht;
+          }
         }
       }
     }
   }
+  .sub-brands {
+    overflow: hidden;
+    margin: 30px 0;
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 600%;
+      transition: .25s margin;
 
-  &.active {
-    .sub-brand-logo-1 ul li:nth-of-type(n) {
-      transform: scale(.9) translate(0, 0);
-      opacity: 1;
+      li {
+        flex-basis: 16.66666%;
+        padding-right: 20px;
+        display: flex;
+
+        div {
+          flex: 1 0 100%;
+          padding: 10px;
+          p {
+            @include font-size(15px);
+          }
+        }
+
+        img {
+          text-align: center;
+          max-width: 80%;
+        }
+      }
+    }
+  }
+  .sub-brand-nav {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+
+      li {
+        transition: .25s opacity;
+        opacity: .25;
+        flex-basis: 33%;
+        padding: 0 20px 0 0;
+
+        img {
+          height: 15px;
+          @include bp-min($xlg) {
+            height: 23px;
+          }
+          max-height: 100%;
+          max-width: none;
+        }
+
+        &:hover,
+        &.active {
+          opacity: 1;
+        }
+      }
     }
   }
 }

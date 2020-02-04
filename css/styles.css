@@ -1641,67 +1641,98 @@ main {
   #sub-brands .col-2 {
     padding: 0 3.5%; } }
 
+#sub-brands #our-sub-brands {
+  flex-direction: column;
+  align-items: flex-start; }
+  #sub-brands #our-sub-brands .sub-brand-logos li img,
+  #sub-brands #our-sub-brands .sub-brand-nav li img {
+    max-width: 100%;
+    margin: 0; }
+
 #sub-brands .sub-brand-logos {
   display: flex;
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-  margin: 0 -4vw; }
-  @media (min-width: 550px) {
-    #sub-brands .sub-brand-logos {
-      margin: 0; } }
+  height: 70px;
+  width: 100%; }
   #sub-brands .sub-brand-logos .sub-brand-logo-1 {
     padding-right: 12px;
     position: relative;
-    z-index: 2; }
-    @media (min-width: 550px) {
-      #sub-brands .sub-brand-logos .sub-brand-logo-1 {
-        padding: 40px; } }
-    #sub-brands .sub-brand-logos .sub-brand-logo-1 ul {
+    z-index: 2;
+    background: #fff; }
+    #sub-brands .sub-brand-logos .sub-brand-logo-1,
+    #sub-brands .sub-brand-logos .sub-brand-logo-1 img {
+      height: 70px; }
+  #sub-brands .sub-brand-logos .sub-brand-logo-2 {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0; }
+    #sub-brands .sub-brand-logos .sub-brand-logo-2 ul {
+      position: relative;
       list-style: none;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start; }
-      #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li {
-        transition: .5s opacity, .5s transform;
-        opacity: 0;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        flex-basis: 50%; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(1), #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(2) {
-          transition-delay: .25s; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(3), #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(4) {
-          transition-delay: .45s; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(5), #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(6) {
-          transition-delay: .65s; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(1) {
-          transform: scale(1) translate(-40px, -40px);
-          transform-origin: right bottom; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(2) {
-          transform: scale(1) translate(40px, -40px);
-          transform-origin: left bottom; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(3) {
-          transform: scale(1) translate(-40px, 0);
-          transform-origin: right center; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(4) {
-          transform: scale(1) translate(40px, 0);
-          transform-origin: left center; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(5) {
-          transform: scale(1) translate(-40px, 40px);
-          transform-origin: right top; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li:nth-of-type(6) {
-          transform: scale(1) translate(40px, 40px);
-          transform-origin: left top; }
-        #sub-brands .sub-brand-logos .sub-brand-logo-1 ul li img {
-          margin: 20px 0;
-          max-width: 100%; }
+      transition: .5s margin; }
+      #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li {
+        margin: 10px 0; }
+        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li:first-child {
+          margin-top: 0; }
+        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li img {
+          width: auto; }
+        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li,
+        #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li img {
+          height: 70px; }
 
-#sub-brands.active .sub-brand-logo-1 ul li:nth-of-type(n) {
-  transform: scale(0.9) translate(0, 0);
-  opacity: 1; }
+#sub-brands .sub-brands {
+  overflow: hidden;
+  margin: 30px 0; }
+  #sub-brands .sub-brands ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 600%;
+    transition: .25s margin; }
+    #sub-brands .sub-brands ul li {
+      flex-basis: 16.66666%;
+      padding-right: 20px;
+      display: flex; }
+      #sub-brands .sub-brands ul li div {
+        flex: 1 0 100%;
+        padding: 10px; }
+        #sub-brands .sub-brands ul li div p {
+          font-size: 15px;
+          font-size: 0.9375rem; }
+      #sub-brands .sub-brands ul li img {
+        text-align: center;
+        max-width: 80%; }
+
+#sub-brands .sub-brand-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap; }
+  #sub-brands .sub-brand-nav ul li {
+    transition: .25s opacity;
+    opacity: .25;
+    flex-basis: 33%;
+    padding: 0 20px 0 0; }
+    #sub-brands .sub-brand-nav ul li img {
+      height: 15px;
+      max-height: 100%;
+      max-width: none; }
+      @media (min-width: 1200px) {
+        #sub-brands .sub-brand-nav ul li img {
+          height: 23px; } }
+    #sub-brands .sub-brand-nav ul li:hover, #sub-brands .sub-brand-nav ul li.active {
+      opacity: 1; }
 
 /* Visual Layouts */
 #visual-layouts #btg {

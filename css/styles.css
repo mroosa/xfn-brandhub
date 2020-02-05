@@ -1089,6 +1089,9 @@ main {
   body #color.active .color-swatches .color-6 {
     animation: pop .5s both normal 1.50s; } }
 
+body #color .color-swatches .color {
+  animation: reveal .5s both reverse; }
+
 #color #color-palette {
   position: relative; }
 
@@ -1819,6 +1822,10 @@ main {
     #secondary-graphics-mobile-app-icons #sg-m-1 li.img,
     #secondary-graphics-mobile-app-icons #sg-m-2 li.img {
       margin: 0; }
+    #secondary-graphics-additional #sg-ag-1 li.icon img,
+    #secondary-graphics-mobile-app-icons #sg-m-1 li.icon img,
+    #secondary-graphics-mobile-app-icons #sg-m-2 li.icon img {
+      max-width: 75px !important; }
     #secondary-graphics-additional #sg-ag-1 li span,
     #secondary-graphics-mobile-app-icons #sg-m-1 li span,
     #secondary-graphics-mobile-app-icons #sg-m-2 li span {
@@ -1835,6 +1842,9 @@ main {
 
 #secondary-graphics-mobile-app-icons #sg-m-1 li {
   flex: 0 0 33%; }
+  @media (min-width: 1350px) {
+    #secondary-graphics-mobile-app-icons #sg-m-1 li {
+      flex: 0 0 25%; } }
 
 #secondary-graphics-mobile-app-icons #sg-m-2 li {
   flex: 0 0 100%; }

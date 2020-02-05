@@ -31,14 +31,14 @@
         <ul class="optionWrap animate">
           <li>
             <ul id="sg-m-1">
-              <li class="img width-65"><img src="images/secondary-graphics/02-8.svg" alt=""><span>Xfinity xFi app</span></li>
-              <li class="img width-65"><img src="images/secondary-graphics/02-2.svg" alt=""><span>Xfinity Mobile app</span></li>
-              <li class="img width-65"><img src="images/secondary-graphics/02-3.svg" alt=""><span>Xfinity Home app</span></li>
-              <li class="img width-65"><img src="images/secondary-graphics/02-4.svg" alt=""><span>My Account app</span></li>
-              <li class="img width-65"><img src="images/secondary-graphics/02-5.svg" alt=""><span>WiFi Hotspot app</span></li>
-              <li class="img width-65"><img src="images/secondary-graphics/02-7.svg" alt=""><span>Connect app</span></li>
-              <li class="img width-65"><img src="images/secondary-graphics/02-1.svg" alt=""><span>Xfinity Remote app</span></li>
-              <li class="img width-65"><img src="images/secondary-graphics/02-6.svg" alt=""><span>Xfinity Stream app</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-8.svg" alt=""><span>Xfinity xFi</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-2.svg" alt=""><span>Xfinity Mobile</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-3.svg" alt=""><span>Xfinity Home</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-4.svg" alt=""><span>My Account</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-5.svg" alt=""><span>WiFi Hotspot</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-7.svg" alt=""><span>Connect</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-1.svg" alt=""><span>Xfinity Remote</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-6.svg" alt=""><span>Xfinity Stream</span></li>
             </ul>
           </li>
           <li>
@@ -57,10 +57,10 @@
         <h3>Additional Graphics</h3>
         <ul class="optionWrap"><li>
           <ul id="sg-ag-1">
-            <li class="img width-45"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
-            <li class="img width-45"><img src="images/secondary-graphics/03-3.svg" alt=""><span>Voice Remote Icon</span></li>
-            <li class="img width-45"><img src="images/secondary-graphics/03-4.svg" alt=""><span>WiFi</span></li>
-            <li class="img width-45"><img src="images/secondary-graphics/03-5.svg" alt=""><span>WiFi Hotspot</span></li>
+            <li class="img width-45 icon"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
+            <li class="img width-45 icon"><img src="images/secondary-graphics/03-3.svg" alt=""><span>Voice Remote Icon</span></li>
+            <li class="img width-45 icon"><img src="images/secondary-graphics/03-4.svg" alt=""><span>WiFi</span></li>
+            <li class="img width-45 icon"><img src="images/secondary-graphics/03-5.svg" alt=""><span>WiFi Hotspot</span></li>
           </ul>
         </li></ul>
       </div>

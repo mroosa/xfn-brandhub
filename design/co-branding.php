@@ -25,7 +25,7 @@
           <li>
             <div>
               <div class="img width-45"><img src="images/co-branding/01-3.png" alt=""></div>
-              <img class="border rounded" src="images/co-branding/01-4.png" alt="">
+              <img style="max-height: 200px;" class="border rounded" src="images/co-branding/01-4.png" alt="">
             </div>
           </li>
           <li><div class="img"><img style="width: 450px;" src="images/co-branding/01-5.svg" alt=""></div></li>

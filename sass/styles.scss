@@ -1119,6 +1119,9 @@ body #color {
       }
     }
   }
+  .color-swatches {
+    .color {animation: reveal .5s both reverse;}
+  }
 }
 #color {
 
@@ -2086,6 +2089,12 @@ body #color {
       margin: 0;
     }
 
+    &.icon {
+      img {
+        max-width: 75px !important;
+      }
+    }
+
     span {
       display: block;
       padding: 10px 0;
@@ -2096,7 +2105,12 @@ body #color {
   }
 }
 #secondary-graphics-additional #sg-ag-1 li {flex: 0 1 50%}
-#secondary-graphics-mobile-app-icons #sg-m-1 li {flex: 0 0 33%;}
+#secondary-graphics-mobile-app-icons #sg-m-1 li {
+  flex: 0 0 33%;
+  @include bp-min(1350px) {
+    flex: 0 0 25%;
+  }
+}
 #secondary-graphics-mobile-app-icons #sg-m-2 li {flex: 0 0 100%;}
 
 /* Login page */

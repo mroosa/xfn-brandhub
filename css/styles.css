@@ -2055,6 +2055,7 @@ body #color .color-swatches .color {
     .downloads .download-row h3 {
       font-weight: 400;
       margin: 0;
+      flex-grow: 1;
       font-size: 18px;
       font-size: 1.125rem; }
       @media (min-width: 960px) {
@@ -2078,6 +2079,12 @@ body #color .color-swatches .color {
       margin: 10px 0 15px 0;
       border: 1px solid #cccccc;
       border-radius: 4px; }
+    .tiles .tile-row p,
+    .tiles .download-row p,
+    .downloads .tile-row p,
+    .downloads .download-row p {
+      font-size: 15px;
+      font-size: 0.9375rem; }
     .tiles .tile-row .button,
     .tiles .download-row .button,
     .downloads .tile-row .button,
@@ -2095,7 +2102,7 @@ body #color .color-swatches .color {
 
 /* Contact */
 @media (min-width: 768px) {
-  #contact-resources .col-full p {
+  #contact-resources .col-full > p {
     width: 40%; } }
 
 /* lightbox */

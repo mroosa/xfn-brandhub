@@ -2373,6 +2373,7 @@ body #color {
     h3 {
       font-weight: 400;
       margin: 0;
+      flex-grow: 1;
 
       @include font-size(18px);
       @include bp-min($mid) {
@@ -2389,6 +2390,11 @@ body #color {
       border: 1px solid rgb(204,204,204);
       border-radius: 4px;
     }
+
+    p {
+      @include font-size(15px);
+    }
+
     .button {
       width: 100%;
       margin: 0;
@@ -2409,7 +2415,7 @@ body #color {
 
 /* Contact */
 #contact-resources {
-  .col-full p {
+  .col-full > p {
     @include bp-min($sml) {
       width: 40%;
     }

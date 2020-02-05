@@ -70,7 +70,7 @@
             <div class="tile-row" id="download-olympics">
               <h3>Olympics 2020</h3>
               <img src="images/downloads/olympics.png" alt="" />
-              <a class="button" href="#" target="_blank"><span>Explore</span></a>
+              <a class="button" href="#" target="_blank"><span>Download</span></a>
             </div><!-- /.download-row -->
 
           </div><!-- /.downloads -->

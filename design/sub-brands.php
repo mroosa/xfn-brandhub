@@ -62,6 +62,14 @@
             <li><a href="#" data-brand="4">Xfinity Home</a></li>
             <li><a href="#" data-brand="5">Xfinity Mobile</a></li>
           </ul>
+          <!-- <ul>
+            <li class="active"><a href="#" data-brand="0"><img src="images/sub-brands/xfinity-x1.svg" alt=""></a></li>
+            <li><a href="#" data-brand="1"><img src="images/sub-brands/xfinity-xfi.svg" alt=""></a></li>
+            <li><a href="#" data-brand="2"><img src="images/sub-brands/xfinity-stream.svg" alt=""></a></li>
+            <li><a href="#" data-brand="3"><img src="images/sub-brands/xfinity-flex.svg" alt=""></a></li>
+            <li><a href="#" data-brand="4"><img src="images/sub-brands/xfinity-home.svg" alt=""></a></li>
+            <li><a href="#" data-brand="5"><img src="images/sub-brands/xfinity-mobile.svg" alt=""></a></li>
+          </ul> -->
         </div>
 
       </div>

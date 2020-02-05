@@ -2113,7 +2113,12 @@ body #color {
     }
   }
 }
-#secondary-graphics-additional #sg-ag-1 li {flex: 0 1 50%}
+#secondary-graphics-additional #sg-ag-1 li {
+  flex: 0 1 50%;
+  @include bp-min(1350px) {
+    flex: 0 0 25%;
+  }
+}
 #secondary-graphics-mobile-app-icons #sg-m-1 li {
   flex: 0 0 33%;
   @include bp-min(1350px) {

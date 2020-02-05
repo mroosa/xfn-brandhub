@@ -1844,6 +1844,9 @@ body #color .color-swatches .color {
 
 #secondary-graphics-additional #sg-ag-1 li {
   flex: 0 1 50%; }
+  @media (min-width: 1350px) {
+    #secondary-graphics-additional #sg-ag-1 li {
+      flex: 0 0 25%; } }
 
 #secondary-graphics-mobile-app-icons #sg-m-1 li {
   flex: 0 0 33%; }

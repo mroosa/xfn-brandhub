@@ -1766,7 +1766,7 @@ body #color {
     flex-direction: column;
     align-items: flex-start;
 
-    .sub-brand-logos li img,
+    .sub-brand-logos div li img,
     .sub-brand-nav li img {
       max-width: 100%;
       margin: 0;
@@ -1783,14 +1783,18 @@ body #color {
     width: 100%;
 
     .sub-brand-logo-1 {
-      padding-right: 12px;
       position: relative;
       z-index: 2;
-      background: #fff;
+      // background: #fff;
+
+      @include bp-max(1300px) {
+        display: none;
+      }
 
       &,
       img {
         height: $lht;
+        max-width: 100%;
       }
     }
     .sub-brand-logo-2 {
@@ -1839,7 +1843,9 @@ body #color {
 
       li {
         flex-basis: 16.66666%;
-        padding-right: 20px;
+        @include bp-min($sml) {
+          padding-right: 20px;
+        }
         display: flex;
 
         div {
@@ -1869,14 +1875,14 @@ body #color {
       li {
         transition: .25s opacity;
         opacity: .25;
-        flex-basis: 33%;
+        flex-basis: 50%;
+        @include bp-min($sml) {
+          flex-basis: 33%;
+        }
         padding: 0 20px 0 0;
 
         img {
-          height: 15px;
-          @include bp-min($xlg) {
-            height: 23px;
-          }
+          height: 23px;
           max-height: 100%;
           max-width: none;
         }

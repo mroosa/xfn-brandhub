@@ -12,7 +12,7 @@
 
         <div class="sub-brand-logos">
           <div class="sub-brand-logo-1">
-            <img src="images/xfinity-logo.svg" alt="">
+            <img src="images/sub-brands/xfinity-logo.svg" alt="">
           </div>
           <div class="sub-brand-logo-2">
             <ul>

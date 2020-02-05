@@ -1644,7 +1644,7 @@ main {
 #sub-brands #our-sub-brands {
   flex-direction: column;
   align-items: flex-start; }
-  #sub-brands #our-sub-brands .sub-brand-logos li img,
+  #sub-brands #our-sub-brands .sub-brand-logos div li img,
   #sub-brands #our-sub-brands .sub-brand-nav li img {
     max-width: 100%;
     margin: 0; }
@@ -1657,13 +1657,15 @@ main {
   height: 70px;
   width: 100%; }
   #sub-brands .sub-brand-logos .sub-brand-logo-1 {
-    padding-right: 12px;
     position: relative;
-    z-index: 2;
-    background: #fff; }
+    z-index: 2; }
+    @media (max-width: 1300px) {
+      #sub-brands .sub-brand-logos .sub-brand-logo-1 {
+        display: none; } }
     #sub-brands .sub-brand-logos .sub-brand-logo-1,
     #sub-brands .sub-brand-logos .sub-brand-logo-1 img {
-      height: 70px; }
+      height: 70px;
+      max-width: 100%; }
   #sub-brands .sub-brand-logos .sub-brand-logo-2 {
     position: absolute;
     z-index: 1;
@@ -1700,8 +1702,10 @@ main {
     transition: .25s margin; }
     #sub-brands .sub-brands ul li {
       flex-basis: 16.66666%;
-      padding-right: 20px;
       display: flex; }
+      @media (min-width: 768px) {
+        #sub-brands .sub-brands ul li {
+          padding-right: 20px; } }
       #sub-brands .sub-brands ul li div {
         flex: 1 0 100%;
         padding: 10px; }
@@ -1722,15 +1726,15 @@ main {
   #sub-brands .sub-brand-nav ul li {
     transition: .25s opacity;
     opacity: .25;
-    flex-basis: 33%;
+    flex-basis: 50%;
     padding: 0 20px 0 0; }
+    @media (min-width: 768px) {
+      #sub-brands .sub-brand-nav ul li {
+        flex-basis: 33%; } }
     #sub-brands .sub-brand-nav ul li img {
-      height: 15px;
+      height: 23px;
       max-height: 100%;
       max-width: none; }
-      @media (min-width: 1200px) {
-        #sub-brands .sub-brand-nav ul li img {
-          height: 23px; } }
     #sub-brands .sub-brand-nav ul li:hover, #sub-brands .sub-brand-nav ul li.active {
       opacity: 1; }
 

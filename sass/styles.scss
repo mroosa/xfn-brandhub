@@ -2407,6 +2407,15 @@ body #color {
   }
 }
 
+/* Contact */
+#contact-resources {
+  .col-full p {
+    @include bp-min($sml) {
+      width: 40%;
+    }
+  }
+}
+
 /* lightbox */
 
 

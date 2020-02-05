@@ -2093,6 +2093,11 @@ body #color .color-swatches .color {
 #creative-examples .grid {
   margin: -8px; }
 
+/* Contact */
+@media (min-width: 768px) {
+  #contact-resources .col-full p {
+    width: 40%; } }
+
 /* lightbox */
 /* Intro slide */
 .intro .caption {

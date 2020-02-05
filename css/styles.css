@@ -2006,7 +2006,7 @@ body #color .color-swatches .color {
   display: block; }
   @media (min-width: 550px) {
     #downloads {
-      padding: 15vh 0 10vh 0; } }
+      padding: 100px 0 10vh 0; } }
   #downloads .button {
     min-width: 150px; }
 
@@ -2101,6 +2101,10 @@ body #color .color-swatches .color {
   margin: -8px; }
 
 /* Contact */
+@media (min-width: 550px) {
+  #contact-resources {
+    padding: 100px 0 10vh 0; } }
+
 @media (min-width: 768px) {
   #contact-resources .col-full > p {
     width: 40%; } }

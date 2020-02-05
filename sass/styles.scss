@@ -2331,7 +2331,7 @@ body #color {
 #downloads {
   display: block;
   @include bp-min($xsm) {
-    padding: 15vh 0 10vh 0;
+    padding: 100px 0 10vh 0;
   }
 
   .button {
@@ -2415,6 +2415,9 @@ body #color {
 
 /* Contact */
 #contact-resources {
+  @include bp-min($xsm) {
+    padding: 100px 0 10vh 0;
+  }
   .col-full > p {
     @include bp-min($sml) {
       width: 40%;

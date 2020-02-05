@@ -1861,7 +1861,7 @@ body #color {
 
         img {
           text-align: center;
-          max-width: 80%;
+          max-width: 50%;
         }
       }
     }
@@ -1890,9 +1890,18 @@ body #color {
           max-width: none;
         }
 
+        a {
+          color: #000;
+          text-decoration: none;
+        }
+
         &:hover,
         &.active {
           opacity: 1;
+        }
+
+        &.active {
+          font-weight: bold;
         }
       }
     }

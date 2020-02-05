@@ -2,7 +2,7 @@
 <div class="col-1">
   <h1>Sub-Brands</h1>
   <p>Our masterbrand strategy includes products, features and benefits that support Xfinity. Sub-Brand logos have been designed for strategically significant experiences, particularly for products and packaging. The primary Xfinity logo should be used in the majority of communications.</p>
-  <a class="button" href="#downloads"><span>Download Sub-Brand logos</span></a>
+  <a class="button" href="#downloads"><span>Download Sub-Brand Logos</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">
@@ -55,12 +55,12 @@
         </div><!-- /.sub-brands -->
         <div class="sub-brand-nav">
           <ul>
-            <li class="active"><a href="#" data-brand="0"><img src="images/sub-brands/xfinity-x1.svg" alt=""></a></li>
-            <li><a href="#" data-brand="1"><img src="images/sub-brands/xfinity-xfi.svg" alt=""></a></li>
-            <li><a href="#" data-brand="2"><img src="images/sub-brands/xfinity-stream.svg" alt=""></a></li>
-            <li><a href="#" data-brand="3"><img src="images/sub-brands/xfinity-flex.svg" alt=""></a></li>
-            <li><a href="#" data-brand="4"><img src="images/sub-brands/xfinity-home.svg" alt=""></a></li>
-            <li><a href="#" data-brand="5"><img src="images/sub-brands/xfinity-mobile.svg" alt=""></a></li>
+            <li class="active"><a href="#" data-brand="0">Xfinity X1</a></li>
+            <li><a href="#" data-brand="1">Xfinity xFi</a></li>
+            <li><a href="#" data-brand="2">Xfinity Stream</a></li>
+            <li><a href="#" data-brand="3">Xfinity Flex</a></li>
+            <li><a href="#" data-brand="4">Xfinity Home</a></li>
+            <li><a href="#" data-brand="5">Xfinity Mobile</a></li>
           </ul>
         </div>
 

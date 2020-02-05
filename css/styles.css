@@ -1717,7 +1717,7 @@ body #color .color-swatches .color {
           font-size: 0.9375rem; }
       #sub-brands .sub-brands ul li img {
         text-align: center;
-        max-width: 80%; }
+        max-width: 50%; }
 
 #sub-brands .sub-brand-nav ul {
   list-style: none;
@@ -1738,8 +1738,13 @@ body #color .color-swatches .color {
       height: 23px;
       max-height: 100%;
       max-width: none; }
+    #sub-brands .sub-brand-nav ul li a {
+      color: #000;
+      text-decoration: none; }
     #sub-brands .sub-brand-nav ul li:hover, #sub-brands .sub-brand-nav ul li.active {
       opacity: 1; }
+    #sub-brands .sub-brand-nav ul li.active {
+      font-weight: bold; }
 
 /* Visual Layouts */
 #visual-layouts #btg {

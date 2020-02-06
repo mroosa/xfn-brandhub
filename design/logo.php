@@ -48,7 +48,7 @@
       <div class="tab-inner">
         <h3>Logo in Motion</h3>
         <p class="caption">Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a dark background ensures optimal legibility, consistency and impact. It is available in English and Spanish.</p>
-        <video muted nocontrols autoplay loop style="max-width: 100%;" title="Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a dark background ensures optimal legibility, consistency and impact. It is available in English and Spanish.">
+        <video playsinline muted nocontrols autoplay loop style="max-width: 100%;" title="Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a dark background ensures optimal legibility, consistency and impact. It is available in English and Spanish.">
           <source src="<?php print $dir; ?>video/xfn-endcard-sq-5s.mp4" type="video/mp4">
         </video>
       </div>

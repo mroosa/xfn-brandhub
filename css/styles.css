@@ -545,7 +545,8 @@ main {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column; }
   .content section.with-tabs .tab .optionNav {
     display: flex;
     justify-content: center;
@@ -560,7 +561,7 @@ main {
       .content section.with-tabs .tab .optionNav li a.active {
         background: #000; }
   .content section.with-tabs .tab .tab-inner .optionNav {
-    padding: 30px 0 10px 0; }
+    margin: 30px 0 10px 0; }
   .content section.with-tabs .tab.with-options .img {
     position: absolute;
     left: 0;
@@ -591,7 +592,7 @@ main {
   text-decoration: none;
   margin: 5px 12px 5px 0; }
   .button span {
-    display: block;
+    display: inline-block;
     padding: 10px 15px 8px 15px;
     border: 1px solid #000;
     background: #000;
@@ -722,11 +723,15 @@ main {
     .content li strong,
     .content p strong {
       font-weight: 500; }
-  .content p.caption {
+  @media (min-width: 550px) {
+    .content p.caption {
+      display: none; } }
+  .content li p.caption {
     font-size: 14px;
     font-size: 0.875rem;
     font-weight: 400;
-    color: #999; }
+    color: #999;
+    margin: 2em 0 0 0; }
   .content .flex-column ul.none,
   .content .flex-column ul.none li {
     list-style: none;
@@ -1005,7 +1010,9 @@ main {
       #introduction .intro-info .intro-txt {
         order: 2; }
       #introduction .intro-info h2 {
-        order: 3; } }
+        order: 3; }
+      #introduction .intro-info .button {
+        order: 4; } }
   #introduction .intro-shade {
     position: absolute;
     z-index: 2;
@@ -1049,8 +1056,10 @@ main {
       animation: .75s ease-in 1.5s 1 normal both revealSlide; }
     #introduction h2 {
       animation: .75s ease-in 2.5s 1 normal both revealSlide; }
+    #introduction .button {
+      animation: .75s ease-in 3.5s 1 normal both revealSlide; }
     #introduction .get-started {
-      animation: .75s ease-in 2.5s 1 normal both reveal; } }
+      animation: .75s ease-in 3.5s 1 normal both reveal; } }
   #introduction .vid-wrap {
     position: absolute;
     top: 0;
@@ -1311,25 +1320,35 @@ body #color .color-swatches .color {
   appearance: none;
   height: 25px;
   width: 100%;
-  padding: 10px 10px;
   background: transparent;
   outline: none;
   border: 0;
-  margin: 0; }
+  margin: 0;
+  padding: 30px 10px 20px 10px; }
+  @media (min-width: 550px) {
+    #typography .weight {
+      padding: 10px; } }
   #typography .weight::-webkit-slider-thumb {
     -webkit-appearance: none;
     border: 1px solid #999;
-    height: 20px;
-    width: 20px;
     border-radius: 4px;
-    background: #ffffff;
     cursor: pointer;
-    margin-top: -8px;
-    /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */ }
+    height: 44px;
+    width: 10px;
+    margin-top: -20px;
+    /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+    background: #ccc; }
     #typography .weight::-webkit-slider-thumb:after {
       content: "x"; }
     #typography .weight::-webkit-slider-thumb:focus {
       color: #333; }
+    @media (min-width: 550px) {
+      #typography .weight::-webkit-slider-thumb {
+        background: #ffffff;
+        margin-top: -8px;
+        /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+        height: 20px;
+        width: 20px; } }
   #typography .weight::-webkit-slider-runnable-track {
     width: 95%;
     height: 4px;
@@ -2159,6 +2178,9 @@ section .tab[data-bg=drk-gry],
 section .tab[data-bg=black] {
   background: #000;
   color: #fff; }
+  section .tab[data-bg=drk-gry] li p.caption,
+  section .tab[data-bg=black] li p.caption {
+    color: #ccc; }
   section .tab[data-bg=drk-gry] .download svg,
   section .tab[data-bg=drk-gry] .explore svg,
   section .tab[data-bg=black] .download svg,

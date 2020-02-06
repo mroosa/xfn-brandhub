@@ -71,10 +71,22 @@
       <div class="tab-inner">
         <h3>Graphics in Use</h3>
         <ul class="optionWrap animate">
-          <li class="img width-75"><img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-03.png" alt="" title="Use the Mobile App icons on communications that refer to mobile app experiences."></li>
-          <li class="img width-75"><img style="max-height: 350px;" class="rounded border" src="images/secondary-graphics/04-01-1.png" alt="" title="Use the Voice Remote Microphone Button on communications that mention voice commands."></li>
-          <li class="img width-75"><img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-04.png" alt="" title="The Customer Commitment Badge is available for communications that reference our customer service promise."></li>
-          <li class="img width-75"><img style="max-height: 350px;" class="rounded border" src="images/secondary-graphics/04-01-2.png" alt="" title="The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go."></li>
+          <li class="img width-75" title="Use the Mobile App icons on communications that refer to mobile app experiences.">
+            <img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-03.png" alt="">
+            <p class="caption">Use the Mobile App icons on communications that refer to mobile app experiences.</p>
+          </li>
+          <li class="img width-75" title="Use the Voice Remote Microphone Button on communications that mention voice commands.">
+            <img style="max-height: 350px;" class="rounded border" src="images/secondary-graphics/04-01-1.png" alt="">
+            <p class="caption">Use the Voice Remote Microphone Button on communications that mention voice commands.</p>
+          </li>
+          <li class="img width-75" title="The Customer Commitment Badge is available for communications that reference our customer service promise.">
+            <img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-04.png" alt="">
+            <p class="caption">The Customer Commitment Badge is available for communications that reference our customer service promise.</p>
+          </li>
+          <li class="img width-75" title="The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go.">
+            <img style="max-height: 350px;" class="rounded border" src="images/secondary-graphics/04-01-2.png" alt="">
+            <p class="caption">The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go.</p>
+          </li>
         </ul>
       </div>
     </div>

@@ -13,6 +13,7 @@
     <div class="tab swap" data-ttl="Our Symbol" data-bg="white" id="the-xfinity-x">
       <div class="tab-inner">
         <h3>The Xfinity X</h3>
+        <p class="caption">Use the black or white version of our Brand Symbol depending on background contrast.</p>
         <ul class="optionWrap brand-x swap">
           <li data-alt="black brand symbol" data-bg="white" title="Our brand symbol X is available in black for light backgrounds.">
             <img style="max-width: 55%;" src="<?php print $dir; ?>images/brand-symbol/01.svg" alt="" /></li>
@@ -59,9 +60,18 @@
       <div class="tab-inner">
         <h3>Brand Symbol Misuses</h3>
         <ul class="optionWrap">
-          <li title="Do not recolor, especially in red."><img style="min-height: 250px;" loading="lazy" src="<?php print $dir; ?>images/brand-symbol/misuse-0.svg" alt="" /></li>
-          <li title="Do not use as a replacement for the letter X or lock up with text."><img style="min-height: 250px;" loading="lazy" src="<?php print $dir; ?>images/brand-symbol/misuse-1.svg" alt="" /></li>
-          <li title="Do not warp." class="img"><img loading="lazy" style="height: 250px; width: 400px;max-width: 100% !important;" src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" /></li>
+          <li title="Do not recolor, especially in red.">
+            <img style="height: 250px;" src="<?php print $dir; ?>images/brand-symbol/misuse-0.svg" alt="" />
+            <p class="caption">Do not recolor, especially in red.</p>
+          </li>
+          <li title="Do not use as a replacement for the letter X or lock up with text.">
+            <img style="min-height: 250px;" src="<?php print $dir; ?>images/brand-symbol/misuse-1.svg" alt="" />
+            <p class="caption">Do not use as a replacement for the letter X or lock up with text.</p>
+          </li>
+          <li title="Do not warp." class="img">
+            <img loading="lazy" style="height: 250px; width: 400px;max-width: 100% !important;" src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" />
+            <p class="caption">Do not warp.</p>
+          </li>
         </ul>
       </div>
     </div>

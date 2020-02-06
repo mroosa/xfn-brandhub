@@ -21,7 +21,7 @@
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 
-    <section id="introduction" data-option="1">
+    <section id="introduction" data-option="1" data-bg="black">
       <?php include_once("design/overview.php"); ?>
     </section>
     <main id="top">

@@ -14,13 +14,9 @@
         <h3>Partnership</h3>
         <ul class="optionWrap">
           <li>
-            <video muted nocontrols loop autoplay class="no-mobile">
+            <video playsinline muted nocontrols loop autoplay>
               <source src="video/cb-01-1.mp4" type="video/mp4">
             </video>
-            <div class="mobile-only" id="co-branding-1">
-              <img height="60px" src="images/co-branding/01-1.svg" alt="">
-              <img height="60px" src="images/co-branding/01-2.svg" alt="">
-            </div>
           </li>
           <li>
             <div>

@@ -16,6 +16,9 @@
       $( document ).tooltip({
         track: true
       });
+      if ($(window).width() < 768) {
+        $( document ).tooltip('disable');
+      }
     } );
   </script>
   <?php

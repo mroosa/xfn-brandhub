@@ -13,8 +13,8 @@
   }
 
   $dir = "";
-  $scriptList = ['subnav.js','gallery.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration.js','video-min.js'];
-  $styleList = ['gallery.css','inspiration.css','featherlight.css','video.css'];
+  $scriptList = ['subnav.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration-min.js','video-min.js'];
+  $styleList = ['inspiration.css','featherlight.css','video.css'];
   // $activeMain = 0; // Design
   $activeSub = 0;
   $bodyClassList = ['two-col'];

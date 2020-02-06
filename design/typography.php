@@ -52,9 +52,9 @@
       <div class="tab-inner">
         <h3>Type Examples</h3>
         <ul class="optionWrap animate">
-          <li><img class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-3.png" alt="" /></li>
-          <li><img class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-1.png" alt="" /></li>
-          <li><img class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-2.png" alt="" /></li>
+          <li><img style="max-height: 400px;" class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-3.png" alt="" /></li>
+          <li><img style="max-height: 300px;" class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-1.jpg" alt="" /></li>
+          <li><img style="max-height: 250px;" class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-2.png" alt="" /></li>
         </ul>
       </div>
     </div><!-- /.section -->

@@ -71,15 +71,10 @@
       <div class="tab-inner">
         <h3>Graphics in Use</h3>
         <ul class="optionWrap animate">
-          <li>
-            <div style="flex-basis: 70%;">
-              <img class="rounded border" src="images/secondary-graphics/04-01-1.png" alt="" title="Use the Voice Remote Microphone Button on communications that mention voice commands.">
-              <br>
-              <img class="rounded border" src="images/secondary-graphics/04-01-2.png" alt="" title="The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go.">
-            </div>
-          </li>
-          <li class="img width-75"><img class="rounded border" src="images/secondary-graphics/04-03.png" alt="" title="Use the Mobile App icons on communications that refer to mobile app experiences."></li>
-          <li class="img width-75"><img class="rounded border" src="images/secondary-graphics/04-04.png" alt="" title="The Customer Commitment Badge is available for communications that reference our customer service promise."></li>
+          <li class="img width-75"><img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-03.png" alt="" title="Use the Mobile App icons on communications that refer to mobile app experiences."></li>
+          <li class="img width-75"><img style="max-height: 350px;" class="rounded border" src="images/secondary-graphics/04-01-1.png" alt="" title="Use the Voice Remote Microphone Button on communications that mention voice commands."></li>
+          <li class="img width-75"><img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-04.png" alt="" title="The Customer Commitment Badge is available for communications that reference our customer service promise."></li>
+          <li class="img width-75"><img style="max-height: 350px;" class="rounded border" src="images/secondary-graphics/04-01-2.png" alt="" title="The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go."></li>
         </ul>
       </div>
     </div>

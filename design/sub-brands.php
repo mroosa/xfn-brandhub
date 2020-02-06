@@ -79,9 +79,9 @@
         <div class="tab-inner">
           <h3>Sub-Brand Misuses</h3>
           <ul class="optionWrap">
-            <li title="Do not recolor sub-brand logos."><img src="<?php print $dir; ?>images/sub-brands/misuse-0.svg" alt="" /></li>
-            <li title="Do not use sub-brand logos to create third-party lock-ups."><img src="<?php print $dir; ?>images/sub-brands/misuse-1.svg" alt="" /></li>
-            <li title="Do not use sub-brand logos with feature names."><img src="<?php print $dir; ?>images/sub-brands/misuse-2.svg" alt="" /></li>
+            <li title="Do not use sub-brand logos to create third-party lock-ups."><img style="width: 100%; max-width: 400px;" src="<?php print $dir; ?>images/sub-brands/misuse-1.svg" alt="" /></li>
+            <li title="Do not recolor sub-brand logos."><img style="width: 100%; max-width: 400px;" src="<?php print $dir; ?>images/sub-brands/misuse-0.svg" alt="" /></li>
+            <li title="Do not use sub-brand logos with feature names."><img style="width: 100%; max-width: 450px;" src="<?php print $dir; ?>images/sub-brands/misuse-2.svg" alt="" /></li>
           </ul>
         </div>
       </div>

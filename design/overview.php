@@ -20,7 +20,7 @@
     <a class="intro-more button" href="#"><span>Read More</span></a>
     <div class="intro-txt">
       <p>Xfinity has been on a journey, and we’ve built a brand to be proud of. Today, Xfinity is one of the most valuable brands in the world. Tomorrow, we will do so much more – building innovative experiences, creating products that improve people’s lives, and relentlessly pursuing our ambition to become a brand people love.</p>
-      <p>Here, you’ll find all of the tools you need to bring our brand to life. Following these guidelines and principles will ensure we express ourselves consistently, simplify experiences and build trust with consumers. From our logo to our color palette to our typography, the combination of these elements are uniquely Xfinity. They shape how people think and feel about our brand and help us deliver on our purpose: to make the connected life you love impossibly simple.</p>
+      <p>Inspiration is just a hover, scroll or click away. All the tools you need are right here. Following these guidelines and principles will ensure we express ourselves consistently simplify experiences and build trust with consumers. From our logo to our color palette to our typography, the combination of these elements are uniquely Xfinity. They shape how people think and feel about our brand and help us deliver on our purpose: to make the connected life you love impossibly simple.</p>
     </div>
   </div>
 

@@ -22,7 +22,13 @@
       <p>Xfinity has been on a journey, and we’ve built a brand to be proud of. Today, Xfinity is one of the most valuable brands in the world. Tomorrow, we will do so much more – building innovative experiences, creating products that improve people’s lives, and relentlessly pursuing our ambition to become a brand people love.</p>
       <p>Inspiration is just a hover, scroll or click away. All the tools you need are right here. Following these guidelines and principles will ensure we express ourselves consistently simplify experiences and build trust with consumers. From our logo to our color palette to our typography, the combination of these elements are uniquely Xfinity. They shape how people think and feel about our brand and help us deliver on our purpose: to make the connected life you love impossibly simple.</p>
     </div>
-    <a class="button launch-video" href="#"><span>Launch Video</span></a>
+    <a class="button launch-video" data-featherlight="#brand-video" href="#"><span>Launch Video</span></a>
+  </div>
+
+  <div class="featherlight-ajax" style="display: none;">
+    <div id="brand-video">
+      <iframe src="https://player.vimeo.com/video/389839031" width="1280" height="720" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
   </div>
 
 

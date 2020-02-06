@@ -1541,18 +1541,21 @@ body #color .color-swatches .color {
 #brand-symbol .tab .brand-x img {
   width: 90%; }
 
-.tab .info {
-  padding: 10px; }
-  .tab .info h3 {
-    font-size: 21px;
-    font-size: 1.3125rem; }
-  .tab .info p {
-    font-size: 14px;
-    font-size: 0.875rem; }
-    @media (min-width: 1200px) {
-      .tab .info p {
-        font-size: 18px;
-        font-size: 1.125rem; } }
+@media (min-width: 550px) {
+  .tab .info {
+    padding: 10px; } }
+
+.tab .info h3 {
+  font-size: 21px;
+  font-size: 1.3125rem; }
+
+.tab .info p {
+  font-size: 14px;
+  font-size: 0.875rem; }
+  @media (min-width: 1200px) {
+    .tab .info p {
+      font-size: 18px;
+      font-size: 1.125rem; } }
 
 .tab .lightbox-shade {
   height: 100%;
@@ -1616,11 +1619,21 @@ body #color .color-swatches .color {
   .tab .quadWrap li {
     flex-basis: calc(50% - 40px);
     flex-grow: 1;
-    margin: 10px;
     overflow: hidden;
     position: relative;
     border-radius: 4px;
     border: 1px solid #ccc; }
+    .tab .quadWrap li:nth-of-type(1) {
+      margin: 0 5px 5px 0; }
+    .tab .quadWrap li:nth-of-type(2) {
+      margin: 0 0 5px 5px; }
+    .tab .quadWrap li:nth-of-type(3) {
+      margin: 5px 5px 0 0; }
+    .tab .quadWrap li:nth-of-type(4) {
+      margin: 5px 0 0 5px; }
+    @media (min-width: 550px) {
+      .tab .quadWrap li:nth-of-type(n) {
+        margin: 10px; } }
     .tab .quadWrap li:before {
       content: '';
       float: left;

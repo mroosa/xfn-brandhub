@@ -1627,7 +1627,9 @@ body #color {
 .tab {
 
   .info {
-    padding: 10px;
+    @include bp-min($xsm) {
+      padding: 10px;
+    }
     h3 {
       @include font-size(21px);
     }
@@ -1716,11 +1718,18 @@ body #color {
     li {
       flex-basis: calc(50% - 40px);
       flex-grow: 1;
-      margin: 10px;
       overflow: hidden;
       position: relative;
       border-radius: $bdr;
       border: 1px solid #ccc;
+      &:nth-of-type(1) {margin:0 5px 5px 0;}
+      &:nth-of-type(2) {margin:0 0 5px 5px;}
+      &:nth-of-type(3) {margin:5px 5px 0 0;}
+      &:nth-of-type(4) {margin:5px 0 0 5px;}
+
+      @include bp-min($xsm) {
+        &:nth-of-type(n) {margin: 10px;}
+      }
 
       &:before {
         content: '';

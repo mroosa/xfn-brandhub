@@ -39,7 +39,7 @@
   <div class="vid-wrap">
     <div class="intro-shade"></div>
     <video playsinline nocontrols loop muted autoplay data-controls="simple">
-      <source src="video/intro.mp4" type="video/mp4">
+      <source src="video/intro-2.mp4" type="video/mp4">
     </video>
   </div>
 </div>

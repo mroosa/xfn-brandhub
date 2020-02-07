@@ -1067,9 +1067,11 @@ main {
       opacity: 1; }
     #introduction .get-started:hover svg {
       transform: translate(0, 5px); }
-    @media (max-width: 549px) {
-      #introduction .get-started.mobile {
-        display: flex !important; } }
+    #introduction .get-started.mobile {
+      display: none; }
+      @media (max-width: 549px) {
+        #introduction .get-started.mobile {
+          display: flex !important; } }
   @media (min-width: 960px) {
     #introduction h1 {
       animation: .75s ease-in 0.5s 1 normal both revealSlide; }
@@ -2247,3 +2249,21 @@ section[data-bg=black] .button span {
 section[data-bg=black] .button.active span, section[data-bg=black] .button:focus span, section[data-bg=black] .button:hover span {
   background: #000;
   color: #fff; }
+
+.featherlight .featherlight-content {
+  height: 100%;
+  width: 100%;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+  background: transparent !important; }
+  @media (min-width: 960px) {
+    .featherlight .featherlight-content {
+      padding: 5px 5px 0 5px !important;
+      border-radius: 4px;
+      border-bottom: 1px solid transparent !important;
+      height: 720px;
+      width: 1280px; } }
+
+.featherlight .featherlight-close-icon {
+  top: 5px !important;
+  right: 5px !important; }

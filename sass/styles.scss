@@ -1097,6 +1097,7 @@ main {
       }
     }
     &.mobile {
+      display: none;
       @include bp-max($xsm - 1) {
         display: flex !important;
       }
@@ -2583,5 +2584,28 @@ section[data-bg=black] .button {
       background: #000;
       color: #fff;
     }
+  }
+}
+
+
+.featherlight {
+  .featherlight-content {
+    height: 100%;
+    width: 100%;
+    padding: 0 !important;
+    border-bottom: 0 !important;
+    background: transparent !important;
+
+    @include bp-min($mid) {
+      padding: 5px 5px 0 5px !important;
+      border-radius: 4px;
+      border-bottom: 1px solid transparent !important;
+      height: 720px;
+      width: 1280px;
+    }
+  }
+  .featherlight-close-icon {
+    top:5px !important;
+    right: 5px !important;
   }
 }

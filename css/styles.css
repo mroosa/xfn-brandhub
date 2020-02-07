@@ -1011,7 +1011,7 @@ main {
         order: 2; }
       #introduction .intro-info h2 {
         order: 3; }
-      #introduction .intro-info .button {
+      #introduction .intro-info .launch-video {
         order: 4; } }
   #introduction .intro-shade {
     position: absolute;
@@ -1056,7 +1056,7 @@ main {
       animation: .75s ease-in 1.5s 1 normal both revealSlide; }
     #introduction h2 {
       animation: .75s ease-in 2.5s 1 normal both revealSlide; }
-    #introduction .button {
+    #introduction .launch-video {
       animation: .75s ease-in 3.5s 1 normal both revealSlide; }
     #introduction .get-started {
       animation: .75s ease-in 3.5s 1 normal both reveal; } }

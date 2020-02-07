@@ -178,24 +178,35 @@ main {
 .two-col {
   .sidebar {
 
-    width: 150px;
     .logo {
-      display: block;
-      padding: 30px 5vw 10px 0;
+      display: none;
+      @include bp-min($xsm) {
+        display: block;
+        padding: 30px 5vw 10px 0;
+      }
+
+      svg {
+        fill: #fff;
+      }
 
       &.vid-logo {
         padding: 30px 0 0 0;
       }
 
       video {
+        display: none;
+        @include bp-min($xsm) {
+          display: block;
+        }
         max-width: 100%;
         margin: -5px;
       }
     }
 
-    display: none;
-    @include bp-min($sml) {
-      display: block;
+    display: block;
+    width: 0;
+    @include bp-min($xsm) {
+      width: 150px;
     }
     @include bp-min($xlg) {
       width: 200px;
@@ -204,22 +215,32 @@ main {
       }
     }
     @include bp-min($max) {
-      width: calc( ( ( 100vw - #{$max} ) / 2 ) + 200px);
-      padding-left: calc( ( 100vw - #{$max} ) / 2);
+      width: calc( ( ( 100vw - #{$max} ) / 2 ) + 200px );
+      padding-left: calc( ( 100vw - #{$max} ) / 2 );
       .logo:not(.vid-logo) {
         padding: 30px 0 10px 0;
         width: 50px;
       }
     }
     #subnav {
-      width: 150px;
-      @include bp-min($xlg) {
-        width: 200px;
-      }
-      padding: 0 1.5vw 30px 1.5vw;
+      background: #000;
       &.sticky {
         position: fixed;
         top: 0;
+        z-index: 99;
+      }
+
+      position: fixed;
+      top: -100%;
+      width: 100%;
+      @include bp-min($xsm) {
+        padding: 0 1.5vw 30px 1.5vw;
+        position: relative;
+        top: 0;
+        width: 150px;
+      }
+      @include bp-min($xlg) {
+        width: 200px;
       }
     }
     .tert-nav {
@@ -253,32 +274,14 @@ main {
 
 /* Sidebar */
 .sidebar {
-  background: #5a5a5c;
+  background: #000;
   color: #fff;
 
-  &.wht {
-    background: #fff;
-    color: #000;
-    ul li a {
-      color: #000;
-
-      &:hover {
-        background: #5a5a5c;
-        color: #fff;
-      }
-    }
-    .logo svg {
-      fill: #000;
-    }
-  }
-  &.black {
-    background: #000;
-  }
   .nav {
-    padding-top: 25px;
-  }
-  .logo svg {
-    fill: #fff;
+    padding: 5px 0;
+    @include bp-min($xsm) {
+      padding: 25px 0 0 0;
+    }
   }
   ul {
     list-style: none;
@@ -288,9 +291,17 @@ main {
     li  {
       margin: 0;
       padding: 5px 0;
-      @include font-size(14px);
       font-weight: 100;
       line-height: 125%;
+
+      @include font-size(14px);
+      @include bp-max ($xsm - 1) {
+        @include font-size(16px);
+        display: none;
+        &#sn0 {
+          display: none;
+        }
+      }
 
       .menu {
         padding: 0;
@@ -298,12 +309,14 @@ main {
 
       a {
         display: block;
-        margin: 0 -10px;
         padding: 4px 10px 2px 10px;
         text-decoration: none;
         color: #fff;
-        // transition:color .25s, background .25s;
         border-radius: $bdr;
+
+        @include bp-min($xsm) {
+          margin: 0 -10px;
+        }
 
         &:hover {
           font-weight: bold;
@@ -312,9 +325,16 @@ main {
 
       &.active {
 
+        @include bp-max($xsm - 1) {
+          display: flex;
+          justify-content: flex-start;
+        }
+
         & > a {
-          background: #fff;
-          color: #000;
+          @include bp-min($xsm) {
+            background: #fff;
+            color: #000;
+          }
           font-weight: bold;
         }
 
@@ -329,23 +349,40 @@ main {
 
         .tert-nav {
           display: block;
+          @include bp-max($xsm) {
+            margin: 0;
+            padding: 0;
+          }
         }
       }
 
       li {
-        @include font-size(13px);
+        @include font-size(16px);
+        align-self: center;
+        @include bp-min($xsm) {
+          @include font-size(13px);
+        }
         padding: 0;
 
         a {
           margin: 0;
-          padding: 6px 5px 6px 15px;
+          @include bp-min($xsm) {
+            padding: 6px 5px 6px 15px;
+          }
           text-indent: -15px;
 
           &:before {
-            content: "• ";
-            margin: 0 3px 0 0;
+            content: "»";
+            padding: 0 10px 0 5px;
             transition: .25s;
             color: rgba(255,255,255, 0);
+          }
+          @include bp-min($xsm) {
+            &:before {
+              content: "• ";
+              margin: 0 3px 0 0;
+              padding: 0;
+            }
           }
         }
       }
@@ -359,32 +396,6 @@ main {
   }
 }
 
-@include bp-max($xsm - 1) {
-  .two-col .sidebar {
-    background: #666;
-    color: #fff;
-    padding: 0;
-  }
-  #subnav ul.nav {
-    overflow: auto;
-    white-space: nowrap;
-    padding: 0;
-  }
-  #subnav ul li {
-    display: inline-block;
-    margin: 10px 0;
-    font-weight: 300;
-  }
-  #subnav ul li a {
-    color: #fff;
-    margin: 0;
-    padding: 5px 20px;
-    border-right: 1px solid #999;
-  }
-  #subnav ul li.active > a {
-    text-decoration: underline;
-  }
-}
 
 /* Content Area */
 .content section {

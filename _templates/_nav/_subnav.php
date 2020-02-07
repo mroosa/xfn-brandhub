@@ -6,7 +6,6 @@ $subLinkAry = [
 	new NavLink('#sub-brands','Sub-Brands',null),
 	new NavLink('#color','Color',null),
 	new NavLink('#typography','Typography',null),
-#	new NavLink('#voice-and-tone','Voice & Tone',null),
 	new NavLink('#photography','Photography',null),
 	new NavLink('#secondary-graphics','Secondary Graphics',null),
 	new NavLink('#design-system','Design System',null),
@@ -23,7 +22,7 @@ for ($i = 0; $i < count($subLinkAry); $i++) {
 }
 print "\t</ul>\n";
 ?>
-<!--
+<?php /*
 <ul class="nav menu">
 	<li class="sn00"><a href="#introduction">Introduction</a></li>
 	<li class="sn01"><a href="#logo">Logo</a></li>
@@ -38,4 +37,6 @@ print "\t</ul>\n";
 	<li class="sn10"><a href="#creative-examples">Creative Examples</a></li>
 	<li class="sn11"><a href="#downloads">Downloads</a></li>
 	<li class="sn12"><a href="#contact-resources">Contact & Resources</a></li>
-</ul> -->
+</ul>
+*/
+?>

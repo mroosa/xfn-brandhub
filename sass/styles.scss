@@ -1124,7 +1124,7 @@ main {
   }
 
   .vid-wrap {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -1144,6 +1144,27 @@ main {
     // @include bp-min($sml) {
       display: block;
     // }
+  }
+
+  &.alt {
+    .intro-info {
+      max-width: 770px;
+      margin-left: 5%;
+      margin-right: 0;
+
+      h1 {
+        @include font-size(86px);
+        animation: none;
+      }
+
+      h2 {
+        display: none;
+      }
+      .intro-txt p {
+        @include font-size(24px);
+        font-weight: 200;
+      }
+    }
   }
 
 }

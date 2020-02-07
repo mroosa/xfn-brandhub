@@ -23,6 +23,7 @@
 
     <section id="introduction" data-option="1" data-bg="black">
       <?php include_once("design/overview.php"); ?>
+      <a class="alt-swap" href="#">•</a>
     </section>
     <main id="top">
       <form id="form-logout" method='post' action="">

@@ -31,9 +31,9 @@
         <ul class="optionWrap animate">
           <li>
             <ul id="sg-m-1">
-              <li class="img width-65 icon"><img src="images/secondary-graphics/02-8.svg" alt=""><span>Xfinity xFi</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-3.svg" alt=""><span>Xfinity xFi</span></li>
               <li class="img width-65 icon"><img src="images/secondary-graphics/02-2.svg" alt=""><span>Xfinity Mobile</span></li>
-              <li class="img width-65 icon"><img src="images/secondary-graphics/02-3.svg" alt=""><span>Xfinity Home</span></li>
+              <li class="img width-65 icon"><img src="images/secondary-graphics/02-8.svg" alt=""><span>Xfinity Home</span></li>
               <li class="img width-65 icon"><img src="images/secondary-graphics/02-4.svg" alt=""><span>My Account</span></li>
               <li class="img width-65 icon"><img src="images/secondary-graphics/02-5.svg" alt=""><span>WiFi Hotspot</span></li>
               <li class="img width-65 icon"><img src="images/secondary-graphics/02-7.svg" alt=""><span>Connect</span></li>

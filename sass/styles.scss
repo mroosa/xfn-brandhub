@@ -926,7 +926,6 @@ main {
 
 /* Intro */
 #introduction {
-  min-height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
@@ -936,27 +935,39 @@ main {
   align-items: center;
   justify-content: center;
 
+  min-height: 100vh;
   .col-1 {
     width: 100%;
     text-align: left;
+    display: flex;
 
     padding: 40px 20px;
+    height: 100vh;
+    margin-bottom: 100vh;
     @include bp-min($xsm) {
       padding: 40px;
+      display: block;
+      height: auto;
+      margin: 0;
     }
     @include bp-min($mid) {
       padding: 100px 200px;
     }
+
   }
 
   .intro-logo {
     position: absolute;
     top: 20px;
-    width: 150px;
     left: 20px;
     z-index: 10;
     @include bp-min($max) {
       left: calc(( ( 100% - 1600px ) / 2) + 1.5vw);
+    }
+
+    width: 75px;
+    @include bp-min($xsm) {
+      width: 150px;
     }
 
     svg {
@@ -966,7 +977,6 @@ main {
   }
 
   .intro-info {
-    position: relative;
     z-index: 10;
     max-width: 1000px;
     text-align: left;
@@ -974,11 +984,17 @@ main {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center;
 
+    @include bp-min($xsm) {
+      position: relative;
+    }
     h1,h2,p {line-height: 130%;}
 
     h1 {
-      @include font-size(28px);
+      @include font-size(38px);
       @include bp-min($xsm) {
         @include font-size(40px);
       }
@@ -988,20 +1004,14 @@ main {
     }
 
     p {
-      @include font-size(14px);
-      @include bp-min($xsm) {
-        @include font-size(16px);
-      }
+      @include font-size(16px);
       @include bp-min($sml) {
         @include font-size(18px)
       };
     }
 
     h2 {
-      @include font-size(18px);
-      @include bp-min($xsm) {
-        @include font-size(24px);
-      }
+      @include font-size(24px);
       @include bp-min($sml) {
         @include font-size(32px)
       };
@@ -1020,6 +1030,20 @@ main {
       .intro-txt {order: 2;}
       h2 {order: 3;}
       .launch-video {order: 4;}
+    }
+  }
+  .intro-txt {
+    @include bp-max($xsm - 1) {
+      position: absolute;
+      left: 0;
+      top: 100vh;
+      height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column;
     }
   }
 
@@ -1072,6 +1096,11 @@ main {
         transform: translate(0, 5px);
       }
     }
+    &.mobile {
+      @include bp-max($xsm - 1) {
+        display: flex !important;
+      }
+    }
   }
 
   @include bp-min($mid) {
@@ -1099,10 +1128,10 @@ main {
       z-index: 1;
     }
 
-    display: none;
-    @include bp-min($sml) {
+    // display: none;
+    // @include bp-min($sml) {
       display: block;
-    }
+    // }
   }
 
 }

@@ -924,50 +924,64 @@ main {
 
 /* Intro */
 #introduction {
-  min-height: 100vh;
   width: 100%;
   padding: 0;
   margin: 0;
   background: #000;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  min-height: 100vh; }
   #introduction .col-1 {
     width: 100%;
     text-align: left;
-    padding: 40px 20px; }
+    display: flex;
+    padding: 40px 20px;
+    height: 100vh;
+    margin-bottom: 100vh; }
     @media (min-width: 550px) {
       #introduction .col-1 {
-        padding: 40px; } }
+        padding: 40px;
+        display: block;
+        height: auto;
+        margin: 0; } }
     @media (min-width: 960px) {
       #introduction .col-1 {
         padding: 100px 200px; } }
   #introduction .intro-logo {
     position: absolute;
     top: 20px;
-    width: 150px;
     left: 20px;
-    z-index: 10; }
+    z-index: 10;
+    width: 75px; }
     @media (min-width: 1600px) {
       #introduction .intro-logo {
         left: calc(( ( 100% - 1600px ) / 2) + 1.5vw); } }
+    @media (min-width: 550px) {
+      #introduction .intro-logo {
+        width: 150px; } }
     #introduction .intro-logo svg {
       max-width: 100%;
       fill: #fff; }
   #introduction .intro-info {
-    position: relative;
     z-index: 10;
     max-width: 1000px;
     text-align: left;
     color: #fff;
     margin: 0 auto;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    align-items: flex-start;
+    align-content: center;
+    justify-content: center; }
+    @media (min-width: 550px) {
+      #introduction .intro-info {
+        position: relative; } }
     #introduction .intro-info h1, #introduction .intro-info h2, #introduction .intro-info p {
       line-height: 130%; }
     #introduction .intro-info h1 {
-      font-size: 28px;
-      font-size: 1.75rem; }
+      font-size: 38px;
+      font-size: 2.375rem; }
       @media (min-width: 550px) {
         #introduction .intro-info h1 {
           font-size: 40px;
@@ -977,23 +991,15 @@ main {
           font-size: 54px;
           font-size: 3.375rem; } }
     #introduction .intro-info p {
-      font-size: 14px;
-      font-size: 0.875rem; }
-      @media (min-width: 550px) {
-        #introduction .intro-info p {
-          font-size: 16px;
-          font-size: 1rem; } }
+      font-size: 16px;
+      font-size: 1rem; }
       @media (min-width: 768px) {
         #introduction .intro-info p {
           font-size: 18px;
           font-size: 1.125rem; } }
     #introduction .intro-info h2 {
-      font-size: 18px;
-      font-size: 1.125rem; }
-      @media (min-width: 550px) {
-        #introduction .intro-info h2 {
-          font-size: 24px;
-          font-size: 1.5rem; } }
+      font-size: 24px;
+      font-size: 1.5rem; }
       @media (min-width: 768px) {
         #introduction .intro-info h2 {
           font-size: 32px;
@@ -1013,6 +1019,18 @@ main {
         order: 3; }
       #introduction .intro-info .launch-video {
         order: 4; } }
+  @media (max-width: 549px) {
+    #introduction .intro-txt {
+      position: absolute;
+      left: 0;
+      top: 100vh;
+      height: 100vh;
+      padding: 40px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      flex-direction: column; } }
   #introduction .intro-shade {
     position: absolute;
     z-index: 2;
@@ -1049,6 +1067,9 @@ main {
       opacity: 1; }
     #introduction .get-started:hover svg {
       transform: translate(0, 5px); }
+    @media (max-width: 549px) {
+      #introduction .get-started.mobile {
+        display: flex !important; } }
   @media (min-width: 960px) {
     #introduction h1 {
       animation: .75s ease-in 0.5s 1 normal both revealSlide; }
@@ -1068,16 +1089,13 @@ main {
     height: 100%;
     overflow: hidden;
     z-index: 1;
-    display: none; }
+    display: block; }
     #introduction .vid-wrap video {
       height: 100%;
       width: 100%;
       object-fit: cover;
       position: relative;
       z-index: 1; }
-    @media (min-width: 768px) {
-      #introduction .vid-wrap {
-        display: block; } }
 
 /* Logo */
 #logo .tabs .tab img {

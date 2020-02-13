@@ -118,6 +118,7 @@ main {
   clear: both;
   position: relative;
   z-index: 2;
+  background: #fff;
 
   .inner {
     display: flex;
@@ -425,7 +426,7 @@ main {
 #mobileMenu {
   position: fixed;
   z-index: 3;
-  top: -100%;
+  top: -100vh;
   opacity: .75;
   left: 0;
   width: 100%;
@@ -506,7 +507,7 @@ main {
   &.with-tabs {
     .tabs-wrapper {
       overflow: hidden;
-      margin-top: -50px;
+      margin: -50px 0 50px 0;
       padding-top: 50px;
       @include bp-min($xsm) {
         margin-top: 0;
@@ -796,18 +797,17 @@ main {
       padding-bottom: 0;
     }
     @include bp-max($xsm) {
-      padding-top: 6vw;
+      padding: 6vw 0 0 0;
 
       box-shadow: none;
       &:after {
         content: " ";
-        width: 80%;
+        width: 100%;
         display: block;
         position: relative;
         height: 1px;
-        background: #ccc;
+        background: linear-gradient(90deg, #fff 5%, #ccc 25%, #ccc 75%, #fff 95%);
         position: absolute;
-        margin: 0px 10%;
         top: 0;
       }
     }
@@ -1168,13 +1168,15 @@ main {
     justify-content: center;
     align-items: center;
 
-    display: none;
-    @include bp-min($mid) {
+    // display: none;
+    // @include bp-min($mid) {
       display: flex;
-    }
+    // }
 
     span {
-      opacity: 0;
+      @include bp-min($xsm) {
+        opacity: 0;
+      }
       color: #fff;
       transition: .25s opacity;
     }
@@ -1197,6 +1199,8 @@ main {
       }
     }
     &.mobile {
+      bottom: auto;
+      top: 90vh;
       display: none;
       @include bp-max($xsm - 1) {
         display: flex !important;
@@ -2811,5 +2815,13 @@ section[data-bg=black] .button {
     top:5px !important;
     right: 5px !important;
     background: #fff !important;
+    border: 1px solid #333 !important;
+    border-radius: $bdr;
+    @include bp-max($xsm - 1) {
+      width: 50px !important;
+      height: 50px !important;
+      font-size: 24px;
+      font-weight: 100;
+    }
   }
 }

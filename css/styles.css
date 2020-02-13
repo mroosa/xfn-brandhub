@@ -337,7 +337,8 @@ main {
   display: flex;
   clear: both;
   position: relative;
-  z-index: 2; }
+  z-index: 2;
+  background: #fff; }
   main .inner {
     display: flex; }
 
@@ -529,7 +530,7 @@ main {
 #mobileMenu {
   position: fixed;
   z-index: 3;
-  top: -100%;
+  top: -100vh;
   opacity: .75;
   left: 0;
   width: 100%;
@@ -585,7 +586,7 @@ main {
 
 .content section.with-tabs .tabs-wrapper {
   overflow: hidden;
-  margin-top: -50px;
+  margin: -50px 0 50px 0;
   padding-top: 50px; }
   @media (min-width: 550px) {
     .content section.with-tabs .tabs-wrapper {
@@ -846,17 +847,16 @@ main {
         padding-bottom: 0; } }
     @media (max-width: 550px) {
       .content section {
-        padding-top: 6vw;
+        padding: 6vw 0 0 0;
         box-shadow: none; }
         .content section:after {
           content: " ";
-          width: 80%;
+          width: 100%;
           display: block;
           position: relative;
           height: 1px;
-          background: #ccc;
+          background: linear-gradient(90deg, #fff 5%, #ccc 25%, #ccc 75%, #fff 95%);
           position: absolute;
-          margin: 0px 10%;
           top: 0; } }
     .content section:focus {
       outline: none; }
@@ -1143,14 +1143,13 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    display: none; }
-    @media (min-width: 960px) {
-      #introduction .get-started {
-        display: flex; } }
+    display: flex; }
     #introduction .get-started span {
-      opacity: 0;
       color: #fff;
       transition: .25s opacity; }
+      @media (min-width: 550px) {
+        #introduction .get-started span {
+          opacity: 0; } }
     #introduction .get-started svg {
       fill: #fff;
       width: 45px;
@@ -1163,6 +1162,8 @@ main {
     #introduction .get-started:hover svg {
       transform: translate(0, 5px); }
     #introduction .get-started.mobile {
+      bottom: auto;
+      top: 90vh;
       display: none; }
       @media (max-width: 549px) {
         #introduction .get-started.mobile {
@@ -2429,4 +2430,12 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
 .featherlight .featherlight-close-icon {
   top: 5px !important;
   right: 5px !important;
-  background: #fff !important; }
+  background: #fff !important;
+  border: 1px solid #333 !important;
+  border-radius: 4px; }
+  @media (max-width: 549px) {
+    .featherlight .featherlight-close-icon {
+      width: 50px !important;
+      height: 50px !important;
+      font-size: 24px;
+      font-weight: 100; } }

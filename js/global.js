@@ -118,6 +118,10 @@ function setOption(oid, tab) {
     var totalOptions = tab.find(".optionNav li").length;
     var curLink = Number(tab.find(".optionNav a.active").attr("data-id"));
     oid = (curLink + 1 < totalOptions) ? curLink + 1: 0;
+  } else if (oid == "prev") {
+    var totalOptions = tab.find(".optionNav li").length;
+    var curLink = Number(tab.find(".optionNav a.active").attr("data-id"));
+    oid = (curLink - 1 < 0) ? curLink - 1: totalOptions;
   }
   var link = tab.find(".optionNav a[data-id=" + oid + "]")
   link.parents(".optionNav").find(".active").removeClass("active");
@@ -262,12 +266,18 @@ $(document).ready(function() {
     }
   });
 
-  $(".optionWrap").on("swipeleft",function() {
-    alert('ho');
-  });
-  $(".optionWrap").on("swiperight",function() {
-    alert('hi');
-  });
+  $(".slideshow")
+    .on("swipeleft",function() {
+    var thisOpt = $(this),
+        thisTab = thisOpt.parents(".tab");
+        setOption("next",thisTab);
+
+    })
+    .on("swiperight",function() {
+      var thisOpt = $(this),
+          thisTab = thisOpt.parents(".tab");
+          setOption("prev",thisTab);
+    });
 
   // Add count to left button navs
   $("section").each(function() {

@@ -506,6 +506,12 @@ main {
   &.with-tabs {
     .tabs-wrapper {
       overflow: hidden;
+      margin-top: -50px;
+      padding-top: 50px;
+      @include bp-min($xsm) {
+        margin-top: 0;
+        padding-top: 0;
+      }
     }
     .tabs {
       transition: .25s margin;
@@ -517,9 +523,11 @@ main {
       align-items: center;
       justify-content: center;
 
-      padding: 4vw;
+      margin-top: -50px;
+      padding: 50px 4vw 4vw 4vw;
       @include bp-min($xsm) {
         min-height: 100vh;
+        margin-top: 0;
         padding: 2vw;
       }
 
@@ -2781,6 +2789,16 @@ section[data-bg=black] .button {
     border-bottom: 0 !important;
     background: transparent !important;
 
+    @include bp-max($xsm - 1) {
+      top: 0;
+      left: 0;
+      position: absolute !important;
+      display: flex !important;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+    }
+
     @include bp-min($mid) {
       padding: 5px 5px 0 5px !important;
       border-radius: 4px;
@@ -2792,5 +2810,6 @@ section[data-bg=black] .button {
   .featherlight-close-icon {
     top:5px !important;
     right: 5px !important;
+    background: #fff !important;
   }
 }

@@ -584,7 +584,13 @@ main {
       width: 600px; } }
 
 .content section.with-tabs .tabs-wrapper {
-  overflow: hidden; }
+  overflow: hidden;
+  margin-top: -50px;
+  padding-top: 50px; }
+  @media (min-width: 550px) {
+    .content section.with-tabs .tabs-wrapper {
+      margin-top: 0;
+      padding-top: 0; } }
 
 .content section.with-tabs .tabs {
   transition: .25s margin; }
@@ -593,10 +599,12 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4vw; }
+  margin-top: -50px;
+  padding: 50px 4vw 4vw 4vw; }
   @media (min-width: 550px) {
     .content section.with-tabs .tab {
       min-height: 100vh;
+      margin-top: 0;
       padding: 2vw; } }
   .content section.with-tabs .tab:focus {
     outline: none; }
@@ -2401,6 +2409,15 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
   padding: 0 !important;
   border-bottom: 0 !important;
   background: transparent !important; }
+  @media (max-width: 549px) {
+    .featherlight .featherlight-content {
+      top: 0;
+      left: 0;
+      position: absolute !important;
+      display: flex !important;
+      justify-content: center;
+      align-content: center;
+      align-items: center; } }
   @media (min-width: 960px) {
     .featherlight .featherlight-content {
       padding: 5px 5px 0 5px !important;
@@ -2411,4 +2428,5 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
 
 .featherlight .featherlight-close-icon {
   top: 5px !important;
-  right: 5px !important; }
+  right: 5px !important;
+  background: #fff !important; }

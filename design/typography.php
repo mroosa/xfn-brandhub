@@ -8,6 +8,7 @@
   <div class="tabs">
     <div class="tab" id="typefaces" data-ttl="Our Type">
       <div class="tab-inner">
+        <h3 class="mobile-only">Our Type</h3>
 
         <div class="type-wrap">
           <blockquote class="live-type font-xfb" data-font="font-xfb">Hi, I'm Xfinity Brown</blockquote>
@@ -39,12 +40,15 @@
 
     <div class="tab" id="type-styles" data-ttl="Style & Weight">
       <div class="tab-inner">
-        <blockquote class="usage usage-1">Headlines <span>are set in Xfinity Brown Bold. They should be conversational and used for emphasis.</span></blockquote>
-        <blockquote class="usage usage-2">Subheads <span>are set in Xfinity Brown Bold. They are always set in a smaller font size than the headline.</span></blockquote>
-        <blockquote class="usage usage-3">Short-form body copy <span>is set in Xfinity Brown Regular. Short-form body copy should be two to five sentences in length. Typically this is the only body copy on the creative.</span></blockquote>
-        <blockquote class="usage usage-4">Long-form body copy <span>is set in Xfinity Standard Regular with auto leading. Long-form body copy is over five sentences long and typically used when there are multiple body copy text blocks. This can include bullets, detailed product descriptions and digital communications.</span></blockquote>
-        <blockquote class="usage usage-5">Calls-to-action <span>are set in Xfinity Brown Bold.</span></blockquote>
-        <blockquote class="usage usage-6">Legal copy <span>is set in Helvetica Neue Condensed LT Std with auto leading, no smaller than 8pt.</span></blockquote>
+        <h3 class="mobile-only">Style & Weight</h3>
+        <div class="mobile-wrap">
+          <blockquote class="usage usage-1">Headlines <span>are set in Xfinity Brown Bold. They should be conversational and used for emphasis.</span></blockquote>
+          <blockquote class="usage usage-2">Subheads <span>are set in Xfinity Brown Bold. They are always set in a smaller font size than the headline.</span></blockquote>
+          <blockquote class="usage usage-3">Short-form body copy <span>is set in Xfinity Brown Regular. Short-form body copy should be two to five sentences in length. Typically this is the only body copy on the creative.</span></blockquote>
+          <blockquote class="usage usage-4">Long-form body copy <span>is set in Xfinity Standard Regular with auto leading. Long-form body copy is over five sentences long and typically used when there are multiple body copy text blocks. This can include bullets, detailed product descriptions and digital communications.</span></blockquote>
+          <blockquote class="usage usage-5">Calls-to-action <span>are set in Xfinity Brown Bold.</span></blockquote>
+          <blockquote class="usage usage-6">Legal copy <span>is set in Helvetica Neue Condensed LT Std with auto leading, no smaller than 8pt.</span></blockquote>
+        </div>
       </div>
     </div><!-- /.section -->
 

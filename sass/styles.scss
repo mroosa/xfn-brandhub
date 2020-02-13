@@ -603,11 +603,11 @@ main {
 
         li a {
           display: block;
-          height: 20px;
-          width: 20px;
           margin: 5px;
           border: 2px solid #000;
           border-radius: 50%;
+          height: 20px;
+          width: 20px;
 
           &.active {
             background: #000;
@@ -854,7 +854,7 @@ main {
       }
 
       .col-1 {
-        padding: 4vw;
+        padding: 4vw 4vw 15vw 4vw;
         @include bp-min($xsm) {
           padding: 2vw;
         }
@@ -1664,7 +1664,7 @@ body #color {
   }
 
   @include bp-max($xsm - 1) {
-    #type-styles .tab-inner {
+    #type-styles .mobile-wrap {
       border: 1px solid #ccc;
       border-radius: 4px;
       box-shadow: 4px 4px 10px rgba(0,0,0,.25);

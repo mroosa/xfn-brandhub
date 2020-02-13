@@ -262,6 +262,13 @@ $(document).ready(function() {
     }
   });
 
+  $(".optionWrap").on("swipeleft",function() {
+    alert('ho');
+  });
+  $(".optionWrap").on("swiperight",function() {
+    alert('hi');
+  });
+
   // Add count to left button navs
   $("section").each(function() {
     var numBtns = $(this).find(".tab-nav li").length;

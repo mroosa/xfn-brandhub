@@ -10,6 +10,7 @@
     <div class="tabs">
 
       <div class="tab" id="color-palette" data-ttl="Color Palette">
+        <h3 class="mobile-only" style="flex-basis: 100%;">Color Palette</h3>
         <div class="color-swatches">
           <div class="col-50 ht-100">
             <a href="#color-white" class="color color-1 dark ignore-click" title="White"></a>

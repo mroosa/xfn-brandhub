@@ -410,6 +410,16 @@ main {
 }
 
 /* Mobile Menu */
+#open-mobile-nav {
+  position: absolute;
+  display: block;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  @include bp-min($xsm) {
+    display: none;
+  }
+}
 .mobileActive {
   overflow: hidden;
 
@@ -426,7 +436,7 @@ main {
 #mobileMenu {
   position: fixed;
   z-index: 3;
-  top: -100vh;
+  top: -120vh;
   opacity: .75;
   left: 0;
   width: 100%;
@@ -523,8 +533,10 @@ main {
       display: flex;
       align-items: center;
       justify-content: center;
+      flex-wrap: wrap;
 
-      margin-top: -50px;
+      margin: -50px 0 50px 0;
+
       padding: 50px 4vw 4vw 4vw;
       @include bp-min($xsm) {
         min-height: 100vh;
@@ -1035,15 +1047,17 @@ main {
   align-items: center;
   justify-content: center;
 
-  min-height: 100vh;
+  @include bp-min($sml) {
+    min-height: 100vh;
+  }
   .col-1 {
     width: 100%;
     text-align: left;
     display: flex;
 
     padding: 40px 20px;
-    height: 100vh;
-    margin-bottom: 100vh;
+    height: 90vh;
+    margin-bottom: 110vh;
     @include bp-min($xsm) {
       padding: 40px;
       display: block;
@@ -1051,6 +1065,8 @@ main {
       margin: 0;
     }
     @include bp-min($mid) {
+      height: 100vh;
+      margin-bottom: 100vh;
       padding: 100px 200px;
     }
 
@@ -1168,10 +1184,10 @@ main {
     justify-content: center;
     align-items: center;
 
-    // display: none;
-    // @include bp-min($mid) {
+    display: none;
+    @include bp-min($mid) {
       display: flex;
-    // }
+    }
 
     span {
       @include bp-min($xsm) {
@@ -1200,7 +1216,7 @@ main {
     }
     &.mobile {
       bottom: auto;
-      top: 90vh;
+      top: 80vh;
       display: none;
       @include bp-max($xsm - 1) {
         display: flex !important;

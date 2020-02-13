@@ -321,7 +321,8 @@ $(document).ready(function() {
     });
   });
 
-  $("#subnav").click(function() {
+  $("#subnav").prepend('<a id="open-mobile-nav" href="#"><span class="ah">Expand Navigation</span></a>');
+  $("#open-mobile-nav").click(function() {
     $("body").toggleClass("mobileActive");
     return false;
   });

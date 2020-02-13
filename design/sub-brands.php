@@ -8,7 +8,8 @@
   <div class="tabs-wrapper">
     <div class="tabs">
 
-      <div class="tab" id="our-sub-brands" data-ttl="Sub-Brands">
+      <div class="tab" id="our-sub-brands" data-ttl="Logos">
+        <h3 class="mobile-only">Sub-Brand Logos</h3>
 
         <div class="sub-brand-logos">
           <div class="sub-brand-logo-1">

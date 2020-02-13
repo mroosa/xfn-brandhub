@@ -37,3 +37,8 @@
   from {transform: translateY(120px);}
   to {transform: translateY(0);}
 }
+
+@keyframes offScreenIn {
+  from {bottom: -100%; opacity: 0;}
+  to {bottom: 0; opacity: 1;}
+}

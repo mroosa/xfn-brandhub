@@ -4,7 +4,7 @@ $(document).ready(function() {
   var buffer = 100,
       buffer = 10,
       stickyNavTop = $('#subnav').offset().top,
-      subNav = $("#subnav .nav"),
+      subNav = $(".sidebar .nav"),
       // All list items
       menuItems = subNav.find(".primary > a"),
       // Anchors corresponding to menu items

@@ -69,7 +69,7 @@
             <p class="caption">Do not use as a replacement for the letter X or lock up with text.</p>
           </li>
           <li title="Do not warp." class="img">
-            <img loading="lazy" style="height: 250px; width: 400px;max-width: 100% !important;" src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" />
+            <img style="height: 250px; width: 400px;max-width: 100% !important;" src="<?php print $dir; ?>images/brand-symbol/misuse-2.png" alt="" />
             <p class="caption">Do not warp.</p>
           </li>
         </ul>

@@ -151,7 +151,7 @@ main {
 //         fill: #999;
 //       }
 //     }
-//     @include bp-max($xsm - 1) {
+//     @include bp-max($xsm) {
 //       display: block;
 //       padding: 12px 15px 10px 15px;
 //       border: 1px solid #000;
@@ -180,7 +180,7 @@ main {
   .sidebar {
     display: block;
     width: 0;
-    @include bp-min($xsm) {
+    @include bp-min($sml + 1) {
       width: 150px;
     }
     @include bp-min($xlg) {
@@ -195,9 +195,29 @@ main {
       }
     }
 
+    .mid-logo {
+      display: none;
+    }
+    @media screen and (min-width: $xsm + 1) and (max-width: $sml) {
+      #subnav .nav.menu {
+        padding-left: 5px;
+      }
+    //   .mid-logo {
+    //     display: block;
+    //     position: absolute;
+    //     left: 10px;
+    //     top: 10px;
+    //
+    //     svg {
+    //       height: 34px;
+    //       fill: #fff;
+    //     }
+    //   }
+    }
+
   }
   .content {
-    @include bp-min($sml) {
+    @include bp-min($sml + 1) {
       width: calc(100% - 150px);
     }
     @include bp-min($xlg) {
@@ -232,7 +252,7 @@ main {
     z-index: 2;
     .logo {
       display: none;
-      @include bp-min($xsm) {
+      @include bp-min($sml + 1) {
         display: block;
         padding: 30px 5vw 10px 0;
       }
@@ -247,7 +267,7 @@ main {
 
       video {
         display: none;
-        @include bp-min($xsm) {
+        @include bp-min($sml + 1) {
           display: block;
         }
         max-width: 100%;
@@ -262,7 +282,7 @@ main {
     }
 
     width: 100%;
-    @include bp-min($xsm) {
+    @include bp-min($sml + 1) {
       padding: 0 1.5vw 30px 1.5vw;
       position: relative;
       top: 0;
@@ -287,7 +307,7 @@ main {
         transition: .5s transform;
       }
       padding: 0;
-      @include bp-min($xsm) {
+      @include bp-min($sml + 1) {
         &:after {
           content: "";
         }
@@ -303,16 +323,22 @@ main {
         margin: 0;
         font-weight: 100;
         line-height: 125%;
-        padding: 5px 0;
+        padding: 10px 0;
 
-        @include font-size(14px);
-        @include bp-max ($xsm - 1) {
-          padding: 10px 0;
-          @include font-size(16px);
+        @include bp-max ($sml) {
           display: none;
           &#sn0 {
             display: none;
           }
+        }
+
+        @include font-size(16px);
+        @include bp-min($xsm) {
+          @include font-size(22px);
+        }
+        @include bp-min($sml + 1) {
+          padding: 5px 0;
+          @include font-size(14px);
         }
 
         .menu {
@@ -326,7 +352,7 @@ main {
           color: #fff;
           border-radius: $bdr;
 
-          @include bp-min($xsm) {
+          @include bp-min($sml + 1) {
             margin: 0 -10px;
           }
 
@@ -337,13 +363,13 @@ main {
 
         &.active {
 
-          @include bp-max($xsm - 1) {
+          @include bp-max($sml) {
             display: flex;
             justify-content: flex-start;
           }
 
           & > a {
-            @include bp-min($xsm) {
+            @include bp-min($sml + 1) {
               background: #fff;
               color: #000;
             }
@@ -361,7 +387,7 @@ main {
 
           .tert-nav {
             display: block;
-            @include bp-max($xsm) {
+            @include bp-max($sml) {
               margin: 0;
               padding: 0;
             }
@@ -369,16 +395,20 @@ main {
         }
 
         li {
-          @include font-size(16px);
           align-self: center;
+
+          @include font-size(16px);
           @include bp-min($xsm) {
+            @include font-size(22px);
+          }
+          @include bp-min($sml + 1) {
             @include font-size(13px);
           }
           padding: 0;
 
           a {
             margin: 0;
-            @include bp-min($xsm) {
+            @include bp-min($sml + 1) {
               padding: 6px 5px 6px 15px;
             }
             text-indent: -15px;
@@ -389,7 +419,7 @@ main {
               transition: .25s;
               color: rgba(255,255,255, 0);
             }
-            @include bp-min($xsm) {
+            @include bp-min($sml + 1) {
               &:before {
                 content: "• ";
                 margin: 0 3px 0 0;
@@ -416,7 +446,7 @@ main {
   height: 100%;
   width: 100%;
   z-index: 1;
-  @include bp-min($xsm) {
+  @include bp-min($sml + 1) {
     display: none;
   }
 }
@@ -493,11 +523,11 @@ main {
   &.active {
     z-index: 1;
     .col-1 {
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         position: fixed;
         z-index: 1;
       }
-      @include bp-min($sml) {
+      @include bp-min($sml + 1) {
         left: 150px;
       }
       @include bp-min($xlg) {
@@ -519,7 +549,7 @@ main {
       overflow: hidden;
       margin: -50px 0 0 0;
       padding-top: 50px;
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         margin-top: 0;
         padding-top: 0;
       }
@@ -538,7 +568,7 @@ main {
       margin: -50px 0 50px 0;
 
       padding: 50px 4vw 0 4vw;
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         min-height: 100vh;
         margin-top: 0;
         padding: 2vw;
@@ -573,7 +603,7 @@ main {
         }
         .optionWrap {
           margin-top: 20px;
-          @include bp-min($xsm) {
+          @include bp-min($xsm + 1) {
             margin-top: 60px;
           }
 
@@ -675,7 +705,7 @@ main {
     font-weight: 500;
     text-align: center;
 
-    @include bp-max($xsm - 1) {
+    @include bp-max($xsm) {
       display: block;
       text-align: center;
     }
@@ -724,7 +754,7 @@ main {
   h1 {
     margin: 15px 0 .25em 0;
     @include Brown(48px, 800);
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       @include Brown(36px, 800);
     }
     @include bp-min($mid) {
@@ -758,7 +788,7 @@ main {
   p {
     margin-top: 10px;
     @include font-size(14px);
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       @include font-size(16px);
     }
     @include bp-min($sml) {
@@ -777,7 +807,7 @@ main {
 
   p {
     &.caption {
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         display: none;
       }
     }
@@ -833,7 +863,7 @@ main {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       align-items: center;
     }
 
@@ -844,7 +874,7 @@ main {
       justify-content: flex-start;
       width: 100%;
       flex-direction: column;
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         flex-direction: row;
       }
       @include bp-min($max) {
@@ -856,13 +886,13 @@ main {
 
       .col-1 {
         padding: 4vw 4vw 15vw 4vw;
-        @include bp-min($xsm) {
+        @include bp-min($xsm + 1) {
           padding: 2vw;
         }
       }
     }
 
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       .col-1 {
         display: flex;
         flex-wrap: wrap;
@@ -875,7 +905,7 @@ main {
         top: 0;
         left: 0;
         width: 40%;
-        @include bp-min($sml) {
+        @include bp-min($sml + 1) {
           width: calc( ( 100vw - 150px ) * .40 );
         }
         @include bp-min($lrg) {
@@ -891,7 +921,7 @@ main {
 
         margin-left: 40%;
         width: 60%;
-        @include bp-min($sml) {
+        @include bp-min($sml + 1) {
           margin-left: calc( ( 100vw - 150px ) * .40 );
           width: calc( ( 100vw - 150px ) * .60 );
         }
@@ -918,7 +948,7 @@ main {
       padding: 0;
 
       display: none;
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         display: block;
       }
 
@@ -1059,7 +1089,7 @@ main {
     padding: 40px 20px;
     height: 90vh;
     margin-bottom: 110vh;
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       padding: 40px;
       display: block;
       height: auto;
@@ -1082,7 +1112,7 @@ main {
     }
 
     width: 75px;
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       width: 150px;
     }
 
@@ -1104,14 +1134,14 @@ main {
     align-content: center;
     justify-content: center;
 
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       position: relative;
     }
     h1,h2,p {line-height: 130%;}
 
     h1 {
       @include font-size(38px);
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         @include font-size(40px);
       }
       @include bp-min($sml) {
@@ -1149,7 +1179,7 @@ main {
     }
   }
   .intro-txt {
-    @include bp-max($xsm - 1) {
+    @include bp-max($xsm) {
       position: absolute;
       left: 0;
       top: 100vh;
@@ -1190,7 +1220,7 @@ main {
     }
 
     span {
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         opacity: 0;
       }
       color: #fff;
@@ -1218,7 +1248,7 @@ main {
       bottom: auto;
       top: 80vh;
       display: none;
-      @include bp-max($xsm - 1) {
+      @include bp-max($xsm) {
         display: flex !important;
       }
     }
@@ -1358,7 +1388,7 @@ main {
 /* Color */
 body #color {
   &.active  {
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       .color-swatches {
         .color-1 {animation: pop .5s both normal 0.25s;}
         .color-2 {animation: pop .5s both normal 0.50s;}
@@ -1407,7 +1437,7 @@ body #color {
 
   .color-swatches {
     display: none;
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       height: 75vh;
       display: flex;
       flex-flow: row wrap;
@@ -1470,7 +1500,7 @@ body #color {
     z-index: 3;
 
     position: relative;
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       position: absolute;
       pointer-events: none;
     }
@@ -1491,7 +1521,7 @@ body #color {
       &#color-accent-red,
       &#color-action-blue {padding-top: 5px;}
 
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         padding: 20px;
         margin: 0;
         opacity: 0;
@@ -1529,7 +1559,7 @@ body #color {
 
       .close-btn {
         display: none;
-        @include bp-min($xsm) {
+        @include bp-min($xsm + 1) {
           display: block;
           position: absolute;
           right: 15px;
@@ -1626,7 +1656,7 @@ body #color {
     margin: 0;
     padding: 30px 10px 20px 10px;
 
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       padding: 10px;
     }
     &::-webkit-slider-thumb {
@@ -1647,7 +1677,7 @@ body #color {
       width: 10px;
       margin-top: -20px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
       background: #ccc;
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         background: #ffffff;
         margin-top: -8px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
         height: 20px;
@@ -1663,7 +1693,7 @@ body #color {
     }
   }
 
-  @include bp-max($xsm - 1) {
+  @include bp-max($xsm) {
     #type-styles .mobile-wrap {
       border: 1px solid #ccc;
       border-radius: 4px;
@@ -1673,7 +1703,7 @@ body #color {
   }
   .usage {
     padding: 15px 20px;
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       padding: 15px 40px;
     }
     span {
@@ -1733,7 +1763,7 @@ body #color {
       .row-1 .col-1-3 {display: none;}
       .mosaic .row-1 .col.col-2-3 {width: 100%;}
     }
-    @include bp-max($xsm - 1) {
+    @include bp-max($xsm) {
       padding: 6vw calc(4vw - 5px);
     }
     &:nth-of-type(2n) {
@@ -1876,7 +1906,7 @@ body #color {
 .tab {
 
   .info {
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       padding: 10px;
     }
     h3 {
@@ -1976,7 +2006,7 @@ body #color {
       &:nth-of-type(3) {margin:5px 5px 0 0;}
       &:nth-of-type(4) {margin:5px 0 0 5px;}
 
-      @include bp-min($xsm) {
+      @include bp-min($xsm + 1) {
         &:nth-of-type(n) {margin: 10px;}
       }
 
@@ -2038,7 +2068,7 @@ body #color {
 /* Sub brands */
 #sub-brands {
   .col-2 {
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       padding: 0 3.5%;
     }
   }
@@ -2239,12 +2269,12 @@ body #color {
   }
 }
 .no-mobile {
-  @include bp-max($xsm - 1) {
+  @include bp-max($xsm) {
     display: none;
   }
 }
 .mobile-only {
-  @include bp-min($xsm) {
+  @include bp-min($xsm + 1) {
     display: none !important;
   }
 }
@@ -2630,7 +2660,7 @@ body #color {
 /* Downloads */
 #downloads {
   display: block;
-  @include bp-min($xsm) {
+  @include bp-min($xsm + 1) {
     padding: 100px 0 10vh 0;
   }
 
@@ -2649,7 +2679,7 @@ body #color {
   display: flex;
   flex-wrap: wrap;
   margin: -15px;
-  @include bp-min($xsm) {
+  @include bp-min($xsm + 1) {
     margin: 0;
   }
 
@@ -2662,7 +2692,7 @@ body #color {
 
     flex: 0 1 50%;
     padding: 20px 15px;
-    @include bp-min($xsm) {
+    @include bp-min($xsm + 1) {
       padding: 40px 20px;
     }
     @include bp-min($mid) {
@@ -2707,7 +2737,7 @@ body #color {
 
 /* Creative Examples */
 #creative-examples {
-  @include bp-min($xsm) {
+  @include bp-min($xsm + 1) {
     padding: 100px 0;
   }
 
@@ -2718,7 +2748,7 @@ body #color {
 
 /* Contact */
 #contact-resources {
-  @include bp-min($xsm) {
+  @include bp-min($xsm + 1) {
     padding: 100px 0 10vh 0;
   }
   .col-full > p {
@@ -2810,7 +2840,7 @@ section[data-bg=black] .button {
     border-bottom: 0 !important;
     background: transparent !important;
 
-    @include bp-max($xsm - 1) {
+    @include bp-max($xsm) {
       top: 0;
       left: 0;
       position: absolute !important;
@@ -2834,7 +2864,7 @@ section[data-bg=black] .button {
     background: #fff !important;
     border: 1px solid #333 !important;
     border-radius: $bdr;
-    @include bp-max($xsm - 1) {
+    @include bp-max($xsm) {
       width: 50px !important;
       height: 50px !important;
       font-size: 24px;
@@ -2845,7 +2875,7 @@ section[data-bg=black] .button {
 
 /* remove slideshow on mobile */
 
-@include bp-max($xsm - 1) {
+@include bp-max($xsm) {
   .content section.with-tabs .tab .tab-inner .slideshow {
     ul.optionWrap:not(.swap) {
       width: 100% !important;
@@ -2861,3 +2891,64 @@ section[data-bg=black] .button {
     }
   }
 }
+//
+// @media only screen
+//   and (-webkit-min-device-pixel-ratio: 3)
+//   and (max-device-width: 812px)
+//   and (min-device-width: 375px)
+//   and (orientation: landscape) {
+//     #introduction,
+//     main .inner {display: none;}
+//     body {
+//       display: flex;
+//       justify-content: center;
+//       align-content: center;
+//       align-items: center;
+//       height: 100%;
+//       width: 100%;
+//       position: absolute;
+//     }
+//     main {
+//       background: #000;
+//       color: #fff;
+//     }
+//     main:after {
+//       content: "For the best experience, please rotate your device.";
+//       font-family: 'XfinityBrown';
+//       font-size: 1.25em;
+//       text-align: center;
+//       color: #fefefe;
+//       display: inline-block;
+//       z-index: 10;
+//     }
+//   }
+// @media only screen
+//   and (-webkit-min-device-pixel-ratio: 2)
+//   and (max-device-width: 667px)
+//   and (min-device-width: 375px)
+//   and (orientation: landscape) {
+//     #introduction,
+//     main .inner {display: none;}
+//     body {
+//       display: flex;
+//       justify-content: center;
+//       align-content: center;
+//       align-items: center;
+//       height: 100%;
+//       width: 100%;
+//       position: absolute;
+//     }
+//     main {
+//       background: #000;
+//       color: #fff;
+//     }
+//     main:after {
+//       content: "For the best experience, please rotate your device.";
+//       font-family: 'XfinityBrown';
+//       font-size: 1.25em;
+//       text-align: center;
+//       color: #fefefe;
+//       display: inline-block;
+//       z-index: 10;
+//     }
+// }

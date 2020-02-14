@@ -345,7 +345,7 @@ main {
 .two-col .sidebar {
   display: block;
   width: 0; }
-  @media (min-width: 550px) {
+  @media (min-width: 769px) {
     .two-col .sidebar {
       width: 150px; } }
   @media (min-width: 1200px) {
@@ -358,8 +358,13 @@ main {
       .two-col .sidebar .logo:not(.vid-logo) {
         padding: 30px 0 10px 0;
         width: 50px; } }
+  .two-col .sidebar .mid-logo {
+    display: none; }
+  @media screen and (min-width: 551px) and (max-width: 768px) {
+    .two-col .sidebar #subnav .nav.menu {
+      padding-left: 5px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .two-col .content {
     width: calc(100% - 150px); } }
 
@@ -389,7 +394,7 @@ main {
     width: 100%; }
     .sidebar #subnav .logo {
       display: none; }
-      @media (min-width: 550px) {
+      @media (min-width: 769px) {
         .sidebar #subnav .logo {
           display: block;
           padding: 30px 5vw 10px 0; } }
@@ -401,14 +406,14 @@ main {
         display: none;
         max-width: 100%;
         margin: -5px; }
-        @media (min-width: 550px) {
+        @media (min-width: 769px) {
           .sidebar #subnav .logo video {
             display: block; } }
     .sidebar #subnav.sticky {
       position: fixed;
       top: 0;
       z-index: 99; }
-    @media (min-width: 550px) {
+    @media (min-width: 769px) {
       .sidebar #subnav {
         padding: 0 1.5vw 30px 1.5vw;
         position: relative;
@@ -429,7 +434,7 @@ main {
         padding: 14px 10px 12px 10px;
         font-size: 16px;
         transition: .5s transform; }
-      @media (min-width: 550px) {
+      @media (min-width: 769px) {
         .sidebar #subnav .nav {
           padding: 25px 0 0 0; }
           .sidebar #subnav .nav:after {
@@ -442,17 +447,23 @@ main {
         margin: 0;
         font-weight: 100;
         line-height: 125%;
-        padding: 5px 0;
-        font-size: 14px;
-        font-size: 0.875rem; }
-        @media (max-width: 549px) {
+        padding: 10px 0;
+        font-size: 16px;
+        font-size: 1rem; }
+        @media (max-width: 768px) {
           .sidebar #subnav ul li {
-            padding: 10px 0;
-            font-size: 16px;
-            font-size: 1rem;
             display: none; }
             .sidebar #subnav ul li#sn0 {
               display: none; } }
+        @media (min-width: 550px) {
+          .sidebar #subnav ul li {
+            font-size: 22px;
+            font-size: 1.375rem; } }
+        @media (min-width: 769px) {
+          .sidebar #subnav ul li {
+            padding: 5px 0;
+            font-size: 14px;
+            font-size: 0.875rem; } }
         .sidebar #subnav ul li .menu {
           padding: 0; }
         .sidebar #subnav ul li a {
@@ -461,18 +472,18 @@ main {
           text-decoration: none;
           color: #fff;
           border-radius: 4px; }
-          @media (min-width: 550px) {
+          @media (min-width: 769px) {
             .sidebar #subnav ul li a {
               margin: 0 -10px; } }
           .sidebar #subnav ul li a:hover {
             font-weight: bold; }
-        @media (max-width: 549px) {
+        @media (max-width: 768px) {
           .sidebar #subnav ul li.active {
             display: flex;
             justify-content: flex-start; } }
         .sidebar #subnav ul li.active > a {
           font-weight: bold; }
-          @media (min-width: 550px) {
+          @media (min-width: 769px) {
             .sidebar #subnav ul li.active > a {
               background: #fff;
               color: #000; } }
@@ -483,23 +494,27 @@ main {
             color: white; }
         .sidebar #subnav ul li.active .tert-nav {
           display: block; }
-          @media (max-width: 550px) {
+          @media (max-width: 768px) {
             .sidebar #subnav ul li.active .tert-nav {
               margin: 0;
               padding: 0; } }
         .sidebar #subnav ul li li {
+          align-self: center;
           font-size: 16px;
           font-size: 1rem;
-          align-self: center;
           padding: 0; }
           @media (min-width: 550px) {
+            .sidebar #subnav ul li li {
+              font-size: 22px;
+              font-size: 1.375rem; } }
+          @media (min-width: 769px) {
             .sidebar #subnav ul li li {
               font-size: 13px;
               font-size: 0.8125rem; } }
           .sidebar #subnav ul li li a {
             margin: 0;
             text-indent: -15px; }
-            @media (min-width: 550px) {
+            @media (min-width: 769px) {
               .sidebar #subnav ul li li a {
                 padding: 6px 5px 6px 15px; } }
             .sidebar #subnav ul li li a:before {
@@ -507,7 +522,7 @@ main {
               padding: 0 10px 0 5px;
               transition: .25s;
               color: rgba(255, 255, 255, 0); }
-            @media (min-width: 550px) {
+            @media (min-width: 769px) {
               .sidebar #subnav ul li li a:before {
                 content: "• ";
                 margin: 0 3px 0 0;
@@ -524,7 +539,7 @@ main {
   height: 100%;
   width: 100%;
   z-index: 1; }
-  @media (min-width: 550px) {
+  @media (min-width: 769px) {
     #open-mobile-nav {
       display: none; } }
 
@@ -579,11 +594,11 @@ main {
 /* Content Area */
 .content section.active {
   z-index: 1; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     .content section.active .col-1 {
       position: fixed;
       z-index: 1; } }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .content section.active .col-1 {
       left: 150px; } }
   @media (min-width: 1200px) {
@@ -598,7 +613,7 @@ main {
   overflow: hidden;
   margin: -50px 0 0 0;
   padding-top: 50px; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     .content section.with-tabs .tabs-wrapper {
       margin-top: 0;
       padding-top: 0; } }
@@ -613,7 +628,7 @@ main {
   flex-wrap: wrap;
   margin: -50px 0 50px 0;
   padding: 50px 4vw 0 4vw; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     .content section.with-tabs .tab {
       min-height: 100vh;
       margin-top: 0;
@@ -637,7 +652,7 @@ main {
       padding: 0; }
     .content section.with-tabs .tab .tab-inner .optionWrap {
       margin-top: 20px; }
-      @media (min-width: 550px) {
+      @media (min-width: 551px) {
         .content section.with-tabs .tab .tab-inner .optionWrap {
           margin-top: 60px; } }
       .content section.with-tabs .tab .tab-inner .optionWrap.auto + .optionNav {
@@ -712,7 +727,7 @@ main {
     font-size: 0.75rem;
     font-weight: 500;
     text-align: center; }
-    @media (max-width: 549px) {
+    @media (max-width: 550px) {
       .button span {
         display: block;
         text-align: center; } }
@@ -756,7 +771,7 @@ main {
     font-size: 48px;
     font-size: 3rem;
     font-weight: 800; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       .content h1 {
         font-family: "XfinityBrown", sans-serif;
         letter-spacing: -.04ex;
@@ -810,7 +825,7 @@ main {
     font-size: 0.875rem;
     font-weight: 300;
     line-height: 150%; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       .content li,
       .content p {
         font-size: 16px;
@@ -828,7 +843,7 @@ main {
     .content li strong,
     .content p strong {
       font-weight: 500; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     .content p.caption {
       display: none; } }
   .content li p.caption {
@@ -872,7 +887,7 @@ main {
           top: 0; } }
     .content section:focus {
       outline: none; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       .content section {
         align-items: center; } }
     .content section .col-wrap {
@@ -882,7 +897,7 @@ main {
       justify-content: flex-start;
       width: 100%;
       flex-direction: column; }
-      @media (min-width: 550px) {
+      @media (min-width: 551px) {
         .content section .col-wrap {
           flex-direction: row; } }
       @media (min-width: 1600px) {
@@ -890,10 +905,10 @@ main {
           width: 1400px; } }
       .content section .col-wrap .col-1 {
         padding: 4vw 4vw 15vw 4vw; }
-        @media (min-width: 550px) {
+        @media (min-width: 551px) {
           .content section .col-wrap .col-1 {
             padding: 2vw; } }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       .content section .col-1 {
         display: flex;
         flex-wrap: wrap;
@@ -905,29 +920,29 @@ main {
         top: 0;
         left: 0;
         width: 40%; } }
-  @media (min-width: 550px) and (min-width: 768px) {
+  @media (min-width: 551px) and (min-width: 769px) {
     .content section .col-1 {
       width: calc( ( 100vw - 150px ) * .40); } }
-  @media (min-width: 550px) and (min-width: 1020px) {
+  @media (min-width: 551px) and (min-width: 1020px) {
     .content section .col-1 {
       width: calc( ( 100vw - 200px ) * .45); } }
-  @media (min-width: 550px) and (min-width: 1600px) {
+  @media (min-width: 551px) and (min-width: 1600px) {
     .content section .col-1 {
       width: 600px; } }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       .content section .col-2 {
         padding: 0;
         margin-left: 40%;
         width: 60%; } }
-  @media (min-width: 550px) and (min-width: 768px) {
+  @media (min-width: 551px) and (min-width: 769px) {
     .content section .col-2 {
       margin-left: calc( ( 100vw - 150px ) * .40);
       width: calc( ( 100vw - 150px ) * .60); } }
-  @media (min-width: 550px) and (min-width: 1020px) {
+  @media (min-width: 551px) and (min-width: 1020px) {
     .content section .col-2 {
       margin-left: calc( ( 100vw - 200px ) * .45);
       width: calc( ( 100vw - 200px ) * .55); } }
-  @media (min-width: 550px) and (min-width: 1600px) {
+  @media (min-width: 551px) and (min-width: 1600px) {
     .content section .col-2 {
       margin-left: 600px;
       width: 800px; } }
@@ -939,7 +954,7 @@ main {
       margin: 30px 0;
       padding: 0;
       display: none; }
-      @media (min-width: 550px) {
+      @media (min-width: 551px) {
         .content section .tab-nav {
           display: block; } }
       .content section .tab-nav li {
@@ -1048,7 +1063,7 @@ main {
     padding: 40px 20px;
     height: 90vh;
     margin-bottom: 110vh; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       #introduction .col-1 {
         padding: 40px;
         display: block;
@@ -1067,7 +1082,7 @@ main {
     @media (min-width: 1600px) {
       #introduction .intro-logo {
         left: calc(( ( 100% - 1600px ) / 2) + 1.5vw); } }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       #introduction .intro-logo {
         width: 150px; } }
     #introduction .intro-logo svg {
@@ -1084,7 +1099,7 @@ main {
     align-items: flex-start;
     align-content: center;
     justify-content: center; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       #introduction .intro-info {
         position: relative; } }
     #introduction .intro-info h1, #introduction .intro-info h2, #introduction .intro-info p {
@@ -1092,7 +1107,7 @@ main {
     #introduction .intro-info h1 {
       font-size: 38px;
       font-size: 2.375rem; }
-      @media (min-width: 550px) {
+      @media (min-width: 551px) {
         #introduction .intro-info h1 {
           font-size: 40px;
           font-size: 2.5rem; } }
@@ -1129,7 +1144,7 @@ main {
         order: 3; }
       #introduction .intro-info .launch-video {
         order: 4; } }
-  @media (max-width: 549px) {
+  @media (max-width: 550px) {
     #introduction .intro-txt {
       position: absolute;
       left: 0;
@@ -1165,7 +1180,7 @@ main {
     #introduction .get-started span {
       color: #fff;
       transition: .25s opacity; }
-      @media (min-width: 550px) {
+      @media (min-width: 551px) {
         #introduction .get-started span {
           opacity: 0; } }
     #introduction .get-started svg {
@@ -1183,7 +1198,7 @@ main {
       bottom: auto;
       top: 80vh;
       display: none; }
-      @media (max-width: 549px) {
+      @media (max-width: 550px) {
         #introduction .get-started.mobile {
           display: flex !important; } }
   @media (min-width: 960px) {
@@ -1274,7 +1289,7 @@ main {
   width: 75%; }
 
 /* Color */
-@media (min-width: 550px) {
+@media (min-width: 551px) {
   body #color.active .color-swatches .color-1 {
     animation: pop .5s both normal 0.25s; }
   body #color.active .color-swatches .color-2 {
@@ -1334,7 +1349,7 @@ body #color .color-swatches .color {
 
 #color .color-swatches {
   display: none; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     #color .color-swatches {
       height: 75vh;
       display: flex;
@@ -1376,7 +1391,7 @@ body #color .color-swatches .color {
   width: 100%;
   z-index: 3;
   position: relative; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     #color .color-swatch-info {
       position: absolute;
       pointer-events: none; } }
@@ -1395,7 +1410,7 @@ body #color .color-swatches .color {
     margin: 15px 0; }
     #color .color-swatch-info .swatch-info#color-accent-red, #color .color-swatch-info .swatch-info#color-action-blue {
       padding-top: 5px; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       #color .color-swatch-info .swatch-info {
         padding: 20px;
         margin: 0;
@@ -1425,7 +1440,7 @@ body #color .color-swatches .color {
           font-weight: 100; }
     #color .color-swatch-info .swatch-info .close-btn {
       display: none; }
-      @media (min-width: 550px) {
+      @media (min-width: 551px) {
         #color .color-swatch-info .swatch-info .close-btn {
           display: block;
           position: absolute;
@@ -1515,7 +1530,7 @@ body #color .color-swatches .color {
   border: 0;
   margin: 0;
   padding: 30px 10px 20px 10px; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     #typography .weight {
       padding: 10px; } }
   #typography .weight::-webkit-slider-thumb {
@@ -1532,7 +1547,7 @@ body #color .color-swatches .color {
       content: "x"; }
     #typography .weight::-webkit-slider-thumb:focus {
       color: #333; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       #typography .weight::-webkit-slider-thumb {
         background: #ffffff;
         margin-top: -8px;
@@ -1545,7 +1560,7 @@ body #color .color-swatches .color {
     cursor: pointer;
     background: #dedede; }
 
-@media (max-width: 549px) {
+@media (max-width: 550px) {
   #typography #type-styles .mobile-wrap {
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -1554,7 +1569,7 @@ body #color .color-swatches .color {
 
 #typography .usage {
   padding: 15px 20px; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     #typography .usage {
       padding: 15px 40px; } }
   #typography .usage span {
@@ -1643,7 +1658,7 @@ body #color .color-swatches .color {
   .content section#photography .tab .mosaic .row-1 .col.col-2-3 {
     width: 100%; } }
 
-@media (max-width: 549px) {
+@media (max-width: 550px) {
   .content section#photography .tab {
     padding: 6vw calc(4vw - 5px); } }
 
@@ -1741,7 +1756,7 @@ body #color .color-swatches .color {
 #brand-symbol .tab .brand-x img {
   width: 90%; }
 
-@media (min-width: 550px) {
+@media (min-width: 551px) {
   .tab .info {
     padding: 10px; } }
 
@@ -1831,7 +1846,7 @@ body #color .color-swatches .color {
       margin: 5px 5px 0 0; }
     .tab .quadWrap li:nth-of-type(4) {
       margin: 5px 0 0 5px; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       .tab .quadWrap li:nth-of-type(n) {
         margin: 10px; } }
     .tab .quadWrap li:before {
@@ -1872,7 +1887,7 @@ body #color .color-swatches .color {
       left: 0; }
 
 /* Sub brands */
-@media (min-width: 550px) {
+@media (min-width: 551px) {
   #sub-brands .col-2 {
     padding: 0 3.5%; } }
 
@@ -2015,11 +2030,11 @@ body #color .color-swatches .color {
     margin: 30px 0;
     align-self: flex-start; }
 
-@media (max-width: 549px) {
+@media (max-width: 550px) {
   .no-mobile {
     display: none; } }
 
-@media (min-width: 550px) {
+@media (min-width: 551px) {
   .mobile-only {
     display: none !important; } }
 
@@ -2253,7 +2268,7 @@ body #color .color-swatches .color {
 /* Downloads */
 #downloads {
   display: block; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     #downloads {
       padding: 100px 0 10vh 0; } }
   #downloads .button {
@@ -2267,7 +2282,7 @@ body #color .color-swatches .color {
   display: flex;
   flex-wrap: wrap;
   margin: -15px; }
-  @media (min-width: 550px) {
+  @media (min-width: 551px) {
     .tiles,
     .downloads {
       margin: 0; } }
@@ -2281,7 +2296,7 @@ body #color .color-swatches .color {
     justify-content: space-between;
     flex: 0 1 50%;
     padding: 20px 15px; }
-    @media (min-width: 550px) {
+    @media (min-width: 551px) {
       .tiles .tile-row,
       .tiles .download-row,
       .downloads .tile-row,
@@ -2344,7 +2359,7 @@ body #color .color-swatches .color {
       margin: 0; }
 
 /* Creative Examples */
-@media (min-width: 550px) {
+@media (min-width: 551px) {
   #creative-examples {
     padding: 100px 0; } }
 
@@ -2352,7 +2367,7 @@ body #color .color-swatches .color {
   margin: -8px; }
 
 /* Contact */
-@media (min-width: 550px) {
+@media (min-width: 551px) {
   #contact-resources {
     padding: 100px 0 10vh 0; } }
 
@@ -2429,7 +2444,7 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
   padding: 0 !important;
   border-bottom: 0 !important;
   background: transparent !important; }
-  @media (max-width: 549px) {
+  @media (max-width: 550px) {
     .featherlight .featherlight-content {
       top: 0;
       left: 0;
@@ -2452,7 +2467,7 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
   background: #fff !important;
   border: 1px solid #333 !important;
   border-radius: 4px; }
-  @media (max-width: 549px) {
+  @media (max-width: 550px) {
     .featherlight .featherlight-close-icon {
       width: 50px !important;
       height: 50px !important;
@@ -2460,7 +2475,7 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
       font-weight: 100; } }
 
 /* remove slideshow on mobile */
-@media (max-width: 549px) {
+@media (max-width: 550px) {
   .content section.with-tabs .tab .tab-inner .slideshow ul.optionWrap:not(.swap) {
     width: 100% !important;
     flex-direction: column; }

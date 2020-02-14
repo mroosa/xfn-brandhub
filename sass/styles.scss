@@ -1066,7 +1066,6 @@ main {
     }
     @include bp-min($mid) {
       height: 100vh;
-      margin-bottom: 100vh;
       padding: 100px 200px;
     }
 
@@ -1282,7 +1281,7 @@ main {
 
     .col-1 {
       max-width: 1600px;
-      margin: 0 auto;
+      margin: 0 auto 450px auto;
       padding: 40vh 200px;
     }
     .intro-logo {

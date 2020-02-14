@@ -1056,7 +1056,6 @@ main {
     @media (min-width: 960px) {
       #introduction .col-1 {
         height: 100vh;
-        margin-bottom: 100vh;
         padding: 100px 200px; } }
   #introduction .intro-logo {
     position: absolute;
@@ -1233,7 +1232,7 @@ main {
       opacity: 1; }
   #introduction.alt .col-1 {
     max-width: 1600px;
-    margin: 0 auto;
+    margin: 0 auto 450px auto;
     padding: 40vh 200px; }
   #introduction.alt .intro-logo {
     position: fixed; }

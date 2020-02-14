@@ -12,10 +12,30 @@
     <div class="tab" id="design-system-grid">
       <div class="tab-inner">
         <ul class="optionWrap">
-          <li><video nocontrols autoplay muted><source src="video/ds-01.mp4" type="video/mp4"></video></li>
-          <li><video nocontrols autoplay muted><source src="video/ds-02.mp4" type="video/mp4"></video></li>
-          <li><video nocontrols autoplay muted><source src="video/ds-03.mp4" type="video/mp4"></video></li>
-          <li><video nocontrols autoplay muted><source src="video/ds-04.mp4" type="video/mp4"></video></li>
+          <li>
+            <video class="no-mobile" nocontrols autoplay muted>
+              <source src="video/ds-01.mp4" type="video/mp4">
+            </video>
+            <img class="mobile-only" src="images/design-system/mobile-1.png" alt="">
+          </li>
+          <li>
+            <video class="no-mobile" nocontrols autoplay muted>
+              <source src="video/ds-02.mp4" type="video/mp4">
+            </video>
+            <img class="mobile-only" src="images/design-system/mobile-2.png" alt="">
+          </li>
+          <li>
+            <video class="no-mobile" nocontrols autoplay muted>
+              <source src="video/ds-03.mp4" type="video/mp4">
+            </video>
+            <img class="mobile-only" src="images/design-system/mobile-3.png" alt="">
+          </li>
+          <li>
+            <video class="no-mobile" nocontrols autoplay muted>
+              <source src="video/ds-04.mp4" type="video/mp4">
+            </video>
+            <img class="mobile-only" src="images/design-system/mobile-4.png" alt="">
+          </li>
         </ul>
       </div>
     </div>

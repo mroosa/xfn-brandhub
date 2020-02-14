@@ -2126,7 +2126,8 @@ body #color .color-swatches .color {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 100vh; }
+    height: 100vh;
+    background: #000; }
     .login main section {
       background: transparent !important; }
     .login main .login-wrap {

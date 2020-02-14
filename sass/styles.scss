@@ -787,7 +787,8 @@ main {
     @include font-size(14px);
     font-weight: 400;
     color: #999;
-    margin: 2em 0 0 0;
+    padding: 1.5em 0 2.5em 0;
+    margin: 0;
   }
 
   .flex-column ul.none,
@@ -2837,6 +2838,25 @@ section[data-bg=black] .button {
       height: 50px !important;
       font-size: 24px;
       font-weight: 100;
+    }
+  }
+}
+
+/* remove slideshow on mobile */
+
+@include bp-max($xsm - 1) {
+  .content section.with-tabs .tab .tab-inner .slideshow {
+    ul.optionWrap:not(.swap) {
+      width: 100% !important;
+      flex-direction: column;
+      li {
+        width: 100% !important;
+        padding: 10px 0;
+      }
+
+      & + .optionNav {
+        display: none;
+      }
     }
   }
 }

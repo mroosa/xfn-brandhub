@@ -43,8 +43,8 @@
           </li>
           <li>
             <ul id="sg-m-2">
-              <li class="img width-50"><img src="images/secondary-graphics/02-9.svg" alt=""><span>Apple App Store badge</span></li>
-              <li class="img width-50"><img src="images/secondary-graphics/02-10.svg" alt=""><span>Google Play App Store badge</span></li>
+              <li class="img width-50"><img style="max-width: 150px;" src="images/secondary-graphics/02-9.svg" alt=""><span>Apple App Store badge</span></li>
+              <li class="img width-50"><img style="max-width: 150px;" src="images/secondary-graphics/02-10.svg" alt=""><span>Google Play App Store badge</span></li>
             </ul>
           </li>
         </ul>

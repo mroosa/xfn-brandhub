@@ -836,7 +836,8 @@ main {
     font-size: 0.875rem;
     font-weight: 400;
     color: #999;
-    margin: 2em 0 0 0; }
+    padding: 1.5em 0 2.5em 0;
+    margin: 0; }
   .content .flex-column ul.none,
   .content .flex-column ul.none li {
     list-style: none;
@@ -2456,3 +2457,14 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
       height: 50px !important;
       font-size: 24px;
       font-weight: 100; } }
+
+/* remove slideshow on mobile */
+@media (max-width: 549px) {
+  .content section.with-tabs .tab .tab-inner .slideshow ul.optionWrap:not(.swap) {
+    width: 100% !important;
+    flex-direction: column; }
+    .content section.with-tabs .tab .tab-inner .slideshow ul.optionWrap:not(.swap) li {
+      width: 100% !important;
+      padding: 10px 0; }
+    .content section.with-tabs .tab .tab-inner .slideshow ul.optionWrap:not(.swap) + .optionNav {
+      display: none; } }

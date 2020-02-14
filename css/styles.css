@@ -1053,7 +1053,7 @@ main {
   display: flex;
   align-items: center;
   justify-content: center; }
-  @media (min-width: 768px) {
+  @media (min-width: 550px) {
     #introduction {
       min-height: 100vh; } }
   #introduction .col-1 {
@@ -1063,12 +1063,14 @@ main {
     padding: 40px 20px;
     height: 90vh;
     margin-bottom: 110vh; }
-    @media (min-width: 551px) {
+    @media (min-width: 550px) {
       #introduction .col-1 {
         padding: 40px;
-        display: block;
-        height: auto;
-        margin: 0; } }
+        margin: 0;
+        height: auto; } }
+    @media (min-width: 768px) {
+      #introduction .col-1 {
+        display: block; } }
     @media (min-width: 960px) {
       #introduction .col-1 {
         height: 100vh;
@@ -1082,7 +1084,7 @@ main {
     @media (min-width: 1600px) {
       #introduction .intro-logo {
         left: calc(( ( 100% - 1600px ) / 2) + 1.5vw); } }
-    @media (min-width: 551px) {
+    @media (min-width: 769px) {
       #introduction .intro-logo {
         width: 150px; } }
     #introduction .intro-logo svg {
@@ -1107,10 +1109,6 @@ main {
     #introduction .intro-info h1 {
       font-size: 38px;
       font-size: 2.375rem; }
-      @media (min-width: 551px) {
-        #introduction .intro-info h1 {
-          font-size: 40px;
-          font-size: 2.5rem; } }
       @media (min-width: 768px) {
         #introduction .intro-info h1 {
           font-size: 54px;
@@ -1132,10 +1130,10 @@ main {
     #introduction .intro-info .intro-more {
       max-width: 250px;
       margin: 0 auto; }
-      @media (min-width: 768px) {
+      @media (min-width: 551px) {
         #introduction .intro-info .intro-more {
           display: none; } }
-    @media (min-width: 768px) {
+    @media (min-width: 551px) {
       #introduction .intro-info h1 {
         order: 1; }
       #introduction .intro-info .intro-txt {

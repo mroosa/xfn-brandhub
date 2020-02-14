@@ -517,7 +517,7 @@ main {
   &.with-tabs {
     .tabs-wrapper {
       overflow: hidden;
-      margin: -50px 0 50px 0;
+      margin: -50px 0 0 0;
       padding-top: 50px;
       @include bp-min($xsm) {
         margin-top: 0;
@@ -537,7 +537,7 @@ main {
 
       margin: -50px 0 50px 0;
 
-      padding: 50px 4vw 4vw 4vw;
+      padding: 50px 4vw 0 4vw;
       @include bp-min($xsm) {
         min-height: 100vh;
         margin-top: 0;

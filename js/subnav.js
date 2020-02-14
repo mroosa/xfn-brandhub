@@ -30,6 +30,8 @@ $(document).ready(function() {
       if (!$('#subnav').hasClass('sticky')) {
         $('#subnav').addClass('sticky');
         $('#subnav video').get(0).play();
+        $('#introduction video').get(0).pause();
+        $("#introduction .video-controls a").attr("data-playing","false").removeClass("playing");
       }
     } else {
         $('#subnav').removeClass('sticky');

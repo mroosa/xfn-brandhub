@@ -11,7 +11,7 @@
     <!-- tab -->
     <div class="tab" id="co-branding-partnership" data-ttl="Partnership">
       <div class="tab-inner">
-        <h3>Partnership</h3>
+        <h2>Partnership</h2>
         <ul class="optionWrap">
           <li data-ttl="co-branding example 1">
             <video playsinline muted nocontrols loop autoplay>
@@ -34,7 +34,7 @@
     <!-- tab -->
     <div class="tab" id="co-branding-endorsement" data-ttl="Endorsement">
       <div class="tab-inner">
-        <h3>Endorsement</h3>
+        <h2>Endorsement</h2>
         <ul class="optionWrap">
           <li data-ttl="Endorsement example 1"><img style="width: 90%;" src="images/co-branding/02-1.svg" alt=""></li>
           <li data-ttl="Endorsement example 2"><img src="images/co-branding/02-2.png" alt=""></li>

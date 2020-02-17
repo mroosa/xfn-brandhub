@@ -636,6 +636,10 @@ main {
       padding: 2vw; } }
   .content section.with-tabs .tab:focus {
     outline: none; }
+  .content section.with-tabs .tab h2 {
+    font-size: 21px;
+    font-size: 1.3125rem;
+    margin: 20px 0 10px 0; }
   .content section.with-tabs .tab img {
     display: block;
     margin: 0 auto;
@@ -1425,7 +1429,7 @@ body #color .color-swatches .color {
     @media (min-width: 1200px) {
       #color .color-swatch-info .swatch-info {
         padding: 50px; } }
-    #color .color-swatch-info .swatch-info h3 {
+    #color .color-swatch-info .swatch-info h2 {
       font-size: 18px;
       font-size: 1.125rem;
       font-weight: bold; }
@@ -1733,9 +1737,7 @@ body #color .color-swatches .color {
         @media (min-width: 420px) {
           .content section#photography .mosaic .photo-info-wrap .photo-info.ltg {
             background: #ebeef0;
-            color: #000; }
-            .content section#photography .mosaic .photo-info-wrap .photo-info.ltg h3 {
-              color: #999; } }
+            color: #000; } }
       .content section#photography .mosaic .photo-info-wrap .photo-info p {
         font-size: 14px;
         font-size: 0.875rem; }
@@ -1759,7 +1761,7 @@ body #color .color-swatches .color {
   .tab .info {
     padding: 10px; } }
 
-.tab .info h3 {
+.tab .info h2 {
   font-size: 21px;
   font-size: 1.3125rem; }
 
@@ -1991,31 +1993,6 @@ body #color .color-swatches .color {
       opacity: 1; }
     #sub-brands .sub-brand-nav ul li.active {
       font-weight: bold; }
-
-/* Visual Layouts */
-#visual-layouts #btg {
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  #visual-layouts #btg li {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0 2%; }
-    @media all and (min-height: 900px) {
-      #visual-layouts #btg li {
-        padding: 12% 2% 5% 3%; } }
-    #visual-layouts #btg li .vid-wrap {
-      width: 60%;
-      border: 1px solid #999;
-      max-width: 340px; }
-    #visual-layouts #btg li video {
-      display: block; }
-    #visual-layouts #btg li div.info {
-      width: 40%;
-      padding: 3% 20px 20px 40px; }
-      #visual-layouts #btg li div.info h3 {
-        margin: 10px 0; }
 
 /* Co-Branding */
 .tab video {
@@ -2373,6 +2350,11 @@ body #color .color-swatches .color {
 @media (min-width: 768px) {
   #contact-resources .col-full > p {
     width: 40%; } }
+
+#contact-resources .col-full h2 {
+  font-size: 21px;
+  font-size: 1.3125rem;
+  margin-bottom: .5em; }
 
 /* lightbox */
 /* Intro slide */

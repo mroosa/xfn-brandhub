@@ -579,6 +579,11 @@ main {
         outline: none;
       }
 
+      h2 {
+        @include font-size(21px);
+        margin: 20px 0 10px 0;
+      }
+
       img {
         display: block;
         margin: 0 auto;
@@ -1539,7 +1544,7 @@ body #color {
         padding: 50px;
       }
 
-      h3 {
+      h2 {
         @include font-size(18px);
         font-weight: bold;
       }
@@ -1862,9 +1867,9 @@ body #color {
             background: #ebeef0;
             color: #000;
 
-            h3 {
-              color: #999;
-            }
+            // h2 {
+            //   color: #999;
+            // }
           }
 
         }
@@ -1909,7 +1914,7 @@ body #color {
     @include bp-min($xsm + 1) {
       padding: 10px;
     }
-    h3 {
+    h2 {
       @include font-size(21px);
     }
     p {
@@ -2210,44 +2215,6 @@ body #color {
 
         &.active {
           font-weight: bold;
-        }
-      }
-    }
-  }
-}
-
-/* Visual Layouts */
-#visual-layouts {
-  #btg {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-      padding: 0 2%;
-      @media all and (min-height: 900px) {
-        padding: 12% 2% 5% 3%;
-      }
-
-      .vid-wrap {
-        width: 60%;
-        border: 1px solid #999;
-        max-width: 340px;
-      }
-
-      video {
-        display: block;
-      }
-
-      div.info {
-        width: 40%;
-        padding: 3% 20px 20px 40px;
-
-        h3 {
-          margin: 10px 0;
         }
       }
     }
@@ -2755,6 +2722,10 @@ body #color {
     @include bp-min($sml) {
       width: 40%;
     }
+  }
+  .col-full h2 {
+    @include font-size(21px);
+    margin-bottom: .5em;
   }
 }
 

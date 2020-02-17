@@ -12,7 +12,7 @@
     <!-- tab -->
     <div class="tab swap" data-ttl="Our Symbol" data-bg="white" id="the-xfinity-x">
       <div class="tab-inner">
-        <h3>The Xfinity X</h3>
+        <h2>The Xfinity X</h2>
         <p class="caption">Use the black or white version of our Brand Symbol depending on background contrast.</p>
         <ul class="optionWrap brand-x swap">
           <li data-alt="black brand symbol" data-bg="white" title="Our brand symbol X is available in black for light backgrounds.">
@@ -27,7 +27,7 @@
     <div class="tab" data-ttl="Functional" data-bg="white" id="brand-symbol-functional">
       <div class="tab-inner">
         <div class="info">
-          <h3>Functional</h3>
+          <h2>Functional</h2>
           <p>Our X can be used as a shorthand for Xfinity in environments where the brand has already been established. It complements other brand elements in experiential activations.</p>
         </div>
         <ul class="quadWrap">
@@ -43,7 +43,7 @@
     <div class="tab" data-ttl="Expressive" data-bg="white" id="brand-symbol-expressive">
       <div class="tab-inner">
         <div class="info">
-          <h3>Expressive</h3>
+          <h2>Expressive</h2>
           <p>Our X can also be used as a storytelling device to celebrate our passions and products. We use our brand symbol to tell stories around our unique perspective on a topic, event, or partnership.</p>
         </div>
         <ul class="quadWrap">
@@ -58,7 +58,7 @@
     <!-- tab -->
     <div class="tab" data-ttl="Misuses" data-bg="white" id="brand-symbol-misuses">
       <div class="tab-inner">
-        <h3>Brand Symbol Misuses</h3>
+        <h2>Brand Symbol Misuses</h2>
         <ul class="optionWrap">
           <li title="Do not recolor, especially in red." data-alt="Misuse 1">
             <img style="height: 250px;" src="<?php print $dir; ?>images/brand-symbol/misuse-0.svg" alt="" />

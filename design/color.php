@@ -10,7 +10,7 @@
     <div class="tabs">
 
       <div class="tab" id="color-palette" data-ttl="Color Palette">
-        <h3 class="mobile-only" style="flex-basis: 100%;">Color Palette</h3>
+        <h3 class="mobile-only" style="flex-basis: 100%;">Color Palette</h2>
         <div class="color-swatches">
           <div class="col-50 ht-100">
             <a href="#color-white" class="color color-1 dark ignore-click" title="White"></a>
@@ -38,7 +38,7 @@
         <div class="color-swatch-info">
           <div id="color-white" class="swatch-info dark" title="">
             <div>
-              <h3>White</h3>
+              <h2>White</h2>
               <ul>
                 <li><span>CMYK</span> 0/0/0/0</li>
                 <li><span>RGB</span> 255/255/255</li>
@@ -48,7 +48,7 @@
           </div>
           <div id="color-black" class="swatch-info light" title="">
             <div>
-              <h3>Black</h3>
+              <h2>Black</h2>
               <ul>
                 <li><span>CMYK</span> 0/0/0/100</li>
                 <li><span>RGB</span> 0/0/0</li>
@@ -58,7 +58,7 @@
           </div>
           <div id="color-cool-gray" class="swatch-info dark" title="">
             <div>
-              <h3>Xfinity Cool Gray</h3>
+              <h2>Xfinity Cool Gray</h2>
               <ul>
                 <li><span>CMYK</span> 7/4/3/8</li>
                 <li><span>RGB</span> 235/237/239</li>
@@ -68,7 +68,7 @@
           </div>
           <div id="color-dark-gray" class="swatch-info light" title="">
             <div>
-              <h3>Xfinity Dark Gray</h3>
+              <h2>Xfinity Dark Gray</h2>
               <ul>
                 <li><span>CMYK</span> 63/56/52/27</li>
                 <li><span>RGB</span> 90/90/92</li>
@@ -78,7 +78,7 @@
           </div>
           <div id="color-accent-red" class="swatch-info light" title="">
             <div>
-              <h3>Xfinity Accent Red</h3>
+              <h2>Xfinity Accent Red</h2>
               <ul>
                 <li><span>CMYK</span> 0/100/100/10</li>
                 <li><span>RGB</span> 200/0/29</li>
@@ -88,7 +88,7 @@
           </div>
           <div id="color-action-blue" class="swatch-info light" title="">
             <div>
-              <h3>Xfinity Action Blue</h3>
+              <h2>Xfinity Action Blue</h2>
               <ul>
                 <li><span>CMYK</span> 86/8/0/0</li>
                 <li><span>RGB</span> 43/156/216</li>
@@ -102,7 +102,7 @@
       <!-- tab -->
       <!-- <div class="tab" id="color-in-use" data-ttl="Color In Use">
         <div class="tab-inner">
-          <h3>Color In Use</h3>
+          <h2>Color In Use</h2>
           <ul class="optionWrap" title="">
             <li class="img width-75"><img class="rounded" src="<?php print $dir; ?>images/color/01.png" alt="" /></li>
             <li class="img width-50"><img class="border rounded" src="<?php print $dir; ?>images/color/02.png" alt="" /></li>
@@ -114,7 +114,7 @@
       <!-- tab -->
       <div class="tab" data-ttl="Misuses" data-bg="white" id="color-misuses">
         <div class="tab-inner">
-          <h3>Color Misuses</h3>
+          <h2>Color Misuses</h2>
           <ul class="optionWrap">
             <li title="Do not overuse red or recolor icons." class="img width-55" data-alt="Misuse 1">
               <img style="max-height: 425px;" class="rounded" src="<?php print $dir; ?>images/color/misuse-1.png" alt="" />

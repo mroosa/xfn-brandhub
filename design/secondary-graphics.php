@@ -27,7 +27,7 @@
     <!-- tab -->
     <div class="tab" id="secondary-graphics-mobile-app-icons" data-ttl="Mobile App Icons">
       <div class="tab-inner">
-        <h3>Mobile App Icons</h3>
+        <h2>Mobile App Icons</h2>
         <ul class="optionWrap animate">
           <li data-ttl="Mobile Icons 1">
             <ul id="sg-m-1">
@@ -54,7 +54,7 @@
     <!-- tab -->
     <div class="tab" id="secondary-graphics-additional" data-ttl="Additional Graphics">
       <div class="tab-inner">
-        <h3>Additional Graphics</h3>
+        <h2>Additional Graphics</h2>
         <ul class="optionWrap"><li>
           <ul id="sg-ag-1">
             <li class="img width-45 icon"><img src="images/secondary-graphics/03-1.svg" alt=""><span>Customer Commitment Badge</span></li>
@@ -69,7 +69,7 @@
     <!-- tab -->
     <div class="tab" id="secondary-graphics-in-use" data-ttl="Graphics in Use">
       <div class="tab-inner">
-        <h3>Graphics in Use</h3>
+        <h2>Graphics in Use</h2>
         <ul class="optionWrap animate">
           <!-- <li class="img width-75" title="Use the Mobile App icons on communications that refer to mobile app experiences.">
             <img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-03.png" alt="">

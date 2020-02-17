@@ -13,7 +13,7 @@
             <div class="col col-a col-2-3 col-special">
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-lifestyle">
-                  <h3>Lifestyle</h3>
+                  <h2>Lifestyle</h2>
                   <p>To emphasize brand storytelling, lifestyle imagery should be used as much as possible. This imagery allows us to be more human and adds warmth to our creative.</p>
                 </div>
               </div>
@@ -41,7 +41,7 @@
             <div class="col col-a col-2-3 col-special">
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-xfn-devices">
-                  <h3>Xfinity Hardware</h3>
+                  <h2>Xfinity Hardware</h2>
                   <p>Xfinity hardware should be showcased when possible. Please use images from the brand team for consistency.</p>
                 </div>
               </div>
@@ -69,7 +69,7 @@
             <div class="col col-a col-2-3 col-special">
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-devices">
-                  <h3>Generic Devices</h3>
+                  <h2>Generic Devices</h2>
                   <p>Generic device imagery is used to showcase our UI and services. Use these images strategically, as overuse devalues our brand. Please reach out to the brand team for native files with smart object UIs.</p>
                 </div>
               </div>
@@ -97,7 +97,7 @@
             <div class="col col-a col-2-3 col-special">
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-in-situ">
-                  <h3>In-Situation</h3>
+                  <h2>In-Situation</h2>
                   <p>In-situation photography uses our hardware, generic devices, and key props to tell a cohesive story. These images should be used in combination with lifestyle imagery for deeper brand storytelling.</p>
                 </div>
               </div>

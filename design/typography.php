@@ -8,7 +8,7 @@
   <div class="tabs">
     <div class="tab" id="typefaces" data-ttl="Our Type">
       <div class="tab-inner">
-        <h3 class="mobile-only">Our Type</h3>
+        <h3 class="mobile-only">Our Type</h2>
 
         <div class="type-wrap">
           <blockquote class="live-type font-xfb" data-font="font-xfb">Hi, I'm Xfinity Brown</blockquote>
@@ -40,7 +40,7 @@
 
     <div class="tab" id="type-styles" data-ttl="Style & Weight">
       <div class="tab-inner">
-        <h3 class="mobile-only">Style & Weight</h3>
+        <h3 class="mobile-only">Style & Weight</h2>
         <div class="mobile-wrap">
           <blockquote class="usage usage-1">Headlines <span>are set in Xfinity Brown Bold. They should be conversational and used for emphasis.</span></blockquote>
           <blockquote class="usage usage-2">Subheads <span>are set in Xfinity Brown Bold. They are always set in a smaller font size than the headline.</span></blockquote>
@@ -54,7 +54,7 @@
 
     <div class="tab" id="type-examples" data-ttl="Type Examples">
       <div class="tab-inner">
-        <h3>Type Examples</h3>
+        <h2>Type Examples</h2>
         <ul class="optionWrap animate">
           <li data-alt="Type Example 1"><img style="max-height: 400px;" class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-3.png" alt="" /></li>
           <li data-alt="Type Example 2"><img style="max-height: 300px;" class="border rounded" src="<?php print $dir; ?>images/typography/type-ex-1.jpg" alt="" /></li>

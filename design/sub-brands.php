@@ -9,7 +9,7 @@
     <div class="tabs">
 
       <div class="tab" id="our-sub-brands" data-ttl="Logos">
-        <h3 class="mobile-only">Sub-Brand Logos</h3>
+        <h3 class="mobile-only">Sub-Brand Logos</h2>
 
         <div class="sub-brand-logos">
           <div class="sub-brand-logo-1">
@@ -78,7 +78,7 @@
       <!-- tab -->
       <div class="tab" data-ttl="Misuses" data-bg="white" id="sub-brand-misuses">
         <div class="tab-inner">
-          <h3>Sub-Brand Misuses</h3>
+          <h2>Sub-Brand Misuses</h2>
           <ul class="optionWrap">
             <li title="Do not use sub-brand logos to create third-party lock-ups." data-alt="Misuse 1">
               <img style="width: 100%; max-width: 400px;" src="<?php print $dir; ?>images/sub-brands/misuse-1.svg" alt="" />

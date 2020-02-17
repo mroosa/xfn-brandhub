@@ -391,5 +391,34 @@ $(document).ready(function() {
     closeMobile();
   })
 
+  $(window).keydown(function(e) {
+    if (e.keyCode == 34 || e.keyCode == 33) {
+      var curActSec = (!$("#subnav .primary.active").hasClass("has-children")) ? $("#subnav .primary.active") : $("#subnav .primary.active .active");
+      if (e.keyCode == 34) {
+        if (curActSec.next().length > 0) {
+          curActSec.next().find("a")[0].click();
+        } else {
+          if (curActSec.parents(".primary").next().length > 0) {
+            curActSec.parents(".primary").next().find("a")[0].click();
+          }
+        }
+      } else {
+        if (curActSec.prev().length > 0) {
+          curActSec.prev().find("a")[0].click();
+        } else {
+          if (curActSec.parents(".primary").prev().length > 0) {
+            if (curActSec.parents(".primary").prev().hasClass("has-children")) {
+              curActSec.parents(".primary").prev().find("li").last().find("a")[0].click();
+            } else {
+              curActSec.parents(".primary").prev().find("a")[0].click();
+            }
+          }
+        }
+      }
+      e.preventDefault();
+
+    }
+  });
+
   smoothScrolling();
 });

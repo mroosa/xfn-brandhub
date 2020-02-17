@@ -58,67 +58,60 @@
           </div><!-- /.sidebar -->
         </div><!-- /#subnav -->
       <?php endif; ?>
-
         <div class="content">
 
           <section id="logo" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/logo.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
 
           <section id="brand-symbol" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/brand-symbol.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
 
           <section id="sub-brands" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/sub-brands.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
 
           <section id="color" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/color.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
 
           <section id="typography" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/typography.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
-
-          <!-- <section id="voice-and-tone">
-            <div class="col-wrap">
-            <?php #include_once("design/voice-and-tone.php"); ?>
-          </div>
-          </section> -->
 
           <section id="photography" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/photography.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
 
           <section id="secondary-graphics" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/secondary-graphics.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
 
           <section id="design-system" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/design-system.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
 
           <section id="co-branding" class="with-tabs">
             <div class="col-wrap">
             <?php include_once("design/co-branding.php"); ?>
-            </div><!-- /.col-wrap -->
+            </div>
           </section>
 
           <section id="creative-examples">

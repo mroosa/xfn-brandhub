@@ -13,18 +13,18 @@
       <div class="tab-inner">
         <h2>Partnership</h2>
         <ul class="optionWrap">
-          <li data-ttl="co-branding example 1">
+          <li data-alt="co-branding example 1">
             <video playsinline muted nocontrols loop autoplay>
               <source src="video/cb-01-1.mp4" type="video/mp4">
             </video>
           </li>
-          <li data-ttl="co-branding example 2">
+          <li data-alt="co-branding example 2">
             <div>
               <!-- <div class="img width-45"><img src="images/co-branding/01-3.png" alt=""></div> -->
               <img style="max-height: 250px;" class="border rounded" src="images/co-branding/01-4.png" alt="">
             </div>
           </li>
-          <li data-ttl="co-branding example 3">
+          <li data-alt="co-branding example 3">
             <div class="img"><img style="width: 450px;" src="images/co-branding/01-5.svg" alt=""></div>
           </li>
         </ul>
@@ -36,9 +36,9 @@
       <div class="tab-inner">
         <h2>Endorsement</h2>
         <ul class="optionWrap">
-          <li data-ttl="Endorsement example 1"><img style="width: 90%;" src="images/co-branding/02-1.svg" alt=""></li>
-          <li data-ttl="Endorsement example 2"><img src="images/co-branding/02-2.png" alt=""></li>
-          <li data-ttl="Endorsement example 3"><img src="images/co-branding/02-3.png" alt=""></li>
+          <li data-alt="Endorsement example 1"><img style="width: 90%;" src="images/co-branding/02-1.svg" alt=""></li>
+          <li data-alt="Endorsement example 2"><img src="images/co-branding/02-2.png" alt=""></li>
+          <li data-alt="Endorsement example 3"><img src="images/co-branding/02-3.png" alt=""></li>
         </ul>
       </div>
     </div>

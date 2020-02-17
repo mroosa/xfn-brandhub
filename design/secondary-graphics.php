@@ -29,7 +29,7 @@
       <div class="tab-inner">
         <h2>Mobile App Icons</h2>
         <ul class="optionWrap animate">
-          <li data-ttl="Mobile Icons 1">
+          <li data-alt="Mobile Icons 1">
             <ul id="sg-m-1">
               <li class="img width-65 icon"><img src="images/secondary-graphics/02-3.svg" alt=""><span>Xfinity xFi</span></li>
               <li class="img width-65 icon"><img src="images/secondary-graphics/02-2.svg" alt=""><span>Xfinity Mobile</span></li>
@@ -41,7 +41,7 @@
               <li class="img width-65 icon"><img src="images/secondary-graphics/02-6.svg" alt=""><span>Xfinity Stream</span></li>
             </ul>
           </li>
-          <li data-ttl="Mobile Icons 2">
+          <li data-alt="Mobile Icons 2">
             <ul id="sg-m-2">
               <li class="img width-50"><img style="max-width: 150px;" src="images/secondary-graphics/02-9.svg" alt=""><span>Apple App Store badge</span></li>
               <li class="img width-50"><img style="max-width: 150px;" src="images/secondary-graphics/02-10.svg" alt=""><span>Google Play App Store badge</span></li>
@@ -75,15 +75,15 @@
             <img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-03.png" alt="">
             <p class="caption">Use the Mobile App icons on communications that refer to mobile app experiences.</p>
           </li> -->
-          <li class="img width-75" title="The Customer Commitment Badge is available for communications that reference our customer service promise." data-ttl="Graphics in use example 1">
+          <li class="img width-75" title="The Customer Commitment Badge is available for communications that reference our customer service promise." data-alt="Graphics in use example 1">
             <img style="max-height: 450px;" class="rounded border" src="images/secondary-graphics/04-04.png" alt="">
             <p class="caption">The Customer Commitment Badge is available for communications that reference our customer service promise.</p>
           </li>
-          <li class="img width-75" title="Use the Voice Remote Microphone Button on communications that mention voice commands." data-ttl="Graphics in use example 2">
+          <li class="img width-75" title="Use the Voice Remote Microphone Button on communications that mention voice commands." data-alt="Graphics in use example 2">
             <img style="max-height: 350px;" class="rounded border" src="images/secondary-graphics/04-01-1.png" alt="">
             <p class="caption">Use the Voice Remote Microphone Button on communications that mention voice commands.</p>
           </li>
-          <li class="img width-75" title="The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go." data-ttl="Graphics in use example 3">
+          <li class="img width-75" title="The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go." data-alt="Graphics in use example 3">
             <img style="max-height: 350px;" class="rounded border" src="images/secondary-graphics/04-01-2.png" alt="">
             <p class="caption">The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go.</p>
           </li>

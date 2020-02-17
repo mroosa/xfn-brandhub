@@ -31,6 +31,8 @@
 .video-controls .play .icon-play,
 .video-controls .play.playing .icon-pause {display: block;}
 
+span span {font-size: 18px;}
+
 .ah {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */

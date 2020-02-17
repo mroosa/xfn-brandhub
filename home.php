@@ -44,6 +44,7 @@
                   </g>
                 </svg>
               </video>
+              <span class="ah">Back to top</span>
             </a></div><!-- /.logo -->
             <div class="mid-logo">
               <a href="#top"><svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115">

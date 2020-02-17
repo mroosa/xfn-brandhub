@@ -13,24 +13,24 @@
         <h3 class="mobile-only" style="flex-basis: 100%;">Color Palette</h2>
         <div class="color-swatches">
           <div class="col-50 ht-100">
-            <a href="#color-white" class="color color-1 dark ignore-click" title="White"></a>
+            <a href="#color-white" class="color color-1 dark ignore-click" title="White"><span class="ah">View White color swatch info</span></a>
           </div>
           <div class="col-50 ht-100">
-            <a href="#color-black" class="color color-2 light ignore-click" title="Black"></a>
+            <a href="#color-black" class="color color-2 light ignore-click" title="Black"><span class="ah">View Black color swatch info</span></a>
           </div>
           <div class="col-50 ht-100">
-            <a href="#color-cool-gray" class="color color-3 dark ignore-click" title="Xfinity Cool Gray"></a>
+            <a href="#color-cool-gray" class="color color-3 dark ignore-click" title="Xfinity Cool Gray"><span class="ah">View Xfinity Cool Gray color swatch info</span></a>
           </div>
           <div class="col-50 ht-100">
             <div class="ht-66">
-              <a href="#color-dark-gray" class="color color-4 light ignore-click" title="Xfinity Dark Gray"></a>
+              <a href="#color-dark-gray" class="color color-4 light ignore-click" title="Xfinity Dark Gray"><span class="ah">View Xfinity Dark Gray color swatch info</span></a>
             </div>
             <div class="ht-33" style="display: flex;">
               <div class="col-50">
-                <a href="#color-accent-red" class="color color-5 light ignore-click" title="Xfinity Accent Red"></a>
+                <a href="#color-accent-red" class="color color-5 light ignore-click" title="Xfinity Accent Red"><span class="ah">View Xfinity Accent Red color swatch info</span></a>
               </div>
               <div class="col-50">
-                <a href="#color-action-blue" class="color color-6 light ignore-click" title="Xfinity Action Blue"></a>
+                <a href="#color-action-blue" class="color color-6 light ignore-click" title="Xfinity Action Blue"><span class="ah">View Xfinity Action Blue color swatch info</span></a>
               </div>
             </div>
           </div>

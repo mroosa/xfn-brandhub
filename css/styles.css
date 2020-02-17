@@ -593,6 +593,14 @@ main {
     display: none; }
 
 /* Content Area */
+.content section a {
+  color: #5a5a5c;
+  font-weight: bold;
+  transition: .25s color; }
+  .content section a:hover {
+    color: #2B9CD8;
+    text-decoration: none; }
+
 .content section.active {
   z-index: 1; }
   @media (min-width: 551px) {

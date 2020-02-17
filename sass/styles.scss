@@ -520,6 +520,17 @@ main {
 
 /* Content Area */
 .content section {
+
+  a {
+    color: #5a5a5c;
+    font-weight: bold;
+    transition: .25s color;
+
+    &:hover {
+      color: #2B9CD8;
+      text-decoration: none;
+    }
+  }
   // Active section
   &.active {
     z-index: 1;

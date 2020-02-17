@@ -1977,6 +1977,7 @@ body #color {
         border-radius: 50%;
         box-shadow: 2px 2px 5px rgba(0,0,0,.5);
         transition: .25s background-color;
+        color: #000;
 
         svg path {
           transition: stroke .25s;

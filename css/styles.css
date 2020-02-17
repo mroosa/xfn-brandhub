@@ -1818,7 +1818,8 @@ body #color .color-swatches .color {
       background: #ededed;
       border-radius: 50%;
       box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-      transition: .25s background-color; }
+      transition: .25s background-color;
+      color: #000; }
       .tab .lightbox-shade .lightbox .close svg path {
         transition: stroke .25s; }
       .tab .lightbox-shade .lightbox .close:hover {

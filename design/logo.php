@@ -59,15 +59,15 @@
       <div class="tab-inner">
         <h3>Logo Misuses</h3>
         <ul class="optionWrap">
-          <li title="Do not recolor or add gradients to our logo.">
+          <li title="Do not recolor or add gradients to our logo." data-alt="Misuse 1">
             <img src="<?php print $dir; ?>images/logo/misuse-1.svg" alt="" />
             <p class="caption">Do not recolor or add gradients to our logo.</p>
           </li>
-          <li title="Do not manipulate the logo.">
+          <li title="Do not manipulate the logo." data-alt="Misuse 2">
             <img  src="<?php print $dir; ?>images/logo/misuse-2.svg" alt="" />
             <p class="caption">Do not manipulate the logo.</p>
           </li>
-          <li title="Do not lock up with other graphic elements.">
+          <li title="Do not lock up with other graphic elements." data-alt="Misuse 3">
             <img  src="<?php print $dir; ?>images/logo/misuse-3.svg" alt="" />
             <p class="caption">Do not lock up with other graphic elements.</p>
           </li>

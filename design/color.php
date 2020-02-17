@@ -116,15 +116,15 @@
         <div class="tab-inner">
           <h3>Color Misuses</h3>
           <ul class="optionWrap">
-            <li title="Do not overuse red or recolor icons." class="img width-55">
+            <li title="Do not overuse red or recolor icons." class="img width-55" data-alt="Misuse 1">
               <img style="max-height: 425px;" class="rounded" src="<?php print $dir; ?>images/color/misuse-1.png" alt="" />
               <p class="caption">Do not overuse red or recolor icons.</p>
             </li>
-            <li title="Do not use red or blue in headlines or subheads. Do not use the limited use red logo in communications." class="img">
+            <li title="Do not use red or blue in headlines or subheads. Do not use the limited use red logo in communications." class="img" data-alt="Misuse 2">
               <img style="max-height: 350px;" class="border rounded" src="<?php print $dir; ?>images/color/misuse-0.png" alt="" />
               <p class="caption">Do not use red or blue in headlines or subheads. Do not use the limited use red logo in communications.</p>
             </li>
-            <li title="Do not use red in full bleed or as a background color." class="img width-55">
+            <li title="Do not use red in full bleed or as a background color." class="img width-55" data-alt="Misuse 3">
               <img style="max-height: 425px;" class="border rounded" src="<?php print $dir; ?>images/color/misuse-2.png" alt="" />
               <p class="caption">Do not use red in full bleed or as a background color.</p>
             </li>

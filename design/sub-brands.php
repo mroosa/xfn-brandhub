@@ -80,15 +80,15 @@
         <div class="tab-inner">
           <h3>Sub-Brand Misuses</h3>
           <ul class="optionWrap">
-            <li title="Do not use sub-brand logos to create third-party lock-ups.">
+            <li title="Do not use sub-brand logos to create third-party lock-ups." data-alt="Misuse 1">
               <img style="width: 100%; max-width: 400px;" src="<?php print $dir; ?>images/sub-brands/misuse-1.svg" alt="" />
               <p class="caption">Do not use sub-brand logos to create third-party lock-ups.</p>
             </li>
-            <li title="Do not recolor sub-brand logos.">
+            <li title="Do not recolor sub-brand logos." data-alt="Misuse 2">
               <img style="width: 100%; max-width: 400px;" src="<?php print $dir; ?>images/sub-brands/misuse-0.svg" alt="" />
               <p class="caption">Do not recolor sub-brand logos.</p>
             </li>
-            <li title="Do not use sub-brand logos with feature names.">
+            <li title="Do not use sub-brand logos with feature names." data-alt="Misuse 3">
               <img style="width: 100%; max-width: 450px;" src="<?php print $dir; ?>images/sub-brands/misuse-2.svg" alt="" />
               <p class="caption">Do not use sub-brand logos with feature names.</p>
             </li>

@@ -2,15 +2,15 @@
   include_once("_templates/_db/config.php");
 
   // Check user login or not
-  if(!isset($_SESSION['uname'])){
-    header('Location: login');
-  }
-
-  // logout
-  if(isset($_POST['but_logout'])){
-    session_destroy();
-    header('Location: login');
-  }
+  // if(!isset($_SESSION['uname'])){
+  //   header('Location: login');
+  // }
+  //
+  // // logout
+  // if(isset($_POST['but_logout'])){
+  //   session_destroy();
+  //   header('Location: login');
+  // }
 
   $dir = "";
   $scriptList = ['subnav.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration-min.js','video-min.js'];

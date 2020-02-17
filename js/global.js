@@ -403,6 +403,17 @@ $(document).ready(function() {
           }
         }
       } else {
+        if (curActSec.hasClass("primary")) {
+
+        }
+
+        // A| if current section is top level
+          // B| if previous section exists
+            // C| if previous section has children
+              // D| choose last sub-section
+        // A| if current section is not top level
+          // check to see if previous sub-section exists
+
         if (curActSec.prev().length > 0) {
           curActSec.prev().find("a")[0].click();
         } else {

@@ -25,13 +25,14 @@
   color: #000;
   opacity: 1;
 }
-.video-controls .play span span {
-  display: block;
-  text-indent: -9999px;
-  overflow: hidden;
-}
 
 .video-controls .play .icon-pause,
 .video-controls .play.playing .icon-play {display: none;}
 .video-controls .play .icon-play,
 .video-controls .play.playing .icon-pause {display: block;}
+
+.ah {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

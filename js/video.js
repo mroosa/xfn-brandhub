@@ -6,8 +6,8 @@ $(document).ready(function() {
       var dataPlay = ($thisVid.attr("autoplay") == "autoplay") ? true : false;
 
       var output = '<div class="video-controls"><a class="play playing" data-playing="' + dataPlay + '" href="#">';
-      var output = output + '<span class="icon-play"><span>Play video</span></span>';
-      var output = output + '<span class="icon-pause"><span>Pause video</span></span>';
+      var output = output + '<span class="icon-play"><span class="ah">Play video</span></span>';
+      var output = output + '<span class="icon-pause"><span class="ah">Pause video</span></span>';
       var output = output + '</a></div>';
       $thisVid.parent().append(output);
 

@@ -8,7 +8,7 @@
   <div class="tabs">
     <div class="tab" id="typefaces" data-ttl="Our Type">
       <div class="tab-inner">
-        <h3 class="mobile-only">Our Type</h2>
+        <h2 class="mobile-only">Our Type</h2>
 
         <div class="type-wrap">
           <blockquote class="live-type font-xfb" data-font="font-xfb">Hi, I'm Xfinity Brown</blockquote>

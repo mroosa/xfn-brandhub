@@ -9,7 +9,7 @@
     <div class="tabs">
 
       <div class="tab" id="our-sub-brands" data-ttl="Logos">
-        <h3 class="mobile-only">Sub-Brand Logos</h2>
+        <h2 class="mobile-only">Sub-Brand Logos</h2>
 
         <div class="sub-brand-logos">
           <div class="sub-brand-logo-1">

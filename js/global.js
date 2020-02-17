@@ -218,7 +218,7 @@ $(document).ready(function() {
     });
 
     // Create slider based on weights
-    wts.before('<label class="ah" for="slider-' + n + '">Choose your font weight</label><input name="slider-' + n + '" type="range" min="1" max="' + numWts + '" value="' + defaultWt + '" class="weight" data-font="' + font + '">');
+    wts.before('<label class="ah" for="slider-' + n + '">Choose your font weight</label><input name="slider-' + n + '" id="slider-' + n + '" type="range" min="1" max="' + numWts + '" value="' + defaultWt + '" class="weight" data-font="' + font + '">');
 
     // Change font weight on slider change
     fontWrap.find(".weight").on("change mousemove", function() {

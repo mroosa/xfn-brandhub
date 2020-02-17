@@ -35,7 +35,7 @@
         <div class="sidebar black">
           <div id="subnav">
             <div class="logo vid-logo"><a href="#top">
-              <video nocontrols muted poster="images/logo-poster.png">
+              <video nocontrols muted poster="images/logo-poster.png" title="Xfinity logo">
                 <source src="video/logo.mp4" type="video/mp4">
                 <svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115">
                   <g>

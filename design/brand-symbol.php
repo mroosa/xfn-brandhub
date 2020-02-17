@@ -31,10 +31,10 @@
           <p>Our X can be used as a shorthand for Xfinity in environments where the brand has already been established. It complements other brand elements in experiential activations.</p>
         </div>
         <ul class="quadWrap">
-          <li><a href="<?php print $dir; ?>images/brand-symbol/03-01.png"><img src="<?php print $dir; ?>images/brand-symbol/03-01t.png" alt="" /></a></li>
-          <li><a href="<?php print $dir; ?>images/brand-symbol/03-02.png"><img src="<?php print $dir; ?>images/brand-symbol/03-02t.png" alt="" /></a></li>
-          <li><a href="<?php print $dir; ?>images/brand-symbol/03-03.png"><img src="<?php print $dir; ?>images/brand-symbol/03-03t.png" alt="" /></a></li>
-          <li><a href="<?php print $dir; ?>images/brand-symbol/03-04.png"><img src="<?php print $dir; ?>images/brand-symbol/03-04t.png" alt="" /></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/03-01.png"><img src="<?php print $dir; ?>images/brand-symbol/03-01t.png" alt="Our X used as a social profile icon" /></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/03-02.png"><img src="<?php print $dir; ?>images/brand-symbol/03-02t.png" alt="Our X used as a step and repeat" /></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/03-03.png"><img src="<?php print $dir; ?>images/brand-symbol/03-03t.png" alt="Our X used as a feature wall" /></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/03-04.png"><img src="<?php print $dir; ?>images/brand-symbol/03-04t.png" alt="Our X used as a logo for a baseball cap" /></a></li>
         </ul>
       </div>
     </div>
@@ -47,10 +47,10 @@
           <p>Our X can also be used as a storytelling device to celebrate our passions and products. We use our brand symbol to tell stories around our unique perspective on a topic, event, or partnership.</p>
         </div>
         <ul class="quadWrap">
-          <li><a href="<?php print $dir; ?>images/brand-symbol/04-01.png"><img src="<?php print $dir; ?>images/brand-symbol/04-01t.png" alt="" /></a></li>
-          <li><a href="<?php print $dir; ?>images/brand-symbol/04-02.png"><img src="<?php print $dir; ?>images/brand-symbol/04-02t.png" alt="" /></a></li>
-          <li><a href="<?php print $dir; ?>images/brand-symbol/04-03.png"><img src="<?php print $dir; ?>images/brand-symbol/04-03t.png" alt="" /></a></li>
-          <li><a href="<?php print $dir; ?>images/brand-symbol/04-04.png"><img src="<?php print $dir; ?>images/brand-symbol/04-04t.png" alt="" /></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/04-01.png"><img src="<?php print $dir; ?>images/brand-symbol/04-01t.png" alt="Our X used for a video game installation" /></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/04-02.png"><img src="<?php print $dir; ?>images/brand-symbol/04-02t.png" alt="Our X used for music promotion" /></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/04-03.png"><img src="<?php print $dir; ?>images/brand-symbol/04-03t.png" alt="Our X used for an athletic partnership" /></a></li>
+          <li><a href="<?php print $dir; ?>images/brand-symbol/04-04.png"><img src="<?php print $dir; ?>images/brand-symbol/04-04t.png" alt="Our X used for experiential events" /></a></li>
         </ul>
       </div>
     </div>

@@ -2897,64 +2897,130 @@ section[data-bg=black] .button {
     }
   }
 }
-//
-// @media only screen
-//   and (-webkit-min-device-pixel-ratio: 3)
-//   and (max-device-width: 812px)
-//   and (min-device-width: 375px)
-//   and (orientation: landscape) {
-//     #introduction,
-//     main .inner {display: none;}
-//     body {
-//       display: flex;
-//       justify-content: center;
-//       align-content: center;
-//       align-items: center;
-//       height: 100%;
-//       width: 100%;
-//       position: absolute;
-//     }
-//     main {
-//       background: #000;
-//       color: #fff;
-//     }
-//     main:after {
-//       content: "For the best experience, please rotate your device.";
-//       font-family: 'XfinityBrown';
-//       font-size: 1.25em;
-//       text-align: center;
-//       color: #fefefe;
-//       display: inline-block;
-//       z-index: 10;
-//     }
-//   }
-// @media only screen
-//   and (-webkit-min-device-pixel-ratio: 2)
-//   and (max-device-width: 667px)
-//   and (min-device-width: 375px)
-//   and (orientation: landscape) {
-//     #introduction,
-//     main .inner {display: none;}
-//     body {
-//       display: flex;
-//       justify-content: center;
-//       align-content: center;
-//       align-items: center;
-//       height: 100%;
-//       width: 100%;
-//       position: absolute;
-//     }
-//     main {
-//       background: #000;
-//       color: #fff;
-//     }
-//     main:after {
-//       content: "For the best experience, please rotate your device.";
-//       font-family: 'XfinityBrown';
-//       font-size: 1.25em;
-//       text-align: center;
-//       color: #fefefe;
-//       display: inline-block;
-//       z-index: 10;
-//     }
-// }
+
+@media only screen
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (max-device-width: 812px)
+  and (min-device-width: 375px)
+  and (orientation: landscape) {
+    .content {
+      section {
+        .col-wrap {display: block;}
+        .col-1 {
+          position: relative;
+          width: 100%;
+          min-height: auto;
+        }
+        .col-2 {width: 100%;}
+
+        .col-wrap .col-1,
+        .col-wrap .col-2 {
+          margin: 10px 0;
+          padding: 4vw;
+        }
+
+        &.active .col-1 {position: relative;}
+
+        &#logo .tabs .tab  {
+          video,
+          img {width: 55%;}
+          video {
+            margin: 0 auto;
+            display: block;
+          }
+        }
+
+        .tab .quadWrap li {flex-basis:calc(25% - 40px);}
+
+        &#sub-brands #our-sub-brands {
+          flex-direction: row;
+
+          .sub-brand-nav,
+          .sub-brands {margin: 10px 0;}
+
+          .sub-brand-nav {
+            flex-basis: 40%;
+            ul li {flex-basis: 100%;}
+          }
+          .sub-brands {
+            flex-basis: 60%;
+
+            ul li img {
+              max-width: 75%;
+              margin: 0;
+            }
+          }
+        }
+
+        &.with-tabs .tab img {max-height: 100% !important;}
+
+        #secondary-graphics-additional #sg-ag-1 li,
+        #secondary-graphics-mobile-app-icons #sg-m-1 li {
+          flex: 0 0 25%;
+        }
+      }
+    }
+  }
+@media only screen
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (max-device-width: 667px)
+  and (min-device-width: 375px)
+  and (orientation: landscape) {
+    .content {
+      section {
+        .col-wrap {display: block;}
+        .col-1 {
+          position: relative;
+          width: 100%;
+          min-height: auto;
+        }
+        .col-2 {width: 100%;}
+
+        .col-wrap .col-1,
+        .col-wrap .col-2 {
+          margin: 10px 0;
+          padding: 4vw;
+        }
+
+        &.active .col-1 {position: relative;}
+
+        &#logo .tabs .tab  {
+          video,
+          img {width: 55%;}
+          video {
+            margin: 0 auto;
+            display: block;
+          }
+        }
+
+        .tab .quadWrap li {flex-basis:calc(25% - 40px);}
+
+        &#sub-brands #our-sub-brands {
+          flex-direction: row;
+
+          .sub-brand-nav,
+          .sub-brands {margin: 10px 0;}
+
+          .sub-brand-nav {
+            flex-basis: 40%;
+            ul li {flex-basis: 100%;}
+          }
+          .sub-brands {
+            flex-basis: 60%;
+
+            ul li img {
+              max-width: 75%;
+              margin: 0;
+            }
+          }
+        }
+
+        &.with-tabs .tab img {max-height: 100% !important;}
+
+        #secondary-graphics-additional #sg-ag-1 li,
+        #secondary-graphics-mobile-app-icons #sg-m-1 li {
+          flex: 0 0 25%;
+        }
+      }
+    }
+  }

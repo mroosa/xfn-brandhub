@@ -2459,3 +2459,89 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
       padding: 10px 0; }
     .content section.with-tabs .tab .tab-inner .slideshow ul.optionWrap:not(.swap) + .optionNav {
       display: none; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3) and (max-device-width: 812px) and (min-device-width: 375px) and (orientation: landscape) {
+  .content section .col-wrap {
+    display: block; }
+  .content section .col-1 {
+    position: relative;
+    width: 100%;
+    min-height: auto; }
+  .content section .col-2 {
+    width: 100%; }
+  .content section .col-wrap .col-1,
+  .content section .col-wrap .col-2 {
+    margin: 10px 0;
+    padding: 4vw; }
+  .content section.active .col-1 {
+    position: relative; }
+  .content section#logo .tabs .tab video,
+  .content section#logo .tabs .tab img {
+    width: 55%; }
+  .content section#logo .tabs .tab video {
+    margin: 0 auto;
+    display: block; }
+  .content section .tab .quadWrap li {
+    flex-basis: calc(25% - 40px); }
+  .content section#sub-brands #our-sub-brands {
+    flex-direction: row; }
+    .content section#sub-brands #our-sub-brands .sub-brand-nav,
+    .content section#sub-brands #our-sub-brands .sub-brands {
+      margin: 10px 0; }
+    .content section#sub-brands #our-sub-brands .sub-brand-nav {
+      flex-basis: 40%; }
+      .content section#sub-brands #our-sub-brands .sub-brand-nav ul li {
+        flex-basis: 100%; }
+    .content section#sub-brands #our-sub-brands .sub-brands {
+      flex-basis: 60%; }
+      .content section#sub-brands #our-sub-brands .sub-brands ul li img {
+        max-width: 75%;
+        margin: 0; }
+  .content section.with-tabs .tab img {
+    max-height: 100% !important; }
+  .content section #secondary-graphics-additional #sg-ag-1 li,
+  .content section #secondary-graphics-mobile-app-icons #sg-m-1 li {
+    flex: 0 0 25%; } }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px) and (orientation: landscape) {
+  .content section .col-wrap {
+    display: block; }
+  .content section .col-1 {
+    position: relative;
+    width: 100%;
+    min-height: auto; }
+  .content section .col-2 {
+    width: 100%; }
+  .content section .col-wrap .col-1,
+  .content section .col-wrap .col-2 {
+    margin: 10px 0;
+    padding: 4vw; }
+  .content section.active .col-1 {
+    position: relative; }
+  .content section#logo .tabs .tab video,
+  .content section#logo .tabs .tab img {
+    width: 55%; }
+  .content section#logo .tabs .tab video {
+    margin: 0 auto;
+    display: block; }
+  .content section .tab .quadWrap li {
+    flex-basis: calc(25% - 40px); }
+  .content section#sub-brands #our-sub-brands {
+    flex-direction: row; }
+    .content section#sub-brands #our-sub-brands .sub-brand-nav,
+    .content section#sub-brands #our-sub-brands .sub-brands {
+      margin: 10px 0; }
+    .content section#sub-brands #our-sub-brands .sub-brand-nav {
+      flex-basis: 40%; }
+      .content section#sub-brands #our-sub-brands .sub-brand-nav ul li {
+        flex-basis: 100%; }
+    .content section#sub-brands #our-sub-brands .sub-brands {
+      flex-basis: 60%; }
+      .content section#sub-brands #our-sub-brands .sub-brands ul li img {
+        max-width: 75%;
+        margin: 0; }
+  .content section.with-tabs .tab img {
+    max-height: 100% !important; }
+  .content section #secondary-graphics-additional #sg-ag-1 li,
+  .content section #secondary-graphics-mobile-app-icons #sg-m-1 li {
+    flex: 0 0 25%; } }

@@ -2467,7 +2467,7 @@ body #color {
     align-items: center;
     align-content: center;
     height: 100vh;
-    background: #000;
+    background: #151515;
     // max-width: 1400px;
     // margin: 0 auto;
 
@@ -2604,12 +2604,12 @@ body #color {
   }
 
   &.dark {
-    background: #000;
+    background: #151515;
     color: #fff;
 
     main #login {
       input:not([type="button"]) {
-        background: #000;
+        background: #151515;
         color: #fff;
         border-color: #666;
         box-shadow: 0 0 0 rgba(255,255,255,1);

@@ -1,7 +1,7 @@
         <div class="col-full">
           <h1>Contact & Resources</h1>
-          <h2>Looking for something more?</h2>
-          <p>Discover additional assets in the links below. Questions, comments or feedback? Feel free to email the <a href="#">Xfinity Brand Team</a>. We’d love to hear from you.</p>
+          <p>Questions, comments or feedback? Feel free to email the <a href="#">Xfinity Brand Team</a>. We’d love to hear from you.</p>
+          <p>Discover additional assets in the links below.</p>
           <div class="tiles">
 
             <div class="tile-row" id="resource-xxxxxxxxx">

@@ -549,24 +549,27 @@ main {
   .mobileActive #mobileMenu {
     top: 0;
     opacity: .95;
-    backdrop-filter: blur(10px); }
+    height: 100%;
+    backdrop-filter: blur(10px);
+    overflow: auto; }
   .mobileActive ul.nav.menu:after {
     transform: rotate(180deg); }
 
 #mobileMenu {
   position: fixed;
   z-index: 3;
-  top: -120vh;
+  top: -100%;
+  height: 0;
   opacity: .75;
   left: 0;
   width: 100%;
-  height: 100%;
   background: #5a5a5c;
   margin: 0;
   padding: 51px 10px 0 10px;
   display: flex;
   flex-direction: column;
   list-style: none;
+  overflow: hidden;
   transition: .5s opacity, .5s top; }
   #mobileMenu li {
     list-style: none;

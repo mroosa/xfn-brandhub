@@ -1116,11 +1116,6 @@ main {
     @include bp-min($sml) {
       display: block;
     }
-    @include bp-min($mid) {
-      height: 100vh;
-      padding: 100px 200px;
-    }
-
   }
 
   .intro-logo {

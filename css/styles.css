@@ -1086,10 +1086,6 @@ main {
     @media (min-width: 768px) {
       #introduction .col-1 {
         display: block; } }
-    @media (min-width: 960px) {
-      #introduction .col-1 {
-        height: 100vh;
-        padding: 100px 200px; } }
   #introduction .intro-logo {
     position: absolute;
     top: 20px;

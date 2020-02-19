@@ -17,14 +17,15 @@
           <input type="submit" style="display: none" value="Get Started" />
           <p class="help">Need help logging in? Contact the <a href="#">Xfinity Brand Team</a>.</p>
         </form>
-      </div>
-    </section>
-    <div class="vid-wrap">
+      </section>
+    </div>
+    <div class="bg-img"></div>
+    <!-- <div class="vid-wrap">
       <div class="frost"></div>
       <video id="login-intro" playsinline autoplay muted nocontrols>
         <source src="video/login-intro-glow.mp4" type="video/mp4">
       </video>
-    </div>
+    </div> -->
   </main>
 
   <script type="text/javascript">

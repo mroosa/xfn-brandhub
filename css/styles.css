@@ -2120,8 +2120,8 @@ body #color .color-swatches .color {
     padding: 20px; }
 
 .login {
-  background: #efeff3;
-  overflow: hidden; }
+  overflow: hidden;
+  color: #fff; }
   .login main {
     display: flex;
     justify-content: center;
@@ -2129,6 +2129,10 @@ body #color .color-swatches .color {
     align-content: center;
     height: 100vh;
     background: #151515; }
+    @media (min-width: 960px) {
+      .login main {
+        background: url(../images/login-tenth.jpg) center center no-repeat #151515;
+        background-size: contain; } }
     .login main section {
       background: transparent !important; }
     .login main .login-wrap {
@@ -2199,7 +2203,7 @@ body #color .color-swatches .color {
       .login main #login.reveal p.help,
       .login main #login.reveal #btn_submit {
         animation: reveal .75s both normal 1.85s; }
-    .login main .vid-wrap {
+    .login main .bg-img {
       position: absolute;
       top: 0;
       bottom: 0;
@@ -2207,37 +2211,14 @@ body #color .color-swatches .color {
       height: 100%;
       overflow: hidden;
       z-index: 99;
-      background: url(../images/login-intro.jpg) center center no-repeat #000;
+      background: url(../images/login-tenth-mobile.jpg) center center no-repeat #151515;
       background-size: contain;
+      animation: reveal .5s reverse both .5s;
       pointer-events: none; }
       @media (min-width: 960px) {
-        .login main .vid-wrap {
-          z-index: 1;
-          background: #000; } }
-      .login main .vid-wrap > * {
-        display: none; }
-        @media (min-width: 960px) {
-          .login main .vid-wrap > * {
-            display: block; } }
-      @media (max-width: 959px) {
-        .login main .vid-wrap {
-          animation: reveal .5s reverse both .5s; } }
-      .login main .vid-wrap video {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        position: relative;
-        z-index: 1; }
-      .login main .vid-wrap .frost {
-        height: 100%;
-        width: 100%;
-        object-fit: contain;
-        position: absolute;
-        z-index: 2;
-        background: url(../images/black-frost.png) no-repeat center center transparent;
-        background-size: contain; }
+        .login main .bg-img {
+          display: none; } }
   .login.dark {
-    background: #151515;
     color: #fff; }
     .login.dark main #login input:not([type="button"]) {
       background: #151515;

@@ -1,9 +1,7 @@
 
 <div class="col-1">
   <h1>Brand Symbol</h1>
-  <p>The X brand symbol is the most distinct feature of our name and identity. It acts as a symbol of our brand &ndash; and celebrates who we are and what we stand for. To build meaning into our brand symbol over time, we should use it selectively and strategically for the greatest impact. Please approach the Brand team for approval.</p>
-  <!-- <p class="download"><a href="#downloads">Download Brand Symbol</a></p> -->
-  <a class="button" href="#downloads"><span>Download Brand Symbol</span></a>
+  <p>Our brand symbol X is our most differentiated and distinctive feature of our name and identity. It’s used to signal our brand and celebrate our brand vision. To build meaning into our brand symbol, we use it selectively and strategically for the greatest impact. Please contact the Brand Team for approval.</p>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

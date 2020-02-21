@@ -1915,7 +1915,7 @@ body #color .color-swatches .color {
   justify-content: flex-start;
   position: relative;
   overflow: hidden;
-  height: 70px;
+  height: 60px;
   width: 100%; }
   #sub-brands .sub-brand-logos .sub-brand-logo-1 {
     position: relative;
@@ -1925,7 +1925,7 @@ body #color .color-swatches .color {
         display: none; } }
     #sub-brands .sub-brand-logos .sub-brand-logo-1,
     #sub-brands .sub-brand-logos .sub-brand-logo-1 img {
-      height: 70px;
+      height: 60px;
       max-width: 100%; }
   #sub-brands .sub-brand-logos .sub-brand-logo-2 {
     position: absolute;
@@ -1946,7 +1946,7 @@ body #color .color-swatches .color {
           width: auto; }
         #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li,
         #sub-brands .sub-brand-logos .sub-brand-logo-2 ul li img {
-          height: 70px; }
+          height: 60px; }
 
 #sub-brands .sub-brands {
   overflow: hidden;
@@ -2063,7 +2063,7 @@ body #color .color-swatches .color {
 #secondary-graphics-mobile-app-icons #sg-m-2 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
   flex-wrap: wrap; }
   #secondary-graphics-additional #sg-ag-1 li,
@@ -2091,11 +2091,23 @@ body #color .color-swatches .color {
       line-height: 20px;
       line-height: 1.25rem; }
 
-#secondary-graphics-additional #sg-ag-1 li {
-  flex: 0 1 50%; }
-  @media (min-width: 1350px) {
-    #secondary-graphics-additional #sg-ag-1 li {
-      flex: 0 0 25%; } }
+#secondary-graphics-additional #sg-ag-1 {
+  margin-top: 60px; }
+  #secondary-graphics-additional #sg-ag-1 li {
+    flex: 0 1 50%;
+    padding: 0; }
+    #secondary-graphics-additional #sg-ag-1 li:nth-of-type(2n-1) {
+      padding-right: 15px; }
+    #secondary-graphics-additional #sg-ag-1 li:nth-of-type(2n) {
+      padding-left: 15px; }
+    @media (min-width: 768px) {
+      #secondary-graphics-additional #sg-ag-1 li {
+        padding: 15px; } }
+    @media (min-width: 1350px) {
+      #secondary-graphics-additional #sg-ag-1 li {
+        flex: 0 0 25%; } }
+    #secondary-graphics-additional #sg-ag-1 li p {
+      text-align: left; }
 
 #secondary-graphics-mobile-app-icons #sg-m-1 li {
   flex: 0 0 33%; }
@@ -2501,7 +2513,10 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
     max-height: 100% !important; }
   .content section #secondary-graphics-additional #sg-ag-1 li,
   .content section #secondary-graphics-mobile-app-icons #sg-m-1 li {
-    flex: 0 0 25%; } }
+    flex: 0 0 25%; }
+  .content section .tiles .tile-row {
+    flex: 1 0 20%;
+    padding: 20px 13px; } }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-device-width: 667px) and (min-device-width: 375px) and (orientation: landscape) {
   .content section .col-wrap {
@@ -2544,4 +2559,7 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
     max-height: 100% !important; }
   .content section #secondary-graphics-additional #sg-ag-1 li,
   .content section #secondary-graphics-mobile-app-icons #sg-m-1 li {
-    flex: 0 0 25%; } }
+    flex: 0 0 25%; }
+  .content section .tiles .tile-row {
+    flex: 1 0 20%;
+    padding: 20px 13px; } }

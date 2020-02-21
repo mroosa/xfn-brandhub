@@ -1,7 +1,7 @@
 
 <div class="col-1">
   <h1>Logo</h1>
-  <p>Our logo is our calling card and a symbol of our brand. It represents Xfinity in all communications and experiences. Whether it’s black or white, static or animated, it’s always an essential element of our story.</p>
+  <p>Our logo is our most valuable brand asset and should represent Xfinity in all communications. Whether it’s black or white, static or animated, it’s always an essential element of our story.</p>
   <a class="button" href="#downloads"><span>Download Logos</span></a>
 </div>
 <div class="col-2">
@@ -47,8 +47,8 @@
     <div class="tab" data-ttl="Logo in Motion" style="background: #1e1e1e; color: #fff;" data-bg="drk-gry" id="logo-in-motion">
       <div class="tab-inner">
         <h2>Logo in Motion</h2>
-        <p class="caption">Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a dark background ensures optimal legibility, consistency and impact. It is available in English and Spanish.</p>
-        <video playsinline muted nocontrols autoplay loop style="max-width: 100%;" title="Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a dark background ensures optimal legibility, consistency and impact. It is available in English and Spanish.">
+        <p class="caption">Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a dark background ensures optimal legibility, consistency and impact.</p>
+        <video playsinline muted nocontrols autoplay loop style="max-width: 100%;" title="Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a dark background ensures optimal legibility, consistency and impact.">
           <source src="<?php print $dir; ?>video/xfn-endcard-sq-5s.mp4" type="video/mp4">
           <img src="images/logo/x-in-motion.jpg" alt="Xfinity end card storyboard form" >
         </video>
@@ -65,7 +65,7 @@
             <p class="caption">Do not recolor or add gradients to our logo.</p>
           </li>
           <li title="Do not manipulate the logo." data-alt="Misuse 2">
-            <img  src="<?php print $dir; ?>images/logo/misuse-2.svg" alt="" />
+            <img  src="<?php print $dir; ?>images/logo/misuse-2a.svg" alt="" />
             <p class="caption">Do not manipulate the logo.</p>
           </li>
           <li title="Do not lock up with other graphic elements." data-alt="Misuse 3">

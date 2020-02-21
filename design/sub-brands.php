@@ -1,7 +1,7 @@
 
 <div class="col-1">
   <h1>Sub-Brands</h1>
-  <p>Our masterbrand strategy includes products, features and benefits that support Xfinity. Sub-Brand logos have been designed for strategically significant experiences, particularly for products and packaging. The primary Xfinity logo should be used in the majority of communications.</p>
+  <p>Our masterbrand strategy includes products, features and benefits that support Xfinity. Sub-Brand logos have been designed for strategically significant experiences, particularly for dedicated product experiences such as apps. The primary Xfinity logo should be used in the majority of communications.</p>
   <a class="button" href="#downloads"><span>Download Sub-Brand Logos</span></a>
 </div>
 <div class="col-2">
@@ -29,11 +29,11 @@
         <div class="sub-brands">
           <ul>
             <li data-brand="0">
-              <div><img src="images/sub-brands/ex-x1.png" alt=""></div>
+              <div><img src="images/sub-brands/ex-x1a.png" alt=""></div>
               <!-- <div><p>Change the way you experience TV with the simplest, fastest and most complete way to access all your entertainment. Say it and see it with the X1 Voice Remote, browse personalized recommendations and discover a DVR that does it all.</p></div> -->
             </li>
             <li data-brand="1">
-              <div><img src="images/sub-brands/ex-xfi.png" alt=""></div>
+              <div><img src="images/sub-brands/ex-xfia.png" alt=""></div>
               <!-- <div><p>Personalize your in-home WIFi network, pause WiFi to connected devices and see when new devices join your network. It’s the speed, coverage and control you need for the ultimate in-home WiFi experience.</p></div> -->
             </li>
             <li data-brand="2">
@@ -45,11 +45,11 @@
               <!-- <div><p>Flex brings together popular streaming apps and networks including HBO®, Netflix and Prime Video in one personalized dashboard. Plus, it’s all searchable with the X1 Voice Remote.</p></div> -->
             </li>
             <li data-brand="4">
-              <div><img src="images/sub-brands/ex-home.png" alt=""></div>
+              <div><img src="images/sub-brands/ex-homea.png" alt=""></div>
               <!-- <div><p>Enjoy more peace of mind with a total home security solution. Xfinity delivers the advanced technology you need to protect and manage your home with 24/7 professional monitoring.</p></div> -->
             </li>
             <li data-brand="5">
-              <div><img src="images/sub-brands/ex-mobile.png" alt=""></div>
+              <div><img src="images/sub-brands/ex-mobilea.png" alt=""></div>
               <!-- <div><p>Discover a different kind of wireless network designed to save you money. Xfinity Mobile connects to millions of secure WiFi hotspots and the best LTE everywhere else. Design your own data plan, so you only pay for what you need.</p></div> -->
             </li>
           </ul>

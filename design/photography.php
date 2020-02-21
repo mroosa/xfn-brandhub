@@ -42,7 +42,7 @@
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-xfn-devices">
                   <h2>Xfinity Hardware</h2>
-                  <p>Xfinity hardware should be showcased when possible. Please use images from the brand team for consistency.</p>
+                  <p>Xfinity hardware should be showcased when possible to reinforce our beautifully designed and differentiated products.</p>
                 </div>
               </div>
             </div>
@@ -70,7 +70,7 @@
               <div class="photo-info-wrap">
                 <div class="photo-info ltg" id="photography-devices">
                   <h2>Generic Devices</h2>
-                  <p>Generic device imagery is used to showcase our UI and services. Use these images strategically, as overuse devalues our brand. Please reach out to the brand team for native files with smart object UIs.</p>
+                  <p>Generic device imagery is used to hero our UI screens and reinforce our unique experiences and services.</p>
                 </div>
               </div>
             </div>

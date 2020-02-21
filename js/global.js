@@ -308,7 +308,7 @@ $(document).ready(function() {
   $(".sub-brand-nav li a").click(function() {
     let activeNav = $(this).attr("data-brand");
     if (!$(this).parent().hasClass("active")) {
-      $(".sub-brand-logos .sub-brand-logo-2 ul").css({"margin-top":-80 * activeNav + "px"});
+      $(".sub-brand-logos .sub-brand-logo-2 ul").css({"margin-top":-70 * activeNav + "px"});
       $(".sub-brands ul").css({"margin-left":-100 * activeNav + "%"});
       $(".sub-brand-nav li.active").removeClass("active");
       $(this).parent().addClass("active");

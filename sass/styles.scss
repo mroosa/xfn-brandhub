@@ -2393,7 +2393,7 @@ body #color {
 #secondary-graphics-mobile-app-icons #sg-m-2 {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   align-content: center;
   flex-wrap: wrap;
 
@@ -2421,10 +2421,24 @@ body #color {
     }
   }
 }
-#secondary-graphics-additional #sg-ag-1 li {
-  flex: 0 1 50%;
-  @include bp-min(1350px) {
-    flex: 0 0 25%;
+#secondary-graphics-additional #sg-ag-1 {
+  margin-top: 60px;
+
+  li {
+    flex: 0 1 50%;
+    padding: 0;
+    &:nth-of-type(2n-1) {padding-right: 15px;}
+    &:nth-of-type(2n) {padding-left: 15px;}
+
+    @include bp-min($sml) {
+      padding: 15px;
+    }
+    @include bp-min(1350px) {
+      flex: 0 0 25%;
+    }
+    p {
+      text-align: left;
+    }
   }
 }
 #secondary-graphics-mobile-app-icons #sg-m-1 li {
@@ -2958,6 +2972,9 @@ section[data-bg=black] .button {
         #secondary-graphics-mobile-app-icons #sg-m-1 li {
           flex: 0 0 25%;
         }
+
+        .tiles .tile-row {flex: 1 0 20%; padding: 20px 13px;}
+
       }
     }
   }
@@ -3021,6 +3038,8 @@ section[data-bg=black] .button {
         #secondary-graphics-mobile-app-icons #sg-m-1 li {
           flex: 0 0 25%;
         }
+
+        .tiles .tile-row {flex: 1 0 20%; padding: 20px 13px;}
       }
     }
   }

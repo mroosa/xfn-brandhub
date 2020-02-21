@@ -53,9 +53,9 @@
               <img src="images/secondary-graphics/03-4.svg" alt=""><span>WiFi</span>
               <p class="caption">The WiFi icon is to be used in communications that reference in-home WiFi or connectivity on the go.</p>
             </li>
-            <li class="img width-45 icon">
+            <li class="img width-45 icon" title="The WiFi Hotspots icon should be used selectively and sparingly only in dedicated WiFi Hotspots communications.">
               <img src="images/secondary-graphics/03-5.svg" alt=""><span>WiFi Hotspot</span>
-              <!-- <p class="caption">The Customer Commitment Badge is available for communications that reference our customer service promise.</p> -->
+              <p class="caption">The WiFi Hotspots icon should be used selectively and sparingly only in dedicated WiFi Hotspots communications.</p>
             </li>
           </ul>
       </div>

@@ -57,7 +57,7 @@
 
             <div class="tile-row" id="download-ds-templates">
               <h3>Design System Templates</h3>
-              <img src="images/downloads/logo.png" alt="" />
+              <img src="images/downloads/design-system.jpg" alt="" />
               <a class="button" href="files/Xfinity-Design-System-Templates.zip"><span>Download <span class="ah">Design System Templates</span></span></a>
             </div><!-- /.download-row -->
 

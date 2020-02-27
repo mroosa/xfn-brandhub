@@ -9,7 +9,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" id="design-system-grid">
+    <div class="tab" id="design_system-grid">
       <div class="tab-inner">
         <ul class="optionWrap">
           <li data-alt="Design system example 1">

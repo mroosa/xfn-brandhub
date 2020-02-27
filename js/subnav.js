@@ -75,9 +75,10 @@ $(document).ready(function() {
 
 
   $(window).scroll(function() {
-    // actSect();
 		stickyNav();
 
+    var curHash = window.location.hash.replace("#",""),
+        newHash = "";
     var fromTop = $(window).scrollTop() + buffer;
 
     // Get id of current scroll item
@@ -87,11 +88,13 @@ $(document).ready(function() {
     });
     // Get the id of the current element
     cur = cur[cur.length-1];
-    var id = cur && cur.length ? cur[0].id : "";
+    var id = (cur && cur.length) ? cur[0].id : "";
+    // Default new hash to section
+    newHash = id;
     // Set/remove active class
     menuItems
       .parent().removeClass("active")
-      .end().filter("[href='#"+id+"']").parent().addClass("active");
+      .end().filter("[href='#" + id + "']").parent().addClass("active");
     scrollItems.removeClass("active");
     if ($(cur).attr("id") == 'typography') {
       if (textVisible==false) {
@@ -105,14 +108,25 @@ $(document).ready(function() {
       $(cur).addClass("active");
     }
 
+    // tertiary nav
     var curInt = internalScrollItems.map(function() {
       if ($(this).offset().top < fromTop)
       return this;
     });
     curInt = curInt[curInt.length-1];
-    var iid = curInt && curInt.length ? curInt[0].id : "";
-    internalMenuItems
-      .parent().removeClass("active")
-      .end().filter("[href='#"+iid+"']").parent().addClass("active");
+    var iid = (curInt && curInt.length) ? curInt[0].id : "";
+    if (internalMenuItems.filter("[href='#" + iid + "']").parents(".primary").hasClass("active")) {
+      internalMenuItems
+        .parent().removeClass("active")
+        .end().filter("[href='#" + iid + "']").parent().addClass("active");
+      // If secondary is active, overwrite hash
+      newHash = iid;
+    } else {
+      $(".tert-nav .active").removeClass("active");
+    }
+
+    if (curHash != newHash) {
+      window.location.hash = newHash;
+    }
 	});
 });

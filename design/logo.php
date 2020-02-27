@@ -9,7 +9,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" data-ttl="Primary Use" data-bg="white" id="logo-primary-use">
+    <div class="tab" data-ttl="Primary Use" data-bg="white" id="logo_primary-use">
       <div class="tab-inner">
         <h2>Primary Use</h2>
         <p class="caption">Use the black or white version of the Xfinity logo for Xfinity communications and product experiences.</p>
@@ -21,7 +21,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Limited Use" data-bg="white" id="logo-limited-use">
+    <div class="tab" data-ttl="Limited Use" data-bg="white" id="logo_limited-use">
       <div class="tab-inner">
         <h2>Limited Use</h2>
         <p class="caption">The red Xfinity logo is reserved for high impact use in environmental applications.</p>
@@ -32,7 +32,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Future of Awesome" data-bg="white" id="logo-future-of-awesome">
+    <div class="tab" data-ttl="Future of Awesome" data-bg="white" id="logo_future-of-awesome">
       <div class="tab-inner">
         <h2>Future of Awesome</h2>
         <p class="caption">The Xfinity Future of Awesome logo is reserved for strategic, high-visibility communications. Only use this version of the logo when the tagline has legibility and impact.</p>
@@ -44,7 +44,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Logo in Motion" style="background: #1e1e1e; color: #fff;" data-bg="drk-gry" id="logo-in-motion">
+    <div class="tab" data-ttl="Logo in Motion" style="background: #1e1e1e; color: #fff;" data-bg="drk-gry" id="logo_in-motion">
       <div class="tab-inner">
         <h2>Logo in Motion</h2>
         <p class="caption">Our animated logo is reserved for Xfinity TV spots and video tactics. The white Xfinity logo on a dark background ensures optimal legibility, consistency and impact.</p>
@@ -56,7 +56,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Misuses" data-bg="white" id="logo-misuses">
+    <div class="tab" data-ttl="Misuses" data-bg="white" id="logo_misuses">
       <div class="tab-inner">
         <h2>Logo Misuses</h2>
         <ul class="optionWrap">

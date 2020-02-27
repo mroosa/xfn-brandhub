@@ -6,7 +6,7 @@
 <div class="col-2" data-active="0">
   <div class="tabs-wrapper">
   <div class="tabs">
-    <div class="tab" id="typefaces" data-ttl="Our Type">
+    <div class="tab" id="typography_our-typefaces" data-ttl="Our Type">
       <div class="tab-inner">
         <h2 class="mobile-only">Our Type</h2>
 
@@ -38,7 +38,7 @@
       </div>
     </div><!-- /.section -->
 
-    <div class="tab" id="type-styles" data-ttl="Style & Weight">
+    <div class="tab" id="typography_styles-and-weight" data-ttl="Style & Weight">
       <div class="tab-inner">
         <h3 class="mobile-only">Style & Weight</h2>
         <div class="mobile-wrap">
@@ -52,7 +52,7 @@
       </div>
     </div><!-- /.section -->
 
-    <div class="tab" id="type-examples" data-ttl="Type Examples">
+    <div class="tab" id="typography_examples" data-ttl="Type Examples">
       <div class="tab-inner">
         <h2>Type Examples</h2>
         <ul class="optionWrap animate">

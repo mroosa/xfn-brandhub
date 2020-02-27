@@ -8,7 +8,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab swap" data-ttl="Our Symbol" data-bg="white" id="the-xfinity-x">
+    <div class="tab swap" data-ttl="Our Symbol" data-bg="white" id="brand-symbol_the-xfinity-x">
       <div class="tab-inner">
         <h2>The Xfinity X</h2>
         <p class="caption">Use the black or white version of our Brand Symbol depending on background contrast.</p>
@@ -22,7 +22,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Functional" data-bg="white" id="brand-symbol-functional">
+    <div class="tab" data-ttl="Functional" data-bg="white" id="brand-symbol_functional">
       <div class="tab-inner">
         <div class="info">
           <h2>Functional</h2>
@@ -38,7 +38,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Expressive" data-bg="white" id="brand-symbol-expressive">
+    <div class="tab" data-ttl="Expressive" data-bg="white" id="brand-symbol_expressive">
       <div class="tab-inner">
         <div class="info">
           <h2>Expressive</h2>
@@ -54,7 +54,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" data-ttl="Misuses" data-bg="white" id="brand-symbol-misuses">
+    <div class="tab" data-ttl="Misuses" data-bg="white" id="brand-symbol_misuses">
       <div class="tab-inner">
         <h2>Brand Symbol Misuses</h2>
         <ul class="optionWrap">

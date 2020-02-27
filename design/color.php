@@ -9,7 +9,7 @@
   <div class="tabs-wrapper">
     <div class="tabs">
 
-      <div class="tab" id="color-palette" data-ttl="Color Palette">
+      <div class="tab" id="color_palette" data-ttl="Color Palette">
         <h2 class="mobile-only" style="flex-basis: 100%;">Color Palette</h2>
         <div class="color-swatches">
           <div class="col-50 ht-100">
@@ -112,7 +112,7 @@
       </div> -->
 
       <!-- tab -->
-      <div class="tab" data-ttl="Misuses" data-bg="white" id="color-misuses">
+      <div class="tab" data-ttl="Misuses" data-bg="white" id="color_misuses">
         <div class="tab-inner">
           <h2>Color Misuses</h2>
           <ul class="optionWrap">

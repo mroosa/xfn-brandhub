@@ -7,7 +7,7 @@
   <div class="tabs-wrapper">
     <div class="tabs">
 
-      <div class="tab" id="photography-lifestyle" data-ttl="Lifestyle">
+      <div class="tab" id="photography_lifestyle" data-ttl="Lifestyle">
         <div class="mosaic">
           <div class="row row-1">
             <div class="col col-a col-2-3 col-special">
@@ -35,7 +35,7 @@
         </div><!-- .mosaic -->
       </div>
 
-      <div class="tab" id="photography-xfn-devices" data-ttl="Xfinity Hardware">
+      <div class="tab" id="photography_xfinity-devices" data-ttl="Xfinity Hardware">
         <div class="mosaic">
           <div class="row row-1">
             <div class="col col-a col-2-3 col-special">
@@ -63,7 +63,7 @@
         </div><!-- .mosaic -->
       </div>
 
-      <div class="tab" id="photography-devices" data-ttl="Generic Devices">
+      <div class="tab" id="photography_generic_devices" data-ttl="Generic Devices">
         <div class="mosaic">
           <div class="row row-1">
             <div class="col col-a col-2-3 col-special">
@@ -91,7 +91,7 @@
         </div><!-- .mosaic -->
       </div>
 
-      <div class="tab" id="photography-in-situ" data-ttl="In-Situation">
+      <div class="tab" id="photography_in-situation" data-ttl="In-Situation">
         <div class="mosaic">
           <div class="row row-1">
             <div class="col col-a col-2-3 col-special">

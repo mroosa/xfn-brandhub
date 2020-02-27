@@ -2388,9 +2388,9 @@ body #color {
 //     &:nth-of-type(2) {animation: pop .25s both normal 1.80s;}
 //   }
 // }
-#secondary-graphics-additional #sg-ag-1,
-#secondary-graphics-mobile-app-icons #sg-m-1,
-#secondary-graphics-mobile-app-icons #sg-m-2 {
+#secondary-graphics_additional-graphics #sg-ag-1,
+#secondary-graphics_mobile-app-icons #sg-m-1,
+#secondary-graphics_mobile-app-icons #sg-m-2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -2421,7 +2421,7 @@ body #color {
     }
   }
 }
-#secondary-graphics-additional #sg-ag-1 {
+#secondary-graphics_additional-graphics #sg-ag-1 {
   margin-top: 60px;
 
   li {
@@ -2447,13 +2447,13 @@ body #color {
     }
   }
 }
-#secondary-graphics-mobile-app-icons #sg-m-1 li {
+#secondary-graphics_mobile-app-icons #sg-m-1 li {
   flex: 0 0 33%;
   @include bp-min(1350px) {
     flex: 0 0 25%;
   }
 }
-#secondary-graphics-mobile-app-icons #sg-m-2 li {flex: 0 0 100%;}
+#secondary-graphics_mobile-app-icons #sg-m-2 li {flex: 0 0 100%;}
 
 /* Login page */
 
@@ -2974,8 +2974,8 @@ section[data-bg=black] .button {
 
         &.with-tabs .tab img {max-height: 100% !important;}
 
-        #secondary-graphics-additional #sg-ag-1 li,
-        #secondary-graphics-mobile-app-icons #sg-m-1 li {
+        #secondary-graphics_additional-graphics #sg-ag-1 li,
+        #secondary-graphics_mobile-app-icons #sg-m-1 li {
           flex: 0 0 25%;
         }
 
@@ -3040,8 +3040,8 @@ section[data-bg=black] .button {
 
         &.with-tabs .tab img {max-height: 100% !important;}
 
-        #secondary-graphics-additional #sg-ag-1 li,
-        #secondary-graphics-mobile-app-icons #sg-m-1 li {
+        #secondary-graphics_additional-graphics #sg-ag-1 li,
+        #secondary-graphics_mobile-app-icons #sg-m-1 li {
           flex: 0 0 25%;
         }
 

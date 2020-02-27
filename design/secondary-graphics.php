@@ -8,7 +8,7 @@
   <div class="tabs">
 
     <!-- tab -->
-    <div class="tab" id="secondary-graphics-mobile-app-icons" data-ttl="Mobile App Icons">
+    <div class="tab" id="secondary-graphics_mobile-app-icons" data-ttl="Mobile App Icons">
       <div class="tab-inner">
         <h2>Mobile App Icons</h2>
         <ul class="optionWrap animate">
@@ -37,7 +37,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="secondary-graphics-additional" data-ttl="Additional Graphics">
+    <div class="tab" id="secondary-graphics_additional-graphics" data-ttl="Additional Graphics">
       <div class="tab-inner">
         <h2>Additional Graphics</h2>
           <ul id="sg-ag-1">
@@ -62,7 +62,7 @@
     </div>
 
     <!-- tab -->
-    <div class="tab" id="secondary-graphics-in-use" data-ttl="Graphics in Use">
+    <div class="tab" id="secondary-graphics_graphics-in-use" data-ttl="Graphics in Use">
       <div class="tab-inner">
         <h2>Graphics in Use</h2>
         <ul class="optionWrap animate">

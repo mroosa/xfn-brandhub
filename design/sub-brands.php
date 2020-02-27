@@ -8,7 +8,7 @@
   <div class="tabs-wrapper">
     <div class="tabs">
 
-      <div class="tab" id="our-sub-brands" data-ttl="Logos">
+      <div class="tab" id="sub-brands_logos" data-ttl="Logos">
         <h2 class="mobile-only">Sub-Brand Logos</h2>
 
         <div class="sub-brand-logos">
@@ -76,7 +76,7 @@
       </div>
 
       <!-- tab -->
-      <div class="tab" data-ttl="Misuses" data-bg="white" id="sub-brand-misuses">
+      <div class="tab" data-ttl="Misuses" data-bg="white" id="sub-brands_misuses">
         <div class="tab-inner">
           <h2>Sub-Brand Misuses</h2>
           <ul class="optionWrap">

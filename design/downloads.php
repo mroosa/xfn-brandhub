@@ -16,7 +16,7 @@
             <div class="tile-row" id="download-color">
               <h3>Color</h3>
               <img src="images/downloads/color.png" alt="" />
-              <a class="button" href="#"><span>Download <span class="ah">Xfinity Color Palette</span></span></a>
+              <a class="button" href="files/xfinity-color.zip"><span>Download <span class="ah">Xfinity Color Palette</span></span></a>
             </div><!-- /.download-row -->
 
             <div class="tile-row" id="download-typography">

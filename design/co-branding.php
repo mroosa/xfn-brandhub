@@ -2,7 +2,7 @@
   <h1>Co-Branding</h1>
   <p>Xfinity supports a variety of partners and experiences to reinforce our brand purpose and passions. Please set co-branded lock ups with a 1:1 size relationship between logos and set them horizontally.</p>
   <p>For endorsements or experience sponsorships, we may use a descriptive line along with our Xfinity logo. In most cases, this text will be in sentence case.</p>
-  <a class="button" href="#downloads"><span>Download Co-Branding Template</span></a>
+  <a class="button" href="files/xfinity-co-branding.zip"><span>Download Co-Branding Template</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

@@ -2,7 +2,7 @@
 <div class="col-1">
   <h1>Logo</h1>
   <p>Our logo is our most valuable brand asset and should represent Xfinity in all communications. Whether it’s black or white, static or animated, it’s always an essential element of our story.</p>
-  <a class="button" href="#downloads"><span>Download Logos</span></a>
+  <a class="button" href="files/xfinity-logo.zip"><span>Download Logos</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

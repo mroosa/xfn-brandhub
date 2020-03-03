@@ -125,8 +125,8 @@ $(document).ready(function() {
       $(".tert-nav .active").removeClass("active");
     }
 
-    if (curHash != newHash) {
-      window.location.hash = newHash;
-    }
+    // if (curHash != newHash) {
+    //   window.location.hash = newHash;
+    // }
 	});
 });

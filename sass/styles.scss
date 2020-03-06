@@ -2491,7 +2491,8 @@ body #color {
     background: #151515;
 
     @include bp-min($mid) {
-      background: url(../images/login-tenth.jpg) center center no-repeat #151515;
+      // background: url(../images/login-tenth.jpg) center center no-repeat #151515;
+      background: url(../images/login-intro.jpg) center center no-repeat #151515;
       background-size: contain;
     }
     // max-width: 1400px;
@@ -2597,51 +2598,51 @@ body #color {
       }
     }
 
-    // .vid-wrap {
-    //   position: absolute;
-    //   top: 0;
-    //   bottom: 0;
-    //   width: 100%;
-    //   height: 100%;
-    //   overflow: hidden;
-    //   z-index: 99;
-    //   background: url(../images/login-intro.jpg) center center no-repeat #000;
-    //   background-size: contain;
-    //   pointer-events: none;
-    //   @include bp-min($mid) {
-    //     z-index: 1;
-    //     background: #000;
-    //   }
-    //   & > * {
-    //     display: none;
-    //     @include bp-min($mid) {
-    //       display: block;
-    //     }
-    //   }
-    //
-    //   @include bp-max($mid - 1) {
-    //     animation: reveal .5s reverse both .5s;
-    //   }
-    //
-    //   video {
-    //     height: 100%;
-    //     width: 100%;
-    //     object-fit: contain;
-    //     position: relative;
-    //     z-index: 1;
-    //   }
-    //
-    //   .frost {
-    //     height: 100%;
-    //     width: 100%;
-    //     object-fit: contain;
-    //     position: absolute;
-    //     z-index: 2;
-    //     background: url(../images/black-frost.png) no-repeat center center transparent;
-    //     background-size: contain;
-    //   }
-    //
-    // }
+    .vid-wrap {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 99;
+      background: url(../images/login-intro.jpg) center center no-repeat #000;
+      background-size: contain;
+      pointer-events: none;
+      @include bp-min($mid) {
+        z-index: 1;
+        background: #000;
+      }
+      & > * {
+        display: none;
+        @include bp-min($mid) {
+          display: block;
+        }
+      }
+
+      @include bp-max($mid - 1) {
+        animation: reveal .5s reverse both .5s;
+      }
+
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+        z-index: 1;
+      }
+
+      .frost {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        z-index: 2;
+        background: url(../images/black-frost.png) no-repeat center center transparent;
+        background-size: contain;
+      }
+
+    }
 
 
   }

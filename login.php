@@ -19,13 +19,13 @@
         </form>
       </section>
     </div>
-    <div class="bg-img"></div>
-    <!-- <div class="vid-wrap">
+    <!-- <div class="bg-img"></div> -->
+    <div class="vid-wrap">
       <div class="frost"></div>
       <video id="login-intro" playsinline autoplay muted nocontrols>
         <source src="video/login-intro-glow.mp4" type="video/mp4">
       </video>
-    </div> -->
+    </div>
   </main>
 
   <script type="text/javascript">

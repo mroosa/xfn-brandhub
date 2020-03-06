@@ -32,6 +32,8 @@ function smoothScrolling() {
                 $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
                 $target.focus(); // Set focus again
               }
+              // Set the URL to the hash so it can be permalinked
+              window.location.hash = $target.attr('id');
             });
           }
         }

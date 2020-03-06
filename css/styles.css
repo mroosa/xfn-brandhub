@@ -2149,7 +2149,7 @@ body #color .color-swatches .color {
     background: #151515; }
     @media (min-width: 960px) {
       .login main {
-        background: url(../images/login-tenth.jpg) center center no-repeat #151515;
+        background: url(../images/login-intro.jpg) center center no-repeat #151515;
         background-size: contain; } }
     .login main section {
       background: transparent !important; }
@@ -2236,6 +2236,43 @@ body #color .color-swatches .color {
       @media (min-width: 960px) {
         .login main .bg-img {
           display: none; } }
+    .login main .vid-wrap {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 99;
+      background: url(../images/login-intro.jpg) center center no-repeat #000;
+      background-size: contain;
+      pointer-events: none; }
+      @media (min-width: 960px) {
+        .login main .vid-wrap {
+          z-index: 1;
+          background: #000; } }
+      .login main .vid-wrap > * {
+        display: none; }
+        @media (min-width: 960px) {
+          .login main .vid-wrap > * {
+            display: block; } }
+      @media (max-width: 959px) {
+        .login main .vid-wrap {
+          animation: reveal .5s reverse both .5s; } }
+      .login main .vid-wrap video {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: relative;
+        z-index: 1; }
+      .login main .vid-wrap .frost {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        position: absolute;
+        z-index: 2;
+        background: url(../images/black-frost.png) no-repeat center center transparent;
+        background-size: contain; }
   .login.dark {
     color: #fff; }
     .login.dark main #login input:not([type="button"]) {

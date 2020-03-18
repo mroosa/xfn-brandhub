@@ -2505,27 +2505,8 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
   color: #fff; }
 
 .featherlight .featherlight-content {
-  height: 100%;
-  width: 100%;
   padding: 0 !important;
-  border-bottom: 0 !important;
-  background: transparent !important; }
-  @media (max-width: 550px) {
-    .featherlight .featherlight-content {
-      top: 0;
-      left: 0;
-      position: absolute !important;
-      display: flex !important;
-      justify-content: center;
-      align-content: center;
-      align-items: center; } }
-  @media (min-width: 960px) {
-    .featherlight .featherlight-content {
-      padding: 5px 5px 0 5px !important;
-      border-radius: 4px;
-      border-bottom: 1px solid transparent !important;
-      height: 720px;
-      width: 1280px; } }
+  border-bottom: 0 !important; }
 
 .featherlight .featherlight-close-icon {
   top: 5px !important;
@@ -2539,6 +2520,21 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
       height: 50px !important;
       font-size: 24px;
       font-weight: 100; } }
+
+.featherlight.video .featherlight-content {
+  height: 100%;
+  width: 100%;
+  padding: 0 !important;
+  border-bottom: 0 !important;
+  background: transparent !important; }
+  @media (min-width: 960px) {
+    .featherlight.video .featherlight-content {
+      padding: 5px 5px 0 5px !important;
+      border-radius: 4px;
+      border-bottom: 1px solid transparent !important;
+      height: 720px;
+      width: 1280px;
+      margin: 0 auto; } }
 
 /* remove slideshow on mobile */
 @media (max-width: 550px) {

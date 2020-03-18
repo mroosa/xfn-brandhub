@@ -634,6 +634,7 @@ main {
   transition: .25s margin; }
 
 .content section.with-tabs .tab {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;

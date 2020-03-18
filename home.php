@@ -6,12 +6,6 @@
     header('Location: login');
   }
 
-  // logout
-  if(isset($_POST['but_logout'])){
-    session_destroy();
-    header('Location: login');
-  }
-
   $dir = "";
   $scriptList = ['subnav.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration-min.js','video-min.js'];
   $styleList = ['inspiration.css','featherlight.css','video.css'];
@@ -26,9 +20,6 @@
       <a class="alt-swap" href="#">•</a>
     </section>
     <main id="top">
-      <form id="form-logout" method='post' action="">
-        <input type="submit" value="Logout" name="but_logout">
-      </form>
       <div class="inner">
 
       <?php if (file_exists("_templates/_nav/_subnav.php")): ?>

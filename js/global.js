@@ -360,9 +360,9 @@ $(document).ready(function() {
   })
 
   // Temp intro swap
-  $(".alt-swap").click(function() {
-    $("#introduction").toggleClass("alt");
-  });
+  // $(".alt-swap").click(function() {
+  //   $("#introduction").toggleClass("alt");
+  // });
 
   // Random seed
   $("body").attr("data-random-seed",randNum(4,1));

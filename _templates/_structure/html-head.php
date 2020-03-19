@@ -1,3 +1,7 @@
+<?php
+  $isDev = false;
+  $gtag = ($isDev) ? "***REMOVED***": "***REMOVED***";
+?>
 <?php include_once($dir . "_templates/_includes/_variables.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,13 +15,13 @@
   <!-- End Google Tag Manager -->
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=***REMOVED***"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=<?php print $gtag; ?>"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
 
-    gtag('config', '***REMOVED***');
+    gtag('config', '<?php print $gtag; ?>');
   </script>
 
 

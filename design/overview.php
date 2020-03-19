@@ -17,21 +17,21 @@
   <div class="intro-info">
     <h1>Welcome to the Xfinity Brand Hub</h1>
     <h2>Let's build something beautiful together.</h2>
-    <p class="launch-video"><a class="button" data-featherlight="#brand-video" data-featherlight-variant="video" href="#brand-video"><span>Launch Video</span></a></p>
+    <!-- <p class="launch-video"><a class="button" data-featherlight="#brand-video" data-featherlight-variant="video" href="#brand-video"><span>Launch Video</span></a></p> -->
     <div class="intro-txt" id="about">
       <p>Xfinity has been on a journey, and we’ve built a brand to be proud of. Today, Xfinity is one of the most valuable brands in the world. Tomorrow, we will do so much more – building innovative experiences, creating products that improve people’s lives, and relentlessly pursuing our ambition to become a brand people love.</p>
       <p>Inspiration is just a hover, scroll or click away. All the tools you need are right here. Following these guidelines and principles will ensure we express ourselves consistently simplify experiences and build trust with consumers. From our logo to our color palette to our typography, the combination of these elements are uniquely Xfinity. They shape how people think and feel about our brand and help us deliver connected lives they love.</p>
     </div>
   </div>
 
-  <div class="featherlight-ajax" style="display: none;">
+  <!-- <div class="featherlight-ajax" style="display: none;">
     <div id="brand-video" style="display: block; height: 100%; width: 80%; margin: 0 auto;">
       <iframe src="https://player.vimeo.com/video/389839031" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </div>
     <script>
     $(".launch-video a").featherlight({targetAttr:'href'})
     </script>
-  </div>
+  </div> -->
 
 
   <div class="get-started">

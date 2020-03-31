@@ -12,7 +12,7 @@ $(document).ready(function() {
       $thisVid.parent().append(output);
 
       var controls = $thisVid.parent().find(".video-controls");
-      $(controls).find(".play").click(function() {
+      $(controls).find(".play").click(function(e) {
         if ($(this).attr("data-playing") == "true") {
           $thisVid.parent().find("video").get(0).pause();
           $(this).attr("data-playing","false").removeClass("playing");
@@ -20,7 +20,7 @@ $(document).ready(function() {
           $thisVid.parent().find("video").get(0).play();
           $(this).attr("data-playing","true").addClass("playing");
         }
-        return false;
+        e.preventDefault();
       });
     }
 

@@ -158,9 +158,9 @@ function createOptions(parent) {
         var optNavClass = (opt==0) ? ' class="active"': '';
         optionNav.append('<li><a' + optNavClass + ' data-id="' + opt + '" href="#"><span class="ah">' + optionTtl + '</span></a></li>');
       });
-    optionNav.find("a").click(function() {
+    optionNav.find("a").click(function(e) {
       setOption($(this).attr("data-id"), parent);
-      return false;
+      e.preventDefault();
     });
     if (theOptions.hasClass("auto")) {
       var timeDelay = theOptions.attr("data-speed");
@@ -291,23 +291,23 @@ $(document).ready(function() {
 
   // Color swatches
   $(".color-swatches .color")
-    .click(function() {
+    .click(function(e) {
       var thisColor = $(this).attr("href");
       $(".color-swatches .active").removeClass("active");
       $(".color-swatch-info")
         .find(".active").removeClass("active").end()
         .find(thisColor).addClass("active");
-      return false;
+      e.preventDefault();
     });
 
   $(".color-swatch-info .swatch-info").prepend('<a class="close-btn" href="#"><svg width="14" height="14" viewBox="0 0 27.502 27.502"><g transform="translate(-1725.504 -76.49)"><path d="M-1916.082-22342.422l24.674-24.674" transform="translate(3643 22445)" fill="none" stroke="#000" stroke-width="4"/><path d="M-1916.082-22342.422l24.674-24.674" transform="translate(-20615.504 1993.986) rotate(90)" fill="none" stroke="#000" stroke-width="4"/></g></svg> <span class="ah">Close</span></a>');
-  $(".swatch-info .close-btn").click(function() {
+  $(".swatch-info .close-btn").click(function(e) {
     $(this).parents(".swatch-info").removeClass("active");
-    return false;
+    e.preventDefault();
   })
 
   // Sub Brand
-  $(".sub-brand-nav li a").click(function() {
+  $(".sub-brand-nav li a").click(function(e) {
     let activeNav = $(this).attr("data-brand");
     if (!$(this).parent().hasClass("active")) {
       $(".sub-brand-logos .sub-brand-logo-2 ul").css({"margin-top":-70 * activeNav + "px"});
@@ -315,7 +315,7 @@ $(document).ready(function() {
       $(".sub-brand-nav li.active").removeClass("active");
       $(this).parent().addClass("active");
     }
-    return false;
+    e.preventDefault();
   });
 
   // Brand Symbol
@@ -327,23 +327,23 @@ $(document).ready(function() {
   //   });
   // }
   $(".quadWrap").parent().append('<div class="lightbox-shade"><div class="lightbox"><div class="lightbox-content"></div><a class="close" href="#">' + closeSVG + '<span class="ah">Close preview</span></a></div></div>');
-  $(".lightbox-shade, .lightbox .close").click(function() {
+  $(".lightbox-shade, .lightbox .close").click(function(e) {
     closePopOut();
-    return false;
+    e.preventDefault();
   });
   $(".quadWrap li.text").append('<div class="fade"></div><a class="expand" href="#">' + closeSVG + '<span class="ah">Expand content</span></a>');
   $(".quadWrap li a:not(.expand)").each(function(n) {
-    $(this).click(function() {
+    $(this).click(function(e) {
       let popCon = ($(this).parents("li").hasClass("text")) ? $(this).html() : $(this).attr("href");
       popOut(popCon, $(this).parents("li").hasClass("text"), $(this).parents(".tab"));
-      return false;
+      e.preventDefault();
     });
   });
 
   $("#subnav").prepend('<a id="open-mobile-nav" href="#"><span class="ah">Expand Navigation</span></a>');
-  $("#open-mobile-nav").click(function() {
+  $("#open-mobile-nav").click(function(e) {
     $("body").toggleClass("mobileActive");
-    return false;
+    e.preventDefault();
   });
 
 
@@ -352,11 +352,11 @@ $(document).ready(function() {
   // $(".explore a").prepend('<svg height="25px" width="25px" fill="#000000" viewBox="0 0 16 16" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414" x="0px" y="0px"><path d="M14 2.707L8.354 8.353a.5.5 0 0 1-.707-.707L13.293 2H9.5a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707zM5 3H2.499C1.671 3 1 3.669 1 4.496v9.009c0 .825.679 1.496 1.502 1.496h8.995a1.5 1.5 0 0 0 1.502-1.502v-2.498a.5.5 0 0 0-1 0v2.498a.5.5 0 0 1-.502.502H2.502A.504.504 0 0 1 2 13.505V4.496C2 4.222 2.223 4 2.499 4H5a.5.5 0 0 0 0-1z" fill-rule="nonzero"></path></svg>');
 
   // Pause intro bg video when launching full intro video
-  $(".launch-video a").click(function() {
+  $(".launch-video a").click(function(e) {
     $("#introduction video").get(0).pause();
     $("#introduction .video-controls a").attr("data-playing","false").removeClass("playing");
     $(this).featherlight({targetAttr:'href'});
-    return false;
+    e.preventDefault();
   })
 
   // Temp intro swap

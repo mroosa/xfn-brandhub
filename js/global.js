@@ -255,7 +255,7 @@ $(document).ready(function() {
       createOptions(theTab);
       if (tabTtl != "" && tabTtl != undefined && numTabs > 1) {
         tabNavContents += '<li><a class="button set-tab' + linkClass + '" data-id="' + index + '" href="#' + $(this).attr("id") + '"><span>' + tabTtl + '</span></a></li>';
-        subNavContents += '<li><a href="#' + $(this).attr("id") + '">' + tabTtl + '</a></li>';
+        subNavContents += '<li><a class="secondary-nav-item" href="#' + $(this).attr("id") + '">' + tabTtl + '</a></li>';
       }
     });
 

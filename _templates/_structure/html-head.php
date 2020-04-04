@@ -22,32 +22,6 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', '<?php print $gtag; ?>');
-
-    /*
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-
-    ga('create', '<?php print $gtag; ?>', 'auto');
-    ga('send', 'pageview');
-
-    ga('send', 'event', 'link', 'click-nav-intro', 'Main Nav: Introduction', '1');
-    ga('send', 'event', 'link', 'click-nav-logo', 'Main Nav: Logo', '2');
-    ga('send', 'event', 'link', 'click-nav-brand_symbol', 'Main Nav: Brand Symbol', '3');
-    ga('send', 'event', 'link', 'click-nav-sub_brands', 'Main Nav: Sub-Brands', '4');
-    ga('send', 'event', 'link', 'click-nav-color', 'Main Nav: Color', '5');
-    ga('send', 'event', 'link', 'click-nav-typography', 'Main Nav: Typography', '6');
-    ga('send', 'event', 'link', 'click-nav-photography', 'Main Nav: Photography', '7');
-    ga('send', 'event', 'link', 'click-nav-secondary_graphics', 'Main Nav: Secondary Graphics', '8');
-    ga('send', 'event', 'link', 'click-nav-design_system', 'Main Nav: Design System', '9');
-    ga('send', 'event', 'link', 'click-nav-co_branding', 'Main Nav: Co-Branding', '10');
-    ga('send', 'event', 'link', 'click-nav-creative_examples', 'Main Nav: Creative Examples', '11');
-    ga('send', 'event', 'link', 'click-nav-downloads', 'Main Nav: Downloads', '12');
-    ga('send', 'event', 'link', 'click-nav-contact_resources', 'Main Nav: Contact and Resources', '13');
-    */
   </script>
 
 

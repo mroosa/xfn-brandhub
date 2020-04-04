@@ -15,7 +15,7 @@
   class NavLink {
   	public $link; // url
   	public $title; // Printed contents
-  	public $access; // Accessibility tag
+    public $access; // Accessibility tag
 
     public function __construct($link, $title, $access) {
       $this -> link = $link;

@@ -17,7 +17,7 @@
   <div class="intro-info">
     <h1>Welcome to the Xfinity Brand Hub</h1>
     <h2>Let's build something beautiful together.</h2>
-    <!-- <p class="launch-video"><a class="button" data-featherlight="#brand-video" data-featherlight-variant="video" href="#brand-video"><span>Launch Video</span></a></p> -->
+    <!-- <p class="launch-video"><a class="button" id="launch-intro-video" data-featherlight="#brand-video" data-featherlight-variant="video" href="#brand-video"><span>Launch Video</span></a></p> -->
     <div class="intro-txt" id="about">
       <p>Xfinity has been on a journey, and we’ve built a brand to be proud of. Today, Xfinity is one of the most valuable brands in the world. Tomorrow, we will do so much more – building innovative experiences, creating products that improve people’s lives, and relentlessly pursuing our ambition to become a brand people love.</p>
       <p>Inspiration is just a hover, scroll or click away. All the tools you need are right here. Following these guidelines and principles will ensure we express ourselves consistently simplify experiences and build trust with consumers. From our logo to our color palette to our typography, the combination of these elements are uniquely Xfinity. They shape how people think and feel about our brand and help us deliver connected lives they love.</p>
@@ -36,7 +36,7 @@
 
   <div class="get-started">
     <span>Start Exploring</span>
-    <a href="#logo">
+    <a id="intro-start-exploring" href="#logo">
       <svg id="get-started-btn" viewBox="0 0 74 74" width="60px">
         <path d="M37,72.85A36,36,0,0,0,38.8.89c-.62,0-1.23,0-1.85,0s-1.24,0-1.86,0A36,36,0,0,0,1,36.79v.06A36,36,0,0,0,37,72.85Zm0-69a33,33,0,1,1-33,33A33,33,0,0,1,37,3.85Z"/>
         <path d="M49.15,41.35a1.52,1.52,0,0,0-2.13,0l-8.58,8.58V20.54a1.5,1.5,0,0,0-3,0V49.93l-8.57-8.58a1.5,1.5,0,1,0-2.13,2.12L35.88,54.62a1.52,1.52,0,0,0,1.06.43A1.49,1.49,0,0,0,38,54.62L49.15,43.47A1.51,1.51,0,0,0,49.15,41.35Z"/>
@@ -47,7 +47,7 @@
 
   <div class="get-started mobile">
     <span>Learn More</span>
-    <a href="#about">
+    <a id="intro-mobile-about" href="#about">
       <svg id="get-started-btn" viewBox="0 0 74 74" width="60px">
         <path d="M37,72.85A36,36,0,0,0,38.8.89c-.62,0-1.23,0-1.85,0s-1.24,0-1.86,0A36,36,0,0,0,1,36.79v.06A36,36,0,0,0,37,72.85Zm0-69a33,33,0,1,1-33,33A33,33,0,0,1,37,3.85Z"/>
         <path d="M49.15,41.35a1.52,1.52,0,0,0-2.13,0l-8.58,8.58V20.54a1.5,1.5,0,0,0-3,0V49.93l-8.57-8.58a1.5,1.5,0,1,0-2.13,2.12L35.88,54.62a1.52,1.52,0,0,0,1.06.43A1.49,1.49,0,0,0,38,54.62L49.15,43.47A1.51,1.51,0,0,0,49.15,41.35Z"/>

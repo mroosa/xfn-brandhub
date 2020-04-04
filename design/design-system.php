@@ -2,7 +2,7 @@
   <h1>Design System</h1>
   <p>Our design system allows for flexibility across communications of all sizes. Layouts with a clear information hierarchy and plenty of white space help guide the eye and allow customers to easily understand the key message.</p>
   <p>The dynamic angle is a tool that can be used to structure information and create containers for imagery or copy. They should be used in a purposeful manner to create depth or act as a plane for devices to lay on. For more detailed guidance about our design system please download our full brand guidelines.</p>
-  <a class="button" href="files/Xfinity-Brand-Design-Guidelines_Oct2019_vf.pdf"><span>Download Xfinity Brand Guidelines</span></a>
+  <a class="button internal-download" href="files/Xfinity-Brand-Design-Guidelines_Oct2019_vf.pdf"><span>Download Xfinity Brand Guidelines</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

@@ -13,7 +13,7 @@
 
             <div class="tile-row" id="resource-direct-marketing">
               <h3>Xfinity Direct Marketing Dashboard</h3>
-              <img src="images/downloads/logo.png" alt="" />
+              <img src="images/downloads/direct-marketing-dashboard.jpg" alt="" />
               <a class="button resource-explore" href="https://dashboard.xfinity.com/" target="_blank"><span>Explore</span><span class="ah"> the Xfinity Direct Marketing Dashboard</span></a>
               <p>Password: directmktg1701</p>
             </div><!-- /.download-row -->

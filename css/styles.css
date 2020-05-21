@@ -2160,6 +2160,35 @@ body #color .color-swatches .color {
 #secondary-graphics_mobile-app-icons #sg-m-2 li {
   flex: 0 0 100%; }
 
+/* Voice & Messaging */
+#voice .tab .vtab-row {
+  display: flex;
+  justify-content: center; }
+
+#voice .tab .vtab-col {
+  width: 40%;
+  max-width: 200px;
+  margin: 30px 5%; }
+  #voice .tab .vtab-col h2 {
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: 400;
+    text-transform: uppercase; }
+  #voice .tab .vtab-col h3 {
+    font-size: 28px;
+    font-size: 1.75rem;
+    margin: 15px 0; }
+  #voice .tab .vtab-col p {
+    font-size: 22px;
+    font-size: 1.375rem;
+    line-height: 125%; }
+  #voice .tab .vtab-col.img {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #voice .tab .vtab-col.img img {
+      max-width: 150px; }
+
 /* Login page */
 #form-logout {
   position: fixed;

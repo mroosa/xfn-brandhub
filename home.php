@@ -109,6 +109,12 @@
             </div>
           </section>
 
+          <section id="voice" class="with-tabs">
+            <div class="col-wrap">
+            <?php include_once("design/voice.php"); ?>
+            </div>
+          </section>
+
           <section id="creative-examples">
             <div class="col-wrap">
             <?php include_once("design/inspiration.php"); ?>

@@ -2457,6 +2457,47 @@ body #color {
 }
 #secondary-graphics_mobile-app-icons #sg-m-2 li {flex: 0 0 100%;}
 
+/* Voice & Messaging */
+#voice {
+  .tab {
+    .vtab-row {
+      display: flex;
+      justify-content: center;
+    }
+    .vtab-col {
+      width: 40%;
+      max-width: 200px;
+      margin: 30px 5%;
+      h2 {
+        @include font-size(18px);
+        font-weight: 400;
+        text-transform: uppercase;
+      }
+      h3 {
+        @include font-size(28px);
+        margin: 15px 0;
+      }
+      p {
+        @include font-size(22px);
+        line-height: 125%;
+      }
+      &.txt {
+
+      }
+      &.img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          max-width: 150px;
+        }
+      }
+
+    }
+  }
+}
+
 /* Login page */
 
 

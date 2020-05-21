@@ -13,20 +13,20 @@
       <div class="tab-inner">
         <div class="voice-tabs">
           <div class="vtab-row">
-            <div class="vtab-col txt">
+            <div id="vtab-1" class="vtab-col txt">
               <h2>MESSAGING</h2>
               <h3>What we say</h3>
               <p>What do we want them to know?</p>
             </div>
-            <div class="vtab-col img">
+            <div id="vtab-2" class="vtab-col img">
               <img src="images/voice/speech.png" alt="" />
             </div>
           </div>
           <div class="vtab-row">
-            <div class="vtab-col img">
+            <div id="vtab-3" class="vtab-col img">
               <img src="images/voice/heart.png" alt="" />
             </div>
-            <div class="vtab-col txt">
+            <div id="vtab-4" class="vtab-col txt">
               <h2>VOICE & TONE</h2>
               <h3>How we say it</h3>
               <p>How do we want them to feel?</p>

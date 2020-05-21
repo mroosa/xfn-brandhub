@@ -2,7 +2,7 @@
 <div class="col-1">
   <h1>Voice & Messaging</h1>
   <p>Every communication is an opportunity to shift perception, establish trust and build brand love.  The Xfinity messaging and brand voice helps establish a clear purpose and unique personality that can be recognized through the words on a page, without ever seeing an image or a logo.</p>
-  <a class="button internal-explore" href="http://xfinity.com/" target="_blank"><span>Download Messaging Guidelines</span></a>
+  <a class="button internal-explore" href="http://xfinity.com/" target="_blank"><span>Explore Messaging Guidelines</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

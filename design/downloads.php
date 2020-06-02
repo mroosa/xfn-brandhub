@@ -62,7 +62,7 @@
             </div><!-- /.download-row -->
 
             <div class="tile-row" id="download-messaging-guidelines">
-              <h3>Messaging Guidelines</h3>
+              <h3>Voice & Messaging Guidelines</h3>
               <img src="images/downloads/messaging-guidelines.png" alt="" />
               <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore <span class="ah">Messaging Guidelines</span></span></a>
             </div><!-- /.download-row -->
@@ -72,12 +72,12 @@
               <img src="images/downloads/supplemental-guidelines.png" alt="" />
               <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore <span class="ah">Supplemental Guidelines</span></span></a>
             </div><!-- /.download-row -->
-
+<!--
             <div class="tile-row" id="download-olympics">
               <h3>Olympics 2020</h3>
               <img src="images/downloads/olympics.jpg" alt="" />
               <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore <span class="ah">Olympics 2020 Guidelines</span></span></a>
-            </div><!-- /.download-row -->
-
+            </div>
+-->
           </div><!-- /.downloads -->
         </div><!-- /.col-full -->

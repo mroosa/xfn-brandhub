@@ -386,11 +386,13 @@ main {
             }
           }
 
-          .tert-nav {
-            display: block;
-            @include bp-max($sml) {
-              margin: 0;
-              padding: 0;
+          @media (min-height: 900px) {
+            .tert-nav {
+              display: block;
+              @include bp-max($sml) {
+                margin: 0;
+                padding: 0;
+              }
             }
           }
         }

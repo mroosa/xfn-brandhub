@@ -46,7 +46,7 @@
             <div class="tile-row" id="download-secondary-assets">
               <h3>Secondary Graphics</h3>
               <img src="images/downloads/secondary.png" alt="" />
-              <a class="button resource-download" href="http://xfinity.com/" target="_blank"><span>Download <span class="ah">Secondary Graphics</span></span></a>
+              <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore <span class="ah">Secondary Graphics</span></span></a>
             </div><!-- /.download-row -->
 
             <div class="tile-row" id="download-xfinity-design-guidelines">

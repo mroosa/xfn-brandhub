@@ -3701,14 +3701,6 @@
 		"oAP": "/login.php",
 		"oF": 0
 		},
-	"/logo.html": {
-		"cB": 0,
-		"ft": 8192,
-		"hM": 0,
-		"oA": 0,
-		"oAP": "/logo.html",
-		"oF": 0
-		},
 	"/logout.php": {
 		"cB": 0,
 		"ft": 8192,

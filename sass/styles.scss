@@ -283,7 +283,7 @@ main {
 
     width: 100%;
     @include bp-min($sml + 1) {
-      padding: 0 1.5vw 30px 1.5vw;
+      padding: 0 20px 30px 20px;
       position: relative;
       top: 0;
       width: 150px;

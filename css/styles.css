@@ -363,7 +363,6 @@ main {
   @media screen and (min-width: 551px) and (max-width: 768px) {
     .two-col .sidebar #subnav .nav.menu {
       padding-left: 5px; } }
-
 @media (min-width: 769px) {
   .two-col .content {
     width: calc(100% - 150px); } }
@@ -415,7 +414,7 @@ main {
       z-index: 99; }
     @media (min-width: 769px) {
       .sidebar #subnav {
-        padding: 0 1.5vw 30px 1.5vw;
+        padding: 0 20px 30px 20px;
         position: relative;
         top: 0;
         width: 150px;
@@ -529,7 +528,6 @@ main {
                 content: "• ";
                 margin: 0 3px 0 0;
                 padding: 0; } }
-
 @media (max-width: 767px) {
   #subnav ul li .menu {
     display: none; } }
@@ -544,7 +542,6 @@ main {
   @media (min-width: 769px) {
     #open-mobile-nav {
       display: none; } }
-
 .mobileActive {
   overflow: hidden; }
   .mobileActive #mobileMenu {
@@ -621,7 +618,6 @@ main {
     .content section.active .col-1 {
       left: calc( ( ( 100vw - 1600px ) / 2 ) + 200px);
       width: 600px; } }
-
 .content section.with-tabs .tabs-wrapper {
   overflow: hidden;
   margin: -50px 0 0 0;
@@ -630,7 +626,6 @@ main {
     .content section.with-tabs .tabs-wrapper {
       margin-top: 0;
       padding-top: 0; } }
-
 .content section.with-tabs .tabs {
   transition: .25s margin; }
 
@@ -777,7 +772,7 @@ main {
     .button:not(.disabled):focus span, .button:not(.disabled):hover span {
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.35);
       transform: translateY(-3px); }
-  .button:not(.disabled):focus span, .button:not(.disabled).active span, .button:not(.disabled):hover span {
+  .button:not(.disabled):focus span, .button.active:not(.disabled) span, .button:not(.disabled):hover span {
     color: #000;
     background: #fff; }
 
@@ -1458,7 +1453,7 @@ body #color .color-swatches .color {
     transition: opacity .25s, box-shadow .25s, transform .25s;
     padding: 150px 20px 20px 20px;
     margin: 15px 0; }
-    #color .color-swatch-info .swatch-info#color-accent-red, #color .color-swatch-info .swatch-info#color-action-blue {
+    #color .color-swatch-info #color-accent-red.swatch-info, #color .color-swatch-info #color-action-blue.swatch-info {
       padding-top: 5px; }
     @media (min-width: 551px) {
       #color .color-swatch-info .swatch-info {
@@ -1545,7 +1540,6 @@ body #color .color-swatches .color {
         line-height: 125%;
         font-size: 44px;
         font-size: 2.75rem; } }
-
 #typography .slider {
   width: 100%;
   transition: opacity .5s;
@@ -1792,7 +1786,7 @@ body #color .color-swatches .color {
           .content section#photography .mosaic .photo-info-wrap .photo-info p {
             font-size: 18px;
             font-size: 1.125rem; } }
-      .content section#photography .mosaic .photo-info-wrap .photo-info#photography-null {
+      .content section#photography .mosaic .photo-info-wrap #photography-null.photo-info {
         background: transparent; }
 
 /* Brand Symbol */
@@ -1819,7 +1813,6 @@ body #color .color-swatches .color {
     .tab .info p {
       font-size: 18px;
       font-size: 1.125rem; } }
-
 .tab .lightbox-shade {
   height: 100%;
   width: 100%;
@@ -2151,13 +2144,11 @@ body #color .color-swatches .color {
       @media (min-width: 768px) {
         #secondary-graphics_additional-graphics #sg-ag-1 li span {
           display: block; } }
-
 #secondary-graphics_mobile-app-icons #sg-m-1 li {
   flex: 0 0 33%; }
   @media (min-width: 1350px) {
     #secondary-graphics_mobile-app-icons #sg-m-1 li {
       flex: 0 0 25%; } }
-
 #secondary-graphics_mobile-app-icons #sg-m-2 li {
   flex: 0 0 100%; }
 
@@ -2567,7 +2558,6 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
       height: 50px !important;
       font-size: 24px;
       font-weight: 100; } }
-
 .featherlight.video .featherlight-content {
   height: 100%;
   width: 100%;
@@ -2582,7 +2572,6 @@ section[data-bg=black] .button.active span, section[data-bg=black] .button:focus
       height: 720px;
       width: 1280px;
       margin: 0 auto; } }
-
 /* remove slideshow on mobile */
 @media (max-width: 550px) {
   .content section.with-tabs .tab .tab-inner .slideshow ul.optionWrap:not(.swap) {

@@ -13,7 +13,7 @@ $subLinkAry = [
 	new NavLink('#voice','Voice & Messaging',null),
 	new NavLink('#creative-examples','Creative Examples',null),
 	new NavLink('#downloads','Downloads',null),
-	new NavLink('#contact-resources','Contact & Resources',null),
+	new NavLink('#contact-resources','Contacts & Resources',null),
 ];
 
 print "\t<ul class=\"nav menu\">\n";

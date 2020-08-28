@@ -1,8 +1,15 @@
         <div class="col-full">
-          <h1>Contact & Resources</h1>
+          <h1>Contacts & Resources</h1>
           <p>Questions, comments or feedback? Feel free to email the <a href="#">Xfinity Brand Team</a>. We’d love to hear from you.</p>
           <p>Discover additional assets in the links below.</p>
           <div class="tiles">
+
+            <div class="tile-row" id="resource-customer-comms">
+              <h3>Xfinity TV Ad Repository</h3>
+              <img src="images/downloads/tv_repository.jpg" alt="" />
+              <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore</span><span class="ah"> the Xfinity TV Ad Repository</span></a>
+              <p>&nbsp;</p>
+            </div><!-- /.download-row -->
 
             <div class="tile-row" id="resource-customer-comms">
               <h3>Xfinity Customer Comms Dashboard</h3>

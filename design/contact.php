@@ -4,7 +4,7 @@
           <p>Discover additional assets in the links below.</p>
           <div class="tiles">
 
-            <div class="tile-row" id="resource-customer-comms">
+            <div class="tile-row" id="resource-tv-ad-repo">
               <h3>Xfinity TV Ad Repository</h3>
               <img src="images/downloads/tv_repository.jpg" alt="" />
               <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore</span><span class="ah"> the Xfinity TV Ad Repository</span></a>

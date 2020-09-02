@@ -15,7 +15,7 @@
           <input tabindex="2" type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password"/>
           <div id="message">&nbsp;</div>
           <a tabindex="3" id="btn_submit" class="button" href="#"><span>Get Started</span></a>
-          <input type="submit" style="display: none" value="Get Started" />
+          <input class="g-recaptcha" data-sitekey="6Ldyr8QZAAAAAN0DdLYkSPnK6Rtqe7bAewmOtkcD" type="submit" style="display: none" data-callback="submitLogin" value="Get Started" />
           <p class="help">Need help logging in? Contact the <a href="#">Xfinity Brand Team</a>.</p>
         </form>
       </section>

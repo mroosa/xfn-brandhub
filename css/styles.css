@@ -2730,25 +2730,6 @@ body #color .color-swatches .color {
   max-width: 150px;
 }
 
-#voice .vtab-col {
-  transition: 0.5s opacity;
-  opacity: 0;
-  animation: popDown 0.25s forwards normal;
-}
-
-#voice.active #vtab-1 {
-  animation: pop 0.25s forwards normal 0.25s;
-}
-#voice.active #vtab-2 {
-  animation: pop 0.25s forwards normal 0.5s;
-}
-#voice.active #vtab-3 {
-  animation: pop 0.25s forwards normal 0.75s;
-}
-#voice.active #vtab-4 {
-  animation: pop 0.25s forwards normal 1s;
-}
-
 /* Login page */
 #form-logout {
   position: fixed;

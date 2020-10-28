@@ -11,7 +11,8 @@
     <!-- tab -->
     <div class="tab swap" data-ttl="Our Symbol" data-bg="white" id="brand-symbol_the-xfinity-x">
       <div class="tab-inner">
-        <div class="voice-tabs" title="Our brand voice and messaging will help you write more creatively, effectively and consistently as a champion of the Xfinity brand.">
+        <img src="images/voice/laptop.png" title="our brand voice and messaging will help you write more creatively, effectively and consistently as a champion of the Xfinity brand" alt="">
+        <!-- <div class="voice-tabs" title="Our brand voice and messaging will help you write more creatively, effectively and consistently as a champion of the Xfinity brand.">
           <div class="vtab-row">
             <div id="vtab-1" class="vtab-col txt">
               <h2>MESSAGING</h2>
@@ -32,7 +33,7 @@
               <p>How do we want them to <strong><em>feel?</em></strong></p>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

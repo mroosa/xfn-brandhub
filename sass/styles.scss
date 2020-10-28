@@ -2501,18 +2501,18 @@ body #color {
   }
 }
 #voice {
-  .vtab-col {
-    transition: .5s opacity;
-    opacity: 0;
-    animation: popDown .25s forwards normal ;
-  }
+  // .vtab-col {
+  //   transition: .5s opacity;
+  //   opacity: 0;
+  //   animation: popDown .25s forwards normal ;
+  // }
 }
-#voice.active {
-  #vtab-1 {animation: pop .25s forwards normal 0.25s;}
-  #vtab-2 {animation: pop .25s forwards normal 0.50s;}
-  #vtab-3 {animation: pop .25s forwards normal 0.75s;}
-  #vtab-4 {animation: pop .25s forwards normal 1.00s;}
-}
+// #voice.active {
+//   #vtab-1 {animation: pop .25s forwards normal 0.25s;}
+//   #vtab-2 {animation: pop .25s forwards normal 0.50s;}
+//   #vtab-3 {animation: pop .25s forwards normal 0.75s;}
+//   #vtab-4 {animation: pop .25s forwards normal 1.00s;}
+// }
 
 /* Login page */
 

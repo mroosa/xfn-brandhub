@@ -1,8 +1,8 @@
 
 <div class="col-1">
-  <h1>Voice & Messaging Guidelines</h1>
-  <p>Every communication is an opportunity to shift perception, establish trust and build brand love.  The Xfinity messaging and brand voice helps establish a clear purpose and unique personality that can be recognized through the words on a page, without ever seeing an image or a logo.</p>
-  <a class="button internal-explore" href="http://xfinity.com/" target="_blank"><span>Explore Voice & Messaging Guidelines</span></a>
+  <h1>Brand Messaging Framework</h1>
+  <p>Every communication is an opportunity to drive trust and value with our customers. The Xfinity Brand Messaging Framework is the foundation to build every communication with messaging that is benefit-led, single-minded, and consistently reinforces our brand purpose, principles and positioning across the consumer journey.</p>
+  <a class="button internal-explore" href="http://xfinity.com/" target="_blank"><span>Explore Brand Messaging Framework</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">
@@ -24,7 +24,7 @@
           </div>
           <div class="vtab-row">
             <div id="vtab-3" class="vtab-col img">
-              <img src="images/voice/heart.png" alt="" />
+              <img src="images/voice/laptop.png" alt="" />
             </div>
             <div id="vtab-4" class="vtab-col txt">
               <h2>VOICE & TONE</h2>

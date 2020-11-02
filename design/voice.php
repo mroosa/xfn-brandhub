@@ -11,7 +11,7 @@
     <!-- tab -->
     <div class="tab swap" data-ttl="Our Symbol" data-bg="white" id="brand-symbol_the-xfinity-x">
       <div class="tab-inner">
-        <img src="images/voice/laptop.png" title="Our brand voice and messaging will help you write more creatively, effectively and consistently as a champion of the Xfinity brand." alt="">
+        <img src="images/voice/laptop.png" title="" alt="">
       </div>
     </div>
 

@@ -1,6 +1,13 @@
         <div class="col-full">
           <h1>Downloads</h1>
           <div class="tiles">
+
+            <div class="tile-row" id="download-messaging-guidelines">
+              <h3>Brand Messaging Framework</h3>
+              <img src="images/downloads/brand-messaging.jpg" alt="" />
+              <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore <span class="ah">Messaging Guidelines</span></span></a>
+            </div><!-- /.download-row -->
+
             <div class="tile-row" id="download-xfinity-logo">
               <h3>Xfinity Logo</h3>
               <img src="images/downloads/logo.png" alt="" />
@@ -59,12 +66,6 @@
               <h3>Design System Templates</h3>
               <img src="images/downloads/design-system.jpg" alt="" />
               <a class="button resource-download" href="files/Xfinity-Design-System-Templates.zip"><span>Download <span class="ah">Design System Templates</span></span></a>
-            </div><!-- /.download-row -->
-
-            <div class="tile-row" id="download-messaging-guidelines">
-              <h3>Voice & Messaging Guidelines</h3>
-              <img src="images/downloads/messaging-guidelines.png" alt="" />
-              <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore <span class="ah">Messaging Guidelines</span></span></a>
             </div><!-- /.download-row -->
 
             <div class="tile-row" id="download-supplemental-guidelines">

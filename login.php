@@ -1,6 +1,7 @@
 <?php
   $bodyClassList = ['login','dark'];
 
+  $dest = isset($_GET['d']) ? $_GET['d'] : "index.php";
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 
@@ -42,7 +43,8 @@
           success:function(response){
             var msg = "&nbsp;";
             if (response == 1) {
-              window.location = "index.php";
+
+              window.location = "<?php print $dest; ?>";
             }else{
               msg = "Invalid username and password!";
             }

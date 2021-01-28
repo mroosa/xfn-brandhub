@@ -1,5 +1,6 @@
 git_find_big.sh
-messaging/
+messaging/*
+!messaging/.htaccess
 
 #config.codekit3
 .DS_Store

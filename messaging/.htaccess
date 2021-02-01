@@ -3,5 +3,5 @@ Options -Indexes
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{REQUEST_URI} \.(htm|html)
-    RewriteRule (.*)  ../messaging-check.php?d=$1 [NC,L]
+    RewriteRule (.*)  /messaging-check.php?d=$1 [NC,L]
 </IfModule>

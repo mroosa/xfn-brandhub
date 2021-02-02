@@ -1,7 +1,13 @@
 Options -Indexes
-# Options +SymLinksIfOwnerMatch +ExecCGI
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
+    # Ignore files and directories, attach html
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^(.*)$ $1.html [NC]
+
+    # Take htm/html requests, redirect through login check
     RewriteCond %{REQUEST_URI} \.(htm|html)
     RewriteRule (.*)  /messaging-check.php?d=$1 [NC,L]
 </IfModule>

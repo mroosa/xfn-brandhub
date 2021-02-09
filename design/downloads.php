@@ -2,12 +2,6 @@
           <h1>Downloads</h1>
           <div class="tiles">
 
-            <div class="tile-row" id="download-messaging-guidelines">
-              <h3>Brand Messaging Framework</h3>
-              <img src="images/downloads/brand-messaging.jpg" alt="" />
-              <a class="button resource-explore" href="messaging" target="_blank"><span>Explore <span class="ah">Messaging Guidelines</span></span></a>
-            </div><!-- /.download-row -->
-
             <div class="tile-row" id="download-xfinity-logo">
               <h3>Xfinity Logo</h3>
               <img src="images/downloads/logo.png" alt="" />

@@ -4,6 +4,13 @@
           <p>Discover additional assets in the links below.</p>
           <div class="tiles">
 
+            <div class="tile-row" id="download-messaging-guidelines">
+              <h3>Brand Messaging Framework</h3>
+              <img src="images/downloads/brand-messaging.jpg" alt="" />
+              <a class="button resource-explore" href="messaging" target="_blank"><span>Explore <span class="ah">Messaging Guidelines</span></span></a>
+              <p>&nbsp;</p>
+            </div><!-- /.download-row -->
+
             <div class="tile-row" id="resource-tv-ad-repo">
               <h3>Xfinity TV Ad Repository</h3>
               <img src="images/downloads/tv_repository.jpg" alt="" />

@@ -2,7 +2,7 @@
 <div class="col-1">
   <h1>Brand Messaging Framework</h1>
   <p>Every communication is an opportunity to drive trust and value with our customers. The Xfinity Brand Messaging Framework is the foundation to build every communication with messaging that is benefit-led, single-minded, and consistently reinforces our brand purpose, principles and positioning across the consumer journey.</p>
-  <a class="button internal-explore" href="http://xfinity.com/" target="_blank"><span>Explore Brand Messaging Framework</span></a>
+  <a class="button internal-explore" href="messaging" target="_blank"><span>Explore Brand Messaging Framework</span></a>
 </div>
 <div class="col-2">
   <div class="tabs-wrapper">

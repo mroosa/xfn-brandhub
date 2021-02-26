@@ -1,0 +1,106 @@
+.redesign {
+  color: #000;
+}
+.redesign .content {
+  width: 100%;
+}
+.redesign h1 {
+  font-size: 54px;
+}
+.redesign .disc {
+  max-width: 65%; margin: 20px auto;
+}
+.redesign-top {
+  text-align: center;
+  background: #000;
+  color: #fff;
+  padding: 50px 20px;
+}
+.new-tiles {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1500px;
+  margin: 0 auto 50px auto;
+}
+.new-tile {
+  padding: 20px;
+  flex: 0 1 33%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.new-tile img {max-width: 360px; margin: 0 auto;}
+.new-tile h2 {
+  font-size: 32px;
+  margin: 0 0 .25em 0;
+}
+.new-tile hr {
+  height: 5px;
+  width: 40px;
+  background: #000;
+}
+.new-tile .tile-info {
+  flex-grow: 1;
+  font-size: 24px;
+}
+.new-tile .button {
+  display: block;
+  width: 70%;
+  max-width: 250px;
+  margin: 0 auto;
+}
+.new-tile .button span {
+  width: 100%;
+  flex-shrink: 1;
+  font-size: 20px;
+  border-color: #EBEBEB;
+  background: #fff;
+  color: #000;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 35%);
+}
+.new-tile .button:focus span,
+.new-tile .button:hover span {
+  transform: none;
+}
+.new-tile .button:focus span,
+.new-tile .button:hover span {
+  background: #000;
+  border-color: #000;
+  color: #fff;
+}
+.redesign footer {padding: 30px 40px;}
+.redesign footer .logo {width: 210px;}
+.redesign .foot-inside {
+  max-width: 1500px;
+  margin: 0 auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+.redesign a {color: #fff; font-weight: bold; text-decoration: none; font-size: 32px;}
+.redesign a:hover {text-decoration: underline;}
+.redesign .logo {padding: 0;}
+
+@media (max-width: 1200px) {
+  .redesign h1 {font-size: 42px;}
+  .new-tile h2,
+  .redesign a {font-size: 24px;}
+  .new-tile .tile-info {font-size: 18px;}
+  .new-tile .button span {font-size: 14px;}
+}
+
+@media (max-width: 768px) {
+  .redesign h1 {font-size: 32px;}
+  .redesign a {font-size: 18px;}
+  .redesign footer {padding: 20px;}
+  .redesign .foot-nav {text-align: right;}
+}
+
+@media (max-width: 550px) {
+  .new-tile {flex-basis: 100%;}
+  .new-tile img {max-width: 300px; margin: 0 auto;}
+  .redesign footer .logo {width: 150px;}
+  .redesign a {font-size: 14px;}
+}

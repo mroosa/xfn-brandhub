@@ -45,7 +45,7 @@ $(document).ready(function() {
         // }
     }
 	};
-	stickyNav();
+//	stickyNav();
 
   // Active sub nav items
 
@@ -75,7 +75,7 @@ $(document).ready(function() {
 
 
   $(window).scroll(function() {
-		stickyNav();
+		//stickyNav();
 
     var curHash = window.location.hash.replace("#",""),
         newHash = "";

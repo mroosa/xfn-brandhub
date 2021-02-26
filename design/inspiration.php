@@ -1,7 +1,7 @@
 <?php
   $ejson = file_get_contents($dir . 'data/inspiration.json', true);
   $eobj = json_decode($ejson);
-  $taglist = $eobj->tagslist;
+  //$taglist = $eobj->tagslist;
 
   $items = $eobj->items;
   $itmAry = [];

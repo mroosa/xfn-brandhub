@@ -1,6 +1,6 @@
 <?php
   $bodyClassList = ['login','dark'];
-
+  $dir = "";
   $dest = isset($_GET['d']) ? $_GET['d'] : "index.php";
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>

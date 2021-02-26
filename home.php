@@ -38,7 +38,7 @@
               <h2>Current Brand Guidelines</h2>
               <hr>
               <p class="tile-info" >To be used for all materials created before 100 days out of Olympics</p>
-              <a class="button" href=""><span>Explore</span></a>
+              <a class="button" href="brandhub"><span>Explore</span></a>
             </div>
 
             <div class="new-tile">
@@ -62,7 +62,7 @@
               <h2>Interactive Messaging Framework</h2>
               <hr>
               <p class="tile-info" >Go-to destination for messaging to create compelling communications to reinforce the Xfinity brand</p>
-              <a class="button" href=""><span>Explore</span></a>
+              <a class="button" href="messaging"><span>Explore</span></a>
             </div>
 
             <div class="new-tile">

@@ -8,10 +8,10 @@
   font-size: 54px;
 }
 .redesign .disc {
-  max-width: 60%; margin: 20px auto; font-size: 32px; font-weight: 400;
+  max-width: 1000px; margin: 20px auto; font-size: 24px; font-weight: 300; padding: 10px 60px;
 }
 .redesign .disc a {
-  font-size: 32px; font-weight: 400; text-decoration: underline;
+  font-size: 24px; font-weight: 300; text-decoration: underline;
 }
 .redesign .disc a:hover {
   text-decoration: none;

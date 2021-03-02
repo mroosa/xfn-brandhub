@@ -51,7 +51,7 @@
 
             <div class="new-tile" id="tile-3">
               <img src="images/landing/icon-new.jpg" alt="">
-              <h2>New Brand Guidelines</h2>
+              <h2>New Brand<br>Guidelines</h2>
               <hr>
               <p class="tile-info" >To be used for inspiration and reference only <br>(Official release in April 2021)</p>
               <a class="button" href="files/09945_New VisID One Sheet_R6.pdf" target="_blank"><span>Download</span></a>

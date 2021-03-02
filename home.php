@@ -28,51 +28,51 @@
             </svg>
             <br><br>
             <h1>Welcome to the <br class="mobile-only">Xfinity Brand Hub</h1>
-            <p class="disc">We’re making some exciting updates to our site – please bear with us. <br>In the meantime, explore the helpful resources below, and feel free to reach out to the Xfinity Brand Team with any questions.</p>
+            <p class="disc">We’re making some exciting updates to our site – please bear with us. <br>In the meantime, explore the helpful resources below, and feel free to reach out to the <a href="#">Xfinity Brand Team</a> with any questions.</p>
           </div>
 
-          <div class="new-tiles">
+          <div class="new-tiles four-tiles">
 
-            <div class="new-tile">
+            <div class="new-tile" id="tile-1">
               <img src="images/landing/icon-old.jpg" alt="">
               <h2>Current Brand Guidelines</h2>
               <hr>
-              <p class="tile-info" >To be used for all materials created before 100 days out of Olympics</p>
+              <p class="tile-info" >Please refer to these guidelines for all communications prior to the Olympics (100 days out)</p>
               <a class="button" href="brandhub"><span>Explore</span></a>
             </div>
 
-            <div class="new-tile">
+            <div class="new-tile" id="tile-2">
               <img src="images/landing/icon-olympics.jpg" alt="">
               <h2>Olympics Brand Guidelines and Assets</h2>
               <hr>
               <p class="tile-info" >To be used for all Olympics-related materials </p>
-              <a class="button" href=""><span>Explore</span></a>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div>
 
-            <div class="new-tile">
+            <div class="new-tile" id="tile-3">
               <img src="images/landing/icon-new.jpg" alt="">
               <h2>New Brand Guidelines</h2>
               <hr>
               <p class="tile-info" >To be used for inspiration and reference only <br>(Official release in April 2021)</p>
-              <a class="button" href=""><span>Explore</span></a>
+              <a class="button" href="files/09945_New VisID One Sheet_R6.pdf" target="_blank"><span>Download</span></a>
             </div>
 
-            <div class="new-tile">
+            <div class="new-tile" id="tile-4">
               <img src="images/landing/icon-messaging.jpg" alt="">
               <h2>Interactive Messaging Framework</h2>
               <hr>
-              <p class="tile-info" >Go-to destination for messaging to create compelling communications to reinforce the Xfinity brand</p>
+              <p class="tile-info" >Your go-to destination for compelling messaging to consistently reinforce the Xfinity brand</p>
               <a class="button" href="messaging"><span>Explore</span></a>
             </div>
-
-            <div class="new-tile">
+<!--
+            <div class="new-tile" id="tile-5">
               <img src="images/landing/icon-presentation.jpg" alt="">
               <h2>New Presentation Templates</h2>
               <hr>
               <p class="tile-info" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
               <a class="button" href=""><span>Explore</span></a>
             </div>
-
+-->
           </div>
 
         </div><!-- /.content -->

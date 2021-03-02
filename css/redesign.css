@@ -8,7 +8,13 @@
   font-size: 54px;
 }
 .redesign .disc {
-  max-width: 65%; margin: 20px auto;
+  max-width: 60%; margin: 20px auto; font-size: 32px;
+}
+.redesign .disc a {
+  font-size: 32px; font-weight: 300; text-decoration: underline;
+}
+.redesign .disc a:hover {
+  text-decoration: none;
 }
 .redesign-top {
   text-align: center;
@@ -31,6 +37,8 @@
   text-align: center;
 }
 .new-tile img {max-width: 360px; margin: 0 auto;}
+.four-tiles .new-tile {flex: 0 1 25%;}
+.four-tiles .new-tile img {max-width: 100%;}
 .new-tile h2 {
   font-size: 32px;
   margin: 0 0 .25em 0;
@@ -87,8 +95,16 @@
   .redesign h1 {font-size: 42px;}
   .new-tile h2,
   .redesign a {font-size: 24px;}
+  .redesign .disc {font-size: 24px; max-width: 100%; padding: 0 60px;}
+  .redesign .disc a {font-size: 24px;}
   .new-tile .tile-info {font-size: 18px;}
   .new-tile .button span {font-size: 14px;}
+}
+
+@media (max-width: 960px) {
+  .redesign .four-tiles .new-tile {flex: 0 1 40%;}
+  .redesign .disc {font-size: 18px; padding: 0 40px;}
+  .redesign .disc a {font-size: 18px;}
 }
 
 @media (max-width: 768px) {
@@ -103,4 +119,5 @@
   .new-tile img {max-width: 300px; margin: 0 auto;}
   .redesign footer .logo {width: 150px;}
   .redesign a {font-size: 14px;}
+  .redesign .four-tiles .new-tile {flex: 0 1 90%;}
 }

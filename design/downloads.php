@@ -2,6 +2,12 @@
           <h1>Downloads</h1>
           <div class="tiles">
 
+            <div class="tile-row" id="download-xfinity-design-guidelines">
+              <h3>Xfinity Design Guidelines</h3>
+              <img src="images/downloads/brand-design-guidelines.jpg" alt="" />
+              <a class="button resource-download" href="files/Xfinity-Brand-Design-Guidelines_Oct2019_vf.pdf"><span>Download <span class="ah">Xfinity Design Guidelines</span></span></a>
+            </div><!-- /.download-row -->
+
             <div class="tile-row" id="download-xfinity-logo">
               <h3>Xfinity Logo</h3>
               <img src="images/downloads/logo.png" alt="" />
@@ -48,12 +54,6 @@
               <h3>Secondary Graphics</h3>
               <img src="images/downloads/secondary.png" alt="" />
               <a class="button resource-explore" href="http://xfinity.com/" target="_blank"><span>Explore <span class="ah">Secondary Graphics</span></span></a>
-            </div><!-- /.download-row -->
-
-            <div class="tile-row" id="download-xfinity-design-guidelines">
-              <h3>Xfinity Design Guidelines</h3>
-              <img src="images/downloads/brand-design-guidelines.jpg" alt="" />
-              <a class="button resource-download" href="files/Xfinity-Brand-Design-Guidelines_Oct2019_vf.pdf"><span>Download <span class="ah">Xfinity Design Guidelines</span></span></a>
             </div><!-- /.download-row -->
 
             <div class="tile-row" id="download-ds-templates">

@@ -26,7 +26,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1500px;
+  max-width: 1600px;
   margin: 50px auto 50px auto;
 }
 .new-tile {
@@ -40,7 +40,7 @@
 .four-tiles .new-tile {flex: 0 1 25%;}
 .four-tiles .new-tile img {max-width: 100%;}
 .new-tile h2 {
-  font-size: 32px;
+  font-size: 31px;
   margin: 0 0 .25em 0;
 }
 .new-tile hr {
@@ -50,12 +50,12 @@
 }
 .new-tile .tile-info {
   flex-grow: 1;
-  font-size: 24px;
+  font-size: 23px;
 }
 .new-tile .button {
   display: block;
-  width: 70%;
-  max-width: 250px;
+  width: 90%;
+  max-width: 290px;
   margin: 0 auto;
 }
 .new-tile .button span {

@@ -28,7 +28,7 @@
             </svg>
             <br><br>
             <h1>Welcome to the <br class="mobile-only">Xfinity Brand Hub</h1>
-            <p class="disc">We’re making some exciting updates to our site – please bear with us. <br>In the meantime, explore the helpful resources below, and feel free to reach out to the <a href="#">Xfinity Brand Team</a> with any questions.</p>
+            <p class="disc">This is the first of many exciting updates to our site as we transition to our new visual identity. Explore the helpful resources below, and feel free to reach out to the brand team with any questions.</p>
           </div>
 
           <div class="new-tiles four-tiles">
@@ -37,7 +37,7 @@
               <img src="images/landing/icon-old.jpg" alt="">
               <h2>Current Brand Guidelines</h2>
               <hr>
-              <p class="tile-info" >Please refer to these guidelines for all communications prior to the Olympics (100 days out)</p>
+              <p class="tile-info" >Please refer to these guidelines for communications prior to the Olympics (100 days out)</p>
               <a class="button" href="brandhub"><span>Explore</span></a>
             </div>
 
@@ -45,15 +45,15 @@
               <img src="images/landing/icon-olympics.jpg" alt="">
               <h2>Olympics Brand Guidelines and Assets</h2>
               <hr>
-              <p class="tile-info" >To be used for all Olympics-related materials </p>
+              <p class="tile-info" >Guidelines, assets and resources for all Olympics-related communications</p>
               <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div>
 
             <div class="new-tile" id="tile-3">
               <img src="images/landing/icon-new.jpg" alt="">
-              <h2>New Brand<br>Guidelines</h2>
+              <h2>New Brand<br>Style Guide</h2>
               <hr>
-              <p class="tile-info" >To be used for inspiration and reference only <br>(Official release in April 2021)</p>
+              <p class="tile-info" >Interim style guide including high-level guidance and asset downloads. Full Brand Guide will be available in early Q2.</p>
               <a class="button" href="files/09945_New VisID One Sheet_R6.pdf" target="_blank"><span>Download</span></a>
             </div>
 

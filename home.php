@@ -28,7 +28,7 @@
             </svg>
             <br><br><br>
             <h1>Welcome to the <br class="mobile-only">Xfinity Brand Hub</h1>
-            <p class="disc">This is the first of many exciting updates to our site as we transition to our new visual identity. Explore the helpful resources below, and feel free to reach out to the brand team with any questions.</p>
+            <p class="disc">This is the first of many exciting updates to our site as we transition to our new visual identity. Explore the helpful resources below, and feel free to reach out to the <a href="#">brand team</a> with any questions.</p>
           </div>
 
           <div class="new-tiles four-tiles">

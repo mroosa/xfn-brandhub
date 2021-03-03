@@ -96,7 +96,7 @@
           </g>
         </svg>
       </div>
-      <div class="foot-nav"><a href="brandhub#contact">Contacts & Resources</a></div>
+      <div class="foot-nav"><a href="brandhub#contact-resources">Contacts & Resources</a></div>
     </div>
     </footer>
 <?php include_once($dir . "_templates/_structure/html-foot.php"); ?>

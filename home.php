@@ -53,7 +53,7 @@
               <img src="images/landing/icon-new.jpg" alt="">
               <h2>New Brand<br>Style Guide</h2>
               <hr>
-              <p class="tile-info" >Interim style guide including high-level guidance and asset downloads.<br> Full Brand Guide will be available in early Q2.</p>
+              <p class="tile-info" >Interim style guide including high-level guidance and asset downloads<br>(Full Brand Guide available early Q2)</p>
               <a class="button" href="files/09945_New VisID One Sheet_R6.pdf" target="_blank"><span>Download</span></a>
             </div>
 

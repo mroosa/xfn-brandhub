@@ -5,10 +5,10 @@
   width: 100%;
 }
 .redesign h1 {
-  font-size: 54px;
+  font-size: 44px;
 }
 .redesign .disc {
-  max-width: 1000px; margin: 20px auto; font-size: 24px; font-weight: 300; padding: 10px 60px;
+  max-width: 1000px; margin: 20px auto; font-size: 22px; font-weight: 300; padding: 10px 60px 0 60px;
 }
 .redesign .disc a {
   color: #fff; text-decoration: underline;
@@ -20,17 +20,17 @@
   text-align: center;
   background: #000;
   color: #fff;
-  padding: 50px 20px;
+  padding: 50px 20px 30px 20px;
 }
 .new-tiles {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  max-width: 1600px;
-  margin: 50px auto 50px auto;
+  max-width: 1440px;
+  margin: 50px auto 80px auto;
 }
 .new-tile {
-  padding: 20px;
+  padding: 25px;
   flex: 0 1 33%;
   display: flex;
   flex-direction: column;
@@ -39,10 +39,7 @@
 .new-tile img {max-width: 360px; margin: 0 auto;}
 .four-tiles .new-tile {flex: 0 1 25%;}
 .four-tiles .new-tile img {max-width: 100%;}
-.new-tile h2 {
-  font-size: 31px;
-  margin: 0 0 .25em 0;
-}
+.new-tile h2 {font-size: 26px; margin: 0 0 .25em 0;}
 .new-tile hr {
   height: 5px;
   width: 40px;
@@ -50,7 +47,7 @@
 }
 .new-tile .tile-info {
   flex-grow: 1;
-  font-size: 23px;
+  font-size: 18px;
 }
 .new-tile .button {
   display: block;
@@ -61,7 +58,7 @@
 .new-tile .button span {
   width: 100%;
   flex-shrink: 1;
-  font-size: 20px;
+  font-size: 16px;
   border-color: #EBEBEB;
   background: #fff;
   color: #000;
@@ -78,36 +75,38 @@
   color: #fff;
 }
 .redesign footer {padding: 30px 40px;}
-.redesign footer .logo {width: 210px;}
+.redesign footer .logo {width: 170px; padding: 0;}
 .redesign .foot-inside {
-  max-width: 1500px;
+  max-width: 1440px;
+  padding: 0 20px;
   margin: 0 auto;
   display: flex;
   align-content: center;
   align-items: center;
   justify-content: space-between;
 }
-.redesign footer a {color: #fff; font-weight: bold; text-decoration: none; font-size: 33px;}
+.redesign footer a {color: #fff; font-weight: bold; text-decoration: none; font-size: 24px;}
 .redesign footer a:hover {text-decoration: underline;}
 .redesign .logo {padding: 0;}
 
 @media (max-width: 1200px) {
-  .redesign h1 {font-size: 42px;}
-  .new-tile h2,
-  .redesign a {font-size: 24px;}
-  .redesign .disc {font-size: 24px; max-width: 100%; padding: 0 60px;}
-  .redesign .disc a {font-size: 24px;}
   .new-tile .tile-info {font-size: 18px;}
   .new-tile .button span {font-size: 14px;}
 }
+@media (max-width: 1040px) {
+  .redesign .disc {font-size: 20px;}
+  .new-tile h2 {font-size: 22px;}
+  .new-tile .tile-info {font-size: 16px;}
 
+}
 @media (max-width: 960px) {
-  .redesign .four-tiles .new-tile {flex: 0 1 40%;}
+  .redesign .four-tiles .new-tile {flex: 0 1 45%;}
   .redesign .disc {font-size: 18px; padding: 0 40px;}
   .redesign .disc a {font-size: 18px;}
 }
 
 @media (max-width: 768px) {
+  .redesign .four-tiles .new-tile {flex: 0 1 50%;}
   .redesign h1 {font-size: 32px;}
   .redesign a {font-size: 18px;}
   .redesign footer {padding: 20px;}

@@ -17,9 +17,9 @@
         <h1>Welcome to the<br>Xfinity Brand Hub</h1>
         <form id="login-form" method="post" onsubmit="submitLogin();">
           <label for="txt_uname">Username</label>
-          <input tabindex="1" type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" style="background: #fff; border-color: #000;" />
+          <input tabindex="1" type="text" class="textbox" id="txt_uname" name="txt_uname" placeholder="Username" />
           <label for="txt_pwd">Password</label>
-          <input tabindex="2" type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password" style="background: #fff; border-color: #000;" />
+          <input tabindex="2" type="password" class="textbox" id="txt_pwd" name="txt_pwd" placeholder="Password" />
           <div id="message">&nbsp;</div>
           <a tabindex="3" id="btn_submit" class="button" href="#"><span>Get Started</span></a>
           <input type="submit" style="display: none" value="Get Started" />

@@ -14,6 +14,27 @@
 .login.dark main #login input:not([type=button]) {padding-bottom: 5px; color: #000;}
 .login.dark main #login input:not([type=button]):focus { color: #000;}
 
+/* .login.dark main #login input:not([type=button]) {
+  background: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  opacity: 0;
+} */
+.login.dark main #login input:not([type=button]) {
+  background: rgba(255, 255, 255,.2);
+  border-color: rgba(255, 255, 255,.6);
+  opacity: 0;
+  color: #fff;
+}
+.login.dark main #login input:not([type=button]):focus {
+  color: #fff;
+}
+::placeholder {
+  color: rgba(255,255,255,.8);
+  opacity: .6;
+}
+::-ms-input-placeholder {
+  color: #fff;
+}
 @media (max-width: 1900px) {
   .login .logo svg {padding: 10% 20% 10% 10%;}
 }

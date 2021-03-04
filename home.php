@@ -28,7 +28,7 @@
             </svg>
             <br><br><br>
             <h1>Welcome to the <br class="mobile-only">Xfinity Brand Hub</h1>
-            <p class="disc">This is the first of many exciting updates to our site as we transition to our new visual identity. Explore the helpful resources below, and feel free to reach out to the brand team with any questions.</p>
+            <p class="disc">This is the first of many exciting updates to our site as we transition to our new visual identity. Explore the helpful resources below, and feel free to reach out to <a href="#">the brand team</a> with any questions.</p>
           </div>
 
           <div class="new-tiles four-tiles">
@@ -53,7 +53,7 @@
               <img src="images/landing/icon-new.jpg" alt="">
               <h2>New Brand<br>Style Guide</h2>
               <hr>
-              <p class="tile-info" >Interim style guide including high-level guidance and asset downloads.<br> Full Brand Guide will be available in early Q2.</p>
+              <p class="tile-info" >Interim style guide including high-level guidance and asset downloads<br>(Full Brand Guide available early Q2)</p>
               <a class="button" href="files/09945_New VisID One Sheet_R6.pdf" target="_blank"><span>Download</span></a>
             </div>
 
@@ -96,7 +96,7 @@
           </g>
         </svg>
       </div>
-      <div class="foot-nav"><a href="brandhub#contact">Contacts & Resources</a></div>
+      <div class="foot-nav"><a href="brandhub#contact-resources">Contacts & Resources</a></div>
     </div>
     </footer>
 <?php include_once($dir . "_templates/_structure/html-foot.php"); ?>

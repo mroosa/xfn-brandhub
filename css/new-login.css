@@ -1,10 +1,27 @@
 .login body {background: #ed7236;}
 .login main {justify-content: flex-end;}
-main .logo {
+.login .logo {
   display: flex;
   height: 100%;
   justify-content: flex-start;
   width: 50%;
 }
-.login.dark main #login input:not([type=button]) {padding-bottom: 5px;color: #000;}
+.login .logo svg {
+  padding: 10% 30% 10% 0;
+}
+.login.dark main #login input:not([type=button]) {padding-bottom: 5px; color: #000;}
 .login.dark main #login input:not([type=button]):focus { color: #000;}
+
+@media (max-width: 1900px) {
+  .login .logo svg {padding: 10% 20% 10% 10%;}
+}
+@media (max-width: 1440px) {
+  .login .logo svg {padding: 10% 10% 10% 10%;}
+}
+@media (max-width: 1200px) {
+  .login .logo svg {padding: 10% 15% 10% 5%;}
+}
+@media (max-width: 959px) {
+  .login main {justify-content: center;}
+  .login .logo {display: none;}
+}

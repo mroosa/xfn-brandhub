@@ -2,10 +2,11 @@
   $bodyClassList = ['login','dark'];
   $dir = "";
   $dest = isset($_GET['d']) ? $_GET['d'] : "index.php";
+  $styleList = ['new-login.css'];
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 
-<div style="position: absolute; left: 0; top: 0; width 100%; height: 100%; z-index: -1;">
+<div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1;">
   <video playsinline autoplay loop muted nocontrols>
     <source src="video/color-blend.mp4" type="video/mp4">
   </video>
@@ -27,7 +28,7 @@
       </section>
     </div>
     <div class="logo">
-      <svg x="0px" y="0px" viewBox="0 0 107.3 115" width="60px" style="fill: #fff;">
+      <svg x="0px" y="0px" viewBox="0 -35 107.3 150" width="100%" style="fill: #fff; padding: 10% 30% 10% 0;">
         <g>
           <path d="M51.2,38.6L79.9,0h-12c-5.4,0-8.8,1.9-11.7,5.7L41.1,26.1L26.4,5.7C23.5,1.9,20.1,0,14.7,0h-12l28.4,38.6L0,80.6h11.4
         c5.4,0,8.8-1.9,11.7-5.7l18-23.9l42.2,58.3c2.7,3.8,6.3,5.7,11.7,5.7h12.3L51.2,38.6z" />

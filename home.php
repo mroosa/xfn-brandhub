@@ -54,7 +54,7 @@
               <h2>New Brand<br>Style Guide</h2>
               <hr>
               <p class="tile-info" >Interim style guide including high-level guidance and asset downloads<br>(Full Brand Guide available early Q2)</p>
-              <a class="button" href="files/09945_New VisID One Sheet_R6.pdf" target="_blank"><span>Download</span></a>
+              <a class="button" href="files/Xfinity_VIS_StyleSheet_March2021.pdf" target="_blank"><span>Download</span></a>
             </div>
 
             <div class="new-tile" id="tile-4">

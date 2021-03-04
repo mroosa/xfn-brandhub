@@ -1,0 +1,10 @@
+.login body {background: #ed7236;}
+.login main {justify-content: flex-end;}
+main .logo {
+  display: flex;
+  height: 100%;
+  justify-content: flex-start;
+  width: 50%;
+}
+.login.dark main #login input:not([type=button]) {padding-bottom: 5px;color: #000;}
+.login.dark main #login input:not([type=button]):focus { color: #000;}

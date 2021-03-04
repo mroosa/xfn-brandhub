@@ -6,7 +6,7 @@
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 
-<div style="position: absolute; left: 0; top: 0; width: 100%; height: 100%; z-index: -1;">
+<div id="bgvid">
   <video playsinline autoplay loop muted nocontrols>
     <source src="video/color-blend.mp4" type="video/mp4">
   </video>

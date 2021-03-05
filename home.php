@@ -8,133 +8,95 @@
   }
 
   $dir = "";
-  $scriptList = ['subnav.js','masonry.pkgd.min.js','imagesloaded.pkgd.min.js','featherlight.js','inspiration-min.js','video-min.js'];
-  $styleList = ['inspiration.css','featherlight.css','video.css'];
+  $scriptList = [];
+  $styleList = ['redesign.css'];
   // $activeMain = 0; // Design
   $activeSub = 0;
-  $bodyClassList = ['two-col'];
+  $bodyClassList = ['redesign'];
 ?>
 <?php include_once($dir . "_templates/_structure/html-head.php"); ?>
 
-    <section id="introduction" data-option="1" data-bg="black">
-      <?php include_once("design/overview.php"); ?>
-      <a class="alt-swap" href="#">•</a>
-    </section>
     <main id="top">
       <div class="inner">
-
-      <?php if (file_exists("_templates/_nav/_subnav.php")): ?>
-        <div class="sidebar black">
-          <div id="subnav">
-            <div class="logo vid-logo"><a href="#top">
-              <video nocontrols muted poster="images/logo-poster.png">
-                <source src="video/logo.mp4" type="video/mp4">
-                <svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115" width="75px">
-                  <g>
-                    <path d="M51.2,38.6L79.9,0h-12c-5.4,0-8.8,1.9-11.7,5.7L41.1,26.1L26.4,5.7C23.5,1.9,20.1,0,14.7,0h-12l28.4,38.6L0,80.6h11.4
-              		c5.4,0,8.8-1.9,11.7-5.7l18-23.9l42.2,58.3c2.7,3.8,6.3,5.7,11.7,5.7h12.3L51.2,38.6z" />
-                  </g>
-                </svg>
-              </video>
-              <span class="ah">Back to top</span>
-            </a></div><!-- /.logo -->
-            <div class="mid-logo">
-              <a href="#top">
-                <svg id="svg-logo" x="0px" y="0px" viewBox="0 0 107.3 115" width="75px">
-                  <g>
-                    <path d="M51.2,38.6L79.9,0h-12c-5.4,0-8.8,1.9-11.7,5.7L41.1,26.1L26.4,5.7C23.5,1.9,20.1,0,14.7,0h-12l28.4,38.6L0,80.6h11.4
-                  c5.4,0,8.8-1.9,11.7-5.7l18-23.9l42.2,58.3c2.7,3.8,6.3,5.7,11.7,5.7h12.3L51.2,38.6z" />
-                  </g>
-                </svg>
-                <span class="ah">Back to top</span>
-              </a>
-            </div>
-
-            <?php include_once("_templates/_nav/_subnav.php"); ?>
-          </div><!-- /.sidebar -->
-        </div><!-- /#subnav -->
-      <?php endif; ?>
         <div class="content">
+          <div class="redesign-top">
+            <svg x="0px" y="0px" viewBox="0 0 107.3 115" width="60px" style="fill: #fff;">
+              <g>
+                <path d="M51.2,38.6L79.9,0h-12c-5.4,0-8.8,1.9-11.7,5.7L41.1,26.1L26.4,5.7C23.5,1.9,20.1,0,14.7,0h-12l28.4,38.6L0,80.6h11.4
+              c5.4,0,8.8-1.9,11.7-5.7l18-23.9l42.2,58.3c2.7,3.8,6.3,5.7,11.7,5.7h12.3L51.2,38.6z" />
+              </g>
+            </svg>
+            <br><br><br>
+            <h1>Welcome to the <br class="mobile-only">Xfinity Brand Hub</h1>
+            <p class="disc">This is the first of many exciting updates to our site as we transition to our new visual identity. Explore the helpful resources below, and feel free to reach out to <a href="#">the brand team</a> with any questions.</p>
+          </div>
 
-          <section id="logo" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/logo.php"); ?>
-            </div>
-          </section>
+          <div class="new-tiles four-tiles">
 
-          <section id="brand-symbol" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/brand-symbol.php"); ?>
+            <div class="new-tile" id="tile-1">
+              <img src="images/landing/icon-old.jpg" alt="">
+              <h2>Current Brand<br>Guidelines and Assets</h2>
+              <hr>
+              <p class="tile-info" >Please refer to these guidelines for communications prior to the Olympics (100 days out)</p>
+              <a class="button" href="brandhub"><span>Explore</span></a>
             </div>
-          </section>
 
-          <section id="sub-brands" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/sub-brands.php"); ?>
+            <div class="new-tile" id="tile-2">
+              <img src="images/landing/icon-olympics.jpg" alt="">
+              <h2>Olympics Brand<br>Guidelines and Assets</h2>
+              <hr>
+              <p class="tile-info" >Guidelines, assets and resources for all Olympics-related communications</p>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div>
-          </section>
 
-          <section id="color" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/color.php"); ?>
+            <div class="new-tile" id="tile-3">
+              <img src="images/landing/icon-new.jpg" alt="">
+              <h2>New Brand<br>Style Guide</h2>
+              <hr>
+              <p class="tile-info" >Interim style guide including high-level guidance and asset downloads<br>(Full Brand Guide available early Q2)</p>
+              <a class="button" href="files/Xfinity_VIS_StyleSheet_March2021.pdf" target="_blank"><span>Download</span></a>
             </div>
-          </section>
 
-          <section id="typography" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/typography.php"); ?>
+            <div class="new-tile" id="tile-4">
+              <img src="images/landing/icon-messaging.jpg" alt="">
+              <h2>Interactive Messaging Framework</h2>
+              <hr>
+              <p class="tile-info" >Your go-to destination for compelling messaging to consistently reinforce the Xfinity brand</p>
+              <a class="button" href="messaging"><span>Explore</span></a>
             </div>
-          </section>
-
-          <section id="photography" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/photography.php"); ?>
+<!--
+            <div class="new-tile" id="tile-5">
+              <img src="images/landing/icon-presentation.jpg" alt="">
+              <h2>New Presentation Templates</h2>
+              <hr>
+              <p class="tile-info" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+              <a class="button" href=""><span>Explore</span></a>
             </div>
-          </section>
-
-          <section id="secondary-graphics" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/secondary-graphics.php"); ?>
-            </div>
-          </section>
-
-          <section id="design-system" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/design-system.php"); ?>
-            </div>
-          </section>
-
-          <section id="co-branding" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/co-branding.php"); ?>
-            </div>
-          </section>
-
-          <section id="voice" class="with-tabs">
-            <div class="col-wrap">
-            <?php include_once("design/voice.php"); ?>
-            </div>
-          </section>
-
-          <section id="creative-examples">
-            <div class="col-wrap">
-            <?php include_once("design/inspiration.php"); ?>
-            </div>
-          </section>
-
-          <section id="downloads">
-            <div class="col-wrap">
-            <?php include_once("design/downloads.php"); ?>
-            </div>
-          </section>
-
-          <section id="contact-resources">
-            <div class="col-wrap">
-            <?php include_once("design/contact.php"); ?>
-            </div>
-          </section>
+-->
+          </div>
 
         </div><!-- /.content -->
       </div><!-- /.inner -->
     </main>
+
+    <footer>
+      <div class="foot-inside">
+      <div class="logo">
+        <svg x="0px" y="0px" viewBox="0 0 458 154.5" style="fill: #fff;">
+          <g>
+          	<path d="M51.2,78.1l28.8-38.6h-12c-5.4,0-8.8,1.9-11.7,5.7L41.1,65.6L26.4,45.2c-2.8-3.8-6.3-5.7-11.7-5.7h-12l28.4,38.6L0,120.1
+        		h11.4c5.4,0,8.8-1.9,11.7-5.7l18-23.9l42.2,58.3c2.7,3.8,6.3,5.7,11.7,5.7h12.3L51.2,78.1z M281.4,120.1h16.3V39.5h-16.3V120.1z
+        		 M152.3,120.1h16.3V39.5h-16.3V120.1z M399.1,148.5l58.9-109h-8.8c-5.4,0-9.5,1.6-11.7,5.7l-23.2,43.1l-20.1-43.1
+        		c-2.1-4.3-6.3-5.7-11.7-5.7H374l31,65.7l-27,49.3h8.8C392.3,154.5,396.7,152.8,399.1,148.5z M188,39.5v80.6h16.3V64.8
+        		c5.1-7.1,12.3-11.5,21.3-11.5c12,0,20.2,7.6,20.2,22.8v36.3c0,4.6,3.2,7.7,7.6,7.7h8.7V73.2c0-20.9-13.3-35.4-32.5-35.4
+        		c-10.3,0-18.8,3.6-25.3,9.6v-7.9H188z M327.8,91.5c0,17.5,10.7,30,30,30c4.7,0,8.7-0.6,11.8-1.6l-3.3-14.2
+        		c-2.1,0.5-4.6,0.8-7.4,0.8c-7.9,0-14.9-4.3-14.9-15.3V54h22.8l-6.6-14.5h-16.1V7.1l-16.3,7.1v25.3h-17.2V54h17.2V91.5z M102.2,54
+        		v66h16.3V54h20.9V39.5h-20.9v-6c0-13.7,8.2-18.3,16.3-18.3c2.1,0,4,0.3,5.5,0.8l3.3-14.4c-2.1-0.8-5.4-1.6-10.1-1.6
+        		c-20.2,0-31.3,15-31.3,33.2v6.3h-8.5L83.4,54H102.2z"/>
+          </g>
+        </svg>
+      </div>
+      <div class="foot-nav"><a href="brandhub#contact-resources">Contacts & Resources</a></div>
+    </div>
+    </footer>
 <?php include_once($dir . "_templates/_structure/html-foot.php"); ?>

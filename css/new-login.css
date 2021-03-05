@@ -1,6 +1,9 @@
 .login #bgvid {position: fixed; left: 0; top: 0; width: 100vw; height: 100vh; z-index: -1;}
 .login #bgvid video {object-fit: cover; height: 100vh; width: 100vw;}
-.login body {background: #ed7236;}
+.login {
+  background: url(../gfx/color-0.png) center center no-repeat #d55826;
+  background-size: cover;
+}
 .login main {justify-content: flex-end;}
 .login .logo {
   display: flex;
@@ -47,4 +50,12 @@
 @media (max-width: 959px) {
   .login main {justify-content: center;}
   .login .logo {display: none;}
+}
+@media (max-width: 768px) {
+  #bgvid {display: none;}
+  body[data-random-seed="1"] {background: url(../gfx/color-0.png) center center no-repeat #d55826;background-size: cover;}
+  body[data-random-seed="2"] {background: url(../gfx/color-1.png) center center no-repeat #d32e50;background-size: cover;}
+  body[data-random-seed="3"] {background: url(../gfx/color-2.png) center center no-repeat #5942eb;background-size: cover;}
+  body[data-random-seed="4"] {background: url(../gfx/color-3.png) center center no-repeat #306bf6;background-size: cover;}
+  body[data-random-seed="5"] {background: url(../gfx/color-4.png) center center no-repeat #39825b;background-size: cover;}
 }

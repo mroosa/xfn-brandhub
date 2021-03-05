@@ -365,7 +365,11 @@ $(document).ready(function() {
   // });
 
   // Random seed
-  $("body").attr("data-random-seed",randNum(4,1));
+  if ($("body").hasClass("login")) {
+    $("body").attr("data-random-seed",randNum(6,1));
+  } else {
+    $("body").attr("data-random-seed",randNum(4,1));
+  }
 
   function closeMobile() {
     $("body").removeClass("mobileActive");

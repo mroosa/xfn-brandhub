@@ -46,7 +46,7 @@
               <h2>Olympics Brand<br>Guidelines and Assets</h2>
               <hr>
               <p class="tile-info" >Guidelines, assets and resources for all Olympics-related communications</p>
-              <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
+              <a class="button" href=" http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div>
 
             <div class="new-tile" id="tile-3">

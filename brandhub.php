@@ -38,11 +38,11 @@
       <?php endif; ?>
         <div class="content">
 
-          <section id="downloads">
+          <!-- <section id="downloads">
             <div class="col-wrap">
-            <?php include_once("design/downloads.php"); ?>
+            <?php #include_once("design/downloads.php"); ?>
             </div>
-          </section>
+          </section> -->
 
           <section id="contact-resources">
             <div class="col-wrap">

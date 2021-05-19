@@ -120,7 +120,7 @@
                 <img src="images/downloads/bh_downloads-7.png" alt="End Card">
                 <br>
                 <br>
-                <a href="https:/www.dropbox.com/sh/9bsrynizsgiglrh/AADb88gxrUvR8nvof7__4dbVa?dl=0__;!!CQl3mcHX2A!RA4dfyDNt0CL-so4_7qx1v2LYiGIvJ0IKxJocm8UMTWYn7o7eIjU4eq3XOFqJM1CcMMu$" target="_blank"><span>End Card</span></a>
+                <a href="https://www.dropbox.com/sh/9bsrynizsgiglrh/AADb88gxrUvR8nvof7__4dbVa?dl=0__;!!CQl3mcHX2A!RA4dfyDNt0CL-so4_7qx1v2LYiGIvJ0IKxJocm8UMTWYn7o7eIjU4eq3XOFqJM1CcMMu$" target="_blank"><span>End Card</span></a>
               </div>
             </div>
 

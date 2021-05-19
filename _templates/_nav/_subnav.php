@@ -12,7 +12,7 @@ $subLinkAry = [
 	// new NavLink('#co-branding','Co-Branding',null),
 	// new NavLink('#voice','Brand Messaging Framework',null),
 	// new NavLink('#creative-examples','Creative Examples',null),
-	new NavLink('#downloads','Downloads',null),
+	// new NavLink('#downloads','Downloads',null),
 	new NavLink('#contact-resources','Contacts & Resources',null),
 ];
 

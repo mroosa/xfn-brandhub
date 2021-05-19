@@ -51,7 +51,7 @@
 }
 .new-tile .button {
   display: block;
-  width: 90%;
+  width: 40%;
   max-width: 290px;
   margin: 0 auto;
 }
@@ -59,10 +59,11 @@
   width: 100%;
   flex-shrink: 1;
   font-size: 16px;
-  border-color: #EBEBEB;
-  background: #fff;
-  color: #000;
-  box-shadow: 0 5px 5px rgb(0 0 0 / 35%);
+  border-color: #000;
+  background: #000;
+  color: #fff;
+  /* box-shadow: 0 5px 5px rgb(0 0 0 / 35%); */
+  box-shadow: none;
 }
 .new-tile .button:focus span,
 .new-tile .button:hover span {
@@ -73,6 +74,7 @@
   background: #000;
   border-color: #000;
   color: #fff;
+  box-shadow: none;
 }
 .redesign footer {padding: 30px 40px;}
 .redesign footer .logo {width: 170px; padding: 0;}
@@ -88,6 +90,30 @@
 .redesign footer a {color: #fff; font-weight: bold; text-decoration: none; font-size: 24px;}
 .redesign footer a:hover {text-decoration: underline;}
 .redesign .logo {padding: 0;}
+
+.lower {
+  max-width: 90%;
+  margin: 0 auto;
+}
+.lower .new-tiles {
+  margin: 50px auto;
+}
+.lower h2 {
+  text-align: center;
+}
+.lower .new-tile a {
+  font-weight: bold;
+  color: #000;
+  font-size: 18px;
+  text-decoration: none;
+}
+.lower .new-tile a span {
+  padding-bottom: 6px;
+  border-bottom: 2px solid #ccc;
+}
+.lower .new-tile a:hover span{
+  border-bottom-color: #0d0d0f;
+}
 
 @media (max-width: 1200px) {
   .new-tile .tile-info {font-size: 18px;}

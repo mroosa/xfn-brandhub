@@ -102,7 +102,7 @@
               <div class="new-tile" id="lower-tile-6">
                 <img src="images/downloads/bh_downloads-6.png" alt="Photography">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Photography</span></a>
-                <p>(new library coming soon)<br><a href="http://xfinity.com/" target="_blank">Explore Current Photography</a></p>
+                <p>(new library coming soon)</p>
 
               </div>
 

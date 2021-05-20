@@ -50,7 +50,7 @@
             </div>
 
             <div class="new-tile" id="tile-2">
-              <img src="images/landing/icon-olympics.jpg" alt="">
+              <img src="images/landing/icon-olympics-b.jpg" alt="">
               <h2>Olympics Brand<br> Assets</h2>
               <hr>
               <p class="tile-info">Guidelines, assets and resources for all Olympics-related communications</p>
@@ -74,51 +74,54 @@
 
               <div class="new-tile" id="lower-tile-1">
                 <img src="images/downloads/bh_downloads-1.png" alt="Xfinity Logo">
-                <a href="http://xfinity.com/" target="_blank"><span>Xfinity Logo</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Logo</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-2">
                 <img src="images/downloads/bh_downloads-2.png" alt="Xfinity Sub-Brand Logo">
-                <a href="http://xfinity.com/" target="_blank"><span>Xfinity Sub-Brand Logos</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Sub-Brand Logos</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-3">
                 <img src="images/downloads/bh_downloads-3.png" alt="Color">
-                <a href="http://xfinity.com/" target="_blank"><span>Color</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Color</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-4">
                 <img src="images/downloads/bh_downloads-4.png" alt="Typography">
-                <a href="http://xfinity.com/" target="_blank"><span>Typography</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Typography</span></a>
               </div>
             </div>
 
             <div class="new-tiles four-tiles">
               <div class="new-tile" id="lower-tile-5">
                 <img src="images/downloads/bh_downloads-5.png" alt="Iconography">
-                <a href="http://xfinity.com/" target="_blank"><span>Iconography</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Iconography</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-6">
                 <img src="images/downloads/bh_downloads-6.png" alt="Photography">
-                <a href="http://xfinity.com/" target="_blank"><span>Photography</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Photography</span></a>
+                <p>(new library coming soon)<br><a href="http://xfinity.com/" target="_blank">Explore Current Photography</a></p>
+
               </div>
 
               <div class="new-tile" id="lower-tile-7">
                 <img src="images/downloads/bh_downloads-7.png" alt="End Card">
-                <a href="https://www.dropbox.com/sh/9bsrynizsgiglrh/AADb88gxrUvR8nvof7__4dbVa?dl=0__;!!CQl3mcHX2A!RA4dfyDNt0CL-so4_7qx1v2LYiGIvJ0IKxJocm8UMTWYn7o7eIjU4eq3XOFqJM1CcMMu$" target="_blank"><span>End Card</span></a>
+                <a class="link" href="https://www.dropbox.com/sh/9bsrynizsgiglrh/AADb88gxrUvR8nvof7__4dbVa?dl=0__;!!CQl3mcHX2A!RA4dfyDNt0CL-so4_7qx1v2LYiGIvJ0IKxJocm8UMTWYn7o7eIjU4eq3XOFqJM1CcMMu$" target="_blank"><span>End Card</span></a>
+                <p>(full toolkit coming soon)</p>
               </div>
             </div>
 
             <div class="new-tiles four-tiles">
               <div class="new-tile" id="lower-tile-8">
                 <img src="images/downloads/bh_downloads-8.png" alt="CTA Button">
-                <a href="http://xfinity.com/" target="_blank"><span>CTA Button</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>CTA Button</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-9">
                 <img src="images/downloads/bh_downloads-9.png" alt="Presentation Templates">
-                <a href="http://xfinity.com/" target="_blank"><span>Presentation Templates</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Presentation Templates</span></a>
               </div>
 
             </div>

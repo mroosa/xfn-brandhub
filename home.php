@@ -31,21 +31,21 @@
             <p class="disc">Explore the helpful resources below, and feel free to reach out to <a href="#">the brand team</a> with any questions. Stay tuned for more exciting updates to come!</p>
           </div>
 
-          <div class="new-tiles four-tiles">
+          <div class="new-tiles three-tiles">
 
             <div class="new-tile" id="tile-3">
               <img src="images/landing/icon-new.jpg" alt="">
-              <h2>New Brand<br> Guidelines</h2>
+              <h2>New! Xfinity<br> Brand Guidelines</h2>
               <hr>
-              <p class="tile-info" >Interim style guide including high-level guidance and asset downloads<br>(Full Brand Guide available early Q2)</p>
-              <a class="button" href="files/Xfinity_VIS_StyleSheet_March2021.pdf" target="_blank"><span>Download</span></a>
+              <p class="tile-info">The guidance and tools to bring our new brand to life consistently and impactfully</p>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Download</span></a>
             </div>
 
             <div class="new-tile" id="tile-4">
               <img src="images/landing/icon-messaging.jpg" alt="">
-              <h2>Interactive Messaging Framework</h2>
+              <h2>Interactive Messaging<br> Framework</h2>
               <hr>
-              <p class="tile-info" >Your go-to destination for compelling messaging to consistently reinforce the Xfinity brand</p>
+              <p class="tile-info">Your go-to destination for compelling messaging to consistently reinforce the Xfinity brand</p>
               <a class="button" href="messaging"><span>Explore</span></a>
             </div>
 
@@ -53,7 +53,7 @@
               <img src="images/landing/icon-olympics.jpg" alt="">
               <h2>Olympics Brand<br> Assets</h2>
               <hr>
-              <p class="tile-info" >Guidelines, assets and resources for all Olympics-related communications</p>
+              <p class="tile-info">Guidelines, assets and resources for all Olympics-related communications</p>
               <a class="button" href=" http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div>
 <!--
@@ -74,72 +74,57 @@
 
               <div class="new-tile" id="lower-tile-1">
                 <img src="images/downloads/bh_downloads-1.png" alt="Xfinity Logo">
-                <br>
-                <br>
-                <a href="http://xfinity.com/" target="_blank"><span>Xfinity Logo</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Logo</span></a>
               </div>
 
-              <div class="new-tile" id="lower-tile-2">
-                <img src="images/downloads/bh_downloads-2.png" alt="Xfinity Sub-Brand Logo">
-                <br>
-                <br>
-                <a href="http://xfinity.com/" target="_blank"><span>Xfinity Sub-Brand Logos</span></a>
+              <div class="new-tile" id="lower-tile-9">
+                <img src="images/downloads/bh_downloads-9.png" alt="Presentation Templates">
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Presentation Templates</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-3">
                 <img src="images/downloads/bh_downloads-3.png" alt="Color">
-                <br>
-                <br>
-                <a href="http://xfinity.com/" target="_blank"><span>Color</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Color</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-4">
                 <img src="images/downloads/bh_downloads-4.png" alt="Typography">
-                <br>
-                <br>
-                <a href="http://xfinity.com/" target="_blank"><span>Typography</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Typography</span></a>
               </div>
             </div>
 
             <div class="new-tiles four-tiles">
               <div class="new-tile" id="lower-tile-5">
                 <img src="images/downloads/bh_downloads-5.png" alt="Iconography">
-                <br>
-                <br>
-                <a href="http://xfinity.com/" target="_blank"><span>Iconography</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Iconography</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-6">
                 <img src="images/downloads/bh_downloads-6.png" alt="Photography">
-                <br>
-                <br>
-                <a href="http://xfinity.com/" target="_blank"><span>Photography</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Photography</span></a>
+                <p>(new library coming soon)</p>
+
               </div>
 
               <div class="new-tile" id="lower-tile-7">
                 <img src="images/downloads/bh_downloads-7.png" alt="End Card">
-                <br>
-                <br>
-                <a href="https://www.dropbox.com/sh/9bsrynizsgiglrh/AADb88gxrUvR8nvof7__4dbVa?dl=0__;!!CQl3mcHX2A!RA4dfyDNt0CL-so4_7qx1v2LYiGIvJ0IKxJocm8UMTWYn7o7eIjU4eq3XOFqJM1CcMMu$" target="_blank"><span>End Card</span></a>
+                <a class="link" href="https://www.dropbox.com/sh/9bsrynizsgiglrh/AADb88gxrUvR8nvof7__4dbVa?dl=0__;!!CQl3mcHX2A!RA4dfyDNt0CL-so4_7qx1v2LYiGIvJ0IKxJocm8UMTWYn7o7eIjU4eq3XOFqJM1CcMMu$" target="_blank"><span>End Card</span></a>
+                <p>(full toolkit coming soon)</p>
               </div>
             </div>
 
             <div class="new-tiles four-tiles">
               <div class="new-tile" id="lower-tile-8">
                 <img src="images/downloads/bh_downloads-8.png" alt="CTA Button">
-                <br>
-                <br>
-                <a href="http://xfinity.com/" target="_blank"><span>CTA Button</span></a>
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>CTA Button</span></a>
               </div>
 
-              <div class="new-tile" id="lower-tile-9">
-                <img src="images/downloads/bh_downloads-9.png" alt="Presentation Templates">
-                <br>
-                <br>
-                <a href="http://xfinity.com/" target="_blank"><span>Presentation Templates</span></a>
+              <div class="new-tile" id="lower-tile-2">
+                <img src="images/downloads/bh_downloads-2.png" alt="Xfinity Sub-Brand Logo">
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Sub-Brand Logos</span></a>
               </div>
-
             </div>
+
           </div>
 
           <br>

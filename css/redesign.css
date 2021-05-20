@@ -131,6 +131,7 @@
   .redesign .four-tiles .new-tile {flex: 0 1 45%;}
   .redesign .disc {font-size: 18px; padding: 0 40px;}
   .redesign .disc a {font-size: 18px;}
+  .lower .new-tiles {max-width: 650px; margin: 0 auto;}
 }
 
 @media (max-width: 768px) {
@@ -146,5 +147,6 @@
   .new-tile img {max-width: 300px; margin: 0 auto;}
   .redesign footer .logo {width: 150px;}
   .redesign a {font-size: 14px;}
-  .redesign .four-tiles .new-tile {flex: 0 1 90%;}
+  .redesign .four-tiles .new-tile {flex: 0 1 50%;}
+  .lower .new-tiles {max-width: 100%; margin: 0 auto;}
 }

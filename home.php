@@ -50,7 +50,7 @@
             </div>
 
             <div class="new-tile" id="tile-2">
-              <img src="images/landing/icon-olympics-b.jpg" alt="">
+              <img src="images/landing/icon-olympics.jpg" alt="">
               <h2>Olympics Brand<br> Assets</h2>
               <hr>
               <p class="tile-info">Guidelines, assets and resources for all Olympics-related communications</p>

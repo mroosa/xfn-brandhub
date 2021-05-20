@@ -38,7 +38,7 @@
               <h2>New! Xfinity<br> Brand Guidelines</h2>
               <hr>
               <p class="tile-info">The guidance and tools to bring our new brand to life consistently and impactfully</p>
-              <a class="button" href="files/Xfinity_VIS_StyleSheet_March2021.pdf" target="_blank"><span>Download</span></a>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Download</span></a>
             </div>
 
             <div class="new-tile" id="tile-4">
@@ -77,9 +77,9 @@
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Logo</span></a>
               </div>
 
-              <div class="new-tile" id="lower-tile-2">
-                <img src="images/downloads/bh_downloads-2.png" alt="Xfinity Sub-Brand Logo">
-                <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Sub-Brand Logos</span></a>
+              <div class="new-tile" id="lower-tile-9">
+                <img src="images/downloads/bh_downloads-9.png" alt="Presentation Templates">
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Presentation Templates</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-3">
@@ -119,12 +119,12 @@
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>CTA Button</span></a>
               </div>
 
-              <div class="new-tile" id="lower-tile-9">
-                <img src="images/downloads/bh_downloads-9.png" alt="Presentation Templates">
-                <a class="link" href="http://xfinity.com/" target="_blank"><span>Presentation Templates</span></a>
+              <div class="new-tile" id="lower-tile-2">
+                <img src="images/downloads/bh_downloads-2.png" alt="Xfinity Sub-Brand Logo">
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Sub-Brand Logos</span></a>
               </div>
-
             </div>
+
           </div>
 
           <br>

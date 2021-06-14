@@ -87,10 +87,12 @@
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Color</span></a>
               </div>
 
+<!--
               <div class="new-tile" id="lower-tile-4">
                 <img src="images/downloads/bh_downloads-4.png" alt="Typography">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Typography</span></a>
               </div>
+-->              
             </div>
 
             <div class="new-tiles four-tiles">

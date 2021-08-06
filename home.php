@@ -87,15 +87,19 @@
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Color</span></a>
               </div>
 
+              <div class="new-tile" id="lower-tile-2">
+                <img src="images/downloads/bh_downloads-12.png" alt="Typography">
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Supplemental Guidelines</span></a>
+              </div>
+            </div>
+
+            <div class="new-tiles four-tiles">
 <!--
               <div class="new-tile" id="lower-tile-4">
                 <img src="images/downloads/bh_downloads-4.png" alt="Typography">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Typography</span></a>
               </div>
 -->
-            </div>
-
-            <div class="new-tiles four-tiles">
               <div class="new-tile" id="lower-tile-5">
                 <img src="images/downloads/bh_downloads-5.png" alt="Iconography">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Iconography</span></a>
@@ -123,6 +127,11 @@
               <div class="new-tile" id="lower-tile-2">
                 <img src="images/downloads/bh_downloads-2.png" alt="Xfinity Sub-Brand Logo">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Sub-Brand Logos</span></a>
+              </div>
+
+              <div class="new-tile" id="lower-tile-11">
+                <img src="images/downloads/bh_downloads-11.png" alt="Xfinity Sub-Brand Logo">
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Rewards</span></a>
               </div>
             </div>
 

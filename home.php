@@ -50,22 +50,13 @@
             </div>
 
             <div class="new-tile" id="tile-2">
-              <img src="images/landing/icon-olympics.jpg" alt="">
-              <h2>Olympics Brand<br> Assets</h2>
+              <img src="images/landing/icon-templates.jpg" alt="">
+              <h2>Presentation<br> Templates</h2>
               <hr>
-              <p class="tile-info">Guidelines, assets and resources for all Olympics-related communications</p>
-              <a class="button" href=" http://xfinity.com/" target="_blank"><span>Explore</span></a>
+              <p class="tile-info">Impactful presentation templates designed to showcase the Xfinity brand</p>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Explore</span></a>
             </div>
-<!--
-            <div class="new-tile" id="tile-5">
-              <img src="images/landing/icon-presentation.jpg" alt="">
-              <h2>New Presentation Templates</h2>
-              <hr>
-              <p class="tile-info" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-              <a class="button" href=""><span>Explore</span></a>
-            </div>
--->
-          </div>
+         </div>
 
           <div class="lower">
             <h2>Additional assets and resources</h2>
@@ -77,9 +68,9 @@
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Xfinity Logo</span></a>
               </div>
 
-              <div class="new-tile" id="lower-tile-9">
-                <img src="images/downloads/bh_downloads-9.png" alt="Presentation Templates">
-                <a class="link" href="http://xfinity.com/" target="_blank"><span>Presentation Templates</span></a>
+              <div class="new-tile" id="lower-tile-13">
+                <img src="images/downloads/bh_downloads-13.png" alt="Olympic Brand Assets">
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>Olympic Brand Assets</span></a>
               </div>
 
               <div class="new-tile" id="lower-tile-3">

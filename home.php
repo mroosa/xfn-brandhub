@@ -38,7 +38,7 @@
               <h2>Xfinity<br> Brand Guidelines</h2>
               <hr>
               <p class="tile-info">The guidance and tools to bring our new brand to life consistently and impactfully</p>
-              <a class="button" href="hhttp://xfinity.com/" target="_blank"><span>Download</span></a>
+              <a class="button" href="http://xfinity.com/" target="_blank"><span>Download</span></a>
             </div>
 
             <div class="new-tile" id="tile-4">

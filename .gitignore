@@ -2,5 +2,9 @@ git_find_big.sh
 messaging/*
 !messaging/.htaccess
 
+# temp redirect
+xhsmartentrykit
+xhsmartentrykit/*
+
 #config.codekit3
 .DS_Store

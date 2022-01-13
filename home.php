@@ -94,19 +94,22 @@
                 <img src="images/downloads/bh_downloads-5.png" alt="Iconography">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Iconography</span></a>
               </div>
-
+              <div class="new-tile" id="lower-tile-4">
+                <img src="images/downloads/bh_downloads-14.png" alt="App icons">
+                <a class="link" href="http://xfinity.com/" target="_blank"><span>App Icons</span></a>
+              </div>
               <div class="new-tile" id="lower-tile-7">
                 <img src="images/downloads/bh_downloads-7.png" alt="End Card">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>End Card</span></a>
               </div>
+            </div>
 
+            <div class="new-tiles four-tiles">
               <div class="new-tile" id="lower-tile-2">
                 <img src="images/downloads/bh_downloads-12.png" alt="Supplemental Guidelines">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>Supplemental Guidelines</span></a>
               </div>
-            </div>
 
-            <div class="new-tiles four-tiles">
               <div class="new-tile" id="lower-tile-8">
                 <img src="images/downloads/bh_downloads-8.png" alt="CTA Button">
                 <a class="link" href="http://xfinity.com/" target="_blank"><span>CTA Button</span></a>

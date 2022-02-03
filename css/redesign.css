@@ -54,6 +54,7 @@
   width: 40%;
   max-width: 290px;
   margin: 0 auto;
+  position: relative;
 }
 .new-tile .button span {
   width: 100%;
@@ -64,6 +65,10 @@
   color: #fff;
   /* box-shadow: 0 5px 5px rgb(0 0 0 / 35%); */
   box-shadow: none;
+}
+.new-tile .button span span{
+  display: inline-block;
+  width: auto;
 }
 .new-tile .button:focus span,
 .new-tile .button:hover span {

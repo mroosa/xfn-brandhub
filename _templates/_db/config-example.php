@@ -1,5 +1,7 @@
 <?php
 
+/* Enter database information and rename this file to config.php */
+
 session_start();
 
 $host = ""; /* Host name */

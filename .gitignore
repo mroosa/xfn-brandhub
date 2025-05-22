@@ -8,3 +8,5 @@ xhsmartentrykit/*
 
 #config.codekit3
 .DS_Store
+
+_template/config.php

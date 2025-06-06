@@ -1,11 +1,11 @@
 <?php
-  include_once("_templates/_db/config.php");
+  // include_once("_templates/_db/config.php");
 
-  // Check user login or not
-  if(!isset($_SESSION['uname'])){
-    header('Location: login');
-    exit;
-  }
+  // // Check user login or not
+  // if(!isset($_SESSION['uname'])){
+  //   header('Location: login');
+  //   exit;
+  // }
 
   $dir = "";
   $scriptList = [];
